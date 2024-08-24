@@ -1,0 +1,70 @@
+name: decoder/cyb3rhq-dashboard/0
+
+metadata:
+  module: cyb3rhq-dashboard
+  title: Cyb3rhq Dashboard logs
+  description: Decoder for Cyb3rhq Dashboard logs
+  compatibility: This decoder has been tested with logs from Cyb3rhq version 4.4
+  versions:
+    - "4.4"
+  author:
+    name: Cyb3rhq Inc.
+    email: info@wazuh.com
+    date: 2023-06-15
+  references:
+    - "https://documentation.wazuh.com/current/user-manual/cyb3rhq-dashboard/index.html"
+    - "https://opensearch.org/docs/latest/monitoring-your-cluster/logs/"
+
+parents:
+  - decoder/syslog/0
+
+check:
+  - process.name: opensearch-dashboards
+  # TODO: Once the events arrive tagged, uncommnet the following two lines
+  # - event.module: cyb3rhq-dashboard
+
+parse|message:
+  - <json_event/json>
+
+normalize:
+  - map:
+      - event.module: cyb3rhq-dashboard
+      - cyb3rhq.decoders: array_append(cyb3rhq-dashboard)
+      - event.category: array_append(web)
+      - event.type: array_append($json_event.type)
+      - '@timestamp': $json_event.@timestamp
+      - tags: $json_event.tags
+      - message: $json_event.message
+
+  - check:
+      - json_event.type: error
+    map:
+      - log.level: $json_event.level
+      - error.message: $json_event.error.message
+      - error.stack_trace: $json_event.error.stack
+      - error.code: $json_event.error.code
+      - url.original: $json_event.url
+
+  - check:
+      - json_event.type: response
+    parse|json_event.req.url:
+      - <url.path>(?\?<url.query>)
+    map:
+      - http.request.method: $json_event.req.method
+      - destination.address: $json_event.req.headers.host
+      - source.address: $json_event.req.remoteAddress
+      - user_agent.original: $json_event.req.userAgent
+      - http.request.referrer: $json_event.req.referer
+      - http.request.body.bytes: parse_long($json_event.req.headers.content-length)
+      - http.response.status_code: $json_event.res.statusCode
+
+  - check: $http.response.status_code < 400
+    map:
+      - event.outcome: success
+
+  - check: $http.response.status_code >= 400
+    map:
+      - event.outcome: failure
+
+  - map:
+      - json_event: delete()

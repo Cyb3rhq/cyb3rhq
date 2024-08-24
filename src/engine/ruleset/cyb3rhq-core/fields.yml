@@ -1,0 +1,133 @@
+cyb3rhq.queue:
+  description: Queue part of the OSSEC message format
+  type: long
+
+cyb3rhq.location:
+  description: Location part of the OSSEC message format
+  type: text
+
+cyb3rhq.message:
+  description: Message part of the OSSEC message format
+  type: text
+
+cyb3rhq.origin:
+  description: Origin part of the OSSEC message format
+  type: keyword
+
+cyb3rhq.registered_ip:
+  description: Registered IP part of the OSSEC message format
+  type: keyword
+
+cyb3rhq.decoders:
+  description: Trace of the decoders used to decode the event in order
+  type: keyword
+  array: true
+
+cyb3rhq.source:
+  description: Source that ingested the event
+  type: keyword
+
+cyb3rhq.syscollector.hardware:
+  description: 'Object that contains the hardware fields from a syscollector event'
+  type: object
+
+cyb3rhq.syscollector.hotfix:
+  description: 'Object that contains the hotfix fields from a syscollector event'
+  type: object
+
+cyb3rhq.syscollector.netinfo.addr:
+  description: 'Object that contains the address fields from a syscollector event'
+  type: object
+
+cyb3rhq.syscollector.netinfo.iface:
+  description: 'Object that contains the network interface fields from a syscollector event'
+  type: object
+
+cyb3rhq.syscollector.netinfo.proto:
+  description: 'Object that contains the network protocol fields from a syscollector event'
+  type: object
+
+cyb3rhq.syscollector.os:
+  description: 'Object that contains the os fields from a syscollector event'
+  type: object
+
+cyb3rhq.syscollector.port:
+  description: 'Object that contains the port fields from a syscollector event'
+  type: object
+
+cyb3rhq.syscollector.process:
+  description: 'Object that contains the process fields from a syscollector event'
+  type: object
+
+cyb3rhq.syscollector.program:
+  description: 'Object that contains the program fields from a syscollector event'
+  type: object
+
+cyb3rhq.rootcheck.file:
+  description: 'File path'
+  type: keyword
+
+cyb3rhq.rootcheck.update:
+  description: 'Update status'
+  type: boolean
+
+cyb3rhq.rootcheck.fts:
+  description: 'Fts status'
+  type: boolean
+
+cyb3rhq.rootcheck.title:
+  description: 'Title of the rootcheck event'
+  type: keyword
+
+cyb3rhq.ciscat.type:
+  description: 'Type of the Ciscat event'
+  type: keyword
+
+cyb3rhq.ciscat.scan_id:
+  description: 'Scan ID of the Ciscat event'
+  type: long
+
+cyb3rhq.ciscat.cis.timestamp:
+  description: 'Timestamp of the CIS fields from a Ciscat event'
+  type: date
+
+cyb3rhq.ciscat.cis.benchmark:
+  description: 'Benchmark of the CIS fields from a Ciscat event'
+  type: keyword
+
+cyb3rhq.ciscat.cis.profile:
+  description: 'Profile of the CIS fields from a Ciscat event'
+  type: keyword
+
+cyb3rhq.ciscat.cis.pass:
+  description: 'Pass of the CIS fields from a Ciscat event'
+  type: long
+
+cyb3rhq.ciscat.cis.fail:
+  description: 'Fail of the CIS fields from a Ciscat event'
+  type: long
+
+cyb3rhq.ciscat.cis.error:
+  description: 'Error of the CIS fields from a Ciscat event'
+  type: long
+
+cyb3rhq.ciscat.cis.notchecked:
+  description: 'Not checked of the CIS fields from a Ciscat event'
+  type: long
+
+cyb3rhq.ciscat.cis.unknown:
+  description: 'Unknown of the CIS fields from a Ciscat event'
+  type: long
+
+cyb3rhq.ciscat.cis.score:
+  description: 'Score of the CIS fields from a Ciscat event'
+  type: long
+
+cyb3rhq.ciscat.cis.hostname:
+  description: 'Hostname of the CIS fields from a Ciscat event'
+  type: keyword
+
+
+cyb3rhq.noIndexing:
+  description: 'Boolean that indicates if the event is related with internal Cyb3rhq functionality and should not be indexed'
+  type: boolean

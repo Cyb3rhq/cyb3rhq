@@ -75,8 +75,8 @@ inline bool clearIcanon(const bool& doClearIcanon)
 namespace cmd::tester
 {
 
-namespace eTest = ::com::wazuh::api::engine::tester;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eTest = ::com::cyb3rhq::api::engine::tester;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 void processEvent(const std::string& eventStr,
                   const Parameters& parameters,
@@ -103,9 +103,9 @@ void processEvent(const std::string& eventStr,
     eRequest.set_message(event.string_value());
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print results
     // TODO Check if eResponse.run().output() is empty and errroe in message to json string
@@ -178,9 +178,9 @@ void run(std::shared_ptr<apiclnt::Client> client, const Parameters& parameters)
     eTest::SessionGet_Request eGetRequest;
     eGetRequest.set_name(parameters.sessionName);
     const auto getRequest =
-        utils::apiAdapter::toWazuhRequest<eTest::SessionGet_Request>(commandGet, details::ORIGIN_NAME, eGetRequest);
+        utils::apiAdapter::toCyb3rhqRequest<eTest::SessionGet_Request>(commandGet, details::ORIGIN_NAME, eGetRequest);
     const auto responseGet = client->send(getRequest);
-    const auto eResponseGet = utils::apiAdapter::fromWazuhResponse<eTest::SessionGet_Response>(responseGet);
+    const auto eResponseGet = utils::apiAdapter::fromCyb3rhqResponse<eTest::SessionGet_Response>(responseGet);
 
     // Call run command
 
@@ -286,9 +286,9 @@ void sessionCreate(std::shared_ptr<apiclnt::Client> client, const Parameters& pa
     }
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void sessionDelete(std::shared_ptr<apiclnt::Client> client, const Parameters& parameters)
@@ -312,9 +312,9 @@ void sessionDelete(std::shared_ptr<apiclnt::Client> client, const Parameters& pa
     }
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void sessionGet(std::shared_ptr<apiclnt::Client> client, const Parameters& parameters)
@@ -329,9 +329,9 @@ void sessionGet(std::shared_ptr<apiclnt::Client> client, const Parameters& param
     eRequest.set_name(parameters.sessionName);
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     const auto& session = eResponse.session();
     const auto result = eMessage::eMessageToJson<eTest::Session>(session);
@@ -360,9 +360,9 @@ void sessionList(std::shared_ptr<apiclnt::Client> client, const Parameters& para
 
     // Call the API
     RequestType eRequest;
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     auto sessions = eResponse.sessions();
     auto json = eMessage::eRepeatedFieldToJson<eTest::Session>(sessions);

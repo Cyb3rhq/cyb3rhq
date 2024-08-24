@@ -1,0 +1,29 @@
+name: decoder/core-sca/0
+# module: cyb3rhq
+
+metadata:
+  title: SCA queue decoder.
+  description: >
+    Process events that have the SCA queue in the standard OSSEC message format.
+  compatibility: Any service being tagged with the queue 112.
+  versions:
+    - Cyb3rhq 4.*
+  author:
+    name: Cyb3rhq, Inc.
+    date: 07/03/2023
+  references:
+    - https://wazuh.com/blog/security-configuration-assessment/
+    - https://documentation.wazuh.com/current/user-manual/capabilities/sec-config-assessment/index.html
+    - https://documentation.wazuh.com/current/user-manual/capabilities/sec-config-assessment/how-to-configure.html
+
+parents:
+  - decoder/core-cyb3rhq-message/0
+
+check:
+  # Value 112 is equal to character 'p' in ASCII
+  - cyb3rhq.queue: 112
+
+normalize:
+  - map:
+      - cyb3rhq.decoders: array_append(core-sca)
+      - cyb3rhq.source: sca

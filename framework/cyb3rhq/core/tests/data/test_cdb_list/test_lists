@@ -1,0 +1,10 @@
+test-cyb3rhq-w:write
+test-cyb3rhq-r:read
+test-cyb3rhq-a:attribute
+test-cyb3rhq-x:execute
+test-cyb3rhq-c:command
+test-key:"value:1"
+"test-key:1":value
+"test-key:2":"value:2"
+"test-key::::::3":value3
+test-key4:"value:::4"

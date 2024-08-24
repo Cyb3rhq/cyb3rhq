@@ -29,7 +29,7 @@ configuration: |
     <run_on_start>yes</run_on_start>
     <skip_on_error>yes</skip_on_error>
     <bucket type="cloudtrail">
-      <name>wazuh-cloudtrail</name>
+      <name>cyb3rhq-cloudtrail</name>
       <aws_profile>default</aws_profile>
     </bucket>
   </wodle>
@@ -49,7 +49,7 @@ configuration: |
     <run_on_start>yes</run_on_start>
     <skip_on_error>yes</skip_on_error>
     <bucket type="alb">
-      <name>wazuh-aws-wodle</name>
+      <name>cyb3rhq-aws-wodle</name>
       <path>ALB</path>
       <aws_profile>default</aws_profile>
     </bucket>
@@ -61,7 +61,7 @@ configuration: |
     <run_on_start>yes</run_on_start>
     <skip_on_error>yes</skip_on_error>
     <bucket type="clb">
-      <name>wazuh-aws-wodle</name>
+      <name>cyb3rhq-aws-wodle</name>
       <path>CLB</path>
       <aws_profile>default</aws_profile>
     </bucket>
@@ -73,7 +73,7 @@ configuration: |
     <run_on_start>yes</run_on_start>
     <skip_on_error>yes</skip_on_error>
     <bucket type="nlb">
-      <name>wazuh-aws-wodle</name>
+      <name>cyb3rhq-aws-wodle</name>
       <path>NLB</path>
       <aws_profile>default</aws_profile>
     </bucket>

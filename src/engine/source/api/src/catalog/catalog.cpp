@@ -377,8 +377,8 @@ base::RespOrError<store::Col> Catalog::getCol(const Resource& resource, const st
 
 base::RespOrError<std::string> Catalog::getResource(const Resource& resource, const std::string& namespaceId) const
 {
-    using Type = ::com::wazuh::api::engine::catalog::ResourceType;
-    using Format = ::com::wazuh::api::engine::catalog::ResourceFormat;
+    using Type = ::com::cyb3rhq::api::engine::catalog::ResourceType;
+    using Format = ::com::cyb3rhq::api::engine::catalog::ResourceFormat;
 
     const auto formatContent = [outFormat = m_outFormat, format = resource.m_format, name = resource.m_name](
                                    const json::Json& content) -> std::variant<std::string, base::Error>

@@ -1,7 +1,7 @@
-# Copyright (C) 2015, Wazuh Inc.
+# Copyright (C) 2015, Cyb3rhq Inc.
 # TODO: mysql and postgresql?
 #
-# Copyright (C) 2015, Wazuh Inc.
+# Copyright (C) 2015, Cyb3rhq Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -65,18 +65,18 @@ endif
 PG_CONFIG?=pg_config
 MY_CONFIG?=mysql_config
 PRELUDE_CONFIG?=libprelude-config
-WAZUH_GROUP?=wazuh
-WAZUH_USER?=wazuh
+CYB3RHQ_GROUP?=cyb3rhq
+CYB3RHQ_USER?=cyb3rhq
 SHARED=so
-SELINUX_MODULE=selinux/wazuh.mod
-SELINUX_ENFORCEMENT=selinux/wazuh.te
-SELINUX_POLICY=selinux/wazuh.pp
+SELINUX_MODULE=selinux/cyb3rhq.mod
+SELINUX_ENFORCEMENT=selinux/cyb3rhq.te
+SELINUX_POLICY=selinux/cyb3rhq.pp
 SHARED_MODULES=shared_modules/
 DBSYNC=${SHARED_MODULES}dbsync/
 RSYNC=${SHARED_MODULES}rsync/
 ROUTER=shared_modules/router/
 CONTENT_MANAGER=shared_modules/content_manager/
-VULNERABILITY_SCANNER=wazuh_modules/vulnerability_scanner/
+VULNERABILITY_SCANNER=cyb3rhq_modules/vulnerability_scanner/
 SYSINFO=data_provider/
 USE_PRELUDE?=no
 USE_ZEROMQ?=no
@@ -97,13 +97,13 @@ ifneq (,$(filter ${TEST},YES yes y Y 1))
 DBSYNC_TEST=-DUNIT_TEST=ON #--coverage
 RSYNC_TEST=-DUNIT_TEST=ON #--coverage
 SYSINFO_TEST=-DUNIT_TEST=ON #--coverage
-WAZUH_TEST=-DUNIT_TEST=ON #--coverage
+CYB3RHQ_TEST=-DUNIT_TEST=ON #--coverage
 endif
 ifneq (,$(filter ${DEBUG},YES yes y Y 1))
 SHARED_MODULES_RELEASE_TYPE=-DCMAKE_BUILD_TYPE=Debug
 GTEST_RELEASE_TYPE=-DCMAKE_BUILD_TYPE=Debug
 SYSINFO_RELEASE_TYPE=-DCMAKE_BUILD_TYPE=Debug
-WAZUH_RELEASE_TYPE=-DCMAKE_BUILD_TYPE=Debug
+CYB3RHQ_RELEASE_TYPE=-DCMAKE_BUILD_TYPE=Debug
 endif
 
 ifeq (${COVERITY}, YES)
@@ -125,8 +125,8 @@ ONEWAY?=no
 CLEANFULL?=no
 
 DEFINES=-DOSSECHIDS
-DEFINES+=-DUSER=\"${WAZUH_USER}\"
-DEFINES+=-DGROUPGLOBAL=\"${WAZUH_GROUP}\"
+DEFINES+=-DUSER=\"${CYB3RHQ_USER}\"
+DEFINES+=-DGROUPGLOBAL=\"${CYB3RHQ_GROUP}\"
 
 DEFINES+=-D${uname_S}
 ifeq (${uname_S},Linux)
@@ -188,8 +188,8 @@ OSSEC_LDFLAGS+=-L${DBSYNC}build/lib
 OSSEC_LDFLAGS+=-L${RSYNC}build/lib
 
 ifeq (${TARGET},server)
-	WAZUH_LIBS+=-lrouter
-	WAZUH_LDFLAGS+=-Lbuild/shared_modules/router
+	CYB3RHQ_LIBS+=-lrouter
+	CYB3RHQ_LDFLAGS+=-Lbuild/shared_modules/router
 endif
 
 ifneq (,$(filter ${CLEANFULL},YES yes y Y 1))
@@ -389,12 +389,12 @@ help: failtarget
 	@echo "General options: "
 	@echo "   make V=yes                   						Display full compiler messages. Allowed values are 1, yes, YES, y and Y, otherwise, the flag is ignored"
 	@echo "   make DEBUG=yes               						Build with symbols and without optimization. Allowed values are 1, yes, YES, y and Y, otherwise, the flag is ignored"
-	@echo "   make DEBUGAD=yes             						Enables extra debugging logging in wazuh-analysisd. Allowed values are 1, yes, YES, y and Y, otherwise, the flag is ignored"
-	@echo "   make INSTALLDIR=/path        						Wazuh's installation path. Mandatory when compiling the python interpreter from sources using PYTHON_SOURCE."
+	@echo "   make DEBUGAD=yes             						Enables extra debugging logging in cyb3rhq-analysisd. Allowed values are 1, yes, YES, y and Y, otherwise, the flag is ignored"
+	@echo "   make INSTALLDIR=/path        						Cyb3rhq's installation path. Mandatory when compiling the python interpreter from sources using PYTHON_SOURCE."
 	@echo "   make ONEWAY=yes              						Disables manager's ACK towards agent. It allows connecting agents without backward connection from manager. Allowed values are 1, yes, YES, y and Y, otherwise, the flag is ignored"
 	@echo "   make CLEANFULL=yes           						Makes the alert mailing subject clear in the format: '<location> - <level> - <description>'. Allowed values are 1, yes, YES, y and Y, otherwise, the flag is ignored"
-	@echo "   make RESOURCES_URL           						Set the Wazuh resources URL"
-	@echo "   make EXTERNAL_SRC_ONLY=yes   						Combined with 'deps', it downloads only the external source code to be compiled as part of Wazuh building."
+	@echo "   make RESOURCES_URL           						Set the Cyb3rhq resources URL"
+	@echo "   make EXTERNAL_SRC_ONLY=yes   						Combined with 'deps', it downloads only the external source code to be compiled as part of Cyb3rhq building."
 	@echo "   make USE_ZEROMQ=yes          						Build with zeromq support. Allowed values are auto, 1, yes, YES, y and Y, otherwise, the flag is ignored"
 	@echo "   make USE_PRELUDE=yes         						Build with prelude support. Allowed values are auto, 1, yes, YES, y and Y, otherwise, the flag is ignored"
 	@echo "   make USE_INOTIFY=yes         						Build with inotify support. Allowed values are auto, 1, yes, YES, y and Y, otherwise, the flag is ignored"
@@ -422,8 +422,8 @@ help: failtarget
 	@echo "   make USE_GEOIP=yes           Build with GeoIP support. Allowed values are auto 1, yes, YES, y and Y, otherwise, the flag is ignored"
 	@echo
 	@echo "User options: "
-	@echo "   make WAZUH_GROUP=wazuh       Set wazuh group"
-	@echo "   make WAZUH_USER=wazuh        Set wazuh user"
+	@echo "   make CYB3RHQ_GROUP=cyb3rhq       Set cyb3rhq group"
+	@echo "   make CYB3RHQ_USER=cyb3rhq        Set cyb3rhq user"
 	@echo
 	@echo "Examples: Client with debugging enabled"
 	@echo "   make TARGET=server DEBUG=yes"
@@ -444,8 +444,8 @@ settings:
 	@echo "    EXTERNAL_SRC_ONLY:  ${EXTERNAL_SRC_ONLY}"
 	@echo "    HTTP_REQUEST_BRANCH:${HTTP_REQUEST_BRANCH}"
 	@echo "User settings:"
-	@echo "    WAZUH_GROUP:        ${WAZUH_GROUP}"
-	@echo "    WAZUH_USER:         ${WAZUH_USER}"
+	@echo "    CYB3RHQ_GROUP:        ${CYB3RHQ_GROUP}"
+	@echo "    CYB3RHQ_USER:         ${CYB3RHQ_USER}"
 	@echo "USE settings:"
 	@echo "    USE_ZEROMQ:         ${USE_ZEROMQ}"
 	@echo "    USE_GEOIP:          ${USE_GEOIP}"
@@ -473,17 +473,17 @@ settings:
 	@echo "    CC                ${CC}"
 	@echo "    MAKE              ${MAKE}"
 
-BUILD_SERVER+=wazuh-keystore
+BUILD_SERVER+=cyb3rhq-keystore
 
 BUILD_CMAKE_PROJECTS+=build_sysinfo
 BUILD_CMAKE_PROJECTS+=build_shared_modules
-BUILD_CMAKE_PROJECTS+=build_wazuh_cmake
+BUILD_CMAKE_PROJECTS+=build_cyb3rhq_cmake
 
-${WAZUH_LIB_OUTPUT_PATH}${LIBSTDCPP_NAME}: ${libstdc++_path}
+${CYB3RHQ_LIB_OUTPUT_PATH}${LIBSTDCPP_NAME}: ${libstdc++_path}
 	cp $< $@
 	${STRIP_TOOL} -x $@
 
-${WAZUH_LIB_OUTPUT_PATH}${LIBGCC_S_NAME}: ${libgcc_s_path}
+${CYB3RHQ_LIB_OUTPUT_PATH}${LIBGCC_S_NAME}: ${libgcc_s_path}
 	cp $< $@
 	${STRIP_TOOL} -x $@
 
@@ -969,7 +969,7 @@ external-precompiled/%.tar.gz:
 endif
 
 # Shared tools
-HTTP_REQUEST_URL := https://github.com/wazuh/wazuh-http-request/tarball/$(HTTP_REQUEST_BRANCH)
+HTTP_REQUEST_URL := https://github.com/cyb3rhq/cyb3rhq-http-request/tarball/$(HTTP_REQUEST_BRANCH)
 
 shared_modules/http-request.tar.gz:
 	find $(patsubst %.tar.gz,%,$@) -type f -exec false {} + &&\
@@ -982,9 +982,9 @@ shared_modules/http-request.tar.gz:
 #### OSSEC Libs ####
 ####################
 
-WAZUHEXT_LIB = libwazuhext.$(SHARED)
-WAZUH_LIB = libwazuhshared.$(SHARED)
-BUILD_LIBS = libwazuh.a $(WAZUHEXT_LIB)
+CYB3RHQEXT_LIB = libcyb3rhqext.$(SHARED)
+CYB3RHQ_LIB = libcyb3rhqshared.$(SHARED)
+BUILD_LIBS = libcyb3rhq.a $(CYB3RHQEXT_LIB)
 
 $(BUILD_SERVER) $(BUILD_AGENT) : $(BUILD_LIBS)
 
@@ -1038,17 +1038,17 @@ wrappers_linux_o := $(wrappers_linux_c:.c=.o)
 wrappers_posix_c := $(wildcard unit_tests/wrappers/posix/*.c)
 wrappers_posix_o := $(wrappers_posix_c:.c=.o)
 
-wrappers_wazuh_c := $(wildcard unit_tests/wrappers/wazuh/*.c)
-wrappers_wazuh_o := $(wrappers_wazuh_c:.c=.o)
+wrappers_cyb3rhq_c := $(wildcard unit_tests/wrappers/cyb3rhq/*.c)
+wrappers_cyb3rhq_o := $(wrappers_cyb3rhq_c:.c=.o)
 
-wrappers_wazuh_os_crypto_c := $(wildcard unit_tests/wrappers/wazuh/os_crypto/*.c)
-wrappers_wazuh_os_crypto_o := $(wrappers_wazuh_os_crypto_c:.c=.o)
+wrappers_cyb3rhq_os_crypto_c := $(wildcard unit_tests/wrappers/cyb3rhq/os_crypto/*.c)
+wrappers_cyb3rhq_os_crypto_o := $(wrappers_cyb3rhq_os_crypto_c:.c=.o)
 
-wrappers_data_provider_c := $(wildcard unit_tests/wrappers/wazuh/data_provider/*.c)
+wrappers_data_provider_c := $(wildcard unit_tests/wrappers/cyb3rhq/data_provider/*.c)
 wrappers_data_provider_o := $(wrappers_data_provider_c:.c=.o)
 
-wrappers_wazuh_shared_modules_c := $(wildcard unit_tests/wrappers/wazuh/shared_modules/*.c)
-wrappers_wazuh_shared_modules_o := $(wrappers_wazuh_shared_modules_c:.c=.o)
+wrappers_cyb3rhq_shared_modules_c := $(wildcard unit_tests/wrappers/cyb3rhq/shared_modules/*.c)
+wrappers_cyb3rhq_shared_modules_o := $(wrappers_cyb3rhq_shared_modules_c:.c=.o)
 
 ifneq (,$(filter ${TEST},YES yes y Y 1))
 	OSSEC_CFLAGS+=${CFLAGS_TEST}
@@ -1065,31 +1065,31 @@ ifneq (,$(filter ${TEST},YES yes y Y 1))
 	UNIT_TEST_WRAPPERS+=${wrappers_externals_pcre2_o}
 	UNIT_TEST_WRAPPERS+=${wrappers_libc_o}
 	UNIT_TEST_WRAPPERS+=${wrappers_posix_o}
-	UNIT_TEST_WRAPPERS+=${wrappers_wazuh_o}
-	UNIT_TEST_WRAPPERS+=${wrappers_wazuh_os_crypto_o}
-	UNIT_TEST_WRAPPERS+=${wrappers_wazuh_os_regex_o}
-	UNIT_TEST_WRAPPERS+=${wrappers_wazuh_os_xml_o}
+	UNIT_TEST_WRAPPERS+=${wrappers_cyb3rhq_o}
+	UNIT_TEST_WRAPPERS+=${wrappers_cyb3rhq_os_crypto_o}
+	UNIT_TEST_WRAPPERS+=${wrappers_cyb3rhq_os_regex_o}
+	UNIT_TEST_WRAPPERS+=${wrappers_cyb3rhq_os_xml_o}
 	UNIT_TEST_WRAPPERS+=${wrappers_data_provider_o}
 	UNIT_TEST_WRAPPERS+=${wrappers_externals_audit_o}
 	UNIT_TEST_WRAPPERS+=${wrappers_externals_procpc_o}
 	UNIT_TEST_WRAPPERS+=${wrappers_linux_o}
-	UNIT_TEST_WRAPPERS+=${wrappers_wazuh_shared_modules_o}
+	UNIT_TEST_WRAPPERS+=${wrappers_cyb3rhq_shared_modules_o}
 	
 endif #TEST
 
 #### Config ##########
 
-build_shared_modules: $(WAZUHEXT_LIB)
+build_shared_modules: $(CYB3RHQEXT_LIB)
 	cd ${DBSYNC} && mkdir -p build && cd build && cmake ${CMAKE_OPTS} ${DBSYNC_TEST} ${SHARED_MODULES_RELEASE_TYPE} .. && ${MAKE}
 	cd ${RSYNC} && mkdir -p build && cd build && cmake ${CMAKE_OPTS} ${RSYNC_TEST} ${SHARED_MODULES_RELEASE_TYPE} .. && ${MAKE}
 
 #### Sysinfo ##
-build_sysinfo: $(WAZUHEXT_LIB)
+build_sysinfo: $(CYB3RHQEXT_LIB)
 	cd ${SYSINFO} && mkdir -p build && cd build && cmake ${CMAKE_OPTS} ${SYSINFO_OS} ${SYSINFO_TEST} ${SYSINFO_RELEASE_TYPE} .. && ${MAKE}
 
-#### Wazuh cmake ###
-build_wazuh_cmake: $(WAZUHEXT_LIB) $(EXTERNAL_LIBS_NO_WHOLE) 
-	mkdir -p build && cd build && cmake .. -DTARGET=${TARGET} ${CMAKE_OPTS} ${WAZUH_RELEASE_TYPE} ${WAZUH_TEST} && ${MAKE}
+#### Cyb3rhq cmake ###
+build_cyb3rhq_cmake: $(CYB3RHQEXT_LIB) $(EXTERNAL_LIBS_NO_WHOLE) 
+	mkdir -p build && cd build && cmake .. -DTARGET=${TARGET} ${CMAKE_OPTS} ${CYB3RHQ_RELEASE_TYPE} ${CYB3RHQ_TEST} && ${MAKE}
 
 #### crypto ##########
 
@@ -1129,31 +1129,31 @@ crypto_o := ${crypto_blowfish_o} \
 					 ${crypto_sha512_o} \
 					 ${crypto_aes_o} \
 
-#### libwazuh #########
+#### libcyb3rhq #########
 
-libwazuh.a: ${crypto_o} ${os_zlib_o} ${UNIT_TEST_WRAPPERS}
+libcyb3rhq.a: ${crypto_o} ${os_zlib_o} ${UNIT_TEST_WRAPPERS}
 	${OSSEC_LINK} $@ $^
 	${OSSEC_RANLIB} $@
 
-### libwazuhext #########
-$(WAZUHEXT_LIB): $(EXTERNAL_LIBS)
+### libcyb3rhqext #########
+$(CYB3RHQEXT_LIB): $(EXTERNAL_LIBS)
 	$(OSSEC_SHARED) $(OSSEC_CFLAGS) -o $@ -Wl,--whole-archive $^ -Wl,--no-whole-archive ${OSSEC_LIBS}
 
-### libwazuhshared.so #########
-$(WAZUH_LIB): $(WAZUHEXT_LIB) $(AR_PROGRAMS_DEPS)
+### libcyb3rhqshared.so #########
+$(CYB3RHQ_LIB): $(CYB3RHQEXT_LIB) $(AR_PROGRAMS_DEPS)
 	$(OSSEC_SHARED) $(OSSEC_CFLAGS) -o $@ -Wl,--whole-archive $^ -Wl,--no-whole-archive ${OSSEC_LIBS}
 
-### wazuh-gtest-gmock ###
+### cyb3rhq-gtest-gmock ###
 
 build_gtest:
 	cd $(EXTERNAL_GOOGLE_TEST) && mkdir -p build && cd build && cmake .. ${CMAKE_OPTS} ${GTEST_RELEASE_TYPE}  -DBUILD_GMOCK=ON -DBUILD_SHARED_LIBS=0 && ${MAKE} && cp -r lib ..
 
-### wazuh-google-benchmark ###
+### cyb3rhq-google-benchmark ###
 
 build_benchmark:
 	cd $(EXTERNAL_GOOGLE_BENCHMARK) && mkdir -p build && cd build && cmake .. -DBENCHMARK_ENABLE_TESTING=0 ${CMAKE_OPTS} && ${MAKE}
 
-### wazuh-python ###
+### cyb3rhq-python ###
 
 WPYTHON_DIR := ${INSTALLDIR}/framework/python
 OPTIMIZE_CPYTHON?=no
@@ -1172,14 +1172,14 @@ ifeq (,${INSTALLDIR})
 endif
 
 ifeq (,$(wildcard ${EXTERNAL_CPYTHON}/python))
-	export WPATH_LIB="'\$$\$$ORIGIN/../../../lib'" && export SOURCE_PATH=${ROUTE_PATH} && export WAZUH_FFI_PATH=${EXTERNAL_LIBFFI} && export LD_LIBRARY_PATH=${ROUTE_PATH} && cd ${EXTERNAL_CPYTHON} && ./configure --prefix="${WPYTHON_DIR}" --libdir="${WPYTHON_DIR}/lib" --enable-shared --with-openssl="${ROUTE_PATH}/${EXTERNAL_OPENSSL}" -L${ROUTE_PATH} -lwazuhext -Wl,-rpath,'\$$\$$ORIGIN/../../../lib',--disable-new-dtags" CPPFLAGS="-I${ROUTE_PATH}/${EXTERNAL_OPENSSL}" $(CPYTHON_FLAGS) && ${MAKE}
+	export WPATH_LIB="'\$$\$$ORIGIN/../../../lib'" && export SOURCE_PATH=${ROUTE_PATH} && export CYB3RHQ_FFI_PATH=${EXTERNAL_LIBFFI} && export LD_LIBRARY_PATH=${ROUTE_PATH} && cd ${EXTERNAL_CPYTHON} && ./configure --prefix="${WPYTHON_DIR}" --libdir="${WPYTHON_DIR}/lib" --enable-shared --with-openssl="${ROUTE_PATH}/${EXTERNAL_OPENSSL}" -L${ROUTE_PATH} -lcyb3rhqext -Wl,-rpath,'\$$\$$ORIGIN/../../../lib',--disable-new-dtags" CPPFLAGS="-I${ROUTE_PATH}/${EXTERNAL_OPENSSL}" $(CPYTHON_FLAGS) && ${MAKE}
 endif
 
-build_python: $(WAZUHEXT_LIB)
+build_python: $(CYB3RHQEXT_LIB)
 
 install_python:
 ifneq (,$(wildcard ${EXTERNAL_CPYTHON}))
-	cd ${EXTERNAL_CPYTHON} && export WPATH_LIB=${INSTALLDIR}/lib && export SOURCE_PATH=${ROUTE_PATH} && export WAZUH_FFI_PATH=${EXTERNAL_LIBFFI} && ${MAKE} install
+	cd ${EXTERNAL_CPYTHON} && export WPATH_LIB=${INSTALLDIR}/lib && export SOURCE_PATH=${ROUTE_PATH} && export CYB3RHQ_FFI_PATH=${EXTERNAL_LIBFFI} && ${MAKE} install
 else
 	mkdir -p ${WPYTHON_DIR}
 	cp external/${WPYTHON_TAR} ${WPYTHON_DIR}/${WPYTHON_TAR} && ${TAR} ${WPYTHON_DIR}/${WPYTHON_TAR} -C ${WPYTHON_DIR} && rm -rf ${WPYTHON_DIR}/${WPYTHON_TAR}
@@ -1196,7 +1196,7 @@ endif
 
 install_framework: install_python
 	cd ../framework && ${WPYTHON_DIR}/bin/python3 -m pip install . --use-pep517 --prefix=${WPYTHON_DIR} && rm -rf build/
-	chown -R root:${WAZUH_GROUP} ${WPYTHON_DIR}
+	chown -R root:${CYB3RHQ_GROUP} ${WPYTHON_DIR}
 	chmod -R o=- ${WPYTHON_DIR}
 
 install_api: install_python
@@ -1211,7 +1211,7 @@ install_mitre: install_python
 ####################
 #### test ##########
 ####################
-CFLAGS_TEST=-g -O0 --coverage -DWAZUH_UNIT_TESTING
+CFLAGS_TEST=-g -O0 --coverage -DCYB3RHQ_UNIT_TESTING
 # Use sanitizers only on linux
 ifeq (${uname_S},Linux)
 CFLAGS_TEST+= -fsanitize=address -fsanitize=undefined
@@ -1252,13 +1252,13 @@ unit_tests/wrappers/linux/%.o: unit_tests/wrappers/linux/%.c
 unit_tests/wrappers/posix/%.o: unit_tests/wrappers/posix/%.c
 	${OSSEC_CC} ${OSSEC_CFLAGS} ${DEFINES_EVENTCHANNEL} -c $^ -o $@
 
-unit_tests/wrappers/wazuh/%.o: unit_tests/wrappers/wazuh/%.c
+unit_tests/wrappers/cyb3rhq/%.o: unit_tests/wrappers/cyb3rhq/%.c
 	${OSSEC_CC} ${OSSEC_CFLAGS} ${DEFINES_EVENTCHANNEL} -c $^ -o $@
 
-unit_tests/wrappers/wazuh/os_crypto/%.o: unit_tests/wrappers/wazuh/os_crypto/%.c
+unit_tests/wrappers/cyb3rhq/os_crypto/%.o: unit_tests/wrappers/cyb3rhq/os_crypto/%.c
 	${OSSEC_CC} ${OSSEC_CFLAGS} ${DEFINES_EVENTCHANNEL} -c $^ -o $@
 
-unit_tests/wrappers/wazuh/os_regex/%.o: unit_tests/wrappers/wazuh/os_regex/%.c
+unit_tests/wrappers/cyb3rhq/os_regex/%.o: unit_tests/wrappers/cyb3rhq/os_regex/%.c
 	${OSSEC_CC} ${OSSEC_CFLAGS} ${DEFINES_EVENTCHANNEL} -c $^ -o $@
 
 .PHONY: test
@@ -1342,7 +1342,7 @@ clean-internals: clean-unit-tests
 	rm -f ${crypto_o}
 	rm -f ${SELINUX_MODULE}
 	rm -f ${SELINUX_POLICY}
-	rm -f $(WAZUH_LIB)
+	rm -f $(CYB3RHQ_LIB)
 	rm -rf $(DBSYNC)build
 	rm -rf $(RSYNC)build
 	rm -rf $(SHARED_MODULES)utils/flatbuffers/include/
@@ -1350,10 +1350,10 @@ clean-internals: clean-unit-tests
 	rm -rf $(SYSINFO)build
 	rm -rf ${SHARED_MODULES}http-request/build
 	rm -rf build
-	rm -rf libwazuhext
+	rm -rf libcyb3rhqext
 	rm -rf libstdc++.so.6
 	rm -rf libgcc_s.so.1
-	rm -f libwazuh.a
+	rm -f libcyb3rhq.a
 
 
 clean-unit-tests:
@@ -1369,10 +1369,10 @@ clean-unit-tests:
 	rm -f ${wrappers_libc_o}
 	rm -f ${wrappers_linux_o}
 	rm -f ${wrappers_posix_o}
-	rm -f ${wrappers_wazuh_o}
-	rm -f ${wrappers_wazuh_os_crypto_o}
-	rm -f ${wrappers_wazuh_os_regex_o}
-	rm -f ${wrappers_wazuh_os_xml_o}
+	rm -f ${wrappers_cyb3rhq_o}
+	rm -f ${wrappers_cyb3rhq_os_crypto_o}
+	rm -f ${wrappers_cyb3rhq_os_regex_o}
+	rm -f ${wrappers_cyb3rhq_os_xml_o}
 	rm -f ${wrappers_data_provider_o}
 
 clean-framework:

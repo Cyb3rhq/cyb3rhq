@@ -12,8 +12,8 @@
 
 namespace api::kvdb::handlers
 {
-namespace eKVDB = ::com::wazuh::api::engine::kvdb;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eKVDB = ::com::cyb3rhq::api::engine::kvdb;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 constexpr auto MESSAGE_DB_NOT_EXISTS = "The KVDB '{}' does not exist.";
 constexpr auto MESSAGE_MISSING_NAME = "Missing /name";
@@ -29,7 +29,7 @@ api::HandlerSync managerGet(std::shared_ptr<kvdbManager::IKVDBManager> kvdbManag
     {
         using RequestType = eKVDB::managerGet_Request;
         using ResponseType = eKVDB::managerGet_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -51,8 +51,8 @@ api::HandlerSync managerGet(std::shared_ptr<kvdbManager::IKVDBManager> kvdbManag
 
         eResponse.set_status(eEngine::ReturnStatus::OK);
 
-        // Adapt the response to wazuh api
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        // Adapt the response to cyb3rhq api
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -62,7 +62,7 @@ api::HandlerSync managerPost(std::shared_ptr<kvdbManager::IKVDBManager> kvdbMana
     {
         using RequestType = eKVDB::managerPost_Request;
         using ResponseType = eEngine::GenericStatus_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -103,7 +103,7 @@ api::HandlerSync managerPost(std::shared_ptr<kvdbManager::IKVDBManager> kvdbMana
             return ::api::adapter::genericError<ResponseType>(message);
         }
 
-        // Adapt the response to wazuh api
+        // Adapt the response to cyb3rhq api
         return ::api::adapter::genericSuccess<ResponseType>();
     };
 }
@@ -114,7 +114,7 @@ api::HandlerSync managerDelete(std::shared_ptr<kvdbManager::IKVDBManager> kvdbMa
     {
         using RequestType = eKVDB::managerDelete_Request;
         using ResponseType = eEngine::GenericStatus_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -153,7 +153,7 @@ api::HandlerSync managerDump(std::shared_ptr<kvdbManager::IKVDBManager> kvdbMana
     {
         using RequestType = eKVDB::managerDump_Request;
         using ResponseType = eKVDB::managerDump_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -221,8 +221,8 @@ api::HandlerSync managerDump(std::shared_ptr<kvdbManager::IKVDBManager> kvdbMana
             entries->Add(std::move(entry));
         }
 
-        // Adapt the response to wazuh api
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        // Adapt the response to cyb3rhq api
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -233,7 +233,7 @@ api::HandlerSync dbGet(std::shared_ptr<kvdbManager::IKVDBManager> kvdbManager, c
     {
         using RequestType = eKVDB::dbGet_Request;
         using ResponseType = eKVDB::dbGet_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -286,8 +286,8 @@ api::HandlerSync dbGet(std::shared_ptr<kvdbManager::IKVDBManager> kvdbManager, c
         eResponse.mutable_value()->CopyFrom(json_value);
         eResponse.set_status(eEngine::ReturnStatus::OK);
 
-        // Adapt the response to wazuh api
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        // Adapt the response to cyb3rhq api
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -297,7 +297,7 @@ api::HandlerSync dbDelete(std::shared_ptr<kvdbManager::IKVDBManager> kvdbManager
     {
         using RequestType = eKVDB::dbDelete_Request;
         using ResponseType = eEngine::GenericStatus_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -348,7 +348,7 @@ api::HandlerSync dbPut(std::shared_ptr<kvdbManager::IKVDBManager> kvdbManager, c
     {
         using RequestType = eKVDB::dbPut_Request;
         using ResponseType = eEngine::GenericStatus_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -415,7 +415,7 @@ api::HandlerSync dbSearch(std::shared_ptr<kvdbManager::IKVDBManager> kvdbManager
     {
         using RequestType = eKVDB::dbSearch_Request;
         using ResponseType = eKVDB::dbSearch_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -485,8 +485,8 @@ api::HandlerSync dbSearch(std::shared_ptr<kvdbManager::IKVDBManager> kvdbManager
             entries->Add(std::move(entry));
         }
 
-        // Adapt the response to wazuh api
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        // Adapt the response to cyb3rhq api
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 

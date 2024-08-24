@@ -16,8 +16,8 @@
 
 namespace cmd::policy
 {
-namespace ePolicy = ::com::wazuh::api::engine::policy;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace ePolicy = ::com::cyb3rhq::api::engine::policy;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 namespace
 {
@@ -34,15 +34,15 @@ struct Options
 };
 
 // Default assets
-const std::vector<std::pair<std::string, std::string>> DEFAULT_ASSETS = {{"integration/wazuh-core/0", "system"},
-                                                                         {"integration/syslog/0", "wazuh"},
-                                                                         {"integration/system/0", "wazuh"},
-                                                                         {"integration/windows/0", "wazuh"},
-                                                                         {"integration/apache-http/0", "wazuh"},
-                                                                         {"integration/suricata/0", "wazuh"}};
+const std::vector<std::pair<std::string, std::string>> DEFAULT_ASSETS = {{"integration/cyb3rhq-core/0", "system"},
+                                                                         {"integration/syslog/0", "cyb3rhq"},
+                                                                         {"integration/system/0", "cyb3rhq"},
+                                                                         {"integration/windows/0", "cyb3rhq"},
+                                                                         {"integration/apache-http/0", "cyb3rhq"},
+                                                                         {"integration/suricata/0", "cyb3rhq"}};
 // Default namespaces parent
 const std::vector<std::pair<std::string, std::string>> DEFAULT_PARENTS = {{"user", "decoder/integrations/0"},
-                                                                          {"wazuh", "decoder/integrations/0"}};
+                                                                          {"cyb3rhq", "decoder/integrations/0"}};
 
 #include <memory> // for std::unique_ptr
 
@@ -85,9 +85,9 @@ void runRemovePolicy(std::shared_ptr<apiclnt::Client> client, const std::string&
     eRequest.set_policy(policyName);
 
     // Call API, any exception will be thrown
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 };
 
 void runAddPolicy(std::shared_ptr<apiclnt::Client> client, const std::string& policyName, bool forceEmpty)
@@ -101,9 +101,9 @@ void runAddPolicy(std::shared_ptr<apiclnt::Client> client, const std::string& po
     eRequest.set_policy(policyName);
 
     // Call API, any exception will be thrown
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // If forceEmpty is false, add default assets and parents
     if (!forceEmpty)
@@ -113,9 +113,9 @@ void runAddPolicy(std::shared_ptr<apiclnt::Client> client, const std::string& po
             auto defaultRequests = getDefaultConfigRequest(policyName);
             for (auto& [configCommand, configRequest] : defaultRequests)
             {
-                const auto req = utils::apiAdapter::toWazuhRequest(configCommand, details::ORIGIN_NAME, *configRequest);
+                const auto req = utils::apiAdapter::toCyb3rhqRequest(configCommand, details::ORIGIN_NAME, *configRequest);
                 const auto responseStr = client->send(req);
-                const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(responseStr);
+                const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(responseStr);
             }
         }
         catch (const cmd::ClientException& e)
@@ -148,9 +148,9 @@ void runGetPolicy(std::shared_ptr<apiclnt::Client> client,
     }
 
     // Call API, any exception will be thrown
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print response
     std::cout << eResponse.data() << std::endl;
@@ -166,9 +166,9 @@ void runListPolicies(std::shared_ptr<apiclnt::Client> client)
     RequestType eRequest;
 
     // Call API, any exception will be thrown
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print response
     auto policies = std::vector(eResponse.data().begin(), eResponse.data().end());
@@ -191,9 +191,9 @@ void runAddAsset(std::shared_ptr<apiclnt::Client> client,
     eRequest.set_asset(assetName);
 
     // Call API, any exception will be thrown
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print response
     if (!eResponse.warning().empty())
@@ -218,9 +218,9 @@ void runRemoveAsset(std::shared_ptr<apiclnt::Client> client,
     eRequest.set_asset(assetName);
 
     // Call API, any exception will be thrown
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print response
     if (!eResponse.warning().empty())
@@ -243,9 +243,9 @@ void runListAssets(std::shared_ptr<apiclnt::Client> client,
     eRequest.set_namespace_(namespaceId);
 
     // Call API, any exception will be thrown
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print response
     auto assets = std::vector(eResponse.data().begin(), eResponse.data().end());
@@ -264,9 +264,9 @@ void runCleanDeletedAssets(std::shared_ptr<apiclnt::Client> client, const std::s
     eRequest.set_policy(policyName);
 
     // Call API, any exception will be thrown
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print response
     std::cout << eResponse.data() << std::endl;
@@ -286,9 +286,9 @@ void runGetDefaultParent(std::shared_ptr<apiclnt::Client> client,
     eRequest.set_namespace_(namespaceId);
 
     // Call API, any exception will be thrown
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print response
     for (const auto& parent : eResponse.data())
@@ -313,9 +313,9 @@ void runSetDefaultParent(std::shared_ptr<apiclnt::Client> client,
     eRequest.set_parent(parentAssetName);
 
     // Call API, any exception will be thrown
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print response
     if (!eResponse.warning().empty())
@@ -340,9 +340,9 @@ void runRemoveDefaultParent(std::shared_ptr<apiclnt::Client> client,
     eRequest.set_parent(parentAssetName);
 
     // Call API, any exception will be thrown
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print response
     if (!eResponse.warning().empty())
@@ -362,9 +362,9 @@ void listNamespaces(std::shared_ptr<apiclnt::Client> client, const std::string& 
     eRequest.set_policy(policyName);
 
     // Call API, any exception will be thrown
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print response
     auto namespaces = std::vector(eResponse.data().begin(), eResponse.data().end());

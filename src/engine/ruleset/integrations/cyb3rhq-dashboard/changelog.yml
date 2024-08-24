@@ -1,0 +1,4 @@
+items:
+    - version: 0.0.1-dev
+      short: Created integration for Cyb3rhq Dashboard
+      pr: "[#17633](https://github.com/cyb3rhq/cyb3rhq/pull/17633)"

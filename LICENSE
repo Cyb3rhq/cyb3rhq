@@ -1,12 +1,12 @@
 
- Portions Copyright (C) 2015, Wazuh Inc.
+ Portions Copyright (C) 2015, Cyb3rhq Inc.
  Based on work Copyright (C) 2003 - 2013 Trend Micro, Inc.
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License (version 2) as
  published by the FSF - Free Software Foundation.
 
- Files in src/engine, dedicated to the Wazuh Engine, have a different 
+ Files in src/engine, dedicated to the Cyb3rhq Engine, have a different 
  copyright and are distributed under the AGPLv3 license. See LICENSE-engine 
  and COPYING-engine for more details.
 
@@ -22,27 +22,27 @@
  program which reference this file.
 
  Note that this license applies to the source code, as well as
- decoders, rules and any other data file included with Wazuh (unless
+ decoders, rules and any other data file included with Cyb3rhq (unless
  otherwise specified).
 
  For the purpose of this license, we consider an application to constitute a
  "derivative work" or a work based on this program if it does any of the
  following (list not exclusive):
 
-  * Integrates source code/data files from Wazuh.
-  * Includes Wazuh copyrighted material.
-  * Includes/integrates Wazuh into a proprietary executable installer.
+  * Integrates source code/data files from Cyb3rhq.
+  * Includes Cyb3rhq copyrighted material.
+  * Includes/integrates Cyb3rhq into a proprietary executable installer.
   * Links to a library or executes a program that does any of the above.
 
  This list is not exclusive, but just a clarification of our interpretation
  of derived works. These restrictions only apply if you actually redistribute
- Wazuh (or parts of it).
+ Cyb3rhq (or parts of it).
 
  We don't consider these to be added restrictions on top of the GPL,
  but just a clarification of how we interpret "derived works" as it
- applies to Wazuh. This is similar to the way Linus Torvalds has
+ applies to Cyb3rhq. This is similar to the way Linus Torvalds has
  announced his interpretation of how "derived works" applies to Linux kernel
- modules. Our interpretation refers only to Wazuh - we don't speak
+ modules. Our interpretation refers only to Cyb3rhq - we don't speak
  for any other GPL products.
 
   * As a special exception, the copyright holders give
@@ -58,7 +58,7 @@
   * version.  If you delete this exception statement from all source
   * files in the program, then also delete it here.
 
- Wazuh HIDS is distributed in the hope that it will be useful, but WITHOUT
+ Cyb3rhq HIDS is distributed in the hope that it will be useful, but WITHOUT
  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
  FITNESS FOR A PARTICULAR PURPOSE.
  See the GNU General Public License Version 2 below for more details.

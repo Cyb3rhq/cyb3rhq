@@ -125,7 +125,7 @@ public:
         base::Event event;
         try
         {
-            event = base::parseEvent::parseWazuhEvent(eventStr);
+            event = base::parseEvent::parseCyb3rhqEvent(eventStr);
             m_eventQueue->push(std::move(event));
         }
         catch (const std::exception& e)

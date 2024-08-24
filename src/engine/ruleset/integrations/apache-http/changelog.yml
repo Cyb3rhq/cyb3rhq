@@ -1,4 +1,4 @@
 items:
   - version: 1.0.0-dev
     short: Created integration for apache http server
-    pr: "[#16910](https://github.com/wazuh/wazuh/pull/16910)"
+    pr: "[#16910](https://github.com/cyb3rhq/cyb3rhq/pull/16910)"

@@ -6,7 +6,7 @@ metadata:
   title: Redis logs decoder
   description: Decoder for Linux redis logs
   author:
-    name: Wazuh Inc. info@wazuh.com
+    name: Cyb3rhq Inc. info@wazuh.com
     date: 2023-01-12
   references:
     - https://docs.rs/redis-module/latest/redis_module/logging/index.html
@@ -44,7 +44,7 @@ normalize:
       - fileset.name: log
       - input.type: log
       - service.type: redis
-      - wazuh.decoders: +array_append/redis
+      - cyb3rhq.decoders: +array_append/redis
   - check:
       - log.level: "."
     map:

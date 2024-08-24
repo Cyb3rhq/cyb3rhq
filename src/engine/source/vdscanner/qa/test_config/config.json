@@ -9,6 +9,6 @@
     },
     "clusterName":"cluster01",
     "clusterEnabled":false,
-    "managerNodeName": "wazuh-manager",
+    "managerNodeName": "cyb3rhq-manager",
     "managerDisabledScan": 1
 }

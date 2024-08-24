@@ -1,6 +1,6 @@
 {
     "index_patterns": [
-        "wazuh-alerts-5.x-*"
+        "cyb3rhq-alerts-5.x-*"
     ],
     "mappings": {
         "_meta": {

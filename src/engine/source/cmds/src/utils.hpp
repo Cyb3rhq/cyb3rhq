@@ -4,7 +4,7 @@
 #include <exception>
 #include <string>
 
-#include <base/utils/wazuhProtocol/wazuhProtocol.hpp>
+#include <base/utils/cyb3rhqProtocol/cyb3rhqProtocol.hpp>
 #include <eMessages/eMessage.h>
 #include <eMessages/engine.pb.h>
 #include <base/json.hpp>
@@ -14,23 +14,23 @@
 namespace cmd::utils
 {
 
-using wpResponse = base::utils::wazuhProtocol::WazuhResponse;
-using wpRequest = base::utils::wazuhProtocol::WazuhRequest;
+using wpResponse = base::utils::cyb3rhqProtocol::Cyb3rhqResponse;
+using wpRequest = base::utils::cyb3rhqProtocol::Cyb3rhqRequest;
 
 namespace apiAdapter
 {
 /**
- * @brief Converts an eMessage and command into a WazuhRequest.
+ * @brief Converts an eMessage and command into a Cyb3rhqRequest.
  *
  * @tparam T Type of the eMessage (protobuf message).
  * @param command Command to set in the request.
  * @param origin Origin to set in the request.
  * @param eMessage eMessage to serialize into the request.
- * @return base::utils::wazuhProtocol::WazuhRequest WazuhRequest containing the serialized eMessage.
+ * @return base::utils::cyb3rhqProtocol::Cyb3rhqRequest Cyb3rhqRequest containing the serialized eMessage.
  * @throw ClientException if the serialization fails.
  */
 template<typename T>
-wpRequest toWazuhRequest(const std::string& command, const std::string& origin, const T& eMessage)
+wpRequest toCyb3rhqRequest(const std::string& command, const std::string& origin, const T& eMessage)
 {
     // Check that T is derived from google::protobuf::Message
     static_assert(std::is_base_of<google::protobuf::Message, T>::value, "T must be a derived class of proto::Message");
@@ -48,26 +48,26 @@ wpRequest toWazuhRequest(const std::string& command, const std::string& origin, 
     // Create a JSON object from the JSON string
     auto params = json::Json {std::get<std::string>(res).c_str()};
 
-    // Create and return the WazuhRequest object
+    // Create and return the Cyb3rhqRequest object
     return wpRequest::create(command, origin, params);
 }
 
 /**
- * @brief Parses the response data from a Wazuh API call into a protocol buffer (eMessage of type T).
+ * @brief Parses the response data from a Cyb3rhq API call into a protocol buffer (eMessage of type T).
  *
  * Throws a ClientException if the API call was unsuccessful or if there was an error parsing the response data into
  * the protocol buffer message.
  *
  * @tparam T Type of the expected protocol buffer message
- * @param wResponse The response from the Wazuh API call
+ * @param wResponse The response from the Cyb3rhq API call
  * @return T The protocol buffer message of type T parsed from the response data
  * @throw ClientException if the API call was unsuccessful or if there was an error parsing the response data into
  */
 template<typename T>
-T fromWazuhResponse(const wpResponse& wResponse)
+T fromCyb3rhqResponse(const wpResponse& wResponse)
 {
     // The status code used in the protocol buffer message to indicate success
-    using StatusCode = ::com::wazuh::api::engine::ReturnStatus;
+    using StatusCode = ::com::cyb3rhq::api::engine::ReturnStatus;
 
     // Ensure T is derived from google::protobuf::Message
     static_assert(std::is_base_of<google::protobuf::Message, T>::value, "T must be a derived class of proto::Message");
@@ -83,10 +83,10 @@ T fromWazuhResponse(const wpResponse& wResponse)
     static_assert(std::is_same_v<const std::string&, std::invoke_result_t<decltype(&T::error), T>>,
                   "T::error must return a string");
 
-    // Check if the Wazuh API call was successful
+    // Check if the Cyb3rhq API call was successful
     if (wResponse.error())
     {
-        // Throw an exception with the error message from the Wazuh response
+        // Throw an exception with the error message from the Cyb3rhq response
         throw ClientException(wResponse.message().value_or("Unknown error in response"),
                               ClientException::Type::WRESPONSE_ERROR);
     }

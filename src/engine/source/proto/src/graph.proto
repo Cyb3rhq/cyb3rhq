@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "engine.proto";
 
-package com.wazuh.api.engine.graph;
+package com.cyb3rhq.api.engine.graph;
 
 /***************************************************
  * Get a resource from graph

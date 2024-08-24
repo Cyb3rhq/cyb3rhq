@@ -14,7 +14,7 @@ constexpr int MINIMUM_EVENT_ALLOWED_LENGTH = 4;
 constexpr char FIRST_FULL_LOCATION_CHAR {'['};
 } // namespace
 
-Event parseWazuhEvent(const std::string& event)
+Event parseCyb3rhqEvent(const std::string& event)
 {
     int msgStartIndex {0};
 

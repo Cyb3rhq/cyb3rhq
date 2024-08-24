@@ -2,8 +2,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.3",
@@ -59,11 +59,11 @@
       "src_port": 46686,
       "timestamp": "2021-06-15T23:48:27.924120+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -73,8 +73,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.3",
@@ -130,11 +130,11 @@
       "src_port": 36993,
       "timestamp": "2021-06-15T23:48:27.924282+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -144,8 +144,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.15",
@@ -232,11 +232,11 @@
       "src_port": 53,
       "timestamp": "2021-06-15T23:48:27.950946+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -246,8 +246,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.15",
@@ -334,11 +334,11 @@
       "src_port": 53,
       "timestamp": "2021-06-15T23:48:27.957906+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -348,8 +348,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.3",
@@ -405,11 +405,11 @@
       "src_port": 50720,
       "timestamp": "2021-06-15T23:48:48.839495+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -419,8 +419,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.3",
@@ -476,11 +476,11 @@
       "src_port": 41979,
       "timestamp": "2021-06-15T23:48:48.839714+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -490,8 +490,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.15",
@@ -632,11 +632,11 @@
       "src_port": 53,
       "timestamp": "2021-06-15T23:48:48.901548+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -646,8 +646,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.15",
@@ -788,11 +788,11 @@
       "src_port": 53,
       "timestamp": "2021-06-15T23:48:48.902685+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -802,8 +802,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.3",
@@ -859,11 +859,11 @@
       "src_port": 44773,
       "timestamp": "2021-06-15T01:22:31.812655+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -873,8 +873,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.3",
@@ -930,11 +930,11 @@
       "src_port": 55246,
       "timestamp": "2021-06-15T01:22:31.812828+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -944,8 +944,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.15",
@@ -1016,11 +1016,11 @@
       "src_port": 53,
       "timestamp": "2021-06-15T01:22:31.846575+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -1030,8 +1030,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.15",
@@ -1105,11 +1105,11 @@
       "src_port": 53,
       "timestamp": "2021-06-15T01:22:31.846575+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -1119,8 +1119,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.15",
@@ -1194,11 +1194,11 @@
       "src_port": 53,
       "timestamp": "2021-06-15T01:22:31.846575+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -1208,8 +1208,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.15",
@@ -1283,11 +1283,11 @@
       "src_port": 53,
       "timestamp": "2021-06-15T01:22:31.846575+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -1297,8 +1297,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.15",
@@ -1372,11 +1372,11 @@
       "src_port": 53,
       "timestamp": "2021-06-15T01:22:31.846575+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -1386,8 +1386,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.15",
@@ -1458,11 +1458,11 @@
       "src_port": 53,
       "timestamp": "2021-06-15T01:22:31.847379+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -1472,8 +1472,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.15",
@@ -1547,11 +1547,11 @@
       "src_port": 53,
       "timestamp": "2021-06-15T01:22:31.847379+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -1561,8 +1561,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.15",
@@ -1636,11 +1636,11 @@
       "src_port": 53,
       "timestamp": "2021-06-15T01:22:31.847379+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -1650,8 +1650,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.15",
@@ -1725,11 +1725,11 @@
       "src_port": 53,
       "timestamp": "2021-06-15T01:22:31.847379+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -1739,8 +1739,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.15",
@@ -1814,11 +1814,11 @@
       "src_port": 53,
       "timestamp": "2021-06-15T01:22:31.847379+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -1828,8 +1828,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.3",
@@ -1885,11 +1885,11 @@
       "src_port": 48288,
       "timestamp": "2021-06-15T02:03:36.578089+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -1899,8 +1899,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.3",
@@ -1956,11 +1956,11 @@
       "src_port": 59203,
       "timestamp": "2021-06-15T02:03:36.578262+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -1970,8 +1970,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.15",
@@ -2101,11 +2101,11 @@
       "src_port": 53,
       "timestamp": "2021-06-15T02:03:36.619381+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -2115,8 +2115,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "10.0.2.15",
@@ -2246,11 +2246,11 @@
       "src_port": 53,
       "timestamp": "2021-06-15T02:03:36.626559+0000"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",

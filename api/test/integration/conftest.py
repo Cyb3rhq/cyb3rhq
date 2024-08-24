@@ -1,5 +1,5 @@
-# Copyright (C) 2015, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2015, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is a free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 
@@ -105,7 +105,7 @@ def build_and_up(env_mode: str, interval: int = 10, build: bool = True):
 
     if build:
         # Ping the current branch tarball used to build the manager image.
-        response = requests.get(f"https://github.com/wazuh/wazuh/tarball/{current_branch}")
+        response = requests.get(f"https://github.com/cyb3rhq/cyb3rhq/tarball/{current_branch}")
         if response.status_code == 404:
             pytest.fail("Current branch tarball doesn't exist")
         elif not response.ok:
@@ -119,7 +119,7 @@ def build_and_up(env_mode: str, interval: int = 10, build: bool = True):
         while retries < max_retries:
             if build:
                 build_process = subprocess.Popen(["docker", "compose", "--profile", env_mode,
-                    "build", "--build-arg", f"WAZUH_BRANCH={current_branch}",
+                    "build", "--build-arg", f"CYB3RHQ_BRANCH={current_branch}",
                     "--build-arg", f"ENV_MODE={env_mode}", "--no-cache"],
                     stdout=f_docker, stderr=subprocess.STDOUT, universal_newlines=True)
                 build_process.wait()
@@ -150,7 +150,7 @@ def down_env(env_mode: str):
 
 def check_health(node_type: str = 'manager', agents: list = None,
                  only_check_master_health: bool = False):
-    """Check the Wazuh nodes health.
+    """Check the Cyb3rhq nodes health.
 
     Parameters
     ----------
@@ -171,14 +171,14 @@ def check_health(node_type: str = 'manager', agents: list = None,
         nodes_to_check = ['master'] if only_check_master_health else env_cluster_nodes
         for node in nodes_to_check:
             health = subprocess.check_output(
-                f"docker inspect env-wazuh-{node}-1 -f '{{{{json .State.Health.Status}}}}'",
+                f"docker inspect env-cyb3rhq-{node}-1 -f '{{{{json .State.Health.Status}}}}'",
                 shell=True)
             if not health.startswith(b'"healthy"'):
                 return False
     elif node_type == 'agent':
         for agent in agents:
             health = subprocess.check_output(
-                f"docker inspect env-wazuh-agent{agent}-1 -f '{{{{json .State.Health.Status}}}}'",
+                f"docker inspect env-cyb3rhq-agent{agent}-1 -f '{{{{json .State.Health.Status}}}}'",
                 shell=True)
             if not health.startswith(b'"healthy"'):
                 return False
@@ -303,7 +303,7 @@ def rbac_custom_config_generator(module: str, rbac_mode: str):
 
 
 def save_logs(test_name: str):
-    """Save API, cluster and Wazuh logs from every cluster node and Wazuh logs from every agent if tests fail.
+    """Save API, cluster and Cyb3rhq logs from every cluster node and Cyb3rhq logs from every agent if tests fail.
     Save haproxy-lb log.
 
     Examples:
@@ -323,7 +323,7 @@ def save_logs(test_name: str):
         for log in logs:
             try:
                 subprocess.check_output(
-                    f"docker cp env-wazuh-{node}-1:{os.path.join(logs_path, log)} "
+                    f"docker cp env-cyb3rhq-{node}-1:{os.path.join(logs_path, log)} "
                     f"{os.path.join(test_logs_path, f'test_{test_name}-{node}-{log}')}",
                     shell=True)
             except subprocess.CalledProcessError:
@@ -333,7 +333,7 @@ def save_logs(test_name: str):
     for agent in agent_names:
         try:
             subprocess.check_output(
-                f"docker cp env-wazuh-{agent}-1:{os.path.join(logs_path, 'ossec.log')} "
+                f"docker cp env-cyb3rhq-{agent}-1:{os.path.join(logs_path, 'ossec.log')} "
                 f"{os.path.join(test_logs_path, f'test_{test_name}-{agent}-ossec.log')}",
                 shell=True)
         except subprocess.CalledProcessError:
@@ -406,7 +406,7 @@ def api_test(request: _pytest.fixtures.SubRequest):
 
         # Check if entrypoint was successful
         try:
-            error_message = subprocess.check_output(["docker", "exec", "-t", "env-wazuh-master-1", "sh", "-c",
+            error_message = subprocess.check_output(["docker", "exec", "-t", "env-cyb3rhq-master-1", "sh", "-c",
                                                      "cat /entrypoint_error"]).decode().strip()
             pytest.fail(error_message)
         except subprocess.CalledProcessError:
@@ -430,7 +430,7 @@ def get_health():
     health = "\nEnvironment final status\n"
     health += subprocess.check_output(
         "docker ps --format 'table {{.Names}}\t{{.RunningFor}}\t{{.Status}}'"
-        " --filter name=^env-wazuh",
+        " --filter name=^env-cyb3rhq",
         shell=True).decode()
     health += '\n'
 

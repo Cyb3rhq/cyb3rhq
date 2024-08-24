@@ -6,7 +6,7 @@ constexpr auto ROUTER_JSON {R"([])"};
 constexpr auto TESTER_JSON {R"([])"};
 
 constexpr auto POLICY_JSON {
-    R"({"name":"policy/wazuh/0","hash":"12403460954181119054","assets":["integration/wazuh-core-fake/0"]})"};
+    R"({"name":"policy/cyb3rhq/0","hash":"12403460954181119054","assets":["integration/cyb3rhq-core-fake/0"]})"};
 
 constexpr auto FILTER_JSON {R"({
     "name": "filter/allow-all/0"
@@ -20,7 +20,7 @@ constexpr auto EPS_JSON {
 })"};
 
 constexpr auto INTEGRATION_JSON {R"({
-"name": "integration/wazuh-core-fake/0",
+"name": "integration/cyb3rhq-core-fake/0",
 "decoders": ["decoder/fake/0"]}
 )"};
 
@@ -30,16 +30,16 @@ auto constexpr DECODER_JSON = R"e({
         {
         "map": [
             {
-            "wazuh.message": "I am an fake decoder"
+            "cyb3rhq.message": "I am an fake decoder"
             }
         ]
         }
     ]
     })e";
 
-auto constexpr WAZUH_LOGPAR_TYPES_JSON = R"({
+auto constexpr CYB3RHQ_LOGPAR_TYPES_JSON = R"({
     "fields": {
-        "wazuh.message": "text"
+        "cyb3rhq.message": "text"
     }
 }
 )";

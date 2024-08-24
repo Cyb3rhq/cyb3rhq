@@ -415,7 +415,7 @@ base::OptError Orchestrator::postStrEvent(std::string_view event)
     base::OptError err = std::nullopt;
     try
     {
-        base::Event ev = base::parseEvent::parseWazuhEvent(event.data());
+        base::Event ev = base::parseEvent::parseCyb3rhqEvent(event.data());
         this->postEvent(std::move(ev));
     }
     catch (const std::exception& e)
@@ -594,7 +594,7 @@ std::future<base::RespOrError<test::Output>> Orchestrator::ingestTest(std::strin
 
     try
     {
-        base::Event ev = base::parseEvent::parseWazuhEvent(event.data());
+        base::Event ev = base::parseEvent::parseCyb3rhqEvent(event.data());
         return this->ingestTest(std::move(ev), opt);
     }
     catch (const std::exception& e)
@@ -637,7 +637,7 @@ base::OptError Orchestrator::ingestTest(std::string_view event,
 {
     try
     {
-        base::Event ev = base::parseEvent::parseWazuhEvent(event.data());
+        base::Event ev = base::parseEvent::parseCyb3rhqEvent(event.data());
         this->ingestTest(std::move(ev), opt, callbackFn);
     }
     catch (const std::exception& e)

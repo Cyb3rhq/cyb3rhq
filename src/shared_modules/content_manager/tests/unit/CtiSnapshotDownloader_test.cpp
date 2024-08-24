@@ -1,6 +1,6 @@
 /*
- * Wazuh Content Manager - Unit Tests
- * Copyright (C) 2015, Wazuh Inc.
+ * Cyb3rhq Content Manager - Unit Tests
+ * Copyright (C) 2015, Cyb3rhq Inc.
  * Dec 01, 2023.
  *
  * This program is free software; you can redistribute it

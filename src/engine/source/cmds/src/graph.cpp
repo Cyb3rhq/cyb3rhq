@@ -8,8 +8,8 @@
 namespace cmd::graph
 {
 
-namespace eGraph = ::com::wazuh::api::engine::graph;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eGraph = ::com::cyb3rhq::api::engine::graph;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 void getGraph(std::shared_ptr<apiclnt::Client> client, const Options& options)
 {
@@ -23,9 +23,9 @@ void getGraph(std::shared_ptr<apiclnt::Client> client, const Options& options)
     eRequest.set_type(options.graphType);
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print the dump
     const auto& dump = eResponse.content();

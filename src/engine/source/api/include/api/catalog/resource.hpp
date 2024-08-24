@@ -19,11 +19,11 @@ public:
     /**
      * @brief Format of the resource managed by the catalog
      */
-    using Format = ::com::wazuh::api::engine::catalog::ResourceFormat;
+    using Format = ::com::cyb3rhq::api::engine::catalog::ResourceFormat;
     /**
      * @brief Type of the resource managed by the catalog
      */
-    using Type = ::com::wazuh::api::engine::catalog::ResourceType;
+    using Type = ::com::cyb3rhq::api::engine::catalog::ResourceType;
     constexpr static auto ASSET = 0;
 
     /**
@@ -173,4 +173,4 @@ public:
 };
 } // namespace api::catalog
 
-#endif // _WAZUH_RESOURCE_H_
+#endif // _CYB3RHQ_RESOURCE_H_

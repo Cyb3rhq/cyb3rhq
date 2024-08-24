@@ -11,11 +11,11 @@ namespace
 template<typename RequestType>
 using GeoAndRequest = std::pair<std::shared_ptr<::geo::IManager>, RequestType>; ///< Manager and request pair
 /**
- * @brief Get the request from the wazuh request and validate the manager
+ * @brief Get the request from the cyb3rhq request and validate the manager
  *
  * @tparam RequestType
  * @tparam ResponseType
- * @param wRequest The wazuh request to convert
+ * @param wRequest The cyb3rhq request to convert
  * @param geoManager weak pointer to the manager to validate
  * @return std::variant<api::wpResponse, RouterAndRequest<RequestType>>
  */
@@ -23,7 +23,7 @@ template<typename RequestType, typename ResponseType>
 std::variant<api::wpResponse, GeoAndRequest<RequestType>> getRequest(const api::wpRequest& wRequest,
                                                                      const std::weak_ptr<::geo::IManager>& geoManager)
 {
-    auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+    auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
     // validate the request
     if (std::holds_alternative<api::wpResponse>(res))
     {
@@ -44,8 +44,8 @@ std::variant<api::wpResponse, GeoAndRequest<RequestType>> getRequest(const api::
 namespace api::geo::handlers
 {
 // Using the engine protobuffer namespace
-namespace eGeo = ::com::wazuh::api::engine::geo;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eGeo = ::com::cyb3rhq::api::engine::geo;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 using api::adapter::genericError;
 using api::adapter::genericSuccess;
@@ -159,7 +159,7 @@ api::HandlerSync listDbCmd(const std::weak_ptr<::geo::IManager>& geoManager)
 
         response.set_status(eEngine::ReturnStatus::OK);
 
-        return api::adapter::toWazuhResponse(response);
+        return api::adapter::toCyb3rhqResponse(response);
     };
 }
 

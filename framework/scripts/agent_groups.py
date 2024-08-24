@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-# Copyright (C) 2015, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2015, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 import argparse
@@ -15,15 +15,15 @@ from sys import exit, argv
 debug = False
 
 try:
-    import wazuh.agent as agent
-    from wazuh.core.exception import WazuhError
-    from wazuh.core.cluster import utils as cluster_utils
-    from wazuh.core.wlogging import CLIFilter
+    import cyb3rhq.agent as agent
+    from cyb3rhq.core.exception import Cyb3rhqError
+    from cyb3rhq.core.cluster import utils as cluster_utils
+    from cyb3rhq.core.wlogging import CLIFilter
 except Exception as e:
-    print("Error importing 'Wazuh' package.\n\n{0}\n".format(e))
+    print("Error importing 'Cyb3rhq' package.\n\n{0}\n".format(e))
     exit()
 
-logger = logging.getLogger('wazuh')
+logger = logging.getLogger('cyb3rhq')
 logger.addFilter(CLIFilter())
 
 
@@ -403,7 +403,7 @@ if __name__ == "__main__":
     try:
         asyncio.run(main())
 
-    except WazuhError as e:
+    except Cyb3rhqError as e:
         print("Error {0}: {1}".format(e.code, e.message))
         if args.debug:
             raise

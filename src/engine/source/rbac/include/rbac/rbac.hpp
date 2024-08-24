@@ -24,7 +24,7 @@ namespace defaultModel
 {
 constexpr auto ROLE_SYSTEM = "system";
 constexpr auto ROLE_USER = "user";
-constexpr auto ROLE_WAZUH = "wazuh";
+constexpr auto ROLE_CYB3RHQ = "cyb3rhq";
 } // namespace defaultModel
 
 class RBAC : public IRBAC
@@ -105,7 +105,7 @@ private:
         m_roles[defaultModel::ROLE_USER] = Role(defaultModel::ROLE_USER, permissions);
 
         permissions.insert(Permission(Resource::ASSET, Operation::WRITE));
-        m_roles[defaultModel::ROLE_WAZUH] = Role(defaultModel::ROLE_WAZUH, permissions);
+        m_roles[defaultModel::ROLE_CYB3RHQ] = Role(defaultModel::ROLE_CYB3RHQ, permissions);
 
         permissions.insert(Permission(Resource::SYSTEM_ASSET, Operation::READ));
         permissions.insert(Permission(Resource::SYSTEM_ASSET, Operation::WRITE));

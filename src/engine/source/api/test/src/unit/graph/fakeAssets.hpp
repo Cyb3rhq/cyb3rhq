@@ -10,14 +10,14 @@ auto constexpr DECODER = R"e({
     "name": "decoder/core-hostinfo/0",
     "check": [
         {
-        "wazuh.queue": 51
+        "cyb3rhq.queue": 51
         }
     ],
     "normalize": [
         {
         "map": [
             {
-            "wazuh.decoders": "array_append(core-hostinfo)"
+            "cyb3rhq.decoders": "array_append(core-hostinfo)"
             }
         ]
         }
@@ -35,18 +35,18 @@ auto constexpr INTEGRATION = R"({
     "filters": [
         "filter/allow-all/0"
     ],
-    "name": "integration/wazuh-core/0"
+    "name": "integration/cyb3rhq-core/0"
 })";
 
 auto constexpr POLICY = R"({
-    "name": "policy/wazuh/0",
+    "name": "policy/cyb3rhq/0",
     "integrations": [
-        "integration/wazuh-core/0"
+        "integration/cyb3rhq-core/0"
     ]
 })";
 
-auto constexpr WAZUH_LOGPAR_TYPES = R"({
-    "name": "schema/wazuh-logpar-types/0",
+auto constexpr CYB3RHQ_LOGPAR_TYPES = R"({
+    "name": "schema/cyb3rhq-logpar-types/0",
     "fields": {
         "@timestamp": "date",
         "agent.build.original": "keyword",
@@ -1096,12 +1096,12 @@ auto constexpr WAZUH_LOGPAR_TYPES = R"({
         "vulnerability.score.temporal": "float",
         "vulnerability.score.version": "keyword",
         "vulnerability.severity": "keyword",
-        "wazuh.queue": "long",
-        "wazuh.location": "text",
-        "wazuh.message": "text",
-        "wazuh.origin": "keyword",
-        "wazuh.registered_ip": "keyword",
-        "wazuh.source": "keyword",
+        "cyb3rhq.queue": "long",
+        "cyb3rhq.location": "text",
+        "cyb3rhq.message": "text",
+        "cyb3rhq.origin": "keyword",
+        "cyb3rhq.registered_ip": "keyword",
+        "cyb3rhq.source": "keyword",
         "url": "url",
         "user_agent": "useragent"
     }

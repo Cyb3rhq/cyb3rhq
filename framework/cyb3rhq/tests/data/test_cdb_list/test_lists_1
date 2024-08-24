@@ -1,0 +1,5 @@
+test-cyb3rhq-w:write
+test-cyb3rhq-r:read
+test-cyb3rhq-a:attribute
+test-cyb3rhq-x:execute
+test-cyb3rhq-c:command

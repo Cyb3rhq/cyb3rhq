@@ -1,6 +1,6 @@
 /*
- * Wazuh - Content Merge Tool
- * Copyright (C) 2015, Wazuh Inc.
+ * Cyb3rhq - Content Merge Tool
+ * Copyright (C) 2015, Cyb3rhq Inc.
  * January 10, 2023.
  *
  */

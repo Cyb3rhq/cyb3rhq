@@ -2,8 +2,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "file_created",
@@ -14,7 +14,7 @@
       "dataset": "sysmon",
       "kind": "event",
       "module": "sysmon-linux",
-      "original": "Jun  7 03:36:17 202-u20-dev-agent sysmon: <Event><System><Provider Name=\"Linux-Sysmon\" Guid=\"{ff032593-a8d3-4f13-b0d6-01fc615a0f97}\"/><EventID>11</EventID><Version>2</Version><Level>4</Level><Task>11</Task><Opcode>0</Opcode><Keywords>0x8000000000000000</Keywords><TimeCreated SystemTime=\"2023-06-07T03:36:17.069851000Z\"/><EventRecordID>20697</EventRecordID><Correlation/><Execution ProcessID=\"5856\" ThreadID=\"5856\"/><Channel>Linux-Sysmon/Operational</Channel><Computer>202-u20-dev-agent</Computer><Security UserId=\"0\"/></System><EventData><Data Name=\"RuleName\">-</Data><Data Name=\"UtcTime\">2023-06-07 03:36:17.077</Data><Data Name=\"ProcessGuid\">{924935dc-9e9a-647f-0ce7-4a0000000000}</Data><Data Name=\"ProcessId\">5697</Data><Data Name=\"Image\">/var/ossec/bin/wazuh-agentd</Data><Data Name=\"TargetFilename\">/var/ossec/var/run/wazuh-agentd.state.temp</Data><Data Name=\"CreationUtcTime\">2023-06-07 03:36:17.077</Data><Data Name=\"User\">wazuh</Data></EventData></Event>",
+      "original": "Jun  7 03:36:17 202-u20-dev-agent sysmon: <Event><System><Provider Name=\"Linux-Sysmon\" Guid=\"{ff032593-a8d3-4f13-b0d6-01fc615a0f97}\"/><EventID>11</EventID><Version>2</Version><Level>4</Level><Task>11</Task><Opcode>0</Opcode><Keywords>0x8000000000000000</Keywords><TimeCreated SystemTime=\"2023-06-07T03:36:17.069851000Z\"/><EventRecordID>20697</EventRecordID><Correlation/><Execution ProcessID=\"5856\" ThreadID=\"5856\"/><Channel>Linux-Sysmon/Operational</Channel><Computer>202-u20-dev-agent</Computer><Security UserId=\"0\"/></System><EventData><Data Name=\"RuleName\">-</Data><Data Name=\"UtcTime\">2023-06-07 03:36:17.077</Data><Data Name=\"ProcessGuid\">{924935dc-9e9a-647f-0ce7-4a0000000000}</Data><Data Name=\"ProcessId\">5697</Data><Data Name=\"Image\">/var/ossec/bin/cyb3rhq-agentd</Data><Data Name=\"TargetFilename\">/var/ossec/var/run/cyb3rhq-agentd.state.temp</Data><Data Name=\"CreationUtcTime\">2023-06-07 03:36:17.077</Data><Data Name=\"User\">cyb3rhq</Data></EventData></Event>",
       "outcome": "success",
       "provider": "Linux-Sysmon",
       "start": "2023-06-07T03:36:17.069851000Z",
@@ -23,7 +23,7 @@
       ]
     },
     "file": {
-      "path": "/var/ossec/var/run/wazuh-agentd.state.temp"
+      "path": "/var/ossec/var/run/cyb3rhq-agentd.state.temp"
     },
     "host": {
       "hostname": "202-u20-dev-agent",
@@ -33,11 +33,11 @@
     "log": {
       "level": "Information"
     },
-    "message": "<Event><System><Provider Name=\"Linux-Sysmon\" Guid=\"{ff032593-a8d3-4f13-b0d6-01fc615a0f97}\"/><EventID>11</EventID><Version>2</Version><Level>4</Level><Task>11</Task><Opcode>0</Opcode><Keywords>0x8000000000000000</Keywords><TimeCreated SystemTime=\"2023-06-07T03:36:17.069851000Z\"/><EventRecordID>20697</EventRecordID><Correlation/><Execution ProcessID=\"5856\" ThreadID=\"5856\"/><Channel>Linux-Sysmon/Operational</Channel><Computer>202-u20-dev-agent</Computer><Security UserId=\"0\"/></System><EventData><Data Name=\"RuleName\">-</Data><Data Name=\"UtcTime\">2023-06-07 03:36:17.077</Data><Data Name=\"ProcessGuid\">{924935dc-9e9a-647f-0ce7-4a0000000000}</Data><Data Name=\"ProcessId\">5697</Data><Data Name=\"Image\">/var/ossec/bin/wazuh-agentd</Data><Data Name=\"TargetFilename\">/var/ossec/var/run/wazuh-agentd.state.temp</Data><Data Name=\"CreationUtcTime\">2023-06-07 03:36:17.077</Data><Data Name=\"User\">wazuh</Data></EventData></Event>",
+    "message": "<Event><System><Provider Name=\"Linux-Sysmon\" Guid=\"{ff032593-a8d3-4f13-b0d6-01fc615a0f97}\"/><EventID>11</EventID><Version>2</Version><Level>4</Level><Task>11</Task><Opcode>0</Opcode><Keywords>0x8000000000000000</Keywords><TimeCreated SystemTime=\"2023-06-07T03:36:17.069851000Z\"/><EventRecordID>20697</EventRecordID><Correlation/><Execution ProcessID=\"5856\" ThreadID=\"5856\"/><Channel>Linux-Sysmon/Operational</Channel><Computer>202-u20-dev-agent</Computer><Security UserId=\"0\"/></System><EventData><Data Name=\"RuleName\">-</Data><Data Name=\"UtcTime\">2023-06-07 03:36:17.077</Data><Data Name=\"ProcessGuid\">{924935dc-9e9a-647f-0ce7-4a0000000000}</Data><Data Name=\"ProcessId\">5697</Data><Data Name=\"Image\">/var/ossec/bin/cyb3rhq-agentd</Data><Data Name=\"TargetFilename\">/var/ossec/var/run/cyb3rhq-agentd.state.temp</Data><Data Name=\"CreationUtcTime\">2023-06-07 03:36:17.077</Data><Data Name=\"User\">cyb3rhq</Data></EventData></Event>",
     "process": {
       "entity_id": "{924935dc-9e9a-647f-0ce7-4a0000000000}",
-      "executable": "/var/ossec/bin/wazuh-agentd",
-      "name": "wazuh-agentd",
+      "executable": "/var/ossec/bin/cyb3rhq-agentd",
+      "name": "cyb3rhq-agentd",
       "pid": 5697
     },
     "related": {
@@ -45,12 +45,12 @@
         "202-u20-dev-agent"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "sysmon-linux"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/kern.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/kern.log",
       "origin": "/test/kern.log",
       "queue": 49,
       "registered_ip": "any",
@@ -60,8 +60,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "file_created",
@@ -103,12 +103,12 @@
         "202-u20-dev-agent"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "sysmon-linux"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/kern.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/kern.log",
       "origin": "/test/kern.log",
       "queue": 49,
       "registered_ip": "any",

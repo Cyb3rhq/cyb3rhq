@@ -1,6 +1,6 @@
 /*
- * Wazuh Indexer Connector - Fake OpenSearch Server
- * Copyright (C) 2015, Wazuh Inc.
+ * Cyb3rhq Indexer Connector - Fake OpenSearch Server
+ * Copyright (C) 2015, Cyb3rhq Inc.
  * September 08, 2023.
  *
  * This program is free software; you can redistribute it

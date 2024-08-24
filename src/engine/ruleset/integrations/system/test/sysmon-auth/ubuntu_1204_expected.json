@@ -2,8 +2,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "dataset": "system-auth",
@@ -33,12 +33,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -48,8 +48,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -87,12 +87,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -102,8 +102,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -141,12 +141,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -156,8 +156,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -193,12 +193,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -208,8 +208,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -247,12 +247,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -262,8 +262,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "dataset": "system-auth",
@@ -286,12 +286,12 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -301,8 +301,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -340,12 +340,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -355,8 +355,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -392,12 +392,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -407,8 +407,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "dataset": "system-auth",
@@ -438,12 +438,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -453,8 +453,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "dataset": "system-auth",
@@ -478,12 +478,12 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -493,8 +493,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -532,12 +532,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -547,8 +547,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -586,12 +586,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -601,8 +601,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "dataset": "system-auth",
@@ -626,12 +626,12 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -641,8 +641,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -679,12 +679,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -694,8 +694,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "ssh_login",
@@ -742,12 +742,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -757,8 +757,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -793,12 +793,12 @@
       "id": "0",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -808,8 +808,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -847,12 +847,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -862,8 +862,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -901,12 +901,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -916,8 +916,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -955,12 +955,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -970,8 +970,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -1007,12 +1007,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1022,8 +1022,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "ssh_login",
@@ -1070,12 +1070,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1085,8 +1085,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -1121,12 +1121,12 @@
       "id": "0",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1136,8 +1136,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "dataset": "system-auth",
@@ -1161,12 +1161,12 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1176,8 +1176,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -1214,12 +1214,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1229,8 +1229,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -1265,12 +1265,12 @@
       "id": "0",
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1280,8 +1280,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -1318,12 +1318,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1333,8 +1333,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "ssh_login",
@@ -1381,12 +1381,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1396,8 +1396,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -1432,12 +1432,12 @@
       "id": "0",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1447,8 +1447,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "dataset": "system-auth",
@@ -1472,12 +1472,12 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1487,8 +1487,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -1525,12 +1525,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1540,8 +1540,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -1579,12 +1579,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1594,8 +1594,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -1633,12 +1633,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1648,8 +1648,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -1684,12 +1684,12 @@
       "id": "0",
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1699,8 +1699,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -1737,12 +1737,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1752,8 +1752,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -1789,12 +1789,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1804,8 +1804,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -1842,12 +1842,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1857,8 +1857,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -1893,12 +1893,12 @@
       "id": "0",
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1908,8 +1908,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -1946,12 +1946,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -1961,8 +1961,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "ssh_login",
@@ -2009,12 +2009,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2024,8 +2024,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -2060,12 +2060,12 @@
       "id": "0",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2075,8 +2075,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -2114,12 +2114,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2129,8 +2129,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -2168,12 +2168,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2183,8 +2183,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -2220,12 +2220,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2235,8 +2235,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "dataset": "system-auth",
@@ -2260,12 +2260,12 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2275,8 +2275,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -2313,12 +2313,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2328,8 +2328,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -2364,12 +2364,12 @@
       "id": "0",
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2379,8 +2379,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -2417,12 +2417,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2432,8 +2432,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "ssh_login",
@@ -2480,12 +2480,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2495,8 +2495,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -2531,12 +2531,12 @@
       "id": "0",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2546,8 +2546,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "ssh_login",
@@ -2594,12 +2594,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2609,8 +2609,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -2645,12 +2645,12 @@
       "id": "0",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2660,8 +2660,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -2699,12 +2699,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2714,8 +2714,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -2753,12 +2753,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2768,8 +2768,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -2807,12 +2807,12 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2822,8 +2822,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -2860,12 +2860,12 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2875,8 +2875,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -2911,12 +2911,12 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2926,8 +2926,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -2968,12 +2968,12 @@
       "id": "1001",
       "name": "user02"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -2983,8 +2983,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "kind": "event",
@@ -3005,11 +3005,11 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3019,8 +3019,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "kind": "event",
@@ -3041,11 +3041,11 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3055,8 +3055,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "kind": "event",
@@ -3077,11 +3077,11 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3091,8 +3091,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "kind": "event",
@@ -3113,11 +3113,11 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3127,8 +3127,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "kind": "event",
@@ -3149,11 +3149,11 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3163,8 +3163,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -3200,12 +3200,12 @@
       "id": "1001",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3215,8 +3215,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -3254,12 +3254,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3269,8 +3269,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -3308,12 +3308,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3323,8 +3323,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -3360,12 +3360,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3375,8 +3375,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -3414,12 +3414,12 @@
       },
       "name": "user02"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3429,8 +3429,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "dataset": "system-auth",
@@ -3453,12 +3453,12 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3468,8 +3468,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -3507,12 +3507,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3522,8 +3522,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -3561,12 +3561,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3576,8 +3576,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -3613,12 +3613,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3628,8 +3628,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -3667,12 +3667,12 @@
       },
       "name": "user02"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3682,8 +3682,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "dataset": "system-auth",
@@ -3706,12 +3706,12 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3721,8 +3721,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -3760,12 +3760,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3775,8 +3775,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -3814,12 +3814,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3829,8 +3829,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -3866,12 +3866,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3881,8 +3881,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -3917,12 +3917,12 @@
       "id": "0",
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3932,8 +3932,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -3970,12 +3970,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -3985,8 +3985,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "kind": "event",
@@ -4007,11 +4007,11 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4021,8 +4021,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -4058,12 +4058,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4073,8 +4073,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "dataset": "system-auth",
@@ -4098,12 +4098,12 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4113,8 +4113,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -4151,12 +4151,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4166,8 +4166,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "ssh_login",
@@ -4214,12 +4214,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4229,8 +4229,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -4265,12 +4265,12 @@
       "id": "0",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4280,8 +4280,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "dataset": "system-auth",
@@ -4305,12 +4305,12 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4320,8 +4320,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -4358,12 +4358,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4373,8 +4373,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -4411,12 +4411,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4426,8 +4426,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -4462,12 +4462,12 @@
       "id": "0",
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4477,8 +4477,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -4515,12 +4515,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4530,8 +4530,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -4566,12 +4566,12 @@
       "id": "0",
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4581,8 +4581,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -4619,12 +4619,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4634,8 +4634,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "ssh_login",
@@ -4682,12 +4682,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4697,8 +4697,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -4733,12 +4733,12 @@
       "id": "0",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4748,8 +4748,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -4787,12 +4787,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4802,8 +4802,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -4841,12 +4841,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4856,8 +4856,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -4893,12 +4893,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4908,8 +4908,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -4947,12 +4947,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -4962,8 +4962,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -5001,12 +5001,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5016,8 +5016,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -5053,12 +5053,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5068,8 +5068,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -5107,12 +5107,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5122,8 +5122,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -5161,12 +5161,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5176,8 +5176,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -5213,12 +5213,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5228,8 +5228,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -5267,12 +5267,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5282,8 +5282,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -5321,12 +5321,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5336,8 +5336,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -5373,12 +5373,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5388,8 +5388,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -5427,12 +5427,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5442,8 +5442,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -5481,12 +5481,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5496,8 +5496,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -5535,12 +5535,12 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5550,8 +5550,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -5588,12 +5588,12 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5603,8 +5603,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -5639,12 +5639,12 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5654,8 +5654,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -5696,12 +5696,12 @@
       "id": "106",
       "name": "user03"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5711,8 +5711,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "kind": "event",
@@ -5733,11 +5733,11 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5747,8 +5747,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "kind": "event",
@@ -5769,11 +5769,11 @@
         "server01"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5783,8 +5783,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -5820,12 +5820,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5835,8 +5835,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -5874,12 +5874,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5889,8 +5889,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -5928,12 +5928,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5943,8 +5943,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -5980,12 +5980,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -5995,8 +5995,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -6034,12 +6034,12 @@
       },
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -6049,8 +6049,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -6088,12 +6088,12 @@
       "id": "1000",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -6103,8 +6103,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-off",
@@ -6140,12 +6140,12 @@
     "user": {
       "name": "root"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -6155,8 +6155,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "ssh_login",
@@ -6203,12 +6203,12 @@
     "user": {
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",
@@ -6218,8 +6218,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "logged-on",
@@ -6254,12 +6254,12 @@
       "id": "0",
       "name": "user01"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog",
         "system-auth"
       ],
-      "location": "[001] (wazuh-agent-1) any->/test/auth.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/test/auth.log",
       "origin": "/test/auth.log",
       "queue": 49,
       "registered_ip": "any",

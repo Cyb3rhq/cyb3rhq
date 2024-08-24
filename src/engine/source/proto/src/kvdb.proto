@@ -4,7 +4,7 @@ import "engine.proto";
 
 import "google/protobuf/struct.proto"; // For Value
 
-package com.wazuh.api.engine.kvdb;
+package com.cyb3rhq.api.engine.kvdb;
 
 /* Client-facing representation of a key-value exposed in APIs */
 message Entry

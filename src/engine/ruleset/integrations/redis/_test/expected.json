@@ -1,6 +1,6 @@
 [
     {
-        "wazuh": {
+        "cyb3rhq": {
             "queue": 49,
             "location": "[001] (ubuntu-agent) any->/var/log/redis/redis-server.log",
             "message": "26571:M 27 Dec 2018 11:19:18.874 * Synchronization with replica 10.114.208.18:6023 succeeded",
@@ -17,7 +17,7 @@
         "agent": {
             "id": "001",
             "name": "ubuntu-agent",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event": {
             "original": "26571:M 27 Dec 2018 11:19:18.874 * Synchronization with replica 10.114.208.18:6023 succeeded",
@@ -56,7 +56,7 @@
         }
     },
     {
-        "wazuh": {
+        "cyb3rhq": {
             "queue": 49,
             "location": "[001] (ubuntu-agent) any->/var/log/redis/redis-server.log",
             "message": "4961:M 30 May 12:50:13.457 * Increased maximum number of open files to 10032 (it was originally set to 4864).",
@@ -73,7 +73,7 @@
         "agent": {
             "id": "001",
             "name": "ubuntu-agent",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event": {
             "original": "4961:M 30 May 12:50:13.457 * Increased maximum number of open files to 10032 (it was originally set to 4864).",
@@ -112,7 +112,7 @@
         }
     },
     {
-        "wazuh": {
+        "cyb3rhq": {
             "queue": 49,
             "location": "[001] (ubuntu-agent) any->/var/log/redis/redis-server.log",
             "message": "30 May 10:04:45 . 0 clients connected (0 slaves), 618932 bytes in use, 0 shared objects",
@@ -129,7 +129,7 @@
         "agent": {
             "id": "001",
             "name": "ubuntu-agent",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event": {
             "original": "30 May 10:04:45 . 0 clients connected (0 slaves), 618932 bytes in use, 0 shared objects",
@@ -160,7 +160,7 @@
         }
     },
     {
-        "wazuh": {
+        "cyb3rhq": {
             "queue": 49,
             "location": "[001] (ubuntu-agent) any->/var/log/redis/redis-server.log",
             "message": "[2932] 31 May 04:32:08 - 0 clients connected (0 slaves), 1179968 bytes in use",
@@ -177,7 +177,7 @@
         "agent": {
             "id": "001",
             "name": "ubuntu-agent",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event": {
             "original": "[2932] 31 May 04:32:08 - 0 clients connected (0 slaves), 1179968 bytes in use",

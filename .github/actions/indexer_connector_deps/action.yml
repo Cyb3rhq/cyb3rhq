@@ -29,7 +29,7 @@ runs:
         run: |
           cd src
           make deps TARGET=server -j2
-          make libwazuhext.so TARGET=server -j2
+          make libcyb3rhqext.so TARGET=server -j2
         shell: bash
 
       - name: Build http-request

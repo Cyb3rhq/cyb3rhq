@@ -13,7 +13,7 @@ namespace builder::builders::opmap
 static inline MapOp opBuilderWdbGenericQuery(const std::vector<OpArg>& opArgs,
                                              const std::shared_ptr<const IBuildCtx> buildCtx,
                                              bool doReturnPayload,
-                                             const std::shared_ptr<wazuhdb::IWDBManager>& wdbManager)
+                                             const std::shared_ptr<cyb3rhqdb::IWDBManager>& wdbManager)
 {
     utils::assertSize(opArgs, 1);
 
@@ -118,7 +118,7 @@ static inline MapOp opBuilderWdbGenericQuery(const std::vector<OpArg>& opArgs,
         // Store value on json
         if (doReturnPayload)
         {
-            if (wazuhdb::QueryResultCodes::OK == resultCode)
+            if (cyb3rhqdb::QueryResultCodes::OK == resultCode)
             {
                 json::Json result;
                 const auto& queryResponse = std::get<1>(returnTuple);
@@ -134,7 +134,7 @@ static inline MapOp opBuilderWdbGenericQuery(const std::vector<OpArg>& opArgs,
             }
             else
             {
-                auto retCode = wazuhdb::qrcToStr(resultCode);
+                auto retCode = cyb3rhqdb::qrcToStr(resultCode);
 
                 RETURN_FAILURE(runState, json::Json {}, failureTrace + fmt::format("Result code is '{}'", retCode));
             }
@@ -142,12 +142,12 @@ static inline MapOp opBuilderWdbGenericQuery(const std::vector<OpArg>& opArgs,
         else
         {
             json::Json result;
-            auto ok = wazuhdb::QueryResultCodes::OK == resultCode;
+            auto ok = cyb3rhqdb::QueryResultCodes::OK == resultCode;
             result.setBool(ok);
             if (!ok)
             {
                 RETURN_FAILURE(
-                    runState, result, failureTrace + fmt::format("Result code is '{}'", wazuhdb::qrcToStr(resultCode)));
+                    runState, result, failureTrace + fmt::format("Result code is '{}'", cyb3rhqdb::qrcToStr(resultCode)));
             }
             RETURN_SUCCESS(runState, result, successTrace);
         }
@@ -155,7 +155,7 @@ static inline MapOp opBuilderWdbGenericQuery(const std::vector<OpArg>& opArgs,
 }
 
 // <wdb_result>: +wdb_update/<quey>|$<quey>
-MapBuilder getWdbUpdateBuilder(const std::shared_ptr<wazuhdb::IWDBManager>& wdbManager)
+MapBuilder getWdbUpdateBuilder(const std::shared_ptr<cyb3rhqdb::IWDBManager>& wdbManager)
 {
     return [wdbManager](const std::vector<OpArg>& opArgs, const std::shared_ptr<const IBuildCtx> buildCtx) -> MapOp
     {
@@ -164,7 +164,7 @@ MapBuilder getWdbUpdateBuilder(const std::shared_ptr<wazuhdb::IWDBManager>& wdbM
 }
 
 // <wdb_result>: +wdb_query/<quey>|$<quey>
-MapBuilder getWdbQueryBuilder(const std::shared_ptr<wazuhdb::IWDBManager>& wdbManager)
+MapBuilder getWdbQueryBuilder(const std::shared_ptr<cyb3rhqdb::IWDBManager>& wdbManager)
 {
     return [wdbManager](const std::vector<OpArg>& opArgs, const std::shared_ptr<const IBuildCtx> buildCtx) -> MapOp
     {

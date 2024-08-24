@@ -10,7 +10,7 @@ metadata:
     - "MySQL 5.7"
     - "MySQL 8.0"
   author:
-    name: Wazuh Inc.
+    name: Cyb3rhq Inc.
     email: info@wazuh.com
     date: 2023-06-01
   references:
@@ -44,5 +44,5 @@ normalize:
       - event.outcome: unknown
       - event.start: +date_from_epoch/$~mysql.slowlog.timestamp
       - event.end: $@timestamp
-      - wazuh.decoders: +array_append/mysql-slowlog
+      - cyb3rhq.decoders: +array_append/mysql-slowlog
       - ~mysql.slowlog.timestamp: delete()

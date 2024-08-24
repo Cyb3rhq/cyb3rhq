@@ -40,7 +40,7 @@ None
    <run_on_start>yes</run_on_start>
    <skip_on_error>yes</skip_on_error>
    <bucket type="cloudtrail">
-     <name>wazuh-cloudtrail</name>
+     <name>cyb3rhq-cloudtrail</name>
      <aws_profile>default</aws_profile>
    </bucket>
  </wodle>
@@ -60,7 +60,7 @@ None
    <run_on_start>yes</run_on_start>
    <skip_on_error>yes</skip_on_error>
    <bucket type="alb">
-     <name>wazuh-aws-wodle</name>
+     <name>cyb3rhq-aws-wodle</name>
      <path>ALB</path>
      <aws_profile>default</aws_profile>
    </bucket>
@@ -72,7 +72,7 @@ None
    <run_on_start>yes</run_on_start>
    <skip_on_error>yes</skip_on_error>
    <bucket type="clb">
-     <name>wazuh-aws-wodle</name>
+     <name>cyb3rhq-aws-wodle</name>
      <path>CLB</path>
      <aws_profile>default</aws_profile>
    </bucket>
@@ -84,7 +84,7 @@ None
    <run_on_start>yes</run_on_start>
    <skip_on_error>yes</skip_on_error>
    <bucket type="nlb">
-     <name>wazuh-aws-wodle</name>
+     <name>cyb3rhq-aws-wodle</name>
      <path>NLB</path>
      <aws_profile>default</aws_profile>
    </bucket>
@@ -99,10 +99,10 @@ None
 
 | Name | Description |
 |---|---|
-| decoder/aws-s3/0 | Decoder for Wazuh wodle of AWS S3 server access logs |
-| decoder/aws-elb/0 | Decoder for Wazuh wodle of AWS ELB (ALB, CLB, NLB) logs |
+| decoder/aws-s3/0 | Decoder for Cyb3rhq wodle of AWS S3 server access logs |
+| decoder/aws-elb/0 | Decoder for Cyb3rhq wodle of AWS ELB (ALB, CLB, NLB) logs |
 | decoder/aws-json/0 | Partial JSON decoder for AWS wodle events |
-| decoder/aws-cloudtrail/0 | Decoder for Wazuh wodle of AWS CloudTrail Logs |
+| decoder/aws-cloudtrail/0 | Decoder for Cyb3rhq wodle of AWS CloudTrail Logs |
 ## Rules
 
 | Name | Description |
@@ -119,5 +119,5 @@ None
 
 | Version | Description | Details |
 |---|---|---|
-| 0.0.2-dev | Created integration for Amazon Wodle | [#17648](https://github.com/wazuh/wazuh/pull/17648) |
+| 0.0.2-dev | Created integration for Amazon Wodle | [#17648](https://github.com/cyb3rhq/cyb3rhq/pull/17648) |
 | 0.0.1-dev | Created base integration for AWS | [#16766](#) |

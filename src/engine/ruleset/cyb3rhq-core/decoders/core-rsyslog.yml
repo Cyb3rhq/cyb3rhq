@@ -1,0 +1,28 @@
+name: decoder/core-rsyslog/0
+# module: cyb3rhq
+
+metadata:
+  title: Rsyslog queue decoder.
+  description: >
+    Processes events that were received by the cyb3rhq-remoted syslog server.
+  compatibility: Syslog log format.
+  versions:
+    - Cyb3rhq 4.*
+  author:
+    name: Cyb3rhq, Inc.
+    date: 07/03/2023
+  references:
+    - https://wazuh.com/blog/how-to-configure-rsyslog-client-to-send-events-to-cyb3rhq/
+
+parents:
+  - decoder/core-cyb3rhq-message/0
+
+check:
+  # Value 50 is equal to character '2' in ASCII
+  - cyb3rhq.queue: 50
+
+normalize:
+  - map:
+      - cyb3rhq.source: cyb3rhq-syslog-server
+      - client.ip: $cyb3rhq.origin
+      - related.ip: array_append($client.ip)

@@ -1,10 +1,10 @@
 
-    Vielen Dank für Wazuh benutzen.
+    Vielen Dank für Cyb3rhq benutzen.
     Bei Fragen, Anregungen oder wenn Sie einen Fehler gefunden
     haben, können Sie mit uns kontaktieren.
 
     Bitte, benutzen Sie unsere Mailingliste:
-            https://groups.google.com/forum/#!forum/wazuh
+            https://groups.google.com/forum/#!forum/cyb3rhq
 
     Weitere Informtionen finden Sie unter:
           - http://www.wazuh.com

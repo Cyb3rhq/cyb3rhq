@@ -10,7 +10,7 @@ on:
   pull_request:
     paths:
         - ".github/workflows/integration-tests-rbac-tier-0-1.yml"
-        - "framework/wazuh/rbac/"
+        - "framework/cyb3rhq/rbac/"
         - "src/Makefile"
         - "tests/integration/conftest.py"
         - "tests/integration/test_api/test_rbac/**"
@@ -29,13 +29,13 @@ jobs:
         with:
           python-version-file: ".github/workflows/.python-version-it"
           architecture: x64
-      # Build wazuh server for linux.
-      - name: Build wazuh server for linux
+      # Build cyb3rhq server for linux.
+      - name: Build cyb3rhq server for linux
         run: |
           make deps -C src TARGET=server -j2
           make -C src TARGET=server -j2
-      # Install wazuh server for linux.
-      - name: Install wazuh server for linux
+      # Install cyb3rhq server for linux.
+      - name: Install cyb3rhq server for linux
         run: |
           echo 'USER_LANGUAGE="en"' > ./etc/preloaded-vars.conf
           echo "" >> ./etc/preloaded-vars.conf
@@ -68,14 +68,14 @@ jobs:
       # Download and install integration tests framework.
       - name: Download and install integration tests framework
         run: |
-          if [ "X`git ls-remote https://github.com/wazuh/qa-integration-framework.git ${BRANCH_NAME}`" != "X" ]; then
+          if [ "X`git ls-remote https://github.com/cyb3rhq/qa-integration-framework.git ${BRANCH_NAME}`" != "X" ]; then
               QA_BRANCH=${BRANCH_NAME}
-          elif [ "X`git ls-remote https://github.com/wazuh/qa-integration-framework.git ${BRANCH_BASE}`" != "X" ]; then
+          elif [ "X`git ls-remote https://github.com/cyb3rhq/qa-integration-framework.git ${BRANCH_BASE}`" != "X" ]; then
               QA_BRANCH=${BRANCH_BASE}
           else
               QA_BRANCH="main"
           fi
-          git clone -b ${QA_BRANCH} --single-branch https://github.com/wazuh/qa-integration-framework.git
+          git clone -b ${QA_BRANCH} --single-branch https://github.com/cyb3rhq/qa-integration-framework.git
           sudo pip install qa-integration-framework/
           sudo rm -rf qa-integration-framework/
       # Run integration tests.

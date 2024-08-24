@@ -102,7 +102,7 @@ ExpectedFn failure(const Behaviour& behaviour = {})
 // Valid params
 const std::string POLICY_NAME = "policy/name/0";
 const std::string NAMESPACE_U = "user";
-const std::string NAMESPACE_W = "wazuh";
+const std::string NAMESPACE_W = "cyb3rhq";
 const std::string NAMESPACE_S = "system";
 const std::string ASSET_NAME_A = "asset/name/0";
 const std::string ASSET_NAME_B = "asset/name/1";

@@ -1,15 +1,15 @@
 [
     {
-        "wazuh":
+        "cyb3rhq":
         {
             "queue": 49,
-            "location": "[003] (vm-ubuntu22) any->Wazuh-Docker",
+            "location": "[003] (vm-ubuntu22) any->Cyb3rhq-Docker",
             "message": "{\"integration\": \"docker\", \"docker\": {\"Type\": \"plugin\", \"Action\": \"enable\", \"Actor\": {\"ID\": \"d0516034ebc14bb870bce9fa6a0870dd32a27996952c57cf1308d82de07a6d86\", \"Attributes\": {\"name\": \"grafana/loki-docker-driver:latest\"}}, \"scope\": \"local\", \"time\": 1686325250, \"timeNano\": 1686325250845457437}}",
-            "origin": "Wazuh-Docker",
+            "origin": "Cyb3rhq-Docker",
             "registered_ip": "any",
             "decoders":
             [
-                "core-wazuh-message",
+                "core-cyb3rhq-message",
                 "core-localfile",
                 "integrations",
                 "docker-listener"
@@ -20,7 +20,7 @@
         {
             "id": "003",
             "name": "vm-ubuntu22",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event":
         {
@@ -50,16 +50,16 @@
         }
     },
     {
-        "wazuh":
+        "cyb3rhq":
         {
             "queue": 49,
-            "location": "[003] (vm-ubuntu22) any->Wazuh-Docker",
+            "location": "[003] (vm-ubuntu22) any->Cyb3rhq-Docker",
             "message": "{\"integration\": \"docker\", \"docker\": {\"Type\": \"plugin\", \"Action\": \"disable\", \"Actor\": {\"ID\": \"d0516034ebc14bb870bce9fa6a0870dd32a27996952c57cf1308d82de07a6d86\", \"Attributes\": {\"name\": \"grafana/loki-docker-driver\"}}, \"scope\": \"local\", \"time\": 1686325281, \"timeNano\": 1686325281197959786}}",
-            "origin": "Wazuh-Docker",
+            "origin": "Cyb3rhq-Docker",
             "registered_ip": "any",
             "decoders":
             [
-                "core-wazuh-message",
+                "core-cyb3rhq-message",
                 "core-localfile",
                 "integrations",
                 "docker-listener"
@@ -70,7 +70,7 @@
         {
             "id": "003",
             "name": "vm-ubuntu22",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event":
         {
@@ -100,16 +100,16 @@
         }
     },
     {
-        "wazuh":
+        "cyb3rhq":
         {
             "queue": 49,
-            "location": "[003] (vm-ubuntu22) any->Wazuh-Docker",
+            "location": "[003] (vm-ubuntu22) any->Cyb3rhq-Docker",
             "message": "{\"integration\": \"docker\", \"docker\": {\"Type\": \"plugin\", \"Action\": \"remove\", \"Actor\": {\"ID\": \"d0516034ebc14bb870bce9fa6a0870dd32a27996952c57cf1308d82de07a6d86\", \"Attributes\": {\"name\": \"grafana/loki-docker-driver\"}}, \"scope\": \"local\", \"time\": 1686325283, \"timeNano\": 1686325283069134254}}",
-            "origin": "Wazuh-Docker",
+            "origin": "Cyb3rhq-Docker",
             "registered_ip": "any",
             "decoders":
             [
-                "core-wazuh-message",
+                "core-cyb3rhq-message",
                 "core-localfile",
                 "integrations",
                 "docker-listener"
@@ -120,7 +120,7 @@
         {
             "id": "003",
             "name": "vm-ubuntu22",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event":
         {

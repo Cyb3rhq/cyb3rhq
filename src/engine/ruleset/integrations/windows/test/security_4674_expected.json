@@ -2,8 +2,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "action": "privileged-operation",
@@ -44,12 +44,12 @@
       "id": "S-1-5-19",
       "name": "LOCAL SERVICE"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "windows-event",
         "windows-security"
       ],
-      "location": "[001] (wazuh-agent-1) any->EventChannel",
+      "location": "[001] (cyb3rhq-agent-1) any->EventChannel",
       "origin": "EventChannel",
       "queue": 102,
       "registered_ip": "any",

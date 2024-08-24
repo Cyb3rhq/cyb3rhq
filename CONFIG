@@ -1,11 +1,11 @@
-WAZUH
-Copyright (C) 2015, Wazuh Inc.
+CYB3RHQ
+Copyright (C) 2015, Cyb3rhq Inc.
 
 Based on OSSEC
 Copyright (C) 2014 Trend Micro Inc.
 
 
-= Information about Wazuh =
+= Information about Cyb3rhq =
 
 Visit https://www.wazuh.com
 
@@ -15,7 +15,7 @@ Visit https://www.wazuh.com
 See INSTALL
 
 
-== Configuring Wazuh ==
+== Configuring Cyb3rhq ==
 
 Just follow the steps from the install.sh script.
 More information at

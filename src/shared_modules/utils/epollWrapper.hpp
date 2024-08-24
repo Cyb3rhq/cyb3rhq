@@ -1,6 +1,6 @@
 /*
- * Wazuh Utils - Singleton template
- * Copyright (C) 2015, Wazuh Inc.
+ * Cyb3rhq Utils - Singleton template
+ * Copyright (C) 2015, Cyb3rhq Inc.
  * Apr 03, 2023.
  *
  * This program is free software; you can redistribute it

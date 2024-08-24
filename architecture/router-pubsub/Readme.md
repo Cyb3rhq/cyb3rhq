@@ -1,12 +1,12 @@
 <!---
-Copyright (C) 2015, Wazuh Inc.
-Created by Wazuh, Inc. <info@wazuh.com>.
+Copyright (C) 2015, Cyb3rhq Inc.
+Created by Cyb3rhq, Inc. <info@wazuh.com>.
 This program is free software; you can redistribute it and/or modify it under the terms of GPLv2
 -->
 
-# Wazuh module: Router PubSub architecture
+# Cyb3rhq module: Router PubSub architecture
 ## Index
-- [Wazuh module: Router PubSub architecture](#wazuh-module-router-pubsub-architecture)
+- [Cyb3rhq module: Router PubSub architecture](#cyb3rhq-module-router-pubsub-architecture)
   - [Index](#index)
   - [Purpose](#purpose)
     - [Definition](#definition)
@@ -48,7 +48,7 @@ Filtering is the process of selectively delivering messages to subscribers based
 
 ## Sequence diagrams
 The different sequence diagrams ilustrate the flow of the different modules interacting on the router general use.
-- 001-sequence-initialize: It explains the wazuh module router initialization, construction, use, destruction and stop from the wazuh modules daemon perspective.
+- 001-sequence-initialize: It explains the cyb3rhq module router initialization, construction, use, destruction and stop from the cyb3rhq modules daemon perspective.
 - 002-sequence-publisher: It explains the pubsub mechanism from the perspective of the publisher.
 - 003-sequence-subscriber:It explains the pubsub mechanism from the perspective of the subscriber.
 

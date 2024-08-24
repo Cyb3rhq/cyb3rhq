@@ -5,7 +5,7 @@
 #include <string>
 #include <tuple>
 
-namespace wazuhdb
+namespace cyb3rhqdb
 {
 
 enum class QueryResultCodes
@@ -143,6 +143,6 @@ public:
 
     virtual size_t getQueryMaxSize() const noexcept = 0;
 };
-} // namespace wazuhdb
+} // namespace cyb3rhqdb
 
 #endif // _WDB_IWDB_HANDLER_HPP

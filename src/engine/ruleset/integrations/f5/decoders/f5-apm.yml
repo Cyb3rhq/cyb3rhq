@@ -8,7 +8,7 @@ metadata:
   compatibility: >
     This module has been tested against F5 BIG-IP version 16.1.0
   author:
-    name: Wazuh, Inc.
+    name: Cyb3rhq, Inc.
     date: 2023/02/04
   references:
     - https://techdocs.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-network-access-12-1-0/10.html
@@ -392,6 +392,6 @@ normalize:
       - rsa.time.event_time: $@timestamp
       - service.type: f5
       - tags: [f5.bigipapm, forwarded]
-      - wazuh.decoders: +array_append/f5-apm
+      - cyb3rhq.decoders: +array_append/f5-apm
       - ~content: delete()
       - ~tmp: delete()

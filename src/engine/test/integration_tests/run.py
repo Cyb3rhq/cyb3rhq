@@ -8,11 +8,11 @@ from pathlib import Path
 from typing import Tuple, Optional
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-WAZUH_DIR = Path(SCRIPT_DIR).resolve().parent.parent.parent.parent
+CYB3RHQ_DIR = Path(SCRIPT_DIR).resolve().parent.parent.parent.parent
 
 
 def parse_arguments() -> Tuple[str, str]:
-    parser = argparse.ArgumentParser(description='Run Behave tests for Wazuh.')
+    parser = argparse.ArgumentParser(description='Run Behave tests for Cyb3rhq.')
     parser.add_argument('-e', '--environment', help='Environment directory')
     parser.add_argument(
         '-f', '--feature', help='Feature file to run (default: all features)')
@@ -70,7 +70,7 @@ def main():
     env_dir, specific_feature = parse_arguments()
 
     # Get paths
-    engine_path = WAZUH_DIR / "src" / "engine"
+    engine_path = CYB3RHQ_DIR / "src" / "engine"
     env_path = Path(env_dir).resolve()
     conf_path = get_config_file(env_path)
     it_path = engine_path / "test" / "integration_tests"
@@ -90,7 +90,7 @@ def main():
     print(f'Using configuration file: {conf_path}')
     print(f'Running tests from: {it_path}')
     print(f'Engine path: {engine_path}')
-    print(f'Wazuh path: {WAZUH_DIR}')
+    print(f'Cyb3rhq path: {CYB3RHQ_DIR}')
 
     exit_code = run_behave_tests(it_path, feature_path)
     print(f"Exit code {exit_code}")

@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-| Wazuh version |  Integration name  | Integration type | Integration version |
+| Cyb3rhq version |  Integration name  | Integration type | Integration version |
 |---------------|--------------------|------------------|---------------------|
 |   X.Y.Z-rev   | <integration_name> | new/update       | 1.0.0 - dev         |
 
@@ -41,7 +41,7 @@ Make sure you meet all the checks before requesting a review.
     <!--
     under file `<integration_name>/decoder_fields` in https://drive.google.com/drive/folders/1OYbSX65hIis8FKQmw75NseKoBoXv-neb?usp=sharing
     -->
-    - [ ] Is in the `wazuh` namespace.
+    - [ ] Is in the `cyb3rhq` namespace.
     - Added test for all events:
         - [ ] `input` added
         - [ ] `expected` added

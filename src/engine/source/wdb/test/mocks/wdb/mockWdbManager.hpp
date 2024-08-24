@@ -5,10 +5,10 @@
 
 #include <wdb/iwdbManager.hpp>
 
-class MockWdbManager : public wazuhdb::IWDBManager
+class MockWdbManager : public cyb3rhqdb::IWDBManager
 {
 public:
-    MOCK_METHOD(std::shared_ptr<wazuhdb::IWDBHandler>, connection, (), (override));
+    MOCK_METHOD(std::shared_ptr<cyb3rhqdb::IWDBHandler>, connection, (), (override));
 };
 
 #endif // _WDB_MOCK_WDB_MANAGER_HPP

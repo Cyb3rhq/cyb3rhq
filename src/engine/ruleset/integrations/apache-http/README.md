@@ -68,4 +68,4 @@ Adding to the ossec.conf file in the monitored agent the following blocks:
 
 | Version | Description | Details |
 |---|---|---|
-| 1.0.0-dev | Created integration for apache http server | [#16910](https://github.com/wazuh/wazuh/pull/16910) |
+| 1.0.0-dev | Created integration for apache http server | [#16910](https://github.com/cyb3rhq/cyb3rhq/pull/16910) |

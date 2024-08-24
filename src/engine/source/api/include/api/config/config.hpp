@@ -18,8 +18,8 @@ namespace api::config::handlers
 template<typename ConfDriver>
 using ConfHandler = std::shared_ptr<conf::IConf<ConfDriver>>;
 
-namespace eConfig = ::com::wazuh::api::engine::config;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eConfig = ::com::cyb3rhq::api::engine::config;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 /* Runtime endpoint */
 template<typename ConfDriver>
@@ -29,7 +29,7 @@ api::HandlerSync runtimeGet(ConfHandler<ConfDriver> confHandler)
     {
         using RequestType = eConfig::RuntimeGet_Request;
         using ResponseType = eConfig::RuntimeGet_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         if (std::holds_alternative<api::wpResponse>(res))
         {
@@ -52,7 +52,7 @@ api::HandlerSync runtimeGet(ConfHandler<ConfDriver> confHandler)
             response.set_status(eEngine::ReturnStatus::ERROR);
         }
 
-        return ::api::adapter::toWazuhResponse<ResponseType>(response);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(response);
     };
 }
 
@@ -63,7 +63,7 @@ api::HandlerSync runtimePut(ConfHandler<ConfDriver> confHandler)
     {
         using RequestType = eConfig::RuntimePut_Request;
         using ResponseType = eEngine::GenericStatus_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         if (std::holds_alternative<api::wpResponse>(res))
         {
@@ -92,7 +92,7 @@ api::HandlerSync runtimePut(ConfHandler<ConfDriver> confHandler)
             response.set_status(eEngine::ReturnStatus::ERROR);
         }
 
-        return ::api::adapter::toWazuhResponse<ResponseType>(response);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(response);
     };
 }
 
@@ -103,7 +103,7 @@ api::HandlerSync runtimeSave(ConfHandler<ConfDriver> confHandler)
     {
         using RequestType = eConfig::RuntimeSave_Request;
         using ResponseType = eEngine::GenericStatus_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         if (std::holds_alternative<api::wpResponse>(res))
         {
@@ -131,7 +131,7 @@ api::HandlerSync runtimeSave(ConfHandler<ConfDriver> confHandler)
             response.set_status(eEngine::ReturnStatus::ERROR);
         }
 
-        return ::api::adapter::toWazuhResponse<ResponseType>(response);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(response);
     };
 }
 

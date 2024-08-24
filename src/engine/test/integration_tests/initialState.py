@@ -33,51 +33,51 @@ def create_empty_bk_conf(environment_dir):
         print(f"Error to create the file: {e}")
 
 def create_dummy_integration(environment_dir):
-    wazuh_core_test = os.path.join(environment_dir, 'engine/wazuh-core-test')
-    os.makedirs(os.path.join(wazuh_core_test, 'decoders'), exist_ok=True)
-    os.makedirs(os.path.join(wazuh_core_test, 'filters'), exist_ok=True)
+    cyb3rhq_core_test = os.path.join(environment_dir, 'engine/cyb3rhq-core-test')
+    os.makedirs(os.path.join(cyb3rhq_core_test, 'decoders'), exist_ok=True)
+    os.makedirs(os.path.join(cyb3rhq_core_test, 'filters'), exist_ok=True)
 
-    with open(os.path.join(wazuh_core_test, 'decoders/test-message.yml'), 'w') as f:
+    with open(os.path.join(cyb3rhq_core_test, 'decoders/test-message.yml'), 'w') as f:
         f.write("""\
 name: decoder/test-message/0
-check: $wazuh.queue == 49 # "1"
+check: $cyb3rhq.queue == 49 # "1"
 """)
 
-    with open(os.path.join(wazuh_core_test, 'filters/allow-all.yml'), 'w') as f:
+    with open(os.path.join(cyb3rhq_core_test, 'filters/allow-all.yml'), 'w') as f:
         f.write("name: filter/allow-all/0\n")
 
-    with open(os.path.join(wazuh_core_test, 'manifest.yml'), 'w') as f:
-        f.write("name: integration/wazuh-core-test/0\ndecoders:\n- decoder/test-message/0\n")
+    with open(os.path.join(cyb3rhq_core_test, 'manifest.yml'), 'w') as f:
+        f.write("name: integration/cyb3rhq-core-test/0\ndecoders:\n- decoder/test-message/0\n")
 
 def create_other_dummy_integration(environment_dir):
-    other_wazuh_core_test = os.path.join(environment_dir, 'engine/other-wazuh-core-test')
-    os.makedirs(os.path.join(other_wazuh_core_test, 'decoders'), exist_ok=True)
-    os.makedirs(os.path.join(other_wazuh_core_test, 'filters'), exist_ok=True)
+    other_cyb3rhq_core_test = os.path.join(environment_dir, 'engine/other-cyb3rhq-core-test')
+    os.makedirs(os.path.join(other_cyb3rhq_core_test, 'decoders'), exist_ok=True)
+    os.makedirs(os.path.join(other_cyb3rhq_core_test, 'filters'), exist_ok=True)
 
-    with open(os.path.join(other_wazuh_core_test, 'decoders/other-test-message.yml'), 'w') as f:
+    with open(os.path.join(other_cyb3rhq_core_test, 'decoders/other-test-message.yml'), 'w') as f:
         f.write("""\
 name: decoder/other-test-message/0
-check: $wazuh.queue == 50 # "2"
+check: $cyb3rhq.queue == 50 # "2"
 """)
 
-    with open(os.path.join(other_wazuh_core_test, 'filters/allow-all.yml'), 'w') as f:
+    with open(os.path.join(other_cyb3rhq_core_test, 'filters/allow-all.yml'), 'w') as f:
         f.write("name: filter/allow-all/0\n")
 
-    with open(os.path.join(other_wazuh_core_test, 'manifest.yml'), 'w') as f:
-        f.write("name: integration/other-wazuh-core-test/0\ndecoders:\n- decoder/other-test-message/0\n")
+    with open(os.path.join(other_cyb3rhq_core_test, 'manifest.yml'), 'w') as f:
+        f.write("name: integration/other-cyb3rhq-core-test/0\ndecoders:\n- decoder/other-test-message/0\n")
 
 def create_dummy_integration_with_parents(environment_dir):
-    parent_wazuh_core_test = os.path.join(environment_dir, 'engine/parent-wazuh-core-test')
-    os.makedirs(os.path.join(parent_wazuh_core_test, 'decoders'), exist_ok=True)
-    os.makedirs(os.path.join(parent_wazuh_core_test, 'filters'), exist_ok=True)
+    parent_cyb3rhq_core_test = os.path.join(environment_dir, 'engine/parent-cyb3rhq-core-test')
+    os.makedirs(os.path.join(parent_cyb3rhq_core_test, 'decoders'), exist_ok=True)
+    os.makedirs(os.path.join(parent_cyb3rhq_core_test, 'filters'), exist_ok=True)
 
-    with open(os.path.join(parent_wazuh_core_test, 'decoders/parent-message.yml'), 'w') as f:
+    with open(os.path.join(parent_cyb3rhq_core_test, 'decoders/parent-message.yml'), 'w') as f:
         f.write("""\
 name: decoder/parent-message/0
-check: $wazuh.queue == 49 # "1"
+check: $cyb3rhq.queue == 49 # "1"
 """)
 
-    with open(os.path.join(parent_wazuh_core_test, 'decoders/test-message.yml'), 'w') as f:
+    with open(os.path.join(parent_cyb3rhq_core_test, 'decoders/test-message.yml'), 'w') as f:
         f.write("""\
 name: decoder/test-message/0
 parents:
@@ -92,11 +92,11 @@ def main():
 
     environment_directory = args.environment
     if environment_directory is None:
-        print("environment_directory is optional. For default is wazuh directory. Usage: python script.py -e <environment_directory>")
+        print("environment_directory is optional. For default is cyb3rhq directory. Usage: python script.py -e <environment_directory>")
 
     SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
-    WAZUH_DIR = os.path.realpath(os.path.join(SCRIPT_DIR, '../../../'))
-    ENVIRONMENT_DIR = environment_directory or os.path.join(WAZUH_DIR, 'environment')
+    CYB3RHQ_DIR = os.path.realpath(os.path.join(SCRIPT_DIR, '../../../'))
+    ENVIRONMENT_DIR = environment_directory or os.path.join(CYB3RHQ_DIR, 'environment')
     ENVIRONMENT_DIR = ENVIRONMENT_DIR.replace('//', '/')
 
     update_conf(SCRIPT_DIR, ENVIRONMENT_DIR)

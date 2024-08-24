@@ -10,7 +10,7 @@
 /******
  * Base event:
  * {
- *   "wazuh": {
+ *   "cyb3rhq": {
  *     "queue": 49,
  *     "origin": "/var/cosas"
  *   },
@@ -31,12 +31,12 @@
 
 static void opBuilderHelperIntEqual_success(benchmark::State& state)
 {
-    auto tuple = std::make_tuple(std::string {"/wazuh/queue"},
+    auto tuple = std::make_tuple(std::string {"/cyb3rhq/queue"},
                                  std::string {"int_equal"},
                                  std::vector<std::string> {"10"},
                                  std::make_shared<defs::mocks::FailDef>());
 
-    base::Event event1 = std::make_shared<json::Json>(R"({"wazuh":{"queue":10,"origin":"/var/cosas"},
+    base::Event event1 = std::make_shared<json::Json>(R"({"cyb3rhq":{"queue":10,"origin":"/var/cosas"},
                                                           "agent":{"id":"0","name":"hostname0","registeredIP":"any"},
                                                           "event":{"original":"TEST MSG"}})");
 
@@ -59,12 +59,12 @@ BENCHMARK(opBuilderHelperIntEqual_success)->Threads(1)->Threads(2)->Threads(4)->
 // opBuilderHelperIntEqual
 static void opBuilderHelperIntEqual_fail(benchmark::State& state)
 {
-    auto tuple = std::make_tuple(std::string {"/wazuh/queue"},
+    auto tuple = std::make_tuple(std::string {"/cyb3rhq/queue"},
                                  std::string {"int_equal"},
                                  std::vector<std::string> {"11"},
                                  std::make_shared<defs::mocks::FailDef>());
 
-    base::Event event1 = std::make_shared<json::Json>(R"({"wazuh":{"queue":10,"origin":"/var/cosas"},
+    base::Event event1 = std::make_shared<json::Json>(R"({"cyb3rhq":{"queue":10,"origin":"/var/cosas"},
                                                           "agent":{"id":"0","name":"hostname0","registeredIP":"any"},
                                                           "event":{"original":"TEST MSG"}})");
 
@@ -95,7 +95,7 @@ static void opBuilderHelperStringStarts_success(benchmark::State& state)
                                  std::vector<std::string> {"specificHost"},
                                  std::make_shared<defs::mocks::FailDef>());
 
-    base::Event event1 = std::make_shared<json::Json>(R"({"wazuh":{"queue":10,"origin":"/var/cosas"},
+    base::Event event1 = std::make_shared<json::Json>(R"({"cyb3rhq":{"queue":10,"origin":"/var/cosas"},
                                                           "agent":{"id":"0","name":"specificHost_001",
                                                           "registeredIP":"any"},"event":{"original":"TEST MSG"}})");
 
@@ -122,7 +122,7 @@ static void opBuilderHelperStringStarts_fail(benchmark::State& state)
                                  std::vector<std::string> {"otherHost"},
                                  std::make_shared<defs::mocks::FailDef>());
 
-    base::Event event1 = std::make_shared<json::Json>(R"({"wazuh":{"queue":10,"origin":"/var/cosas"},
+    base::Event event1 = std::make_shared<json::Json>(R"({"cyb3rhq":{"queue":10,"origin":"/var/cosas"},
                                                           "agent":{"id":"0","name":"specificHost_001",
                                                           "registeredIP":"any"},"event":{"original":"TEST MSG"}})");
 
@@ -153,7 +153,7 @@ static void opBuilderHelperIPCIDR_success(benchmark::State& state)
                                  std::vector<std::string> {"192.168.0.0", "24"},
                                  std::make_shared<defs::mocks::FailDef>());
 
-    base::Event event1 = std::make_shared<json::Json>(R"({"wazuh":{"queue":10,"origin":"/var/cosas"},
+    base::Event event1 = std::make_shared<json::Json>(R"({"cyb3rhq":{"queue":10,"origin":"/var/cosas"},
                                                           "agent":{"id":"0","name":"specificHost_001",
                                                           "registeredIP":"192.168.0.10"},
                                                           "event":{"original":"TEST MSG"}})");
@@ -180,7 +180,7 @@ static void opBuilderHelperIPCIDR_fail(benchmark::State& state)
                                  std::vector<std::string> {"192.168.0.0", "24"},
                                  std::make_shared<defs::mocks::FailDef>());
 
-    base::Event event1 = std::make_shared<json::Json>(R"({"wazuh":{"queue":10,"origin":"/var/cosas"},
+    base::Event event1 = std::make_shared<json::Json>(R"({"cyb3rhq":{"queue":10,"origin":"/var/cosas"},
                                                           "agent":{"id":"0","name":"specificHost_001",
                                                           "registeredIP":"10.0.0.10"},
                                                           "event":{"original":"TEST MSG"}})");

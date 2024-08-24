@@ -1,4 +1,4 @@
 items:
     - version: 0.0.1-dev
       short: Created integration for MySQL
-      pr: "[#17404](https://github.com/wazuh/wazuh/pull/17404)"
+      pr: "[#17404](https://github.com/cyb3rhq/cyb3rhq/pull/17404)"

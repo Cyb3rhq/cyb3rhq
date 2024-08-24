@@ -7,7 +7,7 @@ metadata:
   version: [17.5.x, 18.0.x]
   description: Decoder for Sophos Waf
   author:
-    name: Wazuh Inc. info@wazuh.com
+    name: Cyb3rhq Inc. info@wazuh.com
     date: 2023-01-12
   references:
     - https://support.sophos.com/support/s/?language=en_US#t=DocumentationTab
@@ -113,5 +113,5 @@ normalize:
       - \@timestamp: +concat/$~tmp.date/T/$~tmp.time
       - url.full: $~tmp.url
       - user_agent.original: $~tmp.useragent
-      - wazuh.decoders: +array_append/sophos-waf
+      - cyb3rhq.decoders: +array_append/sophos-waf
       - ~tmp: delete()

@@ -1,5 +1,5 @@
 {
-  "name": "wazuh-states-vulnerabilities-cluster",
+  "name": "cyb3rhq-states-vulnerabilities-cluster",
   "enabled": "yes",
   "hosts": ["http://0.0.0.0:9200"]
 }

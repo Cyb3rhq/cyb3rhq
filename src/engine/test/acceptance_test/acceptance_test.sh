@@ -57,11 +57,11 @@ then
 
     TEST_NAME="analysisd-test-${RANDOM}"
 
-    # Stop Wazuh manager
+    # Stop Cyb3rhq manager
 
-    systemctl stop wazuh-manager.service
+    systemctl stop cyb3rhq-manager.service
 
-    # Backup Wazuh files
+    # Backup Cyb3rhq files
 
     mkdir -p $CONFIG_BACKUP_DIR
     # mkdir -p $LOGS_BACKUP_DIR
@@ -72,26 +72,26 @@ then
     # Copy test files
 
     cp $CONFIG_SRC_DIR/* $CONFIG_DST_DIR
-    chgrp wazuh $CONFIG_DST_DIR/ossec.conf
-    chgrp wazuh $CONFIG_DST_DIR/local_internal_options.conf
+    chgrp cyb3rhq $CONFIG_DST_DIR/ossec.conf
+    chgrp cyb3rhq $CONFIG_DST_DIR/local_internal_options.conf
 
     mkdir -p $RULES_DST_DIR
     mkdir -p $DECODERS_DST_DIR
     cp $RULES_SRC_DIR/* $RULES_DST_DIR
     cp $DECODERS_SRC_DIR/* $DECODERS_DST_DIR
-    chown -R root:wazuh $RULES_DST_DIR
-    chown -R root:wazuh $DECODERS_DST_DIR
+    chown -R root:cyb3rhq $RULES_DST_DIR
+    chown -R root:cyb3rhq $DECODERS_DST_DIR
 
-    # Start Wazuh
+    # Start Cyb3rhq
 
-    systemctl start wazuh-manager.service
+    systemctl start cyb3rhq-manager.service
 
-    # Sleep to wait for wazuh-analysisd to start up
+    # Sleep to wait for cyb3rhq-analysisd to start up
     sleep 5
 
     # Run stats collector script
 
-    python3 ./utils/monitor.py -s $STATS_MONITOR_POLL_TIME_SECS -b wazuh-analysisd -n $TEST_NAME &
+    python3 ./utils/monitor.py -s $STATS_MONITOR_POLL_TIME_SECS -b cyb3rhq-analysisd -n $TEST_NAME &
 
     MONITOR_PID=$!
 
@@ -109,11 +109,11 @@ then
 
     kill -INT $MONITOR_PID
 
-    # Stop Wazuh manager
+    # Stop Cyb3rhq manager
 
-    systemctl stop wazuh-manager.service
+    systemctl stop cyb3rhq-manager.service
 
-    # Restore Wazuh files
+    # Restore Cyb3rhq files
 
     mv $CONFIG_BACKUP_DIR/* $CONFIG_DST_DIR
 

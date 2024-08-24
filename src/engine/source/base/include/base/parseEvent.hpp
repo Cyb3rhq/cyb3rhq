@@ -8,17 +8,17 @@
 
 namespace base::parseEvent
 {
-constexpr char EVENT_QUEUE_ID[] {"/wazuh/queue"};
-constexpr char EVENT_LOCATION_ID[] {"/wazuh/location"};
+constexpr char EVENT_QUEUE_ID[] {"/cyb3rhq/queue"};
+constexpr char EVENT_LOCATION_ID[] {"/cyb3rhq/location"};
 constexpr char EVENT_MESSAGE_ID[] {"/event/original"};
 
 /**
- * @brief Parse an Wazuh message and extract the queue, location and message
+ * @brief Parse an Cyb3rhq message and extract the queue, location and message
  *
- * @param event Wazuh message
+ * @param event Cyb3rhq message
  * @return Event Event object
  */
-Event parseWazuhEvent(const std::string& event);
+Event parseCyb3rhqEvent(const std::string& event);
 
 } // namespace base::parseEvent
 

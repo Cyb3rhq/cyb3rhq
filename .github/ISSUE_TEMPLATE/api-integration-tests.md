@@ -1,14 +1,14 @@
 ---
 name: Release Candidate - API integration tests
 about: Report the results after running API integration tests.
-title: Release [WAZUH VERSION] - Release Candidate [RC VERSION] - API integration
+title: Release [CYB3RHQ VERSION] - Release Candidate [RC VERSION] - API integration
   tests
 labels: ''
 assignees: ''
 
 ---
 
-The following issue aims to run all [API integration tests](https://github.com/wazuh/wazuh/tree/master/api/test/integration) for the current release candidate, report the results, and open new issues for any encountered errors.
+The following issue aims to run all [API integration tests](https://github.com/cyb3rhq/cyb3rhq/tree/master/api/test/integration) for the current release candidate, report the results, and open new issues for any encountered errors.
 
 ## API integration tests information
 |                                          |                                            |

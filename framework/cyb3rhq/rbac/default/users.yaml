@@ -1,0 +1,17 @@
+# CYB3RHQ SYSTEM FILE, PLEASE DO NOT MODIFY
+
+default_users:
+  cyb3rhq:
+    description: Superuser of Cyb3rhq.
+    password: cyb3rhq
+    allow_run_as: True
+
+  cyb3rhq-wui:
+    description: Superuser of Cyb3rhq UI
+    password: cyb3rhq-wui
+    allow_run_as: True
+
+  agent-init:
+    description: User to be used to register new agents.
+    password: agent-init
+    allow_run_as: False

@@ -1,14 +1,14 @@
 """
-copyright: Copyright (C) 2015-2024, Wazuh Inc.
+copyright: Copyright (C) 2015-2024, Cyb3rhq Inc.
 
-           Created by Wazuh, Inc. <info@wazuh.com>.
+           Created by Cyb3rhq, Inc. <info@wazuh.com>.
 
            This program is free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 type: integration
 
-brief: These tests will check if the set_secure_headers middleware of the API handled by the 'wazuh-apid' daemon is
-       working properly. The Wazuh API is an open source 'RESTful' API that allows for interaction with the Wazuh
+brief: These tests will check if the set_secure_headers middleware of the API handled by the 'cyb3rhq-apid' daemon is
+       working properly. The Cyb3rhq API is an open source 'RESTful' API that allows for interaction with the Cyb3rhq
        manager from a web browser, command line tool like 'cURL' or any script or program that can make web requests.
 
 components:
@@ -20,12 +20,12 @@ targets:
     - manager
 
 daemons:
-    - wazuh-apid
-    - wazuh-modulesd
-    - wazuh-analysisd
-    - wazuh-execd
-    - wazuh-db
-    - wazuh-remoted
+    - cyb3rhq-apid
+    - cyb3rhq-modulesd
+    - cyb3rhq-analysisd
+    - cyb3rhq-execd
+    - cyb3rhq-db
+    - cyb3rhq-remoted
 
 os_platform:
     - linux
@@ -62,10 +62,10 @@ import requests
 from pathlib import Path
 
 from . import TEST_CASES_FOLDER_PATH, CONFIGURATIONS_FOLDER_PATH
-from wazuh_testing.constants.api import AGENTS_ROUTE, CONFIGURATION_TYPES
-from wazuh_testing.constants.daemons import API_DAEMONS_REQUIREMENTS
-from wazuh_testing.modules.api.utils import get_base_url, login
-from wazuh_testing.utils.configuration import get_test_cases_data, load_configuration_template
+from cyb3rhq_testing.constants.api import AGENTS_ROUTE, CONFIGURATION_TYPES
+from cyb3rhq_testing.constants.daemons import API_DAEMONS_REQUIREMENTS
+from cyb3rhq_testing.modules.api.utils import get_base_url, login
+from cyb3rhq_testing.utils.configuration import get_test_cases_data, load_configuration_template
 
 
 # Marks
@@ -95,7 +95,7 @@ def test_set_secure_headers(test_configuration, test_metadata, add_configuration
                  For this purpose, the test makes an API request and checks that the response headers fulfill the REST
                  recommended standard.
 
-    wazuh_min_version: 4.1.0
+    cyb3rhq_min_version: 4.1.0
 
     test_phases:
         - setup:
@@ -124,13 +124,13 @@ def test_set_secure_headers(test_configuration, test_metadata, add_configuration
             brief: Metadata from the test case.
         - add_configuration:
             type: fixture
-            brief: Add configuration to the Wazuh API configuration files.
+            brief: Add configuration to the Cyb3rhq API configuration files.
         - truncate_monitored_files:
             type: fixture
             brief: Truncate all the log files and json alerts files before and after the test execution.
         - daemons_handler:
             type: fixture
-            brief: Wrapper of a helper function to handle Wazuh daemons.
+            brief: Wrapper of a helper function to handle Cyb3rhq daemons.
         - wait_for_api_start:
             type: fixture
             brief: Monitor the API log file to detect whether it has been started or not.

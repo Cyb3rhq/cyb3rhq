@@ -7,7 +7,7 @@ metadata:
   versions: [Vista, "7", "8", "10", "11", Server 2012, Server 2016, Server 2019, Server 2022]
   compatibility: This decoder was tested on Windows 10, but should work on all versions of Windows Vista onwards.
   author:
-    name: Wazuh, Inc.
+    name: Cyb3rhq, Inc.
     date: 2023/10/10
   references:
     - https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/wmf/whats-new/script-logging?view=powershell-7.3
@@ -20,7 +20,7 @@ check:
 
 normalize:
  - map:
-   - wazuh.decoders: array_append(windows-powershell-operational)
+   - cyb3rhq.decoders: array_append(windows-powershell-operational)
    - event.kind: event
    - event.dataset: powershell-operational
    - event.category: array_append(process)

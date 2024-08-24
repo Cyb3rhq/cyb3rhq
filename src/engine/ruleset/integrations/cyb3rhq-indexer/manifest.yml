@@ -1,0 +1,6 @@
+name: integration/cyb3rhq-indexer/0
+decoders:
+- decoder/cyb3rhq-indexer-slowlog/0
+- decoder/cyb3rhq-indexer-server/0
+- decoder/cyb3rhq-indexer-task-plain/0
+- decoder/cyb3rhq-indexer-deprecation/0

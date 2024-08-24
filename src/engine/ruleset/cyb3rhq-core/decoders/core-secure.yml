@@ -1,0 +1,28 @@
+name: decoder/core-secure/0
+# module: cyb3rhq
+
+metadata:
+  title: Secure queue decoder.
+  description: >
+    Process events that have the Secure queue in the standard OSSEC message format.
+    Currently no messages should be received through this queue.
+  compatibility: Any service being tagged with the queue 52.
+  versions:
+    - Cyb3rhq 4.*
+  author:
+    name: Cyb3rhq, Inc.
+    date: 07/03/2023
+  references:
+    - https://documentation.wazuh.com/current/development/message-format.html#secure-message-format
+
+parents:
+  - decoder/core-cyb3rhq-message/0
+
+check:
+  # Value 52 is equal to character '4' in ASCII
+  - cyb3rhq.queue: 52
+
+normalize:
+  - map:
+      - cyb3rhq.decoders: array_append(core-secure)
+      - cyb3rhq.source: cyb3rhq-remoted-unknown

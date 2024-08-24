@@ -6,7 +6,7 @@ set(SRC_DIR ${CMAKE_CURRENT_LIST_DIR}/src)
 set(INC_DIR ${CMAKE_CURRENT_LIST_DIR}/include)
 
 add_library(base STATIC
-    ${SRC_DIR}/utils/wazuhProtocol/wazuhRequest.cpp
+    ${SRC_DIR}/utils/cyb3rhqProtocol/cyb3rhqRequest.cpp
     ${SRC_DIR}/utils/ipUtils.cpp
     ${SRC_DIR}/utils/stringUtils.cpp
     ${SRC_DIR}/utils/timeUtils.cpp
@@ -47,8 +47,8 @@ add_executable(base_utest
     ${UNIT_SRC_DIR}/result_test.cpp
     ${UNIT_SRC_DIR}/graph_test.cpp
     ${UNIT_SRC_DIR}/name_test.cpp
-    ${UNIT_SRC_DIR}/utils/wazuhProtocol/wazuhRequest_test.cpp
-    ${UNIT_SRC_DIR}/utils/wazuhProtocol/wazuhResponse_test.cpp
+    ${UNIT_SRC_DIR}/utils/cyb3rhqProtocol/cyb3rhqRequest_test.cpp
+    ${UNIT_SRC_DIR}/utils/cyb3rhqProtocol/cyb3rhqResponse_test.cpp
     ${UNIT_SRC_DIR}/parseEvent_test.cpp
     ${UNIT_SRC_DIR}/dotPath_test.cpp
     ${UNIT_SRC_DIR}/json_test.cpp

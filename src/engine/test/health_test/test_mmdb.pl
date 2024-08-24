@@ -53,13 +53,13 @@ my $tree = MaxMind::DB::Writer::Tree->new(
 
 my %address_for_test = (
     '1.2.3.4/32' => {
-        city  => { names => {en => 'Wazuh city' }},
-        continent  => {code => 'WC', names => {en => 'Wazuh Continent' }},
-        country  => {iso_code => 'WCtry', names => {en => 'Wazuh Country' }},
-        location  => {latitude => 41.7776, longitude => 88.4293, time_zone => 'Wazuh/Timezone'},
+        city  => { names => {en => 'Cyb3rhq city' }},
+        continent  => {code => 'WC', names => {en => 'Cyb3rhq Continent' }},
+        country  => {iso_code => 'WCtry', names => {en => 'Cyb3rhq Country' }},
+        location  => {latitude => 41.7776, longitude => 88.4293, time_zone => 'Cyb3rhq/Timezone'},
         postal  => {code => '7777'},
         autonomous_system_number => 1234,
-        autonomous_system_organization => 'Wazuh Organization',
+        autonomous_system_organization => 'Cyb3rhq Organization',
     }
 );
 

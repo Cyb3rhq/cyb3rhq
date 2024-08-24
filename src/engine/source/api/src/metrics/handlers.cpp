@@ -9,8 +9,8 @@
 namespace api::metrics::handlers
 {
 
-namespace eMetrics = ::com::wazuh::api::engine::metrics;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eMetrics = ::com::cyb3rhq::api::engine::metrics;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 /* Manager Endpoint */
 
@@ -20,7 +20,7 @@ api::HandlerSync metricsDumpCmd(const std::shared_ptr<metricsManager::IMetricsMa
     {
         using RequestType = eMetrics::Dump_Request;
         using ResponseType = eMetrics::Dump_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -44,7 +44,7 @@ api::HandlerSync metricsDumpCmd(const std::shared_ptr<metricsManager::IMetricsMa
         eResponse.set_status(eEngine::ReturnStatus::OK);
         eResponse.mutable_value()->CopyFrom(json_value);
 
-        return ::api::adapter::toWazuhResponse(eResponse);
+        return ::api::adapter::toCyb3rhqResponse(eResponse);
     };
 }
 
@@ -55,7 +55,7 @@ api::HandlerSync metricsGetCmd(const std::shared_ptr<metricsManager::IMetricsMan
     {
         using RequestType = eMetrics::Get_Request;
         using ResponseType = eMetrics::Get_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -87,7 +87,7 @@ api::HandlerSync metricsGetCmd(const std::shared_ptr<metricsManager::IMetricsMan
         eResponse.mutable_value()->CopyFrom(json_value);
         eResponse.set_status(eEngine::ReturnStatus::OK);
 
-        return ::api::adapter::toWazuhResponse(eResponse);
+        return ::api::adapter::toCyb3rhqResponse(eResponse);
     };
 }
 
@@ -97,7 +97,7 @@ api::HandlerSync metricsEnableCmd(const std::shared_ptr<metricsManager::IMetrics
     {
         using RequestType = eMetrics::Enable_Request;
         using ResponseType = eMetrics::Enable_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -126,7 +126,7 @@ api::HandlerSync metricsEnableCmd(const std::shared_ptr<metricsManager::IMetrics
         ResponseType eResponse;
         eResponse.set_status(eEngine::ReturnStatus::OK);
 
-        return ::api::adapter::toWazuhResponse(eResponse);
+        return ::api::adapter::toCyb3rhqResponse(eResponse);
     };
 }
 
@@ -136,7 +136,7 @@ api::HandlerSync metricsTestCmd(const std::shared_ptr<metricsManager::IMetricsMa
     {
         using RequestType = eMetrics::Test_Request;
         using ResponseType = eMetrics::Test_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -149,7 +149,7 @@ api::HandlerSync metricsTestCmd(const std::shared_ptr<metricsManager::IMetricsMa
         ResponseType eResponse;
         eResponse.set_status(eEngine::ReturnStatus::OK);
 
-        return ::api::adapter::toWazuhResponse(eResponse);
+        return ::api::adapter::toCyb3rhqResponse(eResponse);
     };
 }
 
@@ -160,7 +160,7 @@ api::HandlerSync metricsList(const std::shared_ptr<metricsManager::IMetricsManag
     {
         using RequestType = eMetrics::List_Request;
         using ResponseType = eMetrics::List_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -185,7 +185,7 @@ api::HandlerSync metricsList(const std::shared_ptr<metricsManager::IMetricsManag
         const auto json_value = std::get<google::protobuf::Value>(protoVal);
         eResponse.mutable_value()->CopyFrom(json_value);
 
-        return ::api::adapter::toWazuhResponse(eResponse);
+        return ::api::adapter::toCyb3rhqResponse(eResponse);
     };
 }
 

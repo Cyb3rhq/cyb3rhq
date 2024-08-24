@@ -1,17 +1,17 @@
 name: decoder/docker-listener/0
 
 metadata:
-  title: Wazuh docker listener integration
+  title: Cyb3rhq docker listener integration
   description: Process events that comes from the Docker listener wodle
   module: Docker-listener
   compatibility: >
-    This decoder has been tested on Wazuh version 4.4 and docker 24.0.2
+    This decoder has been tested on Cyb3rhq version 4.4 and docker 24.0.2
   versions:
    - "4.4.3"
    - "24.0.2" #TODO: check backward compatibility
   author:
     email: info@wazuh.com
-    name: Wazuh, Inc.
+    name: Cyb3rhq, Inc.
     date: 2023-06-01
   references:
     - https://documentation.wazuh.com/current/container-security/docker-monitor/index.html
@@ -21,7 +21,7 @@ parents:
   - decoder/integrations/0
 
 check:
-  - wazuh.origin: Wazuh-Docker
+  - cyb3rhq.origin: Cyb3rhq-Docker
   - event.original: +starts_with/{
 
 parse:
@@ -216,7 +216,7 @@ normalize:
     - ~configuration.name : $json_event.docker.Actor.Attributes.name
 
  - map:
-    - wazuh.decoders: +array_append/docker-listener
+    - cyb3rhq.decoders: +array_append/docker-listener
     #cleanup
     - json_event: delete()
     - ~tmp: delete()

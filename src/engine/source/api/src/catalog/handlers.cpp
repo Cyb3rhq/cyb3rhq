@@ -30,8 +30,8 @@ auto checkResourcePermission(const base::Name& name,
 }
 } // namespace
 
-namespace eCatalog = ::com::wazuh::api::engine::catalog;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eCatalog = ::com::cyb3rhq::api::engine::catalog;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 api::HandlerSync resourcePost(std::shared_ptr<Catalog> catalog, std::weak_ptr<rbac::IRBAC> rbac)
 {
@@ -49,7 +49,7 @@ api::HandlerSync resourcePost(std::shared_ptr<Catalog> catalog, std::weak_ptr<rb
     {
         using RequestType = eCatalog::ResourcePost_Request;
         using ResponseType = eEngine::GenericStatus_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -127,7 +127,7 @@ api::HandlerSync resourceGet(std::shared_ptr<Catalog> catalog, std::weak_ptr<rba
     {
         using RequestType = eCatalog::ResourceGet_Request;
         using ResponseType = eCatalog::ResourceGet_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -190,7 +190,7 @@ api::HandlerSync resourceGet(std::shared_ptr<Catalog> catalog, std::weak_ptr<rba
         eResponse.set_content(content);
         eResponse.set_status(eEngine::ReturnStatus::OK);
 
-        return ::api::adapter::toWazuhResponse(eResponse);
+        return ::api::adapter::toCyb3rhqResponse(eResponse);
     };
 }
 
@@ -210,7 +210,7 @@ api::HandlerSync resourceDelete(std::shared_ptr<Catalog> catalog, std::weak_ptr<
     {
         using RequestType = eCatalog::ResourceDelete_Request;
         using ResponseType = eEngine::GenericStatus_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -285,7 +285,7 @@ api::HandlerSync resourcePut(std::shared_ptr<Catalog> catalog, std::weak_ptr<rba
     {
         using RequestType = eCatalog::ResourcePut_Request;
         using ResponseType = eEngine::GenericStatus_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -363,7 +363,7 @@ api::HandlerSync resourceValidate(std::shared_ptr<Catalog> catalog, std::weak_pt
     {
         using RequestType = eCatalog::ResourceValidate_Request;
         using ResponseType = eEngine::GenericStatus_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -440,7 +440,7 @@ api::HandlerSync getNamespaces(std::shared_ptr<Catalog> catalog, std::weak_ptr<r
     {
         using RequestType = eCatalog::NamespacesGet_Request;
         using ResponseType = eCatalog::NamespacesGet_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -466,8 +466,8 @@ api::HandlerSync getNamespaces(std::shared_ptr<Catalog> catalog, std::weak_ptr<r
 
         eResponse.set_status(eEngine::ReturnStatus::OK);
 
-        // Adapt the response to wazuh api
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        // Adapt the response to cyb3rhq api
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 

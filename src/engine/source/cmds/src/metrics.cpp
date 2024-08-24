@@ -26,8 +26,8 @@ struct Options
 namespace cmd::metrics
 {
 
-namespace eMetrics = ::com::wazuh::api::engine::metrics;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eMetrics = ::com::cyb3rhq::api::engine::metrics;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 void runDump(std::shared_ptr<apiclnt::Client> client)
 {
@@ -38,9 +38,9 @@ void runDump(std::shared_ptr<apiclnt::Client> client)
     RequestType eRequest;
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print value as json
     const auto& value = eResponse.value();
@@ -62,9 +62,9 @@ void runGetInstrument(std::shared_ptr<apiclnt::Client> client,
     eRequest.set_scopename(scopeName);
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print value as json
     const auto& value = eResponse.value();
@@ -87,9 +87,9 @@ void runEnableInstrument(std::shared_ptr<apiclnt::Client> client,
     eRequest.set_status(status);
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runListInstruments(std::shared_ptr<apiclnt::Client> client)
@@ -101,9 +101,9 @@ void runListInstruments(std::shared_ptr<apiclnt::Client> client)
     RequestType eRequest;
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print value as json
     const auto& value = eResponse.value();
@@ -134,9 +134,9 @@ void runTest(std::shared_ptr<apiclnt::Client> client)
     RequestType eRequest;
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void configure(CLI::App_p app)

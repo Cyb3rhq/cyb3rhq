@@ -92,7 +92,7 @@ We need to [install astyle](http://astyle.sourceforge.net/install.html) and [c++
     ]
 }
 ```
-And create `astyle.config` file inside `.vscode` folder using Wazuh style guidelines:
+And create `astyle.config` file inside `.vscode` folder using Cyb3rhq style guidelines:
 ```
 --style=allman
 --formatted
@@ -180,4 +180,4 @@ make test
 ```
 <a name="license"></a>
 ## License
-Wazuh Engine is distributed under the AGPLv3 license. See [LICENSE-engine](LICENSE-engine) and [COPYING-engine](COPYING-engine) for more details.
+Cyb3rhq Engine is distributed under the AGPLv3 license. See [LICENSE-engine](LICENSE-engine) and [COPYING-engine](COPYING-engine) for more details.

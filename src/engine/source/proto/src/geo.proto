@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "engine.proto";
 
-package com.wazuh.api.engine.geo;
+package com.cyb3rhq.api.engine.geo;
 
 /* Entry of a db in the geo manager */
 message DbEntry

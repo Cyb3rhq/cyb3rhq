@@ -10,7 +10,7 @@
 #include <sockiface/isockHandler.hpp>
 #include <wdb/iwdbHandler.hpp>
 
-namespace wazuhdb
+namespace cyb3rhqdb
 {
 
 constexpr std::string_view CFG_AR_SOCK_PATH {"/var/ossec/queue/alerts/cfgarq"};
@@ -19,9 +19,9 @@ constexpr std::string_view WDB_SOCK_PATH {"/var/ossec/queue/db/wdb"};
 constexpr auto SOCKET_NOT_CONNECTED {-1}; ///< Socket not connected (status)
 
 /**
- * @brief WazuhDB class
+ * @brief Cyb3rhqDB class
  *
- * This class is used to interact with the WazuhDB database.
+ * This class is used to interact with the Cyb3rhqDB database.
  *
  * @warning Not a thread-safe implementation.
  */
@@ -32,7 +32,7 @@ private:
     std::shared_ptr<sockiface::ISockHandler> m_socket; ///< Socket to the wdb
 
 public:
-    /** @brief Create a WazuhDB object from a path
+    /** @brief Create a Cyb3rhqDB object from a path
      *
      * @param path Path to the wdb socket
      */
@@ -107,5 +107,5 @@ public:
 
     size_t getQueryMaxSize() const noexcept override { return this->m_socket->getMaxMsgSize(); };
 };
-} // namespace wazuhdb
+} // namespace cyb3rhqdb
 #endif // _WDB_WDB_HANDLER_H

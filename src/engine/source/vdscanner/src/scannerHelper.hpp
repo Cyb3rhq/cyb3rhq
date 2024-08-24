@@ -1,6 +1,6 @@
 /*
- * Wazuh Vulnerability scanner
- * Copyright (C) 2015, Wazuh Inc.
+ * Cyb3rhq Vulnerability scanner
+ * Copyright (C) 2015, Cyb3rhq Inc.
  * January 21, 2024.
  *
  * This program is free software; you can redistribute it

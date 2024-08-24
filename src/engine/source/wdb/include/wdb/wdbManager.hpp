@@ -9,7 +9,7 @@
 
 #include "wdbHandler.hpp"
 
-namespace wazuhdb
+namespace cyb3rhqdb
 {
 
 class WDBManager final : public IWDBManager
@@ -29,7 +29,7 @@ public:
 
     ~WDBManager() = default;
 
-    /** @brief Create a WazuhDB connection handler from a path
+    /** @brief Create a Cyb3rhqDB connection handler from a path
      *
      * @param sockPath Path to the wdb socket
      */
@@ -40,5 +40,5 @@ public:
     }
 };
 
-} // namespace wazuhdb
+} // namespace cyb3rhqdb
 #endif // _WDB_WDB_MANAGER_HPP

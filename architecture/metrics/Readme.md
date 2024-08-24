@@ -1,6 +1,6 @@
 <!---
-Copyright (C) 2015, Wazuh Inc.
-Created by Wazuh, Inc. <info@wazuh.com>.
+Copyright (C) 2015, Cyb3rhq Inc.
+Created by Cyb3rhq, Inc. <info@wazuh.com>.
 This program is free software; you can redistribute it and/or modify it under the terms of GPLv2
 -->
 
@@ -15,13 +15,13 @@ This program is free software; you can redistribute it and/or modify it under th
 
 ## Purpose
 
-Wazuh includes some metrics to understand the behavior of its components, which allow to investigate errors and detect problems with some configurations. This feature has multiple actors: `wazuh-remoted` for agent interaction messages, `wazuh-analysisd` for processed events.
+Cyb3rhq includes some metrics to understand the behavior of its components, which allow to investigate errors and detect problems with some configurations. This feature has multiple actors: `cyb3rhq-remoted` for agent interaction messages, `cyb3rhq-analysisd` for processed events.
 
 ## Sequence diagram
 
 The sequence diagram shows the basic flow of metric counters. These are the main flows:
 
-1. Messages received by `wazuh-remoted` from agents.
-2. Messages that `wazuh-remoted` sends to agents.
-3. Events received by `wazuh-analysisd`.
-4. Events processed by `wazuh-analysisd`.
+1. Messages received by `cyb3rhq-remoted` from agents.
+2. Messages that `cyb3rhq-remoted` sends to agents.
+3. Events received by `cyb3rhq-analysisd`.
+4. Events processed by `cyb3rhq-analysisd`.

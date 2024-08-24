@@ -21,8 +21,8 @@ enum class GraphType
 namespace api::graph::handlers
 {
 
-namespace eGraph = ::com::wazuh::api::engine::graph;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eGraph = ::com::cyb3rhq::api::engine::graph;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 api::HandlerSync resourceGet(const Config& config)
 {
@@ -30,7 +30,7 @@ api::HandlerSync resourceGet(const Config& config)
     {
         using RequestType = eGraph::GraphGet_Request;
         using ResponseType = eGraph::GraphGet_Response;
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
         // If the request is not valid, return the error
         if (std::holds_alternative<api::wpResponse>(res))
@@ -110,7 +110,7 @@ api::HandlerSync resourceGet(const Config& config)
         }
 
         eResponse.set_status(eEngine::ReturnStatus::OK);
-        return ::api::adapter::toWazuhResponse(eResponse);
+        return ::api::adapter::toCyb3rhqResponse(eResponse);
     };
 }
 

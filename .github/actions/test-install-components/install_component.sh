@@ -2,7 +2,7 @@
 package_name=$1
 target=$2
 
-echo "Installing Wazuh $target."
+echo "Installing Cyb3rhq $target."
 
 if [ -n "$(command -v yum)" ]; then
     install="yum install -y --nogpgcheck"
@@ -19,5 +19,5 @@ if [ "${ARCH}" = "i386" ] || [ "${ARCH}" = "armv7hl" ]; then
     linux="linux32"
 fi
 
-WAZUH_MANAGER="10.0.0.2" $linux $install "/packages/$package_name"| tee /packages/status.log
-grep -i " installed.*wazuh-$target" $installed_log| tee -a /packages/status.log
+CYB3RHQ_MANAGER="10.0.0.2" $linux $install "/packages/$package_name"| tee /packages/status.log
+grep -i " installed.*cyb3rhq-$target" $installed_log| tee -a /packages/status.log

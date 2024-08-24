@@ -6,9 +6,9 @@ metadata:
   title: Syslog Decoder event
   description: Syslog header
   compatibility: >
-    This decoder has been tested on Wazuh version 4.3
+    This decoder has been tested on Cyb3rhq version 4.3
   author:
-    name: Wazuh, Inc.
+    name: Cyb3rhq, Inc.
     url: https://wazuh.com
     date: 2022/11/08
   references:
@@ -35,7 +35,7 @@ parse|event.original:
 normalize:
   - map:
       - event.kind: event
-      - wazuh.decoders: array_append(syslog)
+      - cyb3rhq.decoders: array_append(syslog)
       - related.hosts: array_append($host.hostname)
 
       - process.name: rename($TAG)

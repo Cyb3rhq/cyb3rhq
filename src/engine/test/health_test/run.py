@@ -8,14 +8,14 @@ environment_directory = ""
 input_file = ""
 binary_path = ""
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
-WAZUH_DIR = os.path.realpath(os.path.join(SCRIPT_DIR, '../../../..'))
+CYB3RHQ_DIR = os.path.realpath(os.path.join(SCRIPT_DIR, '../../../..'))
 
 
 def parse_arguments():
     global environment_directory
     global input_file
 
-    parser = argparse.ArgumentParser(description='Run Behave tests for Wazuh.')
+    parser = argparse.ArgumentParser(description='Run Behave tests for Cyb3rhq.')
     parser.add_argument('-e', '--environment', help='Environment directory')
     parser.add_argument('-b', '--binary', help='Specify the path to the engine binary', default='')
     parser.add_argument('-i', '--input_file', help='Input file path')
@@ -28,10 +28,10 @@ def parse_arguments():
 
 def check_config_file():
     global environment_directory
-    global WAZUH_DIR
+    global CYB3RHQ_DIR
 
     if not environment_directory:
-        environment_directory = os.path.join(WAZUH_DIR, 'environment')
+        environment_directory = os.path.join(CYB3RHQ_DIR, 'environment')
 
     serv_conf_file = os.path.join(environment_directory, 'engine', 'general.conf')
 
@@ -50,13 +50,13 @@ def run_test_health():
     global environment_directory
     global input_file
 
-    engine_src_dir = os.path.join(WAZUH_DIR, "src", "engine")
+    engine_src_dir = os.path.join(CYB3RHQ_DIR, "src", "engine")
     health_test_dir = os.path.join(engine_src_dir, "test", "health_test")
 
     if input_file is None:
         print("Warning: input_file is not specified. The health test will be run without it.")
 
-    command = ["python3", os.path.join(health_test_dir, "health_test.py"), WAZUH_DIR, environment_directory]
+    command = ["python3", os.path.join(health_test_dir, "health_test.py"), CYB3RHQ_DIR, environment_directory]
     if input_file is not None:
         command.append(input_file)
     process = subprocess.run(command)
@@ -65,13 +65,13 @@ def run_test_health():
 
 def main():
     global environment_directory
-    global WAZUH_DIR
+    global CYB3RHQ_DIR
     global SCRIPT_DIR
 
     parse_arguments()
     serv_conf_file = check_config_file()
 
-    engine_src_dir = os.path.join(WAZUH_DIR, 'src', 'engine')
+    engine_src_dir = os.path.join(CYB3RHQ_DIR, 'src', 'engine')
     ENGINE_BIN = binary_path or os.path.join(engine_src_dir, 'build', 'main')
 
     os.environ['ENGINE_DIR'] = engine_src_dir

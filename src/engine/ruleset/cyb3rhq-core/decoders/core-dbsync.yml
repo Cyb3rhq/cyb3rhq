@@ -1,0 +1,28 @@
+name: decoder/core-dbsync/0
+# module: cyb3rhq
+
+metadata:
+  title: DBSync queue decoder
+  description: >
+    Process events that have the DBSync queue in the standard OSSEC message format.
+    Handles implementation details of Cyb3rhq, not intended for end users.
+  compatibility: Any service being tagged with the queue 53.
+  versions:
+    - Cyb3rhq 4.*
+  author:
+    name: Cyb3rhq, Inc.
+    date: 07/03/2023
+  references:
+    - https://github.com/cyb3rhq/cyb3rhq/issues/13521
+
+parents:
+  - decoder/core-cyb3rhq-message/0
+
+check:
+  # Value 53 is equal to character '5' in ASCII
+  - cyb3rhq.queue: 53
+
+normalize:
+  - map:
+      - cyb3rhq.decoders: array_append(core-dbsync)
+      - cyb3rhq.source: dbsync

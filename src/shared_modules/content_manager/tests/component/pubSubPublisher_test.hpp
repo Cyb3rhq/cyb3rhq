@@ -1,6 +1,6 @@
 /*
- * Wazuh content manager - Component Tests
- * Copyright (C) 2015, Wazuh Inc.
+ * Cyb3rhq content manager - Component Tests
+ * Copyright (C) 2015, Cyb3rhq Inc.
  * Jun 20, 2023.
  *
  * This program is free software; you can redistribute it

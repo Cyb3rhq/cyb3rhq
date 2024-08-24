@@ -190,7 +190,7 @@ void runStart(ConfHandler confManager)
     std::shared_ptr<geo::Manager> geoManager;
     std::shared_ptr<schemf::Schema> schema;
     std::shared_ptr<sockiface::UnixSocketFactory> sockFactory;
-    std::shared_ptr<wazuhdb::WDBManager> wdbManager;
+    std::shared_ptr<cyb3rhqdb::WDBManager> wdbManager;
     std::shared_ptr<rbac::RBAC> rbac;
     std::shared_ptr<api::policy::IPolicy> policyManager;
 
@@ -254,7 +254,7 @@ void runStart(ConfHandler confManager)
         {
             hlp::initTZDB(tzdbPath, tzdbAutoUpdate);
 
-            base::Name hlpConfigFileName({"schema", "wazuh-logpar-types", "0"});
+            base::Name hlpConfigFileName({"schema", "cyb3rhq-logpar-types", "0"});
             auto hlpParsers = store->readInternalDoc(hlpConfigFileName);
             if (std::holds_alternative<base::Error>(hlpParsers))
             {
@@ -280,7 +280,7 @@ void runStart(ConfHandler confManager)
             builderDeps.kvdbManager = kvdbManager;
             builderDeps.sockFactory = std::make_shared<sockiface::UnixSocketFactory>();
             builderDeps.wdbManager =
-                std::make_shared<wazuhdb::WDBManager>(std::string(wazuhdb::WDB_SOCK_PATH), builderDeps.sockFactory);
+                std::make_shared<cyb3rhqdb::WDBManager>(std::string(cyb3rhqdb::WDB_SOCK_PATH), builderDeps.sockFactory);
             builderDeps.geoManager = geoManager;
             auto defs = std::make_shared<defs::DefinitionsBuilder>();
             builder = std::make_shared<builder::Builder>(store, schema, defs, builderDeps);
@@ -407,8 +407,8 @@ void runStart(ConfHandler confManager)
             auto apiMetricScopeDelta = metrics->getMetricsScope("endpointAPIRate", true);
             auto apiHandler = std::bind(&api::Api::processRequest, api, std::placeholders::_1, std::placeholders::_2);
             auto apiClientFactory = std::make_shared<ph::WStreamFactory>(apiHandler); // API endpoint
-            apiClientFactory->setErrorResponse(base::utils::wazuhProtocol::WazuhResponse::unknownError().toString());
-            apiClientFactory->setBusyResponse(base::utils::wazuhProtocol::WazuhResponse::busyServer().toString());
+            apiClientFactory->setErrorResponse(base::utils::cyb3rhqProtocol::Cyb3rhqResponse::unknownError().toString());
+            apiClientFactory->setBusyResponse(base::utils::cyb3rhqProtocol::Cyb3rhqResponse::busyServer().toString());
 
             auto apiEndpointCfg = std::make_shared<endpoint::UnixStream>(serverApiSock,
                                                                          apiClientFactory,
@@ -450,7 +450,7 @@ void runStart(ConfHandler confManager)
 
 void configure(CLI::App_p app)
 {
-    auto serverApp = app->add_subcommand("server", "Start/Stop a Wazuh engine instance.");
+    auto serverApp = app->add_subcommand("server", "Start/Stop a Cyb3rhq engine instance.");
     serverApp->require_subcommand(1);
     auto options = std::make_shared<Options>();
 
@@ -581,7 +581,7 @@ void configure(CLI::App_p app)
                         "If enabled, the queue will drop the flood events instead of storing them in the file.");
 
     // Start subcommand
-    auto startApp = serverApp->add_subcommand("start", "Start a Wazuh engine instance");
+    auto startApp = serverApp->add_subcommand("start", "Start a Cyb3rhq engine instance");
 
     // Register callback
     auto weakApp = std::weak_ptr<CLI::App>(app);

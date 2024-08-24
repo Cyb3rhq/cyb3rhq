@@ -13,7 +13,7 @@ metadata:
     - v12
     - v11
   author:
-    name: Wazuh Inc. info@wazuh.com
+    name: Cyb3rhq Inc. info@wazuh.com
     date: 2023-01-05
 
 parents:
@@ -71,4 +71,4 @@ normalize:
       - process.pid: +rename/$~csv.process_pid
       - user.name: +rename/$~csv.user_name
 
-      - wazuh.decoders: +array_append/postgresql-csv
+      - cyb3rhq.decoders: +array_append/postgresql-csv

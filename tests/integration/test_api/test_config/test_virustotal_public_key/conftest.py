@@ -1,12 +1,12 @@
-# Copyright (C) 2015-2021, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2015-2021, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 import pytest
 import subprocess
 
 from pathlib import Path
-from . import WAZUH_PYTHON_INTERPRETER_PATH, MOCK_SERVER_PATH, MOCK_SERVER_IMAGE, MOCK_SERVER_CONTAINER
+from . import CYB3RHQ_PYTHON_INTERPRETER_PATH, MOCK_SERVER_PATH, MOCK_SERVER_IMAGE, MOCK_SERVER_CONTAINER
 
 
 @pytest.fixture(scope="session")
@@ -43,8 +43,8 @@ def virustotal_mock_server_setup():
 
 @pytest.fixture
 def disable_ssl_verification():
-    """Modify wazuh/core/utils.py to avoid SSL certificate verification."""
-    file_path = Path(WAZUH_PYTHON_INTERPRETER_PATH, '/wazuh/core/utils.py')
+    """Modify cyb3rhq/core/utils.py to avoid SSL certificate verification."""
+    file_path = Path(CYB3RHQ_PYTHON_INTERPRETER_PATH, '/cyb3rhq/core/utils.py')
     sed_command = r"sed -i 's/\(virustotal_response = get(url=url, headers=headers, timeout=10\))/\1, verify=False)/'"
 
     # Construct the complete command

@@ -1,19 +1,19 @@
-# Copyright (C) 2015, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2015, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is a free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 import os
 
-from wazuh.core import common
+from cyb3rhq.core import common
 
-API_PATH = os.path.join(common.WAZUH_PATH, 'api')
+API_PATH = os.path.join(common.CYB3RHQ_PATH, 'api')
 CONFIG_PATH = os.path.join(API_PATH, 'configuration')
 CONFIG_FILE_PATH = os.path.join(CONFIG_PATH, 'api.yaml')
-RELATIVE_CONFIG_FILE_PATH = os.path.relpath(CONFIG_FILE_PATH, common.WAZUH_PATH)
+RELATIVE_CONFIG_FILE_PATH = os.path.relpath(CONFIG_FILE_PATH, common.CYB3RHQ_PATH)
 SECURITY_PATH = os.path.join(CONFIG_PATH, 'security')
 SECURITY_CONFIG_PATH = os.path.join(SECURITY_PATH, 'security.yaml')
-RELATIVE_SECURITY_PATH = os.path.relpath(SECURITY_PATH, common.WAZUH_PATH)
-BASE_LOG_PATH = os.path.join(common.WAZUH_PATH, 'logs')
+RELATIVE_SECURITY_PATH = os.path.relpath(SECURITY_PATH, common.CYB3RHQ_PATH)
+BASE_LOG_PATH = os.path.join(common.CYB3RHQ_PATH, 'logs')
 API_LOG_PATH = os.path.join(BASE_LOG_PATH, 'api')
 COMMS_API_LOG_PATH = os.path.join(BASE_LOG_PATH, 'comms_api')
 API_SSL_PATH = os.path.join(CONFIG_PATH, 'ssl')

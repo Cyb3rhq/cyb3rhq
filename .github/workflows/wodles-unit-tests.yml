@@ -16,7 +16,7 @@ jobs:
       matrix:
         python-version: ['3.10']
     env:
-      PYTHONPATH: /home/runner/work/wazuh/wazuh/api:/home/runner/work/wazuh/wazuh/framework
+      PYTHONPATH: /home/runner/work/cyb3rhq/cyb3rhq/api:/home/runner/work/cyb3rhq/cyb3rhq/framework
     steps:
       - uses: actions/checkout@v4
 

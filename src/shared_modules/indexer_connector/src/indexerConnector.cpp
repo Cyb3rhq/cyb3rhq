@@ -1,6 +1,6 @@
 /*
- * Wazuh - Indexer connector.
- * Copyright (C) 2015, Wazuh Inc.
+ * Cyb3rhq - Indexer connector.
+ * Copyright (C) 2015, Cyb3rhq Inc.
  * June 2, 2023.
  *
  * This program is free software; you can redistribute it

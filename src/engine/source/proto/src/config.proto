@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "engine.proto";
 
-package com.wazuh.api.engine.config;
+package com.cyb3rhq.api.engine.config;
 
 /***************************************************
  * Get the runtime configuration of the manager

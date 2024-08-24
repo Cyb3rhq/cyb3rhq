@@ -16,7 +16,7 @@ namespace builder::builders::opmap
  * @param definitions handler with definitions
  * @return base::Expression true when executes without any problem, false otherwise.
  */
-MapBuilder getWdbUpdateBuilder(const std::shared_ptr<wazuhdb::IWDBManager>& wdbManager);
+MapBuilder getWdbUpdateBuilder(const std::shared_ptr<cyb3rhqdb::IWDBManager>& wdbManager);
 
 /**
  * @brief Executes query on WDB returning the payload.
@@ -26,7 +26,7 @@ MapBuilder getWdbUpdateBuilder(const std::shared_ptr<wazuhdb::IWDBManager>& wdbM
  * @param definitions handler with definitions
  * @return base::Expression when true returns string of payload, false none.
  */
-MapBuilder getWdbQueryBuilder(const std::shared_ptr<wazuhdb::IWDBManager>& wdbManager);
+MapBuilder getWdbQueryBuilder(const std::shared_ptr<cyb3rhqdb::IWDBManager>& wdbManager);
 
 } // namespace builder::builders::opmap
 

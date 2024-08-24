@@ -1,7 +1,7 @@
 #include "builders/opmap/activeResponse.hpp"
 
-// TODO: move the wazuhRequest to a common path such as "utils"
-#include <base/utils/wazuhProtocol/wazuhRequest.hpp>
+// TODO: move the cyb3rhqRequest to a common path such as "utils"
+#include <base/utils/cyb3rhqProtocol/cyb3rhqRequest.hpp>
 
 namespace builder::builders
 {
@@ -16,7 +16,7 @@ constexpr const char* AR_QUEUE_PATH {"/var/ossec/queue/alerts/ar"};
 
 // TODO: unify these parameters with the api ones
 constexpr const char* AGENT_ID_PATH {"/agent/id"};
-constexpr const char* MODULE_NAME {"wazuh-engine"};
+constexpr const char* MODULE_NAME {"cyb3rhq-engine"};
 constexpr const char* ORIGIN_NAME {"node01"};
 constexpr const char* SUPPORTED_VERSION {"1"};
 
@@ -239,7 +239,7 @@ MapOp CreateARBuilder(const std::vector<OpArg>& opArgs, const std::shared_ptr<co
             RETURN_FAILURE(runState, json::Json {}, fmt::format("{} -> Error trying to merge json: ", name) + e.what());
         }
 
-        auto payload = base::utils::wazuhProtocol::WazuhRequest::create(cmd, ar::ORIGIN_NAME, jsonParams);
+        auto payload = base::utils::cyb3rhqProtocol::Cyb3rhqRequest::create(cmd, ar::ORIGIN_NAME, jsonParams);
 
         // Append header message
         const std::string completeMesage = fmt::format("(local_source) [] N{}{} {} {}",

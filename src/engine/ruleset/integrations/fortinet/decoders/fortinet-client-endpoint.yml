@@ -7,7 +7,7 @@ metadata:
   description: Decoder for Fortinet FortiClient Endpoint Security
   version: [6.0.x, 6.2.x]
   author:
-    name: Wazuh, Inc.
+    name: Cyb3rhq, Inc.
     date: 2023/01/09
   references:
     - https://docs.fortinet.com/document/forticlient/7.0.2/log-message-reference/327109
@@ -78,7 +78,7 @@ normalize:
       - source.port: $~tmp.src_port
       - tags: [fortinet.clientendpoint, forwarded]
       - user.name: $~tmp.user
-      - wazuh.decoders: +array_append/fortinet-client-endpoint
+      - cyb3rhq.decoders: +array_append/fortinet-client-endpoint
       - ~log: delete()
       - ~tmp: delete()
 

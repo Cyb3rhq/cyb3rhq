@@ -1778,8 +1778,8 @@ field: wdb_query(query)
 
 ## Description
 
-Perform a query to wazuh-db. If it was able to connect to wazuh-db and run a valid query (no errors)
-then map the payload response of wazuh-db into field. If the field field already exists, then it will be replaced.
+Perform a query to cyb3rhq-db. If it was able to connect to cyb3rhq-db and run a valid query (no errors)
+then map the payload response of cyb3rhq-db into field. If the field field already exists, then it will be replaced.
 In case of errors target field will not be modified.
 This helper function is typically used in the map stage
 
@@ -1814,7 +1814,7 @@ field: wdb_update(query)
 
 ## Description
 
-Perform a query to wazuh-db. If it was able to connect to wazuh-db and run a valid query (no errors)
+Perform a query to cyb3rhq-db. If it was able to connect to cyb3rhq-db and run a valid query (no errors)
 then map `true` into field if not, then map `false` into field.
 If the field field already exists, then it will be replaced. In case of errors target field will not be modified.
 This helper function is typically used in the map stage

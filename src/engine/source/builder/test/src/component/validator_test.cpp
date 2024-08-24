@@ -101,7 +101,7 @@ INSTANTIATE_TEST_SUITE_P(
                         const std::shared_ptr<defs::mocks::MockDefinitions>& def,
                         const std::shared_ptr<schemf::mocks::MockSchema>& schemf)
                      {
-                         EXPECT_CALL(*store, getNamespace(testing::_)).WillOnce(testing::Return("wazuh"));
+                         EXPECT_CALL(*store, getNamespace(testing::_)).WillOnce(testing::Return("cyb3rhq"));
                          EXPECT_CALL(*store, readDoc(testing::_)).WillOnce(testing::Return(base::Error {"ERROR"}));
                          return "Could not read document for integration 'integration/test/0'";
                      })),
@@ -373,7 +373,7 @@ INSTANTIATE_TEST_SUITE_P(
                                          const std::shared_ptr<defs::mocks::MockDefinitions>& def)
                                       { return "Integration name not found"; })),
         ValidateI(json::Json {INTEGRATION_INVALID_FORMAT_JSON},
-                  "wazuh",
+                  "cyb3rhq",
                   FAILURE_INTEGRATION(
                       [](const std::shared_ptr<MockStore>& store,
                          const std::shared_ptr<MockDefinitionsBuilder>& defBuild,
@@ -381,7 +381,7 @@ INSTANTIATE_TEST_SUITE_P(
                           return "Invalid not string entry in '/decoders' array for integration 'integration/test/0'";
                       })),
         ValidateI(json::Json {INTEGRATION_INVALID_FORMAT_NAME_JSON},
-                  "wazuh",
+                  "cyb3rhq",
                   FAILURE_INTEGRATION(
                       [](const std::shared_ptr<MockStore>& store,
                          const std::shared_ptr<MockDefinitionsBuilder>& defBuild,
@@ -391,7 +391,7 @@ INSTANTIATE_TEST_SUITE_P(
                                  "empty parts";
                       })),
         ValidateI(json::Json {INTEGRATION_INVALID_ASSET_TYPE_JSON},
-                  "wazuh",
+                  "cyb3rhq",
                   FAILURE_INTEGRATION(
                       [](const std::shared_ptr<MockStore>& store,
                          const std::shared_ptr<MockDefinitionsBuilder>& defBuild,
@@ -401,7 +401,7 @@ INSTANTIATE_TEST_SUITE_P(
                                  "'decoder'";
                       })),
         ValidateI(json::Json {INTEGRATION_JSON},
-                  "wazuh",
+                  "cyb3rhq",
                   FAILURE_INTEGRATION(
                       [](const std::shared_ptr<MockStore>& store,
                          const std::shared_ptr<MockDefinitionsBuilder>& defBuild,
@@ -412,7 +412,7 @@ INSTANTIATE_TEST_SUITE_P(
                       })),
         ValidateI(
             json::Json {INTEGRATION_JSON},
-            "wazuh",
+            "cyb3rhq",
             FAILURE_INTEGRATION(
                 [](const std::shared_ptr<MockStore>& store,
                    const std::shared_ptr<MockDefinitionsBuilder>& defBuild,
@@ -422,7 +422,7 @@ INSTANTIATE_TEST_SUITE_P(
                     return "Asset 'decoder/test/0' in integration 'integration/test/0' is not in the same namespace";
                 })),
         ValidateI(json::Json {INTEGRATION_JSON},
-                  "wazuh",
+                  "cyb3rhq",
                   FAILURE_INTEGRATION(
                       [](const std::shared_ptr<MockStore>& store,
                          const std::shared_ptr<MockDefinitionsBuilder>& defBuild,
@@ -434,7 +434,7 @@ INSTANTIATE_TEST_SUITE_P(
                                   {
                                       if (name == "decoder/test/0")
                                       {
-                                          return "wazuh";
+                                          return "cyb3rhq";
                                       }
                                       else if (name == "decoder/parent-test/0")
                                       {
@@ -446,7 +446,7 @@ INSTANTIATE_TEST_SUITE_P(
                                  "namespace";
                       })),
         ValidateI(json::Json {INTEGRATION_JSON},
-                  "wazuh",
+                  "cyb3rhq",
                   SUCCESS_INTEGRATION(
                       [](const std::shared_ptr<MockStore>& store,
                          const std::shared_ptr<MockDefinitionsBuilder>& defBuild,
@@ -458,11 +458,11 @@ INSTANTIATE_TEST_SUITE_P(
                                   {
                                       if (name == "decoder/test/0")
                                       {
-                                          return "wazuh";
+                                          return "cyb3rhq";
                                       }
                                       else if (name == "decoder/parent-test/0")
                                       {
-                                          return "wazuh";
+                                          return "cyb3rhq";
                                       }
                                       return "";
                                   }));

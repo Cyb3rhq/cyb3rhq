@@ -1,0 +1,9 @@
+- key: cyb3rhq
+  title: "cyb3rhq"
+  description: >
+    cyb3rhq Module
+  fields:
+    - name: cyb3rhq
+      type: group
+      description: >
+      fields:

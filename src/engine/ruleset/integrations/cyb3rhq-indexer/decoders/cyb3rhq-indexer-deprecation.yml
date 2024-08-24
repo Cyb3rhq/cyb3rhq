@@ -1,0 +1,48 @@
+name: decoder/cyb3rhq-indexer-deprecation/0
+
+metadata:
+  module: cyb3rhq-indexer
+  title: Cyb3rhq indexer deprecation logs
+  description: Decoder for Cyb3rhq indexer deprecation logs
+  compatibility: This decoder has been tested with logs from Cyb3rhq version 4.4
+  versions:
+    - "4.4"
+  author:
+    name: Cyb3rhq Inc.
+    email: info@wazuh.com
+    date: 2023-07-03
+  references:
+    - "https://documentation.wazuh.com/current/getting-started/components/cyb3rhq-indexer.html"
+    - "https://opensearch.org/docs/latest/monitoring-your-cluster/logs/"
+
+check:
+  - cyb3rhq.origin: /var/log/cyb3rhq-indexer/cyb3rhq-cluster_deprecation.json
+  # TODO: Once the events arrive tagged, uncomment the following two lines
+  # - event.module: cyb3rhq-indexer
+  # - event.dataset: cyb3rhq-indexer-deprecation
+
+parse|event.original:
+  - <_json_event/json>
+
+#TODO: Add temporal fields to schema
+normalize:
+  - map:
+      - _json_event.timestamp: replace(',','.')
+  - parse|_json_event.timestamp:
+      - <@timestamp/%FT%TZ>
+  - map:
+      - event.module: cyb3rhq-indexer
+      - event.dataset: cyb3rhq-indexer-deprecation
+      - cyb3rhq.decoders: array_append(cyb3rhq-indexer-deprecation)
+      - event.kind: event
+      - event.category: array_append(database)
+      - event.type: array_append(info)
+      - log.level: $_json_event.level
+      - log.logger: $_json_event.component
+      - host.name: $_json_event.node\.name
+      - host.id: $_json_event.node\.id
+      - cluster.name: $_json_event.cluster\.name
+      - cluster.uuid: $_json_event.cluster\.uuid
+      - node.name: $_json_event.node\.name
+      - node.id: $_json_event.node\.id
+      - message: $_json_event.message

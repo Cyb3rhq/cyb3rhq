@@ -11,7 +11,7 @@ on:
       - ".github/actions/compile_and_test/action.yml"
       - ".github/actions/indexer_connector_deps/action.yml"
       - "src/shared_modules/indexer_connector/**"
-      - "src/wazuh_modules/http-request/**"
+      - "src/cyb3rhq_modules/http-request/**"
 
 jobs:
   indexer_connector-qa:

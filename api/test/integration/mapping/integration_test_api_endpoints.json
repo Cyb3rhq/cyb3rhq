@@ -490,7 +490,7 @@
         ]
     },
     {
-        "path": "framework/wazuh",
+        "path": "framework/cyb3rhq",
         "files": [
             {
                 "name": "active_response.py",
@@ -667,7 +667,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/core",
+        "path": "framework/cyb3rhq/core",
         "files": [
             {
                 "name": "InputValidator.py",
@@ -892,8 +892,8 @@
                 ]
             },
             {
-                "name": "wazuh_queue.py",
-                "tag": "wazuh",
+                "name": "cyb3rhq_queue.py",
+                "tag": "cyb3rhq",
                 "tests": [
                     "test_agent_DELETE_endpoints.tavern.yaml",
                     "test_agent_GET_endpoints.tavern.yaml",
@@ -903,8 +903,8 @@
                 ]
             },
             {
-                "name": "wazuh_socket.py",
-                "tag": "wazuh",
+                "name": "cyb3rhq_socket.py",
+                "tag": "cyb3rhq",
                 "tests": [
                     "test_agent_DELETE_endpoints.tavern.yaml",
                     "test_agent_GET_endpoints.tavern.yaml",
@@ -938,7 +938,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/core/cluster",
+        "path": "framework/cyb3rhq/core/cluster",
         "files": [
             {
                 "name": "client.py",
@@ -1051,7 +1051,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/core/cluster/dapi",
+        "path": "framework/cyb3rhq/core/cluster/dapi",
         "files": [
             {
                 "name": "dapi.py",
@@ -1067,7 +1067,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/core/cluster/hap_helper",
+        "path": "framework/cyb3rhq/core/cluster/hap_helper",
         "files": [
             {
                 "name": "hap_helper.py",
@@ -1092,8 +1092,8 @@
                 ]
             },
             {
-                "name": "wazuh.py",
-                "tag": "wazuh",
+                "name": "cyb3rhq.py",
+                "tag": "cyb3rhq",
                 "tests": [
                     "test_agent_DELETE_endpoints.tavern.yaml",
                     "test_agent_GET_endpoints.tavern.yaml",
@@ -1105,7 +1105,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/core/cluster/tests",
+        "path": "framework/cyb3rhq/core/cluster/tests",
         "files": [
             {
                 "name": "conftest.py",
@@ -1121,7 +1121,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/core/tests/data/test_agent",
+        "path": "framework/cyb3rhq/core/tests/data/test_agent",
         "files": [
             {
                 "name": "schema_global_test.sql",
@@ -1137,7 +1137,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/core/tests/data/test_agent/add_manual",
+        "path": "framework/cyb3rhq/core/tests/data/test_agent/add_manual",
         "files": [
             {
                 "name": "add_manual_use_cases.yaml",
@@ -1153,7 +1153,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/core/tests/data/test_database",
+        "path": "framework/cyb3rhq/core/tests/data/test_database",
         "files": [
             {
                 "name": "schema_global_test.sql",
@@ -1169,7 +1169,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/core/tests/data/test_rootcheck",
+        "path": "framework/cyb3rhq/core/tests/data/test_rootcheck",
         "files": [
             {
                 "name": "schema_rootcheck_test.sql",
@@ -1185,7 +1185,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/rbac",
+        "path": "framework/cyb3rhq/rbac",
         "files": [
             {
                 "name": "auth_context.py",
@@ -1245,7 +1245,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/rbac/default",
+        "path": "framework/cyb3rhq/rbac/default",
         "files": [
             {
                 "name": "policies.yaml",
@@ -1305,7 +1305,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/rbac/tests",
+        "path": "framework/cyb3rhq/rbac/tests",
         "files": [
             {
                 "name": "utils.py",
@@ -1321,7 +1321,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/rbac/tests/data",
+        "path": "framework/cyb3rhq/rbac/tests/data",
         "files": [
             {
                 "name": "schema_security_test.sql",
@@ -1337,7 +1337,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/tests",
+        "path": "framework/cyb3rhq/tests",
         "files": [
             {
                 "name": "util.py",
@@ -1353,7 +1353,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/tests/data",
+        "path": "framework/cyb3rhq/tests/data",
         "files": [
             {
                 "name": "schema_ciscat_test.sql",
@@ -1424,7 +1424,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/tests/data/security",
+        "path": "framework/cyb3rhq/tests/data/security",
         "files": [
             {
                 "name": "policies_test_cases.yml",
@@ -1551,7 +1551,7 @@
         ]
     },
     {
-        "path": "framework/wazuh/tests/data/security/default",
+        "path": "framework/cyb3rhq/tests/data/security/default",
         "files": [
             {
                 "name": "default_cases.yml",

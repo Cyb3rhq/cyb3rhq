@@ -1,4 +1,4 @@
 
- - Aucune action n'a été faite pour configurer Wazuh pour
+ - Aucune action n'a été faite pour configurer Cyb3rhq pour
    démarrer lors du boot. Ajoutez la ligne suivante à votre script
    d'initialisation :

@@ -19,7 +19,7 @@ from api_communication.proto import policy_pb2 as api_policy
 from api_communication.proto import tester_pb2 as api_tester
 from google.protobuf.json_format import MessageToJson, ParseDict
 
-POLICY_NAME = "policy/wazuh/0"
+POLICY_NAME = "policy/cyb3rhq/0"
 ASSET_NAME = "decoder/test/0"
 SESSION_NAME = "test"
 NAMESPACE = "user"
@@ -30,7 +30,7 @@ class Config:
     A class to store the configuration of the test runner.
     """
     environment_directory: str = ""
-    wazuh_dir: str = ""
+    cyb3rhq_dir: str = ""
     input_file_path: str = ""
     folder_path: str = ""
     binary_path: str = ""

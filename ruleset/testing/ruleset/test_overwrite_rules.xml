@@ -2,7 +2,7 @@
 
   <!--
       First use case:
-        Testing overwritten rules followed by child rules. See https://github.com/wazuh/wazuh/issues/13414
+        Testing overwritten rules followed by child rules. See https://github.com/cyb3rhq/cyb3rhq/issues/13414
   -->
   <rule id="999910" level="0">
     <decoded_as>ow_test</decoded_as>

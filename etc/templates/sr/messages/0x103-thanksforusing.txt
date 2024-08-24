@@ -1,10 +1,10 @@
 
-    Hvala što koristite Wazuh.
+    Hvala što koristite Cyb3rhq.
     Molimo vas da ne sumnjam da nam se obratite ako trebate
     bilo kakvu pomoć ili pronaći bilo koji bug.
 
     Koristite naš javni Mailing lista na:
-              https://groups.google.com/forum/#!forum/wazuh
+              https://groups.google.com/forum/#!forum/cyb3rhq
 
     Više informacija može se pronaći na:
                - http://www.wazuh.com

@@ -9,7 +9,7 @@ import yaml
 from pathlib import Path
 
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
-WAZUH_DIR = os.path.realpath(os.path.join(SCRIPT_DIR, "../../../.."))
+CYB3RHQ_DIR = os.path.realpath(os.path.join(SCRIPT_DIR, "../../../.."))
 ENGINE_BIN = ""
 
 
@@ -52,13 +52,13 @@ def load_integrations():
         f'{ENGINE_BIN} catalog --api_socket {os.path.join(ENVIRONMENT_DIR, "queue", "sockets", "engine-api")} -n system create filter < {os.path.join(ENGINE_SRC_DIR, "ruleset", "filters", "allow-all.yml")}',
         check=True, shell=True)
 
-    wazuh_core_dir = f"{ENGINE_SRC_DIR}/ruleset/wazuh-core"
-    destination_dir = f"{ENVIRONMENT_DIR}/engine/wazuh-core"
-    manifest = f"{ENVIRONMENT_DIR}/engine/wazuh-core/manifest.yml"
+    cyb3rhq_core_dir = f"{ENGINE_SRC_DIR}/ruleset/cyb3rhq-core"
+    destination_dir = f"{ENVIRONMENT_DIR}/engine/cyb3rhq-core"
+    manifest = f"{ENVIRONMENT_DIR}/engine/cyb3rhq-core/manifest.yml"
 
     # Check if the destination directory exists
     if not os.path.exists(destination_dir):
-        shutil.copytree(wazuh_core_dir, destination_dir)
+        shutil.copytree(cyb3rhq_core_dir, destination_dir)
     else:
         print(
             f"The destination directory {destination_dir} already exists. Skipping the copy operation.")
@@ -84,19 +84,19 @@ def load_integrations():
 
     os.chdir(os.path.join(ENVIRONMENT_DIR, 'engine'))
     subprocess.run(["engine-integration", "add", "--api-sock",
-                   f"{ENVIRONMENT_DIR}/queue/sockets/engine-api", "-n", "system", f"wazuh-core/"])
+                   f"{ENVIRONMENT_DIR}/queue/sockets/engine-api", "-n", "system", f"cyb3rhq-core/"])
 
     os.chdir(os.path.join(ENGINE_SRC_DIR, 'ruleset'))
     integrations = ["syslog", "system", "windows", "apache-http",
-                    "suricata", "wazuh-dashboard", "wazuh-indexer"]
+                    "suricata", "cyb3rhq-dashboard", "cyb3rhq-indexer"]
     for integration in integrations:
         subprocess.run(["engine-integration", "add", "--api-sock",
-                       f"{ENVIRONMENT_DIR}/queue/sockets/engine-api", "-n", "wazuh", f"integrations/{integration}/"])
+                       f"{ENVIRONMENT_DIR}/queue/sockets/engine-api", "-n", "cyb3rhq", f"integrations/{integration}/"])
 
 
 def load_policies():
     subprocess.run(
-        f'{ENGINE_BIN} policy --client_timeout 100000 --api_socket {os.path.join(ENVIRONMENT_DIR, "queue", "sockets", "engine-api")} add -p policy/wazuh/0 -f',
+        f'{ENGINE_BIN} policy --client_timeout 100000 --api_socket {os.path.join(ENVIRONMENT_DIR, "queue", "sockets", "engine-api")} add -p policy/cyb3rhq/0 -f',
         check=True, shell=True)
 
     subprocess.run(
@@ -104,26 +104,26 @@ def load_policies():
         check=True, shell=True)
 
     subprocess.run(
-        f'{ENGINE_BIN} policy --client_timeout 100000 --api_socket {os.path.join(ENVIRONMENT_DIR, "queue", "sockets", "engine-api")} parent-set -n wazuh decoder/integrations/0',
+        f'{ENGINE_BIN} policy --client_timeout 100000 --api_socket {os.path.join(ENVIRONMENT_DIR, "queue", "sockets", "engine-api")} parent-set -n cyb3rhq decoder/integrations/0',
         check=True, shell=True)
 
     subprocess.run(
-        f'{ENGINE_BIN} policy --client_timeout 100000 --api_socket {os.path.join(ENVIRONMENT_DIR, "queue", "sockets", "engine-api")} parent-set -n wazuh rule/enrichment/0',
+        f'{ENGINE_BIN} policy --client_timeout 100000 --api_socket {os.path.join(ENVIRONMENT_DIR, "queue", "sockets", "engine-api")} parent-set -n cyb3rhq rule/enrichment/0',
         check=True, shell=True)
 
     subprocess.run(
-        f'{ENGINE_BIN} policy --client_timeout 100000 --api_socket {os.path.join(ENVIRONMENT_DIR, "queue", "sockets", "engine-api")} asset-add -n system integration/wazuh-core/0',
+        f'{ENGINE_BIN} policy --client_timeout 100000 --api_socket {os.path.join(ENVIRONMENT_DIR, "queue", "sockets", "engine-api")} asset-add -n system integration/cyb3rhq-core/0',
         check=True, shell=True)
 
     assets = ['syslog/0', 'system/0', 'windows/0', 'apache-http/0',
-              'suricata/0', 'wazuh-dashboard/0', 'wazuh-indexer/0']
+              'suricata/0', 'cyb3rhq-dashboard/0', 'cyb3rhq-indexer/0']
     for asset in assets:
         subprocess.run(
-            f'{ENGINE_BIN} policy --client_timeout 100000 --api_socket {os.path.join(ENVIRONMENT_DIR, "queue", "sockets", "engine-api")} asset-add -n wazuh integration/{asset}',
+            f'{ENGINE_BIN} policy --client_timeout 100000 --api_socket {os.path.join(ENVIRONMENT_DIR, "queue", "sockets", "engine-api")} asset-add -n cyb3rhq integration/{asset}',
             check=True, shell=True)
 
     subprocess.run(
-        f'{ENGINE_BIN} router --client_timeout 100000 --api_socket {os.path.join(ENVIRONMENT_DIR, "queue", "sockets", "engine-api")} add default filter/allow-all/0 255 policy/wazuh/0',
+        f'{ENGINE_BIN} router --client_timeout 100000 --api_socket {os.path.join(ENVIRONMENT_DIR, "queue", "sockets", "engine-api")} add default filter/allow-all/0 255 policy/cyb3rhq/0',
         check=True, shell=True)
 
 
@@ -136,17 +136,17 @@ def main():
 
     if not args.environment:
         print(
-            "environment is optional. For default is wazuh directory. Usage: {} -e <environment>".format(sys.argv[0]))
+            "environment is optional. For default is cyb3rhq directory. Usage: {} -e <environment>".format(sys.argv[0]))
 
-    ENGINE_SRC_DIR = os.path.join(WAZUH_DIR, 'src', 'engine')
-    ENVIRONMENT_DIR = args.environment or WAZUH_DIR
+    ENGINE_SRC_DIR = os.path.join(CYB3RHQ_DIR, 'src', 'engine')
+    ENVIRONMENT_DIR = args.environment or CYB3RHQ_DIR
     ENVIRONMENT_DIR = str(Path(ENVIRONMENT_DIR).resolve())
     ENGINE_BIN = args.binary or os.path.join(ENGINE_SRC_DIR, 'build', 'main')
     update_conf()
     set_mmdb()
 
     os.environ['ENV_DIR'] = ENVIRONMENT_DIR
-    os.environ['WAZUH_DIR'] = WAZUH_DIR
+    os.environ['CYB3RHQ_DIR'] = CYB3RHQ_DIR
     os.environ['CONF_FILE'] = os.path.join(ENVIRONMENT_DIR, 'engine', 'general.conf')
     os.environ['BINARY_DIR'] = ENGINE_BIN
 

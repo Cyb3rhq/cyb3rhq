@@ -5,7 +5,7 @@
 
 #include <wdb/iwdbHandler.hpp>
 
-namespace wazuhdb
+namespace cyb3rhqdb
 {
 
 class IWDBManager
@@ -16,6 +16,6 @@ public:
     virtual std::shared_ptr<IWDBHandler> connection() = 0;
 };
 
-} // namespace wazuhdb
+} // namespace cyb3rhqdb
 
 #endif // _WDB_IWDB_MANAGER_HPP

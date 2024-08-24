@@ -59,7 +59,7 @@ public:
                     {
                         return json::Json {TESTER_JSON};
                     }
-                    if (name == "policy/wazuh/0")
+                    if (name == "policy/cyb3rhq/0")
                     {
                         // Handle other cases or return a default value
                         return json::Json {POLICY_JSON};
@@ -75,7 +75,7 @@ public:
             .WillRepeatedly(testing::Invoke(
                 [&](const base::Name& name)
                 {
-                    if (name == "integration/wazuh-core-fake/0")
+                    if (name == "integration/cyb3rhq-core-fake/0")
                     {
                         return json::Json {INTEGRATION_JSON};
                     }
@@ -121,7 +121,7 @@ void expectBuildPolicyOk(std::shared_ptr<builder::mocks::MockBuilder> mockbuilde
 } // namespace
 TEST_F(OrchestratorTesterTest, AddTestEntry)
 {
-    router::test::EntryPost entry("test", "policy/wazuh/0", 0);
+    router::test::EntryPost entry("test", "policy/cyb3rhq/0", 0);
 
     EXPECT_CALL(*m_mockStore, upsertInternalDoc(testing::_, testing::_)).WillRepeatedly(testing::Return(std::nullopt));
 
@@ -135,8 +135,8 @@ TEST_F(OrchestratorTesterTest, AddTestEntry)
 
 TEST_F(OrchestratorTesterTest, AddMultipleTestEntry)
 {
-    router::test::EntryPost entry("test", "policy/wazuh/0", 0);
-    router::test::EntryPost entryTwo("testTwo", "policy/wazuh/0", 0);
+    router::test::EntryPost entry("test", "policy/cyb3rhq/0", 0);
+    router::test::EntryPost entryTwo("testTwo", "policy/cyb3rhq/0", 0);
 
     EXPECT_CALL(*m_mockStore, upsertInternalDoc(testing::_, testing::_)).WillRepeatedly(testing::Return(std::nullopt));
 
@@ -152,7 +152,7 @@ TEST_F(OrchestratorTesterTest, AddMultipleTestEntry)
 
 TEST_F(OrchestratorTesterTest, AddEqualTestEntry)
 {
-    router::test::EntryPost entry("test", "policy/wazuh/0", 0);
+    router::test::EntryPost entry("test", "policy/cyb3rhq/0", 0);
 
     EXPECT_CALL(*m_mockStore, upsertInternalDoc(testing::_, testing::_)).WillRepeatedly(testing::Return(std::nullopt));
 
@@ -178,7 +178,7 @@ TEST_F(OrchestratorTesterTest, DeleteTestEntryWithoutName)
 
 TEST_F(OrchestratorTesterTest, DeleteTestEntry)
 {
-    router::test::EntryPost entry("test", "policy/wazuh/0", 0);
+    router::test::EntryPost entry("test", "policy/cyb3rhq/0", 0);
 
     EXPECT_CALL(*m_mockStore, upsertInternalDoc(testing::_, testing::_)).WillRepeatedly(testing::Return(std::nullopt));
 
@@ -193,7 +193,7 @@ TEST_F(OrchestratorTesterTest, DeleteTestEntry)
 
 TEST_F(OrchestratorTesterTest, DeleteTheEqualTestEntryTwoTimes)
 {
-    router::test::EntryPost entry("test", "policy/wazuh/0", 0);
+    router::test::EntryPost entry("test", "policy/cyb3rhq/0", 0);
 
     EXPECT_CALL(*m_mockStore, upsertInternalDoc(testing::_, testing::_)).WillRepeatedly(testing::Return(std::nullopt));
 
@@ -219,8 +219,8 @@ TEST_F(OrchestratorTesterTest, GetTestEntryWithoutName)
 
 TEST_F(OrchestratorTesterTest, GetTestEntry)
 {
-    router::test::EntryPost entry("test", "policy/wazuh/0", 0);
-    router::test::EntryPost entryTwo("testTwo", "policy/wazuh/0", 0);
+    router::test::EntryPost entry("test", "policy/cyb3rhq/0", 0);
+    router::test::EntryPost entryTwo("testTwo", "policy/cyb3rhq/0", 0);
 
     EXPECT_CALL(*m_mockStore, upsertInternalDoc(testing::_, testing::_)).WillRepeatedly(testing::Return(std::nullopt));
 
@@ -248,7 +248,7 @@ TEST_F(OrchestratorTesterTest, ReloadTestEntryWithoutName)
 
 TEST_F(OrchestratorTesterTest, ReloadTestEntry)
 {
-    router::test::EntryPost entry("test", "policy/wazuh/0", 0);
+    router::test::EntryPost entry("test", "policy/cyb3rhq/0", 0);
 
     EXPECT_CALL(*m_mockStore, upsertInternalDoc(testing::_, testing::_)).WillRepeatedly(testing::Return(std::nullopt));
 
@@ -273,7 +273,7 @@ TEST_F(OrchestratorTesterTest, GetAssetsTestEntryError)
 
 TEST_F(OrchestratorTesterTest, GetAssetsTestEntry)
 {
-    router::test::EntryPost entry("test", "policy/wazuh/0", 0);
+    router::test::EntryPost entry("test", "policy/cyb3rhq/0", 0);
 
     EXPECT_CALL(*m_mockStore, upsertInternalDoc(testing::_, testing::_)).WillRepeatedly(testing::Return(std::nullopt));
 
@@ -295,7 +295,7 @@ TEST_F(OrchestratorTesterTest, GetAssetsTestEntry)
 
 TEST_F(OrchestratorTesterTest, IngestTest)
 {
-    router::test::EntryPost entry("test", "policy/wazuh/0", 0);
+    router::test::EntryPost entry("test", "policy/cyb3rhq/0", 0);
 
     EXPECT_CALL(*m_mockStore, upsertInternalDoc(testing::_, testing::_)).WillRepeatedly(testing::Return(std::nullopt));
 

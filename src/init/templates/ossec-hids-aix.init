@@ -2,34 +2,34 @@
 #
 # name: ossec
 # purpose: Init script for ossec-hids
-# Copyright (C) 2015, Wazuh Inc.
+# Copyright (C) 2015, Cyb3rhq Inc.
 # Aug. 07 2008 Chris Cuevas
 #
 
-WAZUH_HOME=WAZUH_HOME_TMP
-WAZUH_CONTROL="$WAZUH_HOME/bin/wazuh-control"
+CYB3RHQ_HOME=CYB3RHQ_HOME_TMP
+CYB3RHQ_CONTROL="$CYB3RHQ_HOME/bin/cyb3rhq-control"
 
 case "$1" in
 start)
-    if [ -f "$WAZUH_CONTROL" ]; then
-        echo "Starting Wazuh"
-        ${WAZUH_CONTROL} start
+    if [ -f "$CYB3RHQ_CONTROL" ]; then
+        echo "Starting Cyb3rhq"
+        ${CYB3RHQ_CONTROL} start
     fi
     ;;
 stop)
-    if [ -f "$WAZUH_CONTROL" ]; then
-        echo "Stopping Wazuh"
-        ${WAZUH_CONTROL} stop
+    if [ -f "$CYB3RHQ_CONTROL" ]; then
+        echo "Stopping Cyb3rhq"
+        ${CYB3RHQ_CONTROL} stop
     fi
     ;;
 status)
-    if [ -f "$WAZUH_CONTROL" ]; then
-        ${WAZUH_CONTROL} status
+    if [ -f "$CYB3RHQ_CONTROL" ]; then
+        ${CYB3RHQ_CONTROL} status
     fi
     ;;
 restart)
-    if [ -f "$WAZUH_CONTROL" ]; then
-        ${WAZUH_CONTROL} restart
+    if [ -f "$CYB3RHQ_CONTROL" ]; then
+        ${CYB3RHQ_CONTROL} restart
     fi
     ;;
 *)

@@ -1,5 +1,5 @@
-# Copyright (C) 2015, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2015, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is a free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 import logging
@@ -8,11 +8,11 @@ from typing import Union
 
 from connexion import request
 from connexion.lifecycle import ConnexionResponse
-from wazuh import agent, stats
-from wazuh.core.cluster.control import get_system_nodes
-from wazuh.core.cluster.dapi.dapi import DistributedAPI
-from wazuh.core.common import DATABASE_LIMIT
-from wazuh.core.results import AffectedItemsWazuhResult
+from cyb3rhq import agent, stats
+from cyb3rhq.core.cluster.control import get_system_nodes
+from cyb3rhq.core.cluster.dapi.dapi import DistributedAPI
+from cyb3rhq.core.common import DATABASE_LIMIT
+from cyb3rhq.core.results import AffectedItemsCyb3rhqResult
 
 from api.controllers.util import JSON_CONTENT_TYPE, json_response
 from api.models.agent_added_model import AgentAddedModel
@@ -21,7 +21,7 @@ from api.models.base_model_ import Body
 from api.util import deprecate_endpoint, parse_api_param, raise_if_exc, remove_nones_to_dict
 from api.validator import check_component_configuration_pair
 
-logger = logging.getLogger('wazuh-api')
+logger = logging.getLogger('cyb3rhq-api')
 
 
 async def delete_agents(
@@ -155,7 +155,7 @@ async def get_agents(pretty: bool = False, wait_for_complete: bool = False, agen
 
 
 async def add_agent(pretty: bool = False, wait_for_complete: bool = False) -> ConnexionResponse:
-    """Add a new Wazuh agent.
+    """Add a new Cyb3rhq agent.
 
     Parameters
     ----------
@@ -569,7 +569,7 @@ async def put_upgrade_agents(agents_list: str = None, pretty: bool = False, wait
     wpk_repo : str
         WPK repository.
     upgrade_version : str
-        Wazuh version to upgrade to.
+        Cyb3rhq version to upgrade to.
     use_http : bool
         Use protocol http. If it's false use https. By default the value is set to false.
     force : bool
@@ -652,7 +652,7 @@ async def put_upgrade_custom_agents(agents_list: str = None, pretty: bool = Fals
     agents_list : str
         List of agent IDs. All possible values from 000 onwards.
     file_path : str
-        Path to the WPK file. The file must be on a folder on the Wazuh's installation directory (by default, <code>/var/ossec</code>).
+        Path to the WPK file. The file must be on a folder on the Cyb3rhq's installation directory (by default, <code>/var/ossec</code>).
     installer : str
         Installation file.
     q : str
@@ -779,7 +779,7 @@ async def get_agent_upgrade(agents_list: str = None, pretty: bool = False, wait_
 
 async def get_daemon_stats(agent_id: str, pretty: bool = False, wait_for_complete: bool = False,
                            daemons_list: list = None) -> ConnexionResponse:
-    """Get Wazuh statistical information from the specified daemons of a specified agent.
+    """Get Cyb3rhq statistical information from the specified daemons of a specified agent.
 
     Parameters
     ----------
@@ -1345,7 +1345,7 @@ async def restart_agents_by_group(group_id: str, pretty: bool = False,
 
     agent_list = [a['id'] for a in agents.affected_items]
     if not agent_list:
-        data = AffectedItemsWazuhResult(none_msg='Restart command was not sent to any agent')
+        data = AffectedItemsCyb3rhqResult(none_msg='Restart command was not sent to any agent')
         return json_response(data, pretty=pretty)
 
     f_kwargs = {'agent_list': agent_list}

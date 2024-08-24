@@ -4,48 +4,48 @@
 #include <eMessages/request_response.pb.h>
 
 using namespace api::adapter;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 using RequestType = eEngine::test::Request;
 using ResponseType = eEngine::test::Response;
-using WazuhRequest = base::utils::wazuhProtocol::WazuhRequest;
-using WazuhResponse = base::utils::wazuhProtocol::WazuhResponse;
+using Cyb3rhqRequest = base::utils::cyb3rhqProtocol::Cyb3rhqRequest;
+using Cyb3rhqResponse = base::utils::cyb3rhqProtocol::Cyb3rhqResponse;
 
-TEST(Adapter_toWazuhResponse, succees_ok)
+TEST(Adapter_toCyb3rhqResponse, succees_ok)
 {
     ResponseType response;
     response.set_status(eEngine::ReturnStatus::OK);
     response.set_valuestring("test value");
     const auto expectedData = json::Json {R"({"valueString":"test value", "status":"OK"})"};
 
-    const auto wResponse = toWazuhResponse(response);
+    const auto wResponse = toCyb3rhqResponse(response);
 
     ASSERT_FALSE(wResponse.error());
     ASSERT_EQ(wResponse.data(), expectedData);
 }
 
-TEST(Adapter_toWazuhResponse, succees_inside_error)
+TEST(Adapter_toCyb3rhqResponse, succees_inside_error)
 {
     ResponseType response;
     response.set_status(eEngine::ReturnStatus::ERROR);
     response.set_error("test error");
     const auto expectedData = json::Json {R"({"status":"ERROR","error":"test error"})"};
 
-    const auto wResponse = toWazuhResponse(response);
+    const auto wResponse = toCyb3rhqResponse(response);
     ASSERT_FALSE(wResponse.error()); // The error is inside the data not in the protocol
     ASSERT_EQ(wResponse.data(), expectedData);
 }
 
 // Its difficult to test this function because it depends on the eMessage implementation
-// TEST(Adapter_toWazuhResponse, noSerialized)
+// TEST(Adapter_toCyb3rhqResponse, noSerialized)
 // {
 // }
 
-TEST(Adapter_fromWazuhRequest, success_empty)
+TEST(Adapter_fromCyb3rhqRequest, success_empty)
 {
     const auto json = json::Json {R"({})"};
-    const auto wRequest = WazuhRequest {json};
+    const auto wRequest = Cyb3rhqRequest {json};
 
-    const auto res = fromWazuhRequest<RequestType, ResponseType>(wRequest);
+    const auto res = fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
     ASSERT_TRUE(std::holds_alternative<RequestType>(res));
     const auto eRequest = std::get<RequestType>(res);
@@ -56,12 +56,12 @@ TEST(Adapter_fromWazuhRequest, success_empty)
     ASSERT_EQ(eRequest.has_valuestring(), false);
 }
 
-TEST(Adapter_fromWazuhRequest, success)
+TEST(Adapter_fromCyb3rhqRequest, success)
 {
     const auto params = json::Json {R"({"valueString":"test value", "defaultBool":true, "defaultInt":1, "anyJson":{}})"};
-    const auto wRequest = WazuhRequest::create("testCmd", "test origin", params);
+    const auto wRequest = Cyb3rhqRequest::create("testCmd", "test origin", params);
 
-    const auto res = fromWazuhRequest<RequestType, ResponseType>(wRequest);
+    const auto res = fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
     ASSERT_TRUE(std::holds_alternative<RequestType>(res));
     const auto& eRequest = std::get<RequestType>(res);
@@ -75,16 +75,16 @@ TEST(Adapter_fromWazuhRequest, success)
 }
 
 
-TEST(Adapter_fromWazuhRequest, fail_eMessageFormat)
+TEST(Adapter_fromCyb3rhqRequest, fail_eMessageFormat)
 {
     const auto params = json::Json {R"({"valueString":null, "defaultBool":"true", "defaultInt":{}})"};
-    const auto wRequest = WazuhRequest::create("testCmd", "test origin", params);
+    const auto wRequest = Cyb3rhqRequest::create("testCmd", "test origin", params);
 
-    const auto res = fromWazuhRequest<RequestType, ResponseType>(wRequest);
+    const auto res = fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
 
     // Fail because the json is not valid for the eMessage, return a wResponse with the error
-    ASSERT_TRUE(std::holds_alternative<WazuhResponse>(res));
-    const auto& wResponse = std::get<WazuhResponse>(res);
+    ASSERT_TRUE(std::holds_alternative<Cyb3rhqResponse>(res));
+    const auto& wResponse = std::get<Cyb3rhqResponse>(res);
     ASSERT_FALSE(wResponse.error());
 
     ASSERT_EQ(wResponse.data(),

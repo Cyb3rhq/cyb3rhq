@@ -1,5 +1,5 @@
-# Copyright (C) 2015, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2015, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is a free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 import sys
@@ -9,18 +9,18 @@ import pytest
 from connexion.lifecycle import ConnexionResponse
 from api.controllers.test.utils import CustomAffectedItems
 
-with patch('wazuh.common.wazuh_uid'):
-    with patch('wazuh.common.wazuh_gid'):
-        sys.modules['wazuh.rbac.orm'] = MagicMock()
-        import wazuh.rbac.decorators
+with patch('wazuh.common.cyb3rhq_uid'):
+    with patch('wazuh.common.cyb3rhq_gid'):
+        sys.modules['cyb3rhq.rbac.orm'] = MagicMock()
+        import cyb3rhq.rbac.decorators
         from api.controllers.cdb_list_controller import (delete_file, get_file,
                                                          get_lists,
                                                          get_lists_files,
                                                          put_file)
-        from wazuh import cdb_list
-        from wazuh.tests.util import RBAC_bypasser
-        wazuh.rbac.decorators.expose_resources = RBAC_bypasser
-        del sys.modules['wazuh.rbac.orm']
+        from cyb3rhq import cdb_list
+        from cyb3rhq.tests.util import RBAC_bypasser
+        cyb3rhq.rbac.decorators.expose_resources = RBAC_bypasser
+        del sys.modules['cyb3rhq.rbac.orm']
 
 
 @pytest.mark.asyncio

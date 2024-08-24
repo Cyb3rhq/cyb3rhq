@@ -1,5 +1,5 @@
-audit-wazuh-w:write
-audit-wazuh-r:read
-audit-wazuh-a:attribute
-audit-wazuh-x:execute
-audit-wazuh-c:command
+audit-cyb3rhq-w:write
+audit-cyb3rhq-r:read
+audit-cyb3rhq-a:attribute
+audit-cyb3rhq-x:execute
+audit-cyb3rhq-c:command

@@ -70,7 +70,7 @@ def create_filter(filter_name: str):
     request.type = "filter"
     request.format = "yaml"
     # Load content from file
-    with open(f"{RULESET_DIR}/wazuh-core-test/filters/allow-all.yml", "r") as f:
+    with open(f"{RULESET_DIR}/cyb3rhq-core-test/filters/allow-all.yml", "r") as f:
         request.content = f.read()
     request.namespaceid = "system"
     error, response = send_recv(request, api_engine.GenericStatus_Response())
@@ -162,7 +162,7 @@ def step_impl(context, policy_name: str):
 @when('I send a request to send event "{event}" to the route "{route_name}"')
 def step_impl(context, event: str, route_name: str):
     request = api_router.QueuePost_Request()
-    request.wazuh_event = event
+    request.cyb3rhq_event = event
     error, context.result = send_recv(request, api_engine.GenericStatus_Response())
 
 @then('I should receive an {status} response indicating "{response}"')

@@ -1,6 +1,6 @@
 /*
- * Wazuh Indexer Connector - Component tests
- * Copyright (C) 2015, Wazuh Inc.
+ * Cyb3rhq Indexer Connector - Component tests
+ * Copyright (C) 2015, Cyb3rhq Inc.
  * January 09, 2024.
  *
  * This program is free software; you can redistribute it

@@ -1,5 +1,5 @@
-# Copyright (C) 2015, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2015, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 
@@ -200,13 +200,13 @@ def run_process_and_monitor_log(request, run_on_end):
     return found_lines
 
 
-test_false_negative_folders = sorted(Path("engine/source/vdscanner/qa/test_false_negative_data").glob(os.getenv('WAZUH_VD_TEST_FN_GLOB', '*')))
-test_false_positive_folders = sorted(Path("engine/source/vdscanner/qa/test_false_positive_data").glob(os.getenv('WAZUH_VD_TEST_FP_GLOB', '*')))
+test_false_negative_folders = sorted(Path("engine/source/vdscanner/qa/test_false_negative_data").glob(os.getenv('CYB3RHQ_VD_TEST_FN_GLOB', '*')))
+test_false_positive_folders = sorted(Path("engine/source/vdscanner/qa/test_false_positive_data").glob(os.getenv('CYB3RHQ_VD_TEST_FP_GLOB', '*')))
 
-# If only variable WAZUH_VD_TEST_FN_GLOB is set, we only run the false negative tests
-if os.getenv('WAZUH_VD_TEST_FN_GLOB') and not os.getenv('WAZUH_VD_TEST_FP_GLOB'):
+# If only variable CYB3RHQ_VD_TEST_FN_GLOB is set, we only run the false negative tests
+if os.getenv('CYB3RHQ_VD_TEST_FN_GLOB') and not os.getenv('CYB3RHQ_VD_TEST_FP_GLOB'):
     test_false_positive_folders = []
-elif os.getenv('WAZUH_VD_TEST_FP_GLOB') and not os.getenv('WAZUH_VD_TEST_FN_GLOB'):
+elif os.getenv('CYB3RHQ_VD_TEST_FP_GLOB') and not os.getenv('CYB3RHQ_VD_TEST_FN_GLOB'):
     test_false_negative_folders = []
 
 @pytest.mark.parametrize("run_process_and_monitor_log", test_false_negative_folders, indirect=True)

@@ -9,8 +9,8 @@
 namespace api::router::handlers
 {
 // Using the engine protobuffer namespace
-namespace eRouter = ::com::wazuh::api::engine::router;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eRouter = ::com::cyb3rhq::api::engine::router;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 using api::adapter::genericError;
 using api::adapter::genericSuccess;
@@ -51,11 +51,11 @@ std::variant<api::wpResponse, base::Name> getName(const std::string& name, const
 }
 
 /**
- * @brief Get the request from the wazuh request and validate the router
+ * @brief Get the request from the cyb3rhq request and validate the router
  *
  * @tparam RequestType
  * @tparam ResponseType
- * @param wRequest The wazuh request to convert
+ * @param wRequest The cyb3rhq request to convert
  * @param wRouter weak pointer to the router to validate
  * @return std::variant<api::wpResponse, RouterAndRequest<RequestType>>
  */
@@ -63,7 +63,7 @@ template<typename RequestType, typename ResponseType>
 std::variant<api::wpResponse, RouterAndRequest<RequestType>>
 getRequest(const api::wpRequest& wRequest, const std::weak_ptr<::router::IRouterAPI>& wRouter)
 {
-    auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+    auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
     // validate the request
     if (std::holds_alternative<api::wpResponse>(res))
     {
@@ -242,7 +242,7 @@ api::HandlerSync routeGet(const std::weak_ptr<::router::IRouterAPI>& router,
         eResponse.mutable_route()->CopyFrom(eRouteEntryFromEntry(entry, wPolicyManager));
         eResponse.set_status(eEngine::ReturnStatus::OK);
 
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -274,7 +274,7 @@ api::HandlerSync routeReload(const std::weak_ptr<::router::IRouterAPI>& router)
         ResponseType eResponse;
         eResponse.set_status(eEngine::ReturnStatus::OK);
 
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -306,7 +306,7 @@ api::HandlerSync routePatchPriority(const std::weak_ptr<::router::IRouterAPI>& r
         ResponseType eResponse;
         eResponse.set_status(eEngine::ReturnStatus::OK);
 
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -337,8 +337,8 @@ api::HandlerSync tableGet(const std::weak_ptr<::router::IRouterAPI>& router,
         }
         eResponse.set_status(eEngine::ReturnStatus::OK);
 
-        // Adapt the response to wazuh api
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        // Adapt the response to cyb3rhq api
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -357,7 +357,7 @@ api::HandlerSync queuePost(const std::weak_ptr<::router::IRouterAPI>& router)
         }
 
         auto& [router, eRequest] = std::get<RouterAndRequest<RequestType>>(res);
-        const auto postRes = router->postStrEvent(eRequest.wazuh_event());
+        const auto postRes = router->postStrEvent(eRequest.cyb3rhq_event());
 
         if (postRes.has_value())
         {
@@ -422,7 +422,7 @@ api::HandlerSync getEpsSettings(const std::weak_ptr<::router::IRouterAPI>& route
         eResponse.set_enabled(active);
         eResponse.set_status(eEngine::ReturnStatus::OK);
 
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 

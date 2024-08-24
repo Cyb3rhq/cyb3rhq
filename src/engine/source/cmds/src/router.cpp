@@ -27,8 +27,8 @@ struct Options
 namespace cmd::router
 {
 
-namespace eRouter = ::com::wazuh::api::engine::router;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eRouter = ::com::cyb3rhq::api::engine::router;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 void runGetTable(std::shared_ptr<apiclnt::Client> client, const bool jsonFormat)
 {
@@ -40,9 +40,9 @@ void runGetTable(std::shared_ptr<apiclnt::Client> client, const bool jsonFormat)
     RequestType eRequest;
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print the table as JSON array of objects (Entry)
     const auto& table = eResponse.table();
@@ -79,9 +79,9 @@ void runGet(std::shared_ptr<apiclnt::Client> client, const std::string& nameStr,
     eRequest.set_name(nameStr);
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print as JSON the entry
     const auto& route = eResponse.route();
@@ -121,9 +121,9 @@ void runAdd(std::shared_ptr<apiclnt::Client> client,
     eRequest.mutable_route()->set_policy(policy);
 
     // Call the API, any error will throw an cmd::exception
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    utils::apiAdapter::fromWazuhResponse<ResponseType>(response); // Validate response
+    utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response); // Validate response
 }
 
 void runDelete(std::shared_ptr<apiclnt::Client> client, const std::string& nameStr)
@@ -137,9 +137,9 @@ void runDelete(std::shared_ptr<apiclnt::Client> client, const std::string& nameS
     eRequest.set_name(nameStr);
 
     // Call the API, any error will throw an cmd::exception
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runUpdate(std::shared_ptr<apiclnt::Client> client, const std::string& nameStr, int priority)
@@ -154,9 +154,9 @@ void runUpdate(std::shared_ptr<apiclnt::Client> client, const std::string& nameS
     eRequest.set_priority(priority);
 
     // Call the API, any error will throw an cmd::exception
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runReload(std::shared_ptr<apiclnt::Client> client, const std::string& nameStr)
@@ -170,9 +170,9 @@ void runReload(std::shared_ptr<apiclnt::Client> client, const std::string& nameS
     eRequest.set_name(nameStr);
 
     // Call the API, any error will throw an cmd::exception
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runIngest(std::shared_ptr<apiclnt::Client> client, const std::string& event)
@@ -183,12 +183,12 @@ void runIngest(std::shared_ptr<apiclnt::Client> client, const std::string& event
 
     // Prepare the request
     RequestType eRequest;
-    eRequest.set_wazuh_event(event);
+    eRequest.set_cyb3rhq_event(event);
 
     // Call the API, any error will throw an cmd::exception
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runChangeEpsSettings(std::shared_ptr<apiclnt::Client> client, int eps, int intervalSec)
@@ -203,9 +203,9 @@ void runChangeEpsSettings(std::shared_ptr<apiclnt::Client> client, int eps, int 
     eRequest.set_refresh_interval(intervalSec);
 
     // Call the API, any error will throw an cmd::exception
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runGetEpsSettings(std::shared_ptr<apiclnt::Client> client, bool jsonFormat)
@@ -218,9 +218,9 @@ void runGetEpsSettings(std::shared_ptr<apiclnt::Client> client, bool jsonFormat)
     RequestType eRequest;
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     auto jString = std::get<std::string>(eMessage::eMessageToJson<eRouter::EpsGet_Response>(eResponse));
     if (!jsonFormat)
@@ -248,9 +248,9 @@ void runActivateEps(std::shared_ptr<apiclnt::Client> client)
     RequestType eRequest;
 
     // Call the API, any error will throw an cmd::exception
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runDeactivateEps(std::shared_ptr<apiclnt::Client> client)
@@ -263,9 +263,9 @@ void runDeactivateEps(std::shared_ptr<apiclnt::Client> client)
     RequestType eRequest;
 
     // Call the API, any error will throw an cmd::exception
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void configure(CLI::App_p app)

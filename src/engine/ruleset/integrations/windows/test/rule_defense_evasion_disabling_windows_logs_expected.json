@@ -2,8 +2,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -82,7 +82,7 @@
     },
     "rule": {
       "description": "Identifies attempts to disable EventLog via the logman Windows utility, PowerShell, or auditpol. This is often done by attackers in an attempt to evade detection on a system.",
-      "license": "Wazuh Inc.",
+      "license": "Cyb3rhq Inc.",
       "name": "Disable Windows Event and Security Logs Using Built-in Tools"
     },
     "threat": {
@@ -135,12 +135,12 @@
     "vulnerability": {
       "severity": "low"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "windows-event",
         "windows-sysmon"
       ],
-      "location": "[001] (wazuh-agent-1) any->EventChannel",
+      "location": "[001] (cyb3rhq-agent-1) any->EventChannel",
       "origin": "EventChannel",
       "queue": 102,
       "registered_ip": "any",

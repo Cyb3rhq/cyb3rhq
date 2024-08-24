@@ -26,8 +26,8 @@ int main(int argc, char* argv[])
 {
     auto returnCode = std::make_shared<unsigned char>(EXIT_SUCCESS);
     CLI::App_p app =
-        std::make_shared<CLI::App>("The Wazuh engine analyzes all the events received from agents, remote devices "
-                                   "and Wazuh integrations. This integrated console application allows to manage "
+        std::make_shared<CLI::App>("The Cyb3rhq engine analyzes all the events received from agents, remote devices "
+                                   "and Cyb3rhq integrations. This integrated console application allows to manage "
                                    "all the engine components.");
     app->require_subcommand(1);
 
@@ -36,7 +36,7 @@ int main(int argc, char* argv[])
 
     // Version
     // TODO: Use cmake to set the version
-    app->set_version_flag("-v, --version", "Wazuh Engine v0.0.1");
+    app->set_version_flag("-v, --version", "Cyb3rhq Engine v0.0.1");
 
     // Configure each subcommand
     cmd::server::configure(app);

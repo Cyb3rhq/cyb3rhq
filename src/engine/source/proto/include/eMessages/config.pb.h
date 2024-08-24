@@ -46,7 +46,7 @@ struct TableStruct_config_2eproto {
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_config_2eproto;
 namespace com {
-namespace wazuh {
+namespace cyb3rhq {
 namespace api {
 namespace engine {
 namespace config {
@@ -65,16 +65,16 @@ extern RuntimeSave_RequestDefaultTypeInternal _RuntimeSave_Request_default_insta
 }  // namespace config
 }  // namespace engine
 }  // namespace api
-}  // namespace wazuh
+}  // namespace cyb3rhq
 }  // namespace com
 PROTOBUF_NAMESPACE_OPEN
-template<> ::com::wazuh::api::engine::config::RuntimeGet_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::config::RuntimeGet_Request>(Arena*);
-template<> ::com::wazuh::api::engine::config::RuntimeGet_Response* Arena::CreateMaybeMessage<::com::wazuh::api::engine::config::RuntimeGet_Response>(Arena*);
-template<> ::com::wazuh::api::engine::config::RuntimePut_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::config::RuntimePut_Request>(Arena*);
-template<> ::com::wazuh::api::engine::config::RuntimeSave_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::config::RuntimeSave_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::config::RuntimeGet_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::config::RuntimeGet_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::config::RuntimeGet_Response* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::config::RuntimeGet_Response>(Arena*);
+template<> ::com::cyb3rhq::api::engine::config::RuntimePut_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::config::RuntimePut_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::config::RuntimeSave_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::config::RuntimeSave_Request>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace com {
-namespace wazuh {
+namespace cyb3rhq {
 namespace api {
 namespace engine {
 namespace config {
@@ -82,7 +82,7 @@ namespace config {
 // ===================================================================
 
 class RuntimeGet_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.config.RuntimeGet_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.config.RuntimeGet_Request) */ {
  public:
   inline RuntimeGet_Request() : RuntimeGet_Request(nullptr) {}
   ~RuntimeGet_Request() override;
@@ -185,7 +185,7 @@ class RuntimeGet_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.config.RuntimeGet_Request";
+    return "com.cyb3rhq.api.engine.config.RuntimeGet_Request";
   }
   protected:
   explicit RuntimeGet_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -222,7 +222,7 @@ class RuntimeGet_Request final :
   std::string* _internal_mutable_name();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.config.RuntimeGet_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.config.RuntimeGet_Request)
  private:
   class _Internal;
 
@@ -240,7 +240,7 @@ class RuntimeGet_Request final :
 // -------------------------------------------------------------------
 
 class RuntimeGet_Response final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.config.RuntimeGet_Response) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.config.RuntimeGet_Response) */ {
  public:
   inline RuntimeGet_Response() : RuntimeGet_Response(nullptr) {}
   ~RuntimeGet_Response() override;
@@ -343,7 +343,7 @@ class RuntimeGet_Response final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.config.RuntimeGet_Response";
+    return "com.cyb3rhq.api.engine.config.RuntimeGet_Response";
   }
   protected:
   explicit RuntimeGet_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -400,16 +400,16 @@ class RuntimeGet_Response final :
   std::string* _internal_mutable_content();
   public:
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   void clear_status();
-  ::com::wazuh::api::engine::ReturnStatus status() const;
-  void set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus status() const;
+  void set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   private:
-  ::com::wazuh::api::engine::ReturnStatus _internal_status() const;
-  void _internal_set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus _internal_status() const;
+  void _internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.config.RuntimeGet_Response)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.config.RuntimeGet_Response)
  private:
   class _Internal;
 
@@ -429,7 +429,7 @@ class RuntimeGet_Response final :
 // -------------------------------------------------------------------
 
 class RuntimePut_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.config.RuntimePut_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.config.RuntimePut_Request) */ {
  public:
   inline RuntimePut_Request() : RuntimePut_Request(nullptr) {}
   ~RuntimePut_Request() override;
@@ -532,7 +532,7 @@ class RuntimePut_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.config.RuntimePut_Request";
+    return "com.cyb3rhq.api.engine.config.RuntimePut_Request";
   }
   protected:
   explicit RuntimePut_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -588,7 +588,7 @@ class RuntimePut_Request final :
   std::string* _internal_mutable_content();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.config.RuntimePut_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.config.RuntimePut_Request)
  private:
   class _Internal;
 
@@ -607,7 +607,7 @@ class RuntimePut_Request final :
 // -------------------------------------------------------------------
 
 class RuntimeSave_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.config.RuntimeSave_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.config.RuntimeSave_Request) */ {
  public:
   inline RuntimeSave_Request() : RuntimeSave_Request(nullptr) {}
   ~RuntimeSave_Request() override;
@@ -710,7 +710,7 @@ class RuntimeSave_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.config.RuntimeSave_Request";
+    return "com.cyb3rhq.api.engine.config.RuntimeSave_Request";
   }
   protected:
   explicit RuntimeSave_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -747,7 +747,7 @@ class RuntimeSave_Request final :
   std::string* _internal_mutable_path();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.config.RuntimeSave_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.config.RuntimeSave_Request)
  private:
   class _Internal;
 
@@ -786,7 +786,7 @@ inline void RuntimeGet_Request::clear_name() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& RuntimeGet_Request::name() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.config.RuntimeGet_Request.name)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.config.RuntimeGet_Request.name)
   return _internal_name();
 }
 template <typename ArgT0, typename... ArgT>
@@ -794,11 +794,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void RuntimeGet_Request::set_name(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.name_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.config.RuntimeGet_Request.name)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.config.RuntimeGet_Request.name)
 }
 inline std::string* RuntimeGet_Request::mutable_name() {
   std::string* _s = _internal_mutable_name();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.config.RuntimeGet_Request.name)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.config.RuntimeGet_Request.name)
   return _s;
 }
 inline const std::string& RuntimeGet_Request::_internal_name() const {
@@ -813,7 +813,7 @@ inline std::string* RuntimeGet_Request::_internal_mutable_name() {
   return _impl_.name_.Mutable(GetArenaForAllocation());
 }
 inline std::string* RuntimeGet_Request::release_name() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.config.RuntimeGet_Request.name)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.config.RuntimeGet_Request.name)
   if (!_internal_has_name()) {
     return nullptr;
   }
@@ -838,31 +838,31 @@ inline void RuntimeGet_Request::set_allocated_name(std::string* name) {
     _impl_.name_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.config.RuntimeGet_Request.name)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.config.RuntimeGet_Request.name)
 }
 
 // -------------------------------------------------------------------
 
 // RuntimeGet_Response
 
-// .com.wazuh.api.engine.ReturnStatus status = 1;
+// .com.cyb3rhq.api.engine.ReturnStatus status = 1;
 inline void RuntimeGet_Response::clear_status() {
   _impl_.status_ = 0;
 }
-inline ::com::wazuh::api::engine::ReturnStatus RuntimeGet_Response::_internal_status() const {
-  return static_cast< ::com::wazuh::api::engine::ReturnStatus >(_impl_.status_);
+inline ::com::cyb3rhq::api::engine::ReturnStatus RuntimeGet_Response::_internal_status() const {
+  return static_cast< ::com::cyb3rhq::api::engine::ReturnStatus >(_impl_.status_);
 }
-inline ::com::wazuh::api::engine::ReturnStatus RuntimeGet_Response::status() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.config.RuntimeGet_Response.status)
+inline ::com::cyb3rhq::api::engine::ReturnStatus RuntimeGet_Response::status() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.config.RuntimeGet_Response.status)
   return _internal_status();
 }
-inline void RuntimeGet_Response::_internal_set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void RuntimeGet_Response::_internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   
   _impl_.status_ = value;
 }
-inline void RuntimeGet_Response::set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void RuntimeGet_Response::set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.config.RuntimeGet_Response.status)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.config.RuntimeGet_Response.status)
 }
 
 // optional string error = 2;
@@ -878,7 +878,7 @@ inline void RuntimeGet_Response::clear_error() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& RuntimeGet_Response::error() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.config.RuntimeGet_Response.error)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.config.RuntimeGet_Response.error)
   return _internal_error();
 }
 template <typename ArgT0, typename... ArgT>
@@ -886,11 +886,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void RuntimeGet_Response::set_error(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.error_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.config.RuntimeGet_Response.error)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.config.RuntimeGet_Response.error)
 }
 inline std::string* RuntimeGet_Response::mutable_error() {
   std::string* _s = _internal_mutable_error();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.config.RuntimeGet_Response.error)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.config.RuntimeGet_Response.error)
   return _s;
 }
 inline const std::string& RuntimeGet_Response::_internal_error() const {
@@ -905,7 +905,7 @@ inline std::string* RuntimeGet_Response::_internal_mutable_error() {
   return _impl_.error_.Mutable(GetArenaForAllocation());
 }
 inline std::string* RuntimeGet_Response::release_error() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.config.RuntimeGet_Response.error)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.config.RuntimeGet_Response.error)
   if (!_internal_has_error()) {
     return nullptr;
   }
@@ -930,7 +930,7 @@ inline void RuntimeGet_Response::set_allocated_error(std::string* error) {
     _impl_.error_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.config.RuntimeGet_Response.error)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.config.RuntimeGet_Response.error)
 }
 
 // optional string content = 3;
@@ -946,7 +946,7 @@ inline void RuntimeGet_Response::clear_content() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& RuntimeGet_Response::content() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.config.RuntimeGet_Response.content)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.config.RuntimeGet_Response.content)
   return _internal_content();
 }
 template <typename ArgT0, typename... ArgT>
@@ -954,11 +954,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void RuntimeGet_Response::set_content(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.content_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.config.RuntimeGet_Response.content)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.config.RuntimeGet_Response.content)
 }
 inline std::string* RuntimeGet_Response::mutable_content() {
   std::string* _s = _internal_mutable_content();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.config.RuntimeGet_Response.content)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.config.RuntimeGet_Response.content)
   return _s;
 }
 inline const std::string& RuntimeGet_Response::_internal_content() const {
@@ -973,7 +973,7 @@ inline std::string* RuntimeGet_Response::_internal_mutable_content() {
   return _impl_.content_.Mutable(GetArenaForAllocation());
 }
 inline std::string* RuntimeGet_Response::release_content() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.config.RuntimeGet_Response.content)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.config.RuntimeGet_Response.content)
   if (!_internal_has_content()) {
     return nullptr;
   }
@@ -998,7 +998,7 @@ inline void RuntimeGet_Response::set_allocated_content(std::string* content) {
     _impl_.content_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.config.RuntimeGet_Response.content)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.config.RuntimeGet_Response.content)
 }
 
 // -------------------------------------------------------------------
@@ -1018,7 +1018,7 @@ inline void RuntimePut_Request::clear_name() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& RuntimePut_Request::name() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.config.RuntimePut_Request.name)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.config.RuntimePut_Request.name)
   return _internal_name();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1026,11 +1026,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void RuntimePut_Request::set_name(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.name_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.config.RuntimePut_Request.name)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.config.RuntimePut_Request.name)
 }
 inline std::string* RuntimePut_Request::mutable_name() {
   std::string* _s = _internal_mutable_name();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.config.RuntimePut_Request.name)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.config.RuntimePut_Request.name)
   return _s;
 }
 inline const std::string& RuntimePut_Request::_internal_name() const {
@@ -1045,7 +1045,7 @@ inline std::string* RuntimePut_Request::_internal_mutable_name() {
   return _impl_.name_.Mutable(GetArenaForAllocation());
 }
 inline std::string* RuntimePut_Request::release_name() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.config.RuntimePut_Request.name)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.config.RuntimePut_Request.name)
   if (!_internal_has_name()) {
     return nullptr;
   }
@@ -1070,7 +1070,7 @@ inline void RuntimePut_Request::set_allocated_name(std::string* name) {
     _impl_.name_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.config.RuntimePut_Request.name)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.config.RuntimePut_Request.name)
 }
 
 // optional string content = 2;
@@ -1086,7 +1086,7 @@ inline void RuntimePut_Request::clear_content() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& RuntimePut_Request::content() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.config.RuntimePut_Request.content)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.config.RuntimePut_Request.content)
   return _internal_content();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1094,11 +1094,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void RuntimePut_Request::set_content(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.content_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.config.RuntimePut_Request.content)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.config.RuntimePut_Request.content)
 }
 inline std::string* RuntimePut_Request::mutable_content() {
   std::string* _s = _internal_mutable_content();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.config.RuntimePut_Request.content)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.config.RuntimePut_Request.content)
   return _s;
 }
 inline const std::string& RuntimePut_Request::_internal_content() const {
@@ -1113,7 +1113,7 @@ inline std::string* RuntimePut_Request::_internal_mutable_content() {
   return _impl_.content_.Mutable(GetArenaForAllocation());
 }
 inline std::string* RuntimePut_Request::release_content() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.config.RuntimePut_Request.content)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.config.RuntimePut_Request.content)
   if (!_internal_has_content()) {
     return nullptr;
   }
@@ -1138,7 +1138,7 @@ inline void RuntimePut_Request::set_allocated_content(std::string* content) {
     _impl_.content_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.config.RuntimePut_Request.content)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.config.RuntimePut_Request.content)
 }
 
 // -------------------------------------------------------------------
@@ -1158,7 +1158,7 @@ inline void RuntimeSave_Request::clear_path() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& RuntimeSave_Request::path() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.config.RuntimeSave_Request.path)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.config.RuntimeSave_Request.path)
   return _internal_path();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1166,11 +1166,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void RuntimeSave_Request::set_path(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.path_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.config.RuntimeSave_Request.path)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.config.RuntimeSave_Request.path)
 }
 inline std::string* RuntimeSave_Request::mutable_path() {
   std::string* _s = _internal_mutable_path();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.config.RuntimeSave_Request.path)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.config.RuntimeSave_Request.path)
   return _s;
 }
 inline const std::string& RuntimeSave_Request::_internal_path() const {
@@ -1185,7 +1185,7 @@ inline std::string* RuntimeSave_Request::_internal_mutable_path() {
   return _impl_.path_.Mutable(GetArenaForAllocation());
 }
 inline std::string* RuntimeSave_Request::release_path() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.config.RuntimeSave_Request.path)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.config.RuntimeSave_Request.path)
   if (!_internal_has_path()) {
     return nullptr;
   }
@@ -1210,7 +1210,7 @@ inline void RuntimeSave_Request::set_allocated_path(std::string* path) {
     _impl_.path_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.config.RuntimeSave_Request.path)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.config.RuntimeSave_Request.path)
 }
 
 #ifdef __GNUC__
@@ -1228,7 +1228,7 @@ inline void RuntimeSave_Request::set_allocated_path(std::string* path) {
 }  // namespace config
 }  // namespace engine
 }  // namespace api
-}  // namespace wazuh
+}  // namespace cyb3rhq
 }  // namespace com
 
 // @@protoc_insertion_point(global_scope)

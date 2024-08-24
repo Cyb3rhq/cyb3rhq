@@ -1,6 +1,6 @@
 /*
- * Wazuh storeRemediationsModel
- * Copyright (C) 2015, Wazuh Inc.
+ * Cyb3rhq storeRemediationsModel
+ * Copyright (C) 2015, Cyb3rhq Inc.
  * May 2, 2024.
  *
  * This program is free software; you can redistribute it

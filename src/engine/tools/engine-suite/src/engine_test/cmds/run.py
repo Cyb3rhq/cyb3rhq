@@ -3,11 +3,11 @@ from engine_test.command import Command
 from engine_test.integration import Integration
 
 DEFAULT_AGENT_ID = "001"
-DEFAULT_AGENT_NAME = "wazuh-agent-1"
+DEFAULT_AGENT_NAME = "cyb3rhq-agent-1"
 DEFAULT_AGENT_IP = "any"
 DEFAULT_NAMESPACES = ['user']
 DEFAULT_VERBOSE = False
-DEFAULT_POLICY = "policy/wazuh/0"
+DEFAULT_POLICY = "policy/cyb3rhq/0"
 DEFAULT_ASSETS = []
 DEFAULT_JSON_FORMAT = False
 DEFAULT_API_SOCKET = "/var/ossec/queue/sockets/engine-api"

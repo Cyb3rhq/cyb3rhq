@@ -2,8 +2,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -62,7 +62,7 @@
     },
     "rule": {
       "description": "Identifies the deletion of WebServer access logs. This may indicate an attempt to evade detection or destroy forensic evidence on a system.",
-      "license": "Wazuh Inc.",
+      "license": "Cyb3rhq Inc.",
       "name": "WebServer Access Logs Deleted"
     },
     "sysmon": {
@@ -104,12 +104,12 @@
     "vulnerability": {
       "severity": "medium"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "windows-event",
         "windows-sysmon"
       ],
-      "location": "[001] (wazuh-agent-1) any->EventChannel",
+      "location": "[001] (cyb3rhq-agent-1) any->EventChannel",
       "origin": "EventChannel",
       "queue": 102,
       "registered_ip": "any",

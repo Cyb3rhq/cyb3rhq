@@ -1,5 +1,5 @@
-# Copyright (C) 2015, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2015, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is a free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 import collections
@@ -14,7 +14,7 @@ from api.api_exception import APIError
 # Compile regex when the module is imported so it's not necessary to compile it everytime log.info is called
 request_pattern = re.compile(r'\[.+]|\s+\*\s+')
 
-logger = logging.getLogger('wazuh-api')
+logger = logging.getLogger('cyb3rhq-api')
 
 # Variable used to specify an unknown user
 UNKNOWN_USER_STRING = "unknown_user"
@@ -40,7 +40,7 @@ class APILoggerSize:
             raise APIError(2011, details=f"Minimum value for size is 1M. Current: {size_string}")
 
 
-class WazuhJsonFormatter(jsonlogger.JsonFormatter):
+class Cyb3rhqJsonFormatter(jsonlogger.JsonFormatter):
     """
     Define the custom JSON log formatter used by wlogging.
     """
@@ -85,7 +85,7 @@ class WazuhJsonFormatter(jsonlogger.JsonFormatter):
 def set_logging(log_filepath, log_level = 'INFO', foreground_mode = False) -> dict:
     """Set up logging for API.
     
-    This function creates a logging configuration dictionary, configure the wazuh-api logger
+    This function creates a logging configuration dictionary, configure the cyb3rhq-api logger
     and returns the logging configuration dictionary that will be used in uvicorn logging
     configuration.
     
@@ -152,15 +152,15 @@ def set_logging(log_filepath, log_level = 'INFO', foreground_mode = False) -> di
                 "use_colors": None,
             },
             "json" : {
-                '()': 'api.alogging.WazuhJsonFormatter',
+                '()': 'api.alogging.Cyb3rhqJsonFormatter',
                 'style': '%',
                 'datefmt': "%Y/%m/%d %H:%M:%S"
             }
         },
         "filters": {
-            'plain-filter': {'()': 'wazuh.core.wlogging.CustomFilter',
+            'plain-filter': {'()': 'cyb3rhq.core.wlogging.CustomFilter',
                              'log_type': 'log' },
-            'json-filter': {'()': 'wazuh.core.wlogging.CustomFilter',
+            'json-filter': {'()': 'cyb3rhq.core.wlogging.CustomFilter',
                              'log_type': 'json' }
         },
         "handlers": {
@@ -182,9 +182,9 @@ def set_logging(log_filepath, log_level = 'INFO', foreground_mode = False) -> di
             },
         },
         "loggers": {
-            "wazuh-api": {"handlers": hdls, "level": log_level, "propagate": False},
+            "cyb3rhq-api": {"handlers": hdls, "level": log_level, "propagate": False},
             "start-stop-api": {"handlers": hdls, "level": 'INFO', "propagate": False},
-            "wazuh-comms-api": {"handlers": hdls, "level": log_level, "propagate": False}
+            "cyb3rhq-comms-api": {"handlers": hdls, "level": log_level, "propagate": False}
         }
     }
 
@@ -194,13 +194,13 @@ def set_logging(log_filepath, log_level = 'INFO', foreground_mode = False) -> di
             if api_conf['logs']['max_size']['enabled']:
                 max_size = APILoggerSize(api_conf['logs']['max_size']['size']).size
                 d.update({
-                    'class':'wazuh.core.wlogging.SizeBasedFileRotatingHandler',
+                    'class':'cyb3rhq.core.wlogging.SizeBasedFileRotatingHandler',
                     'maxBytes': max_size,
                     'backupCount': 1
                 })
             else:
                 d.update({
-                    'class': 'wazuh.core.wlogging.TimeBasedFileRotatingHandler',
+                    'class': 'cyb3rhq.core.wlogging.TimeBasedFileRotatingHandler',
                     'when': 'midnight'
                 })
             log_config_dict['handlers'][handler] = d

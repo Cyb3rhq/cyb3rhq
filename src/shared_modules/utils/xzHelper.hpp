@@ -1,6 +1,6 @@
 /*
- * Wazuh - Shared Modules utils
- * Copyright (C) 2015, Wazuh Inc.
+ * Cyb3rhq - Shared Modules utils
+ * Copyright (C) 2015, Cyb3rhq Inc.
  * April 19, 2023.
  *
  */

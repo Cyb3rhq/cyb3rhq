@@ -1,5 +1,5 @@
-# Copyright (C) 2023, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2023, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is free software; you can redistribute
 # it and/or modify it under the terms of GPLv2
 
@@ -39,7 +39,7 @@ alert_template = {
     'id': 'alert_id',
     'full_log': 'full log.',
     'decoder': {'name': 'decoder-name'},
-    'location': 'wazuh-X',
+    'location': 'cyb3rhq-X',
     'agent': {'id': '001', 'name': 'The agent', 'ip': '1.1.1.1'},
 }
 
@@ -52,7 +52,7 @@ msg_template = {
     },
     'routing_key': f'{apikey_virustotal}',
     'event_action': 'trigger',
-    'client': 'Wazuh-X -- Alert generated',
+    'client': 'Cyb3rhq-X -- Alert generated',
     'client_url': 'https://monitoring.example.com',
     'agent': {'id': '001', 'name': 'The agent', 'ip': '1.1.1.1'},
 }

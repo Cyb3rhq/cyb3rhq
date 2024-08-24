@@ -3,8 +3,8 @@ from typing import List
 
 from uuid6 import UUID
 
-from wazuh.core.indexer import get_indexer_client
-from wazuh.core.indexer.models.commands import Command, Status
+from cyb3rhq.core.indexer import get_indexer_client
+from cyb3rhq.core.indexer.models.commands import Command, Status
 
 
 async def pull_commands(uuid: UUID) -> List[Command]:

@@ -1,6 +1,6 @@
 #!/bin/sh
-# Copyright (C) 2015, Wazuh Inc.
-# Installation script for Wazuh
+# Copyright (C) 2015, Cyb3rhq Inc.
+# Installation script for Cyb3rhq
 # Author: Daniel B. Cid <daniel.cid@gmail.com>
 
 ### Looking up for the execution directory
@@ -121,39 +121,39 @@ Install()
         fi
     fi
 
-    # If update, stop Wazuh
+    # If update, stop Cyb3rhq
     if [ "X${update_only}" = "Xyes" ]; then
-        echo "Stopping Wazuh..."
+        echo "Stopping Cyb3rhq..."
         UpdateStopOSSEC
     fi
 
     # Install
-    InstallWazuh
+    InstallCyb3rhq
 
     cd ../
 
-    # Install Wazuh ruleset updater
+    # Install Cyb3rhq ruleset updater
     if [ "X$INSTYPE" = "Xserver" ]; then
-        WazuhSetup
+        Cyb3rhqSetup
     fi
 
-    # Calling the init script to start Wazuh during boot
+    # Calling the init script to start Cyb3rhq during boot
     runInit $INSTYPE ${update_only}
     runinit_value=$?
 
-    # If update, start Wazuh
+    # If update, start Cyb3rhq
     if [ "X${update_only}" = "Xyes" ]; then
-        WazuhUpgrade $INSTYPE
-        # Update versions previous to Wazuh 1.2
+        Cyb3rhqUpgrade $INSTYPE
+        # Update versions previous to Cyb3rhq 1.2
         UpdateOldVersions
-        echo "Starting Wazuh..."
+        echo "Starting Cyb3rhq..."
         UpdateStartOSSEC
     fi
 
     if [ $runinit_value = 1 ]; then
         notmodified="yes"
-    elif [ "X$START_WAZUH" = "Xyes" ]; then
-        echo "Starting Wazuh..."
+    elif [ "X$START_CYB3RHQ" = "Xyes" ]; then
+        echo "Starting Cyb3rhq..."
         UpdateStartOSSEC
     fi
 
@@ -287,7 +287,7 @@ ConfigureBoot()
     if [ "X$INSTYPE" != "Xagent" ]; then
 
         echo ""
-        $ECHO "  $NB- ${startwazuh} ($yes/$no) [$yes]: "
+        $ECHO "  $NB- ${startcyb3rhq} ($yes/$no) [$yes]: "
 
         if [ "X${USER_AUTO_START}" = "X" ]; then
             read ANSWER
@@ -298,11 +298,11 @@ ConfigureBoot()
         echo ""
         case $ANSWER in
             $nomatch)
-                echo "   - ${nowazuhstart}"
+                echo "   - ${nocyb3rhqstart}"
                 ;;
             *)
-                START_WAZUH="yes"
-                echo "   - ${yeswazuhstart}"
+                START_CYB3RHQ="yes"
+                echo "   - ${yescyb3rhqstart}"
                 ;;
         esac
     fi
@@ -624,7 +624,7 @@ askForDelete()
 
         case $ANSWER in
             $yesmatch)
-                echo "      Stopping Wazuh..."
+                echo "      Stopping Cyb3rhq..."
                 UpdateStopOSSEC
                 rm -rf $INSTALLDIR
                 if [ ! $? = 0 ]; then
@@ -761,7 +761,7 @@ AddCAStore()
 AddPFTable()
 {
     #default pf rules
-    TABLE="wazuh_fwtable"
+    TABLE="cyb3rhq_fwtable"
 
     # Add table to the first line
     echo ""
@@ -837,7 +837,7 @@ main()
 
     . ./src/init/language.sh
     . ./src/init/init.sh
-    . ./src/init/wazuh/wazuh.sh
+    . ./src/init/cyb3rhq/cyb3rhq.sh
     . ${TEMPLATE}/${LANGUAGE}/messages.txt
     . ./src/init/inst-functions.sh
     . ./src/init/template-select.sh
@@ -1024,10 +1024,10 @@ main()
     echo " - ${configurationdone}."
     echo ""
     echo " - ${tostart}:"
-    echo "      $INSTALLDIR/bin/wazuh-control start"
+    echo "      $INSTALLDIR/bin/cyb3rhq-control start"
     echo ""
     echo " - ${tostop}:"
-    echo "      $INSTALLDIR/bin/wazuh-control stop"
+    echo "      $INSTALLDIR/bin/cyb3rhq-control stop"
     echo ""
     echo " - ${configat} $INSTALLDIR/etc/ossec.conf"
     echo ""
@@ -1046,8 +1046,8 @@ main()
         fi
         echo ""
 
-        # If version < wazuh 1.2
-        if [ "X$USER_OLD_NAME" != "XWazuh" ]; then
+        # If version < cyb3rhq 1.2
+        if [ "X$USER_OLD_NAME" != "XCyb3rhq" ]; then
             echo " ====================================================================================="
             echo "  ${update_rev_newconf1}"
             echo "  ${update_rev_newconf2}"
@@ -1088,7 +1088,7 @@ main()
 
     if [ "X$notmodified" = "Xyes" ]; then
         catMsg "0x105-noboot"
-        echo "      $INSTALLDIR/bin/wazuh-control start"
+        echo "      $INSTALLDIR/bin/cyb3rhq-control start"
         echo ""
     fi
 }

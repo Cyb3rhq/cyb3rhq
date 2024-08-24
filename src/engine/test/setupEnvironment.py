@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 def setup_engine(engine_dir, engine_src_dir, environment_dir):
-    schemas = ["wazuh-logpar-types", "wazuh-asset", "wazuh-policy", "engine-schema"]
+    schemas = ["cyb3rhq-logpar-types", "cyb3rhq-asset", "cyb3rhq-policy", "engine-schema"]
 
     for schema in schemas:
         schema_dir = os.path.join(engine_dir, 'store/schema', schema)
@@ -35,12 +35,12 @@ def main():
 
     environment_directory = args.environment
     if environment_directory is None:
-        print("environment_directory is optional. For default is wazuh directory. Usage: python script.py -e <environment_directory>")
+        print("environment_directory is optional. For default is cyb3rhq directory. Usage: python script.py -e <environment_directory>")
 
     SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
     ENGINE_SRC_DIR = os.path.join(SCRIPT_DIR, '../')
-    WAZUH_DIR = os.path.realpath(os.path.join(SCRIPT_DIR, '../../../'))
-    ENVIRONMENT_DIR = environment_directory or os.path.join(WAZUH_DIR, 'environment')
+    CYB3RHQ_DIR = os.path.realpath(os.path.join(SCRIPT_DIR, '../../../'))
+    ENVIRONMENT_DIR = environment_directory or os.path.join(CYB3RHQ_DIR, 'environment')
     ENVIRONMENT_DIR = str(Path(ENVIRONMENT_DIR).resolve())
     ENGINE_DIR = os.path.join(ENVIRONMENT_DIR, 'engine')
 

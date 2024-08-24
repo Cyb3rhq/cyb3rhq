@@ -1,6 +1,6 @@
 /*
- * Wazuh cmdLineParser
- * Copyright (C) 2015, Wazuh Inc.
+ * Cyb3rhq cmdLineParser
+ * Copyright (C) 2015, Cyb3rhq Inc.
  * Dec 4, 2023.
  *
  * This program is free software; you can redistribute it

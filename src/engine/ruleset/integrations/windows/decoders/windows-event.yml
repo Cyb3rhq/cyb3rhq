@@ -7,7 +7,7 @@ metadata:
   versions: [Vista, "7", "8", "10", "11", Server 2012, Server 2016, Server 2019, Server 2022]
   compatibility: This decoder was tested on Windows Server 2019 and Windows 10, but should work on all versions of Windows Vista onwards.
   author:
-    name: Wazuh, Inc.
+    name: Cyb3rhq, Inc.
     date: 2023/01/23
   references:
     - https://learn.microsoft.com/en-us/windows/win32/events/windows-events
@@ -41,4 +41,4 @@ normalize:
 
       - host.name: $windows.System.Computer.#text
 
-      - wazuh.decoders: array_append(windows-event)
+      - cyb3rhq.decoders: array_append(windows-event)

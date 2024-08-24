@@ -2,11 +2,11 @@
 name: decoder/aws-elb/0
 
 metadata:
-  title: Wazuh AWS wodle integration for AWS alb, clb and nlb bucket types
-  description: Decoder for Wazuh wodle of AWS ELB (ALB, CLB, NLB) logs
+  title: Cyb3rhq AWS wodle integration for AWS alb, clb and nlb bucket types
+  description: Decoder for Cyb3rhq wodle of AWS ELB (ALB, CLB, NLB) logs
   module: AWS
   compatibility: >
-    This decoder has been tested on Wazuh version 4.4
+    This decoder has been tested on Cyb3rhq version 4.4
   references:
     - https://documentation.wazuh.com/current/amazon/services/supported-services/elastic-load-balancing/alb.html#amazon-alb
     - https://documentation.wazuh.com/current/amazon/services/supported-services/elastic-load-balancing/clb.html#amazon-clb
@@ -17,7 +17,7 @@ metadata:
   versions:
     - "4.4"
   author:
-      name: Wazuh, Inc.
+      name: Cyb3rhq, Inc.
       url: https://wazuh.com
       date: 2023/06/20
 
@@ -38,7 +38,7 @@ normalize:
       - url.original: 'http://<source.ip>:<source.port>/'
 
   - map:
-      - wazuh.decoders: +array_append/aws-elb
+      - cyb3rhq.decoders: +array_append/aws-elb
       - event.module: aws
       - event.dataset: aws-elb
       - event.kind: event

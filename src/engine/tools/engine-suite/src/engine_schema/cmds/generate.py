@@ -10,7 +10,7 @@ DEFAULT_OUTPUT_DIR = './'
 def run(args, resource_handler: rs.ResourceHandler):
     """Execute the generate sub-command, callback function.
 
-    Generates the wazuh schema and all needed configuration, optionally add \
+    Generates the cyb3rhq schema and all needed configuration, optionally add \
 ECS field modules and apply changes on an engine instance through the API socket
 
     Args:
@@ -29,9 +29,9 @@ ECS field modules and apply changes on an engine instance through the API socket
     resource_handler.save_file(
         output_dir, 'fields', jproperties, rs.Format.JSON)
     resource_handler.save_file(
-        output_dir, 'wazuh-template', jmappings, rs.Format.JSON)
+        output_dir, 'cyb3rhq-template', jmappings, rs.Format.JSON)
     resource_handler.save_file(
-        output_dir, 'wazuh-logpar-types', jlogpar, rs.Format.JSON)
+        output_dir, 'cyb3rhq-logpar-types', jlogpar, rs.Format.JSON)
     resource_handler.save_file(
         output_dir, 'engine-schema', jengine, rs.Format.JSON)
     print('Success.')

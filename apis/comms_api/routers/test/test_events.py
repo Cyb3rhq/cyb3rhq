@@ -5,7 +5,7 @@ from fastapi import status
 
 from comms_api.routers.events import post_stateful_events
 from comms_api.routers.exceptions import HTTPError
-from wazuh.core.exception import WazuhError
+from cyb3rhq.core.exception import Cyb3rhqError
 
 
 @pytest.mark.asyncio
@@ -24,7 +24,7 @@ async def test_post_stateful_events(post_stateful_events_mock):
 async def test_post_stateful_events_ko():
     """Verify that the `post_stateful_events` handler catches exceptions successfully."""
     code = status.HTTP_400_BAD_REQUEST
-    exception = WazuhError(2200)
+    exception = Cyb3rhqError(2200)
 
     with patch('comms_api.routers.events.create_stateful_events', MagicMock(side_effect=exception)):
         with pytest.raises(HTTPError, match=fr'{code}: {exception.message}'):
