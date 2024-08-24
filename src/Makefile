@@ -950,14 +950,18 @@ endif
 ifneq (,$(PRECOMPILED_RES))
 external/%.tar.gz: external-precompiled/%.tar.gz
 	test -d $(patsubst %.tar.gz,%,$@) ||\
-	($(CURL) $@ $(RESOURCES_URL)/libraries/sources/$(patsubst external/%,%,$@) &&\
-	cd external && $(GUNZIP) $(patsubst external/%,%,$@) && $(TAR) $(patsubst external/%.gz,%,$@) && rm $(patsubst external/%.gz,%,$@))
+	(mkdir -p external && \
+	$(CURL) $@ $(RESOURCES_URL)/libraries/sources/$(patsubst external/%,%,$@) &&\
+	cd external && $(GUNZIP) $(patsubst external/%,%,$@) && \
+	$(TAR) $(patsubst external/%.gz,%,$@) && \
+	rm $(patsubst external/%.gz,%,$@))
 else
 external/%.tar.gz:
-	$(CURL) $@ $(RESOURCES_URL)/libraries/sources/$(patsubst external/%,%,$@)
-	cd external && $(GUNZIP) $(patsubst external/%,%,$@)
-	cd external && $(TAR) $(patsubst external/%.gz,%,$@)
-	rm $(patsubst %.gz,%,$@)
+	mkdir -p external && \
+	$(CURL) $@ $(RESOURCES_URL)/libraries/sources/$(patsubst external/%,%,$@) && \
+	cd external && $(GUNZIP) $(patsubst external/%,%,$@) && \
+	cd external && $(TAR) $(patsubst external/%.gz,%,$@) && \
+	rm $(patsubst external/%.gz,%,$@)
 endif
 
 ifneq (,$(PRECOMPILED_RES))
