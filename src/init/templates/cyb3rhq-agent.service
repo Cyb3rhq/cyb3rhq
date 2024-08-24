@@ -1,0 +1,17 @@
+[Unit]
+Description=Cyb3rhq agent
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+Type=forking
+
+ExecStart=/usr/bin/env CYB3RHQ_HOME_TMP/bin/cyb3rhq-control start
+ExecStop=/usr/bin/env CYB3RHQ_HOME_TMP/bin/cyb3rhq-control stop
+ExecReload=/usr/bin/env CYB3RHQ_HOME_TMP/bin/cyb3rhq-control reload
+
+KillMode=process
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

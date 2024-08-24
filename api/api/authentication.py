@@ -1,5 +1,5 @@
-# Copyright (C) 2015, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2015, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is a free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 import asyncio
@@ -16,17 +16,17 @@ from cryptography.hazmat.primitives.asymmetric import ec
 from connexion.exceptions import Unauthorized
 
 import api.configuration as conf
-import wazuh.core.utils as core_utils
-import wazuh.rbac.utils as rbac_utils
+import cyb3rhq.core.utils as core_utils
+import cyb3rhq.rbac.utils as rbac_utils
 from api.constants import SECURITY_CONFIG_PATH
 from api.constants import SECURITY_PATH
 from api.util import raise_if_exc
-from wazuh import WazuhInternalError
-from wazuh.core.cluster.dapi.dapi import DistributedAPI
-from wazuh.core.cluster.utils import read_config
-from wazuh.core.common import wazuh_uid, wazuh_gid
-from wazuh.rbac.orm import AuthenticationManager, TokenManager, UserRolesManager
-from wazuh.rbac.preprocessor import optimize_resources
+from cyb3rhq import Cyb3rhqInternalError
+from cyb3rhq.core.cluster.dapi.dapi import DistributedAPI
+from cyb3rhq.core.cluster.utils import read_config
+from cyb3rhq.core.common import cyb3rhq_uid, cyb3rhq_gid
+from cyb3rhq.rbac.orm import AuthenticationManager, TokenManager, UserRolesManager
+from cyb3rhq.rbac.preprocessor import optimize_resources
 
 INVALID_TOKEN = "Invalid token"
 EXPIRED_TOKEN = "Token expired"
@@ -79,7 +79,7 @@ def check_user(user: str, password: str, required_scopes=None) -> Union[dict, No
                           request_type='local_master',
                           is_async=False,
                           wait_for_complete=False,
-                          logger=logging.getLogger('wazuh-api')
+                          logger=logging.getLogger('cyb3rhq-api')
                           )
     data = raise_if_exc(pool.submit(asyncio.run, dapi.distribute_function()).result())
 
@@ -88,7 +88,7 @@ def check_user(user: str, password: str, required_scopes=None) -> Union[dict, No
 
 
 # Set JWT settings
-JWT_ISSUER = 'wazuh'
+JWT_ISSUER = 'cyb3rhq'
 JWT_ALGORITHM = 'ES512'
 _private_key_path = os.path.join(SECURITY_PATH, 'private_key.pem')
 _public_key_path = os.path.join(SECURITY_PATH, 'public_key.pem')
@@ -111,15 +111,15 @@ def get_keypair(curve: ec.EllipticCurve) -> Tuple[str, str]:
 
     Raises
     ------
-    WazuhInternalError(6003)
+    Cyb3rhqInternalError(6003)
         If there was an error trying to load the JWT secret.
     """
     try:
         if not os.path.exists(_private_key_path) or not os.path.exists(_public_key_path):
             private_key, public_key = change_keypair(curve)
             try:
-                os.chown(_private_key_path, wazuh_uid(), wazuh_gid())
-                os.chown(_public_key_path, wazuh_uid(), wazuh_gid())
+                os.chown(_private_key_path, cyb3rhq_uid(), cyb3rhq_gid())
+                os.chown(_public_key_path, cyb3rhq_uid(), cyb3rhq_gid())
             except PermissionError:
                 pass
             os.chmod(_private_key_path, 0o640)
@@ -130,7 +130,7 @@ def get_keypair(curve: ec.EllipticCurve) -> Tuple[str, str]:
             with open(_public_key_path, mode='r') as key_file:
                 public_key = key_file.read()
     except IOError:
-        raise WazuhInternalError(6003)
+        raise Cyb3rhqInternalError(6003)
 
     return private_key, public_key
 
@@ -202,14 +202,14 @@ def generate_token(user_id: str = None, data: dict = None, auth_context: dict = 
                           request_type='local_master',
                           is_async=False,
                           wait_for_complete=False,
-                          logger=logging.getLogger('wazuh-api')
+                          logger=logging.getLogger('cyb3rhq-api')
                           )
     result = raise_if_exc(pool.submit(asyncio.run, dapi.distribute_function()).result()).dikt
     timestamp = int(core_utils.get_utc_now().timestamp())
 
     payload = {
                   "iss": JWT_ISSUER,
-                  "aud": "Wazuh API REST",
+                  "aud": "Cyb3rhq API REST",
                   "nbf": timestamp,
                   "exp": timestamp + result['auth_token_exp_timeout'],
                   "sub": str(user_id),
@@ -288,7 +288,7 @@ def decode_token(token: str) -> dict:
     try:
         # Decode JWT token with local secret
         _, public_key = get_keypair(ec.SECP521R1())
-        payload = jwt.decode(token, public_key, algorithms=[JWT_ALGORITHM], audience='Wazuh API REST')
+        payload = jwt.decode(token, public_key, algorithms=[JWT_ALGORITHM], audience='Cyb3rhq API REST')
 
         # Check token and add processed policies in the Master node
         dapi = DistributedAPI(f=check_token,
@@ -298,7 +298,7 @@ def decode_token(token: str) -> dict:
                               request_type='local_master',
                               is_async=False,
                               wait_for_complete=False,
-                              logger=logging.getLogger('wazuh-api')
+                              logger=logging.getLogger('cyb3rhq-api')
                               )
         data = raise_if_exc(pool.submit(asyncio.run, dapi.distribute_function()).result()).to_dict()
 
@@ -312,7 +312,7 @@ def decode_token(token: str) -> dict:
                               request_type='local_master',
                               is_async=False,
                               wait_for_complete=False,
-                              logger=logging.getLogger('wazuh-api')
+                              logger=logging.getLogger('cyb3rhq-api')
                               )
         result = raise_if_exc(pool.submit(asyncio.run, dapi.distribute_function()).result())
 

@@ -1,6 +1,6 @@
 # Content Manager
 
-The Content Manager is a module that is in charge of obtaining the Wazuh Content from an external repository, as well as maintaining the periodic updates that the manager will obtain.
+The Content Manager is a module that is in charge of obtaining the Cyb3rhq Content from an external repository, as well as maintaining the periodic updates that the manager will obtain.
 
 ## Usage
 
@@ -10,7 +10,7 @@ The input configuration of the Content Manager is described below:
 - `interval`: Interval, in seconds, between each action execution.
 - `ondemand`: If `true`, the module will be executed on demand.
 - `configData`: Configuration data to create the orchestration of the module.
-  + `consumerName`: Name of the Content Manager caller (e.g. `Wazuh VulnerabilityScanner`). Used to set the "User-Agent" HTTP header.
+  + `consumerName`: Name of the Content Manager caller (e.g. `Cyb3rhq VulnerabilityScanner`). Used to set the "User-Agent" HTTP header.
   + `contentSource`: Source of the content. Can be any of `api`, `cti-offset`, `cti-snapshot`, `file`, or `offline`. See the [use cases section](#use-cases) for more information.
   + `compressionType`: Compression type of the content. Can be any of `gzip`, `zip`, `xz`, or `raw`.
   + `versionedContent`: Type of versioned content. Can be any of `false` (content versioning disabled) or `cti-api` (only useful if using the `cti-offset` content source).
@@ -59,7 +59,7 @@ All the downloaded content will be stored in the filesystem, making it available
 
 > For simplicity, only the usage case-related configurations are shown.
 
-The configuration above will make the Content Manager launch each `10` seconds an orchestration that will download the content offsets from the Wazuh CTI API (context: `test_context`, consumer: `test_consumer`). The Content Manager will store the offsets, by groups of 1000, into output files located in `/tmp/output_folder`.
+The configuration above will make the Content Manager launch each `10` seconds an orchestration that will download the content offsets from the Cyb3rhq CTI API (context: `test_context`, consumer: `test_consumer`). The Content Manager will store the offsets, by groups of 1000, into output files located in `/tmp/output_folder`.
 
 Executing the Content Manager for the first time, with a starting offset of `228000`, will download from offset `228000` to the last available offset (`230577` in this example).
 
@@ -163,7 +163,7 @@ The snapshot file will be decompressed and stored in the filesystem, making it a
 
 > For simplicity, only the usage case-related configurations are shown.
 
-The configuration above will make the Content Manager launch each `10` seconds an orchestration that will download the content snapshot from the Wazuh CTI API (context: `test_context`, consumer: `test_consumer`). The Content Manager will decompress the snapshot and store its content into the output folder `/tmp/output_folder`.
+The configuration above will make the Content Manager launch each `10` seconds an orchestration that will download the content snapshot from the Cyb3rhq CTI API (context: `test_context`, consumer: `test_consumer`). The Content Manager will decompress the snapshot and store its content into the output folder `/tmp/output_folder`.
 
 ```bash
 # ./content_manager_test_tool 

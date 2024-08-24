@@ -2,8 +2,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "192.168.253.112",
@@ -54,11 +54,11 @@
       },
       "timestamp": "2019-08-09T10:01:09.820360-0400"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -68,8 +68,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "192.168.156.70",
@@ -162,11 +162,11 @@
       "version": "1.2",
       "version_protocol": "tls"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -176,8 +176,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "192.168.86.28",
@@ -260,11 +260,11 @@
     "user_agent": {
       "original": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -274,8 +274,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "192.168.86.85",
@@ -370,11 +370,11 @@
     "user_agent": {
       "original": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -384,8 +384,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "192.168.86.85",
@@ -451,11 +451,11 @@
       "src_port": 53,
       "timestamp": "2019-08-09T10:51:20.213418-0400"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -465,8 +465,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "kind": "metric"
@@ -632,11 +632,11 @@
       },
       "timestamp": "2019-08-09T10:51:23.009510-0400"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -646,8 +646,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "89.160.20.112",
@@ -757,11 +757,11 @@
       "version": "1.2",
       "version_protocol": "tls"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -771,8 +771,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "ff02:0000:0000:0000:0000:0000:0001:0002",
@@ -831,11 +831,11 @@
       "src_port": 546,
       "timestamp": "2019-08-09T10:51:54.001329-0400"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -845,8 +845,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "192.168.50.1",
@@ -925,11 +925,11 @@
     "user_agent": {
       "original": "Microsoft-CryptoAPI/10.0"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -939,8 +939,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "192.168.50.1",
@@ -1046,11 +1046,11 @@
       "version": "1.2",
       "version_protocol": "tls"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -1060,8 +1060,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "192.168.50.1",
@@ -1141,11 +1141,11 @@
     "user_agent": {
       "original": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:84.0) Gecko/20100101 Firefox/84.0"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",
@@ -1155,8 +1155,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "destination": {
       "address": "192.168.50.1",
@@ -1219,11 +1219,11 @@
         "server_name": "www.example.com"
       }
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "suricata"
       ],
-      "location": "[001] (wazuh-agent-1) any->/var/log/suricata/eve.json",
+      "location": "[001] (cyb3rhq-agent-1) any->/var/log/suricata/eve.json",
       "origin": "/var/log/suricata/eve.json",
       "queue": 49,
       "registered_ip": "any",

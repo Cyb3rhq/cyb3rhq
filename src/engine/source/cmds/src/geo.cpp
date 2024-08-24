@@ -22,8 +22,8 @@ struct Options
 
 namespace cmd::geo
 {
-namespace eGeo = ::com::wazuh::api::engine::geo;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eGeo = ::com::cyb3rhq::api::engine::geo;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 void runAdd(const std::shared_ptr<apiclnt::Client>& client, const std::string& path, const std::string& type)
 {
@@ -37,9 +37,9 @@ void runAdd(const std::shared_ptr<apiclnt::Client>& client, const std::string& p
     eRequest.set_type(type);
 
     // Call the API and parse the response (Throw if error)
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runDelete(const std::shared_ptr<apiclnt::Client>& client, const std::string& path)
@@ -53,9 +53,9 @@ void runDelete(const std::shared_ptr<apiclnt::Client>& client, const std::string
     eRequest.set_path(path);
 
     // Call the API and parse the response (Throw if error)
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runList(const std::shared_ptr<apiclnt::Client>& client, bool jsonFormat)
@@ -68,9 +68,9 @@ void runList(const std::shared_ptr<apiclnt::Client>& client, bool jsonFormat)
     RequestType eRequest;
 
     // Call the API and parse the response (Throw if error)
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print the list
     const auto& list = eResponse.entries();
@@ -109,9 +109,9 @@ void runRemoteUpsert(const std::shared_ptr<apiclnt::Client>& client,
     eRequest.set_hashurl(hashUrl);
 
     // Call the API and parse the response (Throw if error)
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void configure(CLI::App_p app)

@@ -1,6 +1,6 @@
 /*
- * Wazuh databaseFeedManager
- * Copyright (C) 2015, Wazuh Inc.
+ * Cyb3rhq databaseFeedManager
+ * Copyright (C) 2015, Cyb3rhq Inc.
  * November 2, 2023.
  *
  * This program is free software; you can redistribute it

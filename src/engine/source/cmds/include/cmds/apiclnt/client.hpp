@@ -11,7 +11,7 @@
 #include <uvw/timer.h>
 
 #include <base/error.hpp>
-#include <base/utils/wazuhProtocol/wazuhProtocol.hpp>
+#include <base/utils/cyb3rhqProtocol/cyb3rhqProtocol.hpp>
 
 #include <cmds/apiExcept.hpp>
 
@@ -33,7 +33,7 @@ public:
     {
     }
 
-    base::utils::wazuhProtocol::WazuhResponse send(const base::utils::wazuhProtocol::WazuhRequest& request)
+    base::utils::cyb3rhqProtocol::Cyb3rhqResponse send(const base::utils::cyb3rhqProtocol::Cyb3rhqRequest& request)
     {
         const auto requestStr = request.toStr();
 
@@ -153,10 +153,10 @@ public:
         }
 
         // Parse answer
-        base::utils::wazuhProtocol::WazuhResponse parsedResponse;
+        base::utils::cyb3rhqProtocol::Cyb3rhqResponse parsedResponse;
         try
         {
-            parsedResponse = base::utils::wazuhProtocol::WazuhResponse::fromStr(response);
+            parsedResponse = base::utils::cyb3rhqProtocol::Cyb3rhqResponse::fromStr(response);
         }
         catch (const std::exception& e)
         {

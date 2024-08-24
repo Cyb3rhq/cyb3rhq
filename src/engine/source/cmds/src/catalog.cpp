@@ -23,8 +23,8 @@
 namespace cmd::catalog
 {
 
-namespace eCatalog = ::com::wazuh::api::engine::catalog;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eCatalog = ::com::cyb3rhq::api::engine::catalog;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 namespace
 {
 
@@ -132,9 +132,9 @@ void runGet(std::shared_ptr<apiclnt::Client> client,
     eRequest.set_namespaceid(namespaceId);
 
     // Call the API, any error will throw an cmd::exception
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     std::cout << eResponse.content() << std::endl;
 }
@@ -157,9 +157,9 @@ void runUpdate(std::shared_ptr<apiclnt::Client> client,
     eRequest.set_namespaceid(role);
 
     // Call the API, any error will throw an cmd::exception
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runCreate(std::shared_ptr<apiclnt::Client> client,
@@ -181,9 +181,9 @@ void runCreate(std::shared_ptr<apiclnt::Client> client,
     eRequest.set_namespaceid(namespaceId);
 
     // Call the API, any error will throw an cmd::exception
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runDelete(std::shared_ptr<apiclnt::Client> client,
@@ -203,9 +203,9 @@ void runDelete(std::shared_ptr<apiclnt::Client> client,
     eRequest.set_namespaceid(namespaceId);
 
     // Call the API, any error will throw an cmd::exception
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runValidate(std::shared_ptr<apiclnt::Client> client,
@@ -224,9 +224,9 @@ void runValidate(std::shared_ptr<apiclnt::Client> client,
     eRequest.set_content(content);
 
     // Call the API, any error will throw an cmd::exception
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runLoad(std::shared_ptr<apiclnt::Client> client,
@@ -333,9 +333,9 @@ void runLoad(std::shared_ptr<apiclnt::Client> client,
             try
             {
                 const auto request =
-                    utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+                    utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
                 const auto response = client->send(request);
-                utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+                utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
             }
             catch (const ClientException& e)
             {

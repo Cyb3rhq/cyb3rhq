@@ -1,6 +1,6 @@
 [
     {
-        "wazuh": {
+        "cyb3rhq": {
             "queue": 49,
             "location": "[001] (ubuntu-agent) any->/var/log/f5/f5-apm.log",
             "message": "October 2019/10/18 03:14:14 tem very-high giatnula[71]: Rule: enimadmi <<qui>: APM_EVENT=deny | aecon | sedq ***failure***",
@@ -17,7 +17,7 @@
         "agent": {
             "id": "001",
             "name": "ubuntu-agent",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event": {
             "original": "October 2019/10/18 03:14:14 tem very-high giatnula[71]: Rule: enimadmi <<qui>: APM_EVENT=deny | aecon | sedq ***failure***",
@@ -64,7 +64,7 @@
         ]
     },
     {
-        "wazuh": {
+        "cyb3rhq": {
             "queue": 49,
             "location": "[001] (ubuntu-agent) any->/var/log/f5/f5-apm.log",
             "message": "July 2016/07/18 18:40:50 lum high CROND[1675]: (sitvolup) CMD (cancel)",
@@ -81,7 +81,7 @@
         "agent": {
             "id": "001",
             "name": "ubuntu-agent",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event": {
             "original": "July 2016/07/18 18:40:50 lum high CROND[1675]: (sitvolup) CMD (cancel)",
@@ -130,7 +130,7 @@
         ]
     },
     {
-        "wazuh": {
+        "cyb3rhq": {
             "queue": 49,
             "location": "[001] (ubuntu-agent) any->/var/log/f5/f5-apm.log",
             "message": "April 2017/04/02 01:27:07 caboNem medium laudan[7589]: 01490107: :oconse: mag: AD module: authentication with 'tob' failed: Client 'dolores2519.mail.host' not found in Kerberos database, principal name:deF itempo",
@@ -147,7 +147,7 @@
         "agent": {
             "id": "001",
             "name": "ubuntu-agent",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event": {
             "original": "April 2017/04/02 01:27:07 caboNem medium laudan[7589]: 01490107: :oconse: mag: AD module: authentication with 'tob' failed: Client 'dolores2519.mail.host' not found in Kerberos database, principal name:deF itempo",
@@ -206,7 +206,7 @@
         ]
     },
     {
-        "wazuh": {
+        "cyb3rhq": {
             "queue": 49,
             "location": "[001] (ubuntu-agent) any->/var/log/f5/f5-apm.log",
             "message": "March 2017/03/18 18:24:33 ptasnula high syslog-ng[2638]: ill",
@@ -223,7 +223,7 @@
         "agent": {
             "id": "001",
             "name": "ubuntu-agent",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event": {
             "original": "March 2017/03/18 18:24:33 ptasnula high syslog-ng[2638]: ill",

@@ -1,5 +1,5 @@
-# Copyright (C) 2015, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2015, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is a free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 from datetime import datetime
@@ -17,7 +17,7 @@ from connexion.exceptions import ProblemException, OAuthProblem
 from freezegun import freeze_time
 
 from api.middlewares import check_rate_limit, check_blocked_ip, MAX_REQUESTS_EVENTS_DEFAULT, UNKNOWN_USER_STRING, \
-    LOGIN_ENDPOINT, RUN_AS_LOGIN_ENDPOINT, CheckRateLimitsMiddleware, WazuhAccessLoggerMiddleware, CheckBlockedIP, \
+    LOGIN_ENDPOINT, RUN_AS_LOGIN_ENDPOINT, CheckRateLimitsMiddleware, Cyb3rhqAccessLoggerMiddleware, CheckBlockedIP, \
     SecureHeadersMiddleware, CheckExpectHeaderMiddleware, secure_headers, access_log
 from api.api_exception import ExpectFailedException
 
@@ -159,11 +159,11 @@ async def test_check_rate_limits_middleware_ko(
 @pytest.mark.asyncio
 @freeze_time(datetime(1970, 1, 1, 0, 0, 10))
 @pytest.mark.parametrize("json_body, q_password, b_password, b_key, c_user, hash, sec_header, endpoint, method, status_code", [
-    (True, None, None, None, None, 'hash', ('basic', 'wazuh:pwd'), '/agents', 'GET', 200),
-    (False, 'q_pass', 'b_pass', 'b_key', 'wazuh', '', ('basic', 'wazuh:pwd'), LOGIN_ENDPOINT, 'GET', 200),
-    (False, None, 'b_pass', 'b_key', 'wazuh', '', ('bearer', {'sub':'wazuh'}), RUN_AS_LOGIN_ENDPOINT, 'POST', 403),
-    (False, 'q_pass', None, 'b_key', 'wazuh', '', ('bearer', {'sub':'wazuh'}), RUN_AS_LOGIN_ENDPOINT, 'POST', 403),
-    (False, 'q_pass', None, 'b_key', 'wazuh', '', ('other', ''), RUN_AS_LOGIN_ENDPOINT, 'POST', 403),
+    (True, None, None, None, None, 'hash', ('basic', 'cyb3rhq:pwd'), '/agents', 'GET', 200),
+    (False, 'q_pass', 'b_pass', 'b_key', 'cyb3rhq', '', ('basic', 'cyb3rhq:pwd'), LOGIN_ENDPOINT, 'GET', 200),
+    (False, None, 'b_pass', 'b_key', 'cyb3rhq', '', ('bearer', {'sub':'cyb3rhq'}), RUN_AS_LOGIN_ENDPOINT, 'POST', 403),
+    (False, 'q_pass', None, 'b_key', 'cyb3rhq', '', ('bearer', {'sub':'cyb3rhq'}), RUN_AS_LOGIN_ENDPOINT, 'POST', 403),
+    (False, 'q_pass', None, 'b_key', 'cyb3rhq', '', ('other', ''), RUN_AS_LOGIN_ENDPOINT, 'POST', 403),
 ])
 async def test_access_log(json_body, q_password, b_password, b_key, c_user,
                           hash, sec_header, endpoint, method, status_code, mock_req):
@@ -208,7 +208,7 @@ async def test_access_log(json_body, q_password, b_password, b_key, c_user,
         await access_log(request=mock_req, response=response, prev_time=expected_time)
         if json_body:
             mock_req.json.assert_awaited_once()
-        expected_user = UNKNOWN_USER_STRING if not c_user and not sec_header[0] else 'wazuh'
+        expected_user = UNKNOWN_USER_STRING if not c_user and not sec_header[0] else 'cyb3rhq'
         if not c_user:
             mock_get_headers.assert_called_once_with(mock_req)
             if sec_header[0] == 'basic':
@@ -279,14 +279,14 @@ async def test_access_log_ko(mock_req, exception):
 
 @pytest.mark.asyncio
 @freeze_time(datetime(1970, 1, 1, 0, 0, 10))
-async def test_wazuh_access_logger_middleware():
+async def test_cyb3rhq_access_logger_middleware():
     """Test access logger middleware."""
     mock_req = AsyncMock()
     response = MagicMock()
     response.status_code = 200
     dispatch_mock = AsyncMock(return_value=response)
 
-    middleware = WazuhAccessLoggerMiddleware(AsyncApp(__name__), dispatch=dispatch_mock)
+    middleware = Cyb3rhqAccessLoggerMiddleware(AsyncApp(__name__), dispatch=dispatch_mock)
     operation = MagicMock(name="operation")
     operation.method = "post"
 

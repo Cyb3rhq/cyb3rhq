@@ -46,7 +46,7 @@ using ExpectedFnComplement =
 using ExpectedFnComplementStore =
     std::function<api::wpResponse(const std::shared_ptr<MockTesterAPI>&,
                                   const std::shared_ptr<MockStoreRead>&,
-                                  std::function<void(const base::utils::wazuhProtocol::WazuhResponse&)>)>;
+                                  std::function<void(const base::utils::cyb3rhqProtocol::Cyb3rhqResponse&)>)>;
 /**
  * @brief Test parameters.
  * @param getHandlerFn Function that return the handler to test.
@@ -75,7 +75,7 @@ using BehaviourWRetComplement = std::function<json::Json(std::shared_ptr<MockTes
 using BehaviourWRetComplementStore =
     std::function<json::Json(std::shared_ptr<MockTesterAPI>,
                              std::shared_ptr<MockStoreRead>,
-                             std::function<void(const base::utils::wazuhProtocol::WazuhResponse&)>)>;
+                             std::function<void(const base::utils::cyb3rhqProtocol::Cyb3rhqResponse&)>)>;
 
 const std::string STATUS_PATH = "/status";
 const std::string ERROR_PATH = "/error";
@@ -162,7 +162,7 @@ static ExpectedFnComplementStore failureWPayloadComplementStore(const BehaviourW
     return
         [behaviour](const std::shared_ptr<MockTesterAPI>& router,
                     const std::shared_ptr<MockStoreRead>& store,
-                    std::function<void(const base::utils::wazuhProtocol::WazuhResponse&)> callback) -> api::wpResponse
+                    std::function<void(const base::utils::cyb3rhqProtocol::Cyb3rhqResponse&)> callback) -> api::wpResponse
     {
         json::Json dataR = behaviour(router, store, callback);
         dataR.setString(STATUS_ERROR, STATUS_PATH);
@@ -210,7 +210,7 @@ static ExpectedFnComplementStore successWPayloadComplementStore(const BehaviourW
     return
         [behaviour](const std::shared_ptr<MockTesterAPI>& router,
                     const std::shared_ptr<MockStoreRead>& store,
-                    std::function<void(const base::utils::wazuhProtocol::WazuhResponse&)> callback) -> api::wpResponse
+                    std::function<void(const base::utils::cyb3rhqProtocol::Cyb3rhqResponse&)> callback) -> api::wpResponse
     {
         json::Json dataR = behaviour(router, store, callback);
         dataR.setString(STATUS_OK, STATUS_PATH);
@@ -666,7 +666,7 @@ INSTANTIATE_TEST_SUITE_P(
                     return res;
                 }))));
 
-namespace eTester = ::com::wazuh::api::engine::tester;
+namespace eTester = ::com::cyb3rhq::api::engine::tester;
 eTester::Result getResultFromOutput(const ::router::test::Output& output)
 {
     eTester::Result result {};
@@ -721,7 +721,7 @@ TEST_P(TesterHandlerTestComplementStore, processRequest)
     const auto [getHandlerFn, jparams, expectedFn] = GetParam();
 
     auto strResponse = std::make_shared<std::string>();
-    auto callbackFn = [&strResponse](const base::utils::wazuhProtocol::WazuhResponse& res)
+    auto callbackFn = [&strResponse](const base::utils::cyb3rhqProtocol::Cyb3rhqResponse& res)
     {
         *strResponse = res.toString();
     };
@@ -762,7 +762,7 @@ INSTANTIATE_TEST_SUITE_P(
                     auto expected = json::Json();
                     expected.setString(error.message, "/error");
 
-                    base::utils::wazuhProtocol::WazuhResponse response {};
+                    base::utils::cyb3rhqProtocol::Cyb3rhqResponse response {};
                     response.data(expected);
                     callback(response);
 
@@ -780,7 +780,7 @@ INSTANTIATE_TEST_SUITE_P(
                                            auto expected = json::Json();
                                            expected.setString("Namespaces parameter is required", "/error");
 
-                                           base::utils::wazuhProtocol::WazuhResponse response {};
+                                           base::utils::cyb3rhqProtocol::Cyb3rhqResponse response {};
                                            response.data(expected);
                                            callback(response);
 
@@ -803,7 +803,7 @@ INSTANTIATE_TEST_SUITE_P(
                                            auto expected = json::Json();
                                            expected.setString(error, "/error");
 
-                                           base::utils::wazuhProtocol::WazuhResponse response {};
+                                           base::utils::cyb3rhqProtocol::Cyb3rhqResponse response {};
                                            response.data(expected);
                                            callback(response);
 
@@ -822,13 +822,13 @@ INSTANTIATE_TEST_SUITE_P(
                 {
                     EXPECT_CALL(*tester, getAssets(testing::_))
                         .WillOnce(
-                            ::testing::Return(std::unordered_set<std::string> {"policy/wazuh/0", "policy/wazuh/1"}));
+                            ::testing::Return(std::unordered_set<std::string> {"policy/cyb3rhq/0", "policy/cyb3rhq/1"}));
                     EXPECT_CALL(*store, getNamespace(testing::_)).WillOnce(::testing::Return(std::nullopt));
 
                     auto expected = json::Json();
-                    expected.setString("Asset policy/wazuh/1 not found in store", "/error");
+                    expected.setString("Asset policy/cyb3rhq/1 not found in store", "/error");
 
-                    base::utils::wazuhProtocol::WazuhResponse response {};
+                    base::utils::cyb3rhqProtocol::Cyb3rhqResponse response {};
                     response.data(expected);
                     callback(response);
 

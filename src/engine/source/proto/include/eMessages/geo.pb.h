@@ -47,7 +47,7 @@ struct TableStruct_geo_2eproto {
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_geo_2eproto;
 namespace com {
-namespace wazuh {
+namespace cyb3rhq {
 namespace api {
 namespace engine {
 namespace geo {
@@ -72,18 +72,18 @@ extern DbRemoteUpsert_RequestDefaultTypeInternal _DbRemoteUpsert_Request_default
 }  // namespace geo
 }  // namespace engine
 }  // namespace api
-}  // namespace wazuh
+}  // namespace cyb3rhq
 }  // namespace com
 PROTOBUF_NAMESPACE_OPEN
-template<> ::com::wazuh::api::engine::geo::DbDelete_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::geo::DbDelete_Request>(Arena*);
-template<> ::com::wazuh::api::engine::geo::DbEntry* Arena::CreateMaybeMessage<::com::wazuh::api::engine::geo::DbEntry>(Arena*);
-template<> ::com::wazuh::api::engine::geo::DbList_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::geo::DbList_Request>(Arena*);
-template<> ::com::wazuh::api::engine::geo::DbList_Response* Arena::CreateMaybeMessage<::com::wazuh::api::engine::geo::DbList_Response>(Arena*);
-template<> ::com::wazuh::api::engine::geo::DbPost_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::geo::DbPost_Request>(Arena*);
-template<> ::com::wazuh::api::engine::geo::DbRemoteUpsert_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::geo::DbRemoteUpsert_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::geo::DbDelete_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::geo::DbDelete_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::geo::DbEntry* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::geo::DbEntry>(Arena*);
+template<> ::com::cyb3rhq::api::engine::geo::DbList_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::geo::DbList_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::geo::DbList_Response* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::geo::DbList_Response>(Arena*);
+template<> ::com::cyb3rhq::api::engine::geo::DbPost_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::geo::DbPost_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::geo::DbRemoteUpsert_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::geo::DbRemoteUpsert_Request>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace com {
-namespace wazuh {
+namespace cyb3rhq {
 namespace api {
 namespace engine {
 namespace geo {
@@ -91,7 +91,7 @@ namespace geo {
 // ===================================================================
 
 class DbEntry final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.geo.DbEntry) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.geo.DbEntry) */ {
  public:
   inline DbEntry() : DbEntry(nullptr) {}
   ~DbEntry() override;
@@ -194,7 +194,7 @@ class DbEntry final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.geo.DbEntry";
+    return "com.cyb3rhq.api.engine.geo.DbEntry";
   }
   protected:
   explicit DbEntry(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -257,7 +257,7 @@ class DbEntry final :
   std::string* _internal_mutable_type();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.geo.DbEntry)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.geo.DbEntry)
  private:
   class _Internal;
 
@@ -276,7 +276,7 @@ class DbEntry final :
 // -------------------------------------------------------------------
 
 class DbPost_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.geo.DbPost_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.geo.DbPost_Request) */ {
  public:
   inline DbPost_Request() : DbPost_Request(nullptr) {}
   ~DbPost_Request() override;
@@ -379,7 +379,7 @@ class DbPost_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.geo.DbPost_Request";
+    return "com.cyb3rhq.api.engine.geo.DbPost_Request";
   }
   protected:
   explicit DbPost_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -427,7 +427,7 @@ class DbPost_Request final :
   std::string* _internal_mutable_type();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.geo.DbPost_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.geo.DbPost_Request)
  private:
   class _Internal;
 
@@ -445,7 +445,7 @@ class DbPost_Request final :
 // -------------------------------------------------------------------
 
 class DbDelete_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.geo.DbDelete_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.geo.DbDelete_Request) */ {
  public:
   inline DbDelete_Request() : DbDelete_Request(nullptr) {}
   ~DbDelete_Request() override;
@@ -548,7 +548,7 @@ class DbDelete_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.geo.DbDelete_Request";
+    return "com.cyb3rhq.api.engine.geo.DbDelete_Request";
   }
   protected:
   explicit DbDelete_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -581,7 +581,7 @@ class DbDelete_Request final :
   std::string* _internal_mutable_path();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.geo.DbDelete_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.geo.DbDelete_Request)
  private:
   class _Internal;
 
@@ -598,7 +598,7 @@ class DbDelete_Request final :
 // -------------------------------------------------------------------
 
 class DbList_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.geo.DbList_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.geo.DbList_Request) */ {
  public:
   inline DbList_Request() : DbList_Request(nullptr) {}
   explicit PROTOBUF_CONSTEXPR DbList_Request(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
@@ -686,7 +686,7 @@ class DbList_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.geo.DbList_Request";
+    return "com.cyb3rhq.api.engine.geo.DbList_Request";
   }
   protected:
   explicit DbList_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -702,7 +702,7 @@ class DbList_Request final :
 
   // accessors -------------------------------------------------------
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.geo.DbList_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.geo.DbList_Request)
  private:
   class _Internal;
 
@@ -716,7 +716,7 @@ class DbList_Request final :
 // -------------------------------------------------------------------
 
 class DbList_Response final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.geo.DbList_Response) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.geo.DbList_Response) */ {
  public:
   inline DbList_Response() : DbList_Response(nullptr) {}
   ~DbList_Response() override;
@@ -819,7 +819,7 @@ class DbList_Response final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.geo.DbList_Response";
+    return "com.cyb3rhq.api.engine.geo.DbList_Response";
   }
   protected:
   explicit DbList_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -840,22 +840,22 @@ class DbList_Response final :
     kErrorFieldNumber = 2,
     kStatusFieldNumber = 1,
   };
-  // repeated .com.wazuh.api.engine.geo.DbEntry entries = 3;
+  // repeated .com.cyb3rhq.api.engine.geo.DbEntry entries = 3;
   int entries_size() const;
   private:
   int _internal_entries_size() const;
   public:
   void clear_entries();
-  ::com::wazuh::api::engine::geo::DbEntry* mutable_entries(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::com::wazuh::api::engine::geo::DbEntry >*
+  ::com::cyb3rhq::api::engine::geo::DbEntry* mutable_entries(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::com::cyb3rhq::api::engine::geo::DbEntry >*
       mutable_entries();
   private:
-  const ::com::wazuh::api::engine::geo::DbEntry& _internal_entries(int index) const;
-  ::com::wazuh::api::engine::geo::DbEntry* _internal_add_entries();
+  const ::com::cyb3rhq::api::engine::geo::DbEntry& _internal_entries(int index) const;
+  ::com::cyb3rhq::api::engine::geo::DbEntry* _internal_add_entries();
   public:
-  const ::com::wazuh::api::engine::geo::DbEntry& entries(int index) const;
-  ::com::wazuh::api::engine::geo::DbEntry* add_entries();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::com::wazuh::api::engine::geo::DbEntry >&
+  const ::com::cyb3rhq::api::engine::geo::DbEntry& entries(int index) const;
+  ::com::cyb3rhq::api::engine::geo::DbEntry* add_entries();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::com::cyb3rhq::api::engine::geo::DbEntry >&
       entries() const;
 
   // optional string error = 2;
@@ -876,16 +876,16 @@ class DbList_Response final :
   std::string* _internal_mutable_error();
   public:
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   void clear_status();
-  ::com::wazuh::api::engine::ReturnStatus status() const;
-  void set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus status() const;
+  void set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   private:
-  ::com::wazuh::api::engine::ReturnStatus _internal_status() const;
-  void _internal_set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus _internal_status() const;
+  void _internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.geo.DbList_Response)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.geo.DbList_Response)
  private:
   class _Internal;
 
@@ -895,7 +895,7 @@ class DbList_Response final :
   struct Impl_ {
     ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::com::wazuh::api::engine::geo::DbEntry > entries_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::com::cyb3rhq::api::engine::geo::DbEntry > entries_;
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr error_;
     int status_;
   };
@@ -905,7 +905,7 @@ class DbList_Response final :
 // -------------------------------------------------------------------
 
 class DbRemoteUpsert_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.geo.DbRemoteUpsert_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request) */ {
  public:
   inline DbRemoteUpsert_Request() : DbRemoteUpsert_Request(nullptr) {}
   ~DbRemoteUpsert_Request() override;
@@ -1008,7 +1008,7 @@ class DbRemoteUpsert_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.geo.DbRemoteUpsert_Request";
+    return "com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request";
   }
   protected:
   explicit DbRemoteUpsert_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -1086,7 +1086,7 @@ class DbRemoteUpsert_Request final :
   std::string* _internal_mutable_hashurl();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.geo.DbRemoteUpsert_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request)
  private:
   class _Internal;
 
@@ -1119,7 +1119,7 @@ inline void DbEntry::clear_name() {
   _impl_.name_.ClearToEmpty();
 }
 inline const std::string& DbEntry::name() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.geo.DbEntry.name)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.geo.DbEntry.name)
   return _internal_name();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1127,11 +1127,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DbEntry::set_name(ArgT0&& arg0, ArgT... args) {
  
  _impl_.name_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.geo.DbEntry.name)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.geo.DbEntry.name)
 }
 inline std::string* DbEntry::mutable_name() {
   std::string* _s = _internal_mutable_name();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.geo.DbEntry.name)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.geo.DbEntry.name)
   return _s;
 }
 inline const std::string& DbEntry::_internal_name() const {
@@ -1146,7 +1146,7 @@ inline std::string* DbEntry::_internal_mutable_name() {
   return _impl_.name_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DbEntry::release_name() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.geo.DbEntry.name)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.geo.DbEntry.name)
   return _impl_.name_.Release();
 }
 inline void DbEntry::set_allocated_name(std::string* name) {
@@ -1161,7 +1161,7 @@ inline void DbEntry::set_allocated_name(std::string* name) {
     _impl_.name_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.geo.DbEntry.name)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.geo.DbEntry.name)
 }
 
 // string path = 2;
@@ -1169,7 +1169,7 @@ inline void DbEntry::clear_path() {
   _impl_.path_.ClearToEmpty();
 }
 inline const std::string& DbEntry::path() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.geo.DbEntry.path)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.geo.DbEntry.path)
   return _internal_path();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1177,11 +1177,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DbEntry::set_path(ArgT0&& arg0, ArgT... args) {
  
  _impl_.path_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.geo.DbEntry.path)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.geo.DbEntry.path)
 }
 inline std::string* DbEntry::mutable_path() {
   std::string* _s = _internal_mutable_path();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.geo.DbEntry.path)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.geo.DbEntry.path)
   return _s;
 }
 inline const std::string& DbEntry::_internal_path() const {
@@ -1196,7 +1196,7 @@ inline std::string* DbEntry::_internal_mutable_path() {
   return _impl_.path_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DbEntry::release_path() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.geo.DbEntry.path)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.geo.DbEntry.path)
   return _impl_.path_.Release();
 }
 inline void DbEntry::set_allocated_path(std::string* path) {
@@ -1211,7 +1211,7 @@ inline void DbEntry::set_allocated_path(std::string* path) {
     _impl_.path_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.geo.DbEntry.path)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.geo.DbEntry.path)
 }
 
 // string type = 3;
@@ -1219,7 +1219,7 @@ inline void DbEntry::clear_type() {
   _impl_.type_.ClearToEmpty();
 }
 inline const std::string& DbEntry::type() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.geo.DbEntry.type)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.geo.DbEntry.type)
   return _internal_type();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1227,11 +1227,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DbEntry::set_type(ArgT0&& arg0, ArgT... args) {
  
  _impl_.type_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.geo.DbEntry.type)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.geo.DbEntry.type)
 }
 inline std::string* DbEntry::mutable_type() {
   std::string* _s = _internal_mutable_type();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.geo.DbEntry.type)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.geo.DbEntry.type)
   return _s;
 }
 inline const std::string& DbEntry::_internal_type() const {
@@ -1246,7 +1246,7 @@ inline std::string* DbEntry::_internal_mutable_type() {
   return _impl_.type_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DbEntry::release_type() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.geo.DbEntry.type)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.geo.DbEntry.type)
   return _impl_.type_.Release();
 }
 inline void DbEntry::set_allocated_type(std::string* type) {
@@ -1261,7 +1261,7 @@ inline void DbEntry::set_allocated_type(std::string* type) {
     _impl_.type_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.geo.DbEntry.type)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.geo.DbEntry.type)
 }
 
 // -------------------------------------------------------------------
@@ -1273,7 +1273,7 @@ inline void DbPost_Request::clear_path() {
   _impl_.path_.ClearToEmpty();
 }
 inline const std::string& DbPost_Request::path() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.geo.DbPost_Request.path)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.geo.DbPost_Request.path)
   return _internal_path();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1281,11 +1281,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DbPost_Request::set_path(ArgT0&& arg0, ArgT... args) {
  
  _impl_.path_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.geo.DbPost_Request.path)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.geo.DbPost_Request.path)
 }
 inline std::string* DbPost_Request::mutable_path() {
   std::string* _s = _internal_mutable_path();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.geo.DbPost_Request.path)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.geo.DbPost_Request.path)
   return _s;
 }
 inline const std::string& DbPost_Request::_internal_path() const {
@@ -1300,7 +1300,7 @@ inline std::string* DbPost_Request::_internal_mutable_path() {
   return _impl_.path_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DbPost_Request::release_path() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.geo.DbPost_Request.path)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.geo.DbPost_Request.path)
   return _impl_.path_.Release();
 }
 inline void DbPost_Request::set_allocated_path(std::string* path) {
@@ -1315,7 +1315,7 @@ inline void DbPost_Request::set_allocated_path(std::string* path) {
     _impl_.path_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.geo.DbPost_Request.path)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.geo.DbPost_Request.path)
 }
 
 // string type = 2;
@@ -1323,7 +1323,7 @@ inline void DbPost_Request::clear_type() {
   _impl_.type_.ClearToEmpty();
 }
 inline const std::string& DbPost_Request::type() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.geo.DbPost_Request.type)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.geo.DbPost_Request.type)
   return _internal_type();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1331,11 +1331,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DbPost_Request::set_type(ArgT0&& arg0, ArgT... args) {
  
  _impl_.type_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.geo.DbPost_Request.type)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.geo.DbPost_Request.type)
 }
 inline std::string* DbPost_Request::mutable_type() {
   std::string* _s = _internal_mutable_type();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.geo.DbPost_Request.type)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.geo.DbPost_Request.type)
   return _s;
 }
 inline const std::string& DbPost_Request::_internal_type() const {
@@ -1350,7 +1350,7 @@ inline std::string* DbPost_Request::_internal_mutable_type() {
   return _impl_.type_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DbPost_Request::release_type() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.geo.DbPost_Request.type)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.geo.DbPost_Request.type)
   return _impl_.type_.Release();
 }
 inline void DbPost_Request::set_allocated_type(std::string* type) {
@@ -1365,7 +1365,7 @@ inline void DbPost_Request::set_allocated_type(std::string* type) {
     _impl_.type_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.geo.DbPost_Request.type)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.geo.DbPost_Request.type)
 }
 
 // -------------------------------------------------------------------
@@ -1377,7 +1377,7 @@ inline void DbDelete_Request::clear_path() {
   _impl_.path_.ClearToEmpty();
 }
 inline const std::string& DbDelete_Request::path() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.geo.DbDelete_Request.path)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.geo.DbDelete_Request.path)
   return _internal_path();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1385,11 +1385,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DbDelete_Request::set_path(ArgT0&& arg0, ArgT... args) {
  
  _impl_.path_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.geo.DbDelete_Request.path)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.geo.DbDelete_Request.path)
 }
 inline std::string* DbDelete_Request::mutable_path() {
   std::string* _s = _internal_mutable_path();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.geo.DbDelete_Request.path)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.geo.DbDelete_Request.path)
   return _s;
 }
 inline const std::string& DbDelete_Request::_internal_path() const {
@@ -1404,7 +1404,7 @@ inline std::string* DbDelete_Request::_internal_mutable_path() {
   return _impl_.path_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DbDelete_Request::release_path() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.geo.DbDelete_Request.path)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.geo.DbDelete_Request.path)
   return _impl_.path_.Release();
 }
 inline void DbDelete_Request::set_allocated_path(std::string* path) {
@@ -1419,7 +1419,7 @@ inline void DbDelete_Request::set_allocated_path(std::string* path) {
     _impl_.path_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.geo.DbDelete_Request.path)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.geo.DbDelete_Request.path)
 }
 
 // -------------------------------------------------------------------
@@ -1430,24 +1430,24 @@ inline void DbDelete_Request::set_allocated_path(std::string* path) {
 
 // DbList_Response
 
-// .com.wazuh.api.engine.ReturnStatus status = 1;
+// .com.cyb3rhq.api.engine.ReturnStatus status = 1;
 inline void DbList_Response::clear_status() {
   _impl_.status_ = 0;
 }
-inline ::com::wazuh::api::engine::ReturnStatus DbList_Response::_internal_status() const {
-  return static_cast< ::com::wazuh::api::engine::ReturnStatus >(_impl_.status_);
+inline ::com::cyb3rhq::api::engine::ReturnStatus DbList_Response::_internal_status() const {
+  return static_cast< ::com::cyb3rhq::api::engine::ReturnStatus >(_impl_.status_);
 }
-inline ::com::wazuh::api::engine::ReturnStatus DbList_Response::status() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.geo.DbList_Response.status)
+inline ::com::cyb3rhq::api::engine::ReturnStatus DbList_Response::status() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.geo.DbList_Response.status)
   return _internal_status();
 }
-inline void DbList_Response::_internal_set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void DbList_Response::_internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   
   _impl_.status_ = value;
 }
-inline void DbList_Response::set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void DbList_Response::set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.geo.DbList_Response.status)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.geo.DbList_Response.status)
 }
 
 // optional string error = 2;
@@ -1463,7 +1463,7 @@ inline void DbList_Response::clear_error() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& DbList_Response::error() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.geo.DbList_Response.error)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.geo.DbList_Response.error)
   return _internal_error();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1471,11 +1471,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DbList_Response::set_error(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.error_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.geo.DbList_Response.error)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.geo.DbList_Response.error)
 }
 inline std::string* DbList_Response::mutable_error() {
   std::string* _s = _internal_mutable_error();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.geo.DbList_Response.error)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.geo.DbList_Response.error)
   return _s;
 }
 inline const std::string& DbList_Response::_internal_error() const {
@@ -1490,7 +1490,7 @@ inline std::string* DbList_Response::_internal_mutable_error() {
   return _impl_.error_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DbList_Response::release_error() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.geo.DbList_Response.error)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.geo.DbList_Response.error)
   if (!_internal_has_error()) {
     return nullptr;
   }
@@ -1515,10 +1515,10 @@ inline void DbList_Response::set_allocated_error(std::string* error) {
     _impl_.error_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.geo.DbList_Response.error)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.geo.DbList_Response.error)
 }
 
-// repeated .com.wazuh.api.engine.geo.DbEntry entries = 3;
+// repeated .com.cyb3rhq.api.engine.geo.DbEntry entries = 3;
 inline int DbList_Response::_internal_entries_size() const {
   return _impl_.entries_.size();
 }
@@ -1528,33 +1528,33 @@ inline int DbList_Response::entries_size() const {
 inline void DbList_Response::clear_entries() {
   _impl_.entries_.Clear();
 }
-inline ::com::wazuh::api::engine::geo::DbEntry* DbList_Response::mutable_entries(int index) {
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.geo.DbList_Response.entries)
+inline ::com::cyb3rhq::api::engine::geo::DbEntry* DbList_Response::mutable_entries(int index) {
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.geo.DbList_Response.entries)
   return _impl_.entries_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::com::wazuh::api::engine::geo::DbEntry >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::com::cyb3rhq::api::engine::geo::DbEntry >*
 DbList_Response::mutable_entries() {
-  // @@protoc_insertion_point(field_mutable_list:com.wazuh.api.engine.geo.DbList_Response.entries)
+  // @@protoc_insertion_point(field_mutable_list:com.cyb3rhq.api.engine.geo.DbList_Response.entries)
   return &_impl_.entries_;
 }
-inline const ::com::wazuh::api::engine::geo::DbEntry& DbList_Response::_internal_entries(int index) const {
+inline const ::com::cyb3rhq::api::engine::geo::DbEntry& DbList_Response::_internal_entries(int index) const {
   return _impl_.entries_.Get(index);
 }
-inline const ::com::wazuh::api::engine::geo::DbEntry& DbList_Response::entries(int index) const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.geo.DbList_Response.entries)
+inline const ::com::cyb3rhq::api::engine::geo::DbEntry& DbList_Response::entries(int index) const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.geo.DbList_Response.entries)
   return _internal_entries(index);
 }
-inline ::com::wazuh::api::engine::geo::DbEntry* DbList_Response::_internal_add_entries() {
+inline ::com::cyb3rhq::api::engine::geo::DbEntry* DbList_Response::_internal_add_entries() {
   return _impl_.entries_.Add();
 }
-inline ::com::wazuh::api::engine::geo::DbEntry* DbList_Response::add_entries() {
-  ::com::wazuh::api::engine::geo::DbEntry* _add = _internal_add_entries();
-  // @@protoc_insertion_point(field_add:com.wazuh.api.engine.geo.DbList_Response.entries)
+inline ::com::cyb3rhq::api::engine::geo::DbEntry* DbList_Response::add_entries() {
+  ::com::cyb3rhq::api::engine::geo::DbEntry* _add = _internal_add_entries();
+  // @@protoc_insertion_point(field_add:com.cyb3rhq.api.engine.geo.DbList_Response.entries)
   return _add;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::com::wazuh::api::engine::geo::DbEntry >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::com::cyb3rhq::api::engine::geo::DbEntry >&
 DbList_Response::entries() const {
-  // @@protoc_insertion_point(field_list:com.wazuh.api.engine.geo.DbList_Response.entries)
+  // @@protoc_insertion_point(field_list:com.cyb3rhq.api.engine.geo.DbList_Response.entries)
   return _impl_.entries_;
 }
 
@@ -1567,7 +1567,7 @@ inline void DbRemoteUpsert_Request::clear_path() {
   _impl_.path_.ClearToEmpty();
 }
 inline const std::string& DbRemoteUpsert_Request::path() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.path)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.path)
   return _internal_path();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1575,11 +1575,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DbRemoteUpsert_Request::set_path(ArgT0&& arg0, ArgT... args) {
  
  _impl_.path_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.path)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.path)
 }
 inline std::string* DbRemoteUpsert_Request::mutable_path() {
   std::string* _s = _internal_mutable_path();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.path)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.path)
   return _s;
 }
 inline const std::string& DbRemoteUpsert_Request::_internal_path() const {
@@ -1594,7 +1594,7 @@ inline std::string* DbRemoteUpsert_Request::_internal_mutable_path() {
   return _impl_.path_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DbRemoteUpsert_Request::release_path() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.path)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.path)
   return _impl_.path_.Release();
 }
 inline void DbRemoteUpsert_Request::set_allocated_path(std::string* path) {
@@ -1609,7 +1609,7 @@ inline void DbRemoteUpsert_Request::set_allocated_path(std::string* path) {
     _impl_.path_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.path)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.path)
 }
 
 // string type = 2;
@@ -1617,7 +1617,7 @@ inline void DbRemoteUpsert_Request::clear_type() {
   _impl_.type_.ClearToEmpty();
 }
 inline const std::string& DbRemoteUpsert_Request::type() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.type)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.type)
   return _internal_type();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1625,11 +1625,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DbRemoteUpsert_Request::set_type(ArgT0&& arg0, ArgT... args) {
  
  _impl_.type_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.type)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.type)
 }
 inline std::string* DbRemoteUpsert_Request::mutable_type() {
   std::string* _s = _internal_mutable_type();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.type)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.type)
   return _s;
 }
 inline const std::string& DbRemoteUpsert_Request::_internal_type() const {
@@ -1644,7 +1644,7 @@ inline std::string* DbRemoteUpsert_Request::_internal_mutable_type() {
   return _impl_.type_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DbRemoteUpsert_Request::release_type() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.type)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.type)
   return _impl_.type_.Release();
 }
 inline void DbRemoteUpsert_Request::set_allocated_type(std::string* type) {
@@ -1659,7 +1659,7 @@ inline void DbRemoteUpsert_Request::set_allocated_type(std::string* type) {
     _impl_.type_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.type)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.type)
 }
 
 // string dbUrl = 3;
@@ -1667,7 +1667,7 @@ inline void DbRemoteUpsert_Request::clear_dburl() {
   _impl_.dburl_.ClearToEmpty();
 }
 inline const std::string& DbRemoteUpsert_Request::dburl() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.dbUrl)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.dbUrl)
   return _internal_dburl();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1675,11 +1675,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DbRemoteUpsert_Request::set_dburl(ArgT0&& arg0, ArgT... args) {
  
  _impl_.dburl_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.dbUrl)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.dbUrl)
 }
 inline std::string* DbRemoteUpsert_Request::mutable_dburl() {
   std::string* _s = _internal_mutable_dburl();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.dbUrl)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.dbUrl)
   return _s;
 }
 inline const std::string& DbRemoteUpsert_Request::_internal_dburl() const {
@@ -1694,7 +1694,7 @@ inline std::string* DbRemoteUpsert_Request::_internal_mutable_dburl() {
   return _impl_.dburl_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DbRemoteUpsert_Request::release_dburl() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.dbUrl)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.dbUrl)
   return _impl_.dburl_.Release();
 }
 inline void DbRemoteUpsert_Request::set_allocated_dburl(std::string* dburl) {
@@ -1709,7 +1709,7 @@ inline void DbRemoteUpsert_Request::set_allocated_dburl(std::string* dburl) {
     _impl_.dburl_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.dbUrl)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.dbUrl)
 }
 
 // string hashUrl = 4;
@@ -1717,7 +1717,7 @@ inline void DbRemoteUpsert_Request::clear_hashurl() {
   _impl_.hashurl_.ClearToEmpty();
 }
 inline const std::string& DbRemoteUpsert_Request::hashurl() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.hashUrl)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.hashUrl)
   return _internal_hashurl();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1725,11 +1725,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DbRemoteUpsert_Request::set_hashurl(ArgT0&& arg0, ArgT... args) {
  
  _impl_.hashurl_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.hashUrl)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.hashUrl)
 }
 inline std::string* DbRemoteUpsert_Request::mutable_hashurl() {
   std::string* _s = _internal_mutable_hashurl();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.hashUrl)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.hashUrl)
   return _s;
 }
 inline const std::string& DbRemoteUpsert_Request::_internal_hashurl() const {
@@ -1744,7 +1744,7 @@ inline std::string* DbRemoteUpsert_Request::_internal_mutable_hashurl() {
   return _impl_.hashurl_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DbRemoteUpsert_Request::release_hashurl() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.hashUrl)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.hashUrl)
   return _impl_.hashurl_.Release();
 }
 inline void DbRemoteUpsert_Request::set_allocated_hashurl(std::string* hashurl) {
@@ -1759,7 +1759,7 @@ inline void DbRemoteUpsert_Request::set_allocated_hashurl(std::string* hashurl) 
     _impl_.hashurl_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.geo.DbRemoteUpsert_Request.hashUrl)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.geo.DbRemoteUpsert_Request.hashUrl)
 }
 
 #ifdef __GNUC__
@@ -1781,7 +1781,7 @@ inline void DbRemoteUpsert_Request::set_allocated_hashurl(std::string* hashurl) 
 }  // namespace geo
 }  // namespace engine
 }  // namespace api
-}  // namespace wazuh
+}  // namespace cyb3rhq
 }  // namespace com
 
 // @@protoc_insertion_point(global_scope)

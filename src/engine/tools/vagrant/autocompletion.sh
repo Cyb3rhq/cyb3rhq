@@ -1,24 +1,24 @@
 #!/bin/bash
 
-wazuh-engine() {
+cyb3rhq-engine() {
 	if (( $# < 1))
 	then
-		sudo /var/ossec/engine/wazuh-engine --help
+		sudo /var/ossec/engine/cyb3rhq-engine --help
 	else
-		sudo /var/ossec/engine/wazuh-engine $@
+		sudo /var/ossec/engine/cyb3rhq-engine $@
 	fi
 }
 
 # Get the list of subcommands from the command's --help output
 _subcommands() {
-    wazuh-engine $@ --help | awk '/Subcommands:/,0 { if ( $1 != "Subcommands:" && $1 != "" ) {print $1}}'
+    cyb3rhq-engine $@ --help | awk '/Subcommands:/,0 { if ( $1 != "Subcommands:" && $1 != "" ) {print $1}}'
 }
 
 _options() {
-    wazuh-engine $@ --help | awk '/Options:/,/Subcommands:/ { if ( $1 ~ "--") {n=split($1,a,","); print a[n]}}'
+    cyb3rhq-engine $@ --help | awk '/Options:/,/Subcommands:/ { if ( $1 ~ "--") {n=split($1,a,","); print a[n]}}'
 }
 
-_wazuh-engine_completion() {
+_cyb3rhq-engine_completion() {
 	local cur prev opts
     COMPREPLY=()
     cur="${COMP_WORDS[COMP_CWORD]}"
@@ -51,4 +51,4 @@ _wazuh-engine_completion() {
     return 0
 }
 
-complete -F _wazuh-engine_completion wazuh-engine
+complete -F _cyb3rhq-engine_completion cyb3rhq-engine

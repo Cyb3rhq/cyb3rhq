@@ -7,7 +7,7 @@ metadata:
   versions: ["2.2.31", "2.4.16"]
   compatibility: The Apache datasets were tested with Apache 2.4.12 and 2.4.46 and are expected to work with all versions >= 2.2.31 and >= 2.4.16 (independent from operating system).
   author:
-    name: Wazuh Inc.
+    name: Cyb3rhq Inc.
     date: 2023-11-29
   references:
     - https://httpd.apache.org/docs/2.4/logs.html
@@ -15,11 +15,11 @@ metadata:
 
 # Debian OR RedHat OR FreeBSD OR MacOS or Windows
 check:
-  $wazuh.origin == /var/log/apache2/error.log
-  OR $wazuh.origin == /var/log/httpd/error_log
-  OR $wazuh.origin == /var/log/httpd-error.log
-  OR $wazuh.origin == /etc/httpd/log/error_log
-  OR $wazuh.origin == "C:\\Program Files (x86)\\Apache Software Foundation\\Apache2.2\\error.log"
+  $cyb3rhq.origin == /var/log/apache2/error.log
+  OR $cyb3rhq.origin == /var/log/httpd/error_log
+  OR $cyb3rhq.origin == /var/log/httpd-error.log
+  OR $cyb3rhq.origin == /etc/httpd/log/error_log
+  OR $cyb3rhq.origin == "C:\\Program Files (x86)\\Apache Software Foundation\\Apache2.2\\error.log"
 
 parse|event.original:
   - "[<event.created/ANSIC>] [<log.logger>:<log.level>] [pid <process.pid>(?:tid <process.thread.id>)] [client <source.address>(?:<source.port>)] <message>"
@@ -34,7 +34,7 @@ normalize:
       - event.kind: event
       - event.module: apache-http
       - service.type: apache
-      - wazuh.decoders: array_append(apache-error)
+      - cyb3rhq.decoders: array_append(apache-error)
 
       - source.ip: $source.address
 

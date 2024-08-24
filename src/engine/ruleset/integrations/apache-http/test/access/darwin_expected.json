@@ -2,8 +2,8 @@
     {
         "agent": {
             "id": "001",
-            "name": "wazuh-agent-1",
-            "type": "wazuh-agent"
+            "name": "cyb3rhq-agent-1",
+            "type": "cyb3rhq-agent"
         },
         "event": {
             "category": [
@@ -45,11 +45,11 @@
         "user": {
             "name": "-"
         },
-        "wazuh": {
+        "cyb3rhq": {
             "decoders": [
                 "apache-access"
             ],
-            "location": "[001] (wazuh-agent-1) any->/var/log/apache2/access.log",
+            "location": "[001] (cyb3rhq-agent-1) any->/var/log/apache2/access.log",
             "origin": "/var/log/apache2/access.log",
             "queue": 49,
             "registered_ip": "any",
@@ -59,8 +59,8 @@
     {
         "agent": {
             "id": "001",
-            "name": "wazuh-agent-1",
-            "type": "wazuh-agent"
+            "name": "cyb3rhq-agent-1",
+            "type": "cyb3rhq-agent"
         },
         "event": {
             "category": [
@@ -103,11 +103,11 @@
         "user": {
             "name": "-"
         },
-        "wazuh": {
+        "cyb3rhq": {
             "decoders": [
                 "apache-access"
             ],
-            "location": "[001] (wazuh-agent-1) any->/var/log/apache2/access.log",
+            "location": "[001] (cyb3rhq-agent-1) any->/var/log/apache2/access.log",
             "origin": "/var/log/apache2/access.log",
             "queue": 49,
             "registered_ip": "any",
@@ -117,8 +117,8 @@
     {
         "agent": {
             "id": "001",
-            "name": "wazuh-agent-1",
-            "type": "wazuh-agent"
+            "name": "cyb3rhq-agent-1",
+            "type": "cyb3rhq-agent"
         },
         "event": {
             "category": [
@@ -149,11 +149,11 @@
         "user": {
             "name": "-"
         },
-        "wazuh": {
+        "cyb3rhq": {
             "decoders": [
                 "apache-access"
             ],
-            "location": "[001] (wazuh-agent-1) any->/var/log/apache2/access.log",
+            "location": "[001] (cyb3rhq-agent-1) any->/var/log/apache2/access.log",
             "origin": "/var/log/apache2/access.log",
             "queue": 49,
             "registered_ip": "any",
@@ -163,8 +163,8 @@
     {
         "agent": {
             "id": "001",
-            "name": "wazuh-agent-1",
-            "type": "wazuh-agent"
+            "name": "cyb3rhq-agent-1",
+            "type": "cyb3rhq-agent"
         },
         "event": {
             "category": [
@@ -206,11 +206,11 @@
         "user": {
             "name": "-"
         },
-        "wazuh": {
+        "cyb3rhq": {
             "decoders": [
                 "apache-access"
             ],
-            "location": "[001] (wazuh-agent-1) any->/var/log/apache2/access.log",
+            "location": "[001] (cyb3rhq-agent-1) any->/var/log/apache2/access.log",
             "origin": "/var/log/apache2/access.log",
             "queue": 49,
             "registered_ip": "any",
@@ -220,8 +220,8 @@
     {
         "agent": {
             "id": "001",
-            "name": "wazuh-agent-1",
-            "type": "wazuh-agent"
+            "name": "cyb3rhq-agent-1",
+            "type": "cyb3rhq-agent"
         },
         "event": {
             "category": [
@@ -263,11 +263,11 @@
         "user": {
             "name": "-"
         },
-        "wazuh": {
+        "cyb3rhq": {
             "decoders": [
                 "apache-access"
             ],
-            "location": "[001] (wazuh-agent-1) any->/var/log/apache2/access.log",
+            "location": "[001] (cyb3rhq-agent-1) any->/var/log/apache2/access.log",
             "origin": "/var/log/apache2/access.log",
             "queue": 49,
             "registered_ip": "any",
@@ -277,8 +277,8 @@
     {
         "agent": {
             "id": "001",
-            "name": "wazuh-agent-1",
-            "type": "wazuh-agent"
+            "name": "cyb3rhq-agent-1",
+            "type": "cyb3rhq-agent"
         },
         "event": {
             "category": [
@@ -320,11 +320,11 @@
         "user": {
             "name": "-"
         },
-        "wazuh": {
+        "cyb3rhq": {
             "decoders": [
                 "apache-access"
             ],
-            "location": "[001] (wazuh-agent-1) any->/var/log/apache2/access.log",
+            "location": "[001] (cyb3rhq-agent-1) any->/var/log/apache2/access.log",
             "origin": "/var/log/apache2/access.log",
             "queue": 49,
             "registered_ip": "any",

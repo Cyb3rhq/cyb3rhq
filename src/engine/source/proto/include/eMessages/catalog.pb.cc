@@ -21,7 +21,7 @@ namespace _pb = ::PROTOBUF_NAMESPACE_ID;
 namespace _pbi = _pb::internal;
 
 namespace com {
-namespace wazuh {
+namespace cyb3rhq {
 namespace api {
 namespace engine {
 namespace catalog {
@@ -153,149 +153,149 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORIT
 }  // namespace catalog
 }  // namespace engine
 }  // namespace api
-}  // namespace wazuh
+}  // namespace cyb3rhq
 }  // namespace com
 static ::_pb::Metadata file_level_metadata_catalog_2eproto[8];
 static const ::_pb::EnumDescriptor* file_level_enum_descriptors_catalog_2eproto[2];
 static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_catalog_2eproto = nullptr;
 
 const uint32_t TableStruct_catalog_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourcePost_Request, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourcePost_Request, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourcePost_Request, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourcePost_Request, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourcePost_Request, _impl_.type_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourcePost_Request, _impl_.format_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourcePost_Request, _impl_.content_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourcePost_Request, _impl_.namespaceid_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourcePost_Request, _impl_.type_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourcePost_Request, _impl_.format_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourcePost_Request, _impl_.content_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourcePost_Request, _impl_.namespaceid_),
   2,
   3,
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceGet_Request, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceGet_Request, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceGet_Request, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceGet_Request, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceGet_Request, _impl_.name_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceGet_Request, _impl_.format_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceGet_Request, _impl_.namespaceid_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceGet_Request, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceGet_Request, _impl_.format_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceGet_Request, _impl_.namespaceid_),
   0,
   2,
   1,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceGet_Response, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceGet_Response, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceGet_Response, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceGet_Response, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceGet_Response, _impl_.status_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceGet_Response, _impl_.error_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceGet_Response, _impl_.content_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceGet_Response, _impl_.status_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceGet_Response, _impl_.error_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceGet_Response, _impl_.content_),
   ~0u,
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourcePut_Request, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourcePut_Request, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourcePut_Request, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourcePut_Request, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourcePut_Request, _impl_.name_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourcePut_Request, _impl_.format_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourcePut_Request, _impl_.content_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourcePut_Request, _impl_.namespaceid_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourcePut_Request, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourcePut_Request, _impl_.format_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourcePut_Request, _impl_.content_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourcePut_Request, _impl_.namespaceid_),
   0,
   3,
   1,
   2,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceDelete_Request, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceDelete_Request, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceDelete_Request, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceDelete_Request, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceDelete_Request, _impl_.name_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceDelete_Request, _impl_.namespaceid_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceDelete_Request, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceDelete_Request, _impl_.namespaceid_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceValidate_Request, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceValidate_Request, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceValidate_Request, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceValidate_Request, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceValidate_Request, _impl_.name_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceValidate_Request, _impl_.format_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceValidate_Request, _impl_.content_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::ResourceValidate_Request, _impl_.namespaceid_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceValidate_Request, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceValidate_Request, _impl_.format_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceValidate_Request, _impl_.content_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::ResourceValidate_Request, _impl_.namespaceid_),
   0,
   3,
   1,
   2,
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::NamespacesGet_Request, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::NamespacesGet_Request, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::NamespacesGet_Response, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::NamespacesGet_Response, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::NamespacesGet_Response, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::NamespacesGet_Response, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::NamespacesGet_Response, _impl_.status_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::NamespacesGet_Response, _impl_.error_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::catalog::NamespacesGet_Response, _impl_.namespaces_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::NamespacesGet_Response, _impl_.status_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::NamespacesGet_Response, _impl_.error_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::catalog::NamespacesGet_Response, _impl_.namespaces_),
   ~0u,
   0,
   ~0u,
 };
 static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 10, -1, sizeof(::com::wazuh::api::engine::catalog::ResourcePost_Request)},
-  { 14, 23, -1, sizeof(::com::wazuh::api::engine::catalog::ResourceGet_Request)},
-  { 26, 35, -1, sizeof(::com::wazuh::api::engine::catalog::ResourceGet_Response)},
-  { 38, 48, -1, sizeof(::com::wazuh::api::engine::catalog::ResourcePut_Request)},
-  { 52, 60, -1, sizeof(::com::wazuh::api::engine::catalog::ResourceDelete_Request)},
-  { 62, 72, -1, sizeof(::com::wazuh::api::engine::catalog::ResourceValidate_Request)},
-  { 76, -1, -1, sizeof(::com::wazuh::api::engine::catalog::NamespacesGet_Request)},
-  { 82, 91, -1, sizeof(::com::wazuh::api::engine::catalog::NamespacesGet_Response)},
+  { 0, 10, -1, sizeof(::com::cyb3rhq::api::engine::catalog::ResourcePost_Request)},
+  { 14, 23, -1, sizeof(::com::cyb3rhq::api::engine::catalog::ResourceGet_Request)},
+  { 26, 35, -1, sizeof(::com::cyb3rhq::api::engine::catalog::ResourceGet_Response)},
+  { 38, 48, -1, sizeof(::com::cyb3rhq::api::engine::catalog::ResourcePut_Request)},
+  { 52, 60, -1, sizeof(::com::cyb3rhq::api::engine::catalog::ResourceDelete_Request)},
+  { 62, 72, -1, sizeof(::com::cyb3rhq::api::engine::catalog::ResourceValidate_Request)},
+  { 76, -1, -1, sizeof(::com::cyb3rhq::api::engine::catalog::NamespacesGet_Request)},
+  { 82, 91, -1, sizeof(::com::cyb3rhq::api::engine::catalog::NamespacesGet_Response)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
-  &::com::wazuh::api::engine::catalog::_ResourcePost_Request_default_instance_._instance,
-  &::com::wazuh::api::engine::catalog::_ResourceGet_Request_default_instance_._instance,
-  &::com::wazuh::api::engine::catalog::_ResourceGet_Response_default_instance_._instance,
-  &::com::wazuh::api::engine::catalog::_ResourcePut_Request_default_instance_._instance,
-  &::com::wazuh::api::engine::catalog::_ResourceDelete_Request_default_instance_._instance,
-  &::com::wazuh::api::engine::catalog::_ResourceValidate_Request_default_instance_._instance,
-  &::com::wazuh::api::engine::catalog::_NamespacesGet_Request_default_instance_._instance,
-  &::com::wazuh::api::engine::catalog::_NamespacesGet_Response_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::catalog::_ResourcePost_Request_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::catalog::_ResourceGet_Request_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::catalog::_ResourceGet_Response_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::catalog::_ResourcePut_Request_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::catalog::_ResourceDelete_Request_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::catalog::_ResourceValidate_Request_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::catalog::_NamespacesGet_Request_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::catalog::_NamespacesGet_Response_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_catalog_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\rcatalog.proto\022\034com.wazuh.api.engine.ca"
+  "\n\rcatalog.proto\022\034com.cyb3rhq.api.engine.ca"
   "talog\032\014engine.proto\"\370\001\n\024ResourcePost_Req"
-  "uest\022=\n\004type\030\001 \001(\0162*.com.wazuh.api.engin"
+  "uest\022=\n\004type\030\001 \001(\0162*.com.cyb3rhq.api.engin"
   "e.catalog.ResourceTypeH\000\210\001\001\022A\n\006format\030\002 "
-  "\001(\0162,.com.wazuh.api.engine.catalog.Resou"
+  "\001(\0162,.com.cyb3rhq.api.engine.catalog.Resou"
   "rceFormatH\001\210\001\001\022\024\n\007content\030\003 \001(\tH\002\210\001\001\022\030\n\013"
   "namespaceid\030\004 \001(\tH\003\210\001\001B\007\n\005_typeB\t\n\007_form"
   "atB\n\n\010_contentB\016\n\014_namespaceid\"\251\001\n\023Resou"
   "rceGet_Request\022\021\n\004name\030\001 \001(\tH\000\210\001\001\022A\n\006for"
-  "mat\030\002 \001(\0162,.com.wazuh.api.engine.catalog"
+  "mat\030\002 \001(\0162,.com.cyb3rhq.api.engine.catalog"
   ".ResourceFormatH\001\210\001\001\022\030\n\013namespaceid\030\003 \001("
   "\tH\002\210\001\001B\007\n\005_nameB\t\n\007_formatB\016\n\014_namespace"
   "id\"\212\001\n\024ResourceGet_Response\0222\n\006status\030\001 "
-  "\001(\0162\".com.wazuh.api.engine.ReturnStatus\022"
+  "\001(\0162\".com.cyb3rhq.api.engine.ReturnStatus\022"
   "\022\n\005error\030\002 \001(\tH\000\210\001\001\022\024\n\007content\030\003 \001(\tH\001\210\001"
   "\001B\010\n\006_errorB\n\n\010_content\"\313\001\n\023ResourcePut_"
   "Request\022\021\n\004name\030\001 \001(\tH\000\210\001\001\022A\n\006format\030\002 \001"
-  "(\0162,.com.wazuh.api.engine.catalog.Resour"
+  "(\0162,.com.cyb3rhq.api.engine.catalog.Resour"
   "ceFormatH\001\210\001\001\022\024\n\007content\030\003 \001(\tH\002\210\001\001\022\030\n\013n"
   "amespaceid\030\004 \001(\tH\003\210\001\001B\007\n\005_nameB\t\n\007_forma"
   "tB\n\n\010_contentB\016\n\014_namespaceid\"^\n\026Resourc"
@@ -308,7 +308,7 @@ const char descriptor_table_protodef_catalog_2eproto[] PROTOBUF_SECTION_VARIABLE
   "\001(\tH\003\210\001\001B\007\n\005_nameB\t\n\007_formatB\n\n\010_content"
   "B\016\n\014_namespaceid\"\027\n\025NamespacesGet_Reques"
   "t\"~\n\026NamespacesGet_Response\0222\n\006status\030\001 "
-  "\001(\0162\".com.wazuh.api.engine.ReturnStatus\022"
+  "\001(\0162\".com.cyb3rhq.api.engine.ReturnStatus\022"
   "\022\n\005error\030\002 \001(\tH\000\210\001\001\022\022\n\nnamespaces\030\003 \003(\tB"
   "\010\n\006_error*1\n\016ResourceFormat\022\010\n\004json\020\000\022\010\n"
   "\004yaml\020\001\022\007\n\003yml\020\001\032\002\020\001*w\n\014ResourceType\022\013\n\007"
@@ -335,7 +335,7 @@ PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_catalog_
 // Force running AddDescriptors() at dynamic initialization time.
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_catalog_2eproto(&descriptor_table_catalog_2eproto);
 namespace com {
-namespace wazuh {
+namespace cyb3rhq {
 namespace api {
 namespace engine {
 namespace catalog {
@@ -397,7 +397,7 @@ ResourcePost_Request::ResourcePost_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.catalog.ResourcePost_Request)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.catalog.ResourcePost_Request)
 }
 ResourcePost_Request::ResourcePost_Request(const ResourcePost_Request& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -430,7 +430,7 @@ ResourcePost_Request::ResourcePost_Request(const ResourcePost_Request& from)
   ::memcpy(&_impl_.type_, &from._impl_.type_,
     static_cast<size_t>(reinterpret_cast<char*>(&_impl_.format_) -
     reinterpret_cast<char*>(&_impl_.type_)) + sizeof(_impl_.format_));
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.catalog.ResourcePost_Request)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.catalog.ResourcePost_Request)
 }
 
 inline void ResourcePost_Request::SharedCtor(
@@ -456,7 +456,7 @@ inline void ResourcePost_Request::SharedCtor(
 }
 
 ResourcePost_Request::~ResourcePost_Request() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.catalog.ResourcePost_Request)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.catalog.ResourcePost_Request)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -475,7 +475,7 @@ void ResourcePost_Request::SetCachedSize(int size) const {
 }
 
 void ResourcePost_Request::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.catalog.ResourcePost_Request)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.catalog.ResourcePost_Request)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -505,21 +505,21 @@ const char* ResourcePost_Request::_InternalParse(const char* ptr, ::_pbi::ParseC
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // optional .com.wazuh.api.engine.catalog.ResourceType type = 1;
+      // optional .com.cyb3rhq.api.engine.catalog.ResourceType type = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          _internal_set_type(static_cast<::com::wazuh::api::engine::catalog::ResourceType>(val));
+          _internal_set_type(static_cast<::com::cyb3rhq::api::engine::catalog::ResourceType>(val));
         } else
           goto handle_unusual;
         continue;
-      // optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+      // optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          _internal_set_format(static_cast<::com::wazuh::api::engine::catalog::ResourceFormat>(val));
+          _internal_set_format(static_cast<::com::cyb3rhq::api::engine::catalog::ResourceFormat>(val));
         } else
           goto handle_unusual;
         continue;
@@ -529,7 +529,7 @@ const char* ResourcePost_Request::_InternalParse(const char* ptr, ::_pbi::ParseC
           auto str = _internal_mutable_content();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.catalog.ResourcePost_Request.content"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.catalog.ResourcePost_Request.content"));
         } else
           goto handle_unusual;
         continue;
@@ -539,7 +539,7 @@ const char* ResourcePost_Request::_InternalParse(const char* ptr, ::_pbi::ParseC
           auto str = _internal_mutable_namespaceid();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.catalog.ResourcePost_Request.namespaceid"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.catalog.ResourcePost_Request.namespaceid"));
         } else
           goto handle_unusual;
         continue;
@@ -569,18 +569,18 @@ failure:
 
 uint8_t* ResourcePost_Request::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.catalog.ResourcePost_Request)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.catalog.ResourcePost_Request)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // optional .com.wazuh.api.engine.catalog.ResourceType type = 1;
+  // optional .com.cyb3rhq.api.engine.catalog.ResourceType type = 1;
   if (_internal_has_type()) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
       1, this->_internal_type(), target);
   }
 
-  // optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+  // optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
   if (_internal_has_format()) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
@@ -592,7 +592,7 @@ uint8_t* ResourcePost_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_content().data(), static_cast<int>(this->_internal_content().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.catalog.ResourcePost_Request.content");
+      "com.cyb3rhq.api.engine.catalog.ResourcePost_Request.content");
     target = stream->WriteStringMaybeAliased(
         3, this->_internal_content(), target);
   }
@@ -602,7 +602,7 @@ uint8_t* ResourcePost_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_namespaceid().data(), static_cast<int>(this->_internal_namespaceid().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.catalog.ResourcePost_Request.namespaceid");
+      "com.cyb3rhq.api.engine.catalog.ResourcePost_Request.namespaceid");
     target = stream->WriteStringMaybeAliased(
         4, this->_internal_namespaceid(), target);
   }
@@ -611,12 +611,12 @@ uint8_t* ResourcePost_Request::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.catalog.ResourcePost_Request)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.catalog.ResourcePost_Request)
   return target;
 }
 
 size_t ResourcePost_Request::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.catalog.ResourcePost_Request)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.catalog.ResourcePost_Request)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -639,13 +639,13 @@ size_t ResourcePost_Request::ByteSizeLong() const {
           this->_internal_namespaceid());
     }
 
-    // optional .com.wazuh.api.engine.catalog.ResourceType type = 1;
+    // optional .com.cyb3rhq.api.engine.catalog.ResourceType type = 1;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::_pbi::WireFormatLite::EnumSize(this->_internal_type());
     }
 
-    // optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+    // optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::_pbi::WireFormatLite::EnumSize(this->_internal_format());
@@ -665,7 +665,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ResourcePost_Request::GetClass
 void ResourcePost_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<ResourcePost_Request*>(&to_msg);
   auto& from = static_cast<const ResourcePost_Request&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.catalog.ResourcePost_Request)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.catalog.ResourcePost_Request)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -690,7 +690,7 @@ void ResourcePost_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, c
 }
 
 void ResourcePost_Request::CopyFrom(const ResourcePost_Request& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.catalog.ResourcePost_Request)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.catalog.ResourcePost_Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -748,7 +748,7 @@ ResourceGet_Request::ResourceGet_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.catalog.ResourceGet_Request)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.catalog.ResourceGet_Request)
 }
 ResourceGet_Request::ResourceGet_Request(const ResourceGet_Request& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -778,7 +778,7 @@ ResourceGet_Request::ResourceGet_Request(const ResourceGet_Request& from)
       _this->GetArenaForAllocation());
   }
   _this->_impl_.format_ = from._impl_.format_;
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.catalog.ResourceGet_Request)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.catalog.ResourceGet_Request)
 }
 
 inline void ResourceGet_Request::SharedCtor(
@@ -803,7 +803,7 @@ inline void ResourceGet_Request::SharedCtor(
 }
 
 ResourceGet_Request::~ResourceGet_Request() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.catalog.ResourceGet_Request)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.catalog.ResourceGet_Request)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -822,7 +822,7 @@ void ResourceGet_Request::SetCachedSize(int size) const {
 }
 
 void ResourceGet_Request::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.catalog.ResourceGet_Request)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.catalog.ResourceGet_Request)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -854,16 +854,16 @@ const char* ResourceGet_Request::_InternalParse(const char* ptr, ::_pbi::ParseCo
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.catalog.ResourceGet_Request.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.catalog.ResourceGet_Request.name"));
         } else
           goto handle_unusual;
         continue;
-      // optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+      // optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          _internal_set_format(static_cast<::com::wazuh::api::engine::catalog::ResourceFormat>(val));
+          _internal_set_format(static_cast<::com::cyb3rhq::api::engine::catalog::ResourceFormat>(val));
         } else
           goto handle_unusual;
         continue;
@@ -873,7 +873,7 @@ const char* ResourceGet_Request::_InternalParse(const char* ptr, ::_pbi::ParseCo
           auto str = _internal_mutable_namespaceid();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.catalog.ResourceGet_Request.namespaceid"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.catalog.ResourceGet_Request.namespaceid"));
         } else
           goto handle_unusual;
         continue;
@@ -903,7 +903,7 @@ failure:
 
 uint8_t* ResourceGet_Request::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.catalog.ResourceGet_Request)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.catalog.ResourceGet_Request)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -912,12 +912,12 @@ uint8_t* ResourceGet_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.catalog.ResourceGet_Request.name");
+      "com.cyb3rhq.api.engine.catalog.ResourceGet_Request.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
 
-  // optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+  // optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
   if (_internal_has_format()) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
@@ -929,7 +929,7 @@ uint8_t* ResourceGet_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_namespaceid().data(), static_cast<int>(this->_internal_namespaceid().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.catalog.ResourceGet_Request.namespaceid");
+      "com.cyb3rhq.api.engine.catalog.ResourceGet_Request.namespaceid");
     target = stream->WriteStringMaybeAliased(
         3, this->_internal_namespaceid(), target);
   }
@@ -938,12 +938,12 @@ uint8_t* ResourceGet_Request::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.catalog.ResourceGet_Request)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.catalog.ResourceGet_Request)
   return target;
 }
 
 size_t ResourceGet_Request::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.catalog.ResourceGet_Request)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.catalog.ResourceGet_Request)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -966,7 +966,7 @@ size_t ResourceGet_Request::ByteSizeLong() const {
           this->_internal_namespaceid());
     }
 
-    // optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+    // optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::_pbi::WireFormatLite::EnumSize(this->_internal_format());
@@ -986,7 +986,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ResourceGet_Request::GetClassD
 void ResourceGet_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<ResourceGet_Request*>(&to_msg);
   auto& from = static_cast<const ResourceGet_Request&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.catalog.ResourceGet_Request)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.catalog.ResourceGet_Request)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1008,7 +1008,7 @@ void ResourceGet_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, co
 }
 
 void ResourceGet_Request::CopyFrom(const ResourceGet_Request& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.catalog.ResourceGet_Request)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.catalog.ResourceGet_Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1058,7 +1058,7 @@ ResourceGet_Response::ResourceGet_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.catalog.ResourceGet_Response)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.catalog.ResourceGet_Response)
 }
 ResourceGet_Response::ResourceGet_Response(const ResourceGet_Response& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -1088,7 +1088,7 @@ ResourceGet_Response::ResourceGet_Response(const ResourceGet_Response& from)
       _this->GetArenaForAllocation());
   }
   _this->_impl_.status_ = from._impl_.status_;
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.catalog.ResourceGet_Response)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.catalog.ResourceGet_Response)
 }
 
 inline void ResourceGet_Response::SharedCtor(
@@ -1113,7 +1113,7 @@ inline void ResourceGet_Response::SharedCtor(
 }
 
 ResourceGet_Response::~ResourceGet_Response() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.catalog.ResourceGet_Response)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.catalog.ResourceGet_Response)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -1132,7 +1132,7 @@ void ResourceGet_Response::SetCachedSize(int size) const {
 }
 
 void ResourceGet_Response::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.catalog.ResourceGet_Response)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.catalog.ResourceGet_Response)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1158,12 +1158,12 @@ const char* ResourceGet_Response::_InternalParse(const char* ptr, ::_pbi::ParseC
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // .com.wazuh.api.engine.ReturnStatus status = 1;
+      // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          _internal_set_status(static_cast<::com::wazuh::api::engine::ReturnStatus>(val));
+          _internal_set_status(static_cast<::com::cyb3rhq::api::engine::ReturnStatus>(val));
         } else
           goto handle_unusual;
         continue;
@@ -1173,7 +1173,7 @@ const char* ResourceGet_Response::_InternalParse(const char* ptr, ::_pbi::ParseC
           auto str = _internal_mutable_error();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.catalog.ResourceGet_Response.error"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.catalog.ResourceGet_Response.error"));
         } else
           goto handle_unusual;
         continue;
@@ -1183,7 +1183,7 @@ const char* ResourceGet_Response::_InternalParse(const char* ptr, ::_pbi::ParseC
           auto str = _internal_mutable_content();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.catalog.ResourceGet_Response.content"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.catalog.ResourceGet_Response.content"));
         } else
           goto handle_unusual;
         continue;
@@ -1213,11 +1213,11 @@ failure:
 
 uint8_t* ResourceGet_Response::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.catalog.ResourceGet_Response)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.catalog.ResourceGet_Response)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   if (this->_internal_status() != 0) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
@@ -1229,7 +1229,7 @@ uint8_t* ResourceGet_Response::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_error().data(), static_cast<int>(this->_internal_error().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.catalog.ResourceGet_Response.error");
+      "com.cyb3rhq.api.engine.catalog.ResourceGet_Response.error");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_error(), target);
   }
@@ -1239,7 +1239,7 @@ uint8_t* ResourceGet_Response::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_content().data(), static_cast<int>(this->_internal_content().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.catalog.ResourceGet_Response.content");
+      "com.cyb3rhq.api.engine.catalog.ResourceGet_Response.content");
     target = stream->WriteStringMaybeAliased(
         3, this->_internal_content(), target);
   }
@@ -1248,12 +1248,12 @@ uint8_t* ResourceGet_Response::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.catalog.ResourceGet_Response)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.catalog.ResourceGet_Response)
   return target;
 }
 
 size_t ResourceGet_Response::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.catalog.ResourceGet_Response)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.catalog.ResourceGet_Response)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -1277,7 +1277,7 @@ size_t ResourceGet_Response::ByteSizeLong() const {
     }
 
   }
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   if (this->_internal_status() != 0) {
     total_size += 1 +
       ::_pbi::WireFormatLite::EnumSize(this->_internal_status());
@@ -1296,7 +1296,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ResourceGet_Response::GetClass
 void ResourceGet_Response::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<ResourceGet_Response*>(&to_msg);
   auto& from = static_cast<const ResourceGet_Response&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.catalog.ResourceGet_Response)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.catalog.ResourceGet_Response)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1317,7 +1317,7 @@ void ResourceGet_Response::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, c
 }
 
 void ResourceGet_Response::CopyFrom(const ResourceGet_Response& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.catalog.ResourceGet_Response)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.catalog.ResourceGet_Response)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1373,7 +1373,7 @@ ResourcePut_Request::ResourcePut_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.catalog.ResourcePut_Request)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.catalog.ResourcePut_Request)
 }
 ResourcePut_Request::ResourcePut_Request(const ResourcePut_Request& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -1412,7 +1412,7 @@ ResourcePut_Request::ResourcePut_Request(const ResourcePut_Request& from)
       _this->GetArenaForAllocation());
   }
   _this->_impl_.format_ = from._impl_.format_;
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.catalog.ResourcePut_Request)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.catalog.ResourcePut_Request)
 }
 
 inline void ResourcePut_Request::SharedCtor(
@@ -1442,7 +1442,7 @@ inline void ResourcePut_Request::SharedCtor(
 }
 
 ResourcePut_Request::~ResourcePut_Request() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.catalog.ResourcePut_Request)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.catalog.ResourcePut_Request)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -1462,7 +1462,7 @@ void ResourcePut_Request::SetCachedSize(int size) const {
 }
 
 void ResourcePut_Request::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.catalog.ResourcePut_Request)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.catalog.ResourcePut_Request)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1497,16 +1497,16 @@ const char* ResourcePut_Request::_InternalParse(const char* ptr, ::_pbi::ParseCo
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.catalog.ResourcePut_Request.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.catalog.ResourcePut_Request.name"));
         } else
           goto handle_unusual;
         continue;
-      // optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+      // optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          _internal_set_format(static_cast<::com::wazuh::api::engine::catalog::ResourceFormat>(val));
+          _internal_set_format(static_cast<::com::cyb3rhq::api::engine::catalog::ResourceFormat>(val));
         } else
           goto handle_unusual;
         continue;
@@ -1516,7 +1516,7 @@ const char* ResourcePut_Request::_InternalParse(const char* ptr, ::_pbi::ParseCo
           auto str = _internal_mutable_content();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.catalog.ResourcePut_Request.content"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.catalog.ResourcePut_Request.content"));
         } else
           goto handle_unusual;
         continue;
@@ -1526,7 +1526,7 @@ const char* ResourcePut_Request::_InternalParse(const char* ptr, ::_pbi::ParseCo
           auto str = _internal_mutable_namespaceid();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.catalog.ResourcePut_Request.namespaceid"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.catalog.ResourcePut_Request.namespaceid"));
         } else
           goto handle_unusual;
         continue;
@@ -1556,7 +1556,7 @@ failure:
 
 uint8_t* ResourcePut_Request::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.catalog.ResourcePut_Request)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.catalog.ResourcePut_Request)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1565,12 +1565,12 @@ uint8_t* ResourcePut_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.catalog.ResourcePut_Request.name");
+      "com.cyb3rhq.api.engine.catalog.ResourcePut_Request.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
 
-  // optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+  // optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
   if (_internal_has_format()) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
@@ -1582,7 +1582,7 @@ uint8_t* ResourcePut_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_content().data(), static_cast<int>(this->_internal_content().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.catalog.ResourcePut_Request.content");
+      "com.cyb3rhq.api.engine.catalog.ResourcePut_Request.content");
     target = stream->WriteStringMaybeAliased(
         3, this->_internal_content(), target);
   }
@@ -1592,7 +1592,7 @@ uint8_t* ResourcePut_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_namespaceid().data(), static_cast<int>(this->_internal_namespaceid().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.catalog.ResourcePut_Request.namespaceid");
+      "com.cyb3rhq.api.engine.catalog.ResourcePut_Request.namespaceid");
     target = stream->WriteStringMaybeAliased(
         4, this->_internal_namespaceid(), target);
   }
@@ -1601,12 +1601,12 @@ uint8_t* ResourcePut_Request::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.catalog.ResourcePut_Request)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.catalog.ResourcePut_Request)
   return target;
 }
 
 size_t ResourcePut_Request::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.catalog.ResourcePut_Request)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.catalog.ResourcePut_Request)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -1636,7 +1636,7 @@ size_t ResourcePut_Request::ByteSizeLong() const {
           this->_internal_namespaceid());
     }
 
-    // optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+    // optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::_pbi::WireFormatLite::EnumSize(this->_internal_format());
@@ -1656,7 +1656,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ResourcePut_Request::GetClassD
 void ResourcePut_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<ResourcePut_Request*>(&to_msg);
   auto& from = static_cast<const ResourcePut_Request&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.catalog.ResourcePut_Request)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.catalog.ResourcePut_Request)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1681,7 +1681,7 @@ void ResourcePut_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, co
 }
 
 void ResourcePut_Request::CopyFrom(const ResourcePut_Request& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.catalog.ResourcePut_Request)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.catalog.ResourcePut_Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1735,7 +1735,7 @@ ResourceDelete_Request::ResourceDelete_Request(::PROTOBUF_NAMESPACE_ID::Arena* a
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.catalog.ResourceDelete_Request)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request)
 }
 ResourceDelete_Request::ResourceDelete_Request(const ResourceDelete_Request& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -1763,7 +1763,7 @@ ResourceDelete_Request::ResourceDelete_Request(const ResourceDelete_Request& fro
     _this->_impl_.namespaceid_.Set(from._internal_namespaceid(), 
       _this->GetArenaForAllocation());
   }
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.catalog.ResourceDelete_Request)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request)
 }
 
 inline void ResourceDelete_Request::SharedCtor(
@@ -1787,7 +1787,7 @@ inline void ResourceDelete_Request::SharedCtor(
 }
 
 ResourceDelete_Request::~ResourceDelete_Request() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.catalog.ResourceDelete_Request)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -1806,7 +1806,7 @@ void ResourceDelete_Request::SetCachedSize(int size) const {
 }
 
 void ResourceDelete_Request::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.catalog.ResourceDelete_Request)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1837,7 +1837,7 @@ const char* ResourceDelete_Request::_InternalParse(const char* ptr, ::_pbi::Pars
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.catalog.ResourceDelete_Request.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.catalog.ResourceDelete_Request.name"));
         } else
           goto handle_unusual;
         continue;
@@ -1847,7 +1847,7 @@ const char* ResourceDelete_Request::_InternalParse(const char* ptr, ::_pbi::Pars
           auto str = _internal_mutable_namespaceid();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.catalog.ResourceDelete_Request.namespaceid"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.catalog.ResourceDelete_Request.namespaceid"));
         } else
           goto handle_unusual;
         continue;
@@ -1877,7 +1877,7 @@ failure:
 
 uint8_t* ResourceDelete_Request::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.catalog.ResourceDelete_Request)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1886,7 +1886,7 @@ uint8_t* ResourceDelete_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.catalog.ResourceDelete_Request.name");
+      "com.cyb3rhq.api.engine.catalog.ResourceDelete_Request.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
@@ -1896,7 +1896,7 @@ uint8_t* ResourceDelete_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_namespaceid().data(), static_cast<int>(this->_internal_namespaceid().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.catalog.ResourceDelete_Request.namespaceid");
+      "com.cyb3rhq.api.engine.catalog.ResourceDelete_Request.namespaceid");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_namespaceid(), target);
   }
@@ -1905,12 +1905,12 @@ uint8_t* ResourceDelete_Request::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.catalog.ResourceDelete_Request)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request)
   return target;
 }
 
 size_t ResourceDelete_Request::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.catalog.ResourceDelete_Request)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -1947,7 +1947,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ResourceDelete_Request::GetCla
 void ResourceDelete_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<ResourceDelete_Request*>(&to_msg);
   auto& from = static_cast<const ResourceDelete_Request&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.catalog.ResourceDelete_Request)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1965,7 +1965,7 @@ void ResourceDelete_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg,
 }
 
 void ResourceDelete_Request::CopyFrom(const ResourceDelete_Request& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.catalog.ResourceDelete_Request)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2020,7 +2020,7 @@ ResourceValidate_Request::ResourceValidate_Request(::PROTOBUF_NAMESPACE_ID::Aren
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.catalog.ResourceValidate_Request)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request)
 }
 ResourceValidate_Request::ResourceValidate_Request(const ResourceValidate_Request& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -2059,7 +2059,7 @@ ResourceValidate_Request::ResourceValidate_Request(const ResourceValidate_Reques
       _this->GetArenaForAllocation());
   }
   _this->_impl_.format_ = from._impl_.format_;
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.catalog.ResourceValidate_Request)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request)
 }
 
 inline void ResourceValidate_Request::SharedCtor(
@@ -2089,7 +2089,7 @@ inline void ResourceValidate_Request::SharedCtor(
 }
 
 ResourceValidate_Request::~ResourceValidate_Request() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.catalog.ResourceValidate_Request)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -2109,7 +2109,7 @@ void ResourceValidate_Request::SetCachedSize(int size) const {
 }
 
 void ResourceValidate_Request::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.catalog.ResourceValidate_Request)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2144,16 +2144,16 @@ const char* ResourceValidate_Request::_InternalParse(const char* ptr, ::_pbi::Pa
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.catalog.ResourceValidate_Request.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.name"));
         } else
           goto handle_unusual;
         continue;
-      // optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+      // optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          _internal_set_format(static_cast<::com::wazuh::api::engine::catalog::ResourceFormat>(val));
+          _internal_set_format(static_cast<::com::cyb3rhq::api::engine::catalog::ResourceFormat>(val));
         } else
           goto handle_unusual;
         continue;
@@ -2163,7 +2163,7 @@ const char* ResourceValidate_Request::_InternalParse(const char* ptr, ::_pbi::Pa
           auto str = _internal_mutable_content();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.catalog.ResourceValidate_Request.content"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.content"));
         } else
           goto handle_unusual;
         continue;
@@ -2173,7 +2173,7 @@ const char* ResourceValidate_Request::_InternalParse(const char* ptr, ::_pbi::Pa
           auto str = _internal_mutable_namespaceid();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.catalog.ResourceValidate_Request.namespaceid"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.namespaceid"));
         } else
           goto handle_unusual;
         continue;
@@ -2203,7 +2203,7 @@ failure:
 
 uint8_t* ResourceValidate_Request::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.catalog.ResourceValidate_Request)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2212,12 +2212,12 @@ uint8_t* ResourceValidate_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.catalog.ResourceValidate_Request.name");
+      "com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
 
-  // optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+  // optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
   if (_internal_has_format()) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
@@ -2229,7 +2229,7 @@ uint8_t* ResourceValidate_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_content().data(), static_cast<int>(this->_internal_content().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.catalog.ResourceValidate_Request.content");
+      "com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.content");
     target = stream->WriteStringMaybeAliased(
         3, this->_internal_content(), target);
   }
@@ -2239,7 +2239,7 @@ uint8_t* ResourceValidate_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_namespaceid().data(), static_cast<int>(this->_internal_namespaceid().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.catalog.ResourceValidate_Request.namespaceid");
+      "com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.namespaceid");
     target = stream->WriteStringMaybeAliased(
         4, this->_internal_namespaceid(), target);
   }
@@ -2248,12 +2248,12 @@ uint8_t* ResourceValidate_Request::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.catalog.ResourceValidate_Request)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request)
   return target;
 }
 
 size_t ResourceValidate_Request::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.catalog.ResourceValidate_Request)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -2283,7 +2283,7 @@ size_t ResourceValidate_Request::ByteSizeLong() const {
           this->_internal_namespaceid());
     }
 
-    // optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+    // optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::_pbi::WireFormatLite::EnumSize(this->_internal_format());
@@ -2303,7 +2303,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ResourceValidate_Request::GetC
 void ResourceValidate_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<ResourceValidate_Request*>(&to_msg);
   auto& from = static_cast<const ResourceValidate_Request&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.catalog.ResourceValidate_Request)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2328,7 +2328,7 @@ void ResourceValidate_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_ms
 }
 
 void ResourceValidate_Request::CopyFrom(const ResourceValidate_Request& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.catalog.ResourceValidate_Request)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2374,13 +2374,13 @@ class NamespacesGet_Request::_Internal {
 NamespacesGet_Request::NamespacesGet_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase(arena, is_message_owned) {
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.catalog.NamespacesGet_Request)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.catalog.NamespacesGet_Request)
 }
 NamespacesGet_Request::NamespacesGet_Request(const NamespacesGet_Request& from)
   : ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase() {
   NamespacesGet_Request* const _this = this; (void)_this;
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.catalog.NamespacesGet_Request)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.catalog.NamespacesGet_Request)
 }
 
 
@@ -2419,7 +2419,7 @@ NamespacesGet_Response::NamespacesGet_Response(::PROTOBUF_NAMESPACE_ID::Arena* a
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.catalog.NamespacesGet_Response)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response)
 }
 NamespacesGet_Response::NamespacesGet_Response(const NamespacesGet_Response& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -2441,7 +2441,7 @@ NamespacesGet_Response::NamespacesGet_Response(const NamespacesGet_Response& fro
       _this->GetArenaForAllocation());
   }
   _this->_impl_.status_ = from._impl_.status_;
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.catalog.NamespacesGet_Response)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response)
 }
 
 inline void NamespacesGet_Response::SharedCtor(
@@ -2462,7 +2462,7 @@ inline void NamespacesGet_Response::SharedCtor(
 }
 
 NamespacesGet_Response::~NamespacesGet_Response() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.catalog.NamespacesGet_Response)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -2481,7 +2481,7 @@ void NamespacesGet_Response::SetCachedSize(int size) const {
 }
 
 void NamespacesGet_Response::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.catalog.NamespacesGet_Response)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2503,12 +2503,12 @@ const char* NamespacesGet_Response::_InternalParse(const char* ptr, ::_pbi::Pars
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // .com.wazuh.api.engine.ReturnStatus status = 1;
+      // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          _internal_set_status(static_cast<::com::wazuh::api::engine::ReturnStatus>(val));
+          _internal_set_status(static_cast<::com::cyb3rhq::api::engine::ReturnStatus>(val));
         } else
           goto handle_unusual;
         continue;
@@ -2518,7 +2518,7 @@ const char* NamespacesGet_Response::_InternalParse(const char* ptr, ::_pbi::Pars
           auto str = _internal_mutable_error();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.catalog.NamespacesGet_Response.error"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.error"));
         } else
           goto handle_unusual;
         continue;
@@ -2531,7 +2531,7 @@ const char* NamespacesGet_Response::_InternalParse(const char* ptr, ::_pbi::Pars
             auto str = _internal_add_namespaces();
             ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
             CHK_(ptr);
-            CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.catalog.NamespacesGet_Response.namespaces"));
+            CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.namespaces"));
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
         } else
@@ -2563,11 +2563,11 @@ failure:
 
 uint8_t* NamespacesGet_Response::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.catalog.NamespacesGet_Response)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   if (this->_internal_status() != 0) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
@@ -2579,7 +2579,7 @@ uint8_t* NamespacesGet_Response::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_error().data(), static_cast<int>(this->_internal_error().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.catalog.NamespacesGet_Response.error");
+      "com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.error");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_error(), target);
   }
@@ -2590,7 +2590,7 @@ uint8_t* NamespacesGet_Response::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       s.data(), static_cast<int>(s.length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.catalog.NamespacesGet_Response.namespaces");
+      "com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.namespaces");
     target = stream->WriteString(3, s, target);
   }
 
@@ -2598,12 +2598,12 @@ uint8_t* NamespacesGet_Response::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.catalog.NamespacesGet_Response)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response)
   return target;
 }
 
 size_t NamespacesGet_Response::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.catalog.NamespacesGet_Response)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -2626,7 +2626,7 @@ size_t NamespacesGet_Response::ByteSizeLong() const {
         this->_internal_error());
   }
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   if (this->_internal_status() != 0) {
     total_size += 1 +
       ::_pbi::WireFormatLite::EnumSize(this->_internal_status());
@@ -2645,7 +2645,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*NamespacesGet_Response::GetCla
 void NamespacesGet_Response::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<NamespacesGet_Response*>(&to_msg);
   auto& from = static_cast<const NamespacesGet_Response&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.catalog.NamespacesGet_Response)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2661,7 +2661,7 @@ void NamespacesGet_Response::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg,
 }
 
 void NamespacesGet_Response::CopyFrom(const NamespacesGet_Response& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.catalog.NamespacesGet_Response)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2695,40 +2695,40 @@ void NamespacesGet_Response::InternalSwap(NamespacesGet_Response* other) {
 }  // namespace catalog
 }  // namespace engine
 }  // namespace api
-}  // namespace wazuh
+}  // namespace cyb3rhq
 }  // namespace com
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::catalog::ResourcePost_Request*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::catalog::ResourcePost_Request >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::catalog::ResourcePost_Request >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::catalog::ResourcePost_Request*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::catalog::ResourcePost_Request >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::catalog::ResourcePost_Request >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::catalog::ResourceGet_Request*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::catalog::ResourceGet_Request >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::catalog::ResourceGet_Request >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::catalog::ResourceGet_Request*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::catalog::ResourceGet_Request >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::catalog::ResourceGet_Request >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::catalog::ResourceGet_Response*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::catalog::ResourceGet_Response >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::catalog::ResourceGet_Response >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::catalog::ResourceGet_Response*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::catalog::ResourceGet_Response >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::catalog::ResourceGet_Response >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::catalog::ResourcePut_Request*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::catalog::ResourcePut_Request >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::catalog::ResourcePut_Request >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::catalog::ResourcePut_Request*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::catalog::ResourcePut_Request >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::catalog::ResourcePut_Request >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::catalog::ResourceDelete_Request*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::catalog::ResourceDelete_Request >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::catalog::ResourceDelete_Request >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::catalog::ResourceDelete_Request*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::catalog::ResourceDelete_Request >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::catalog::ResourceDelete_Request >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::catalog::ResourceValidate_Request*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::catalog::ResourceValidate_Request >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::catalog::ResourceValidate_Request >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::catalog::ResourceValidate_Request*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::catalog::ResourceValidate_Request >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::catalog::ResourceValidate_Request >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::catalog::NamespacesGet_Request*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::catalog::NamespacesGet_Request >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::catalog::NamespacesGet_Request >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::catalog::NamespacesGet_Request*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::catalog::NamespacesGet_Request >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::catalog::NamespacesGet_Request >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::catalog::NamespacesGet_Response*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::catalog::NamespacesGet_Response >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::catalog::NamespacesGet_Response >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::catalog::NamespacesGet_Response*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::catalog::NamespacesGet_Response >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::catalog::NamespacesGet_Response >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

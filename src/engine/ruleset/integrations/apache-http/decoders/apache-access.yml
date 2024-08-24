@@ -7,18 +7,18 @@ metadata:
   versions: ["2.2.31", "2.4.16"]
   compatibility: The Apache datasets were tested with Apache 2.4.12 and 2.4.46 and are expected to work with all versions >= 2.2.31 and >= 2.4.16 (independent from operating system).
   author:
-    name: Wazuh Inc.
+    name: Cyb3rhq Inc.
     date: 2023-11-29
   references:
     - https://httpd.apache.org/docs/2.4/logs.html
 
 # Debian OR RedHat OR FreeBSD OR MacOS or Windows
 check:
-  $wazuh.origin == /var/log/apache2/access.log
-  OR $wazuh.origin == /var/log/httpd/access_log
-  OR $wazuh.origin == /var/log/httpd-access.log
-  OR $wazuh.origin == /etc/httpd/log/access_log
-  OR $wazuh.origin == "C:\\Program Files (x86)\\Apache Software Foundation\\Apache2.2\\access.log"
+  $cyb3rhq.origin == /var/log/apache2/access.log
+  OR $cyb3rhq.origin == /var/log/httpd/access_log
+  OR $cyb3rhq.origin == /var/log/httpd-access.log
+  OR $cyb3rhq.origin == /etc/httpd/log/access_log
+  OR $cyb3rhq.origin == "C:\\Program Files (x86)\\Apache Software Foundation\\Apache2.2\\access.log"
 
 #TODO: Once the events arrive tagged, uncomment these lines below and remove the above `event.original`
 # - event.module: apache-http
@@ -44,7 +44,7 @@ normalize:
       - event.kind: event
       - event.module: apache-http
       - service.type: apache
-      - wazuh.decoders: array_append(apache-access)
+      - cyb3rhq.decoders: array_append(apache-access)
 
       - source.ip: $source.address
       - _tls: split($network.protocol, 'v')

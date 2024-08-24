@@ -1,0 +1,4 @@
+items:
+    - version: 0.0.1-dev
+      short: Created integration for Cyb3rhq indexer
+      pr: "[#17873](https://github.com/cyb3rhq/cyb3rhq/pull/17873)"

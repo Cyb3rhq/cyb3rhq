@@ -1,5 +1,5 @@
-# Copyright (C) 2015, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2015, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is a free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 
@@ -446,7 +446,7 @@ def check_agentd_started(response, agents_list):
         while tries < 80:
             try:
                 # Save agentd logs in a list
-                command = f"docker exec env-wazuh-agent{int(agent_id)}-1 grep agentd /var/ossec/logs/ossec.log"
+                command = f"docker exec env-cyb3rhq-agent{int(agent_id)}-1 grep agentd /var/ossec/logs/ossec.log"
                 output = subprocess.check_output(command.split()).decode().strip().split('\n')
             except subprocess.SubprocessError as exc:
                 raise subprocess.SubprocessError(f"Error while trying to get logs from agent {agent_id}") from exc
@@ -462,7 +462,7 @@ def check_agentd_started(response, agents_list):
             tries += 1
             time.sleep(1)
         else:
-            raise ProcessLookupError("The wazuh-agentd daemon was not started after requesting the restart")
+            raise ProcessLookupError("The cyb3rhq-agentd daemon was not started after requesting the restart")
 
 
 def check_agent_active_status(agents_list):
@@ -480,7 +480,7 @@ def check_agent_active_status(agents_list):
     while tries < 25:
         try:
             # Get active agents
-            output = subprocess.check_output(f"docker exec env-wazuh-master-1 /var/ossec/framework/python/bin/python3 "
+            output = subprocess.check_output(f"docker exec env-cyb3rhq-master-1 /var/ossec/framework/python/bin/python3 "
                                              f"{active_agents_script_path}".split()).decode().strip()
         except subprocess.SubprocessError as exc:
             raise subprocess.SubprocessError("Error while trying to get agents") from exc

@@ -129,25 +129,25 @@ INSTANTIATE_TEST_SUITE_P(
             CreateARBuilder,
             {makeValue(R"("command")"), makeValue(R"("LOCAL")"), makeValue(R"(1)"), makeValue(R"([])")},
             SUCCESS(json::Json {
-                R"("(local_source) [] NRN 001 {\"version\":1,\"command\":\"command1\",\"parameters\":{\"extra_args\":[],\"alert\":{\"agent\":{\"id\":\"001\"}}},\"origin\":{\"module\":\"wazuh-engine\",\"name\":\"node01\"}}")"})),
+                R"("(local_source) [] NRN 001 {\"version\":1,\"command\":\"command1\",\"parameters\":{\"extra_args\":[],\"alert\":{\"agent\":{\"id\":\"001\"}}},\"origin\":{\"module\":\"cyb3rhq-engine\",\"name\":\"node01\"}}")"})),
         MapT(
             R"({})",
             CreateARBuilder,
             {makeValue(R"("command")"), makeValue(R"("ALL")"), makeValue(R"(1)"), makeValue(R"([])")},
             SUCCESS(json::Json {
-                R"("(local_source) [] NNS ALL {\"version\":1,\"command\":\"command1\",\"parameters\":{\"extra_args\":[],\"alert\":{}},\"origin\":{\"module\":\"wazuh-engine\",\"name\":\"node01\"}}")"})),
+                R"("(local_source) [] NNS ALL {\"version\":1,\"command\":\"command1\",\"parameters\":{\"extra_args\":[],\"alert\":{}},\"origin\":{\"module\":\"cyb3rhq-engine\",\"name\":\"node01\"}}")"})),
         MapT(
             R"({})",
             CreateARBuilder,
             {makeValue(R"("command")"), makeValue(R"("001")"), makeValue(R"(1)"), makeValue(R"([])")},
             SUCCESS(json::Json {
-                R"("(local_source) [] NNS 001 {\"version\":1,\"command\":\"command1\",\"parameters\":{\"extra_args\":[],\"alert\":{}},\"origin\":{\"module\":\"wazuh-engine\",\"name\":\"node01\"}}")"})),
+                R"("(local_source) [] NNS 001 {\"version\":1,\"command\":\"command1\",\"parameters\":{\"extra_args\":[],\"alert\":{}},\"origin\":{\"module\":\"cyb3rhq-engine\",\"name\":\"node01\"}}")"})),
         MapT(
             R"({})",
             CreateARBuilder,
             {makeValue(R"("command")"), makeValue(R"("001")"), makeValue(R"(1)"), makeValue(R"(["test-arg","2"])")},
             SUCCESS(json::Json {
-                R"("(local_source) [] NNS 001 {\"version\":1,\"command\":\"command1\",\"parameters\":{\"extra_args\":[\"test-arg\",\"2\"],\"alert\":{}},\"origin\":{\"module\":\"wazuh-engine\",\"name\":\"node01\"}}")"}))),
+                R"("(local_source) [] NNS 001 {\"version\":1,\"command\":\"command1\",\"parameters\":{\"extra_args\":[\"test-arg\",\"2\"],\"alert\":{}},\"origin\":{\"module\":\"cyb3rhq-engine\",\"name\":\"node01\"}}")"}))),
     testNameFormatter<MapOperationTest>("ActiveResponse"));
 
 INSTANTIATE_TEST_SUITE_P(

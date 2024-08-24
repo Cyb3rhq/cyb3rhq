@@ -7,7 +7,7 @@
 #include <wdb/mockWdbManager.hpp>
 
 using namespace builder::builders::optransform;
-using namespace wazuhdb::mocks;
+using namespace cyb3rhqdb::mocks;
 using namespace sockiface::mocks;
 
 namespace

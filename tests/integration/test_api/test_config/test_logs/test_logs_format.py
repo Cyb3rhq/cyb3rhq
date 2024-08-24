@@ -1,6 +1,6 @@
 """
-copyright: Copyright (C) 2015-2024, Wazuh Inc.
-           Created by Wazuh, Inc. <info@wazuh.com>.
+copyright: Copyright (C) 2015-2024, Cyb3rhq Inc.
+           Created by Cyb3rhq, Inc. <info@wazuh.com>.
            This program is free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 type: integration
@@ -16,12 +16,12 @@ targets:
     - manager
 
 daemons:
-    - wazuh-apid
-    - wazuh-modulesd
-    - wazuh-analysisd
-    - wazuh-execd
-    - wazuh-db
-    - wazuh-remoted
+    - cyb3rhq-apid
+    - cyb3rhq-modulesd
+    - cyb3rhq-analysisd
+    - cyb3rhq-execd
+    - cyb3rhq-db
+    - cyb3rhq-remoted
 
 os_platform:
     - linux
@@ -57,14 +57,14 @@ import pytest
 from pathlib import Path
 
 from . import CONFIGURATIONS_FOLDER_PATH, TEST_CASES_FOLDER_PATH
-from wazuh_testing.constants.api import CONFIGURATION_TYPES, WAZUH_API_USER, LOGIN_ROUTE
-from wazuh_testing.constants.daemons import API_DAEMONS_REQUIREMENTS
-from wazuh_testing.constants.paths.logs import WAZUH_API_JSON_LOG_FILE_PATH, WAZUH_API_LOG_FILE_PATH
-from wazuh_testing.modules.api.patterns import API_TIMEOUT_ERROR_MSG, API_LOGIN_REQUEST_MSG
-from wazuh_testing.modules.api.utils import login
-from wazuh_testing.tools.monitors import file_monitor
-from wazuh_testing.utils.callbacks import generate_callback
-from wazuh_testing.utils.configuration import get_test_cases_data, load_configuration_template
+from cyb3rhq_testing.constants.api import CONFIGURATION_TYPES, CYB3RHQ_API_USER, LOGIN_ROUTE
+from cyb3rhq_testing.constants.daemons import API_DAEMONS_REQUIREMENTS
+from cyb3rhq_testing.constants.paths.logs import CYB3RHQ_API_JSON_LOG_FILE_PATH, CYB3RHQ_API_LOG_FILE_PATH
+from cyb3rhq_testing.modules.api.patterns import API_TIMEOUT_ERROR_MSG, API_LOGIN_REQUEST_MSG
+from cyb3rhq_testing.modules.api.utils import login
+from cyb3rhq_testing.tools.monitors import file_monitor
+from cyb3rhq_testing.utils.callbacks import generate_callback
+from cyb3rhq_testing.utils.configuration import get_test_cases_data, load_configuration_template
 
 
 # Marks
@@ -92,7 +92,7 @@ def test_logs_formats(test_configuration, test_metadata, add_configuration, trun
     description: Check if the logs of the API are stored in the specified formats and the content of the log
                  files are the expected.
 
-    wazuh_min_version: 4.4.0
+    cyb3rhq_min_version: 4.4.0
 
     test_phases:
         - setup:
@@ -119,13 +119,13 @@ def test_logs_formats(test_configuration, test_metadata, add_configuration, trun
             brief: Metadata from the test case.
         - add_configuration:
             type: fixture
-            brief: Add configuration to the Wazuh API configuration files.
+            brief: Add configuration to the Cyb3rhq API configuration files.
         - truncate_monitored_files:
             type: fixture
             brief: Truncate all the log files and json alerts files before and after the test execution.
         - daemons_handler:
             type: fixture
-            brief: Wrapper of a helper function to handle Wazuh daemons.
+            brief: Wrapper of a helper function to handle Cyb3rhq daemons.
 
     assertions:
         - Verify that the response status code is the expected one.
@@ -158,14 +158,14 @@ def test_logs_formats(test_configuration, test_metadata, add_configuration, trun
 
     # Check whether the expected event exists in the log files according to the configured levels
     if 'json' in current_formats:
-        json_file_monitor = file_monitor.FileMonitor(WAZUH_API_JSON_LOG_FILE_PATH)
+        json_file_monitor = file_monitor.FileMonitor(CYB3RHQ_API_JSON_LOG_FILE_PATH)
         if current_level == 'error':
             json_file_monitor.start(callback=generate_callback(API_TIMEOUT_ERROR_MSG))
             assert json_file_monitor.callback_result is not None, f"The message '{API_TIMEOUT_ERROR_MSG}' " \
                                                                   'did not appear in the logs.'
         else:
             json_file_monitor.start(callback=generate_callback(API_LOGIN_REQUEST_MSG, {
-                    'user': WAZUH_API_USER,
+                    'user': CYB3RHQ_API_USER,
                     'host': '127.0.0.1',
                     'login_route': LOGIN_ROUTE
                 })
@@ -174,14 +174,14 @@ def test_logs_formats(test_configuration, test_metadata, add_configuration, trun
                                                                   'did not appear in the logs.'
 
     if 'plain' in current_formats:
-        plain_file_monitor = file_monitor.FileMonitor(WAZUH_API_LOG_FILE_PATH)
+        plain_file_monitor = file_monitor.FileMonitor(CYB3RHQ_API_LOG_FILE_PATH)
         if current_level == 'error':
             plain_file_monitor.start(callback=generate_callback(API_TIMEOUT_ERROR_MSG))
             assert plain_file_monitor.callback_result is not None, f"The message '{API_TIMEOUT_ERROR_MSG}' " \
                                                                    'did not appear in the logs.'
         else:
             plain_file_monitor.start(callback=generate_callback(API_LOGIN_REQUEST_MSG, {
-                    'user': WAZUH_API_USER,
+                    'user': CYB3RHQ_API_USER,
                     'host': '127.0.0.1',
                     'login_route': LOGIN_ROUTE
                 })

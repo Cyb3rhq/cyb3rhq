@@ -7,7 +7,7 @@ metadata:
   description: Decoder for Firmware module logs belonging to Sonicwall
   version: [6.5]
   author:
-    name: Wazuh Inc. info@wazuh.com
+    name: Cyb3rhq Inc. info@wazuh.com
     date: 2023-01-12
   references:
     - https://www.sonicwall.com/es-mx/support/technical-documentation
@@ -49,7 +49,7 @@ normalize:
       - service.type: sonicwall
       - tags: +array_append/forwarded/sonicwall.firewall
       - \@timestamp: $event.start
-      - wazuh.decoders: +array_append/sonicwall-firewall
+      - cyb3rhq.decoders: +array_append/sonicwall-firewall
   - check:
       - ~tmp.src: exists()
     logpar:

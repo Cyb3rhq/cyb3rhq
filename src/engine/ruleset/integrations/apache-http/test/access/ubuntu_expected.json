@@ -2,8 +2,8 @@
     {
         "agent": {
             "id": "001",
-            "name": "wazuh-agent-1",
-            "type": "wazuh-agent"
+            "name": "cyb3rhq-agent-1",
+            "type": "cyb3rhq-agent"
         },
         "event": {
             "category": [
@@ -49,11 +49,11 @@
         "user_agent": {
             "original": "Wget/1.13.4 (linux-gnu)"
         },
-        "wazuh": {
+        "cyb3rhq": {
             "decoders": [
                 "apache-access"
             ],
-            "location": "[001] (wazuh-agent-1) any->/var/log/apache2/access.log",
+            "location": "[001] (cyb3rhq-agent-1) any->/var/log/apache2/access.log",
             "origin": "/var/log/apache2/access.log",
             "queue": 49,
             "registered_ip": "any",
@@ -63,8 +63,8 @@
     {
         "agent": {
             "id": "001",
-            "name": "wazuh-agent-1",
-            "type": "wazuh-agent"
+            "name": "cyb3rhq-agent-1",
+            "type": "cyb3rhq-agent"
         },
         "event": {
             "category": [
@@ -110,11 +110,11 @@
         "user_agent": {
             "original": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.98 Safari/537.36"
         },
-        "wazuh": {
+        "cyb3rhq": {
             "decoders": [
                 "apache-access"
             ],
-            "location": "[001] (wazuh-agent-1) any->/var/log/apache2/access.log",
+            "location": "[001] (cyb3rhq-agent-1) any->/var/log/apache2/access.log",
             "origin": "/var/log/apache2/access.log",
             "queue": 49,
             "registered_ip": "any",
@@ -124,8 +124,8 @@
     {
         "agent": {
             "id": "001",
-            "name": "wazuh-agent-1",
-            "type": "wazuh-agent"
+            "name": "cyb3rhq-agent-1",
+            "type": "cyb3rhq-agent"
         },
         "event": {
             "category": [
@@ -172,11 +172,11 @@
         "user_agent": {
             "original": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.98 Safari/537.36"
         },
-        "wazuh": {
+        "cyb3rhq": {
             "decoders": [
                 "apache-access"
             ],
-            "location": "[001] (wazuh-agent-1) any->/var/log/apache2/access.log",
+            "location": "[001] (cyb3rhq-agent-1) any->/var/log/apache2/access.log",
             "origin": "/var/log/apache2/access.log",
             "queue": 49,
             "registered_ip": "any",
@@ -186,8 +186,8 @@
     {
         "agent": {
             "id": "001",
-            "name": "wazuh-agent-1",
-            "type": "wazuh-agent"
+            "name": "cyb3rhq-agent-1",
+            "type": "cyb3rhq-agent"
         },
         "event": {
             "category": [
@@ -233,11 +233,11 @@
         "user_agent": {
             "original": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:50.0) Gecko/20100101 Firefox/50.0"
         },
-        "wazuh": {
+        "cyb3rhq": {
             "decoders": [
                 "apache-access"
             ],
-            "location": "[001] (wazuh-agent-1) any->/var/log/apache2/access.log",
+            "location": "[001] (cyb3rhq-agent-1) any->/var/log/apache2/access.log",
             "origin": "/var/log/apache2/access.log",
             "queue": 49,
             "registered_ip": "any",
@@ -247,8 +247,8 @@
     {
         "agent": {
             "id": "001",
-            "name": "wazuh-agent-1",
-            "type": "wazuh-agent"
+            "name": "cyb3rhq-agent-1",
+            "type": "cyb3rhq-agent"
         },
         "event": {
             "category": [
@@ -295,11 +295,11 @@
         "user_agent": {
             "original": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:50.0) Gecko/20100101 Firefox/50.0"
         },
-        "wazuh": {
+        "cyb3rhq": {
             "decoders": [
                 "apache-access"
             ],
-            "location": "[001] (wazuh-agent-1) any->/var/log/apache2/access.log",
+            "location": "[001] (cyb3rhq-agent-1) any->/var/log/apache2/access.log",
             "origin": "/var/log/apache2/access.log",
             "queue": 49,
             "registered_ip": "any",
@@ -309,8 +309,8 @@
     {
         "agent": {
             "id": "001",
-            "name": "wazuh-agent-1",
-            "type": "wazuh-agent"
+            "name": "cyb3rhq-agent-1",
+            "type": "cyb3rhq-agent"
         },
         "event": {
             "category": [
@@ -357,11 +357,11 @@
         "user_agent": {
             "original": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:50.0) Gecko/20100101 Firefox/50.0"
         },
-        "wazuh": {
+        "cyb3rhq": {
             "decoders": [
                 "apache-access"
             ],
-            "location": "[001] (wazuh-agent-1) any->/var/log/apache2/access.log",
+            "location": "[001] (cyb3rhq-agent-1) any->/var/log/apache2/access.log",
             "origin": "/var/log/apache2/access.log",
             "queue": 49,
             "registered_ip": "any",
@@ -371,8 +371,8 @@
     {
         "agent": {
             "id": "001",
-            "name": "wazuh-agent-1",
-            "type": "wazuh-agent"
+            "name": "cyb3rhq-agent-1",
+            "type": "cyb3rhq-agent"
         },
         "event": {
             "category": [
@@ -418,11 +418,11 @@
         "user_agent": {
             "original": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:50.0) Gecko/20100101 Firefox/50.0"
         },
-        "wazuh": {
+        "cyb3rhq": {
             "decoders": [
                 "apache-access"
             ],
-            "location": "[001] (wazuh-agent-1) any->/var/log/apache2/access.log",
+            "location": "[001] (cyb3rhq-agent-1) any->/var/log/apache2/access.log",
             "origin": "/var/log/apache2/access.log",
             "queue": 49,
             "registered_ip": "any",
@@ -432,8 +432,8 @@
     {
         "agent": {
             "id": "001",
-            "name": "wazuh-agent-1",
-            "type": "wazuh-agent"
+            "name": "cyb3rhq-agent-1",
+            "type": "cyb3rhq-agent"
         },
         "event": {
             "category": [
@@ -479,11 +479,11 @@
         "user_agent": {
             "original": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:50.0) Gecko/20100101 Firefox/50.0"
         },
-        "wazuh": {
+        "cyb3rhq": {
             "decoders": [
                 "apache-access"
             ],
-            "location": "[001] (wazuh-agent-1) any->/var/log/apache2/access.log",
+            "location": "[001] (cyb3rhq-agent-1) any->/var/log/apache2/access.log",
             "origin": "/var/log/apache2/access.log",
             "queue": 49,
             "registered_ip": "any",
@@ -493,8 +493,8 @@
     {
         "agent": {
             "id": "001",
-            "name": "wazuh-agent-1",
-            "type": "wazuh-agent"
+            "name": "cyb3rhq-agent-1",
+            "type": "cyb3rhq-agent"
         },
         "event": {
             "category": [
@@ -540,11 +540,11 @@
         "user_agent": {
             "original": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:50.0) Gecko/20100101 Firefox/50.0"
         },
-        "wazuh": {
+        "cyb3rhq": {
             "decoders": [
                 "apache-access"
             ],
-            "location": "[001] (wazuh-agent-1) any->/var/log/apache2/access.log",
+            "location": "[001] (cyb3rhq-agent-1) any->/var/log/apache2/access.log",
             "origin": "/var/log/apache2/access.log",
             "queue": 49,
             "registered_ip": "any",

@@ -6637,135 +6637,135 @@
       "type": "keyword",
       "array": false
     },
-    "wazuh.queue": {
+    "cyb3rhq.queue": {
       "type": "long",
       "array": false
     },
-    "wazuh.location": {
+    "cyb3rhq.location": {
       "type": "text",
       "array": false
     },
-    "wazuh.message": {
+    "cyb3rhq.message": {
       "type": "text",
       "array": false
     },
-    "wazuh.origin": {
+    "cyb3rhq.origin": {
       "type": "keyword",
       "array": false
     },
-    "wazuh.registered_ip": {
+    "cyb3rhq.registered_ip": {
       "type": "keyword",
       "array": false
     },
-    "wazuh.decoders": {
+    "cyb3rhq.decoders": {
       "type": "keyword",
       "array": true
     },
-    "wazuh.source": {
+    "cyb3rhq.source": {
       "type": "keyword",
       "array": false
     },
-    "wazuh.syscollector.hardware": {
+    "cyb3rhq.syscollector.hardware": {
       "type": "object",
       "array": false
     },
-    "wazuh.syscollector.hotfix": {
+    "cyb3rhq.syscollector.hotfix": {
       "type": "object",
       "array": false
     },
-    "wazuh.syscollector.netinfo.addr": {
+    "cyb3rhq.syscollector.netinfo.addr": {
       "type": "object",
       "array": false
     },
-    "wazuh.syscollector.netinfo.iface": {
+    "cyb3rhq.syscollector.netinfo.iface": {
       "type": "object",
       "array": false
     },
-    "wazuh.syscollector.netinfo.proto": {
+    "cyb3rhq.syscollector.netinfo.proto": {
       "type": "object",
       "array": false
     },
-    "wazuh.syscollector.os": {
+    "cyb3rhq.syscollector.os": {
       "type": "object",
       "array": false
     },
-    "wazuh.syscollector.port": {
+    "cyb3rhq.syscollector.port": {
       "type": "object",
       "array": false
     },
-    "wazuh.syscollector.process": {
+    "cyb3rhq.syscollector.process": {
       "type": "object",
       "array": false
     },
-    "wazuh.syscollector.program": {
+    "cyb3rhq.syscollector.program": {
       "type": "object",
       "array": false
     },
-    "wazuh.rootcheck.file": {
+    "cyb3rhq.rootcheck.file": {
       "type": "keyword",
       "array": false
     },
-    "wazuh.rootcheck.update": {
+    "cyb3rhq.rootcheck.update": {
       "type": "boolean",
       "array": false
     },
-    "wazuh.rootcheck.fts": {
+    "cyb3rhq.rootcheck.fts": {
       "type": "boolean",
       "array": false
     },
-    "wazuh.rootcheck.title": {
+    "cyb3rhq.rootcheck.title": {
       "type": "keyword",
       "array": false
     },
-    "wazuh.ciscat.type": {
+    "cyb3rhq.ciscat.type": {
       "type": "keyword",
       "array": false
     },
-    "wazuh.ciscat.scan_id": {
+    "cyb3rhq.ciscat.scan_id": {
       "type": "long",
       "array": false
     },
-    "wazuh.ciscat.cis.timestamp": {
+    "cyb3rhq.ciscat.cis.timestamp": {
       "type": "date",
       "array": false
     },
-    "wazuh.ciscat.cis.benchmark": {
+    "cyb3rhq.ciscat.cis.benchmark": {
       "type": "keyword",
       "array": false
     },
-    "wazuh.ciscat.cis.profile": {
+    "cyb3rhq.ciscat.cis.profile": {
       "type": "keyword",
       "array": false
     },
-    "wazuh.ciscat.cis.pass": {
+    "cyb3rhq.ciscat.cis.pass": {
       "type": "long",
       "array": false
     },
-    "wazuh.ciscat.cis.fail": {
+    "cyb3rhq.ciscat.cis.fail": {
       "type": "long",
       "array": false
     },
-    "wazuh.ciscat.cis.error": {
+    "cyb3rhq.ciscat.cis.error": {
       "type": "long",
       "array": false
     },
-    "wazuh.ciscat.cis.notchecked": {
+    "cyb3rhq.ciscat.cis.notchecked": {
       "type": "long",
       "array": false
     },
-    "wazuh.ciscat.cis.unknown": {
+    "cyb3rhq.ciscat.cis.unknown": {
       "type": "long",
       "array": false
     },
-    "wazuh.ciscat.cis.score": {
+    "cyb3rhq.ciscat.cis.score": {
       "type": "long",
       "array": false
     },
-    "wazuh.ciscat.cis.hostname": {
+    "cyb3rhq.ciscat.cis.hostname": {
       "type": "keyword",
       "array": false
     },
-    "wazuh.noIndexing": {
+    "cyb3rhq.noIndexing": {
       "type": "boolean",
       "array": false
     }

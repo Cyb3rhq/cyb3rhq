@@ -1,0 +1,27 @@
+name: decoder/core-hostinfo/0
+# module: cyb3rhq
+
+metadata:
+  title: Hostinfo queue decoder.
+  description: >
+    Process events that were collected with cyb3rhq-logcollector, log_format set in nmapg.
+  compatibility: Any service being tagged with the queue 51.
+  versions:
+    - Cyb3rhq 4.*
+  author:
+    name: Cyb3rhq, Inc.
+    date: 07/03/2023
+  references:
+    - https://documentation.wazuh.com/current/user-manual/reference/core-options.html
+
+parents:
+  - decoder/core-cyb3rhq-message/0
+
+check:
+  # Value 51 is equal to character '3' in ASCII
+  - cyb3rhq.queue: 51
+
+normalize:
+  - map:
+      - cyb3rhq.decoders: array_append(core-hostinfo)
+      - cyb3rhq.source: logcollector

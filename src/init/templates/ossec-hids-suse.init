@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Copyright (C) 2015, Wazuh Inc.
+# Copyright (C) 2015, Cyb3rhq Inc.
 # Author: Scott Knauss scott@knauss.com
 #
 # /etc/init.d/ossec
@@ -44,24 +44,24 @@ rc_reset
 # with force-reload (in case signalling is not supported) are
 # considered a success.
 
-# Just to make sure wazuh is installed ...
-WAZUH_HOME=WAZUH_HOME_TMP
-WAZUH_CONTROL="$WAZUH_HOME/bin/wazuh-control"
+# Just to make sure cyb3rhq is installed ...
+CYB3RHQ_HOME=CYB3RHQ_HOME_TMP
+CYB3RHQ_CONTROL="$CYB3RHQ_HOME/bin/cyb3rhq-control"
 
-test -x $WAZUH_CONTROL || { echo "$WAZUH_CONTROL not installed";
+test -x $CYB3RHQ_CONTROL || { echo "$CYB3RHQ_CONTROL not installed";
     if [ "$1" = "stop" ]; then exit 0;
     else exit 5; fi; }
 
 start() {
-    ${WAZUH_CONTROL} start
+    ${CYB3RHQ_CONTROL} start
 }
 
 stop() {
-    ${WAZUH_CONTROL} stop
+    ${CYB3RHQ_CONTROL} stop
 }
 
 status() {
-    ${WAZUH_CONTROL} status
+    ${CYB3RHQ_CONTROL} status
 }
 
 case "$1" in

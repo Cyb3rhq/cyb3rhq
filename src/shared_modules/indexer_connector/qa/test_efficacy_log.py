@@ -27,7 +27,7 @@ def init_opensearch():
     env_vars = {
         'discovery.type': 'single-node',
         'plugins.security.disabled': 'true',
-        'OPENSEARCH_INITIAL_ADMIN_PASSWORD': 'WazuhTest99$',
+        'OPENSEARCH_INITIAL_ADMIN_PASSWORD': 'Cyb3rhqTest99$',
     }
     client.containers.run("opensearchproject/opensearch", detach=True, ports={'9200/tcp': 9200},
                           environment=env_vars, name='opensearch', stdout=True, stderr=True)
@@ -67,11 +67,11 @@ def test_initialize_indexer_connector(opensearch):
     if response.status_code == 200:
         LOGGER.info(f'RESPONSE: {response.content}')
 
-    ## Remove folder queue/indexer/db/wazuh-states-vulnerabilities
-    if Path("queue/indexer/db/wazuh-states-vulnerabilities").exists():
-        for file in Path("queue/indexer/db/wazuh-states-vulnerabilities").glob("*"):
+    ## Remove folder queue/indexer/db/cyb3rhq-states-vulnerabilities
+    if Path("queue/indexer/db/cyb3rhq-states-vulnerabilities").exists():
+        for file in Path("queue/indexer/db/cyb3rhq-states-vulnerabilities").glob("*"):
             file.unlink()
-        Path("queue/indexer/db/wazuh-states-vulnerabilities").rmdir()
+        Path("queue/indexer/db/cyb3rhq-states-vulnerabilities").rmdir()
 
     # Run indexer connector testtool out of the container
     cmd = Path("build/shared_modules/indexer_connector/testtool/", "indexer_connector_tool")
@@ -105,7 +105,7 @@ def test_initialize_indexer_connector(opensearch):
     while counter < 10:
         url = 'http://localhost:9200/_cat/indices'
         response = requests.get(url)
-        if response.status_code == 200 and 'wazuh-states-vulnerabilities' in response.text:
+        if response.status_code == 200 and 'cyb3rhq-states-vulnerabilities' in response.text:
             LOGGER.debug(f"Index created {response.text}")
             break
         time.sleep(1)
@@ -118,11 +118,11 @@ def test_add_bulk_indexer_connector(opensearch):
     os.chdir(Path(__file__).parent.parent.parent.parent)
     LOGGER.debug(f"Current directory: {os.getcwd()}")
 
-    ## Remove folder queue/indexer/db/wazuh-states-vulnerabilities
-    if Path("queue/indexer/db/wazuh-states-vulnerabilities").exists():
-        for file in Path("queue/indexer/db/wazuh-states-vulnerabilities").glob("*"):
+    ## Remove folder queue/indexer/db/cyb3rhq-states-vulnerabilities
+    if Path("queue/indexer/db/cyb3rhq-states-vulnerabilities").exists():
+        for file in Path("queue/indexer/db/cyb3rhq-states-vulnerabilities").glob("*"):
             file.unlink()
-        Path("queue/indexer/db/wazuh-states-vulnerabilities").rmdir()
+        Path("queue/indexer/db/cyb3rhq-states-vulnerabilities").rmdir()
 
     # Run indexer connector testtool out of the container
     cmd = Path("build/shared_modules/indexer_connector/testtool/", "indexer_connector_tool")
@@ -154,7 +154,7 @@ def test_add_bulk_indexer_connector(opensearch):
     # Query to check if the index is created and template is applied
     counter = 0
     while counter < 10:
-        url = 'http://localhost:9200/wazuh-states-vulnerabilities/_search'
+        url = 'http://localhost:9200/cyb3rhq-states-vulnerabilities/_search'
         query = {
             "query": {
                 "match_all": {}
@@ -185,7 +185,7 @@ def test_add_bulk_indexer_connector(opensearch):
     # Query to check if the element is deleted
     counter = 0
     while counter < 10:
-        url = 'http://localhost:9200/wazuh-states-vulnerabilities/_search'
+        url = 'http://localhost:9200/cyb3rhq-states-vulnerabilities/_search'
         query = {
             "query": {
                 "match_all": {}

@@ -5,7 +5,7 @@
 #include <vector>
 
 #include <CLI/CLI.hpp>
-#include <base/utils/wazuhProtocol/wazuhProtocol.hpp>
+#include <base/utils/cyb3rhqProtocol/cyb3rhqProtocol.hpp>
 #include <cmds/apiclnt/client.hpp>
 #include <base/json.hpp>
 

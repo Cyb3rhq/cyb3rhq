@@ -13,7 +13,7 @@ metadata:
     - v12
     - v11
   author:
-    name: Wazuh Inc. info@wazuh.com
+    name: Cyb3rhq Inc. info@wazuh.com
     date: 2023-01-05
 
 parents:
@@ -36,4 +36,4 @@ normalize:
       - postgresql.log.client_addr: '+regex_extract/$~csv.connection_from/^([^:]*):'
       - postgresql.log.client_port: '+regex_extract/$~csv.connection_from/^(?:[^:]*):(\d+)'
 
-      - wazuh.decoders: +array_append/postgresql-csv-msg-parse
+      - cyb3rhq.decoders: +array_append/postgresql-csv-msg-parse

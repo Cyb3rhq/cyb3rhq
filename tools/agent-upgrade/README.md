@@ -11,12 +11,12 @@ openssl req -x509 -new -nodes -newkey rsa:2048 -keyout wpk_root.key -out wpk_roo
 ### Create certificate and key
 
 ```
-openssl req -new -nodes -newkey rsa:2048 -keyout wpkcert.key -out wpkcert.csr -subj '/C=US/ST=CA/O=Wazuh'
+openssl req -new -nodes -newkey rsa:2048 -keyout wpkcert.key -out wpkcert.csr -subj '/C=US/ST=CA/O=Cyb3rhq'
 ```
 
 - `/C=US` is the country.
 - `/ST=CA` is the state.
-- `/O=Wazuh` is the organization's name.
+- `/O=Cyb3rhq` is the organization's name.
 
 Sign this certificate with the root CA:
 
@@ -54,20 +54,20 @@ pip install cryptography
 1. Download sources from GitHub at branch 3.0:
 
 ```
-curl -Lo wazuh-3.0.zip https://github.com/wazuh/wazuh/archive/3.0.zip
-unzip wazuh-3.0.zip
+curl -Lo cyb3rhq-3.0.zip https://github.com/cyb3rhq/cyb3rhq/archive/3.0.zip
+unzip cyb3rhq-3.0.zip
 ```
 
 2. Compile the project:
 
 ```
-make -C wazuh-3.0/src TARGET=agent
+make -C cyb3rhq-3.0/src TARGET=agent
 ```
 
 3. Change to the base directory:
 
 ```
-cd wazuh-3.0
+cd cyb3rhq-3.0
 ```
 
 4. Install the root CA, only if you want to **overwrite the root CA** with the file you created before:
@@ -87,7 +87,7 @@ tools/agent-upgrade/wpkpack.py output/myagent.wpk path/to/wpkcert.pem path/to/wp
 - `path/to/wpkcert.key` is the path to your SSL certificate's key.
 - `*` is the file (or the files) to be included into the WPK package.
 
-In this particular case, the Wazuh Project's root directory contains the proper `upgrade.sh` file.
+In this particular case, the Cyb3rhq Project's root directory contains the proper `upgrade.sh` file.
 
 *Note: this is a mere example. If you want to distribute a WPK package this way you should first clean the directory.*
 
@@ -99,7 +99,7 @@ The root CA certificate, or failing that, the certificate used to sign the WPK p
 
 You have two options:
 
-1. Overwrite the shipped root CA with your certificate. This will prevent your agent from upgrading using WPK packages from Wazuh.
+1. Overwrite the shipped root CA with your certificate. This will prevent your agent from upgrading using WPK packages from Cyb3rhq.
 
 ```
 cp /path/to/certificate etc/wpk_root.pem
@@ -116,7 +116,7 @@ cp /path/to/certificate etc/wpk_root.pem
 
 ### Run the upgrade
 
-Get the WPK package into the Wazuh manager and run:
+Get the WPK package into the Cyb3rhq manager and run:
 
 ```
 /var/ossec/bin/agent_upgrade -a 001 -f path/to/myagent.wpk -x upgrade.sh
@@ -138,7 +138,7 @@ Agent upgraded successfully
 
 WPK files must be named matching this pattern:
 
-> wazuh_agent_W_X_Y_Z
+> cyb3rhq_agent_W_X_Y_Z
 
 - `W` is the version of the released version.
 - `X` is the name of the operating system.
@@ -147,7 +147,7 @@ WPK files must be named matching this pattern:
 
 For instance:
 
-> wazuh_agent_v3.0.0-beta7_centos_7_x86_64.wpk
+> cyb3rhq_agent_v3.0.0-beta7_centos_7_x86_64.wpk
 
 Such files must also be classified in this folder tree:
 

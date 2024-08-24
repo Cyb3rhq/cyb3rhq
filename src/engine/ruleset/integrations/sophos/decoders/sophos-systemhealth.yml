@@ -7,7 +7,7 @@ metadata:
   version: [17.5.x, 18.0.x]
   description: Decoder for Sophos Systemhealth
   author:
-    name: Wazuh Inc. info@wazuh.com
+    name: Cyb3rhq Inc. info@wazuh.com
     date: 2023-01-12
   references:
     - https://support.sophos.com/support/s/?language=en_US#t=DocumentationTab
@@ -107,5 +107,5 @@ normalize:
       - sophos.xg.user_cpu: $~tmp.user
       - service.type: sophos
       - tags: [forwarded, preserve_original_even, sophos-xg]
-      - wazuh.decoders: +array_append/sophos-systemhealth
+      - cyb3rhq.decoders: +array_append/sophos-systemhealth
       - ~tmp: delete()

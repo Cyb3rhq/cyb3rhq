@@ -19,9 +19,9 @@ using namespace sockiface::mocks;
 namespace builder::test
 {
 
-auto constexpr WAZUH_LOGPAR_TYPES_JSON = R"({
+auto constexpr CYB3RHQ_LOGPAR_TYPES_JSON = R"({
     "fields": {
-        "wazuh.message": "text",
+        "cyb3rhq.message": "text",
         "event.code": "text"
     }
 }
@@ -44,7 +44,7 @@ auto constexpr DECODER_JSON = R"({
 auto constexpr FILTER_JSON = R"({
     "name": "filter/test/0",
     "check": [{
-        "wazuh.queue": 49
+        "cyb3rhq.queue": 49
     }
     ]
 })";
@@ -333,7 +333,7 @@ public:
         builder::BuilderDeps builderDeps;
         builderDeps.logparDebugLvl = 0;
         builderDeps.logpar =
-            std::make_shared<hlp::logpar::Logpar>(json::Json {WAZUH_LOGPAR_TYPES_JSON}, m_spMocks->m_spSchemf);
+            std::make_shared<hlp::logpar::Logpar>(json::Json {CYB3RHQ_LOGPAR_TYPES_JSON}, m_spMocks->m_spSchemf);
         builderDeps.kvdbScopeName = "builder";
         builderDeps.kvdbManager = nullptr;
         builderDeps.sockFactory = m_spMocks->m_spSockFactory;

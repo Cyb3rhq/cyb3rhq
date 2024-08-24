@@ -19,8 +19,8 @@ constexpr auto JSON_IP_FULLDATA {R"(
   "test_bytes": "abcd",
   "test_double": 37.386,
   "test_map": {
-    "test_str1": "Wazuh",
-    "test_str2": "Wazuh2"
+    "test_str1": "Cyb3rhq",
+    "test_str2": "Cyb3rhq2"
   },
   "test_uint128": "0x0000000000000000ab54a98ceb1f0ad2",
   "test_uint16": 123,
@@ -82,7 +82,7 @@ TEST_F(ResultTest, getString)
 
     auto res = m_handler->lookup(m_ipFullData)->getString("test_map.test_str2");
     ASSERT_FALSE(base::isError(res));
-    ASSERT_EQ(base::getResponse(res), "Wazuh2");
+    ASSERT_EQ(base::getResponse(res), "Cyb3rhq2");
     res = m_handler->lookup(m_ipMinimalData)->getString("test_map.test_str2");
     ASSERT_TRUE(base::isError(res));
 }

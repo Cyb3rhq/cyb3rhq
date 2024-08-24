@@ -5,55 +5,55 @@
 
 #include <wdb/iwdbHandler.hpp>
 
-namespace wazuhdb::mocks
+namespace cyb3rhqdb::mocks
 {
 
-using QueryRes = std::tuple<wazuhdb::QueryResultCodes, std::optional<std::string>>;
+using QueryRes = std::tuple<cyb3rhqdb::QueryResultCodes, std::optional<std::string>>;
 
 inline QueryRes okQueryRes(const std::string message = "")
 {
-    return QueryRes {wazuhdb::QueryResultCodes::OK, message};
+    return QueryRes {cyb3rhqdb::QueryResultCodes::OK, message};
 }
 
 inline QueryRes errorQueryRes(const std::string message = "")
 {
-    return QueryRes {wazuhdb::QueryResultCodes::ERROR, message};
+    return QueryRes {cyb3rhqdb::QueryResultCodes::ERROR, message};
 }
 
 inline QueryRes unknownQueryRes(const std::string message = "")
 {
-    return QueryRes {wazuhdb::QueryResultCodes::UNKNOWN, message};
+    return QueryRes {cyb3rhqdb::QueryResultCodes::UNKNOWN, message};
 }
 
 inline QueryRes dueQueryRes(const std::string message = "")
 {
-    return QueryRes {wazuhdb::QueryResultCodes::DUE, message};
+    return QueryRes {cyb3rhqdb::QueryResultCodes::DUE, message};
 }
 
 inline QueryRes ignoreQueryRes(const std::string message = "")
 {
-    return QueryRes {wazuhdb::QueryResultCodes::IGNORE, message};
+    return QueryRes {cyb3rhqdb::QueryResultCodes::IGNORE, message};
 }
 
-class MockWdbHandler : public wazuhdb::IWDBHandler
+class MockWdbHandler : public cyb3rhqdb::IWDBHandler
 {
 public:
     MOCK_METHOD(void, connect, (), (override));
     MOCK_METHOD(std::string, query, (const std::string& query), (override));
     MOCK_METHOD(std::string, tryQuery, (const std::string& query, uint32_t attempts), (noexcept, override));
-    MOCK_METHOD((std::tuple<wazuhdb::QueryResultCodes, std::optional<std::string>>),
+    MOCK_METHOD((std::tuple<cyb3rhqdb::QueryResultCodes, std::optional<std::string>>),
                 parseResult,
                 (const std::string& result),
                 (const, noexcept, override));
-    MOCK_METHOD((std::tuple<wazuhdb::QueryResultCodes, std::optional<std::string>>),
+    MOCK_METHOD((std::tuple<cyb3rhqdb::QueryResultCodes, std::optional<std::string>>),
                 queryAndParseResult,
                 (const std::string& query),
                 (override));
-    MOCK_METHOD((std::tuple<wazuhdb::QueryResultCodes, std::optional<std::string>>),
+    MOCK_METHOD((std::tuple<cyb3rhqdb::QueryResultCodes, std::optional<std::string>>),
                 tryQueryAndParseResult,
                 (const std::string& query, uint32_t attempts),
                 (noexcept, override));
     MOCK_METHOD(size_t, getQueryMaxSize, (), (const, noexcept, override));
 };
-} // namespace wazuhdb::mocks
+} // namespace cyb3rhqdb::mocks
 #endif // _WDB_MOCK_WDB_HANDLER_HPP

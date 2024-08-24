@@ -236,13 +236,13 @@ stages:
         data:
           affected_items:
             - timestamp: !anystr
-              name: wazuh-remoted
+              name: cyb3rhq-remoted
               agents:
                 - id: 1
                   uptime: !anystr
                   metrics: !anything
             - timestamp: !anystr
-              name: wazuh-analysisd
+              name: cyb3rhq-analysisd
               agents:
                 - id: 1
                   uptime: !anystr
@@ -494,7 +494,7 @@ stages:
      headers:
        Authorization: "Bearer {test_login_token}"
      params:
-       name: 'wazuh-agent2'
+       name: 'cyb3rhq-agent2'
    response:
      status_code: 200
      json:
@@ -510,7 +510,7 @@ stages:
      headers:
        Authorization: "Bearer {test_login_token}"
      params:
-       name: 'wazuh-agent1'
+       name: 'cyb3rhq-agent1'
    response:
      status_code: 200
      json:
@@ -518,7 +518,7 @@ stages:
        data:
          affected_items:
            - id: '001'
-             name: 'wazuh-agent1'
+             name: 'cyb3rhq-agent1'
          failed_items: []
          total_affected_items: 1
          total_failed_items: 0

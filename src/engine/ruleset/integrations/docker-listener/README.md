@@ -1,4 +1,4 @@
-# Wazuh Docker Listener Integration
+# Cyb3rhq Docker Listener Integration
 
 
 |   |   |
@@ -29,7 +29,7 @@ More information on how to use and a example on how to achieve this [here](https
 
 ## Compatibility
 
-This module has been tested against docker version 24.0.2 wazuh agent 4.4.3 in ubuntu 22
+This module has been tested against docker version 24.0.2 cyb3rhq agent 4.4.3 in ubuntu 22
 
 
 ## Configuration
@@ -76,4 +76,4 @@ Example on the wodle configuration:
 
 | Version | Description | Details |
 |---|---|---|
-| 0.0.1-dev | Created integration for docker-listener wodle | [#17406](https://github.com/wazuh/wazuh/pull/17406) |
+| 0.0.1-dev | Created integration for docker-listener wodle | [#17406](https://github.com/cyb3rhq/cyb3rhq/pull/17406) |

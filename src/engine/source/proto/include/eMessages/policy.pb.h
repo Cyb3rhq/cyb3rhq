@@ -47,7 +47,7 @@ struct TableStruct_policy_2eproto {
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_policy_2eproto;
 namespace com {
-namespace wazuh {
+namespace cyb3rhq {
 namespace api {
 namespace engine {
 namespace policy {
@@ -120,34 +120,34 @@ extern StorePost_RequestDefaultTypeInternal _StorePost_Request_default_instance_
 }  // namespace policy
 }  // namespace engine
 }  // namespace api
-}  // namespace wazuh
+}  // namespace cyb3rhq
 }  // namespace com
 PROTOBUF_NAMESPACE_OPEN
-template<> ::com::wazuh::api::engine::policy::AssetCleanDeleted_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::AssetCleanDeleted_Request>(Arena*);
-template<> ::com::wazuh::api::engine::policy::AssetCleanDeleted_Response* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::AssetCleanDeleted_Response>(Arena*);
-template<> ::com::wazuh::api::engine::policy::AssetDelete_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::AssetDelete_Request>(Arena*);
-template<> ::com::wazuh::api::engine::policy::AssetDelete_Response* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::AssetDelete_Response>(Arena*);
-template<> ::com::wazuh::api::engine::policy::AssetGet_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::AssetGet_Request>(Arena*);
-template<> ::com::wazuh::api::engine::policy::AssetGet_Response* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::AssetGet_Response>(Arena*);
-template<> ::com::wazuh::api::engine::policy::AssetPost_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::AssetPost_Request>(Arena*);
-template<> ::com::wazuh::api::engine::policy::AssetPost_Response* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::AssetPost_Response>(Arena*);
-template<> ::com::wazuh::api::engine::policy::DefaultParentDelete_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::DefaultParentDelete_Request>(Arena*);
-template<> ::com::wazuh::api::engine::policy::DefaultParentDelete_Response* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::DefaultParentDelete_Response>(Arena*);
-template<> ::com::wazuh::api::engine::policy::DefaultParentGet_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::DefaultParentGet_Request>(Arena*);
-template<> ::com::wazuh::api::engine::policy::DefaultParentGet_Response* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::DefaultParentGet_Response>(Arena*);
-template<> ::com::wazuh::api::engine::policy::DefaultParentPost_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::DefaultParentPost_Request>(Arena*);
-template<> ::com::wazuh::api::engine::policy::DefaultParentPost_Response* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::DefaultParentPost_Response>(Arena*);
-template<> ::com::wazuh::api::engine::policy::NamespacesGet_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::NamespacesGet_Request>(Arena*);
-template<> ::com::wazuh::api::engine::policy::NamespacesGet_Response* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::NamespacesGet_Response>(Arena*);
-template<> ::com::wazuh::api::engine::policy::PoliciesGet_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::PoliciesGet_Request>(Arena*);
-template<> ::com::wazuh::api::engine::policy::PoliciesGet_Response* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::PoliciesGet_Response>(Arena*);
-template<> ::com::wazuh::api::engine::policy::StoreDelete_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::StoreDelete_Request>(Arena*);
-template<> ::com::wazuh::api::engine::policy::StoreGet_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::StoreGet_Request>(Arena*);
-template<> ::com::wazuh::api::engine::policy::StoreGet_Response* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::StoreGet_Response>(Arena*);
-template<> ::com::wazuh::api::engine::policy::StorePost_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::policy::StorePost_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::AssetCleanDeleted_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::AssetCleanDeleted_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::AssetCleanDeleted_Response* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::AssetCleanDeleted_Response>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::AssetDelete_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::AssetDelete_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::AssetDelete_Response* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::AssetDelete_Response>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::AssetGet_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::AssetGet_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::AssetGet_Response* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::AssetGet_Response>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::AssetPost_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::AssetPost_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::AssetPost_Response* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::AssetPost_Response>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::DefaultParentDelete_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::DefaultParentDelete_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::DefaultParentDelete_Response* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::DefaultParentDelete_Response>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::DefaultParentGet_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::DefaultParentGet_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::DefaultParentGet_Response* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::DefaultParentGet_Response>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::DefaultParentPost_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::DefaultParentPost_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::DefaultParentPost_Response* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::DefaultParentPost_Response>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::NamespacesGet_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::NamespacesGet_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::NamespacesGet_Response* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::NamespacesGet_Response>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::PoliciesGet_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::PoliciesGet_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::PoliciesGet_Response* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::PoliciesGet_Response>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::StoreDelete_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::StoreDelete_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::StoreGet_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::StoreGet_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::StoreGet_Response* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::StoreGet_Response>(Arena*);
+template<> ::com::cyb3rhq::api::engine::policy::StorePost_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::policy::StorePost_Request>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace com {
-namespace wazuh {
+namespace cyb3rhq {
 namespace api {
 namespace engine {
 namespace policy {
@@ -155,7 +155,7 @@ namespace policy {
 // ===================================================================
 
 class StorePost_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.StorePost_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.StorePost_Request) */ {
  public:
   inline StorePost_Request() : StorePost_Request(nullptr) {}
   ~StorePost_Request() override;
@@ -258,7 +258,7 @@ class StorePost_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.StorePost_Request";
+    return "com.cyb3rhq.api.engine.policy.StorePost_Request";
   }
   protected:
   explicit StorePost_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -295,7 +295,7 @@ class StorePost_Request final :
   std::string* _internal_mutable_policy();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.StorePost_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.StorePost_Request)
  private:
   class _Internal;
 
@@ -313,7 +313,7 @@ class StorePost_Request final :
 // -------------------------------------------------------------------
 
 class StoreDelete_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.StoreDelete_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.StoreDelete_Request) */ {
  public:
   inline StoreDelete_Request() : StoreDelete_Request(nullptr) {}
   ~StoreDelete_Request() override;
@@ -416,7 +416,7 @@ class StoreDelete_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.StoreDelete_Request";
+    return "com.cyb3rhq.api.engine.policy.StoreDelete_Request";
   }
   protected:
   explicit StoreDelete_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -453,7 +453,7 @@ class StoreDelete_Request final :
   std::string* _internal_mutable_policy();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.StoreDelete_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.StoreDelete_Request)
  private:
   class _Internal;
 
@@ -471,7 +471,7 @@ class StoreDelete_Request final :
 // -------------------------------------------------------------------
 
 class StoreGet_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.StoreGet_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.StoreGet_Request) */ {
  public:
   inline StoreGet_Request() : StoreGet_Request(nullptr) {}
   ~StoreGet_Request() override;
@@ -574,7 +574,7 @@ class StoreGet_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.StoreGet_Request";
+    return "com.cyb3rhq.api.engine.policy.StoreGet_Request";
   }
   protected:
   explicit StoreGet_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -636,7 +636,7 @@ class StoreGet_Request final :
   std::string* _internal_mutable_policy();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.StoreGet_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.StoreGet_Request)
  private:
   class _Internal;
 
@@ -655,7 +655,7 @@ class StoreGet_Request final :
 // -------------------------------------------------------------------
 
 class StoreGet_Response final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.StoreGet_Response) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.StoreGet_Response) */ {
  public:
   inline StoreGet_Response() : StoreGet_Response(nullptr) {}
   ~StoreGet_Response() override;
@@ -758,7 +758,7 @@ class StoreGet_Response final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.StoreGet_Response";
+    return "com.cyb3rhq.api.engine.policy.StoreGet_Response";
   }
   protected:
   explicit StoreGet_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -815,16 +815,16 @@ class StoreGet_Response final :
   std::string* _internal_mutable_data();
   public:
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   void clear_status();
-  ::com::wazuh::api::engine::ReturnStatus status() const;
-  void set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus status() const;
+  void set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   private:
-  ::com::wazuh::api::engine::ReturnStatus _internal_status() const;
-  void _internal_set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus _internal_status() const;
+  void _internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.StoreGet_Response)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.StoreGet_Response)
  private:
   class _Internal;
 
@@ -844,7 +844,7 @@ class StoreGet_Response final :
 // -------------------------------------------------------------------
 
 class AssetPost_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.AssetPost_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.AssetPost_Request) */ {
  public:
   inline AssetPost_Request() : AssetPost_Request(nullptr) {}
   ~AssetPost_Request() override;
@@ -947,7 +947,7 @@ class AssetPost_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.AssetPost_Request";
+    return "com.cyb3rhq.api.engine.policy.AssetPost_Request";
   }
   protected:
   explicit AssetPost_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -1022,7 +1022,7 @@ class AssetPost_Request final :
   std::string* _internal_mutable_namespace_();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.AssetPost_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.AssetPost_Request)
  private:
   class _Internal;
 
@@ -1042,7 +1042,7 @@ class AssetPost_Request final :
 // -------------------------------------------------------------------
 
 class AssetPost_Response final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.AssetPost_Response) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.AssetPost_Response) */ {
  public:
   inline AssetPost_Response() : AssetPost_Response(nullptr) {}
   ~AssetPost_Response() override;
@@ -1145,7 +1145,7 @@ class AssetPost_Response final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.AssetPost_Response";
+    return "com.cyb3rhq.api.engine.policy.AssetPost_Response";
   }
   protected:
   explicit AssetPost_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -1202,16 +1202,16 @@ class AssetPost_Response final :
   std::string* _internal_mutable_warning();
   public:
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   void clear_status();
-  ::com::wazuh::api::engine::ReturnStatus status() const;
-  void set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus status() const;
+  void set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   private:
-  ::com::wazuh::api::engine::ReturnStatus _internal_status() const;
-  void _internal_set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus _internal_status() const;
+  void _internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.AssetPost_Response)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.AssetPost_Response)
  private:
   class _Internal;
 
@@ -1231,7 +1231,7 @@ class AssetPost_Response final :
 // -------------------------------------------------------------------
 
 class AssetDelete_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.AssetDelete_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.AssetDelete_Request) */ {
  public:
   inline AssetDelete_Request() : AssetDelete_Request(nullptr) {}
   ~AssetDelete_Request() override;
@@ -1334,7 +1334,7 @@ class AssetDelete_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.AssetDelete_Request";
+    return "com.cyb3rhq.api.engine.policy.AssetDelete_Request";
   }
   protected:
   explicit AssetDelete_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -1409,7 +1409,7 @@ class AssetDelete_Request final :
   std::string* _internal_mutable_namespace_();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.AssetDelete_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.AssetDelete_Request)
  private:
   class _Internal;
 
@@ -1429,7 +1429,7 @@ class AssetDelete_Request final :
 // -------------------------------------------------------------------
 
 class AssetDelete_Response final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.AssetDelete_Response) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.AssetDelete_Response) */ {
  public:
   inline AssetDelete_Response() : AssetDelete_Response(nullptr) {}
   ~AssetDelete_Response() override;
@@ -1532,7 +1532,7 @@ class AssetDelete_Response final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.AssetDelete_Response";
+    return "com.cyb3rhq.api.engine.policy.AssetDelete_Response";
   }
   protected:
   explicit AssetDelete_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -1589,16 +1589,16 @@ class AssetDelete_Response final :
   std::string* _internal_mutable_warning();
   public:
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   void clear_status();
-  ::com::wazuh::api::engine::ReturnStatus status() const;
-  void set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus status() const;
+  void set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   private:
-  ::com::wazuh::api::engine::ReturnStatus _internal_status() const;
-  void _internal_set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus _internal_status() const;
+  void _internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.AssetDelete_Response)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.AssetDelete_Response)
  private:
   class _Internal;
 
@@ -1618,7 +1618,7 @@ class AssetDelete_Response final :
 // -------------------------------------------------------------------
 
 class AssetGet_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.AssetGet_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.AssetGet_Request) */ {
  public:
   inline AssetGet_Request() : AssetGet_Request(nullptr) {}
   ~AssetGet_Request() override;
@@ -1721,7 +1721,7 @@ class AssetGet_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.AssetGet_Request";
+    return "com.cyb3rhq.api.engine.policy.AssetGet_Request";
   }
   protected:
   explicit AssetGet_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -1777,7 +1777,7 @@ class AssetGet_Request final :
   std::string* _internal_mutable_namespace_();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.AssetGet_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.AssetGet_Request)
  private:
   class _Internal;
 
@@ -1796,7 +1796,7 @@ class AssetGet_Request final :
 // -------------------------------------------------------------------
 
 class AssetGet_Response final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.AssetGet_Response) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.AssetGet_Response) */ {
  public:
   inline AssetGet_Response() : AssetGet_Response(nullptr) {}
   ~AssetGet_Response() override;
@@ -1899,7 +1899,7 @@ class AssetGet_Response final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.AssetGet_Response";
+    return "com.cyb3rhq.api.engine.policy.AssetGet_Response";
   }
   protected:
   explicit AssetGet_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -1962,16 +1962,16 @@ class AssetGet_Response final :
   std::string* _internal_mutable_error();
   public:
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   void clear_status();
-  ::com::wazuh::api::engine::ReturnStatus status() const;
-  void set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus status() const;
+  void set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   private:
-  ::com::wazuh::api::engine::ReturnStatus _internal_status() const;
-  void _internal_set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus _internal_status() const;
+  void _internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.AssetGet_Response)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.AssetGet_Response)
  private:
   class _Internal;
 
@@ -1991,7 +1991,7 @@ class AssetGet_Response final :
 // -------------------------------------------------------------------
 
 class AssetCleanDeleted_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.AssetCleanDeleted_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Request) */ {
  public:
   inline AssetCleanDeleted_Request() : AssetCleanDeleted_Request(nullptr) {}
   ~AssetCleanDeleted_Request() override;
@@ -2094,7 +2094,7 @@ class AssetCleanDeleted_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.AssetCleanDeleted_Request";
+    return "com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Request";
   }
   protected:
   explicit AssetCleanDeleted_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -2131,7 +2131,7 @@ class AssetCleanDeleted_Request final :
   std::string* _internal_mutable_policy();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.AssetCleanDeleted_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Request)
  private:
   class _Internal;
 
@@ -2149,7 +2149,7 @@ class AssetCleanDeleted_Request final :
 // -------------------------------------------------------------------
 
 class AssetCleanDeleted_Response final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.AssetCleanDeleted_Response) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Response) */ {
  public:
   inline AssetCleanDeleted_Response() : AssetCleanDeleted_Response(nullptr) {}
   ~AssetCleanDeleted_Response() override;
@@ -2252,7 +2252,7 @@ class AssetCleanDeleted_Response final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.AssetCleanDeleted_Response";
+    return "com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Response";
   }
   protected:
   explicit AssetCleanDeleted_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -2309,16 +2309,16 @@ class AssetCleanDeleted_Response final :
   std::string* _internal_mutable_data();
   public:
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   void clear_status();
-  ::com::wazuh::api::engine::ReturnStatus status() const;
-  void set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus status() const;
+  void set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   private:
-  ::com::wazuh::api::engine::ReturnStatus _internal_status() const;
-  void _internal_set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus _internal_status() const;
+  void _internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.AssetCleanDeleted_Response)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Response)
  private:
   class _Internal;
 
@@ -2338,7 +2338,7 @@ class AssetCleanDeleted_Response final :
 // -------------------------------------------------------------------
 
 class DefaultParentGet_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.DefaultParentGet_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.DefaultParentGet_Request) */ {
  public:
   inline DefaultParentGet_Request() : DefaultParentGet_Request(nullptr) {}
   ~DefaultParentGet_Request() override;
@@ -2441,7 +2441,7 @@ class DefaultParentGet_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.DefaultParentGet_Request";
+    return "com.cyb3rhq.api.engine.policy.DefaultParentGet_Request";
   }
   protected:
   explicit DefaultParentGet_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -2497,7 +2497,7 @@ class DefaultParentGet_Request final :
   std::string* _internal_mutable_namespace_();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.DefaultParentGet_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.DefaultParentGet_Request)
  private:
   class _Internal;
 
@@ -2516,7 +2516,7 @@ class DefaultParentGet_Request final :
 // -------------------------------------------------------------------
 
 class DefaultParentGet_Response final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.DefaultParentGet_Response) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response) */ {
  public:
   inline DefaultParentGet_Response() : DefaultParentGet_Response(nullptr) {}
   ~DefaultParentGet_Response() override;
@@ -2619,7 +2619,7 @@ class DefaultParentGet_Response final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.DefaultParentGet_Response";
+    return "com.cyb3rhq.api.engine.policy.DefaultParentGet_Response";
   }
   protected:
   explicit DefaultParentGet_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -2682,16 +2682,16 @@ class DefaultParentGet_Response final :
   std::string* _internal_mutable_error();
   public:
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   void clear_status();
-  ::com::wazuh::api::engine::ReturnStatus status() const;
-  void set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus status() const;
+  void set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   private:
-  ::com::wazuh::api::engine::ReturnStatus _internal_status() const;
-  void _internal_set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus _internal_status() const;
+  void _internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.DefaultParentGet_Response)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response)
  private:
   class _Internal;
 
@@ -2711,7 +2711,7 @@ class DefaultParentGet_Response final :
 // -------------------------------------------------------------------
 
 class DefaultParentPost_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.DefaultParentPost_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request) */ {
  public:
   inline DefaultParentPost_Request() : DefaultParentPost_Request(nullptr) {}
   ~DefaultParentPost_Request() override;
@@ -2814,7 +2814,7 @@ class DefaultParentPost_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.DefaultParentPost_Request";
+    return "com.cyb3rhq.api.engine.policy.DefaultParentPost_Request";
   }
   protected:
   explicit DefaultParentPost_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -2889,7 +2889,7 @@ class DefaultParentPost_Request final :
   std::string* _internal_mutable_parent();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.DefaultParentPost_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request)
  private:
   class _Internal;
 
@@ -2909,7 +2909,7 @@ class DefaultParentPost_Request final :
 // -------------------------------------------------------------------
 
 class DefaultParentPost_Response final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.DefaultParentPost_Response) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.DefaultParentPost_Response) */ {
  public:
   inline DefaultParentPost_Response() : DefaultParentPost_Response(nullptr) {}
   ~DefaultParentPost_Response() override;
@@ -3012,7 +3012,7 @@ class DefaultParentPost_Response final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.DefaultParentPost_Response";
+    return "com.cyb3rhq.api.engine.policy.DefaultParentPost_Response";
   }
   protected:
   explicit DefaultParentPost_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -3069,16 +3069,16 @@ class DefaultParentPost_Response final :
   std::string* _internal_mutable_warning();
   public:
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   void clear_status();
-  ::com::wazuh::api::engine::ReturnStatus status() const;
-  void set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus status() const;
+  void set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   private:
-  ::com::wazuh::api::engine::ReturnStatus _internal_status() const;
-  void _internal_set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus _internal_status() const;
+  void _internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.DefaultParentPost_Response)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.DefaultParentPost_Response)
  private:
   class _Internal;
 
@@ -3098,7 +3098,7 @@ class DefaultParentPost_Response final :
 // -------------------------------------------------------------------
 
 class DefaultParentDelete_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.DefaultParentDelete_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request) */ {
  public:
   inline DefaultParentDelete_Request() : DefaultParentDelete_Request(nullptr) {}
   ~DefaultParentDelete_Request() override;
@@ -3201,7 +3201,7 @@ class DefaultParentDelete_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.DefaultParentDelete_Request";
+    return "com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request";
   }
   protected:
   explicit DefaultParentDelete_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -3276,7 +3276,7 @@ class DefaultParentDelete_Request final :
   std::string* _internal_mutable_parent();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.DefaultParentDelete_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request)
  private:
   class _Internal;
 
@@ -3296,7 +3296,7 @@ class DefaultParentDelete_Request final :
 // -------------------------------------------------------------------
 
 class DefaultParentDelete_Response final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.DefaultParentDelete_Response) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Response) */ {
  public:
   inline DefaultParentDelete_Response() : DefaultParentDelete_Response(nullptr) {}
   ~DefaultParentDelete_Response() override;
@@ -3399,7 +3399,7 @@ class DefaultParentDelete_Response final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.DefaultParentDelete_Response";
+    return "com.cyb3rhq.api.engine.policy.DefaultParentDelete_Response";
   }
   protected:
   explicit DefaultParentDelete_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -3456,16 +3456,16 @@ class DefaultParentDelete_Response final :
   std::string* _internal_mutable_warning();
   public:
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   void clear_status();
-  ::com::wazuh::api::engine::ReturnStatus status() const;
-  void set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus status() const;
+  void set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   private:
-  ::com::wazuh::api::engine::ReturnStatus _internal_status() const;
-  void _internal_set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus _internal_status() const;
+  void _internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.DefaultParentDelete_Response)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Response)
  private:
   class _Internal;
 
@@ -3485,7 +3485,7 @@ class DefaultParentDelete_Response final :
 // -------------------------------------------------------------------
 
 class PoliciesGet_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.PoliciesGet_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.PoliciesGet_Request) */ {
  public:
   inline PoliciesGet_Request() : PoliciesGet_Request(nullptr) {}
   explicit PROTOBUF_CONSTEXPR PoliciesGet_Request(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
@@ -3573,7 +3573,7 @@ class PoliciesGet_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.PoliciesGet_Request";
+    return "com.cyb3rhq.api.engine.policy.PoliciesGet_Request";
   }
   protected:
   explicit PoliciesGet_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -3589,7 +3589,7 @@ class PoliciesGet_Request final :
 
   // accessors -------------------------------------------------------
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.PoliciesGet_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.PoliciesGet_Request)
  private:
   class _Internal;
 
@@ -3603,7 +3603,7 @@ class PoliciesGet_Request final :
 // -------------------------------------------------------------------
 
 class PoliciesGet_Response final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.PoliciesGet_Response) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.PoliciesGet_Response) */ {
  public:
   inline PoliciesGet_Response() : PoliciesGet_Response(nullptr) {}
   ~PoliciesGet_Response() override;
@@ -3706,7 +3706,7 @@ class PoliciesGet_Response final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.PoliciesGet_Response";
+    return "com.cyb3rhq.api.engine.policy.PoliciesGet_Response";
   }
   protected:
   explicit PoliciesGet_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -3769,16 +3769,16 @@ class PoliciesGet_Response final :
   std::string* _internal_mutable_error();
   public:
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   void clear_status();
-  ::com::wazuh::api::engine::ReturnStatus status() const;
-  void set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus status() const;
+  void set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   private:
-  ::com::wazuh::api::engine::ReturnStatus _internal_status() const;
-  void _internal_set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus _internal_status() const;
+  void _internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.PoliciesGet_Response)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.PoliciesGet_Response)
  private:
   class _Internal;
 
@@ -3798,7 +3798,7 @@ class PoliciesGet_Response final :
 // -------------------------------------------------------------------
 
 class NamespacesGet_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.NamespacesGet_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.NamespacesGet_Request) */ {
  public:
   inline NamespacesGet_Request() : NamespacesGet_Request(nullptr) {}
   ~NamespacesGet_Request() override;
@@ -3901,7 +3901,7 @@ class NamespacesGet_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.NamespacesGet_Request";
+    return "com.cyb3rhq.api.engine.policy.NamespacesGet_Request";
   }
   protected:
   explicit NamespacesGet_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -3938,7 +3938,7 @@ class NamespacesGet_Request final :
   std::string* _internal_mutable_policy();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.NamespacesGet_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.NamespacesGet_Request)
  private:
   class _Internal;
 
@@ -3956,7 +3956,7 @@ class NamespacesGet_Request final :
 // -------------------------------------------------------------------
 
 class NamespacesGet_Response final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.policy.NamespacesGet_Response) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.policy.NamespacesGet_Response) */ {
  public:
   inline NamespacesGet_Response() : NamespacesGet_Response(nullptr) {}
   ~NamespacesGet_Response() override;
@@ -4059,7 +4059,7 @@ class NamespacesGet_Response final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.policy.NamespacesGet_Response";
+    return "com.cyb3rhq.api.engine.policy.NamespacesGet_Response";
   }
   protected:
   explicit NamespacesGet_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -4122,16 +4122,16 @@ class NamespacesGet_Response final :
   std::string* _internal_mutable_error();
   public:
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   void clear_status();
-  ::com::wazuh::api::engine::ReturnStatus status() const;
-  void set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus status() const;
+  void set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   private:
-  ::com::wazuh::api::engine::ReturnStatus _internal_status() const;
-  void _internal_set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus _internal_status() const;
+  void _internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.policy.NamespacesGet_Response)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.policy.NamespacesGet_Response)
  private:
   class _Internal;
 
@@ -4172,7 +4172,7 @@ inline void StorePost_Request::clear_policy() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& StorePost_Request::policy() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.StorePost_Request.policy)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.StorePost_Request.policy)
   return _internal_policy();
 }
 template <typename ArgT0, typename... ArgT>
@@ -4180,11 +4180,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void StorePost_Request::set_policy(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.policy_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.StorePost_Request.policy)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.StorePost_Request.policy)
 }
 inline std::string* StorePost_Request::mutable_policy() {
   std::string* _s = _internal_mutable_policy();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.StorePost_Request.policy)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.StorePost_Request.policy)
   return _s;
 }
 inline const std::string& StorePost_Request::_internal_policy() const {
@@ -4199,7 +4199,7 @@ inline std::string* StorePost_Request::_internal_mutable_policy() {
   return _impl_.policy_.Mutable(GetArenaForAllocation());
 }
 inline std::string* StorePost_Request::release_policy() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.StorePost_Request.policy)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.StorePost_Request.policy)
   if (!_internal_has_policy()) {
     return nullptr;
   }
@@ -4224,7 +4224,7 @@ inline void StorePost_Request::set_allocated_policy(std::string* policy) {
     _impl_.policy_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.StorePost_Request.policy)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.StorePost_Request.policy)
 }
 
 // -------------------------------------------------------------------
@@ -4244,7 +4244,7 @@ inline void StoreDelete_Request::clear_policy() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& StoreDelete_Request::policy() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.StoreDelete_Request.policy)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.StoreDelete_Request.policy)
   return _internal_policy();
 }
 template <typename ArgT0, typename... ArgT>
@@ -4252,11 +4252,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void StoreDelete_Request::set_policy(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.policy_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.StoreDelete_Request.policy)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.StoreDelete_Request.policy)
 }
 inline std::string* StoreDelete_Request::mutable_policy() {
   std::string* _s = _internal_mutable_policy();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.StoreDelete_Request.policy)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.StoreDelete_Request.policy)
   return _s;
 }
 inline const std::string& StoreDelete_Request::_internal_policy() const {
@@ -4271,7 +4271,7 @@ inline std::string* StoreDelete_Request::_internal_mutable_policy() {
   return _impl_.policy_.Mutable(GetArenaForAllocation());
 }
 inline std::string* StoreDelete_Request::release_policy() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.StoreDelete_Request.policy)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.StoreDelete_Request.policy)
   if (!_internal_has_policy()) {
     return nullptr;
   }
@@ -4296,7 +4296,7 @@ inline void StoreDelete_Request::set_allocated_policy(std::string* policy) {
     _impl_.policy_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.StoreDelete_Request.policy)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.StoreDelete_Request.policy)
 }
 
 // -------------------------------------------------------------------
@@ -4316,7 +4316,7 @@ inline void StoreGet_Request::clear_policy() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& StoreGet_Request::policy() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.StoreGet_Request.policy)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.StoreGet_Request.policy)
   return _internal_policy();
 }
 template <typename ArgT0, typename... ArgT>
@@ -4324,11 +4324,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void StoreGet_Request::set_policy(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.policy_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.StoreGet_Request.policy)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.StoreGet_Request.policy)
 }
 inline std::string* StoreGet_Request::mutable_policy() {
   std::string* _s = _internal_mutable_policy();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.StoreGet_Request.policy)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.StoreGet_Request.policy)
   return _s;
 }
 inline const std::string& StoreGet_Request::_internal_policy() const {
@@ -4343,7 +4343,7 @@ inline std::string* StoreGet_Request::_internal_mutable_policy() {
   return _impl_.policy_.Mutable(GetArenaForAllocation());
 }
 inline std::string* StoreGet_Request::release_policy() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.StoreGet_Request.policy)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.StoreGet_Request.policy)
   if (!_internal_has_policy()) {
     return nullptr;
   }
@@ -4368,7 +4368,7 @@ inline void StoreGet_Request::set_allocated_policy(std::string* policy) {
     _impl_.policy_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.StoreGet_Request.policy)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.StoreGet_Request.policy)
 }
 
 // repeated string namespaces = 2;
@@ -4383,66 +4383,66 @@ inline void StoreGet_Request::clear_namespaces() {
 }
 inline std::string* StoreGet_Request::add_namespaces() {
   std::string* _s = _internal_add_namespaces();
-  // @@protoc_insertion_point(field_add_mutable:com.wazuh.api.engine.policy.StoreGet_Request.namespaces)
+  // @@protoc_insertion_point(field_add_mutable:com.cyb3rhq.api.engine.policy.StoreGet_Request.namespaces)
   return _s;
 }
 inline const std::string& StoreGet_Request::_internal_namespaces(int index) const {
   return _impl_.namespaces_.Get(index);
 }
 inline const std::string& StoreGet_Request::namespaces(int index) const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.StoreGet_Request.namespaces)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.StoreGet_Request.namespaces)
   return _internal_namespaces(index);
 }
 inline std::string* StoreGet_Request::mutable_namespaces(int index) {
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.StoreGet_Request.namespaces)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.StoreGet_Request.namespaces)
   return _impl_.namespaces_.Mutable(index);
 }
 inline void StoreGet_Request::set_namespaces(int index, const std::string& value) {
   _impl_.namespaces_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.StoreGet_Request.namespaces)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.StoreGet_Request.namespaces)
 }
 inline void StoreGet_Request::set_namespaces(int index, std::string&& value) {
   _impl_.namespaces_.Mutable(index)->assign(std::move(value));
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.StoreGet_Request.namespaces)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.StoreGet_Request.namespaces)
 }
 inline void StoreGet_Request::set_namespaces(int index, const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   _impl_.namespaces_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set_char:com.wazuh.api.engine.policy.StoreGet_Request.namespaces)
+  // @@protoc_insertion_point(field_set_char:com.cyb3rhq.api.engine.policy.StoreGet_Request.namespaces)
 }
 inline void StoreGet_Request::set_namespaces(int index, const char* value, size_t size) {
   _impl_.namespaces_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:com.wazuh.api.engine.policy.StoreGet_Request.namespaces)
+  // @@protoc_insertion_point(field_set_pointer:com.cyb3rhq.api.engine.policy.StoreGet_Request.namespaces)
 }
 inline std::string* StoreGet_Request::_internal_add_namespaces() {
   return _impl_.namespaces_.Add();
 }
 inline void StoreGet_Request::add_namespaces(const std::string& value) {
   _impl_.namespaces_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add:com.wazuh.api.engine.policy.StoreGet_Request.namespaces)
+  // @@protoc_insertion_point(field_add:com.cyb3rhq.api.engine.policy.StoreGet_Request.namespaces)
 }
 inline void StoreGet_Request::add_namespaces(std::string&& value) {
   _impl_.namespaces_.Add(std::move(value));
-  // @@protoc_insertion_point(field_add:com.wazuh.api.engine.policy.StoreGet_Request.namespaces)
+  // @@protoc_insertion_point(field_add:com.cyb3rhq.api.engine.policy.StoreGet_Request.namespaces)
 }
 inline void StoreGet_Request::add_namespaces(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   _impl_.namespaces_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add_char:com.wazuh.api.engine.policy.StoreGet_Request.namespaces)
+  // @@protoc_insertion_point(field_add_char:com.cyb3rhq.api.engine.policy.StoreGet_Request.namespaces)
 }
 inline void StoreGet_Request::add_namespaces(const char* value, size_t size) {
   _impl_.namespaces_.Add()->assign(reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_add_pointer:com.wazuh.api.engine.policy.StoreGet_Request.namespaces)
+  // @@protoc_insertion_point(field_add_pointer:com.cyb3rhq.api.engine.policy.StoreGet_Request.namespaces)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>&
 StoreGet_Request::namespaces() const {
-  // @@protoc_insertion_point(field_list:com.wazuh.api.engine.policy.StoreGet_Request.namespaces)
+  // @@protoc_insertion_point(field_list:com.cyb3rhq.api.engine.policy.StoreGet_Request.namespaces)
   return _impl_.namespaces_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>*
 StoreGet_Request::mutable_namespaces() {
-  // @@protoc_insertion_point(field_mutable_list:com.wazuh.api.engine.policy.StoreGet_Request.namespaces)
+  // @@protoc_insertion_point(field_mutable_list:com.cyb3rhq.api.engine.policy.StoreGet_Request.namespaces)
   return &_impl_.namespaces_;
 }
 
@@ -4450,24 +4450,24 @@ StoreGet_Request::mutable_namespaces() {
 
 // StoreGet_Response
 
-// .com.wazuh.api.engine.ReturnStatus status = 1;
+// .com.cyb3rhq.api.engine.ReturnStatus status = 1;
 inline void StoreGet_Response::clear_status() {
   _impl_.status_ = 0;
 }
-inline ::com::wazuh::api::engine::ReturnStatus StoreGet_Response::_internal_status() const {
-  return static_cast< ::com::wazuh::api::engine::ReturnStatus >(_impl_.status_);
+inline ::com::cyb3rhq::api::engine::ReturnStatus StoreGet_Response::_internal_status() const {
+  return static_cast< ::com::cyb3rhq::api::engine::ReturnStatus >(_impl_.status_);
 }
-inline ::com::wazuh::api::engine::ReturnStatus StoreGet_Response::status() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.StoreGet_Response.status)
+inline ::com::cyb3rhq::api::engine::ReturnStatus StoreGet_Response::status() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.StoreGet_Response.status)
   return _internal_status();
 }
-inline void StoreGet_Response::_internal_set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void StoreGet_Response::_internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   
   _impl_.status_ = value;
 }
-inline void StoreGet_Response::set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void StoreGet_Response::set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.StoreGet_Response.status)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.StoreGet_Response.status)
 }
 
 // optional string error = 2;
@@ -4483,7 +4483,7 @@ inline void StoreGet_Response::clear_error() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& StoreGet_Response::error() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.StoreGet_Response.error)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.StoreGet_Response.error)
   return _internal_error();
 }
 template <typename ArgT0, typename... ArgT>
@@ -4491,11 +4491,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void StoreGet_Response::set_error(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.error_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.StoreGet_Response.error)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.StoreGet_Response.error)
 }
 inline std::string* StoreGet_Response::mutable_error() {
   std::string* _s = _internal_mutable_error();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.StoreGet_Response.error)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.StoreGet_Response.error)
   return _s;
 }
 inline const std::string& StoreGet_Response::_internal_error() const {
@@ -4510,7 +4510,7 @@ inline std::string* StoreGet_Response::_internal_mutable_error() {
   return _impl_.error_.Mutable(GetArenaForAllocation());
 }
 inline std::string* StoreGet_Response::release_error() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.StoreGet_Response.error)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.StoreGet_Response.error)
   if (!_internal_has_error()) {
     return nullptr;
   }
@@ -4535,7 +4535,7 @@ inline void StoreGet_Response::set_allocated_error(std::string* error) {
     _impl_.error_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.StoreGet_Response.error)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.StoreGet_Response.error)
 }
 
 // optional string data = 3;
@@ -4551,7 +4551,7 @@ inline void StoreGet_Response::clear_data() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& StoreGet_Response::data() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.StoreGet_Response.data)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.StoreGet_Response.data)
   return _internal_data();
 }
 template <typename ArgT0, typename... ArgT>
@@ -4559,11 +4559,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void StoreGet_Response::set_data(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.data_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.StoreGet_Response.data)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.StoreGet_Response.data)
 }
 inline std::string* StoreGet_Response::mutable_data() {
   std::string* _s = _internal_mutable_data();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.StoreGet_Response.data)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.StoreGet_Response.data)
   return _s;
 }
 inline const std::string& StoreGet_Response::_internal_data() const {
@@ -4578,7 +4578,7 @@ inline std::string* StoreGet_Response::_internal_mutable_data() {
   return _impl_.data_.Mutable(GetArenaForAllocation());
 }
 inline std::string* StoreGet_Response::release_data() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.StoreGet_Response.data)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.StoreGet_Response.data)
   if (!_internal_has_data()) {
     return nullptr;
   }
@@ -4603,7 +4603,7 @@ inline void StoreGet_Response::set_allocated_data(std::string* data) {
     _impl_.data_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.StoreGet_Response.data)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.StoreGet_Response.data)
 }
 
 // -------------------------------------------------------------------
@@ -4623,7 +4623,7 @@ inline void AssetPost_Request::clear_policy() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& AssetPost_Request::policy() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetPost_Request.policy)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetPost_Request.policy)
   return _internal_policy();
 }
 template <typename ArgT0, typename... ArgT>
@@ -4631,11 +4631,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void AssetPost_Request::set_policy(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.policy_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetPost_Request.policy)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetPost_Request.policy)
 }
 inline std::string* AssetPost_Request::mutable_policy() {
   std::string* _s = _internal_mutable_policy();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetPost_Request.policy)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetPost_Request.policy)
   return _s;
 }
 inline const std::string& AssetPost_Request::_internal_policy() const {
@@ -4650,7 +4650,7 @@ inline std::string* AssetPost_Request::_internal_mutable_policy() {
   return _impl_.policy_.Mutable(GetArenaForAllocation());
 }
 inline std::string* AssetPost_Request::release_policy() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.AssetPost_Request.policy)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.AssetPost_Request.policy)
   if (!_internal_has_policy()) {
     return nullptr;
   }
@@ -4675,7 +4675,7 @@ inline void AssetPost_Request::set_allocated_policy(std::string* policy) {
     _impl_.policy_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.AssetPost_Request.policy)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.AssetPost_Request.policy)
 }
 
 // optional string asset = 2;
@@ -4691,7 +4691,7 @@ inline void AssetPost_Request::clear_asset() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& AssetPost_Request::asset() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetPost_Request.asset)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetPost_Request.asset)
   return _internal_asset();
 }
 template <typename ArgT0, typename... ArgT>
@@ -4699,11 +4699,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void AssetPost_Request::set_asset(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.asset_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetPost_Request.asset)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetPost_Request.asset)
 }
 inline std::string* AssetPost_Request::mutable_asset() {
   std::string* _s = _internal_mutable_asset();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetPost_Request.asset)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetPost_Request.asset)
   return _s;
 }
 inline const std::string& AssetPost_Request::_internal_asset() const {
@@ -4718,7 +4718,7 @@ inline std::string* AssetPost_Request::_internal_mutable_asset() {
   return _impl_.asset_.Mutable(GetArenaForAllocation());
 }
 inline std::string* AssetPost_Request::release_asset() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.AssetPost_Request.asset)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.AssetPost_Request.asset)
   if (!_internal_has_asset()) {
     return nullptr;
   }
@@ -4743,7 +4743,7 @@ inline void AssetPost_Request::set_allocated_asset(std::string* asset) {
     _impl_.asset_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.AssetPost_Request.asset)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.AssetPost_Request.asset)
 }
 
 // optional string namespace = 3;
@@ -4759,7 +4759,7 @@ inline void AssetPost_Request::clear_namespace_() {
   _impl_._has_bits_[0] &= ~0x00000004u;
 }
 inline const std::string& AssetPost_Request::namespace_() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetPost_Request.namespace)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetPost_Request.namespace)
   return _internal_namespace_();
 }
 template <typename ArgT0, typename... ArgT>
@@ -4767,11 +4767,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void AssetPost_Request::set_namespace_(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000004u;
  _impl_.namespace__.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetPost_Request.namespace)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetPost_Request.namespace)
 }
 inline std::string* AssetPost_Request::mutable_namespace_() {
   std::string* _s = _internal_mutable_namespace_();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetPost_Request.namespace)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetPost_Request.namespace)
   return _s;
 }
 inline const std::string& AssetPost_Request::_internal_namespace_() const {
@@ -4786,7 +4786,7 @@ inline std::string* AssetPost_Request::_internal_mutable_namespace_() {
   return _impl_.namespace__.Mutable(GetArenaForAllocation());
 }
 inline std::string* AssetPost_Request::release_namespace_() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.AssetPost_Request.namespace)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.AssetPost_Request.namespace)
   if (!_internal_has_namespace_()) {
     return nullptr;
   }
@@ -4811,31 +4811,31 @@ inline void AssetPost_Request::set_allocated_namespace_(std::string* namespace_)
     _impl_.namespace__.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.AssetPost_Request.namespace)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.AssetPost_Request.namespace)
 }
 
 // -------------------------------------------------------------------
 
 // AssetPost_Response
 
-// .com.wazuh.api.engine.ReturnStatus status = 1;
+// .com.cyb3rhq.api.engine.ReturnStatus status = 1;
 inline void AssetPost_Response::clear_status() {
   _impl_.status_ = 0;
 }
-inline ::com::wazuh::api::engine::ReturnStatus AssetPost_Response::_internal_status() const {
-  return static_cast< ::com::wazuh::api::engine::ReturnStatus >(_impl_.status_);
+inline ::com::cyb3rhq::api::engine::ReturnStatus AssetPost_Response::_internal_status() const {
+  return static_cast< ::com::cyb3rhq::api::engine::ReturnStatus >(_impl_.status_);
 }
-inline ::com::wazuh::api::engine::ReturnStatus AssetPost_Response::status() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetPost_Response.status)
+inline ::com::cyb3rhq::api::engine::ReturnStatus AssetPost_Response::status() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetPost_Response.status)
   return _internal_status();
 }
-inline void AssetPost_Response::_internal_set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void AssetPost_Response::_internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   
   _impl_.status_ = value;
 }
-inline void AssetPost_Response::set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void AssetPost_Response::set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetPost_Response.status)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetPost_Response.status)
 }
 
 // optional string error = 2;
@@ -4851,7 +4851,7 @@ inline void AssetPost_Response::clear_error() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& AssetPost_Response::error() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetPost_Response.error)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetPost_Response.error)
   return _internal_error();
 }
 template <typename ArgT0, typename... ArgT>
@@ -4859,11 +4859,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void AssetPost_Response::set_error(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.error_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetPost_Response.error)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetPost_Response.error)
 }
 inline std::string* AssetPost_Response::mutable_error() {
   std::string* _s = _internal_mutable_error();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetPost_Response.error)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetPost_Response.error)
   return _s;
 }
 inline const std::string& AssetPost_Response::_internal_error() const {
@@ -4878,7 +4878,7 @@ inline std::string* AssetPost_Response::_internal_mutable_error() {
   return _impl_.error_.Mutable(GetArenaForAllocation());
 }
 inline std::string* AssetPost_Response::release_error() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.AssetPost_Response.error)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.AssetPost_Response.error)
   if (!_internal_has_error()) {
     return nullptr;
   }
@@ -4903,7 +4903,7 @@ inline void AssetPost_Response::set_allocated_error(std::string* error) {
     _impl_.error_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.AssetPost_Response.error)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.AssetPost_Response.error)
 }
 
 // optional string warning = 3;
@@ -4919,7 +4919,7 @@ inline void AssetPost_Response::clear_warning() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& AssetPost_Response::warning() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetPost_Response.warning)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetPost_Response.warning)
   return _internal_warning();
 }
 template <typename ArgT0, typename... ArgT>
@@ -4927,11 +4927,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void AssetPost_Response::set_warning(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.warning_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetPost_Response.warning)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetPost_Response.warning)
 }
 inline std::string* AssetPost_Response::mutable_warning() {
   std::string* _s = _internal_mutable_warning();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetPost_Response.warning)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetPost_Response.warning)
   return _s;
 }
 inline const std::string& AssetPost_Response::_internal_warning() const {
@@ -4946,7 +4946,7 @@ inline std::string* AssetPost_Response::_internal_mutable_warning() {
   return _impl_.warning_.Mutable(GetArenaForAllocation());
 }
 inline std::string* AssetPost_Response::release_warning() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.AssetPost_Response.warning)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.AssetPost_Response.warning)
   if (!_internal_has_warning()) {
     return nullptr;
   }
@@ -4971,7 +4971,7 @@ inline void AssetPost_Response::set_allocated_warning(std::string* warning) {
     _impl_.warning_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.AssetPost_Response.warning)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.AssetPost_Response.warning)
 }
 
 // -------------------------------------------------------------------
@@ -4991,7 +4991,7 @@ inline void AssetDelete_Request::clear_policy() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& AssetDelete_Request::policy() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetDelete_Request.policy)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetDelete_Request.policy)
   return _internal_policy();
 }
 template <typename ArgT0, typename... ArgT>
@@ -4999,11 +4999,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void AssetDelete_Request::set_policy(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.policy_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetDelete_Request.policy)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetDelete_Request.policy)
 }
 inline std::string* AssetDelete_Request::mutable_policy() {
   std::string* _s = _internal_mutable_policy();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetDelete_Request.policy)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetDelete_Request.policy)
   return _s;
 }
 inline const std::string& AssetDelete_Request::_internal_policy() const {
@@ -5018,7 +5018,7 @@ inline std::string* AssetDelete_Request::_internal_mutable_policy() {
   return _impl_.policy_.Mutable(GetArenaForAllocation());
 }
 inline std::string* AssetDelete_Request::release_policy() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.AssetDelete_Request.policy)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.AssetDelete_Request.policy)
   if (!_internal_has_policy()) {
     return nullptr;
   }
@@ -5043,7 +5043,7 @@ inline void AssetDelete_Request::set_allocated_policy(std::string* policy) {
     _impl_.policy_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.AssetDelete_Request.policy)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.AssetDelete_Request.policy)
 }
 
 // optional string asset = 2;
@@ -5059,7 +5059,7 @@ inline void AssetDelete_Request::clear_asset() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& AssetDelete_Request::asset() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetDelete_Request.asset)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetDelete_Request.asset)
   return _internal_asset();
 }
 template <typename ArgT0, typename... ArgT>
@@ -5067,11 +5067,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void AssetDelete_Request::set_asset(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.asset_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetDelete_Request.asset)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetDelete_Request.asset)
 }
 inline std::string* AssetDelete_Request::mutable_asset() {
   std::string* _s = _internal_mutable_asset();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetDelete_Request.asset)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetDelete_Request.asset)
   return _s;
 }
 inline const std::string& AssetDelete_Request::_internal_asset() const {
@@ -5086,7 +5086,7 @@ inline std::string* AssetDelete_Request::_internal_mutable_asset() {
   return _impl_.asset_.Mutable(GetArenaForAllocation());
 }
 inline std::string* AssetDelete_Request::release_asset() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.AssetDelete_Request.asset)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.AssetDelete_Request.asset)
   if (!_internal_has_asset()) {
     return nullptr;
   }
@@ -5111,7 +5111,7 @@ inline void AssetDelete_Request::set_allocated_asset(std::string* asset) {
     _impl_.asset_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.AssetDelete_Request.asset)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.AssetDelete_Request.asset)
 }
 
 // optional string namespace = 3;
@@ -5127,7 +5127,7 @@ inline void AssetDelete_Request::clear_namespace_() {
   _impl_._has_bits_[0] &= ~0x00000004u;
 }
 inline const std::string& AssetDelete_Request::namespace_() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetDelete_Request.namespace)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetDelete_Request.namespace)
   return _internal_namespace_();
 }
 template <typename ArgT0, typename... ArgT>
@@ -5135,11 +5135,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void AssetDelete_Request::set_namespace_(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000004u;
  _impl_.namespace__.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetDelete_Request.namespace)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetDelete_Request.namespace)
 }
 inline std::string* AssetDelete_Request::mutable_namespace_() {
   std::string* _s = _internal_mutable_namespace_();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetDelete_Request.namespace)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetDelete_Request.namespace)
   return _s;
 }
 inline const std::string& AssetDelete_Request::_internal_namespace_() const {
@@ -5154,7 +5154,7 @@ inline std::string* AssetDelete_Request::_internal_mutable_namespace_() {
   return _impl_.namespace__.Mutable(GetArenaForAllocation());
 }
 inline std::string* AssetDelete_Request::release_namespace_() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.AssetDelete_Request.namespace)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.AssetDelete_Request.namespace)
   if (!_internal_has_namespace_()) {
     return nullptr;
   }
@@ -5179,31 +5179,31 @@ inline void AssetDelete_Request::set_allocated_namespace_(std::string* namespace
     _impl_.namespace__.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.AssetDelete_Request.namespace)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.AssetDelete_Request.namespace)
 }
 
 // -------------------------------------------------------------------
 
 // AssetDelete_Response
 
-// .com.wazuh.api.engine.ReturnStatus status = 1;
+// .com.cyb3rhq.api.engine.ReturnStatus status = 1;
 inline void AssetDelete_Response::clear_status() {
   _impl_.status_ = 0;
 }
-inline ::com::wazuh::api::engine::ReturnStatus AssetDelete_Response::_internal_status() const {
-  return static_cast< ::com::wazuh::api::engine::ReturnStatus >(_impl_.status_);
+inline ::com::cyb3rhq::api::engine::ReturnStatus AssetDelete_Response::_internal_status() const {
+  return static_cast< ::com::cyb3rhq::api::engine::ReturnStatus >(_impl_.status_);
 }
-inline ::com::wazuh::api::engine::ReturnStatus AssetDelete_Response::status() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetDelete_Response.status)
+inline ::com::cyb3rhq::api::engine::ReturnStatus AssetDelete_Response::status() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetDelete_Response.status)
   return _internal_status();
 }
-inline void AssetDelete_Response::_internal_set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void AssetDelete_Response::_internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   
   _impl_.status_ = value;
 }
-inline void AssetDelete_Response::set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void AssetDelete_Response::set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetDelete_Response.status)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetDelete_Response.status)
 }
 
 // optional string error = 2;
@@ -5219,7 +5219,7 @@ inline void AssetDelete_Response::clear_error() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& AssetDelete_Response::error() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetDelete_Response.error)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetDelete_Response.error)
   return _internal_error();
 }
 template <typename ArgT0, typename... ArgT>
@@ -5227,11 +5227,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void AssetDelete_Response::set_error(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.error_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetDelete_Response.error)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetDelete_Response.error)
 }
 inline std::string* AssetDelete_Response::mutable_error() {
   std::string* _s = _internal_mutable_error();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetDelete_Response.error)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetDelete_Response.error)
   return _s;
 }
 inline const std::string& AssetDelete_Response::_internal_error() const {
@@ -5246,7 +5246,7 @@ inline std::string* AssetDelete_Response::_internal_mutable_error() {
   return _impl_.error_.Mutable(GetArenaForAllocation());
 }
 inline std::string* AssetDelete_Response::release_error() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.AssetDelete_Response.error)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.AssetDelete_Response.error)
   if (!_internal_has_error()) {
     return nullptr;
   }
@@ -5271,7 +5271,7 @@ inline void AssetDelete_Response::set_allocated_error(std::string* error) {
     _impl_.error_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.AssetDelete_Response.error)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.AssetDelete_Response.error)
 }
 
 // optional string warning = 3;
@@ -5287,7 +5287,7 @@ inline void AssetDelete_Response::clear_warning() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& AssetDelete_Response::warning() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetDelete_Response.warning)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetDelete_Response.warning)
   return _internal_warning();
 }
 template <typename ArgT0, typename... ArgT>
@@ -5295,11 +5295,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void AssetDelete_Response::set_warning(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.warning_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetDelete_Response.warning)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetDelete_Response.warning)
 }
 inline std::string* AssetDelete_Response::mutable_warning() {
   std::string* _s = _internal_mutable_warning();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetDelete_Response.warning)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetDelete_Response.warning)
   return _s;
 }
 inline const std::string& AssetDelete_Response::_internal_warning() const {
@@ -5314,7 +5314,7 @@ inline std::string* AssetDelete_Response::_internal_mutable_warning() {
   return _impl_.warning_.Mutable(GetArenaForAllocation());
 }
 inline std::string* AssetDelete_Response::release_warning() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.AssetDelete_Response.warning)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.AssetDelete_Response.warning)
   if (!_internal_has_warning()) {
     return nullptr;
   }
@@ -5339,7 +5339,7 @@ inline void AssetDelete_Response::set_allocated_warning(std::string* warning) {
     _impl_.warning_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.AssetDelete_Response.warning)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.AssetDelete_Response.warning)
 }
 
 // -------------------------------------------------------------------
@@ -5359,7 +5359,7 @@ inline void AssetGet_Request::clear_policy() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& AssetGet_Request::policy() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetGet_Request.policy)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetGet_Request.policy)
   return _internal_policy();
 }
 template <typename ArgT0, typename... ArgT>
@@ -5367,11 +5367,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void AssetGet_Request::set_policy(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.policy_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetGet_Request.policy)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetGet_Request.policy)
 }
 inline std::string* AssetGet_Request::mutable_policy() {
   std::string* _s = _internal_mutable_policy();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetGet_Request.policy)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetGet_Request.policy)
   return _s;
 }
 inline const std::string& AssetGet_Request::_internal_policy() const {
@@ -5386,7 +5386,7 @@ inline std::string* AssetGet_Request::_internal_mutable_policy() {
   return _impl_.policy_.Mutable(GetArenaForAllocation());
 }
 inline std::string* AssetGet_Request::release_policy() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.AssetGet_Request.policy)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.AssetGet_Request.policy)
   if (!_internal_has_policy()) {
     return nullptr;
   }
@@ -5411,7 +5411,7 @@ inline void AssetGet_Request::set_allocated_policy(std::string* policy) {
     _impl_.policy_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.AssetGet_Request.policy)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.AssetGet_Request.policy)
 }
 
 // optional string namespace = 2;
@@ -5427,7 +5427,7 @@ inline void AssetGet_Request::clear_namespace_() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& AssetGet_Request::namespace_() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetGet_Request.namespace)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetGet_Request.namespace)
   return _internal_namespace_();
 }
 template <typename ArgT0, typename... ArgT>
@@ -5435,11 +5435,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void AssetGet_Request::set_namespace_(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.namespace__.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetGet_Request.namespace)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetGet_Request.namespace)
 }
 inline std::string* AssetGet_Request::mutable_namespace_() {
   std::string* _s = _internal_mutable_namespace_();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetGet_Request.namespace)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetGet_Request.namespace)
   return _s;
 }
 inline const std::string& AssetGet_Request::_internal_namespace_() const {
@@ -5454,7 +5454,7 @@ inline std::string* AssetGet_Request::_internal_mutable_namespace_() {
   return _impl_.namespace__.Mutable(GetArenaForAllocation());
 }
 inline std::string* AssetGet_Request::release_namespace_() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.AssetGet_Request.namespace)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.AssetGet_Request.namespace)
   if (!_internal_has_namespace_()) {
     return nullptr;
   }
@@ -5479,31 +5479,31 @@ inline void AssetGet_Request::set_allocated_namespace_(std::string* namespace_) 
     _impl_.namespace__.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.AssetGet_Request.namespace)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.AssetGet_Request.namespace)
 }
 
 // -------------------------------------------------------------------
 
 // AssetGet_Response
 
-// .com.wazuh.api.engine.ReturnStatus status = 1;
+// .com.cyb3rhq.api.engine.ReturnStatus status = 1;
 inline void AssetGet_Response::clear_status() {
   _impl_.status_ = 0;
 }
-inline ::com::wazuh::api::engine::ReturnStatus AssetGet_Response::_internal_status() const {
-  return static_cast< ::com::wazuh::api::engine::ReturnStatus >(_impl_.status_);
+inline ::com::cyb3rhq::api::engine::ReturnStatus AssetGet_Response::_internal_status() const {
+  return static_cast< ::com::cyb3rhq::api::engine::ReturnStatus >(_impl_.status_);
 }
-inline ::com::wazuh::api::engine::ReturnStatus AssetGet_Response::status() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetGet_Response.status)
+inline ::com::cyb3rhq::api::engine::ReturnStatus AssetGet_Response::status() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetGet_Response.status)
   return _internal_status();
 }
-inline void AssetGet_Response::_internal_set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void AssetGet_Response::_internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   
   _impl_.status_ = value;
 }
-inline void AssetGet_Response::set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void AssetGet_Response::set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetGet_Response.status)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetGet_Response.status)
 }
 
 // optional string error = 2;
@@ -5519,7 +5519,7 @@ inline void AssetGet_Response::clear_error() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& AssetGet_Response::error() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetGet_Response.error)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetGet_Response.error)
   return _internal_error();
 }
 template <typename ArgT0, typename... ArgT>
@@ -5527,11 +5527,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void AssetGet_Response::set_error(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.error_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetGet_Response.error)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetGet_Response.error)
 }
 inline std::string* AssetGet_Response::mutable_error() {
   std::string* _s = _internal_mutable_error();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetGet_Response.error)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetGet_Response.error)
   return _s;
 }
 inline const std::string& AssetGet_Response::_internal_error() const {
@@ -5546,7 +5546,7 @@ inline std::string* AssetGet_Response::_internal_mutable_error() {
   return _impl_.error_.Mutable(GetArenaForAllocation());
 }
 inline std::string* AssetGet_Response::release_error() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.AssetGet_Response.error)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.AssetGet_Response.error)
   if (!_internal_has_error()) {
     return nullptr;
   }
@@ -5571,7 +5571,7 @@ inline void AssetGet_Response::set_allocated_error(std::string* error) {
     _impl_.error_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.AssetGet_Response.error)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.AssetGet_Response.error)
 }
 
 // repeated string data = 3;
@@ -5586,66 +5586,66 @@ inline void AssetGet_Response::clear_data() {
 }
 inline std::string* AssetGet_Response::add_data() {
   std::string* _s = _internal_add_data();
-  // @@protoc_insertion_point(field_add_mutable:com.wazuh.api.engine.policy.AssetGet_Response.data)
+  // @@protoc_insertion_point(field_add_mutable:com.cyb3rhq.api.engine.policy.AssetGet_Response.data)
   return _s;
 }
 inline const std::string& AssetGet_Response::_internal_data(int index) const {
   return _impl_.data_.Get(index);
 }
 inline const std::string& AssetGet_Response::data(int index) const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetGet_Response.data)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetGet_Response.data)
   return _internal_data(index);
 }
 inline std::string* AssetGet_Response::mutable_data(int index) {
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetGet_Response.data)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetGet_Response.data)
   return _impl_.data_.Mutable(index);
 }
 inline void AssetGet_Response::set_data(int index, const std::string& value) {
   _impl_.data_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetGet_Response.data)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetGet_Response.data)
 }
 inline void AssetGet_Response::set_data(int index, std::string&& value) {
   _impl_.data_.Mutable(index)->assign(std::move(value));
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetGet_Response.data)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetGet_Response.data)
 }
 inline void AssetGet_Response::set_data(int index, const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   _impl_.data_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set_char:com.wazuh.api.engine.policy.AssetGet_Response.data)
+  // @@protoc_insertion_point(field_set_char:com.cyb3rhq.api.engine.policy.AssetGet_Response.data)
 }
 inline void AssetGet_Response::set_data(int index, const char* value, size_t size) {
   _impl_.data_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:com.wazuh.api.engine.policy.AssetGet_Response.data)
+  // @@protoc_insertion_point(field_set_pointer:com.cyb3rhq.api.engine.policy.AssetGet_Response.data)
 }
 inline std::string* AssetGet_Response::_internal_add_data() {
   return _impl_.data_.Add();
 }
 inline void AssetGet_Response::add_data(const std::string& value) {
   _impl_.data_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add:com.wazuh.api.engine.policy.AssetGet_Response.data)
+  // @@protoc_insertion_point(field_add:com.cyb3rhq.api.engine.policy.AssetGet_Response.data)
 }
 inline void AssetGet_Response::add_data(std::string&& value) {
   _impl_.data_.Add(std::move(value));
-  // @@protoc_insertion_point(field_add:com.wazuh.api.engine.policy.AssetGet_Response.data)
+  // @@protoc_insertion_point(field_add:com.cyb3rhq.api.engine.policy.AssetGet_Response.data)
 }
 inline void AssetGet_Response::add_data(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   _impl_.data_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add_char:com.wazuh.api.engine.policy.AssetGet_Response.data)
+  // @@protoc_insertion_point(field_add_char:com.cyb3rhq.api.engine.policy.AssetGet_Response.data)
 }
 inline void AssetGet_Response::add_data(const char* value, size_t size) {
   _impl_.data_.Add()->assign(reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_add_pointer:com.wazuh.api.engine.policy.AssetGet_Response.data)
+  // @@protoc_insertion_point(field_add_pointer:com.cyb3rhq.api.engine.policy.AssetGet_Response.data)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>&
 AssetGet_Response::data() const {
-  // @@protoc_insertion_point(field_list:com.wazuh.api.engine.policy.AssetGet_Response.data)
+  // @@protoc_insertion_point(field_list:com.cyb3rhq.api.engine.policy.AssetGet_Response.data)
   return _impl_.data_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>*
 AssetGet_Response::mutable_data() {
-  // @@protoc_insertion_point(field_mutable_list:com.wazuh.api.engine.policy.AssetGet_Response.data)
+  // @@protoc_insertion_point(field_mutable_list:com.cyb3rhq.api.engine.policy.AssetGet_Response.data)
   return &_impl_.data_;
 }
 
@@ -5666,7 +5666,7 @@ inline void AssetCleanDeleted_Request::clear_policy() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& AssetCleanDeleted_Request::policy() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetCleanDeleted_Request.policy)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Request.policy)
   return _internal_policy();
 }
 template <typename ArgT0, typename... ArgT>
@@ -5674,11 +5674,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void AssetCleanDeleted_Request::set_policy(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.policy_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetCleanDeleted_Request.policy)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Request.policy)
 }
 inline std::string* AssetCleanDeleted_Request::mutable_policy() {
   std::string* _s = _internal_mutable_policy();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetCleanDeleted_Request.policy)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Request.policy)
   return _s;
 }
 inline const std::string& AssetCleanDeleted_Request::_internal_policy() const {
@@ -5693,7 +5693,7 @@ inline std::string* AssetCleanDeleted_Request::_internal_mutable_policy() {
   return _impl_.policy_.Mutable(GetArenaForAllocation());
 }
 inline std::string* AssetCleanDeleted_Request::release_policy() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.AssetCleanDeleted_Request.policy)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Request.policy)
   if (!_internal_has_policy()) {
     return nullptr;
   }
@@ -5718,31 +5718,31 @@ inline void AssetCleanDeleted_Request::set_allocated_policy(std::string* policy)
     _impl_.policy_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.AssetCleanDeleted_Request.policy)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Request.policy)
 }
 
 // -------------------------------------------------------------------
 
 // AssetCleanDeleted_Response
 
-// .com.wazuh.api.engine.ReturnStatus status = 1;
+// .com.cyb3rhq.api.engine.ReturnStatus status = 1;
 inline void AssetCleanDeleted_Response::clear_status() {
   _impl_.status_ = 0;
 }
-inline ::com::wazuh::api::engine::ReturnStatus AssetCleanDeleted_Response::_internal_status() const {
-  return static_cast< ::com::wazuh::api::engine::ReturnStatus >(_impl_.status_);
+inline ::com::cyb3rhq::api::engine::ReturnStatus AssetCleanDeleted_Response::_internal_status() const {
+  return static_cast< ::com::cyb3rhq::api::engine::ReturnStatus >(_impl_.status_);
 }
-inline ::com::wazuh::api::engine::ReturnStatus AssetCleanDeleted_Response::status() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetCleanDeleted_Response.status)
+inline ::com::cyb3rhq::api::engine::ReturnStatus AssetCleanDeleted_Response::status() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Response.status)
   return _internal_status();
 }
-inline void AssetCleanDeleted_Response::_internal_set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void AssetCleanDeleted_Response::_internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   
   _impl_.status_ = value;
 }
-inline void AssetCleanDeleted_Response::set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void AssetCleanDeleted_Response::set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetCleanDeleted_Response.status)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Response.status)
 }
 
 // optional string error = 2;
@@ -5758,7 +5758,7 @@ inline void AssetCleanDeleted_Response::clear_error() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& AssetCleanDeleted_Response::error() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetCleanDeleted_Response.error)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Response.error)
   return _internal_error();
 }
 template <typename ArgT0, typename... ArgT>
@@ -5766,11 +5766,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void AssetCleanDeleted_Response::set_error(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.error_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetCleanDeleted_Response.error)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Response.error)
 }
 inline std::string* AssetCleanDeleted_Response::mutable_error() {
   std::string* _s = _internal_mutable_error();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetCleanDeleted_Response.error)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Response.error)
   return _s;
 }
 inline const std::string& AssetCleanDeleted_Response::_internal_error() const {
@@ -5785,7 +5785,7 @@ inline std::string* AssetCleanDeleted_Response::_internal_mutable_error() {
   return _impl_.error_.Mutable(GetArenaForAllocation());
 }
 inline std::string* AssetCleanDeleted_Response::release_error() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.AssetCleanDeleted_Response.error)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Response.error)
   if (!_internal_has_error()) {
     return nullptr;
   }
@@ -5810,7 +5810,7 @@ inline void AssetCleanDeleted_Response::set_allocated_error(std::string* error) 
     _impl_.error_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.AssetCleanDeleted_Response.error)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Response.error)
 }
 
 // optional string data = 3;
@@ -5826,7 +5826,7 @@ inline void AssetCleanDeleted_Response::clear_data() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& AssetCleanDeleted_Response::data() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.AssetCleanDeleted_Response.data)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Response.data)
   return _internal_data();
 }
 template <typename ArgT0, typename... ArgT>
@@ -5834,11 +5834,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void AssetCleanDeleted_Response::set_data(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.data_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.AssetCleanDeleted_Response.data)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Response.data)
 }
 inline std::string* AssetCleanDeleted_Response::mutable_data() {
   std::string* _s = _internal_mutable_data();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.AssetCleanDeleted_Response.data)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Response.data)
   return _s;
 }
 inline const std::string& AssetCleanDeleted_Response::_internal_data() const {
@@ -5853,7 +5853,7 @@ inline std::string* AssetCleanDeleted_Response::_internal_mutable_data() {
   return _impl_.data_.Mutable(GetArenaForAllocation());
 }
 inline std::string* AssetCleanDeleted_Response::release_data() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.AssetCleanDeleted_Response.data)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Response.data)
   if (!_internal_has_data()) {
     return nullptr;
   }
@@ -5878,7 +5878,7 @@ inline void AssetCleanDeleted_Response::set_allocated_data(std::string* data) {
     _impl_.data_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.AssetCleanDeleted_Response.data)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.AssetCleanDeleted_Response.data)
 }
 
 // -------------------------------------------------------------------
@@ -5898,7 +5898,7 @@ inline void DefaultParentGet_Request::clear_policy() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& DefaultParentGet_Request::policy() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentGet_Request.policy)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentGet_Request.policy)
   return _internal_policy();
 }
 template <typename ArgT0, typename... ArgT>
@@ -5906,11 +5906,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DefaultParentGet_Request::set_policy(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.policy_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentGet_Request.policy)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentGet_Request.policy)
 }
 inline std::string* DefaultParentGet_Request::mutable_policy() {
   std::string* _s = _internal_mutable_policy();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.DefaultParentGet_Request.policy)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.DefaultParentGet_Request.policy)
   return _s;
 }
 inline const std::string& DefaultParentGet_Request::_internal_policy() const {
@@ -5925,7 +5925,7 @@ inline std::string* DefaultParentGet_Request::_internal_mutable_policy() {
   return _impl_.policy_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DefaultParentGet_Request::release_policy() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.DefaultParentGet_Request.policy)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.DefaultParentGet_Request.policy)
   if (!_internal_has_policy()) {
     return nullptr;
   }
@@ -5950,7 +5950,7 @@ inline void DefaultParentGet_Request::set_allocated_policy(std::string* policy) 
     _impl_.policy_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.DefaultParentGet_Request.policy)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.DefaultParentGet_Request.policy)
 }
 
 // optional string namespace = 2;
@@ -5966,7 +5966,7 @@ inline void DefaultParentGet_Request::clear_namespace_() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& DefaultParentGet_Request::namespace_() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentGet_Request.namespace)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentGet_Request.namespace)
   return _internal_namespace_();
 }
 template <typename ArgT0, typename... ArgT>
@@ -5974,11 +5974,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DefaultParentGet_Request::set_namespace_(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.namespace__.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentGet_Request.namespace)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentGet_Request.namespace)
 }
 inline std::string* DefaultParentGet_Request::mutable_namespace_() {
   std::string* _s = _internal_mutable_namespace_();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.DefaultParentGet_Request.namespace)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.DefaultParentGet_Request.namespace)
   return _s;
 }
 inline const std::string& DefaultParentGet_Request::_internal_namespace_() const {
@@ -5993,7 +5993,7 @@ inline std::string* DefaultParentGet_Request::_internal_mutable_namespace_() {
   return _impl_.namespace__.Mutable(GetArenaForAllocation());
 }
 inline std::string* DefaultParentGet_Request::release_namespace_() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.DefaultParentGet_Request.namespace)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.DefaultParentGet_Request.namespace)
   if (!_internal_has_namespace_()) {
     return nullptr;
   }
@@ -6018,31 +6018,31 @@ inline void DefaultParentGet_Request::set_allocated_namespace_(std::string* name
     _impl_.namespace__.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.DefaultParentGet_Request.namespace)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.DefaultParentGet_Request.namespace)
 }
 
 // -------------------------------------------------------------------
 
 // DefaultParentGet_Response
 
-// .com.wazuh.api.engine.ReturnStatus status = 1;
+// .com.cyb3rhq.api.engine.ReturnStatus status = 1;
 inline void DefaultParentGet_Response::clear_status() {
   _impl_.status_ = 0;
 }
-inline ::com::wazuh::api::engine::ReturnStatus DefaultParentGet_Response::_internal_status() const {
-  return static_cast< ::com::wazuh::api::engine::ReturnStatus >(_impl_.status_);
+inline ::com::cyb3rhq::api::engine::ReturnStatus DefaultParentGet_Response::_internal_status() const {
+  return static_cast< ::com::cyb3rhq::api::engine::ReturnStatus >(_impl_.status_);
 }
-inline ::com::wazuh::api::engine::ReturnStatus DefaultParentGet_Response::status() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentGet_Response.status)
+inline ::com::cyb3rhq::api::engine::ReturnStatus DefaultParentGet_Response::status() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.status)
   return _internal_status();
 }
-inline void DefaultParentGet_Response::_internal_set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void DefaultParentGet_Response::_internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   
   _impl_.status_ = value;
 }
-inline void DefaultParentGet_Response::set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void DefaultParentGet_Response::set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentGet_Response.status)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.status)
 }
 
 // optional string error = 2;
@@ -6058,7 +6058,7 @@ inline void DefaultParentGet_Response::clear_error() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& DefaultParentGet_Response::error() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentGet_Response.error)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.error)
   return _internal_error();
 }
 template <typename ArgT0, typename... ArgT>
@@ -6066,11 +6066,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DefaultParentGet_Response::set_error(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.error_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentGet_Response.error)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.error)
 }
 inline std::string* DefaultParentGet_Response::mutable_error() {
   std::string* _s = _internal_mutable_error();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.DefaultParentGet_Response.error)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.error)
   return _s;
 }
 inline const std::string& DefaultParentGet_Response::_internal_error() const {
@@ -6085,7 +6085,7 @@ inline std::string* DefaultParentGet_Response::_internal_mutable_error() {
   return _impl_.error_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DefaultParentGet_Response::release_error() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.DefaultParentGet_Response.error)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.error)
   if (!_internal_has_error()) {
     return nullptr;
   }
@@ -6110,7 +6110,7 @@ inline void DefaultParentGet_Response::set_allocated_error(std::string* error) {
     _impl_.error_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.DefaultParentGet_Response.error)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.error)
 }
 
 // repeated string data = 3;
@@ -6125,66 +6125,66 @@ inline void DefaultParentGet_Response::clear_data() {
 }
 inline std::string* DefaultParentGet_Response::add_data() {
   std::string* _s = _internal_add_data();
-  // @@protoc_insertion_point(field_add_mutable:com.wazuh.api.engine.policy.DefaultParentGet_Response.data)
+  // @@protoc_insertion_point(field_add_mutable:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.data)
   return _s;
 }
 inline const std::string& DefaultParentGet_Response::_internal_data(int index) const {
   return _impl_.data_.Get(index);
 }
 inline const std::string& DefaultParentGet_Response::data(int index) const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentGet_Response.data)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.data)
   return _internal_data(index);
 }
 inline std::string* DefaultParentGet_Response::mutable_data(int index) {
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.DefaultParentGet_Response.data)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.data)
   return _impl_.data_.Mutable(index);
 }
 inline void DefaultParentGet_Response::set_data(int index, const std::string& value) {
   _impl_.data_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentGet_Response.data)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.data)
 }
 inline void DefaultParentGet_Response::set_data(int index, std::string&& value) {
   _impl_.data_.Mutable(index)->assign(std::move(value));
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentGet_Response.data)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.data)
 }
 inline void DefaultParentGet_Response::set_data(int index, const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   _impl_.data_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set_char:com.wazuh.api.engine.policy.DefaultParentGet_Response.data)
+  // @@protoc_insertion_point(field_set_char:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.data)
 }
 inline void DefaultParentGet_Response::set_data(int index, const char* value, size_t size) {
   _impl_.data_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:com.wazuh.api.engine.policy.DefaultParentGet_Response.data)
+  // @@protoc_insertion_point(field_set_pointer:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.data)
 }
 inline std::string* DefaultParentGet_Response::_internal_add_data() {
   return _impl_.data_.Add();
 }
 inline void DefaultParentGet_Response::add_data(const std::string& value) {
   _impl_.data_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add:com.wazuh.api.engine.policy.DefaultParentGet_Response.data)
+  // @@protoc_insertion_point(field_add:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.data)
 }
 inline void DefaultParentGet_Response::add_data(std::string&& value) {
   _impl_.data_.Add(std::move(value));
-  // @@protoc_insertion_point(field_add:com.wazuh.api.engine.policy.DefaultParentGet_Response.data)
+  // @@protoc_insertion_point(field_add:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.data)
 }
 inline void DefaultParentGet_Response::add_data(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   _impl_.data_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add_char:com.wazuh.api.engine.policy.DefaultParentGet_Response.data)
+  // @@protoc_insertion_point(field_add_char:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.data)
 }
 inline void DefaultParentGet_Response::add_data(const char* value, size_t size) {
   _impl_.data_.Add()->assign(reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_add_pointer:com.wazuh.api.engine.policy.DefaultParentGet_Response.data)
+  // @@protoc_insertion_point(field_add_pointer:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.data)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>&
 DefaultParentGet_Response::data() const {
-  // @@protoc_insertion_point(field_list:com.wazuh.api.engine.policy.DefaultParentGet_Response.data)
+  // @@protoc_insertion_point(field_list:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.data)
   return _impl_.data_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>*
 DefaultParentGet_Response::mutable_data() {
-  // @@protoc_insertion_point(field_mutable_list:com.wazuh.api.engine.policy.DefaultParentGet_Response.data)
+  // @@protoc_insertion_point(field_mutable_list:com.cyb3rhq.api.engine.policy.DefaultParentGet_Response.data)
   return &_impl_.data_;
 }
 
@@ -6205,7 +6205,7 @@ inline void DefaultParentPost_Request::clear_policy() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& DefaultParentPost_Request::policy() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentPost_Request.policy)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request.policy)
   return _internal_policy();
 }
 template <typename ArgT0, typename... ArgT>
@@ -6213,11 +6213,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DefaultParentPost_Request::set_policy(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.policy_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentPost_Request.policy)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request.policy)
 }
 inline std::string* DefaultParentPost_Request::mutable_policy() {
   std::string* _s = _internal_mutable_policy();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.DefaultParentPost_Request.policy)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request.policy)
   return _s;
 }
 inline const std::string& DefaultParentPost_Request::_internal_policy() const {
@@ -6232,7 +6232,7 @@ inline std::string* DefaultParentPost_Request::_internal_mutable_policy() {
   return _impl_.policy_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DefaultParentPost_Request::release_policy() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.DefaultParentPost_Request.policy)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request.policy)
   if (!_internal_has_policy()) {
     return nullptr;
   }
@@ -6257,7 +6257,7 @@ inline void DefaultParentPost_Request::set_allocated_policy(std::string* policy)
     _impl_.policy_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.DefaultParentPost_Request.policy)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request.policy)
 }
 
 // optional string namespace = 2;
@@ -6273,7 +6273,7 @@ inline void DefaultParentPost_Request::clear_namespace_() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& DefaultParentPost_Request::namespace_() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentPost_Request.namespace)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request.namespace)
   return _internal_namespace_();
 }
 template <typename ArgT0, typename... ArgT>
@@ -6281,11 +6281,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DefaultParentPost_Request::set_namespace_(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.namespace__.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentPost_Request.namespace)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request.namespace)
 }
 inline std::string* DefaultParentPost_Request::mutable_namespace_() {
   std::string* _s = _internal_mutable_namespace_();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.DefaultParentPost_Request.namespace)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request.namespace)
   return _s;
 }
 inline const std::string& DefaultParentPost_Request::_internal_namespace_() const {
@@ -6300,7 +6300,7 @@ inline std::string* DefaultParentPost_Request::_internal_mutable_namespace_() {
   return _impl_.namespace__.Mutable(GetArenaForAllocation());
 }
 inline std::string* DefaultParentPost_Request::release_namespace_() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.DefaultParentPost_Request.namespace)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request.namespace)
   if (!_internal_has_namespace_()) {
     return nullptr;
   }
@@ -6325,7 +6325,7 @@ inline void DefaultParentPost_Request::set_allocated_namespace_(std::string* nam
     _impl_.namespace__.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.DefaultParentPost_Request.namespace)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request.namespace)
 }
 
 // optional string parent = 3;
@@ -6341,7 +6341,7 @@ inline void DefaultParentPost_Request::clear_parent() {
   _impl_._has_bits_[0] &= ~0x00000004u;
 }
 inline const std::string& DefaultParentPost_Request::parent() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentPost_Request.parent)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request.parent)
   return _internal_parent();
 }
 template <typename ArgT0, typename... ArgT>
@@ -6349,11 +6349,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DefaultParentPost_Request::set_parent(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000004u;
  _impl_.parent_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentPost_Request.parent)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request.parent)
 }
 inline std::string* DefaultParentPost_Request::mutable_parent() {
   std::string* _s = _internal_mutable_parent();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.DefaultParentPost_Request.parent)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request.parent)
   return _s;
 }
 inline const std::string& DefaultParentPost_Request::_internal_parent() const {
@@ -6368,7 +6368,7 @@ inline std::string* DefaultParentPost_Request::_internal_mutable_parent() {
   return _impl_.parent_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DefaultParentPost_Request::release_parent() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.DefaultParentPost_Request.parent)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request.parent)
   if (!_internal_has_parent()) {
     return nullptr;
   }
@@ -6393,31 +6393,31 @@ inline void DefaultParentPost_Request::set_allocated_parent(std::string* parent)
     _impl_.parent_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.DefaultParentPost_Request.parent)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.DefaultParentPost_Request.parent)
 }
 
 // -------------------------------------------------------------------
 
 // DefaultParentPost_Response
 
-// .com.wazuh.api.engine.ReturnStatus status = 1;
+// .com.cyb3rhq.api.engine.ReturnStatus status = 1;
 inline void DefaultParentPost_Response::clear_status() {
   _impl_.status_ = 0;
 }
-inline ::com::wazuh::api::engine::ReturnStatus DefaultParentPost_Response::_internal_status() const {
-  return static_cast< ::com::wazuh::api::engine::ReturnStatus >(_impl_.status_);
+inline ::com::cyb3rhq::api::engine::ReturnStatus DefaultParentPost_Response::_internal_status() const {
+  return static_cast< ::com::cyb3rhq::api::engine::ReturnStatus >(_impl_.status_);
 }
-inline ::com::wazuh::api::engine::ReturnStatus DefaultParentPost_Response::status() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentPost_Response.status)
+inline ::com::cyb3rhq::api::engine::ReturnStatus DefaultParentPost_Response::status() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentPost_Response.status)
   return _internal_status();
 }
-inline void DefaultParentPost_Response::_internal_set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void DefaultParentPost_Response::_internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   
   _impl_.status_ = value;
 }
-inline void DefaultParentPost_Response::set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void DefaultParentPost_Response::set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentPost_Response.status)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentPost_Response.status)
 }
 
 // optional string error = 2;
@@ -6433,7 +6433,7 @@ inline void DefaultParentPost_Response::clear_error() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& DefaultParentPost_Response::error() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentPost_Response.error)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentPost_Response.error)
   return _internal_error();
 }
 template <typename ArgT0, typename... ArgT>
@@ -6441,11 +6441,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DefaultParentPost_Response::set_error(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.error_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentPost_Response.error)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentPost_Response.error)
 }
 inline std::string* DefaultParentPost_Response::mutable_error() {
   std::string* _s = _internal_mutable_error();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.DefaultParentPost_Response.error)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.DefaultParentPost_Response.error)
   return _s;
 }
 inline const std::string& DefaultParentPost_Response::_internal_error() const {
@@ -6460,7 +6460,7 @@ inline std::string* DefaultParentPost_Response::_internal_mutable_error() {
   return _impl_.error_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DefaultParentPost_Response::release_error() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.DefaultParentPost_Response.error)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.DefaultParentPost_Response.error)
   if (!_internal_has_error()) {
     return nullptr;
   }
@@ -6485,7 +6485,7 @@ inline void DefaultParentPost_Response::set_allocated_error(std::string* error) 
     _impl_.error_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.DefaultParentPost_Response.error)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.DefaultParentPost_Response.error)
 }
 
 // optional string warning = 3;
@@ -6501,7 +6501,7 @@ inline void DefaultParentPost_Response::clear_warning() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& DefaultParentPost_Response::warning() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentPost_Response.warning)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentPost_Response.warning)
   return _internal_warning();
 }
 template <typename ArgT0, typename... ArgT>
@@ -6509,11 +6509,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DefaultParentPost_Response::set_warning(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.warning_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentPost_Response.warning)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentPost_Response.warning)
 }
 inline std::string* DefaultParentPost_Response::mutable_warning() {
   std::string* _s = _internal_mutable_warning();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.DefaultParentPost_Response.warning)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.DefaultParentPost_Response.warning)
   return _s;
 }
 inline const std::string& DefaultParentPost_Response::_internal_warning() const {
@@ -6528,7 +6528,7 @@ inline std::string* DefaultParentPost_Response::_internal_mutable_warning() {
   return _impl_.warning_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DefaultParentPost_Response::release_warning() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.DefaultParentPost_Response.warning)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.DefaultParentPost_Response.warning)
   if (!_internal_has_warning()) {
     return nullptr;
   }
@@ -6553,7 +6553,7 @@ inline void DefaultParentPost_Response::set_allocated_warning(std::string* warni
     _impl_.warning_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.DefaultParentPost_Response.warning)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.DefaultParentPost_Response.warning)
 }
 
 // -------------------------------------------------------------------
@@ -6573,7 +6573,7 @@ inline void DefaultParentDelete_Request::clear_policy() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& DefaultParentDelete_Request::policy() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentDelete_Request.policy)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request.policy)
   return _internal_policy();
 }
 template <typename ArgT0, typename... ArgT>
@@ -6581,11 +6581,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DefaultParentDelete_Request::set_policy(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.policy_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentDelete_Request.policy)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request.policy)
 }
 inline std::string* DefaultParentDelete_Request::mutable_policy() {
   std::string* _s = _internal_mutable_policy();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.DefaultParentDelete_Request.policy)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request.policy)
   return _s;
 }
 inline const std::string& DefaultParentDelete_Request::_internal_policy() const {
@@ -6600,7 +6600,7 @@ inline std::string* DefaultParentDelete_Request::_internal_mutable_policy() {
   return _impl_.policy_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DefaultParentDelete_Request::release_policy() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.DefaultParentDelete_Request.policy)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request.policy)
   if (!_internal_has_policy()) {
     return nullptr;
   }
@@ -6625,7 +6625,7 @@ inline void DefaultParentDelete_Request::set_allocated_policy(std::string* polic
     _impl_.policy_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.DefaultParentDelete_Request.policy)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request.policy)
 }
 
 // optional string namespace = 2;
@@ -6641,7 +6641,7 @@ inline void DefaultParentDelete_Request::clear_namespace_() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& DefaultParentDelete_Request::namespace_() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentDelete_Request.namespace)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request.namespace)
   return _internal_namespace_();
 }
 template <typename ArgT0, typename... ArgT>
@@ -6649,11 +6649,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DefaultParentDelete_Request::set_namespace_(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.namespace__.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentDelete_Request.namespace)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request.namespace)
 }
 inline std::string* DefaultParentDelete_Request::mutable_namespace_() {
   std::string* _s = _internal_mutable_namespace_();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.DefaultParentDelete_Request.namespace)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request.namespace)
   return _s;
 }
 inline const std::string& DefaultParentDelete_Request::_internal_namespace_() const {
@@ -6668,7 +6668,7 @@ inline std::string* DefaultParentDelete_Request::_internal_mutable_namespace_() 
   return _impl_.namespace__.Mutable(GetArenaForAllocation());
 }
 inline std::string* DefaultParentDelete_Request::release_namespace_() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.DefaultParentDelete_Request.namespace)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request.namespace)
   if (!_internal_has_namespace_()) {
     return nullptr;
   }
@@ -6693,7 +6693,7 @@ inline void DefaultParentDelete_Request::set_allocated_namespace_(std::string* n
     _impl_.namespace__.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.DefaultParentDelete_Request.namespace)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request.namespace)
 }
 
 // optional string parent = 3;
@@ -6709,7 +6709,7 @@ inline void DefaultParentDelete_Request::clear_parent() {
   _impl_._has_bits_[0] &= ~0x00000004u;
 }
 inline const std::string& DefaultParentDelete_Request::parent() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentDelete_Request.parent)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request.parent)
   return _internal_parent();
 }
 template <typename ArgT0, typename... ArgT>
@@ -6717,11 +6717,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DefaultParentDelete_Request::set_parent(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000004u;
  _impl_.parent_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentDelete_Request.parent)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request.parent)
 }
 inline std::string* DefaultParentDelete_Request::mutable_parent() {
   std::string* _s = _internal_mutable_parent();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.DefaultParentDelete_Request.parent)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request.parent)
   return _s;
 }
 inline const std::string& DefaultParentDelete_Request::_internal_parent() const {
@@ -6736,7 +6736,7 @@ inline std::string* DefaultParentDelete_Request::_internal_mutable_parent() {
   return _impl_.parent_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DefaultParentDelete_Request::release_parent() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.DefaultParentDelete_Request.parent)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request.parent)
   if (!_internal_has_parent()) {
     return nullptr;
   }
@@ -6761,31 +6761,31 @@ inline void DefaultParentDelete_Request::set_allocated_parent(std::string* paren
     _impl_.parent_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.DefaultParentDelete_Request.parent)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Request.parent)
 }
 
 // -------------------------------------------------------------------
 
 // DefaultParentDelete_Response
 
-// .com.wazuh.api.engine.ReturnStatus status = 1;
+// .com.cyb3rhq.api.engine.ReturnStatus status = 1;
 inline void DefaultParentDelete_Response::clear_status() {
   _impl_.status_ = 0;
 }
-inline ::com::wazuh::api::engine::ReturnStatus DefaultParentDelete_Response::_internal_status() const {
-  return static_cast< ::com::wazuh::api::engine::ReturnStatus >(_impl_.status_);
+inline ::com::cyb3rhq::api::engine::ReturnStatus DefaultParentDelete_Response::_internal_status() const {
+  return static_cast< ::com::cyb3rhq::api::engine::ReturnStatus >(_impl_.status_);
 }
-inline ::com::wazuh::api::engine::ReturnStatus DefaultParentDelete_Response::status() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentDelete_Response.status)
+inline ::com::cyb3rhq::api::engine::ReturnStatus DefaultParentDelete_Response::status() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Response.status)
   return _internal_status();
 }
-inline void DefaultParentDelete_Response::_internal_set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void DefaultParentDelete_Response::_internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   
   _impl_.status_ = value;
 }
-inline void DefaultParentDelete_Response::set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void DefaultParentDelete_Response::set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentDelete_Response.status)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Response.status)
 }
 
 // optional string error = 2;
@@ -6801,7 +6801,7 @@ inline void DefaultParentDelete_Response::clear_error() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& DefaultParentDelete_Response::error() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentDelete_Response.error)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Response.error)
   return _internal_error();
 }
 template <typename ArgT0, typename... ArgT>
@@ -6809,11 +6809,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DefaultParentDelete_Response::set_error(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.error_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentDelete_Response.error)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Response.error)
 }
 inline std::string* DefaultParentDelete_Response::mutable_error() {
   std::string* _s = _internal_mutable_error();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.DefaultParentDelete_Response.error)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Response.error)
   return _s;
 }
 inline const std::string& DefaultParentDelete_Response::_internal_error() const {
@@ -6828,7 +6828,7 @@ inline std::string* DefaultParentDelete_Response::_internal_mutable_error() {
   return _impl_.error_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DefaultParentDelete_Response::release_error() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.DefaultParentDelete_Response.error)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Response.error)
   if (!_internal_has_error()) {
     return nullptr;
   }
@@ -6853,7 +6853,7 @@ inline void DefaultParentDelete_Response::set_allocated_error(std::string* error
     _impl_.error_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.DefaultParentDelete_Response.error)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Response.error)
 }
 
 // optional string warning = 3;
@@ -6869,7 +6869,7 @@ inline void DefaultParentDelete_Response::clear_warning() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& DefaultParentDelete_Response::warning() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.DefaultParentDelete_Response.warning)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Response.warning)
   return _internal_warning();
 }
 template <typename ArgT0, typename... ArgT>
@@ -6877,11 +6877,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void DefaultParentDelete_Response::set_warning(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.warning_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.DefaultParentDelete_Response.warning)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Response.warning)
 }
 inline std::string* DefaultParentDelete_Response::mutable_warning() {
   std::string* _s = _internal_mutable_warning();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.DefaultParentDelete_Response.warning)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Response.warning)
   return _s;
 }
 inline const std::string& DefaultParentDelete_Response::_internal_warning() const {
@@ -6896,7 +6896,7 @@ inline std::string* DefaultParentDelete_Response::_internal_mutable_warning() {
   return _impl_.warning_.Mutable(GetArenaForAllocation());
 }
 inline std::string* DefaultParentDelete_Response::release_warning() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.DefaultParentDelete_Response.warning)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Response.warning)
   if (!_internal_has_warning()) {
     return nullptr;
   }
@@ -6921,7 +6921,7 @@ inline void DefaultParentDelete_Response::set_allocated_warning(std::string* war
     _impl_.warning_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.DefaultParentDelete_Response.warning)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.DefaultParentDelete_Response.warning)
 }
 
 // -------------------------------------------------------------------
@@ -6932,24 +6932,24 @@ inline void DefaultParentDelete_Response::set_allocated_warning(std::string* war
 
 // PoliciesGet_Response
 
-// .com.wazuh.api.engine.ReturnStatus status = 1;
+// .com.cyb3rhq.api.engine.ReturnStatus status = 1;
 inline void PoliciesGet_Response::clear_status() {
   _impl_.status_ = 0;
 }
-inline ::com::wazuh::api::engine::ReturnStatus PoliciesGet_Response::_internal_status() const {
-  return static_cast< ::com::wazuh::api::engine::ReturnStatus >(_impl_.status_);
+inline ::com::cyb3rhq::api::engine::ReturnStatus PoliciesGet_Response::_internal_status() const {
+  return static_cast< ::com::cyb3rhq::api::engine::ReturnStatus >(_impl_.status_);
 }
-inline ::com::wazuh::api::engine::ReturnStatus PoliciesGet_Response::status() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.PoliciesGet_Response.status)
+inline ::com::cyb3rhq::api::engine::ReturnStatus PoliciesGet_Response::status() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.status)
   return _internal_status();
 }
-inline void PoliciesGet_Response::_internal_set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void PoliciesGet_Response::_internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   
   _impl_.status_ = value;
 }
-inline void PoliciesGet_Response::set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void PoliciesGet_Response::set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.PoliciesGet_Response.status)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.status)
 }
 
 // optional string error = 2;
@@ -6965,7 +6965,7 @@ inline void PoliciesGet_Response::clear_error() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& PoliciesGet_Response::error() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.PoliciesGet_Response.error)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.error)
   return _internal_error();
 }
 template <typename ArgT0, typename... ArgT>
@@ -6973,11 +6973,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void PoliciesGet_Response::set_error(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.error_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.PoliciesGet_Response.error)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.error)
 }
 inline std::string* PoliciesGet_Response::mutable_error() {
   std::string* _s = _internal_mutable_error();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.PoliciesGet_Response.error)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.error)
   return _s;
 }
 inline const std::string& PoliciesGet_Response::_internal_error() const {
@@ -6992,7 +6992,7 @@ inline std::string* PoliciesGet_Response::_internal_mutable_error() {
   return _impl_.error_.Mutable(GetArenaForAllocation());
 }
 inline std::string* PoliciesGet_Response::release_error() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.PoliciesGet_Response.error)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.error)
   if (!_internal_has_error()) {
     return nullptr;
   }
@@ -7017,7 +7017,7 @@ inline void PoliciesGet_Response::set_allocated_error(std::string* error) {
     _impl_.error_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.PoliciesGet_Response.error)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.error)
 }
 
 // repeated string data = 3;
@@ -7032,66 +7032,66 @@ inline void PoliciesGet_Response::clear_data() {
 }
 inline std::string* PoliciesGet_Response::add_data() {
   std::string* _s = _internal_add_data();
-  // @@protoc_insertion_point(field_add_mutable:com.wazuh.api.engine.policy.PoliciesGet_Response.data)
+  // @@protoc_insertion_point(field_add_mutable:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.data)
   return _s;
 }
 inline const std::string& PoliciesGet_Response::_internal_data(int index) const {
   return _impl_.data_.Get(index);
 }
 inline const std::string& PoliciesGet_Response::data(int index) const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.PoliciesGet_Response.data)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.data)
   return _internal_data(index);
 }
 inline std::string* PoliciesGet_Response::mutable_data(int index) {
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.PoliciesGet_Response.data)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.data)
   return _impl_.data_.Mutable(index);
 }
 inline void PoliciesGet_Response::set_data(int index, const std::string& value) {
   _impl_.data_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.PoliciesGet_Response.data)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.data)
 }
 inline void PoliciesGet_Response::set_data(int index, std::string&& value) {
   _impl_.data_.Mutable(index)->assign(std::move(value));
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.PoliciesGet_Response.data)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.data)
 }
 inline void PoliciesGet_Response::set_data(int index, const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   _impl_.data_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set_char:com.wazuh.api.engine.policy.PoliciesGet_Response.data)
+  // @@protoc_insertion_point(field_set_char:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.data)
 }
 inline void PoliciesGet_Response::set_data(int index, const char* value, size_t size) {
   _impl_.data_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:com.wazuh.api.engine.policy.PoliciesGet_Response.data)
+  // @@protoc_insertion_point(field_set_pointer:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.data)
 }
 inline std::string* PoliciesGet_Response::_internal_add_data() {
   return _impl_.data_.Add();
 }
 inline void PoliciesGet_Response::add_data(const std::string& value) {
   _impl_.data_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add:com.wazuh.api.engine.policy.PoliciesGet_Response.data)
+  // @@protoc_insertion_point(field_add:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.data)
 }
 inline void PoliciesGet_Response::add_data(std::string&& value) {
   _impl_.data_.Add(std::move(value));
-  // @@protoc_insertion_point(field_add:com.wazuh.api.engine.policy.PoliciesGet_Response.data)
+  // @@protoc_insertion_point(field_add:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.data)
 }
 inline void PoliciesGet_Response::add_data(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   _impl_.data_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add_char:com.wazuh.api.engine.policy.PoliciesGet_Response.data)
+  // @@protoc_insertion_point(field_add_char:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.data)
 }
 inline void PoliciesGet_Response::add_data(const char* value, size_t size) {
   _impl_.data_.Add()->assign(reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_add_pointer:com.wazuh.api.engine.policy.PoliciesGet_Response.data)
+  // @@protoc_insertion_point(field_add_pointer:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.data)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>&
 PoliciesGet_Response::data() const {
-  // @@protoc_insertion_point(field_list:com.wazuh.api.engine.policy.PoliciesGet_Response.data)
+  // @@protoc_insertion_point(field_list:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.data)
   return _impl_.data_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>*
 PoliciesGet_Response::mutable_data() {
-  // @@protoc_insertion_point(field_mutable_list:com.wazuh.api.engine.policy.PoliciesGet_Response.data)
+  // @@protoc_insertion_point(field_mutable_list:com.cyb3rhq.api.engine.policy.PoliciesGet_Response.data)
   return &_impl_.data_;
 }
 
@@ -7112,7 +7112,7 @@ inline void NamespacesGet_Request::clear_policy() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& NamespacesGet_Request::policy() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.NamespacesGet_Request.policy)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.NamespacesGet_Request.policy)
   return _internal_policy();
 }
 template <typename ArgT0, typename... ArgT>
@@ -7120,11 +7120,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void NamespacesGet_Request::set_policy(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.policy_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.NamespacesGet_Request.policy)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.NamespacesGet_Request.policy)
 }
 inline std::string* NamespacesGet_Request::mutable_policy() {
   std::string* _s = _internal_mutable_policy();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.NamespacesGet_Request.policy)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.NamespacesGet_Request.policy)
   return _s;
 }
 inline const std::string& NamespacesGet_Request::_internal_policy() const {
@@ -7139,7 +7139,7 @@ inline std::string* NamespacesGet_Request::_internal_mutable_policy() {
   return _impl_.policy_.Mutable(GetArenaForAllocation());
 }
 inline std::string* NamespacesGet_Request::release_policy() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.NamespacesGet_Request.policy)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.NamespacesGet_Request.policy)
   if (!_internal_has_policy()) {
     return nullptr;
   }
@@ -7164,31 +7164,31 @@ inline void NamespacesGet_Request::set_allocated_policy(std::string* policy) {
     _impl_.policy_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.NamespacesGet_Request.policy)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.NamespacesGet_Request.policy)
 }
 
 // -------------------------------------------------------------------
 
 // NamespacesGet_Response
 
-// .com.wazuh.api.engine.ReturnStatus status = 1;
+// .com.cyb3rhq.api.engine.ReturnStatus status = 1;
 inline void NamespacesGet_Response::clear_status() {
   _impl_.status_ = 0;
 }
-inline ::com::wazuh::api::engine::ReturnStatus NamespacesGet_Response::_internal_status() const {
-  return static_cast< ::com::wazuh::api::engine::ReturnStatus >(_impl_.status_);
+inline ::com::cyb3rhq::api::engine::ReturnStatus NamespacesGet_Response::_internal_status() const {
+  return static_cast< ::com::cyb3rhq::api::engine::ReturnStatus >(_impl_.status_);
 }
-inline ::com::wazuh::api::engine::ReturnStatus NamespacesGet_Response::status() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.NamespacesGet_Response.status)
+inline ::com::cyb3rhq::api::engine::ReturnStatus NamespacesGet_Response::status() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.status)
   return _internal_status();
 }
-inline void NamespacesGet_Response::_internal_set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void NamespacesGet_Response::_internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   
   _impl_.status_ = value;
 }
-inline void NamespacesGet_Response::set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void NamespacesGet_Response::set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.NamespacesGet_Response.status)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.status)
 }
 
 // optional string error = 2;
@@ -7204,7 +7204,7 @@ inline void NamespacesGet_Response::clear_error() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& NamespacesGet_Response::error() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.NamespacesGet_Response.error)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.error)
   return _internal_error();
 }
 template <typename ArgT0, typename... ArgT>
@@ -7212,11 +7212,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void NamespacesGet_Response::set_error(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.error_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.NamespacesGet_Response.error)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.error)
 }
 inline std::string* NamespacesGet_Response::mutable_error() {
   std::string* _s = _internal_mutable_error();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.NamespacesGet_Response.error)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.error)
   return _s;
 }
 inline const std::string& NamespacesGet_Response::_internal_error() const {
@@ -7231,7 +7231,7 @@ inline std::string* NamespacesGet_Response::_internal_mutable_error() {
   return _impl_.error_.Mutable(GetArenaForAllocation());
 }
 inline std::string* NamespacesGet_Response::release_error() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.policy.NamespacesGet_Response.error)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.error)
   if (!_internal_has_error()) {
     return nullptr;
   }
@@ -7256,7 +7256,7 @@ inline void NamespacesGet_Response::set_allocated_error(std::string* error) {
     _impl_.error_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.policy.NamespacesGet_Response.error)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.error)
 }
 
 // repeated string data = 3;
@@ -7271,66 +7271,66 @@ inline void NamespacesGet_Response::clear_data() {
 }
 inline std::string* NamespacesGet_Response::add_data() {
   std::string* _s = _internal_add_data();
-  // @@protoc_insertion_point(field_add_mutable:com.wazuh.api.engine.policy.NamespacesGet_Response.data)
+  // @@protoc_insertion_point(field_add_mutable:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.data)
   return _s;
 }
 inline const std::string& NamespacesGet_Response::_internal_data(int index) const {
   return _impl_.data_.Get(index);
 }
 inline const std::string& NamespacesGet_Response::data(int index) const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.policy.NamespacesGet_Response.data)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.data)
   return _internal_data(index);
 }
 inline std::string* NamespacesGet_Response::mutable_data(int index) {
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.policy.NamespacesGet_Response.data)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.data)
   return _impl_.data_.Mutable(index);
 }
 inline void NamespacesGet_Response::set_data(int index, const std::string& value) {
   _impl_.data_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.NamespacesGet_Response.data)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.data)
 }
 inline void NamespacesGet_Response::set_data(int index, std::string&& value) {
   _impl_.data_.Mutable(index)->assign(std::move(value));
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.policy.NamespacesGet_Response.data)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.data)
 }
 inline void NamespacesGet_Response::set_data(int index, const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   _impl_.data_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set_char:com.wazuh.api.engine.policy.NamespacesGet_Response.data)
+  // @@protoc_insertion_point(field_set_char:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.data)
 }
 inline void NamespacesGet_Response::set_data(int index, const char* value, size_t size) {
   _impl_.data_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:com.wazuh.api.engine.policy.NamespacesGet_Response.data)
+  // @@protoc_insertion_point(field_set_pointer:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.data)
 }
 inline std::string* NamespacesGet_Response::_internal_add_data() {
   return _impl_.data_.Add();
 }
 inline void NamespacesGet_Response::add_data(const std::string& value) {
   _impl_.data_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add:com.wazuh.api.engine.policy.NamespacesGet_Response.data)
+  // @@protoc_insertion_point(field_add:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.data)
 }
 inline void NamespacesGet_Response::add_data(std::string&& value) {
   _impl_.data_.Add(std::move(value));
-  // @@protoc_insertion_point(field_add:com.wazuh.api.engine.policy.NamespacesGet_Response.data)
+  // @@protoc_insertion_point(field_add:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.data)
 }
 inline void NamespacesGet_Response::add_data(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   _impl_.data_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add_char:com.wazuh.api.engine.policy.NamespacesGet_Response.data)
+  // @@protoc_insertion_point(field_add_char:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.data)
 }
 inline void NamespacesGet_Response::add_data(const char* value, size_t size) {
   _impl_.data_.Add()->assign(reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_add_pointer:com.wazuh.api.engine.policy.NamespacesGet_Response.data)
+  // @@protoc_insertion_point(field_add_pointer:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.data)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>&
 NamespacesGet_Response::data() const {
-  // @@protoc_insertion_point(field_list:com.wazuh.api.engine.policy.NamespacesGet_Response.data)
+  // @@protoc_insertion_point(field_list:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.data)
   return _impl_.data_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>*
 NamespacesGet_Response::mutable_data() {
-  // @@protoc_insertion_point(field_mutable_list:com.wazuh.api.engine.policy.NamespacesGet_Response.data)
+  // @@protoc_insertion_point(field_mutable_list:com.cyb3rhq.api.engine.policy.NamespacesGet_Response.data)
   return &_impl_.data_;
 }
 
@@ -7385,7 +7385,7 @@ NamespacesGet_Response::mutable_data() {
 }  // namespace policy
 }  // namespace engine
 }  // namespace api
-}  // namespace wazuh
+}  // namespace cyb3rhq
 }  // namespace com
 
 // @@protoc_insertion_point(global_scope)

@@ -52,7 +52,7 @@ INSTANTIATE_TEST_SUITE_P(
                         R"({"data":{"response":"OK"},"error":0})"),
         std::make_tuple(R"({"command": "testCommand", "parameters":)", wpResponse::invalidJsonRequest().toString()),
         std::make_tuple(
-            R"({"version":1,"command":123,"parameters":{},"origin":{"module":"wazuh-engine","name":"test_moudule"}})",
+            R"({"version":1,"command":123,"parameters":{},"origin":{"module":"cyb3rhq-engine","name":"test_moudule"}})",
             R"({"data":{},"error":4,"message":"Invalid request: The request must have a 'command' field containing a string value"})"),
         std::make_tuple(wpRequest::create("no_exist_cmd", "test_moudule", json::Json(R"({})")).toStr(),
                         R"({"data":{},"error":5,"message":"Command \"no_exist_cmd\" not found"})"),

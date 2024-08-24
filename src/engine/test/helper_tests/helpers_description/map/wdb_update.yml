@@ -3,7 +3,7 @@ name: wdb_update
 
 metadata:
   description: |
-    Perform a query to wazuh-db. If it was able to connect to wazuh-db and run a valid query (no errors)
+    Perform a query to cyb3rhq-db. If it was able to connect to cyb3rhq-db and run a valid query (no errors)
     then map `true` into field if not, then map `false` into field.
     If the field field already exists, then it will be replaced. In case of errors target field will not be modified.
     This helper function is typically used in the map stage

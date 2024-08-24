@@ -3,7 +3,7 @@ from typing import Tuple
 
 import shared.resource_handler as rs
 
-from .drivers import ecs, wazuh
+from .drivers import ecs, cyb3rhq
 
 
 def ECS_FLAT_URL(
@@ -52,7 +52,7 @@ def generate(ecs_version: str, modules: list, resource_handler: rs.ResourceHandl
         fields_definition, logpar_overrides, module_name = resource_handler.load_module_files(
             module)
         print('Generating field tree...')
-        module_tree = wazuh.build_field_tree(fields_definition, module_name)
+        module_tree = cyb3rhq.build_field_tree(fields_definition, module_name)
         print('Adding logpar overrides...')
         if logpar_overrides:
             module_tree.add_logpar_overrides(logpar_overrides)
@@ -60,7 +60,7 @@ def generate(ecs_version: str, modules: list, resource_handler: rs.ResourceHandl
         field_tree.merge(module_tree)
         print('Adding to engine schema...')
         engine_schema['fields'] = {
-            **engine_schema['fields'], **wazuh.to_engine_schema(fields_definition, module_name)}
+            **engine_schema['fields'], **cyb3rhq.to_engine_schema(fields_definition, module_name)}
         print('Success.')
 
     # Get schema properties

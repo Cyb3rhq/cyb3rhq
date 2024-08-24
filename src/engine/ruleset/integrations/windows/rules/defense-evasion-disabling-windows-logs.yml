@@ -7,7 +7,7 @@ metadata:
     attackers in an attempt to evade detection on a system.
     this method to execute malicious scripts and avoiding writing it to disk.
   author:
-    name: Wazuh, Inc.
+    name: Cyb3rhq, Inc.
     date: 2023/09/15
   references:
     - https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/logman
@@ -41,7 +41,7 @@ normalize:
 
       - rule.description: Identifies attempts to disable EventLog via the logman Windows utility, PowerShell, or auditpol. This is often done by
           attackers in an attempt to evade detection on a system.
-      - rule.license: Wazuh Inc.
+      - rule.license: Cyb3rhq Inc.
       - rule.name: Disable Windows Event and Security Logs Using Built-in Tools
 
       - threat.framework: MITRE ATT&CK

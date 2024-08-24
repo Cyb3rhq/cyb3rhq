@@ -77,7 +77,7 @@ def remove_integration_to_policy(integration_name: str, policy_name: str, namesp
 
 def add_default_parent(default_parent_name: str, namespace: str):
     request = api_policy.DefaultParentPost_Request()
-    request.policy = "policy/wazuh/0"
+    request.policy = "policy/cyb3rhq/0"
     request.namespace = namespace
     request.parent = default_parent_name
     error, response = send_recv(request, api_policy.DefaultParentPost_Response())

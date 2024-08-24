@@ -9,7 +9,7 @@ metadata:
   product.versions:
     - nginx-1.23.2
   author:
-      name: Wazuh, Inc.
+      name: Cyb3rhq, Inc.
       url: https://wazuh.com
       date: 2023/01/23
 
@@ -97,7 +97,7 @@ normalize:
       - ~ip2_version: +ip_version/$~ip2
       - ~ip3_private: false
       - ~ip3_version: +ip_version/$~ip3
-      - wazuh.decoders: +array_append/nginx-access
+      - cyb3rhq.decoders: +array_append/nginx-access
 
   # source.address will get assigne firs IPv4 not private:
   # IP1

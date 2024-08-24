@@ -16,7 +16,7 @@ jobs:
     env:
       BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
       BRANCH_BASE: ${{ github.base_ref || inputs.base_branch }}
-      PYTHONPATH: /home/runner/work/wazuh/wazuh/api:/home/runner/work/wazuh/wazuh/framework
+      PYTHONPATH: /home/runner/work/cyb3rhq/cyb3rhq/api:/home/runner/work/cyb3rhq/cyb3rhq/framework
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -33,14 +33,14 @@ jobs:
       
       - name: Download integration tests framework
         run: |
-          if [ "X`git ls-remote https://github.com/wazuh/qa-integration-framework.git ${BRANCH_NAME}`" != "X" ]; then
+          if [ "X`git ls-remote https://github.com/cyb3rhq/qa-integration-framework.git ${BRANCH_NAME}`" != "X" ]; then
               QA_BRANCH=${BRANCH_NAME}
-          elif [ "X`git ls-remote https://github.com/wazuh/qa-integration-framework.git ${BRANCH_BASE}`" != "X" ]; then
+          elif [ "X`git ls-remote https://github.com/cyb3rhq/qa-integration-framework.git ${BRANCH_BASE}`" != "X" ]; then
               QA_BRANCH=${BRANCH_BASE}
           else
               QA_BRANCH="main"
           fi
-          git clone -b ${QA_BRANCH} --single-branch https://github.com/wazuh/qa-integration-framework.git
+          git clone -b ${QA_BRANCH} --single-branch https://github.com/cyb3rhq/qa-integration-framework.git
 
       - name: Install dependencies
         run: |
@@ -50,5 +50,5 @@ jobs:
 
       - name: Run tests coverage
         run: |
-          cd qa-integration-framework/src/wazuh_testing/scripts
-          python pytest_coverage.py -p /home/runner/work/wazuh/wazuh
+          cd qa-integration-framework/src/cyb3rhq_testing/scripts
+          python pytest_coverage.py -p /home/runner/work/cyb3rhq/cyb3rhq

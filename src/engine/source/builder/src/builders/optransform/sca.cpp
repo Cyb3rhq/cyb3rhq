@@ -243,14 +243,14 @@ inline std::optional<std::string> getRuleTypeStr(const char ruleChar)
  * @return <SearchResult::ERROR, ""> otherwise.
  */
 std::tuple<SearchResult, std::string>
-searchAndParse(const std::string& query, std::shared_ptr<wazuhdb::IWDBHandler> wdb, bool parse = true)
+searchAndParse(const std::string& query, std::shared_ptr<cyb3rhqdb::IWDBHandler> wdb, bool parse = true)
 {
     std::string retStr {};
     SearchResult retCode {SearchResult::ERROR};
 
     const auto [rescode, payload] = wdb->tryQueryAndParseResult(query, WDB_ATTEMPTS);
 
-    if (wazuhdb::QueryResultCodes::OK == rescode && payload.has_value())
+    if (cyb3rhqdb::QueryResultCodes::OK == rescode && payload.has_value())
     {
         if (base::utils::string::startsWith(payload.value(), "found"))
         {
@@ -386,7 +386,7 @@ void insertCompliance(const DecodeCxt& ctx, const int checkID)
             fmt::format("agent {} sca insert_compliance {}|{}|{}", ctx.agentID, checkID, key, value.value());
 
         const auto [res, payload] = ctx.wdb->tryQueryAndParseResult(query, WDB_ATTEMPTS);
-        if (wazuhdb::QueryResultCodes::OK != res)
+        if (cyb3rhqdb::QueryResultCodes::OK != res)
         {
             LOG_WARNING(
                 "Engine SCA decoder builder: Failed to insert compliance '{}' for check '{}'.", value.value(), checkID);
@@ -421,7 +421,7 @@ void insertRules(const DecodeCxt& ctx, const int checkID)
                 fmt::format("agent {} sca insert_rules {}|{}|{}", ctx.agentID, checkID, type.value(), rule.value());
 
             const auto [res, payload] = ctx.wdb->tryQueryAndParseResult(query, WDB_ATTEMPTS);
-            if (wazuhdb::QueryResultCodes::OK != res)
+            if (cyb3rhqdb::QueryResultCodes::OK != res)
             {
                 LOG_WARNING(
                     "Engine SCA decoder builder: Failed to insert rule '{}' for check '{}'.", rule.value(), checkID);
@@ -485,7 +485,7 @@ std::optional<std::string> handleCheckEvent(const DecodeCxt& ctx)
     }
     // Save or update the policy monitoring
     const auto [resSavePolicy, empty] = ctx.wdb->tryQueryAndParseResult(saveQuery, WDB_ATTEMPTS);
-    if (wazuhdb::QueryResultCodes::OK != resSavePolicy)
+    if (cyb3rhqdb::QueryResultCodes::OK != resSavePolicy)
     {
         LOG_WARNING("Engine SCA decoder builder: Error saving policy monitoring for agent '{}'.", ctx.agentID);
     }
@@ -637,7 +637,7 @@ bool SaveScanInfo(const DecodeCxt& ctx, bool update)
 
     const auto [queryResult, discartPayload] = ctx.wdb->tryQueryAndParseResult(query, WDB_ATTEMPTS);
 
-    if (wazuhdb::QueryResultCodes::OK != queryResult)
+    if (cyb3rhqdb::QueryResultCodes::OK != queryResult)
     {
         LOG_WARNING("Engine SCA decoder builder: Error saving scan info for agent '{}'.", ctx.agentID);
         return false;
@@ -660,7 +660,7 @@ void insertPolicyInfo(const DecodeCxt& ctx)
 
     const auto [result, payload] = ctx.wdb->tryQueryAndParseResult(query, WDB_ATTEMPTS);
 
-    if (wazuhdb::QueryResultCodes::OK != result)
+    if (cyb3rhqdb::QueryResultCodes::OK != result)
     {
         LOG_WARNING("Engine SCA decoder builder: Error saving policy info for agent '{}'.", ctx.agentID);
     }
@@ -753,7 +753,7 @@ bool deletePolicyAndCheck(const DecodeCxt& ctx, const std::string& policyId)
 
     const auto [resDelPolicy, dummyPayload] = ctx.wdb->tryQueryAndParseResult(query, WDB_ATTEMPTS);
 
-    if (wazuhdb::QueryResultCodes::OK != resDelPolicy)
+    if (cyb3rhqdb::QueryResultCodes::OK != resDelPolicy)
     {
         LOG_WARNING("Engine SCA decoder builder: Error deleting policy '{}' for agent '{}'.", policyId, ctx.agentID);
         return false;
@@ -764,7 +764,7 @@ bool deletePolicyAndCheck(const DecodeCxt& ctx, const std::string& policyId)
 
     const auto [delCheckResultCode, delCheckPayload] = ctx.wdb->tryQueryAndParseResult(query, WDB_ATTEMPTS);
 
-    if (wazuhdb::QueryResultCodes::OK != delCheckResultCode)
+    if (cyb3rhqdb::QueryResultCodes::OK != delCheckResultCode)
     {
         LOG_WARNING(
             "Engine SCA decoder builder: Error deleting check for policy '{}' for agent '{}'.", policyId, ctx.agentID);
@@ -981,7 +981,7 @@ void deletePolicyCheckDistinct(const DecodeCxt& ctx, const std::string& policyId
     const auto query = fmt::format("agent {} sca delete_check_distinct {}|{}", ctx.agentID, policyId, scanId);
 
     const auto [resultCode, payload] = ctx.wdb->tryQueryAndParseResult(query, WDB_ATTEMPTS);
-    if (wazuhdb::QueryResultCodes::OK != resultCode)
+    if (cyb3rhqdb::QueryResultCodes::OK != resultCode)
     {
         LOG_WARNING("Engine SCA decoder builder: Error deleting check distinct policy id '{}' of agent '{}'.",
                     policyId,
@@ -1050,7 +1050,7 @@ std::optional<std::string> handleDumpEvent(const DecodeCxt& ctx)
 
 // - Helper - //
 
-TransformBuilder getBuilderSCAdecoder(const std::shared_ptr<wazuhdb::IWDBManager>& wdbManager,
+TransformBuilder getBuilderSCAdecoder(const std::shared_ptr<cyb3rhqdb::IWDBManager>& wdbManager,
                                       const std::shared_ptr<sockiface::ISockFactory>& sockFactory)
 {
     return [wdbManager, sockFactory](const Reference& targetField,

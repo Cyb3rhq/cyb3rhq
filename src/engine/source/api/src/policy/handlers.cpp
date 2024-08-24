@@ -23,9 +23,9 @@ template<typename RequestType>
 using TupleRequest = std::tuple<RequestType, std::shared_ptr<api::policy::IPolicy>, base::Name>;
 
 /**
- * @brief This function takes a weak pointer to a policy API and a wazuh request, and returns a tuple
+ * @brief This function takes a weak pointer to a policy API and a cyb3rhq request, and returns a tuple
  * containing the request, a shared pointer to the policy API, and the policy name. The request and policy name are
- * extracted from the wazuh request. If the policy name is empty or invalid, an error response is
+ * extracted from the cyb3rhq request. If the policy name is empty or invalid, an error response is
  * returned. If the policy API is not initialized, an error response is returned.
  *
  * @tparam RequestT The type of the request.
@@ -40,7 +40,7 @@ template<typename RequestT, typename ResponseT>
 std::variant<api::wpResponse, std::tuple<RequestT, std::shared_ptr<api::policy::IPolicy>, base::Name>>
 getTupleRequest(const api::wpRequest& wRequest, const std::weak_ptr<api::policy::IPolicy>& wpPolicyAPI)
 {
-    using namespace ::com::wazuh::api::engine;
+    using namespace ::com::cyb3rhq::api::engine;
 
     static_assert(std::is_same_v<decltype(std::declval<RequestT>().policy()), const std::string&>,
                   "[missing policy(void) -> const std::string&] RequestT must have a policy method");
@@ -48,7 +48,7 @@ getTupleRequest(const api::wpRequest& wRequest, const std::weak_ptr<api::policy:
                   "[missing has_policy(void) -> bool] RequestT must have a has_policy method");
 
     // Validate the eRequest
-    auto res = ::api::adapter::fromWazuhRequest<RequestT, ResponseT>(wRequest);
+    auto res = ::api::adapter::fromCyb3rhqRequest<RequestT, ResponseT>(wRequest);
     if (std::holds_alternative<api::wpResponse>(res))
     {
         return std::move(std::get<api::wpResponse>(res));
@@ -105,7 +105,7 @@ getTupleRequest(const api::wpRequest& wRequest, const std::weak_ptr<api::policy:
 template<typename RequestT, typename ResponseT>
 std::variant<api::wpResponse, store::NamespaceId> getNamespace(const RequestT& request)
 {
-    using namespace ::com::wazuh::api::engine;
+    using namespace ::com::cyb3rhq::api::engine;
 
     static_assert(std::is_same_v<decltype(std::declval<RequestT>().namespace_()), const std::string&>,
                   "[missing namespace_(void) -> const std::string&] RequestT must have a namespace_ method");
@@ -145,7 +145,7 @@ std::variant<api::wpResponse, store::NamespaceId> getNamespace(const RequestT& r
 template<typename RequestT, typename ResponseT>
 std::variant<api::wpResponse, std::pair<store::NamespaceId, base::Name>> getNamespaceAndAsset(const RequestT& request)
 {
-    using namespace ::com::wazuh::api::engine;
+    using namespace ::com::cyb3rhq::api::engine;
 
     static_assert(std::is_same_v<decltype(std::declval<RequestT>().asset()), const std::string&>,
                   "[missing asset(void) -> const std::string&] RequestT must have a asset method");
@@ -195,7 +195,7 @@ std::variant<api::wpResponse, std::pair<store::NamespaceId, base::Name>> getName
 template<typename RequestT, typename ResponseT>
 std::variant<api::wpResponse, base::Name> getParent(const RequestT& request)
 {
-    using namespace ::com::wazuh::api::engine;
+    using namespace ::com::cyb3rhq::api::engine;
 
     if (!request.has_parent() || request.parent().empty())
     {
@@ -221,8 +221,8 @@ std::variant<api::wpResponse, base::Name> getParent(const RequestT& request)
 
 namespace api::policy::handlers
 {
-namespace ePolicy = ::com::wazuh::api::engine::policy;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace ePolicy = ::com::cyb3rhq::api::engine::policy;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 api::HandlerSync storePost(const std::shared_ptr<policy::IPolicy>& policyManager)
 {
@@ -249,7 +249,7 @@ api::HandlerSync storePost(const std::shared_ptr<policy::IPolicy>& policyManager
 
         ResponseType eResponse;
         eResponse.set_status(eEngine::ReturnStatus::OK);
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -277,7 +277,7 @@ api::HandlerSync storeDelete(const std::shared_ptr<policy::IPolicy>& policyManag
 
         ResponseType eResponse;
         eResponse.set_status(eEngine::ReturnStatus::OK);
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -326,7 +326,7 @@ api::HandlerSync storeGet(const std::shared_ptr<policy::IPolicy>& policyManager)
         ResponseType eResponse;
         eResponse.set_data(dump.c_str());
         eResponse.set_status(eEngine::ReturnStatus::OK);
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -363,7 +363,7 @@ api::HandlerSync policyAssetPost(const std::shared_ptr<policy::IPolicy>& policyM
         ResponseType eResponse;
         eResponse.set_status(eEngine::ReturnStatus::OK);
         eResponse.set_warning(base::getResponse(resp));
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -401,7 +401,7 @@ api::HandlerSync policyAssetDelete(const std::shared_ptr<policy::IPolicy>& polic
         ResponseType eResponse;
         eResponse.set_status(eEngine::ReturnStatus::OK);
         eResponse.set_warning(base::getResponse(resp));
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -430,7 +430,7 @@ api::HandlerSync policyCleanDeleted(const std::shared_ptr<policy::IPolicy>& poli
         ResponseType eResponse;
         eResponse.set_status(eEngine::ReturnStatus::OK);
         eResponse.set_data(base::getResponse(resp));
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -473,7 +473,7 @@ api::HandlerSync policyAssetGet(const std::shared_ptr<policy::IPolicy>& policyMa
         }
 
         eResponse.set_status(eEngine::ReturnStatus::OK);
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -514,7 +514,7 @@ api::HandlerSync policyDefaultParentGet(const std::shared_ptr<policy::IPolicy>& 
             eResponse.add_data(parent.fullName().c_str());
         }
         eResponse.set_status(eEngine::ReturnStatus::OK);
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -560,7 +560,7 @@ api::HandlerSync policyDefaultParentPost(const std::shared_ptr<policy::IPolicy>&
         ResponseType eResponse;
         eResponse.set_status(eEngine::ReturnStatus::OK);
         eResponse.set_warning(base::getResponse(resp));
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -573,7 +573,7 @@ api::HandlerSync policiesGet(const std::shared_ptr<policy::IPolicy>& policyManag
         using ResponseType = ePolicy::PoliciesGet_Response;
 
         // Validate the eRequest
-        auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+        auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
         if (std::holds_alternative<api::wpResponse>(res))
         {
             return std::move(std::get<api::wpResponse>(res));
@@ -601,7 +601,7 @@ api::HandlerSync policiesGet(const std::shared_ptr<policy::IPolicy>& policyManag
         }
 
         eResponse.set_status(eEngine::ReturnStatus::OK);
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -647,7 +647,7 @@ api::HandlerSync policyDefaultParentDelete(const std::shared_ptr<policy::IPolicy
         ResponseType eResponse;
         eResponse.set_status(eEngine::ReturnStatus::OK);
         eResponse.set_warning(base::getResponse(resp));
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -681,7 +681,7 @@ api::HandlerSync policyNamespacesGet(const std::shared_ptr<policy::IPolicy>& pol
         }
 
         eResponse.set_status(eEngine::ReturnStatus::OK);
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 

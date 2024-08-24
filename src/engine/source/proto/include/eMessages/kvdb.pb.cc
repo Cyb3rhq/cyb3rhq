@@ -21,7 +21,7 @@ namespace _pb = ::PROTOBUF_NAMESPACE_ID;
 namespace _pbi = _pb::internal;
 
 namespace com {
-namespace wazuh {
+namespace cyb3rhq {
 namespace api {
 namespace engine {
 namespace kvdb {
@@ -229,215 +229,215 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORIT
 }  // namespace kvdb
 }  // namespace engine
 }  // namespace api
-}  // namespace wazuh
+}  // namespace cyb3rhq
 }  // namespace com
 static ::_pb::Metadata file_level_metadata_kvdb_2eproto[13];
 static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_kvdb_2eproto = nullptr;
 static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_kvdb_2eproto = nullptr;
 
 const uint32_t TableStruct_kvdb_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::Entry, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::Entry, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::Entry, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::Entry, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::Entry, _impl_.key_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::Entry, _impl_.value_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::Entry, _impl_.key_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::Entry, _impl_.value_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbGet_Request, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbGet_Request, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbGet_Request, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbGet_Request, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbGet_Request, _impl_.name_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbGet_Request, _impl_.key_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbGet_Request, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbGet_Request, _impl_.key_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbGet_Response, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbGet_Response, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbGet_Response, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbGet_Response, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbGet_Response, _impl_.status_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbGet_Response, _impl_.error_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbGet_Response, _impl_.value_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbGet_Response, _impl_.status_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbGet_Response, _impl_.error_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbGet_Response, _impl_.value_),
   ~0u,
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbSearch_Request, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbSearch_Request, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbSearch_Request, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbSearch_Request, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbSearch_Request, _impl_.name_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbSearch_Request, _impl_.prefix_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbSearch_Request, _impl_.page_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbSearch_Request, _impl_.records_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbSearch_Request, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbSearch_Request, _impl_.prefix_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbSearch_Request, _impl_.page_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbSearch_Request, _impl_.records_),
   0,
   1,
   2,
   3,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbSearch_Response, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbSearch_Response, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbSearch_Response, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbSearch_Response, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbSearch_Response, _impl_.status_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbSearch_Response, _impl_.error_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbSearch_Response, _impl_.entries_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbSearch_Response, _impl_.status_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbSearch_Response, _impl_.error_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbSearch_Response, _impl_.entries_),
   ~0u,
   0,
   ~0u,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbDelete_Request, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbDelete_Request, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbDelete_Request, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbDelete_Request, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbDelete_Request, _impl_.name_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbDelete_Request, _impl_.key_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbDelete_Request, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbDelete_Request, _impl_.key_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbPut_Request, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbPut_Request, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbPut_Request, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbPut_Request, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbPut_Request, _impl_.name_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::dbPut_Request, _impl_.entry_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbPut_Request, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::dbPut_Request, _impl_.entry_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerGet_Request, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerGet_Request, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerGet_Request, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerGet_Request, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerGet_Request, _impl_.must_be_loaded_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerGet_Request, _impl_.filter_by_name_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerGet_Request, _impl_.must_be_loaded_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerGet_Request, _impl_.filter_by_name_),
   ~0u,
   0,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerGet_Response, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerGet_Response, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerGet_Response, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerGet_Response, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerGet_Response, _impl_.status_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerGet_Response, _impl_.error_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerGet_Response, _impl_.dbs_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerGet_Response, _impl_.status_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerGet_Response, _impl_.error_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerGet_Response, _impl_.dbs_),
   ~0u,
   0,
   ~0u,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerPost_Request, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerPost_Request, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerPost_Request, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerPost_Request, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerPost_Request, _impl_.name_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerPost_Request, _impl_.path_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerPost_Request, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerPost_Request, _impl_.path_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerDelete_Request, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerDelete_Request, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerDelete_Request, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerDelete_Request, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerDelete_Request, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerDelete_Request, _impl_.name_),
   0,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerDump_Request, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerDump_Request, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerDump_Request, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerDump_Request, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerDump_Request, _impl_.name_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerDump_Request, _impl_.page_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerDump_Request, _impl_.records_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerDump_Request, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerDump_Request, _impl_.page_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerDump_Request, _impl_.records_),
   0,
   1,
   2,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerDump_Response, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerDump_Response, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerDump_Response, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerDump_Response, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerDump_Response, _impl_.status_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerDump_Response, _impl_.error_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::kvdb::managerDump_Response, _impl_.entries_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerDump_Response, _impl_.status_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerDump_Response, _impl_.error_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::kvdb::managerDump_Response, _impl_.entries_),
   ~0u,
   0,
   ~0u,
 };
 static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 8, -1, sizeof(::com::wazuh::api::engine::kvdb::Entry)},
-  { 10, 18, -1, sizeof(::com::wazuh::api::engine::kvdb::dbGet_Request)},
-  { 20, 29, -1, sizeof(::com::wazuh::api::engine::kvdb::dbGet_Response)},
-  { 32, 42, -1, sizeof(::com::wazuh::api::engine::kvdb::dbSearch_Request)},
-  { 46, 55, -1, sizeof(::com::wazuh::api::engine::kvdb::dbSearch_Response)},
-  { 58, 66, -1, sizeof(::com::wazuh::api::engine::kvdb::dbDelete_Request)},
-  { 68, 76, -1, sizeof(::com::wazuh::api::engine::kvdb::dbPut_Request)},
-  { 78, 86, -1, sizeof(::com::wazuh::api::engine::kvdb::managerGet_Request)},
-  { 88, 97, -1, sizeof(::com::wazuh::api::engine::kvdb::managerGet_Response)},
-  { 100, 108, -1, sizeof(::com::wazuh::api::engine::kvdb::managerPost_Request)},
-  { 110, 117, -1, sizeof(::com::wazuh::api::engine::kvdb::managerDelete_Request)},
-  { 118, 127, -1, sizeof(::com::wazuh::api::engine::kvdb::managerDump_Request)},
-  { 130, 139, -1, sizeof(::com::wazuh::api::engine::kvdb::managerDump_Response)},
+  { 0, 8, -1, sizeof(::com::cyb3rhq::api::engine::kvdb::Entry)},
+  { 10, 18, -1, sizeof(::com::cyb3rhq::api::engine::kvdb::dbGet_Request)},
+  { 20, 29, -1, sizeof(::com::cyb3rhq::api::engine::kvdb::dbGet_Response)},
+  { 32, 42, -1, sizeof(::com::cyb3rhq::api::engine::kvdb::dbSearch_Request)},
+  { 46, 55, -1, sizeof(::com::cyb3rhq::api::engine::kvdb::dbSearch_Response)},
+  { 58, 66, -1, sizeof(::com::cyb3rhq::api::engine::kvdb::dbDelete_Request)},
+  { 68, 76, -1, sizeof(::com::cyb3rhq::api::engine::kvdb::dbPut_Request)},
+  { 78, 86, -1, sizeof(::com::cyb3rhq::api::engine::kvdb::managerGet_Request)},
+  { 88, 97, -1, sizeof(::com::cyb3rhq::api::engine::kvdb::managerGet_Response)},
+  { 100, 108, -1, sizeof(::com::cyb3rhq::api::engine::kvdb::managerPost_Request)},
+  { 110, 117, -1, sizeof(::com::cyb3rhq::api::engine::kvdb::managerDelete_Request)},
+  { 118, 127, -1, sizeof(::com::cyb3rhq::api::engine::kvdb::managerDump_Request)},
+  { 130, 139, -1, sizeof(::com::cyb3rhq::api::engine::kvdb::managerDump_Response)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
-  &::com::wazuh::api::engine::kvdb::_Entry_default_instance_._instance,
-  &::com::wazuh::api::engine::kvdb::_dbGet_Request_default_instance_._instance,
-  &::com::wazuh::api::engine::kvdb::_dbGet_Response_default_instance_._instance,
-  &::com::wazuh::api::engine::kvdb::_dbSearch_Request_default_instance_._instance,
-  &::com::wazuh::api::engine::kvdb::_dbSearch_Response_default_instance_._instance,
-  &::com::wazuh::api::engine::kvdb::_dbDelete_Request_default_instance_._instance,
-  &::com::wazuh::api::engine::kvdb::_dbPut_Request_default_instance_._instance,
-  &::com::wazuh::api::engine::kvdb::_managerGet_Request_default_instance_._instance,
-  &::com::wazuh::api::engine::kvdb::_managerGet_Response_default_instance_._instance,
-  &::com::wazuh::api::engine::kvdb::_managerPost_Request_default_instance_._instance,
-  &::com::wazuh::api::engine::kvdb::_managerDelete_Request_default_instance_._instance,
-  &::com::wazuh::api::engine::kvdb::_managerDump_Request_default_instance_._instance,
-  &::com::wazuh::api::engine::kvdb::_managerDump_Response_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::kvdb::_Entry_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::kvdb::_dbGet_Request_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::kvdb::_dbGet_Response_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::kvdb::_dbSearch_Request_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::kvdb::_dbSearch_Response_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::kvdb::_dbDelete_Request_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::kvdb::_dbPut_Request_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::kvdb::_managerGet_Request_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::kvdb::_managerGet_Response_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::kvdb::_managerPost_Request_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::kvdb::_managerDelete_Request_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::kvdb::_managerDump_Request_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::kvdb::_managerDump_Response_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_kvdb_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\nkvdb.proto\022\031com.wazuh.api.engine.kvdb\032"
+  "\n\nkvdb.proto\022\031com.cyb3rhq.api.engine.kvdb\032"
   "\014engine.proto\032\034google/protobuf/struct.pr"
   "oto\"W\n\005Entry\022\020\n\003key\030\001 \001(\tH\000\210\001\001\022*\n\005value\030"
   "\002 \001(\0132\026.google.protobuf.ValueH\001\210\001\001B\006\n\004_k"
   "eyB\010\n\006_value\"E\n\rdbGet_Request\022\021\n\004name\030\001 "
   "\001(\tH\000\210\001\001\022\020\n\003key\030\002 \001(\tH\001\210\001\001B\007\n\005_nameB\006\n\004_"
   "key\"\230\001\n\016dbGet_Response\0222\n\006status\030\001 \001(\0162\""
-  ".com.wazuh.api.engine.ReturnStatus\022\022\n\005er"
+  ".com.cyb3rhq.api.engine.ReturnStatus\022\022\n\005er"
   "ror\030\002 \001(\tH\000\210\001\001\022*\n\005value\030\003 \001(\0132\026.google.p"
   "rotobuf.ValueH\001\210\001\001B\010\n\006_errorB\010\n\006_value\"\214"
   "\001\n\020dbSearch_Request\022\021\n\004name\030\001 \001(\tH\000\210\001\001\022\023"
   "\n\006prefix\030\002 \001(\tH\001\210\001\001\022\021\n\004page\030\003 \001(\rH\002\210\001\001\022\024"
   "\n\007records\030\004 \001(\rH\003\210\001\001B\007\n\005_nameB\t\n\007_prefix"
   "B\007\n\005_pageB\n\n\010_records\"\230\001\n\021dbSearch_Respo"
-  "nse\0222\n\006status\030\001 \001(\0162\".com.wazuh.api.engi"
+  "nse\0222\n\006status\030\001 \001(\0162\".com.cyb3rhq.api.engi"
   "ne.ReturnStatus\022\022\n\005error\030\002 \001(\tH\000\210\001\001\0221\n\007e"
-  "ntries\030\003 \003(\0132 .com.wazuh.api.engine.kvdb"
+  "ntries\030\003 \003(\0132 .com.cyb3rhq.api.engine.kvdb"
   ".EntryB\010\n\006_error\"H\n\020dbDelete_Request\022\021\n\004"
   "name\030\001 \001(\tH\000\210\001\001\022\020\n\003key\030\002 \001(\tH\001\210\001\001B\007\n\005_na"
   "meB\006\n\004_key\"k\n\rdbPut_Request\022\021\n\004name\030\001 \001("
-  "\tH\000\210\001\001\0224\n\005entry\030\002 \001(\0132 .com.wazuh.api.en"
+  "\tH\000\210\001\001\0224\n\005entry\030\002 \001(\0132 .com.cyb3rhq.api.en"
   "gine.kvdb.EntryH\001\210\001\001B\007\n\005_nameB\010\n\006_entry\""
   "\\\n\022managerGet_Request\022\026\n\016must_be_loaded\030"
   "\001 \001(\010\022\033\n\016filter_by_name\030\020 \001(\tH\000\210\001\001B\021\n\017_f"
   "ilter_by_name\"t\n\023managerGet_Response\0222\n\006"
-  "status\030\001 \001(\0162\".com.wazuh.api.engine.Retu"
+  "status\030\001 \001(\0162\".com.cyb3rhq.api.engine.Retu"
   "rnStatus\022\022\n\005error\030\002 \001(\tH\000\210\001\001\022\013\n\003dbs\030\003 \003("
   "\tB\010\n\006_error\"M\n\023managerPost_Request\022\021\n\004na"
   "me\030\001 \001(\tH\000\210\001\001\022\021\n\004path\030\002 \001(\tH\001\210\001\001B\007\n\005_nam"
@@ -446,9 +446,9 @@ const char descriptor_table_protodef_kvdb_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "equest\022\021\n\004name\030\001 \001(\tH\000\210\001\001\022\021\n\004page\030\002 \001(\rH"
   "\001\210\001\001\022\024\n\007records\030\003 \001(\rH\002\210\001\001B\007\n\005_nameB\007\n\005_"
   "pageB\n\n\010_records\"\233\001\n\024managerDump_Respons"
-  "e\0222\n\006status\030\001 \001(\0162\".com.wazuh.api.engine"
+  "e\0222\n\006status\030\001 \001(\0162\".com.cyb3rhq.api.engine"
   ".ReturnStatus\022\022\n\005error\030\002 \001(\tH\000\210\001\001\0221\n\007ent"
-  "ries\030\003 \003(\0132 .com.wazuh.api.engine.kvdb.E"
+  "ries\030\003 \003(\0132 .com.cyb3rhq.api.engine.kvdb.E"
   "ntryB\010\n\006_errorb\006proto3"
   ;
 static const ::_pbi::DescriptorTable* const descriptor_table_kvdb_2eproto_deps[2] = {
@@ -471,7 +471,7 @@ PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_kvdb_2ep
 // Force running AddDescriptors() at dynamic initialization time.
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_kvdb_2eproto(&descriptor_table_kvdb_2eproto);
 namespace com {
-namespace wazuh {
+namespace cyb3rhq {
 namespace api {
 namespace engine {
 namespace kvdb {
@@ -502,7 +502,7 @@ Entry::Entry(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.kvdb.Entry)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.kvdb.Entry)
 }
 Entry::Entry(const Entry& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -525,7 +525,7 @@ Entry::Entry(const Entry& from)
   if (from._internal_has_value()) {
     _this->_impl_.value_ = new ::PROTOBUF_NAMESPACE_ID::Value(*from._impl_.value_);
   }
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.kvdb.Entry)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.kvdb.Entry)
 }
 
 inline void Entry::SharedCtor(
@@ -545,7 +545,7 @@ inline void Entry::SharedCtor(
 }
 
 Entry::~Entry() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.kvdb.Entry)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.kvdb.Entry)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -564,7 +564,7 @@ void Entry::SetCachedSize(int size) const {
 }
 
 void Entry::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.kvdb.Entry)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.kvdb.Entry)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -596,7 +596,7 @@ const char* Entry::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
           auto str = _internal_mutable_key();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.Entry.key"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.Entry.key"));
         } else
           goto handle_unusual;
         continue;
@@ -634,7 +634,7 @@ failure:
 
 uint8_t* Entry::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.kvdb.Entry)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.kvdb.Entry)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -643,7 +643,7 @@ uint8_t* Entry::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_key().data(), static_cast<int>(this->_internal_key().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.Entry.key");
+      "com.cyb3rhq.api.engine.kvdb.Entry.key");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_key(), target);
   }
@@ -659,12 +659,12 @@ uint8_t* Entry::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.kvdb.Entry)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.kvdb.Entry)
   return target;
 }
 
 size_t Entry::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.kvdb.Entry)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.kvdb.Entry)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -701,7 +701,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Entry::GetClassData() const { 
 void Entry::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<Entry*>(&to_msg);
   auto& from = static_cast<const Entry&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.kvdb.Entry)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.kvdb.Entry)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -720,7 +720,7 @@ void Entry::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF
 }
 
 void Entry::CopyFrom(const Entry& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.kvdb.Entry)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.kvdb.Entry)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -766,7 +766,7 @@ dbGet_Request::dbGet_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.kvdb.dbGet_Request)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.kvdb.dbGet_Request)
 }
 dbGet_Request::dbGet_Request(const dbGet_Request& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -794,7 +794,7 @@ dbGet_Request::dbGet_Request(const dbGet_Request& from)
     _this->_impl_.key_.Set(from._internal_key(), 
       _this->GetArenaForAllocation());
   }
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.kvdb.dbGet_Request)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.kvdb.dbGet_Request)
 }
 
 inline void dbGet_Request::SharedCtor(
@@ -818,7 +818,7 @@ inline void dbGet_Request::SharedCtor(
 }
 
 dbGet_Request::~dbGet_Request() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.kvdb.dbGet_Request)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.kvdb.dbGet_Request)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -837,7 +837,7 @@ void dbGet_Request::SetCachedSize(int size) const {
 }
 
 void dbGet_Request::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.kvdb.dbGet_Request)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.kvdb.dbGet_Request)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -868,7 +868,7 @@ const char* dbGet_Request::_InternalParse(const char* ptr, ::_pbi::ParseContext*
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.dbGet_Request.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.dbGet_Request.name"));
         } else
           goto handle_unusual;
         continue;
@@ -878,7 +878,7 @@ const char* dbGet_Request::_InternalParse(const char* ptr, ::_pbi::ParseContext*
           auto str = _internal_mutable_key();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.dbGet_Request.key"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.dbGet_Request.key"));
         } else
           goto handle_unusual;
         continue;
@@ -908,7 +908,7 @@ failure:
 
 uint8_t* dbGet_Request::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.kvdb.dbGet_Request)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.kvdb.dbGet_Request)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -917,7 +917,7 @@ uint8_t* dbGet_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.dbGet_Request.name");
+      "com.cyb3rhq.api.engine.kvdb.dbGet_Request.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
@@ -927,7 +927,7 @@ uint8_t* dbGet_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_key().data(), static_cast<int>(this->_internal_key().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.dbGet_Request.key");
+      "com.cyb3rhq.api.engine.kvdb.dbGet_Request.key");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_key(), target);
   }
@@ -936,12 +936,12 @@ uint8_t* dbGet_Request::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.kvdb.dbGet_Request)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.kvdb.dbGet_Request)
   return target;
 }
 
 size_t dbGet_Request::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.kvdb.dbGet_Request)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.kvdb.dbGet_Request)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -978,7 +978,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*dbGet_Request::GetClassData() 
 void dbGet_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<dbGet_Request*>(&to_msg);
   auto& from = static_cast<const dbGet_Request&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.kvdb.dbGet_Request)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.kvdb.dbGet_Request)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -996,7 +996,7 @@ void dbGet_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::
 }
 
 void dbGet_Request::CopyFrom(const dbGet_Request& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.kvdb.dbGet_Request)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.kvdb.dbGet_Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1054,7 +1054,7 @@ dbGet_Response::dbGet_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.kvdb.dbGet_Response)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.kvdb.dbGet_Response)
 }
 dbGet_Response::dbGet_Response(const dbGet_Response& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -1079,7 +1079,7 @@ dbGet_Response::dbGet_Response(const dbGet_Response& from)
     _this->_impl_.value_ = new ::PROTOBUF_NAMESPACE_ID::Value(*from._impl_.value_);
   }
   _this->_impl_.status_ = from._impl_.status_;
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.kvdb.dbGet_Response)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.kvdb.dbGet_Response)
 }
 
 inline void dbGet_Response::SharedCtor(
@@ -1100,7 +1100,7 @@ inline void dbGet_Response::SharedCtor(
 }
 
 dbGet_Response::~dbGet_Response() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.kvdb.dbGet_Response)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.kvdb.dbGet_Response)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -1119,7 +1119,7 @@ void dbGet_Response::SetCachedSize(int size) const {
 }
 
 void dbGet_Response::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.kvdb.dbGet_Response)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.kvdb.dbGet_Response)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1146,12 +1146,12 @@ const char* dbGet_Response::_InternalParse(const char* ptr, ::_pbi::ParseContext
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // .com.wazuh.api.engine.ReturnStatus status = 1;
+      // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          _internal_set_status(static_cast<::com::wazuh::api::engine::ReturnStatus>(val));
+          _internal_set_status(static_cast<::com::cyb3rhq::api::engine::ReturnStatus>(val));
         } else
           goto handle_unusual;
         continue;
@@ -1161,7 +1161,7 @@ const char* dbGet_Response::_InternalParse(const char* ptr, ::_pbi::ParseContext
           auto str = _internal_mutable_error();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.dbGet_Response.error"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.dbGet_Response.error"));
         } else
           goto handle_unusual;
         continue;
@@ -1199,11 +1199,11 @@ failure:
 
 uint8_t* dbGet_Response::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.kvdb.dbGet_Response)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.kvdb.dbGet_Response)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   if (this->_internal_status() != 0) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
@@ -1215,7 +1215,7 @@ uint8_t* dbGet_Response::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_error().data(), static_cast<int>(this->_internal_error().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.dbGet_Response.error");
+      "com.cyb3rhq.api.engine.kvdb.dbGet_Response.error");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_error(), target);
   }
@@ -1231,12 +1231,12 @@ uint8_t* dbGet_Response::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.kvdb.dbGet_Response)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.kvdb.dbGet_Response)
   return target;
 }
 
 size_t dbGet_Response::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.kvdb.dbGet_Response)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.kvdb.dbGet_Response)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -1260,7 +1260,7 @@ size_t dbGet_Response::ByteSizeLong() const {
     }
 
   }
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   if (this->_internal_status() != 0) {
     total_size += 1 +
       ::_pbi::WireFormatLite::EnumSize(this->_internal_status());
@@ -1279,7 +1279,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*dbGet_Response::GetClassData()
 void dbGet_Response::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<dbGet_Response*>(&to_msg);
   auto& from = static_cast<const dbGet_Response&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.kvdb.dbGet_Response)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.kvdb.dbGet_Response)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1301,7 +1301,7 @@ void dbGet_Response::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const :
 }
 
 void dbGet_Response::CopyFrom(const dbGet_Response& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.kvdb.dbGet_Response)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.kvdb.dbGet_Response)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1358,7 +1358,7 @@ dbSearch_Request::dbSearch_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.kvdb.dbSearch_Request)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.kvdb.dbSearch_Request)
 }
 dbSearch_Request::dbSearch_Request(const dbSearch_Request& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -1391,7 +1391,7 @@ dbSearch_Request::dbSearch_Request(const dbSearch_Request& from)
   ::memcpy(&_impl_.page_, &from._impl_.page_,
     static_cast<size_t>(reinterpret_cast<char*>(&_impl_.records_) -
     reinterpret_cast<char*>(&_impl_.page_)) + sizeof(_impl_.records_));
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.kvdb.dbSearch_Request)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.kvdb.dbSearch_Request)
 }
 
 inline void dbSearch_Request::SharedCtor(
@@ -1417,7 +1417,7 @@ inline void dbSearch_Request::SharedCtor(
 }
 
 dbSearch_Request::~dbSearch_Request() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.kvdb.dbSearch_Request)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.kvdb.dbSearch_Request)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -1436,7 +1436,7 @@ void dbSearch_Request::SetCachedSize(int size) const {
 }
 
 void dbSearch_Request::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.kvdb.dbSearch_Request)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.kvdb.dbSearch_Request)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1472,7 +1472,7 @@ const char* dbSearch_Request::_InternalParse(const char* ptr, ::_pbi::ParseConte
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.dbSearch_Request.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.dbSearch_Request.name"));
         } else
           goto handle_unusual;
         continue;
@@ -1482,7 +1482,7 @@ const char* dbSearch_Request::_InternalParse(const char* ptr, ::_pbi::ParseConte
           auto str = _internal_mutable_prefix();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.dbSearch_Request.prefix"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.dbSearch_Request.prefix"));
         } else
           goto handle_unusual;
         continue;
@@ -1530,7 +1530,7 @@ failure:
 
 uint8_t* dbSearch_Request::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.kvdb.dbSearch_Request)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.kvdb.dbSearch_Request)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1539,7 +1539,7 @@ uint8_t* dbSearch_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.dbSearch_Request.name");
+      "com.cyb3rhq.api.engine.kvdb.dbSearch_Request.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
@@ -1549,7 +1549,7 @@ uint8_t* dbSearch_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_prefix().data(), static_cast<int>(this->_internal_prefix().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.dbSearch_Request.prefix");
+      "com.cyb3rhq.api.engine.kvdb.dbSearch_Request.prefix");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_prefix(), target);
   }
@@ -1570,12 +1570,12 @@ uint8_t* dbSearch_Request::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.kvdb.dbSearch_Request)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.kvdb.dbSearch_Request)
   return target;
 }
 
 size_t dbSearch_Request::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.kvdb.dbSearch_Request)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.kvdb.dbSearch_Request)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -1622,7 +1622,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*dbSearch_Request::GetClassData
 void dbSearch_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<dbSearch_Request*>(&to_msg);
   auto& from = static_cast<const dbSearch_Request&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.kvdb.dbSearch_Request)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.kvdb.dbSearch_Request)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1647,7 +1647,7 @@ void dbSearch_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const
 }
 
 void dbSearch_Request::CopyFrom(const dbSearch_Request& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.kvdb.dbSearch_Request)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.kvdb.dbSearch_Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1699,7 +1699,7 @@ dbSearch_Response::dbSearch_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.kvdb.dbSearch_Response)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.kvdb.dbSearch_Response)
 }
 dbSearch_Response::dbSearch_Response(const dbSearch_Response& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -1721,7 +1721,7 @@ dbSearch_Response::dbSearch_Response(const dbSearch_Response& from)
       _this->GetArenaForAllocation());
   }
   _this->_impl_.status_ = from._impl_.status_;
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.kvdb.dbSearch_Response)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.kvdb.dbSearch_Response)
 }
 
 inline void dbSearch_Response::SharedCtor(
@@ -1742,7 +1742,7 @@ inline void dbSearch_Response::SharedCtor(
 }
 
 dbSearch_Response::~dbSearch_Response() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.kvdb.dbSearch_Response)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.kvdb.dbSearch_Response)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -1761,7 +1761,7 @@ void dbSearch_Response::SetCachedSize(int size) const {
 }
 
 void dbSearch_Response::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.kvdb.dbSearch_Response)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.kvdb.dbSearch_Response)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1783,12 +1783,12 @@ const char* dbSearch_Response::_InternalParse(const char* ptr, ::_pbi::ParseCont
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // .com.wazuh.api.engine.ReturnStatus status = 1;
+      // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          _internal_set_status(static_cast<::com::wazuh::api::engine::ReturnStatus>(val));
+          _internal_set_status(static_cast<::com::cyb3rhq::api::engine::ReturnStatus>(val));
         } else
           goto handle_unusual;
         continue;
@@ -1798,11 +1798,11 @@ const char* dbSearch_Response::_InternalParse(const char* ptr, ::_pbi::ParseCont
           auto str = _internal_mutable_error();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.dbSearch_Response.error"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.dbSearch_Response.error"));
         } else
           goto handle_unusual;
         continue;
-      // repeated .com.wazuh.api.engine.kvdb.Entry entries = 3;
+      // repeated .com.cyb3rhq.api.engine.kvdb.Entry entries = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr -= 1;
@@ -1841,11 +1841,11 @@ failure:
 
 uint8_t* dbSearch_Response::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.kvdb.dbSearch_Response)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.kvdb.dbSearch_Response)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   if (this->_internal_status() != 0) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
@@ -1857,12 +1857,12 @@ uint8_t* dbSearch_Response::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_error().data(), static_cast<int>(this->_internal_error().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.dbSearch_Response.error");
+      "com.cyb3rhq.api.engine.kvdb.dbSearch_Response.error");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_error(), target);
   }
 
-  // repeated .com.wazuh.api.engine.kvdb.Entry entries = 3;
+  // repeated .com.cyb3rhq.api.engine.kvdb.Entry entries = 3;
   for (unsigned i = 0,
       n = static_cast<unsigned>(this->_internal_entries_size()); i < n; i++) {
     const auto& repfield = this->_internal_entries(i);
@@ -1874,19 +1874,19 @@ uint8_t* dbSearch_Response::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.kvdb.dbSearch_Response)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.kvdb.dbSearch_Response)
   return target;
 }
 
 size_t dbSearch_Response::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.kvdb.dbSearch_Response)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.kvdb.dbSearch_Response)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .com.wazuh.api.engine.kvdb.Entry entries = 3;
+  // repeated .com.cyb3rhq.api.engine.kvdb.Entry entries = 3;
   total_size += 1UL * this->_internal_entries_size();
   for (const auto& msg : this->_impl_.entries_) {
     total_size +=
@@ -1901,7 +1901,7 @@ size_t dbSearch_Response::ByteSizeLong() const {
         this->_internal_error());
   }
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   if (this->_internal_status() != 0) {
     total_size += 1 +
       ::_pbi::WireFormatLite::EnumSize(this->_internal_status());
@@ -1920,7 +1920,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*dbSearch_Response::GetClassDat
 void dbSearch_Response::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<dbSearch_Response*>(&to_msg);
   auto& from = static_cast<const dbSearch_Response&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.kvdb.dbSearch_Response)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.kvdb.dbSearch_Response)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1936,7 +1936,7 @@ void dbSearch_Response::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, cons
 }
 
 void dbSearch_Response::CopyFrom(const dbSearch_Response& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.kvdb.dbSearch_Response)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.kvdb.dbSearch_Response)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1983,7 +1983,7 @@ dbDelete_Request::dbDelete_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.kvdb.dbDelete_Request)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.kvdb.dbDelete_Request)
 }
 dbDelete_Request::dbDelete_Request(const dbDelete_Request& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -2011,7 +2011,7 @@ dbDelete_Request::dbDelete_Request(const dbDelete_Request& from)
     _this->_impl_.key_.Set(from._internal_key(), 
       _this->GetArenaForAllocation());
   }
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.kvdb.dbDelete_Request)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.kvdb.dbDelete_Request)
 }
 
 inline void dbDelete_Request::SharedCtor(
@@ -2035,7 +2035,7 @@ inline void dbDelete_Request::SharedCtor(
 }
 
 dbDelete_Request::~dbDelete_Request() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.kvdb.dbDelete_Request)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.kvdb.dbDelete_Request)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -2054,7 +2054,7 @@ void dbDelete_Request::SetCachedSize(int size) const {
 }
 
 void dbDelete_Request::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.kvdb.dbDelete_Request)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.kvdb.dbDelete_Request)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2085,7 +2085,7 @@ const char* dbDelete_Request::_InternalParse(const char* ptr, ::_pbi::ParseConte
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.dbDelete_Request.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.dbDelete_Request.name"));
         } else
           goto handle_unusual;
         continue;
@@ -2095,7 +2095,7 @@ const char* dbDelete_Request::_InternalParse(const char* ptr, ::_pbi::ParseConte
           auto str = _internal_mutable_key();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.dbDelete_Request.key"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.dbDelete_Request.key"));
         } else
           goto handle_unusual;
         continue;
@@ -2125,7 +2125,7 @@ failure:
 
 uint8_t* dbDelete_Request::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.kvdb.dbDelete_Request)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.kvdb.dbDelete_Request)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2134,7 +2134,7 @@ uint8_t* dbDelete_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.dbDelete_Request.name");
+      "com.cyb3rhq.api.engine.kvdb.dbDelete_Request.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
@@ -2144,7 +2144,7 @@ uint8_t* dbDelete_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_key().data(), static_cast<int>(this->_internal_key().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.dbDelete_Request.key");
+      "com.cyb3rhq.api.engine.kvdb.dbDelete_Request.key");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_key(), target);
   }
@@ -2153,12 +2153,12 @@ uint8_t* dbDelete_Request::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.kvdb.dbDelete_Request)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.kvdb.dbDelete_Request)
   return target;
 }
 
 size_t dbDelete_Request::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.kvdb.dbDelete_Request)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.kvdb.dbDelete_Request)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -2195,7 +2195,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*dbDelete_Request::GetClassData
 void dbDelete_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<dbDelete_Request*>(&to_msg);
   auto& from = static_cast<const dbDelete_Request&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.kvdb.dbDelete_Request)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.kvdb.dbDelete_Request)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2213,7 +2213,7 @@ void dbDelete_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const
 }
 
 void dbDelete_Request::CopyFrom(const dbDelete_Request& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.kvdb.dbDelete_Request)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.kvdb.dbDelete_Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2253,13 +2253,13 @@ class dbPut_Request::_Internal {
   static void set_has_name(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static const ::com::wazuh::api::engine::kvdb::Entry& entry(const dbPut_Request* msg);
+  static const ::com::cyb3rhq::api::engine::kvdb::Entry& entry(const dbPut_Request* msg);
   static void set_has_entry(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
 };
 
-const ::com::wazuh::api::engine::kvdb::Entry&
+const ::com::cyb3rhq::api::engine::kvdb::Entry&
 dbPut_Request::_Internal::entry(const dbPut_Request* msg) {
   return *msg->_impl_.entry_;
 }
@@ -2267,7 +2267,7 @@ dbPut_Request::dbPut_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.kvdb.dbPut_Request)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.kvdb.dbPut_Request)
 }
 dbPut_Request::dbPut_Request(const dbPut_Request& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -2288,9 +2288,9 @@ dbPut_Request::dbPut_Request(const dbPut_Request& from)
       _this->GetArenaForAllocation());
   }
   if (from._internal_has_entry()) {
-    _this->_impl_.entry_ = new ::com::wazuh::api::engine::kvdb::Entry(*from._impl_.entry_);
+    _this->_impl_.entry_ = new ::com::cyb3rhq::api::engine::kvdb::Entry(*from._impl_.entry_);
   }
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.kvdb.dbPut_Request)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.kvdb.dbPut_Request)
 }
 
 inline void dbPut_Request::SharedCtor(
@@ -2310,7 +2310,7 @@ inline void dbPut_Request::SharedCtor(
 }
 
 dbPut_Request::~dbPut_Request() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.kvdb.dbPut_Request)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.kvdb.dbPut_Request)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -2329,7 +2329,7 @@ void dbPut_Request::SetCachedSize(int size) const {
 }
 
 void dbPut_Request::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.kvdb.dbPut_Request)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.kvdb.dbPut_Request)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2361,11 +2361,11 @@ const char* dbPut_Request::_InternalParse(const char* ptr, ::_pbi::ParseContext*
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.dbPut_Request.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.dbPut_Request.name"));
         } else
           goto handle_unusual;
         continue;
-      // optional .com.wazuh.api.engine.kvdb.Entry entry = 2;
+      // optional .com.cyb3rhq.api.engine.kvdb.Entry entry = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_entry(), ptr);
@@ -2399,7 +2399,7 @@ failure:
 
 uint8_t* dbPut_Request::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.kvdb.dbPut_Request)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.kvdb.dbPut_Request)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2408,12 +2408,12 @@ uint8_t* dbPut_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.dbPut_Request.name");
+      "com.cyb3rhq.api.engine.kvdb.dbPut_Request.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
 
-  // optional .com.wazuh.api.engine.kvdb.Entry entry = 2;
+  // optional .com.cyb3rhq.api.engine.kvdb.Entry entry = 2;
   if (_internal_has_entry()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(2, _Internal::entry(this),
@@ -2424,12 +2424,12 @@ uint8_t* dbPut_Request::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.kvdb.dbPut_Request)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.kvdb.dbPut_Request)
   return target;
 }
 
 size_t dbPut_Request::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.kvdb.dbPut_Request)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.kvdb.dbPut_Request)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -2445,7 +2445,7 @@ size_t dbPut_Request::ByteSizeLong() const {
           this->_internal_name());
     }
 
-    // optional .com.wazuh.api.engine.kvdb.Entry entry = 2;
+    // optional .com.cyb3rhq.api.engine.kvdb.Entry entry = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -2466,7 +2466,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*dbPut_Request::GetClassData() 
 void dbPut_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<dbPut_Request*>(&to_msg);
   auto& from = static_cast<const dbPut_Request&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.kvdb.dbPut_Request)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.kvdb.dbPut_Request)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2477,7 +2477,7 @@ void dbPut_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::
       _this->_internal_set_name(from._internal_name());
     }
     if (cached_has_bits & 0x00000002u) {
-      _this->_internal_mutable_entry()->::com::wazuh::api::engine::kvdb::Entry::MergeFrom(
+      _this->_internal_mutable_entry()->::com::cyb3rhq::api::engine::kvdb::Entry::MergeFrom(
           from._internal_entry());
     }
   }
@@ -2485,7 +2485,7 @@ void dbPut_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::
 }
 
 void dbPut_Request::CopyFrom(const dbPut_Request& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.kvdb.dbPut_Request)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.kvdb.dbPut_Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2528,7 +2528,7 @@ managerGet_Request::managerGet_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.kvdb.managerGet_Request)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.kvdb.managerGet_Request)
 }
 managerGet_Request::managerGet_Request(const managerGet_Request& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -2549,7 +2549,7 @@ managerGet_Request::managerGet_Request(const managerGet_Request& from)
       _this->GetArenaForAllocation());
   }
   _this->_impl_.must_be_loaded_ = from._impl_.must_be_loaded_;
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.kvdb.managerGet_Request)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.kvdb.managerGet_Request)
 }
 
 inline void managerGet_Request::SharedCtor(
@@ -2569,7 +2569,7 @@ inline void managerGet_Request::SharedCtor(
 }
 
 managerGet_Request::~managerGet_Request() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.kvdb.managerGet_Request)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.kvdb.managerGet_Request)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -2587,7 +2587,7 @@ void managerGet_Request::SetCachedSize(int size) const {
 }
 
 void managerGet_Request::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.kvdb.managerGet_Request)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.kvdb.managerGet_Request)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2622,7 +2622,7 @@ const char* managerGet_Request::_InternalParse(const char* ptr, ::_pbi::ParseCon
           auto str = _internal_mutable_filter_by_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.managerGet_Request.filter_by_name"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.managerGet_Request.filter_by_name"));
         } else
           goto handle_unusual;
         continue;
@@ -2652,7 +2652,7 @@ failure:
 
 uint8_t* managerGet_Request::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.kvdb.managerGet_Request)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.kvdb.managerGet_Request)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2667,7 +2667,7 @@ uint8_t* managerGet_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_filter_by_name().data(), static_cast<int>(this->_internal_filter_by_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.managerGet_Request.filter_by_name");
+      "com.cyb3rhq.api.engine.kvdb.managerGet_Request.filter_by_name");
     target = stream->WriteStringMaybeAliased(
         16, this->_internal_filter_by_name(), target);
   }
@@ -2676,12 +2676,12 @@ uint8_t* managerGet_Request::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.kvdb.managerGet_Request)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.kvdb.managerGet_Request)
   return target;
 }
 
 size_t managerGet_Request::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.kvdb.managerGet_Request)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.kvdb.managerGet_Request)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -2714,7 +2714,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*managerGet_Request::GetClassDa
 void managerGet_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<managerGet_Request*>(&to_msg);
   auto& from = static_cast<const managerGet_Request&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.kvdb.managerGet_Request)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.kvdb.managerGet_Request)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2729,7 +2729,7 @@ void managerGet_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, con
 }
 
 void managerGet_Request::CopyFrom(const managerGet_Request& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.kvdb.managerGet_Request)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.kvdb.managerGet_Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2772,7 +2772,7 @@ managerGet_Response::managerGet_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.kvdb.managerGet_Response)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.kvdb.managerGet_Response)
 }
 managerGet_Response::managerGet_Response(const managerGet_Response& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -2794,7 +2794,7 @@ managerGet_Response::managerGet_Response(const managerGet_Response& from)
       _this->GetArenaForAllocation());
   }
   _this->_impl_.status_ = from._impl_.status_;
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.kvdb.managerGet_Response)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.kvdb.managerGet_Response)
 }
 
 inline void managerGet_Response::SharedCtor(
@@ -2815,7 +2815,7 @@ inline void managerGet_Response::SharedCtor(
 }
 
 managerGet_Response::~managerGet_Response() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.kvdb.managerGet_Response)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.kvdb.managerGet_Response)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -2834,7 +2834,7 @@ void managerGet_Response::SetCachedSize(int size) const {
 }
 
 void managerGet_Response::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.kvdb.managerGet_Response)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.kvdb.managerGet_Response)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2856,12 +2856,12 @@ const char* managerGet_Response::_InternalParse(const char* ptr, ::_pbi::ParseCo
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // .com.wazuh.api.engine.ReturnStatus status = 1;
+      // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          _internal_set_status(static_cast<::com::wazuh::api::engine::ReturnStatus>(val));
+          _internal_set_status(static_cast<::com::cyb3rhq::api::engine::ReturnStatus>(val));
         } else
           goto handle_unusual;
         continue;
@@ -2871,7 +2871,7 @@ const char* managerGet_Response::_InternalParse(const char* ptr, ::_pbi::ParseCo
           auto str = _internal_mutable_error();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.managerGet_Response.error"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.managerGet_Response.error"));
         } else
           goto handle_unusual;
         continue;
@@ -2884,7 +2884,7 @@ const char* managerGet_Response::_InternalParse(const char* ptr, ::_pbi::ParseCo
             auto str = _internal_add_dbs();
             ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
             CHK_(ptr);
-            CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.managerGet_Response.dbs"));
+            CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.managerGet_Response.dbs"));
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
         } else
@@ -2916,11 +2916,11 @@ failure:
 
 uint8_t* managerGet_Response::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.kvdb.managerGet_Response)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.kvdb.managerGet_Response)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   if (this->_internal_status() != 0) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
@@ -2932,7 +2932,7 @@ uint8_t* managerGet_Response::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_error().data(), static_cast<int>(this->_internal_error().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.managerGet_Response.error");
+      "com.cyb3rhq.api.engine.kvdb.managerGet_Response.error");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_error(), target);
   }
@@ -2943,7 +2943,7 @@ uint8_t* managerGet_Response::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       s.data(), static_cast<int>(s.length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.managerGet_Response.dbs");
+      "com.cyb3rhq.api.engine.kvdb.managerGet_Response.dbs");
     target = stream->WriteString(3, s, target);
   }
 
@@ -2951,12 +2951,12 @@ uint8_t* managerGet_Response::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.kvdb.managerGet_Response)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.kvdb.managerGet_Response)
   return target;
 }
 
 size_t managerGet_Response::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.kvdb.managerGet_Response)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.kvdb.managerGet_Response)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -2979,7 +2979,7 @@ size_t managerGet_Response::ByteSizeLong() const {
         this->_internal_error());
   }
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   if (this->_internal_status() != 0) {
     total_size += 1 +
       ::_pbi::WireFormatLite::EnumSize(this->_internal_status());
@@ -2998,7 +2998,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*managerGet_Response::GetClassD
 void managerGet_Response::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<managerGet_Response*>(&to_msg);
   auto& from = static_cast<const managerGet_Response&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.kvdb.managerGet_Response)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.kvdb.managerGet_Response)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3014,7 +3014,7 @@ void managerGet_Response::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, co
 }
 
 void managerGet_Response::CopyFrom(const managerGet_Response& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.kvdb.managerGet_Response)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.kvdb.managerGet_Response)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3061,7 +3061,7 @@ managerPost_Request::managerPost_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.kvdb.managerPost_Request)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.kvdb.managerPost_Request)
 }
 managerPost_Request::managerPost_Request(const managerPost_Request& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -3089,7 +3089,7 @@ managerPost_Request::managerPost_Request(const managerPost_Request& from)
     _this->_impl_.path_.Set(from._internal_path(), 
       _this->GetArenaForAllocation());
   }
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.kvdb.managerPost_Request)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.kvdb.managerPost_Request)
 }
 
 inline void managerPost_Request::SharedCtor(
@@ -3113,7 +3113,7 @@ inline void managerPost_Request::SharedCtor(
 }
 
 managerPost_Request::~managerPost_Request() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.kvdb.managerPost_Request)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.kvdb.managerPost_Request)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -3132,7 +3132,7 @@ void managerPost_Request::SetCachedSize(int size) const {
 }
 
 void managerPost_Request::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.kvdb.managerPost_Request)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.kvdb.managerPost_Request)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3163,7 +3163,7 @@ const char* managerPost_Request::_InternalParse(const char* ptr, ::_pbi::ParseCo
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.managerPost_Request.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.managerPost_Request.name"));
         } else
           goto handle_unusual;
         continue;
@@ -3173,7 +3173,7 @@ const char* managerPost_Request::_InternalParse(const char* ptr, ::_pbi::ParseCo
           auto str = _internal_mutable_path();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.managerPost_Request.path"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.managerPost_Request.path"));
         } else
           goto handle_unusual;
         continue;
@@ -3203,7 +3203,7 @@ failure:
 
 uint8_t* managerPost_Request::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.kvdb.managerPost_Request)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.kvdb.managerPost_Request)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3212,7 +3212,7 @@ uint8_t* managerPost_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.managerPost_Request.name");
+      "com.cyb3rhq.api.engine.kvdb.managerPost_Request.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
@@ -3222,7 +3222,7 @@ uint8_t* managerPost_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_path().data(), static_cast<int>(this->_internal_path().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.managerPost_Request.path");
+      "com.cyb3rhq.api.engine.kvdb.managerPost_Request.path");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_path(), target);
   }
@@ -3231,12 +3231,12 @@ uint8_t* managerPost_Request::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.kvdb.managerPost_Request)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.kvdb.managerPost_Request)
   return target;
 }
 
 size_t managerPost_Request::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.kvdb.managerPost_Request)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.kvdb.managerPost_Request)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -3273,7 +3273,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*managerPost_Request::GetClassD
 void managerPost_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<managerPost_Request*>(&to_msg);
   auto& from = static_cast<const managerPost_Request&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.kvdb.managerPost_Request)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.kvdb.managerPost_Request)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3291,7 +3291,7 @@ void managerPost_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, co
 }
 
 void managerPost_Request::CopyFrom(const managerPost_Request& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.kvdb.managerPost_Request)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.kvdb.managerPost_Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3337,7 +3337,7 @@ managerDelete_Request::managerDelete_Request(::PROTOBUF_NAMESPACE_ID::Arena* are
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.kvdb.managerDelete_Request)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.kvdb.managerDelete_Request)
 }
 managerDelete_Request::managerDelete_Request(const managerDelete_Request& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -3356,7 +3356,7 @@ managerDelete_Request::managerDelete_Request(const managerDelete_Request& from)
     _this->_impl_.name_.Set(from._internal_name(), 
       _this->GetArenaForAllocation());
   }
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.kvdb.managerDelete_Request)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.kvdb.managerDelete_Request)
 }
 
 inline void managerDelete_Request::SharedCtor(
@@ -3375,7 +3375,7 @@ inline void managerDelete_Request::SharedCtor(
 }
 
 managerDelete_Request::~managerDelete_Request() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.kvdb.managerDelete_Request)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.kvdb.managerDelete_Request)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -3393,7 +3393,7 @@ void managerDelete_Request::SetCachedSize(int size) const {
 }
 
 void managerDelete_Request::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.kvdb.managerDelete_Request)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.kvdb.managerDelete_Request)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3419,7 +3419,7 @@ const char* managerDelete_Request::_InternalParse(const char* ptr, ::_pbi::Parse
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.managerDelete_Request.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.managerDelete_Request.name"));
         } else
           goto handle_unusual;
         continue;
@@ -3449,7 +3449,7 @@ failure:
 
 uint8_t* managerDelete_Request::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.kvdb.managerDelete_Request)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.kvdb.managerDelete_Request)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3458,7 +3458,7 @@ uint8_t* managerDelete_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.managerDelete_Request.name");
+      "com.cyb3rhq.api.engine.kvdb.managerDelete_Request.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
@@ -3467,12 +3467,12 @@ uint8_t* managerDelete_Request::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.kvdb.managerDelete_Request)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.kvdb.managerDelete_Request)
   return target;
 }
 
 size_t managerDelete_Request::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.kvdb.managerDelete_Request)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.kvdb.managerDelete_Request)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -3500,7 +3500,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*managerDelete_Request::GetClas
 void managerDelete_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<managerDelete_Request*>(&to_msg);
   auto& from = static_cast<const managerDelete_Request&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.kvdb.managerDelete_Request)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.kvdb.managerDelete_Request)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3512,7 +3512,7 @@ void managerDelete_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, 
 }
 
 void managerDelete_Request::CopyFrom(const managerDelete_Request& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.kvdb.managerDelete_Request)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.kvdb.managerDelete_Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3560,7 +3560,7 @@ managerDump_Request::managerDump_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.kvdb.managerDump_Request)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.kvdb.managerDump_Request)
 }
 managerDump_Request::managerDump_Request(const managerDump_Request& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -3584,7 +3584,7 @@ managerDump_Request::managerDump_Request(const managerDump_Request& from)
   ::memcpy(&_impl_.page_, &from._impl_.page_,
     static_cast<size_t>(reinterpret_cast<char*>(&_impl_.records_) -
     reinterpret_cast<char*>(&_impl_.page_)) + sizeof(_impl_.records_));
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.kvdb.managerDump_Request)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.kvdb.managerDump_Request)
 }
 
 inline void managerDump_Request::SharedCtor(
@@ -3605,7 +3605,7 @@ inline void managerDump_Request::SharedCtor(
 }
 
 managerDump_Request::~managerDump_Request() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.kvdb.managerDump_Request)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.kvdb.managerDump_Request)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -3623,7 +3623,7 @@ void managerDump_Request::SetCachedSize(int size) const {
 }
 
 void managerDump_Request::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.kvdb.managerDump_Request)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.kvdb.managerDump_Request)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3654,7 +3654,7 @@ const char* managerDump_Request::_InternalParse(const char* ptr, ::_pbi::ParseCo
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.managerDump_Request.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.managerDump_Request.name"));
         } else
           goto handle_unusual;
         continue;
@@ -3702,7 +3702,7 @@ failure:
 
 uint8_t* managerDump_Request::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.kvdb.managerDump_Request)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.kvdb.managerDump_Request)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3711,7 +3711,7 @@ uint8_t* managerDump_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.managerDump_Request.name");
+      "com.cyb3rhq.api.engine.kvdb.managerDump_Request.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
@@ -3732,12 +3732,12 @@ uint8_t* managerDump_Request::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.kvdb.managerDump_Request)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.kvdb.managerDump_Request)
   return target;
 }
 
 size_t managerDump_Request::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.kvdb.managerDump_Request)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.kvdb.managerDump_Request)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -3777,7 +3777,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*managerDump_Request::GetClassD
 void managerDump_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<managerDump_Request*>(&to_msg);
   auto& from = static_cast<const managerDump_Request&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.kvdb.managerDump_Request)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.kvdb.managerDump_Request)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3799,7 +3799,7 @@ void managerDump_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, co
 }
 
 void managerDump_Request::CopyFrom(const managerDump_Request& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.kvdb.managerDump_Request)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.kvdb.managerDump_Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3847,7 +3847,7 @@ managerDump_Response::managerDump_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.kvdb.managerDump_Response)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.kvdb.managerDump_Response)
 }
 managerDump_Response::managerDump_Response(const managerDump_Response& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -3869,7 +3869,7 @@ managerDump_Response::managerDump_Response(const managerDump_Response& from)
       _this->GetArenaForAllocation());
   }
   _this->_impl_.status_ = from._impl_.status_;
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.kvdb.managerDump_Response)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.kvdb.managerDump_Response)
 }
 
 inline void managerDump_Response::SharedCtor(
@@ -3890,7 +3890,7 @@ inline void managerDump_Response::SharedCtor(
 }
 
 managerDump_Response::~managerDump_Response() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.kvdb.managerDump_Response)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.kvdb.managerDump_Response)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -3909,7 +3909,7 @@ void managerDump_Response::SetCachedSize(int size) const {
 }
 
 void managerDump_Response::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.kvdb.managerDump_Response)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.kvdb.managerDump_Response)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3931,12 +3931,12 @@ const char* managerDump_Response::_InternalParse(const char* ptr, ::_pbi::ParseC
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // .com.wazuh.api.engine.ReturnStatus status = 1;
+      // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          _internal_set_status(static_cast<::com::wazuh::api::engine::ReturnStatus>(val));
+          _internal_set_status(static_cast<::com::cyb3rhq::api::engine::ReturnStatus>(val));
         } else
           goto handle_unusual;
         continue;
@@ -3946,11 +3946,11 @@ const char* managerDump_Response::_InternalParse(const char* ptr, ::_pbi::ParseC
           auto str = _internal_mutable_error();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.kvdb.managerDump_Response.error"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.kvdb.managerDump_Response.error"));
         } else
           goto handle_unusual;
         continue;
-      // repeated .com.wazuh.api.engine.kvdb.Entry entries = 3;
+      // repeated .com.cyb3rhq.api.engine.kvdb.Entry entries = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr -= 1;
@@ -3989,11 +3989,11 @@ failure:
 
 uint8_t* managerDump_Response::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.kvdb.managerDump_Response)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.kvdb.managerDump_Response)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   if (this->_internal_status() != 0) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
@@ -4005,12 +4005,12 @@ uint8_t* managerDump_Response::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_error().data(), static_cast<int>(this->_internal_error().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.kvdb.managerDump_Response.error");
+      "com.cyb3rhq.api.engine.kvdb.managerDump_Response.error");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_error(), target);
   }
 
-  // repeated .com.wazuh.api.engine.kvdb.Entry entries = 3;
+  // repeated .com.cyb3rhq.api.engine.kvdb.Entry entries = 3;
   for (unsigned i = 0,
       n = static_cast<unsigned>(this->_internal_entries_size()); i < n; i++) {
     const auto& repfield = this->_internal_entries(i);
@@ -4022,19 +4022,19 @@ uint8_t* managerDump_Response::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.kvdb.managerDump_Response)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.kvdb.managerDump_Response)
   return target;
 }
 
 size_t managerDump_Response::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.kvdb.managerDump_Response)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.kvdb.managerDump_Response)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .com.wazuh.api.engine.kvdb.Entry entries = 3;
+  // repeated .com.cyb3rhq.api.engine.kvdb.Entry entries = 3;
   total_size += 1UL * this->_internal_entries_size();
   for (const auto& msg : this->_impl_.entries_) {
     total_size +=
@@ -4049,7 +4049,7 @@ size_t managerDump_Response::ByteSizeLong() const {
         this->_internal_error());
   }
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   if (this->_internal_status() != 0) {
     total_size += 1 +
       ::_pbi::WireFormatLite::EnumSize(this->_internal_status());
@@ -4068,7 +4068,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*managerDump_Response::GetClass
 void managerDump_Response::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<managerDump_Response*>(&to_msg);
   auto& from = static_cast<const managerDump_Response&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.kvdb.managerDump_Response)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.kvdb.managerDump_Response)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4084,7 +4084,7 @@ void managerDump_Response::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, c
 }
 
 void managerDump_Response::CopyFrom(const managerDump_Response& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.kvdb.managerDump_Response)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.kvdb.managerDump_Response)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -4118,60 +4118,60 @@ void managerDump_Response::InternalSwap(managerDump_Response* other) {
 }  // namespace kvdb
 }  // namespace engine
 }  // namespace api
-}  // namespace wazuh
+}  // namespace cyb3rhq
 }  // namespace com
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::kvdb::Entry*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::kvdb::Entry >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::kvdb::Entry >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::kvdb::Entry*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::kvdb::Entry >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::kvdb::Entry >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::kvdb::dbGet_Request*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::kvdb::dbGet_Request >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::kvdb::dbGet_Request >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::kvdb::dbGet_Request*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::kvdb::dbGet_Request >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::kvdb::dbGet_Request >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::kvdb::dbGet_Response*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::kvdb::dbGet_Response >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::kvdb::dbGet_Response >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::kvdb::dbGet_Response*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::kvdb::dbGet_Response >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::kvdb::dbGet_Response >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::kvdb::dbSearch_Request*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::kvdb::dbSearch_Request >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::kvdb::dbSearch_Request >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::kvdb::dbSearch_Request*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::kvdb::dbSearch_Request >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::kvdb::dbSearch_Request >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::kvdb::dbSearch_Response*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::kvdb::dbSearch_Response >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::kvdb::dbSearch_Response >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::kvdb::dbSearch_Response*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::kvdb::dbSearch_Response >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::kvdb::dbSearch_Response >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::kvdb::dbDelete_Request*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::kvdb::dbDelete_Request >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::kvdb::dbDelete_Request >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::kvdb::dbDelete_Request*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::kvdb::dbDelete_Request >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::kvdb::dbDelete_Request >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::kvdb::dbPut_Request*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::kvdb::dbPut_Request >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::kvdb::dbPut_Request >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::kvdb::dbPut_Request*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::kvdb::dbPut_Request >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::kvdb::dbPut_Request >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::kvdb::managerGet_Request*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::kvdb::managerGet_Request >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::kvdb::managerGet_Request >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::kvdb::managerGet_Request*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::kvdb::managerGet_Request >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::kvdb::managerGet_Request >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::kvdb::managerGet_Response*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::kvdb::managerGet_Response >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::kvdb::managerGet_Response >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::kvdb::managerGet_Response*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::kvdb::managerGet_Response >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::kvdb::managerGet_Response >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::kvdb::managerPost_Request*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::kvdb::managerPost_Request >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::kvdb::managerPost_Request >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::kvdb::managerPost_Request*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::kvdb::managerPost_Request >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::kvdb::managerPost_Request >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::kvdb::managerDelete_Request*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::kvdb::managerDelete_Request >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::kvdb::managerDelete_Request >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::kvdb::managerDelete_Request*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::kvdb::managerDelete_Request >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::kvdb::managerDelete_Request >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::kvdb::managerDump_Request*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::kvdb::managerDump_Request >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::kvdb::managerDump_Request >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::kvdb::managerDump_Request*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::kvdb::managerDump_Request >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::kvdb::managerDump_Request >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::kvdb::managerDump_Response*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::kvdb::managerDump_Response >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::kvdb::managerDump_Response >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::kvdb::managerDump_Response*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::kvdb::managerDump_Response >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::kvdb::managerDump_Response >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

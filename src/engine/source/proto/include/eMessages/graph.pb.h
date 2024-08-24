@@ -46,7 +46,7 @@ struct TableStruct_graph_2eproto {
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_graph_2eproto;
 namespace com {
-namespace wazuh {
+namespace cyb3rhq {
 namespace api {
 namespace engine {
 namespace graph {
@@ -59,14 +59,14 @@ extern GraphGet_ResponseDefaultTypeInternal _GraphGet_Response_default_instance_
 }  // namespace graph
 }  // namespace engine
 }  // namespace api
-}  // namespace wazuh
+}  // namespace cyb3rhq
 }  // namespace com
 PROTOBUF_NAMESPACE_OPEN
-template<> ::com::wazuh::api::engine::graph::GraphGet_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::graph::GraphGet_Request>(Arena*);
-template<> ::com::wazuh::api::engine::graph::GraphGet_Response* Arena::CreateMaybeMessage<::com::wazuh::api::engine::graph::GraphGet_Response>(Arena*);
+template<> ::com::cyb3rhq::api::engine::graph::GraphGet_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::graph::GraphGet_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::graph::GraphGet_Response* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::graph::GraphGet_Response>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace com {
-namespace wazuh {
+namespace cyb3rhq {
 namespace api {
 namespace engine {
 namespace graph {
@@ -74,7 +74,7 @@ namespace graph {
 // ===================================================================
 
 class GraphGet_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.graph.GraphGet_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.graph.GraphGet_Request) */ {
  public:
   inline GraphGet_Request() : GraphGet_Request(nullptr) {}
   ~GraphGet_Request() override;
@@ -177,7 +177,7 @@ class GraphGet_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.graph.GraphGet_Request";
+    return "com.cyb3rhq.api.engine.graph.GraphGet_Request";
   }
   protected:
   explicit GraphGet_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -233,7 +233,7 @@ class GraphGet_Request final :
   std::string* _internal_mutable_type();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.graph.GraphGet_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.graph.GraphGet_Request)
  private:
   class _Internal;
 
@@ -252,7 +252,7 @@ class GraphGet_Request final :
 // -------------------------------------------------------------------
 
 class GraphGet_Response final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.graph.GraphGet_Response) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.graph.GraphGet_Response) */ {
  public:
   inline GraphGet_Response() : GraphGet_Response(nullptr) {}
   ~GraphGet_Response() override;
@@ -355,7 +355,7 @@ class GraphGet_Response final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.graph.GraphGet_Response";
+    return "com.cyb3rhq.api.engine.graph.GraphGet_Response";
   }
   protected:
   explicit GraphGet_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -412,16 +412,16 @@ class GraphGet_Response final :
   std::string* _internal_mutable_content();
   public:
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   void clear_status();
-  ::com::wazuh::api::engine::ReturnStatus status() const;
-  void set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus status() const;
+  void set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   private:
-  ::com::wazuh::api::engine::ReturnStatus _internal_status() const;
-  void _internal_set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus _internal_status() const;
+  void _internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.graph.GraphGet_Response)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.graph.GraphGet_Response)
  private:
   class _Internal;
 
@@ -462,7 +462,7 @@ inline void GraphGet_Request::clear_policy() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& GraphGet_Request::policy() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.graph.GraphGet_Request.policy)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.graph.GraphGet_Request.policy)
   return _internal_policy();
 }
 template <typename ArgT0, typename... ArgT>
@@ -470,11 +470,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void GraphGet_Request::set_policy(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.policy_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.graph.GraphGet_Request.policy)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.graph.GraphGet_Request.policy)
 }
 inline std::string* GraphGet_Request::mutable_policy() {
   std::string* _s = _internal_mutable_policy();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.graph.GraphGet_Request.policy)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.graph.GraphGet_Request.policy)
   return _s;
 }
 inline const std::string& GraphGet_Request::_internal_policy() const {
@@ -489,7 +489,7 @@ inline std::string* GraphGet_Request::_internal_mutable_policy() {
   return _impl_.policy_.Mutable(GetArenaForAllocation());
 }
 inline std::string* GraphGet_Request::release_policy() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.graph.GraphGet_Request.policy)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.graph.GraphGet_Request.policy)
   if (!_internal_has_policy()) {
     return nullptr;
   }
@@ -514,7 +514,7 @@ inline void GraphGet_Request::set_allocated_policy(std::string* policy) {
     _impl_.policy_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.graph.GraphGet_Request.policy)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.graph.GraphGet_Request.policy)
 }
 
 // optional string type = 2;
@@ -530,7 +530,7 @@ inline void GraphGet_Request::clear_type() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& GraphGet_Request::type() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.graph.GraphGet_Request.type)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.graph.GraphGet_Request.type)
   return _internal_type();
 }
 template <typename ArgT0, typename... ArgT>
@@ -538,11 +538,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void GraphGet_Request::set_type(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.type_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.graph.GraphGet_Request.type)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.graph.GraphGet_Request.type)
 }
 inline std::string* GraphGet_Request::mutable_type() {
   std::string* _s = _internal_mutable_type();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.graph.GraphGet_Request.type)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.graph.GraphGet_Request.type)
   return _s;
 }
 inline const std::string& GraphGet_Request::_internal_type() const {
@@ -557,7 +557,7 @@ inline std::string* GraphGet_Request::_internal_mutable_type() {
   return _impl_.type_.Mutable(GetArenaForAllocation());
 }
 inline std::string* GraphGet_Request::release_type() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.graph.GraphGet_Request.type)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.graph.GraphGet_Request.type)
   if (!_internal_has_type()) {
     return nullptr;
   }
@@ -582,31 +582,31 @@ inline void GraphGet_Request::set_allocated_type(std::string* type) {
     _impl_.type_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.graph.GraphGet_Request.type)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.graph.GraphGet_Request.type)
 }
 
 // -------------------------------------------------------------------
 
 // GraphGet_Response
 
-// .com.wazuh.api.engine.ReturnStatus status = 1;
+// .com.cyb3rhq.api.engine.ReturnStatus status = 1;
 inline void GraphGet_Response::clear_status() {
   _impl_.status_ = 0;
 }
-inline ::com::wazuh::api::engine::ReturnStatus GraphGet_Response::_internal_status() const {
-  return static_cast< ::com::wazuh::api::engine::ReturnStatus >(_impl_.status_);
+inline ::com::cyb3rhq::api::engine::ReturnStatus GraphGet_Response::_internal_status() const {
+  return static_cast< ::com::cyb3rhq::api::engine::ReturnStatus >(_impl_.status_);
 }
-inline ::com::wazuh::api::engine::ReturnStatus GraphGet_Response::status() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.graph.GraphGet_Response.status)
+inline ::com::cyb3rhq::api::engine::ReturnStatus GraphGet_Response::status() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.graph.GraphGet_Response.status)
   return _internal_status();
 }
-inline void GraphGet_Response::_internal_set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void GraphGet_Response::_internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   
   _impl_.status_ = value;
 }
-inline void GraphGet_Response::set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void GraphGet_Response::set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.graph.GraphGet_Response.status)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.graph.GraphGet_Response.status)
 }
 
 // optional string error = 2;
@@ -622,7 +622,7 @@ inline void GraphGet_Response::clear_error() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& GraphGet_Response::error() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.graph.GraphGet_Response.error)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.graph.GraphGet_Response.error)
   return _internal_error();
 }
 template <typename ArgT0, typename... ArgT>
@@ -630,11 +630,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void GraphGet_Response::set_error(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.error_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.graph.GraphGet_Response.error)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.graph.GraphGet_Response.error)
 }
 inline std::string* GraphGet_Response::mutable_error() {
   std::string* _s = _internal_mutable_error();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.graph.GraphGet_Response.error)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.graph.GraphGet_Response.error)
   return _s;
 }
 inline const std::string& GraphGet_Response::_internal_error() const {
@@ -649,7 +649,7 @@ inline std::string* GraphGet_Response::_internal_mutable_error() {
   return _impl_.error_.Mutable(GetArenaForAllocation());
 }
 inline std::string* GraphGet_Response::release_error() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.graph.GraphGet_Response.error)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.graph.GraphGet_Response.error)
   if (!_internal_has_error()) {
     return nullptr;
   }
@@ -674,7 +674,7 @@ inline void GraphGet_Response::set_allocated_error(std::string* error) {
     _impl_.error_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.graph.GraphGet_Response.error)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.graph.GraphGet_Response.error)
 }
 
 // optional string content = 3;
@@ -690,7 +690,7 @@ inline void GraphGet_Response::clear_content() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& GraphGet_Response::content() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.graph.GraphGet_Response.content)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.graph.GraphGet_Response.content)
   return _internal_content();
 }
 template <typename ArgT0, typename... ArgT>
@@ -698,11 +698,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void GraphGet_Response::set_content(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.content_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.graph.GraphGet_Response.content)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.graph.GraphGet_Response.content)
 }
 inline std::string* GraphGet_Response::mutable_content() {
   std::string* _s = _internal_mutable_content();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.graph.GraphGet_Response.content)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.graph.GraphGet_Response.content)
   return _s;
 }
 inline const std::string& GraphGet_Response::_internal_content() const {
@@ -717,7 +717,7 @@ inline std::string* GraphGet_Response::_internal_mutable_content() {
   return _impl_.content_.Mutable(GetArenaForAllocation());
 }
 inline std::string* GraphGet_Response::release_content() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.graph.GraphGet_Response.content)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.graph.GraphGet_Response.content)
   if (!_internal_has_content()) {
     return nullptr;
   }
@@ -742,7 +742,7 @@ inline void GraphGet_Response::set_allocated_content(std::string* content) {
     _impl_.content_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.graph.GraphGet_Response.content)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.graph.GraphGet_Response.content)
 }
 
 #ifdef __GNUC__
@@ -756,7 +756,7 @@ inline void GraphGet_Response::set_allocated_content(std::string* content) {
 }  // namespace graph
 }  // namespace engine
 }  // namespace api
-}  // namespace wazuh
+}  // namespace cyb3rhq
 }  // namespace com
 
 // @@protoc_insertion_point(global_scope)

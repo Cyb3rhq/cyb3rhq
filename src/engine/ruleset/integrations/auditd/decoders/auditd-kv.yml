@@ -9,7 +9,7 @@ metadata:
     - https://docs.elastic.co/en/integrations/auditd
   product.name: auditd
   author:
-      name: Wazuh, Inc.
+      name: Cyb3rhq, Inc.
       url: https://wazuh.com
       date: 2023/01/30
 
@@ -30,7 +30,7 @@ normalize:
       #TODO: issue on +string_equal can't use it as a value
       - ~null_parenthesis: (null)
       - ~kv_msg: delete()
-      - wazuh.decoders: +array_append/auditd-kv
+      - cyb3rhq.decoders: +array_append/auditd-kv
 
   # Start of hexa to string fields transformation
   # for each audit.log.X

@@ -1,0 +1,28 @@
+---
+name: decoder/core-upgrade/0
+
+metadata:
+  module: cyb3rhq-agent/upgrade
+  title: Upgrade queue events
+  description: Exclusive parent decoder for events from upgrade queue (WPK)
+  compatibility: >
+    This decoder has been tested on Cyb3rhq version 4.4.0
+  versions:
+    - "4.4.0"
+  author:
+    name: Cyb3rhq, Inc.
+    date: 2023/03/22
+  references:
+    - https://www.json.org
+
+parents:
+  - decoder/core-cyb3rhq-message/0
+
+check:
+  # Value 117 is equal to character 'u' in ASCII
+  - cyb3rhq.queue: 117
+
+normalize:
+  - map:
+      - cyb3rhq.decoders: array_append(core-upgrade)
+      - cyb3rhq.source: upgrade

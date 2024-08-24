@@ -5,9 +5,9 @@
 constexpr auto schema_malformed = R"(
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "wazuh-decoders.json",
+  "$id": "cyb3rhq-decoders.json",
   "title": "Malformed Schema",
-  "description": "Validate Wazuh decoder specification",
+  "description": "Validate Cyb3rhq decoder specification",
   "invalid_type_not_str": object,
   "additionalProperties": false
 }
@@ -43,7 +43,7 @@ define:
   header: <timestamp/SYSLOG> <host.hostname>
 
 check:
-  - wazuh.event.format: text
+  - cyb3rhq.event.format: text
 
 parse:
   logpar:
@@ -72,7 +72,7 @@ define:
   header: <timestamp/SYSLOG> <host.hostname>
 
 check:
-  - wazuh.event.format: text
+  - cyb3rhq.event.format: text
 
 parse:
   logpar:
@@ -88,9 +88,9 @@ parse:
 constexpr auto json_schema_decoder = R"(
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "wazuh-decoders.json",
-  "title": "Schema for Wazuh decoders specification",
-  "description": "Validate Wazuh decoder specification",
+  "$id": "cyb3rhq-decoders.json",
+  "title": "Schema for Cyb3rhq decoders specification",
+  "description": "Validate Cyb3rhq decoder specification",
   "type": "object",
   "additionalProperties": false,
   "required": [

@@ -7,7 +7,7 @@ metadata:
   description: Decoder for Fortinet fortimail
   version: [6.0.x, 6.2.x]
   author:
-    name: Wazuh, Inc.
+    name: Cyb3rhq, Inc.
     date: 2023/01/09
   references:
     - https://docs.fortinet.com
@@ -139,7 +139,7 @@ normalize:
     - rsa.misc.virusname: $~log.rsa.misc.virusname
     - rsa.network.domain: $server.domain
     - rsa.web.fqdn: $~log.rsa.web.fqdn
-    - wazuh.decoders: +array_append/fortinet-fortimail
+    - cyb3rhq.decoders: +array_append/fortinet-fortimail
 
   - check:
       - rsa.internal.event_desc: exists()

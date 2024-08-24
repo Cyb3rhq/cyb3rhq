@@ -1,0 +1,28 @@
+name: decoder/core-rootcheck/0
+# module: cyb3rhq
+
+metadata:
+  title: Rootcheck queue decoder.
+  description: >
+    Process events that have the Rootcheck queue in the standard OSSEC message format.
+  compatibility: Any service being tagged with the queue 57.
+  versions:
+    - Cyb3rhq 4.*
+  author:
+    name: Cyb3rhq, Inc.
+    date: 07/03/2023
+  references:
+    - https://documentation.wazuh.com/current/user-manual/capabilities/policy-monitoring/rootcheck/how-it-works.html
+    - https://documentation.wazuh.com/current/user-manual/reference/ossec-conf/rootcheck.html
+
+parents:
+  - decoder/core-cyb3rhq-message/0
+
+check:
+  # Value 57 is equal to character '9' in ASCII
+  - cyb3rhq.queue: 57
+
+normalize:
+  - map:
+      - cyb3rhq.decoders: array_append(core-rootcheck)
+      - cyb3rhq.source: rootcheck

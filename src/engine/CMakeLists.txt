@@ -8,7 +8,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Project settings
-project(wazuh-engine
+project(cyb3rhq-engine
     VERSION 0.1
     LANGUAGES CXX
 )
@@ -36,9 +36,9 @@ option(ENGINE_GENERATE_PROTOBUF "Generate code using Protocol Buffers" OFF)
 if(CMAKE_BUILD_TYPE STREQUAL "Debug")
     if(ENGINE_ASSERT_WITH_SYMBOLS)
         add_link_options ( -rdynamic ) #For asserts bt
-        add_compile_definitions ( WAZUH_ASSERT_WITH_SYM )
+        add_compile_definitions ( CYB3RHQ_ASSERT_WITH_SYM )
     endif()
-    add_compile_definitions ( WAZUH_DEBUG )
+    add_compile_definitions ( CYB3RHQ_DEBUG )
 endif()
 
 # Add the Sanitizers

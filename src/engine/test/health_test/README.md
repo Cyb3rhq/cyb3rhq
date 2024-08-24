@@ -1,8 +1,8 @@
-# Health Tests for Wazuh-Engine Integrations
+# Health Tests for Cyb3rhq-Engine Integrations
 
 ## Overview
 
-This directory contains the necessary tools and scripts to run health tests for various integrations within the Wazuh-Engine ruleset. These tests are crucial for verifying the correctness and efficacy of each integration by comparing actual outputs against expected outcomes.
+This directory contains the necessary tools and scripts to run health tests for various integrations within the Cyb3rhq-Engine ruleset. These tests are crucial for verifying the correctness and efficacy of each integration by comparing actual outputs against expected outcomes.
 
 ## Directory Structure
 

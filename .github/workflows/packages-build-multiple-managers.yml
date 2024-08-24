@@ -1,13 +1,13 @@
-name: Build multiple Wazuh Manager Packages - DEB|RPM - amd64|x86_64
+name: Build multiple Cyb3rhq Manager Packages - DEB|RPM - amd64|x86_64
 on:
   workflow_dispatch:
     inputs:
       build-amd64-deb:
-        description: 'Build .deb wazuh-manager on amd64 arch'
+        description: 'Build .deb cyb3rhq-manager on amd64 arch'
         type: boolean
         required: false
       build-x86_64-rpm:
-        description: 'Build .rpm wazuh-manager on x86_64 arch'
+        description: 'Build .rpm cyb3rhq-manager on x86_64 arch'
         type: boolean
         required: false
       revision:

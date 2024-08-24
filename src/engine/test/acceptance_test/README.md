@@ -1,8 +1,8 @@
-# Acceptance Tests for Wazuh-Engine and Wazuh-Analysisd
+# Acceptance Tests for Cyb3rhq-Engine and Cyb3rhq-Analysisd
 
 ## Overview
 
-The `acceptance` directory contains scripts to measure the performance of the Wazuh-Engine and Wazuh-Analysisd. The primary script, `acceptance_test.sh`, is used to send events to both Wazuh-Analysisd and Wazuh-Engine, capturing and comparing their performance metrics.
+The `acceptance` directory contains scripts to measure the performance of the Cyb3rhq-Engine and Cyb3rhq-Analysisd. The primary script, `acceptance_test.sh`, is used to send events to both Cyb3rhq-Analysisd and Cyb3rhq-Engine, capturing and comparing their performance metrics.
 
 ## Configuration
 
@@ -23,7 +23,7 @@ The main script used for these tests is `acceptance_test.sh`, which is configure
 
 ### Engine Specific Configurations
   - `ENGINE_BUILD_ABSOLUTE_PATH`: Absolute path to the Engine's binary.
-  - `ENGINE_N_THREADS`: Number of threads to use when launching Wazuh-Engine for the test.
+  - `ENGINE_N_THREADS`: Number of threads to use when launching Cyb3rhq-Engine for the test.
 
 ### Analysisd Specific Configurations
   - Directories for configuration and ruleset files are specified to replace the existing ones temporarily during the test.

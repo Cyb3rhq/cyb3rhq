@@ -62,4 +62,4 @@ windows systems:
 
 | Version | Description | Details |
 |---|---|---|
-| 1.0.0-dev | Created integration for suricata | [#XXXX](https://github.com/wazuh/wazuh/pull/XXXX) |
+| 1.0.0-dev | Created integration for suricata | [#XXXX](https://github.com/cyb3rhq/cyb3rhq/pull/XXXX) |

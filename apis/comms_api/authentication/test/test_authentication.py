@@ -10,7 +10,7 @@ from api.authentication import INVALID_TOKEN, JWT_ISSUER
 from comms_api.authentication.authentication import decode_token, generate_token, JWTBearer, JWT_AUDIENCE, \
     JWT_EXPIRATION
 from comms_api.routers.exceptions import HTTPError
-from wazuh.core.exception import WazuhCommsAPIError
+from cyb3rhq.core.exception import Cyb3rhqCommsAPIError
 
 payload = {
     'iss': JWT_ISSUER,
@@ -49,7 +49,7 @@ async def test_jwt_bearer_ko():
 
 
 @pytest.mark.asyncio
-@patch('comms_api.authentication.authentication.decode_token', side_effect=WazuhCommsAPIError(2706))
+@patch('comms_api.authentication.authentication.decode_token', side_effect=Cyb3rhqCommsAPIError(2706))
 async def test_jwt_bearer_decode_ko(decode_token_mock):
     """Validate that the `JWTBearer` class handles decode exceptions successfully."""
     mock_req = MagicMock()
@@ -93,7 +93,7 @@ def test_decode_token(mock_get_keypair, mock_decode):
                                                                                  '-----BEGIN PUBLIC KEY-----'))
 def test_decode_token_ko(mock_get_keypair):
     """Assert exceptions are handled as expected inside the `decode_token` function."""
-    with pytest.raises(WazuhCommsAPIError, match='Error 2706 - Invalid authentication token'):
+    with pytest.raises(Cyb3rhqCommsAPIError, match='Error 2706 - Invalid authentication token'):
         _ = decode_token(token='test_token')
 
     mock_get_keypair.assert_called_once()

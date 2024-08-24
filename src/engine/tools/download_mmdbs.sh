@@ -31,11 +31,11 @@ download_and_extract() {
 
     # Move to the correct location
     mv ${edition}.mmdb /var/ossec/etc
-    chown wazuh:wazuh /var/ossec/etc/${edition}.mmdb
+    chown cyb3rhq:cyb3rhq /var/ossec/etc/${edition}.mmdb
 
     # Enable the database
     echo "Enabling ${edition} database"
-    $ENGINE_DIR/wazuh-engine geo add /var/ossec/etc/${edition}.mmdb $type
+    $ENGINE_DIR/cyb3rhq-engine geo add /var/ossec/etc/${edition}.mmdb $type
 
     rm $GEOIP_TMP_FILE
 }

@@ -2,19 +2,19 @@
 
 # Darwin init script.
 # by Lorenzo Costanzia di Costigliole <mummie@tin.it>
-# Modified by Wazuh, Inc. <info@wazuh.com>.
-# Copyright (C) 2015, Wazuh Inc.
+# Modified by Cyb3rhq, Inc. <info@wazuh.com>.
+# Copyright (C) 2015, Cyb3rhq Inc.
 # This program is free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 INSTALLATION_PATH=${1}
-SERVICE=/Library/LaunchDaemons/com.wazuh.agent.plist
-STARTUP=/Library/StartupItems/WAZUH/StartupParameters.plist
-LAUNCHER_SCRIPT=/Library/StartupItems/WAZUH/Wazuh-launcher
-STARTUP_SCRIPT=/Library/StartupItems/WAZUH/WAZUH
+SERVICE=/Library/LaunchDaemons/com.cyb3rhq.agent.plist
+STARTUP=/Library/StartupItems/CYB3RHQ/StartupParameters.plist
+LAUNCHER_SCRIPT=/Library/StartupItems/CYB3RHQ/Cyb3rhq-launcher
+STARTUP_SCRIPT=/Library/StartupItems/CYB3RHQ/CYB3RHQ
 
-launchctl unload /Library/LaunchDaemons/com.wazuh.agent.plist 2> /dev/null
-mkdir -p /Library/StartupItems/WAZUH
-chown root:wheel /Library/StartupItems/WAZUH
+launchctl unload /Library/LaunchDaemons/com.cyb3rhq.agent.plist 2> /dev/null
+mkdir -p /Library/StartupItems/CYB3RHQ
+chown root:wheel /Library/StartupItems/CYB3RHQ
 rm -f $STARTUP $STARTUP_SCRIPT $SERVICE
 echo > $LAUNCHER_SCRIPT
 chown root:wheel $LAUNCHER_SCRIPT
@@ -25,7 +25,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
  <plist version="1.0">
      <dict>
          <key>Label</key>
-         <string>com.wazuh.agent</string>
+         <string>com.cyb3rhq.agent</string>
          <key>ProgramArguments</key>
          <array>
              <string>'$LAUNCHER_SCRIPT'</string>
@@ -44,15 +44,15 @@ echo '
 
 StartService ()
 {
-        '${INSTALLATION_PATH}'/bin/wazuh-control start
+        '${INSTALLATION_PATH}'/bin/cyb3rhq-control start
 }
 StopService ()
 {
-        '${INSTALLATION_PATH}'/bin/wazuh-control stop
+        '${INSTALLATION_PATH}'/bin/cyb3rhq-control stop
 }
 RestartService ()
 {
-        '${INSTALLATION_PATH}'/bin/wazuh-control restart
+        '${INSTALLATION_PATH}'/bin/cyb3rhq-control restart
 }
 RunService "$1"
 ' > $STARTUP_SCRIPT
@@ -67,17 +67,17 @@ www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
        <key>Description</key>
-       <string>WAZUH Security agent</string>
+       <string>CYB3RHQ Security agent</string>
        <key>Messages</key>
        <dict>
                <key>start</key>
-               <string>Starting Wazuh agent</string>
+               <string>Starting Cyb3rhq agent</string>
                <key>stop</key>
-               <string>Stopping Wazuh agent</string>
+               <string>Stopping Cyb3rhq agent</string>
        </dict>
        <key>Provides</key>
        <array>
-               <string>WAZUH</string>
+               <string>CYB3RHQ</string>
        </array>
        <key>Requires</key>
        <array>
@@ -93,12 +93,12 @@ chmod u=rw-,go=r-- $STARTUP
 echo '#!/bin/sh
 
 capture_sigterm() {
-    '${INSTALLATION_PATH}'/bin/wazuh-control stop
+    '${INSTALLATION_PATH}'/bin/cyb3rhq-control stop
     exit $?
 }
 
-if ! '${INSTALLATION_PATH}'/bin/wazuh-control start; then
-    '${INSTALLATION_PATH}'/bin/wazuh-control stop
+if ! '${INSTALLATION_PATH}'/bin/cyb3rhq-control start; then
+    '${INSTALLATION_PATH}'/bin/cyb3rhq-control stop
 fi
 
 while : ; do

@@ -1,0 +1,15 @@
+name: decoder/integrations/0
+# module: cyb3rhq
+
+metadata:
+  title: Base decoder.
+
+parents:
+  - decoder/core-localfile/0
+  - decoder/core-rsyslog/0
+  - decoder/core-windows/0
+
+normalize:
+  - map:
+      - cyb3rhq.noIndexing: delete()
+      - tmp.json: parse_json($event.original)

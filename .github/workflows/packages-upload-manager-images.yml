@@ -22,7 +22,7 @@ on:
           - rpm
       source_reference:
         description: |
-          Branch from wazuh/wazuh repository to use.
+          Branch from cyb3rhq/cyb3rhq repository to use.
         required: true
 
 jobs:
@@ -32,10 +32,10 @@ jobs:
     name: Package - Upload pkg_${{ inputs.system }}_manager_builder_amd64 with tag ${{ inputs.docker_image_tag }}
 
     steps:
-      - name: Checkout wazuh/wazuh repository
+      - name: Checkout cyb3rhq/cyb3rhq repository
         uses: actions/checkout@v4
         with:
-          repository: wazuh/wazuh
+          repository: cyb3rhq/cyb3rhq
           ref: ${{ inputs.source_reference }}
 
       - name: Set TAG

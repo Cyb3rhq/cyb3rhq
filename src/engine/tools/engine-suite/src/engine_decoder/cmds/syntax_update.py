@@ -76,6 +76,6 @@ def configure(subparsers):
         '-l', '--list-file', help=f'Path to list of {{"old":"new"}} helper functions names', type=str, dest='list-file')
 
     parser_update_syntax.add_argument('-d', '--directory', help=f'Directory where to look for decoders', type=str, dest='directory',
-                                      default='/home/vagrant/engine/wazuh/src/engine/ruleset/decoders')
+                                      default='/home/vagrant/engine/cyb3rhq/src/engine/ruleset/decoders')
 
     parser_update_syntax.set_defaults(func=run)

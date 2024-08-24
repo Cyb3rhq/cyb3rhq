@@ -1,10 +1,10 @@
 
-    Grazie per aver utilizzato Wazuh.
+    Grazie per aver utilizzato Cyb3rhq.
     Si prega di non dubitare a contattarci se avete bisogno di aiuto o di
     trovare qualsiasi bug.
 
     Utilizza la nostra Mailing List pubblico presso:
-              https://groups.google.com/forum/#!forum/wazuh
+              https://groups.google.com/forum/#!forum/cyb3rhq
 
     Maggiori informazioni sono disponibili all'indirizzo:
                - http://www.wazuh.com

@@ -21,8 +21,8 @@ struct Options
 namespace cmd::config
 {
 
-namespace eConfig = ::com::wazuh::api::engine::config;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eConfig = ::com::cyb3rhq::api::engine::config;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 void runGet(std::shared_ptr<apiclnt::Client> client, const std::string& nameStr)
 {
@@ -38,9 +38,9 @@ void runGet(std::shared_ptr<apiclnt::Client> client, const std::string& nameStr)
     }
 
     // Call the API and parse the response (Throw if error)
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print the config
     std::cout << eResponse.content() << std::endl;
@@ -60,9 +60,9 @@ void runSave(std::shared_ptr<apiclnt::Client> client, const std::string& pathStr
     }
 
     // Call the API and parse the response (Throw if error)
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runPut(std::shared_ptr<apiclnt::Client> client, const std::string& nameStr, const std::string& valueStr)
@@ -76,14 +76,14 @@ void runPut(std::shared_ptr<apiclnt::Client> client, const std::string& nameStr,
     eRequest.set_name(nameStr);
     eRequest.set_content(valueStr);
     // Call the API and parse the response (Throw if error)
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void configure(CLI::App_p app)
 {
-    auto configApp = app->add_subcommand("config", "Manage the Wazuh Engine configuration");
+    auto configApp = app->add_subcommand("config", "Manage the Cyb3rhq Engine configuration");
     configApp->require_subcommand();
     auto options = std::make_shared<Options>();
 

@@ -8,7 +8,7 @@
 #include <sockiface/mockSockFactory.hpp>
 #include <sockiface/mockSockHandler.hpp>
 
-using namespace wazuhdb;
+using namespace cyb3rhqdb;
 using namespace sockiface::mocks;
 
 constexpr const char* TEST_MESSAGE {"Test Message to be queried"};

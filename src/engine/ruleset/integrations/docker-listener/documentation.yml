@@ -1,4 +1,4 @@
-title: Wazuh Docker Listener Integration
+title: Cyb3rhq Docker Listener Integration
 
 overview: |
   This integration receives, parses and processes logs obtained with the docker-listener wodle from docker. This are real-time events from the docker server.
@@ -22,7 +22,7 @@ overview: |
   More information on how to use and a example on how to achieve this [here](https://documentation.wazuh.com/current/proof-of-concept-guide/monitoring-docker.html).
 
 compatibility: >
-  This module has been tested against docker version 24.0.2 wazuh agent 4.4.3 in ubuntu 22
+  This module has been tested against docker version 24.0.2 cyb3rhq agent 4.4.3 in ubuntu 22
 
 configuration: |
   Docker-listener wodle can be configured and set on the manager or the agent, depending on where is docker used.

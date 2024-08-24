@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-# Copyright (C) 2015, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2015, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is a free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 from setuptools import setup, find_namespace_packages
@@ -18,8 +18,8 @@ setup(
     version='5.0.0',
     description='Communications API',
     author_email='hello@wazuh.com',
-    author='Wazuh',
-    url='https://github.com/wazuh',
+    author='Cyb3rhq',
+    url='https://github.com/cyb3rhq',
     keywords=['Communications API', 'Comms API'],
     install_requires=[],
     packages=find_namespace_packages(exclude=['*.test', '*.test.*', 'test.*', 'test']),
@@ -28,6 +28,6 @@ setup(
     zip_safe=False,
     license='GPLv2',
     long_description="""
-    The Communications API is an open source RESTful API that allows Wazuh agents to interact with the server.
+    The Communications API is an open source RESTful API that allows Cyb3rhq agents to interact with the server.
     """
 )

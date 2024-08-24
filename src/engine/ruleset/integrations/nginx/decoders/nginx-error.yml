@@ -8,7 +8,7 @@ metadata:
   product.versions:
     - nginx-1.23.2
   author:
-      name: Wazuh, Inc.
+      name: Cyb3rhq, Inc.
       url: https://wazuh.com
       date: 2023/01/13
 
@@ -33,4 +33,4 @@ normalize:
       - event.kind: event
       - event.category: +array_append/web
       - event.type: +array_append/error
-      - wazuh.decoders: +array_append/nginx-error
+      - cyb3rhq.decoders: +array_append/nginx-error

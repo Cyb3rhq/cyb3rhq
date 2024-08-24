@@ -21,7 +21,7 @@ namespace _pb = ::PROTOBUF_NAMESPACE_ID;
 namespace _pbi = _pb::internal;
 
 namespace com {
-namespace wazuh {
+namespace cyb3rhq {
 namespace api {
 namespace engine {
 namespace graph {
@@ -59,52 +59,52 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORIT
 }  // namespace graph
 }  // namespace engine
 }  // namespace api
-}  // namespace wazuh
+}  // namespace cyb3rhq
 }  // namespace com
 static ::_pb::Metadata file_level_metadata_graph_2eproto[2];
 static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_graph_2eproto = nullptr;
 static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_graph_2eproto = nullptr;
 
 const uint32_t TableStruct_graph_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::graph::GraphGet_Request, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::graph::GraphGet_Request, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::graph::GraphGet_Request, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::graph::GraphGet_Request, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::graph::GraphGet_Request, _impl_.policy_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::graph::GraphGet_Request, _impl_.type_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::graph::GraphGet_Request, _impl_.policy_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::graph::GraphGet_Request, _impl_.type_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::graph::GraphGet_Response, _impl_._has_bits_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::graph::GraphGet_Response, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::graph::GraphGet_Response, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::graph::GraphGet_Response, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::graph::GraphGet_Response, _impl_.status_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::graph::GraphGet_Response, _impl_.error_),
-  PROTOBUF_FIELD_OFFSET(::com::wazuh::api::engine::graph::GraphGet_Response, _impl_.content_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::graph::GraphGet_Response, _impl_.status_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::graph::GraphGet_Response, _impl_.error_),
+  PROTOBUF_FIELD_OFFSET(::com::cyb3rhq::api::engine::graph::GraphGet_Response, _impl_.content_),
   ~0u,
   0,
   1,
 };
 static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 8, -1, sizeof(::com::wazuh::api::engine::graph::GraphGet_Request)},
-  { 10, 19, -1, sizeof(::com::wazuh::api::engine::graph::GraphGet_Response)},
+  { 0, 8, -1, sizeof(::com::cyb3rhq::api::engine::graph::GraphGet_Request)},
+  { 10, 19, -1, sizeof(::com::cyb3rhq::api::engine::graph::GraphGet_Response)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
-  &::com::wazuh::api::engine::graph::_GraphGet_Request_default_instance_._instance,
-  &::com::wazuh::api::engine::graph::_GraphGet_Response_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::graph::_GraphGet_Request_default_instance_._instance,
+  &::com::cyb3rhq::api::engine::graph::_GraphGet_Response_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_graph_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\013graph.proto\022\032com.wazuh.api.engine.grap"
+  "\n\013graph.proto\022\032com.cyb3rhq.api.engine.grap"
   "h\032\014engine.proto\"N\n\020GraphGet_Request\022\023\n\006p"
   "olicy\030\001 \001(\tH\000\210\001\001\022\021\n\004type\030\002 \001(\tH\001\210\001\001B\t\n\007_"
   "policyB\007\n\005_type\"\207\001\n\021GraphGet_Response\0222\n"
-  "\006status\030\001 \001(\0162\".com.wazuh.api.engine.Ret"
+  "\006status\030\001 \001(\0162\".com.cyb3rhq.api.engine.Ret"
   "urnStatus\022\022\n\005error\030\002 \001(\tH\000\210\001\001\022\024\n\007content"
   "\030\003 \001(\tH\001\210\001\001B\010\n\006_errorB\n\n\010_contentb\006proto"
   "3"
@@ -128,7 +128,7 @@ PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_graph_2e
 // Force running AddDescriptors() at dynamic initialization time.
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_graph_2eproto(&descriptor_table_graph_2eproto);
 namespace com {
-namespace wazuh {
+namespace cyb3rhq {
 namespace api {
 namespace engine {
 namespace graph {
@@ -150,7 +150,7 @@ GraphGet_Request::GraphGet_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.graph.GraphGet_Request)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.graph.GraphGet_Request)
 }
 GraphGet_Request::GraphGet_Request(const GraphGet_Request& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -178,7 +178,7 @@ GraphGet_Request::GraphGet_Request(const GraphGet_Request& from)
     _this->_impl_.type_.Set(from._internal_type(), 
       _this->GetArenaForAllocation());
   }
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.graph.GraphGet_Request)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.graph.GraphGet_Request)
 }
 
 inline void GraphGet_Request::SharedCtor(
@@ -202,7 +202,7 @@ inline void GraphGet_Request::SharedCtor(
 }
 
 GraphGet_Request::~GraphGet_Request() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.graph.GraphGet_Request)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.graph.GraphGet_Request)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -221,7 +221,7 @@ void GraphGet_Request::SetCachedSize(int size) const {
 }
 
 void GraphGet_Request::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.graph.GraphGet_Request)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.graph.GraphGet_Request)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -252,7 +252,7 @@ const char* GraphGet_Request::_InternalParse(const char* ptr, ::_pbi::ParseConte
           auto str = _internal_mutable_policy();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.graph.GraphGet_Request.policy"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.graph.GraphGet_Request.policy"));
         } else
           goto handle_unusual;
         continue;
@@ -262,7 +262,7 @@ const char* GraphGet_Request::_InternalParse(const char* ptr, ::_pbi::ParseConte
           auto str = _internal_mutable_type();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.graph.GraphGet_Request.type"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.graph.GraphGet_Request.type"));
         } else
           goto handle_unusual;
         continue;
@@ -292,7 +292,7 @@ failure:
 
 uint8_t* GraphGet_Request::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.graph.GraphGet_Request)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.graph.GraphGet_Request)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -301,7 +301,7 @@ uint8_t* GraphGet_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_policy().data(), static_cast<int>(this->_internal_policy().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.graph.GraphGet_Request.policy");
+      "com.cyb3rhq.api.engine.graph.GraphGet_Request.policy");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_policy(), target);
   }
@@ -311,7 +311,7 @@ uint8_t* GraphGet_Request::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_type().data(), static_cast<int>(this->_internal_type().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.graph.GraphGet_Request.type");
+      "com.cyb3rhq.api.engine.graph.GraphGet_Request.type");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_type(), target);
   }
@@ -320,12 +320,12 @@ uint8_t* GraphGet_Request::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.graph.GraphGet_Request)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.graph.GraphGet_Request)
   return target;
 }
 
 size_t GraphGet_Request::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.graph.GraphGet_Request)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.graph.GraphGet_Request)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -362,7 +362,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GraphGet_Request::GetClassData
 void GraphGet_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<GraphGet_Request*>(&to_msg);
   auto& from = static_cast<const GraphGet_Request&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.graph.GraphGet_Request)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.graph.GraphGet_Request)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -380,7 +380,7 @@ void GraphGet_Request::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const
 }
 
 void GraphGet_Request::CopyFrom(const GraphGet_Request& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.graph.GraphGet_Request)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.graph.GraphGet_Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -429,7 +429,7 @@ GraphGet_Response::GraphGet_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:com.wazuh.api.engine.graph.GraphGet_Response)
+  // @@protoc_insertion_point(arena_constructor:com.cyb3rhq.api.engine.graph.GraphGet_Response)
 }
 GraphGet_Response::GraphGet_Response(const GraphGet_Response& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -459,7 +459,7 @@ GraphGet_Response::GraphGet_Response(const GraphGet_Response& from)
       _this->GetArenaForAllocation());
   }
   _this->_impl_.status_ = from._impl_.status_;
-  // @@protoc_insertion_point(copy_constructor:com.wazuh.api.engine.graph.GraphGet_Response)
+  // @@protoc_insertion_point(copy_constructor:com.cyb3rhq.api.engine.graph.GraphGet_Response)
 }
 
 inline void GraphGet_Response::SharedCtor(
@@ -484,7 +484,7 @@ inline void GraphGet_Response::SharedCtor(
 }
 
 GraphGet_Response::~GraphGet_Response() {
-  // @@protoc_insertion_point(destructor:com.wazuh.api.engine.graph.GraphGet_Response)
+  // @@protoc_insertion_point(destructor:com.cyb3rhq.api.engine.graph.GraphGet_Response)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -503,7 +503,7 @@ void GraphGet_Response::SetCachedSize(int size) const {
 }
 
 void GraphGet_Response::Clear() {
-// @@protoc_insertion_point(message_clear_start:com.wazuh.api.engine.graph.GraphGet_Response)
+// @@protoc_insertion_point(message_clear_start:com.cyb3rhq.api.engine.graph.GraphGet_Response)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -529,12 +529,12 @@ const char* GraphGet_Response::_InternalParse(const char* ptr, ::_pbi::ParseCont
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // .com.wazuh.api.engine.ReturnStatus status = 1;
+      // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          _internal_set_status(static_cast<::com::wazuh::api::engine::ReturnStatus>(val));
+          _internal_set_status(static_cast<::com::cyb3rhq::api::engine::ReturnStatus>(val));
         } else
           goto handle_unusual;
         continue;
@@ -544,7 +544,7 @@ const char* GraphGet_Response::_InternalParse(const char* ptr, ::_pbi::ParseCont
           auto str = _internal_mutable_error();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.graph.GraphGet_Response.error"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.graph.GraphGet_Response.error"));
         } else
           goto handle_unusual;
         continue;
@@ -554,7 +554,7 @@ const char* GraphGet_Response::_InternalParse(const char* ptr, ::_pbi::ParseCont
           auto str = _internal_mutable_content();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "com.wazuh.api.engine.graph.GraphGet_Response.content"));
+          CHK_(::_pbi::VerifyUTF8(str, "com.cyb3rhq.api.engine.graph.GraphGet_Response.content"));
         } else
           goto handle_unusual;
         continue;
@@ -584,11 +584,11 @@ failure:
 
 uint8_t* GraphGet_Response::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:com.wazuh.api.engine.graph.GraphGet_Response)
+  // @@protoc_insertion_point(serialize_to_array_start:com.cyb3rhq.api.engine.graph.GraphGet_Response)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   if (this->_internal_status() != 0) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
@@ -600,7 +600,7 @@ uint8_t* GraphGet_Response::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_error().data(), static_cast<int>(this->_internal_error().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.graph.GraphGet_Response.error");
+      "com.cyb3rhq.api.engine.graph.GraphGet_Response.error");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_error(), target);
   }
@@ -610,7 +610,7 @@ uint8_t* GraphGet_Response::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_content().data(), static_cast<int>(this->_internal_content().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "com.wazuh.api.engine.graph.GraphGet_Response.content");
+      "com.cyb3rhq.api.engine.graph.GraphGet_Response.content");
     target = stream->WriteStringMaybeAliased(
         3, this->_internal_content(), target);
   }
@@ -619,12 +619,12 @@ uint8_t* GraphGet_Response::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:com.wazuh.api.engine.graph.GraphGet_Response)
+  // @@protoc_insertion_point(serialize_to_array_end:com.cyb3rhq.api.engine.graph.GraphGet_Response)
   return target;
 }
 
 size_t GraphGet_Response::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:com.wazuh.api.engine.graph.GraphGet_Response)
+// @@protoc_insertion_point(message_byte_size_start:com.cyb3rhq.api.engine.graph.GraphGet_Response)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -648,7 +648,7 @@ size_t GraphGet_Response::ByteSizeLong() const {
     }
 
   }
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   if (this->_internal_status() != 0) {
     total_size += 1 +
       ::_pbi::WireFormatLite::EnumSize(this->_internal_status());
@@ -667,7 +667,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GraphGet_Response::GetClassDat
 void GraphGet_Response::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<GraphGet_Response*>(&to_msg);
   auto& from = static_cast<const GraphGet_Response&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:com.wazuh.api.engine.graph.GraphGet_Response)
+  // @@protoc_insertion_point(class_specific_merge_from_start:com.cyb3rhq.api.engine.graph.GraphGet_Response)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -688,7 +688,7 @@ void GraphGet_Response::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, cons
 }
 
 void GraphGet_Response::CopyFrom(const GraphGet_Response& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:com.wazuh.api.engine.graph.GraphGet_Response)
+// @@protoc_insertion_point(class_specific_copy_from_start:com.cyb3rhq.api.engine.graph.GraphGet_Response)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -725,16 +725,16 @@ void GraphGet_Response::InternalSwap(GraphGet_Response* other) {
 }  // namespace graph
 }  // namespace engine
 }  // namespace api
-}  // namespace wazuh
+}  // namespace cyb3rhq
 }  // namespace com
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::graph::GraphGet_Request*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::graph::GraphGet_Request >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::graph::GraphGet_Request >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::graph::GraphGet_Request*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::graph::GraphGet_Request >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::graph::GraphGet_Request >(arena);
 }
-template<> PROTOBUF_NOINLINE ::com::wazuh::api::engine::graph::GraphGet_Response*
-Arena::CreateMaybeMessage< ::com::wazuh::api::engine::graph::GraphGet_Response >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::com::wazuh::api::engine::graph::GraphGet_Response >(arena);
+template<> PROTOBUF_NOINLINE ::com::cyb3rhq::api::engine::graph::GraphGet_Response*
+Arena::CreateMaybeMessage< ::com::cyb3rhq::api::engine::graph::GraphGet_Response >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::com::cyb3rhq::api::engine::graph::GraphGet_Response >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

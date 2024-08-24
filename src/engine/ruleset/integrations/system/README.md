@@ -87,5 +87,5 @@ Adding to the ossec.conf file in the monitored agent the following blocks:
 
 | Version | Description | Details |
 |---|---|---|
-| 0.0.2-dev | Add base sysmon-linux integration | [#17399](https://github.com/wazuh/wazuh/pull/17399) |
-| 0.0.1-dev | Created integration for system auth events | [#17273](https://github.com/wazuh/wazuh/pull/17273) |
+| 0.0.2-dev | Add base sysmon-linux integration | [#17399](https://github.com/cyb3rhq/cyb3rhq/pull/17399) |
+| 0.0.1-dev | Created integration for system auth events | [#17273](https://github.com/cyb3rhq/cyb3rhq/pull/17273) |

@@ -17,23 +17,23 @@ stages:
         error: 0
         data:
           affected_items:
-            - wazuh-agentlessd: !anystr
-              wazuh-analysisd: !anystr
-              wazuh-authd: !anystr
-              wazuh-csyslogd: !anystr
-              wazuh-dbd: !anystr
-              wazuh-execd: !anystr
-              wazuh-integratord: !anystr
-              wazuh-logcollector: !anystr
-              wazuh-maild: !anystr
-              wazuh-monitord: !anystr
-              wazuh-remoted: !anystr
-              wazuh-reportd: !anystr
-              wazuh-syscheckd: !anystr
-              wazuh-apid: !anystr
-              wazuh-clusterd: !anystr
-              wazuh-db: !anystr
-              wazuh-modulesd: !anystr
+            - cyb3rhq-agentlessd: !anystr
+              cyb3rhq-analysisd: !anystr
+              cyb3rhq-authd: !anystr
+              cyb3rhq-csyslogd: !anystr
+              cyb3rhq-dbd: !anystr
+              cyb3rhq-execd: !anystr
+              cyb3rhq-integratord: !anystr
+              cyb3rhq-logcollector: !anystr
+              cyb3rhq-maild: !anystr
+              cyb3rhq-monitord: !anystr
+              cyb3rhq-remoted: !anystr
+              cyb3rhq-reportd: !anystr
+              cyb3rhq-syscheckd: !anystr
+              cyb3rhq-apid: !anystr
+              cyb3rhq-clusterd: !anystr
+              cyb3rhq-db: !anystr
+              cyb3rhq-modulesd: !anystr
           failed_items: []
           total_affected_items: 1
           total_failed_items: 0
@@ -302,14 +302,14 @@ stages:
         error: 0
         data:
           affected_items:
-            - name: wazuh-remoted
-            - name: wazuh-analysisd
-            - name: wazuh-db
+            - name: cyb3rhq-remoted
+            - name: cyb3rhq-analysisd
+            - name: cyb3rhq-db
           total_affected_items: 3
           failed_items: []
           total_failed_items: 0
 
-  # GET /manager/daemons/stats?daemons_list=wazuh-remoted
+  # GET /manager/daemons/stats?daemons_list=cyb3rhq-remoted
   - name: Get statistics from a single daemon
     request:
       verify: False
@@ -318,19 +318,19 @@ stages:
       headers:
         Authorization: "Bearer {test_login_token}"
       params:
-        daemons_list: wazuh-remoted
+        daemons_list: cyb3rhq-remoted
     response:
       status_code: 200
       json:
         error: 0
         data:
           affected_items:
-            - name: wazuh-remoted
+            - name: cyb3rhq-remoted
           total_affected_items: 1
           failed_items: []
           total_failed_items: 0
 
-  # GET /manager/daemons/stats?daemons_list=wazuh-remoted,wazuh-db,wazuh-analysisd
+  # GET /manager/daemons/stats?daemons_list=cyb3rhq-remoted,cyb3rhq-db,cyb3rhq-analysisd
   - name: Get statistics from a list of daemons
     request:
       verify: False
@@ -339,16 +339,16 @@ stages:
       headers:
         Authorization: "Bearer {test_login_token}"
       params:
-        daemons_list: wazuh-remoted,wazuh-db,wazuh-analysisd
+        daemons_list: cyb3rhq-remoted,cyb3rhq-db,cyb3rhq-analysisd
     response:
       status_code: 200
       json:
         error: 0
         data:
           affected_items:
-            - name: wazuh-remoted
-            - name: wazuh-db
-            - name: wazuh-analysisd
+            - name: cyb3rhq-remoted
+            - name: cyb3rhq-db
+            - name: cyb3rhq-analysisd
           total_affected_items: 3
           failed_items: []
           total_failed_items: 0
@@ -702,7 +702,7 @@ stages:
             total_failed_items: 0
 
   # GET /manager/logs
-  - name: Filters -> tag=wazuh-analysisd, limit=1
+  - name: Filters -> tag=cyb3rhq-analysisd, limit=1
     request:
       verify: False
       url: "{protocol:s}://{host:s}:{port:d}/manager/logs"
@@ -710,7 +710,7 @@ stages:
       headers:
         Authorization: "Bearer {test_login_token}"
       params:
-        tag: wazuh-analysisd
+        tag: cyb3rhq-analysisd
         limit: 1
     response:
         status_code: 200
@@ -724,7 +724,7 @@ stages:
             total_failed_items: 0
 
   # GET /manager/logs
-  - name: Filters -> tag=wazuh-syscheckd, limit=1
+  - name: Filters -> tag=cyb3rhq-syscheckd, limit=1
     request:
       verify: False
       url: "{protocol:s}://{host:s}:{port:d}/manager/logs"
@@ -732,7 +732,7 @@ stages:
       headers:
         Authorization: "Bearer {test_login_token}"
       params:
-        tag: wazuh-syscheckd
+        tag: cyb3rhq-syscheckd
         limit: 1
     response:
         status_code: 200
@@ -745,7 +745,7 @@ stages:
             total_affected_items: !anyint
             total_failed_items: 0
 
-  - name: Filters by query (tag=wazuh-syscheckd, level=info)
+  - name: Filters by query (tag=cyb3rhq-syscheckd, level=info)
     request:
       verify: False
       url: "{protocol:s}://{host:s}:{port:d}/manager/logs"
@@ -753,14 +753,14 @@ stages:
       headers:
         Authorization: "Bearer {test_login_token}"
       params:
-        q: tag=wazuh-syscheckd;level=info
+        q: tag=cyb3rhq-syscheckd;level=info
     response:
       status_code: 200
       verify_response_with:
         - function: tavern_utils:test_expected_value
           extra_kwargs:
             key: "tag"
-            expected_values: "wazuh-syscheckd"
+            expected_values: "cyb3rhq-syscheckd"
         - function: tavern_utils:test_expected_value
           extra_kwargs:
             key: "level"
@@ -793,7 +793,7 @@ stages:
       headers:
         Authorization: "Bearer {test_login_token}"
       params:
-        tag: wazuh-unknown-daemon
+        tag: cyb3rhq-unknown-daemon
     response:
       status_code: 200
       json:
@@ -1288,10 +1288,10 @@ stages:
           total_affected_items: 1
           total_failed_items: 0
 
-  - name: Show the config of wazuh-db/internal in the manager
+  - name: Show the config of cyb3rhq-db/internal in the manager
     request:
       verify: False
-      url: "{protocol:s}://{host:s}:{port:d}/manager/configuration/wazuh-db/internal"
+      url: "{protocol:s}://{host:s}:{port:d}/manager/configuration/cyb3rhq-db/internal"
       method: GET
       headers:
         Authorization: "Bearer {test_login_token}"
@@ -1301,7 +1301,7 @@ stages:
         error: !anyint
         data:
           affected_items:
-            - wazuh_db:
+            - cyb3rhq_db:
                 commit_time_max: !anyint
                 commit_time_min: !anyint
                 open_db_limit: !anyint
@@ -1310,10 +1310,10 @@ stages:
           total_affected_items: 1
           total_failed_items: 0
 
-  - name: Show the config of wazuh-db/wdb in the manager
+  - name: Show the config of cyb3rhq-db/wdb in the manager
     request:
       verify: False
-      url: "{protocol:s}://{host:s}:{port:d}/manager/configuration/wazuh-db/wdb"
+      url: "{protocol:s}://{host:s}:{port:d}/manager/configuration/cyb3rhq-db/wdb"
       method: GET
       headers:
         Authorization: "Bearer {test_login_token}"
@@ -1527,7 +1527,7 @@ test_name: GET /manager/version/check with update_check disabled
 
 stages:
 
-  - name: Get wazuh version
+  - name: Get cyb3rhq version
     request:
       verify: False
       url: "{protocol:s}://{host:s}:{port:d}/"
@@ -1538,7 +1538,7 @@ stages:
       status_code: 200
       save:
         json:
-          wazuh_version: data.api_version
+          cyb3rhq_version: data.api_version
 
   - name: Get available updates
     request:
@@ -1552,7 +1552,7 @@ stages:
       verify_response_with:
         function: tavern_utils:validate_update_check_response
         extra_kwargs:
-          current_version: "v{wazuh_version:s}"
+          current_version: "v{cyb3rhq_version:s}"
           update_check: false
 
   - name: Get available updates with force option
@@ -1569,14 +1569,14 @@ stages:
       verify_response_with:
         function: tavern_utils:validate_update_check_response
         extra_kwargs:
-          current_version: "v{wazuh_version:s}"
+          current_version: "v{cyb3rhq_version:s}"
           update_check: false
 
 ---
 test_name: GET /manager/version/check with update_check enabled
 
 stages:
-  - name: Get wazuh version
+  - name: Get cyb3rhq version
     request:
       verify: False
       url: "{protocol:s}://{host:s}:{port:d}/"
@@ -1587,7 +1587,7 @@ stages:
       status_code: 200
       save:
         json:
-          wazuh_version: data.api_version
+          cyb3rhq_version: data.api_version
   
   - name: Enable update check
     request:
@@ -1642,7 +1642,7 @@ stages:
       verify_response_with:
         function: tavern_utils:validate_update_check_response
         extra_kwargs:
-          current_version: "v{wazuh_version:s}"
+          current_version: "v{cyb3rhq_version:s}"
           update_check: true
 
   - name: Get available updates with force option
@@ -1661,7 +1661,7 @@ stages:
       verify_response_with:
         function: tavern_utils:validate_update_check_response
         extra_kwargs:
-          current_version: "v{wazuh_version:s}"
+          current_version: "v{cyb3rhq_version:s}"
           update_check: true
 
 ---

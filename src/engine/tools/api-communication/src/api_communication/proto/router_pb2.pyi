@@ -83,10 +83,10 @@ class EpsUpdate_Request(_message.Message):
     def __init__(self, eps: _Optional[int] = ..., refresh_interval: _Optional[int] = ...) -> None: ...
 
 class QueuePost_Request(_message.Message):
-    __slots__ = ["wazuh_event"]
-    WAZUH_EVENT_FIELD_NUMBER: _ClassVar[int]
-    wazuh_event: str
-    def __init__(self, wazuh_event: _Optional[str] = ...) -> None: ...
+    __slots__ = ["cyb3rhq_event"]
+    CYB3RHQ_EVENT_FIELD_NUMBER: _ClassVar[int]
+    cyb3rhq_event: str
+    def __init__(self, cyb3rhq_event: _Optional[str] = ...) -> None: ...
 
 class RouteDelete_Request(_message.Message):
     __slots__ = ["name"]

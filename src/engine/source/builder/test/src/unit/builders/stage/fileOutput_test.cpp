@@ -29,7 +29,7 @@ auto messageStr = R"({
     "event": {
         "original": "::1 - - [26/Dec/2016:16:16:29 +0200] \"GET /favicon.ico HTTP/1.1\" 404 209\n"
     },
-    "wazuh": {
+    "cyb3rhq": {
         "agent": {
             "id": "001",
             "name": "agentSim",
@@ -61,7 +61,7 @@ auto messageStr = R"({
 })";
 
 auto compact_message =
-    R"({"event":{"original":"::1 - - [26/Dec/2016:16:16:29 +0200] \"GET /favicon.ico HTTP/1.1\" 404 209\n"},"wazuh":{"agent":{"id":"001","name":"agentSim","version":"PoC"},"event":{"format":"text","id":"9aa69e7b-e1b0-530e-a710-49108e86019b","ingested":"2021-10-26T16:50:34.348945Z","kind":"event"},"host":{"architecture":"x86_64","hostname":"hive","ip":"127.0.1.1","mac":"B0:7D:64:11:B3:13","os":{"kernel":"5.14.14-arch1-1","name":"Linux","type":"posix","version":"#1 SMP PREEMPT Wed, 20 Oct 2021 21:35:18 +0000"}},"module":{"name":"logcollector","source":"apache-access"}}}
+    R"({"event":{"original":"::1 - - [26/Dec/2016:16:16:29 +0200] \"GET /favicon.ico HTTP/1.1\" 404 209\n"},"cyb3rhq":{"agent":{"id":"001","name":"agentSim","version":"PoC"},"event":{"format":"text","id":"9aa69e7b-e1b0-530e-a710-49108e86019b","ingested":"2021-10-26T16:50:34.348945Z","kind":"event"},"host":{"architecture":"x86_64","hostname":"hive","ip":"127.0.1.1","mac":"B0:7D:64:11:B3:13","os":{"kernel":"5.14.14-arch1-1","name":"Linux","type":"posix","version":"#1 SMP PREEMPT Wed, 20 Oct 2021 21:35:18 +0000"}},"module":{"name":"logcollector","source":"apache-access"}}}
 )";
 
 constexpr auto FILE_PATH = "/tmp/file";

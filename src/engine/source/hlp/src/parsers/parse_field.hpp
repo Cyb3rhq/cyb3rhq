@@ -1,5 +1,5 @@
-#ifndef WAZUH_ENGINE_PARSE_FIELD_HPP
-#define WAZUH_ENGINE_PARSE_FIELD_HPP
+#ifndef CYB3RHQ_ENGINE_PARSE_FIELD_HPP
+#define CYB3RHQ_ENGINE_PARSE_FIELD_HPP
 
 #include <base/json.hpp>
 #include <optional>
@@ -91,4 +91,4 @@ void updateDoc(json::Json& doc,
                bool is_quoted);
 
 } // namespace hlp
-#endif // WAZUH_ENGINE_PARSE_FIELD_HPP
+#endif // CYB3RHQ_ENGINE_PARSE_FIELD_HPP

@@ -1,23 +1,23 @@
 #!/bin/sh
 
-# Copyright (C) 2015, Wazuh Inc.
-# OSSEC         Controls Wazuh
+# Copyright (C) 2015, Cyb3rhq Inc.
+# OSSEC         Controls Cyb3rhq
 # Author:       Daniel B. Cid <dcid@ossec.net>
 # Modified for slackware by Jack S. Lai
 
-WAZUH_HOME=WAZUH_HOME_TMP
-WAZUH_CONTROL="$WAZUH_HOME/bin/wazuh-control"
+CYB3RHQ_HOME=CYB3RHQ_HOME_TMP
+CYB3RHQ_CONTROL="$CYB3RHQ_HOME/bin/cyb3rhq-control"
 
 start() {
-    ${WAZUH_CONTROL} start
+    ${CYB3RHQ_CONTROL} start
 }
 
 stop() {
-    ${WAZUH_CONTROL} stop
+    ${CYB3RHQ_CONTROL} stop
 }
 
 status() {
-    ${WAZUH_CONTROL} status
+    ${CYB3RHQ_CONTROL} status
 }
 
 case "$1" in

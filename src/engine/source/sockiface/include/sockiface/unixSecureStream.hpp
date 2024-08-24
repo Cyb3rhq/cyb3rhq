@@ -6,7 +6,7 @@
 namespace sockiface
 {
 /*
-    Wazuh TCP protocol format
+    Cyb3rhq TCP protocol format
 
     On the TCP messages the payload size must be prefixed to the actual payload:
 
@@ -24,7 +24,7 @@ constexpr int STREAM_MAX_MSG_SIZE {65536};
 
 /**
  * @brief This class implements an interface to a UNIX stream socket.
- * The messages are handled by following the Wazuh TCP protocol.
+ * The messages are handled by following the Cyb3rhq TCP protocol.
  */
 class unixSecureStream : public unixInterface
 {

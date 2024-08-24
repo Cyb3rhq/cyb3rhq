@@ -1,5 +1,5 @@
-# Copyright (C) 2015, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2015, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is a free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 import binascii
@@ -19,7 +19,7 @@ from starlette.requests import Request
 from starlette.responses import Response
 from starlette.middleware.base import BaseHTTPMiddleware, RequestResponseEndpoint
 
-from wazuh.core.utils import get_utc_now
+from cyb3rhq.core.utils import get_utc_now
 
 from api import configuration
 from api.alogging import custom_logging
@@ -38,12 +38,12 @@ RUN_AS_LOGIN_ENDPOINT = "/security/user/authenticate/run_as"
 LOGIN_ENDPOINT = '/security/user/authenticate'
 
 # API secure headers
-server = Server().set("Wazuh")
+server = Server().set("Cyb3rhq")
 csp = ContentSecurityPolicy().set('none')
 xfo = XFrameOptions().deny()
 secure_headers = Secure(server=server, csp=csp, xfo=xfo)
 
-logger = logging.getLogger('wazuh-api')
+logger = logging.getLogger('cyb3rhq-api')
 start_stop_logger = logging.getLogger('start-stop-api')
 
 ip_stats = dict()
@@ -88,7 +88,7 @@ async def access_log(request: ConnexionRequest, response: Response, prev_time: t
                 _, public_key = get_keypair(ec.SECP521R1())
                 s = jwt.decode(user_passw, public_key,
                             algorithms=[JWT_ALGORITHM],
-                            audience='Wazuh API REST',
+                            audience='Cyb3rhq API REST',
                             options={'verify_exp': False})
                 user = s['sub']
         except (KeyError, IndexError, binascii.Error, jwt.exceptions.PyJWTError, OAuthProblem):
@@ -213,11 +213,11 @@ class CheckBlockedIP(BaseHTTPMiddleware):
         return await call_next(request)
 
 
-class WazuhAccessLoggerMiddleware(BaseHTTPMiddleware):
+class Cyb3rhqAccessLoggerMiddleware(BaseHTTPMiddleware):
     """Middleware to log custom Access messages."""
 
     async def dispatch(self, request: Request, call_next: RequestResponseEndpoint) -> Response:
-        """Log Wazuh access information.
+        """Log Cyb3rhq access information.
 
         Parameters
         ----------
@@ -238,7 +238,7 @@ class WazuhAccessLoggerMiddleware(BaseHTTPMiddleware):
             try:
                 # Load the request body to the _json field before calling the controller so it's cached before the stream 
                 # is consumed. If there's a json error we skip it so it's handled later.
-                # Related to https://github.com/wazuh/wazuh/issues/24060.
+                # Related to https://github.com/cyb3rhq/cyb3rhq/issues/24060.
                 _ = await request.json()
             except json.decoder.JSONDecodeError:
                 pass

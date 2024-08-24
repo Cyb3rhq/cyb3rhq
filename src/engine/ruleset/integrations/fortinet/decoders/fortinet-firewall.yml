@@ -7,7 +7,7 @@ metadata:
   description: Decoder for parsing fortinet firewall logs
   version: [6.0.x, 6.2.x]
   author:
-    name: Wazuh, Inc.
+    name: Cyb3rhq, Inc.
     date: 2023/01/10
   references:
     - https://docs.fortinet.com/document/forticlient/7.0.2/log-message-reference/327109
@@ -144,7 +144,7 @@ normalize:
     - dns.question.name: $~tmp.qname
     - dns.question.type: $~tmp.qtype
     - related.hosts: [$~tmp.qname]
-    - wazuh.decoders: array_append(fortinet-firewall)
+    - cyb3rhq.decoders: array_append(fortinet-firewall)
     # TODO: it does't work: the hf can't parse the special char /.
     # We cannot use a temporary variable to store the special character since the second argument to hf expects a character.
     - ~tmp.agent_array: +split/$~tmp.agent/\/

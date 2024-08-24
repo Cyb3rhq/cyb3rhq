@@ -21,9 +21,9 @@ const std::string rOrigin {"Dummy org module"};
 constexpr auto BUFFER_PATH_SIZE {1024};
 constexpr auto JSON_DECODER {"decoder/core-hostinfo/0"};
 constexpr auto JSON_FILTER {"filter/allow-all/0"};
-constexpr auto JSON_INTEGRATION {"integration/wazuh-core/0"};
-constexpr auto JSON_POLICY {"policy/wazuh/0"};
-constexpr auto JSON_SCHEMA {"schema/wazuh-logpar-types/0"};
+constexpr auto JSON_INTEGRATION {"integration/cyb3rhq-core/0"};
+constexpr auto JSON_POLICY {"policy/cyb3rhq/0"};
+constexpr auto JSON_SCHEMA {"schema/cyb3rhq-logpar-types/0"};
 constexpr auto CONFLICTING_TEST {7};
 
 class GraphGetCommand : public ::testing::TestWithParam<std::tuple<int, std::string, std::string>>
@@ -54,7 +54,7 @@ TEST_P(GraphGetCommand, ParameterEvaluation)
     auto [execution, input, output] = GetParam();
 
     EXPECT_CALL(*m_spMockStore, readInternalDoc(testing::Eq(base::Name{JSON_SCHEMA}))
-    ).WillRepeatedly(::testing::Return(storeReadDocResp(store::Doc{WAZUH_LOGPAR_TYPES})));
+    ).WillRepeatedly(::testing::Return(storeReadDocResp(store::Doc{CYB3RHQ_LOGPAR_TYPES})));
 
     EXPECT_CALL(*m_spMockStore, readDoc(testing::_))
         .WillRepeatedly(testing::Invoke(
@@ -85,7 +85,7 @@ TEST_P(GraphGetCommand, ParameterEvaluation)
 
     ASSERT_NO_THROW(cmdAPI = resourceGet(graphConfig));
     json::Json params {input.c_str()};
-    base::utils::wazuhProtocol::WazuhRequest request;
+    base::utils::cyb3rhqProtocol::Cyb3rhqRequest request;
     ASSERT_NO_THROW(request = api::wpRequest::create(rCommand, rOrigin, params));
     auto response = cmdAPI(request);
 
@@ -124,17 +124,17 @@ INSTANTIATE_TEST_SUITE_P(
             R"({"status":"ERROR","error":"An error occurred while building the policy: Policy /name is not defined"})"),
         std::make_tuple(
             3,
-            R"({"policy": "policy/wazuh/0", "type": "pepe"})",
+            R"({"policy": "policy/cyb3rhq/0", "type": "pepe"})",
             R"({"status":"ERROR","error":"Invalid /type parameter, must be either 'policy' or 'expressions'"})"),
         std::make_tuple(4,
-                        R"({"policy": "policy/wazuh/0"})",
+                        R"({"policy": "policy/cyb3rhq/0"})",
                         R"({"status":"ERROR","error":"Missing or invalid /type parameter"})"),
         std::make_tuple(5,
                         R"({"type": "policy"})",
                         R"({"status":"ERROR","error":"Missing or invalid /policy parameter"})"),
-        std::make_tuple(6, R"({"policy":"policy/wazuh/0","type": "policy"})", R"({"status":"OK",
-        "content":"digraph G {\ncompound=true;\nfontname=\"Helvetica,Arial,sans-serif\";\nfontsize=12;\nnode [fontname=\"Helvetica,Arial,sans-serif\", fontsize=10];\nedge [fontname=\"Helvetica,Arial,sans-serif\", fontsize=8];\nenvironment [label=\"policy/wazuh/0\", shape=Mdiamond];\n\nsubgraph cluster_decoders {\nlabel=\"decoders\";\nstyle=filled;\ncolor=lightgrey;\nnode [style=filled,color=white];\ndecodercorehostinfo0 [label=\"decoder/core-hostinfo/0\"];\ndecodersInput [label=\"decodersInput\"];\ndecodersInput -> decodercorehostinfo0;\n}\nenvironment -> decodersInput;\n}\n"}
+        std::make_tuple(6, R"({"policy":"policy/cyb3rhq/0","type": "policy"})", R"({"status":"OK",
+        "content":"digraph G {\ncompound=true;\nfontname=\"Helvetica,Arial,sans-serif\";\nfontsize=12;\nnode [fontname=\"Helvetica,Arial,sans-serif\", fontsize=10];\nedge [fontname=\"Helvetica,Arial,sans-serif\", fontsize=8];\nenvironment [label=\"policy/cyb3rhq/0\", shape=Mdiamond];\n\nsubgraph cluster_decoders {\nlabel=\"decoders\";\nstyle=filled;\ncolor=lightgrey;\nnode [style=filled,color=white];\ndecodercorehostinfo0 [label=\"decoder/core-hostinfo/0\"];\ndecodersInput [label=\"decodersInput\"];\ndecodersInput -> decodercorehostinfo0;\n}\nenvironment -> decodersInput;\n}\n"}
         )"),
-        std::make_tuple(7, R"({"policy":"policy/wazuh/0","type": "expressions"})", R"({"status":"OK",
-        "content":"strict digraph G {\n\n    compound=true;\n    fontname=\"Helvetica,Arial,sans-serif\";\n    fontsize=7;\n    node [color=\"#7abff\", fontname=\"Helvetica,Arial,sans-serif\", fontsize=7, fontcolor=\"white\"];\n    edge [fontname=\"Helvetica,Arial,sans-serif\", fontsize=7];\n    \nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Chain\";\n7 [label=\"policy/wazuh/7 [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Or\";\n7 [label=\"decodersInput [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Implication\";\n7 [label=\"decoder/core-hostinfo/7 [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"And\";\n7 [label=\"stage.check [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Term\";\n7 [label=\"condition.value[/wazuh/queue==7] [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Chain\";\n7 [label=\"stages [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Chain\";\n7 [label=\"stage.normalize [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"And\";\n7 [label=\"subblock [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Chain\";\n7 [label=\"stage.map [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Term\";\n7 [label=\"helper.array_append[/wazuh/decoders, core-hostinfo] [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Term\";\n7 [label=\"DeleteVariables [7]\"];\n}\n}\n"}
+        std::make_tuple(7, R"({"policy":"policy/cyb3rhq/0","type": "expressions"})", R"({"status":"OK",
+        "content":"strict digraph G {\n\n    compound=true;\n    fontname=\"Helvetica,Arial,sans-serif\";\n    fontsize=7;\n    node [color=\"#7abff\", fontname=\"Helvetica,Arial,sans-serif\", fontsize=7, fontcolor=\"white\"];\n    edge [fontname=\"Helvetica,Arial,sans-serif\", fontsize=7];\n    \nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Chain\";\n7 [label=\"policy/cyb3rhq/7 [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Or\";\n7 [label=\"decodersInput [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Implication\";\n7 [label=\"decoder/core-hostinfo/7 [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"And\";\n7 [label=\"stage.check [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Term\";\n7 [label=\"condition.value[/cyb3rhq/queue==7] [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Chain\";\n7 [label=\"stages [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Chain\";\n7 [label=\"stage.normalize [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"And\";\n7 [label=\"subblock [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Chain\";\n7 [label=\"stage.map [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Term\";\n7 [label=\"helper.array_append[/cyb3rhq/decoders, core-hostinfo] [7]\"];\n}\n7 -> 7 [ltail=cluster_7 lhead=cluster_7 label=7 fontcolor=\"red\"];\nsubgraph cluster_7 {\n\n    style=\"rounded,filled\";\n    color=\"#7abff\";\n    \nlabel=\"Term\";\n7 [label=\"DeleteVariables [7]\"];\n}\n}\n"}
         )")));

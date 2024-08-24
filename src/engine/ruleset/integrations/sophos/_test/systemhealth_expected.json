@@ -1,6 +1,6 @@
 [
     {
-        "wazuh": {
+        "cyb3rhq": {
             "queue": 49,
             "location": "[001] (ubuntu-agent) any->/var/log/sophos/xg.log",
             "message": "device=\"SFW\" date=2018-06-05 time=15:10:00 timezone=\"CEST\" device_name=\"SF01V\" device_id=SFDemo-fe75a9f log_id=127626618031 log_type=\"System Health\" log_component=\"CPU\" log_subtype=\"Usage\" priority=Information system=1.29% user=7.60% idle=91.11%",
@@ -17,7 +17,7 @@
         "agent": {
             "id": "001",
             "name": "ubuntu-agent",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event": {
             "original": "device=\"SFW\" date=2018-06-05 time=15:10:00 timezone=\"CEST\" device_name=\"SF01V\" device_id=SFDemo-fe75a9f log_id=127626618031 log_type=\"System Health\" log_component=\"CPU\" log_subtype=\"Usage\" priority=Information system=1.29% user=7.60% idle=91.11%",

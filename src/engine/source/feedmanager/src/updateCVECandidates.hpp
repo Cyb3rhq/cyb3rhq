@@ -1,6 +1,6 @@
 /*
- * Wazuh Vulnerability scanner - Database Feed Manager
- * Copyright (C) 2015, Wazuh Inc.
+ * Cyb3rhq Vulnerability scanner - Database Feed Manager
+ * Copyright (C) 2015, Cyb3rhq Inc.
  * Oct 6, 2023.
  *
  * This program is free software; you can redistribute it

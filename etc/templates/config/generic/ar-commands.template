@@ -5,8 +5,8 @@
   </command>
 
   <command>
-    <name>restart-wazuh</name>
-    <executable>restart-wazuh</executable>
+    <name>restart-cyb3rhq</name>
+    <executable>restart-cyb3rhq</executable>
   </command>
 
   <command>

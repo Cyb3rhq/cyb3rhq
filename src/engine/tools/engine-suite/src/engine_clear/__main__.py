@@ -6,7 +6,7 @@ import shared.resource_handler as rs
 
 DEF_RESOURCES = ['kvdbs', 'decoder', 'rule',
                  'output', 'filter', 'integration', 'policy']
-DEF_NAMESPACES = ['user', 'wazuh', 'system']
+DEF_NAMESPACES = ['user', 'cyb3rhq', 'system']
 
 
 def parse_args():

@@ -1,5 +1,5 @@
 services:
-  wazuh-master:
+  cyb3rhq-master:
     profiles:
       - standalone
       - cluster
@@ -7,8 +7,8 @@ services:
     build:
       context: .
       dockerfile: base/manager/manager.Dockerfile
-    image: integration_test_wazuh-manager
-    hostname: wazuh-master
+    image: integration_test_cyb3rhq-manager
+    hostname: cyb3rhq-master
     ports:
       - "55000:55000"
     volumes:
@@ -16,186 +16,186 @@ services:
       - ./tools/:/tools
     entrypoint:
       - /scripts/entrypoint.sh
-      - wazuh-master
+      - cyb3rhq-master
       - master-node
       - master
       - ${ENV_MODE}
 
-  wazuh-worker1:
+  cyb3rhq-worker1:
     profiles:
       - cluster
-    image: integration_test_wazuh-manager
-    hostname: wazuh-worker1
+    image: integration_test_cyb3rhq-manager
+    hostname: cyb3rhq-worker1
     volumes:
       - ./configurations/tmp/manager:/tmp_volume
       - ./tools/:/tools
     entrypoint:
       - /scripts/entrypoint.sh
-      - wazuh-master
+      - cyb3rhq-master
       - worker1
       - worker
     depends_on:
-      - wazuh-master
+      - cyb3rhq-master
 
-  wazuh-worker2:
+  cyb3rhq-worker2:
     profiles:
       - cluster
-    image: integration_test_wazuh-manager
-    hostname: wazuh-worker2
+    image: integration_test_cyb3rhq-manager
+    hostname: cyb3rhq-worker2
     volumes:
       - ./configurations/tmp/manager:/tmp_volume
       - ./tools/:/tools
     entrypoint:
       - /scripts/entrypoint.sh
-      - wazuh-master
+      - cyb3rhq-master
       - worker2
       - worker
     depends_on:
-      - wazuh-master
+      - cyb3rhq-master
 
-  wazuh-agent1:
+  cyb3rhq-agent1:
     profiles:
       - standalone
       - cluster
     build:
       context: .
       dockerfile: base/agent/new.Dockerfile
-    image: integration_test_wazuh-agent
-    hostname: wazuh-agent1
+    image: integration_test_cyb3rhq-agent
+    hostname: cyb3rhq-agent1
     volumes:
       - ./configurations/tmp/agent:/tmp_volume
       - ./tools/:/tools
     entrypoint:
       - /scripts/entrypoint.sh
       - haproxy-lb
-      - wazuh-agent1
+      - cyb3rhq-agent1
     depends_on:
       - haproxy-lb
 
-  wazuh-agent2:
+  cyb3rhq-agent2:
     profiles:
       - standalone
       - cluster
-    image: integration_test_wazuh-agent
-    hostname: wazuh-agent2
+    image: integration_test_cyb3rhq-agent
+    hostname: cyb3rhq-agent2
     volumes:
       - ./configurations/tmp/agent:/tmp_volume
       - ./tools/:/tools
     entrypoint:
       - /scripts/entrypoint.sh
       - haproxy-lb
-      - wazuh-agent2
+      - cyb3rhq-agent2
     depends_on:
-      - wazuh-agent1
+      - cyb3rhq-agent1
       - haproxy-lb
 
-  wazuh-agent3:
+  cyb3rhq-agent3:
     profiles:
       - standalone
       - cluster
-    image: integration_test_wazuh-agent
-    hostname: wazuh-agent3
+    image: integration_test_cyb3rhq-agent
+    hostname: cyb3rhq-agent3
     volumes:
       - ./configurations/tmp/agent:/tmp_volume
       - ./tools/:/tools
     entrypoint:
       - /scripts/entrypoint.sh
       - haproxy-lb
-      - wazuh-agent3
+      - cyb3rhq-agent3
     depends_on:
-      - wazuh-agent2
+      - cyb3rhq-agent2
       - haproxy-lb
 
-  wazuh-agent4:
+  cyb3rhq-agent4:
     profiles:
       - standalone
       - cluster
-    image: integration_test_wazuh-agent
-    hostname: wazuh-agent4
+    image: integration_test_cyb3rhq-agent
+    hostname: cyb3rhq-agent4
     volumes:
       - ./configurations/tmp/agent:/tmp_volume
       - ./tools/:/tools
     entrypoint:
       - /scripts/entrypoint.sh
       - haproxy-lb
-      - wazuh-agent4
+      - cyb3rhq-agent4
     depends_on:
-      - wazuh-agent3
+      - cyb3rhq-agent3
       - haproxy-lb
 
-  wazuh-agent5:
+  cyb3rhq-agent5:
     profiles:
       - standalone
       - cluster
     build:
       context: .
       dockerfile: base/agent/old.Dockerfile
-    image: integration_test_wazuh-agent_old
-    hostname: wazuh-agent5
+    image: integration_test_cyb3rhq-agent_old
+    hostname: cyb3rhq-agent5
     volumes:
       - ./configurations/tmp/agent:/tmp_volume
       - ./tools/:/tools
     entrypoint:
       - /scripts/entrypoint.sh
       - haproxy-lb
-      - wazuh-agent5
+      - cyb3rhq-agent5
       - agent_old
     depends_on:
-      - wazuh-agent4
+      - cyb3rhq-agent4
       - haproxy-lb
 
-  wazuh-agent6:
+  cyb3rhq-agent6:
     profiles:
       - standalone
       - cluster
-    image: integration_test_wazuh-agent_old
-    hostname: wazuh-agent6
+    image: integration_test_cyb3rhq-agent_old
+    hostname: cyb3rhq-agent6
     volumes:
       - ./configurations/tmp/agent:/tmp_volume
       - ./tools/:/tools
     entrypoint:
       - /scripts/entrypoint.sh
       - haproxy-lb
-      - wazuh-agent6
+      - cyb3rhq-agent6
       - agent_old
     depends_on:
-      - wazuh-agent5
+      - cyb3rhq-agent5
       - haproxy-lb
 
-  wazuh-agent7:
+  cyb3rhq-agent7:
     profiles:
       - standalone
       - cluster
-    image: integration_test_wazuh-agent_old
-    hostname: wazuh-agent7
+    image: integration_test_cyb3rhq-agent_old
+    hostname: cyb3rhq-agent7
     volumes:
       - ./configurations/tmp/agent:/tmp_volume
       - ./tools/:/tools
     entrypoint:
       - /scripts/entrypoint.sh
       - haproxy-lb
-      - wazuh-agent7
+      - cyb3rhq-agent7
       - agent_old
     depends_on:
-      - wazuh-agent6
+      - cyb3rhq-agent6
       - haproxy-lb
 
-  wazuh-agent8:
+  cyb3rhq-agent8:
     profiles:
       - standalone
       - cluster
-    image: integration_test_wazuh-agent_old
-    hostname: wazuh-agent8
+    image: integration_test_cyb3rhq-agent_old
+    hostname: cyb3rhq-agent8
     volumes:
       - ./configurations/tmp/agent:/tmp_volume
       - ./tools/:/tools
     entrypoint:
       - /scripts/entrypoint.sh
       - haproxy-lb
-      - wazuh-agent8
+      - cyb3rhq-agent8
       - agent_old
     depends_on:
-      - wazuh-agent7
+      - cyb3rhq-agent7
       - haproxy-lb
 
   haproxy-lb:
@@ -209,9 +209,9 @@ services:
       - /scripts/entrypoint.sh
       - ${ENV_MODE}
     depends_on:
-      - wazuh-master
-      - wazuh-worker1
-      - wazuh-worker2
+      - cyb3rhq-master
+      - cyb3rhq-worker1
+      - cyb3rhq-worker2
 
   cti:
     profiles:

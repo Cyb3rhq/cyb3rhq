@@ -1,11 +1,11 @@
-# Copyright (C) 2015, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2015, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is a free software; you can redistribute it and/or modify it under the terms of GPLv2
 
-from wazuh.core.results import AffectedItemsWazuhResult
+from cyb3rhq.core.results import AffectedItemsCyb3rhqResult
 
 
-class CustomAffectedItems(AffectedItemsWazuhResult):
+class CustomAffectedItems(AffectedItemsCyb3rhqResult):
     """Mock custom values that are needed in controller tests"""
 
     def __init__(self, empty: bool = False):

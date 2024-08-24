@@ -1,5 +1,5 @@
-# Copyright (C) 2015, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2015, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is a free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 import sys
@@ -10,13 +10,13 @@ from connexion.lifecycle import ConnexionResponse
 
 from api.controllers.test.utils import CustomAffectedItems
 
-with patch('wazuh.common.wazuh_uid'):
-    with patch('wazuh.common.wazuh_gid'):
-        sys.modules['wazuh.rbac.orm'] = MagicMock()
-        import wazuh.rbac.decorators
-        from wazuh import agent, stats
-        from wazuh.core.common import DATABASE_LIMIT
-        from wazuh.tests.util import RBAC_bypasser
+with patch('wazuh.common.cyb3rhq_uid'):
+    with patch('wazuh.common.cyb3rhq_gid'):
+        sys.modules['cyb3rhq.rbac.orm'] = MagicMock()
+        import cyb3rhq.rbac.decorators
+        from cyb3rhq import agent, stats
+        from cyb3rhq.core.common import DATABASE_LIMIT
+        from cyb3rhq.tests.util import RBAC_bypasser
 
         from api.controllers.agent_controller import (
             add_agent,
@@ -55,8 +55,8 @@ with patch('wazuh.common.wazuh_uid'):
             restart_agents_by_node,
         )
 
-        wazuh.rbac.decorators.expose_resources = RBAC_bypasser
-        del sys.modules['wazuh.rbac.orm']
+        cyb3rhq.rbac.decorators.expose_resources = RBAC_bypasser
+        del sys.modules['cyb3rhq.rbac.orm']
 
 
 @pytest.mark.asyncio
@@ -954,7 +954,7 @@ async def test_get_group_file(mock_exc, mock_dapi, mock_remove, mock_dfunc, mock
 @patch('api.controllers.agent_controller.DistributedAPI.distribute_function', return_value=AsyncMock())
 @patch('api.controllers.agent_controller.remove_nones_to_dict')
 @patch('api.controllers.agent_controller.DistributedAPI.__init__', return_value=None)
-@patch('api.controllers.agent_controller.AffectedItemsWazuhResult', return_value={})
+@patch('api.controllers.agent_controller.AffectedItemsCyb3rhqResult', return_value={})
 async def test_restart_agents_by_group(mock_aiwr, mock_dapi, mock_remove, mock_dfunc, mock_exp, mock_alist,
                                       mock_request):
     """Verify 'restart_agents_by_group' endpoint is working as expected."""

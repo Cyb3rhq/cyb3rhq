@@ -6,7 +6,7 @@ from fastapi import status
 
 from comms_api.routers.exceptions import HTTPError
 
-logger = logging.getLogger('wazuh-comms-api')
+logger = logging.getLogger('cyb3rhq-comms-api')
 
 DEFAULT_TIMEOUT = 10
 

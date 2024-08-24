@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 
 from comms_api.core.files import DIR, get_file_path
-from wazuh.core.exception import WazuhCommsAPIError
+from cyb3rhq.core.exception import Cyb3rhqCommsAPIError
 
 
 def test_get_file_path():
@@ -16,8 +16,8 @@ def test_get_file_path():
 
 
 @pytest.mark.parametrize('file_name,exception,error_code', [
-    ('test/', WazuhCommsAPIError, 2704),
-    ('dir/test.txt', WazuhCommsAPIError, 2705),
+    ('test/', Cyb3rhqCommsAPIError, 2704),
+    ('dir/test.txt', Cyb3rhqCommsAPIError, 2705),
 ])
 def test_get_file_path_ko(file_name, exception, error_code) -> None:
     """Assert exceptions are handled as expected inside the `get_file_path` function."""

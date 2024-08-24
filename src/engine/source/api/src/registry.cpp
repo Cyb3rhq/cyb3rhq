@@ -29,12 +29,12 @@ HandlerAsync Registry::getHandler(const std::string& command)
     {
         return m_handlers[command];
     }
-    return [command](const base::utils::wazuhProtocol::WazuhRequest& req,
-                     std::function<void(const base::utils::wazuhProtocol::WazuhResponse&)> callbackFn)
+    return [command](const base::utils::cyb3rhqProtocol::Cyb3rhqRequest& req,
+                     std::function<void(const base::utils::cyb3rhqProtocol::Cyb3rhqResponse&)> callbackFn)
     {
-        auto response = base::utils::wazuhProtocol::WazuhResponse {
+        auto response = base::utils::cyb3rhqProtocol::Cyb3rhqResponse {
             json::Json {"{}"},
-            static_cast<int>(base::utils::wazuhProtocol::RESPONSE_ERROR_CODES::COMMAND_NOT_FOUND),
+            static_cast<int>(base::utils::cyb3rhqProtocol::RESPONSE_ERROR_CODES::COMMAND_NOT_FOUND),
             fmt::format(R"(Command "{}" not found)", command)};
 
         callbackFn(response);

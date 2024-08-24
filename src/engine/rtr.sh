@@ -1,8 +1,8 @@
 #!/bin/bash
 
 SRC_DIR=$(realpath $(dirname "$0"))
-OUTPUT_DIR=$(realpath $(mktemp -d -t wazuh-rtr-XXXXXX))
-CONTAINER_NAME=wazuh-rtr-engine
+OUTPUT_DIR=$(realpath $(mktemp -d -t cyb3rhq-rtr-XXXXXX))
+CONTAINER_NAME=cyb3rhq-rtr-engine
 RTR_DIR=$SRC_DIR/.rtr
 RTR_BIN=rtr.py
 RTR_CONFIG="rtr_inputs/rtr_cicd.json"
@@ -32,7 +32,7 @@ Help() {
     echo "Syntax: rtr.sh [-h|o|s|i|v|b]"
     echo "Options:"
     echo "h     Prints this help message."
-    echo "o     Output directory. It creates a temporary directory in '/tmp/wazuh-rtr-XXXXXX' if not specified."
+    echo "o     Output directory. It creates a temporary directory in '/tmp/cyb3rhq-rtr-XXXXXX' if not specified."
     echo "s     Source directory. It uses the directory of this script if not specified."
     echo "i     RTR input file. By default, it uses 'rtr_inputs/rtr_cicd.json'."
     echo "v     Verbose. Enables debug mode for RTR."
@@ -46,9 +46,9 @@ Help() {
     echo "      Run a single step with all default parameters in single mode "
     echo "          ./rtr.sh -i ./rtr_inputs/rtr_ut.json"
     echo "      Run a single step in a fixed folder forcing 8 threads and not building the docker image with verbose output: "
-    echo "          ./rtr.sh -o /tmp/rtr -s /home/user/wazuh/src/engine -i ./rtr_inputs/rtr_ut.json -v -b no -t 8"
+    echo "          ./rtr.sh -o /tmp/rtr -s /home/user/cyb3rhq/src/engine -i ./rtr_inputs/rtr_ut.json -v -b no -t 8"
     echo "      Run all steps in parallel mode forcing 8 threads in a fixed folder: "
-    echo "          ./rtr.sh -o /tmp/rtr -s /home/user/wazuh/src/engine -p -t 8"
+    echo "          ./rtr.sh -o /tmp/rtr -s /home/user/cyb3rhq/src/engine -p -t 8"
 }
 
 run() {

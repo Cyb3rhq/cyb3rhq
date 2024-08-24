@@ -1,0 +1,17 @@
+name: output/file-output-cyb3rhq-core/0
+
+metadata:
+  title: file output event
+  description: Output cyb3rhq events to a file
+  compatibility: >
+    This decoder has been tested on Cyb3rhq version 4.3
+  author:
+    name: Cyb3rhq, Inc.
+    date: 2022/11/08
+
+check:
+  - cyb3rhq.noIndexing: true
+
+outputs:
+  - file:
+      path: /var/ossec/logs/alerts/alerts-cyb3rhq.json

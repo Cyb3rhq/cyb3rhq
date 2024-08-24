@@ -1,12 +1,12 @@
 {
-    "wazuh": {
+    "cyb3rhq": {
         "queue": 49,
-        "location": "[003] (vm-ubuntu22) any->Wazuh-Docker",
+        "location": "[003] (vm-ubuntu22) any->Cyb3rhq-Docker",
         "message": "{\"integration\": \"docker\", \"docker\": {\"Type\": \"config\", \"Action\": \"create\", \"Actor\": {\"ID\": \"6xpt4kk38w8qyxj0ggy2qlbhe\", \"Attributes\": {\"name\": \"my-config\"}}, \"scope\": \"swarm\", \"time\": 1686331092, \"timeNano\": 1686331092998340525}}",
-        "origin": "Wazuh-Docker",
+        "origin": "Cyb3rhq-Docker",
         "registered_ip": "any",
         "decoders": [
-            "core-wazuh-message",
+            "core-cyb3rhq-message",
             "core-localfile",
             "integrations",
             "docker-listener"
@@ -16,7 +16,7 @@
     "agent": {
         "id": "003",
         "name": "vm-ubuntu22",
-        "type": "wazuh"
+        "type": "cyb3rhq"
     },
     "event": {
         "original": "{\"integration\": \"docker\", \"docker\": {\"Type\": \"config\", \"Action\": \"create\", \"Actor\": {\"ID\": \"6xpt4kk38w8qyxj0ggy2qlbhe\", \"Attributes\": {\"name\": \"my-config\"}}, \"scope\": \"swarm\", \"time\": 1686331092, \"timeNano\": 1686331092998340525}}",

@@ -4,21 +4,21 @@
             "as": {
                 "number": 1234.0,
                 "organization": {
-                    "name": " Wazuh Organization"
+                    "name": " Cyb3rhq Organization"
                 }
             },
             "geo": {
-                "city_name": "Wazuh city",
+                "city_name": "Cyb3rhq city",
                 "continent_code": "WC",
-                "continent_name": "Wazuh Continent",
+                "continent_name": "Cyb3rhq Continent",
                 "country_iso_code": "WCtry",
-                "country_name": "Wazuh Country",
+                "country_name": "Cyb3rhq Country",
                 "location": {
                     "lat": 41.7776,
                     "lon": 88.4293
                 },
                 "postal_code": "7777",
-                "timezone": "Wazuh/Timezone"
+                "timezone": "Cyb3rhq/Timezone"
             },
             "ip": "1.2.3.4"
         },
@@ -43,13 +43,13 @@
                 "1.2.3.4"
             ]
         },
-        "wazuh": {
+        "cyb3rhq": {
             "decoders": [
                 "syslog"
             ],
             "location": "1.2.3.4",
             "queue": 50.0,
-            "source": "wazuh-syslog-server"
+            "source": "cyb3rhq-syslog-server"
         }
     }
 ]

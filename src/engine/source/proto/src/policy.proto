@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "engine.proto";
 
-package com.wazuh.api.engine.policy;
+package com.cyb3rhq.api.engine.policy;
 
 // Store of policy handlers
 
@@ -11,7 +11,7 @@ package com.wazuh.api.engine.policy;
  *
  * Create a new policy in the store.
  * If forceEmpty is true, the policy will be created without default integrations
- * (Wazuh-Core)
+ * (Cyb3rhq-Core)
  * command: policy.store/post
  **************************************************/
 message StorePost_Request

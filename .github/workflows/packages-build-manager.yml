@@ -1,5 +1,5 @@
-run-name: Build ${{ inputs.system }} wazuh-manager on ${{ inputs.architecture }} ${{ inputs.is_stage && '- is stage' || '' }} ${{ inputs.checksum && '- checksum' || '' }} ${{ inputs.debug && '- debug' || '' }} ${{ inputs.id }}
-name: Build Wazuh manager
+run-name: Build ${{ inputs.system }} cyb3rhq-manager on ${{ inputs.architecture }} ${{ inputs.is_stage && '- is stage' || '' }} ${{ inputs.checksum && '- checksum' || '' }} ${{ inputs.debug && '- debug' || '' }} ${{ inputs.id }}
+name: Build Cyb3rhq manager
 
 on:
   workflow_dispatch:
@@ -92,7 +92,7 @@ jobs:
   Build-manager-packages:
     runs-on: ubuntu-latest
     timeout-minutes: 35
-    name: Build ${{ inputs.system }} wazuh-manager on ${{ inputs.architecture }}
+    name: Build ${{ inputs.system }} cyb3rhq-manager on ${{ inputs.architecture }}
 
     steps:
       - name: Cancel previous runs
@@ -116,7 +116,7 @@ jobs:
         run: |
           bash $GITHUB_WORKSPACE/.github/actions/ghcr-pull-and-push/pull_image_from_ghcr.sh ${{ secrets.GITHUB_TOKEN }} ${{ github.actor}} $CONTAINER_NAME ${{ env.TAG }}
 
-      - name: Build ${{ inputs.system }} wazuh-manager on ${{ inputs.architecture }}
+      - name: Build ${{ inputs.system }} cyb3rhq-manager on ${{ inputs.architecture }}
         working-directory: packages
         run: |
           REVISION=${{ inputs.revision }}
@@ -134,8 +134,8 @@ jobs:
         run: |
           if [ -z "${{ env.PACKAGE_NAME }}" ]; then echo "No package found matching the pattern!"; exit 1; fi
           sudo docker run -v $GITHUB_WORKSPACE/.github/actions/test-install-components/:/tests -v /tmp/:/packages --entrypoint '/tests/install_component.sh' $CONTAINER_NAME:${{ env.TAG }} $PACKAGE_NAME manager
-          # Check if Wazuh was installed. The /tmp/status.log file was generated in the previous step.
-          if grep -iq " installed.*wazuh-manager" /tmp/status.log ; then
+          # Check if Cyb3rhq was installed. The /tmp/status.log file was generated in the previous step.
+          if grep -iq " installed.*cyb3rhq-manager" /tmp/status.log ; then
             echo "Installation successfully."
           else
             echo "The installation could not be completed. The package will not be uploaded.";
@@ -152,13 +152,13 @@ jobs:
       - name: Upload package to S3
         working-directory: packages
         run: |
-          aws s3 cp /tmp/${{ env.PACKAGE_NAME }} s3://packages-dev.internal.wazuh.com/development/wazuh/4.x/main/packages/
-          s3uri="s3://packages-dev.internal.wazuh.com/development/wazuh/4.x/main/packages/${{ env.PACKAGE_NAME }}"
+          aws s3 cp /tmp/${{ env.PACKAGE_NAME }} s3://packages-dev.internal.wazuh.com/development/cyb3rhq/4.x/main/packages/
+          s3uri="s3://packages-dev.internal.wazuh.com/development/cyb3rhq/4.x/main/packages/${{ env.PACKAGE_NAME }}"
           echo "S3 URI: ${s3uri}"
 
       - name: Upload checksum to S3
         if: ${{ inputs.checksum }}
         run: |
-          aws s3 cp /tmp/${{ env.PACKAGE_NAME }}.sha512 s3://packages-dev.internal.wazuh.com/development/wazuh/4.x/main/packages/
-          s3uri="s3://packages-dev.internal.wazuh.com/development/wazuh/4.x/main/packages/${{ env.PACKAGE_NAME }}.sha512"
+          aws s3 cp /tmp/${{ env.PACKAGE_NAME }}.sha512 s3://packages-dev.internal.wazuh.com/development/cyb3rhq/4.x/main/packages/
+          s3uri="s3://packages-dev.internal.wazuh.com/development/cyb3rhq/4.x/main/packages/${{ env.PACKAGE_NAME }}.sha512"
           echo "S3 sha512 URI: ${s3uri}"

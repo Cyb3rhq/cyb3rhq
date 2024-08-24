@@ -6,7 +6,7 @@ on:
     inputs:
       revision:
         description: |
-          Revision used to naming Filebeat package wazuh-filebeat-X.X.tar.gz.
+          Revision used to naming Filebeat package cyb3rhq-filebeat-X.X.tar.gz.
           Default 0.0.
         required: false
         default: "0.0"
@@ -51,7 +51,7 @@ jobs:
 
       - name: Set package name
         run: |
-          echo "FILEBEAT_TAR_NAME=wazuh-filebeat-${{ inputs.revision }}.tar.gz" >> $GITHUB_ENV
+          echo "FILEBEAT_TAR_NAME=cyb3rhq-filebeat-${{ inputs.revision }}.tar.gz" >> $GITHUB_ENV
 
       - name: Set up AWS CLI
         uses: aws-actions/configure-aws-credentials@v1
@@ -61,66 +61,66 @@ jobs:
           aws-region: ${{ secrets.CI_AWS_REGION }}
 
       - name: Package files, change permissions, create tar and upload to S3
-        working-directory: extensions/filebeat/7.x/wazuh-module
+        working-directory: extensions/filebeat/7.x/cyb3rhq-module
         run: |
-          mkdir wazuh
-          cp -r _meta alerts archives module.yml wazuh/
-          sudo chown -R root:root wazuh
-          sudo chmod 755 wazuh
-          sudo chmod 755 wazuh/alerts
-          sudo chmod 755 wazuh/alerts/config
-          sudo chmod 755 wazuh/alerts/ingest
-          sudo chmod 755 wazuh/archives
-          sudo chmod 755 wazuh/archives/config
-          sudo chmod 755 wazuh/archives/ingest
-          sudo chmod 644 wazuh/module.yml
-          sudo chmod 644 wazuh/_meta/config.yml
-          sudo chmod 644 wazuh/_meta/docs.asciidoc
-          sudo chmod 644 wazuh/_meta/fields.yml
-          sudo chmod 644 wazuh/alerts/manifest.yml
-          sudo chmod 644 wazuh/alerts/config/alerts.yml
-          sudo chmod 644 wazuh/alerts/ingest/pipeline.json
-          sudo chmod 644 wazuh/archives/manifest.yml
-          sudo chmod 644 wazuh/archives/config/archives.yml
-          sudo chmod 644 wazuh/archives/ingest/pipeline.json
-          tar -czvf ${{ env.FILEBEAT_TAR_NAME }} wazuh
+          mkdir cyb3rhq
+          cp -r _meta alerts archives module.yml cyb3rhq/
+          sudo chown -R root:root cyb3rhq
+          sudo chmod 755 cyb3rhq
+          sudo chmod 755 cyb3rhq/alerts
+          sudo chmod 755 cyb3rhq/alerts/config
+          sudo chmod 755 cyb3rhq/alerts/ingest
+          sudo chmod 755 cyb3rhq/archives
+          sudo chmod 755 cyb3rhq/archives/config
+          sudo chmod 755 cyb3rhq/archives/ingest
+          sudo chmod 644 cyb3rhq/module.yml
+          sudo chmod 644 cyb3rhq/_meta/config.yml
+          sudo chmod 644 cyb3rhq/_meta/docs.asciidoc
+          sudo chmod 644 cyb3rhq/_meta/fields.yml
+          sudo chmod 644 cyb3rhq/alerts/manifest.yml
+          sudo chmod 644 cyb3rhq/alerts/config/alerts.yml
+          sudo chmod 644 cyb3rhq/alerts/ingest/pipeline.json
+          sudo chmod 644 cyb3rhq/archives/manifest.yml
+          sudo chmod 644 cyb3rhq/archives/config/archives.yml
+          sudo chmod 644 cyb3rhq/archives/ingest/pipeline.json
+          tar -czvf ${{ env.FILEBEAT_TAR_NAME }} cyb3rhq
 
       - name: Testing Filebeat module
-        working-directory: extensions/filebeat/7.x/wazuh-module
+        working-directory: extensions/filebeat/7.x/cyb3rhq-module
         run: |
           echo "MODULE_CHECKED=no" >> $GITHUB_ENV
           DIR_PERMS="755 root root"
           FILE_PERMS="644 root root"
-          sudo mv ./wazuh ./wazuh2
+          sudo mv ./cyb3rhq ./cyb3rhq2
           sudo tar -xzvf ${{ env.FILEBEAT_TAR_NAME }}
-          for file in ./wazuh/*; do
+          for file in ./cyb3rhq/*; do
             if [ -d "$file" ]; then
               if [ "$(stat -L -c "%a %G %U" "$file")" != "$DIR_PERMS" ] && [[ "$file" != *"_meta" ]]; then echo "Wrong permissions for $file. Expected: $DIR_PERMS. Currently: $(stat -L -c "%a %G %U" "$file")."; exit 1; fi
             elif [ -f "$file" ]; then
               if [ "$(stat -L -c "%a %G %U" "$file")" != "$FILE_PERMS" ]; then echo "Wrong permissions for $file. Expected: $FILE_PERMS. Currently: $(stat -L -c "%a %G %U" "$file")."; exit 1; fi
             fi
           done
-          if [ $(diff -r wazuh wazuh2) ]; then exit 1; fi
+          if [ $(diff -r cyb3rhq cyb3rhq2) ]; then exit 1; fi
           echo "MODULE_CHECKED=yes" >> $GITHUB_ENV
 
       - name: Generate SHA512
         if: ${{ inputs.checksum }}
-        working-directory: extensions/filebeat/7.x/wazuh-module
+        working-directory: extensions/filebeat/7.x/cyb3rhq-module
         run: |
           sha512sum "${{ env.FILEBEAT_TAR_NAME }}" > "${{ env.FILEBEAT_TAR_NAME }}.sha512"
 
       - name: Upload Filebeat module to S3
         if: env.MODULE_CHECKED == 'yes'
-        working-directory: extensions/filebeat/7.x/wazuh-module
+        working-directory: extensions/filebeat/7.x/cyb3rhq-module
         run: |
-          aws s3 cp ${{ env.FILEBEAT_TAR_NAME }} s3://packages-dev.internal.wazuh.com/development/wazuh/4.x/secondary/filebeat/modules/
-          s3uri="s3://packages-dev.internal.wazuh.com/development/wazuh/4.x/secondary/filebeat/modules/${{ env.FILEBEAT_TAR_NAME }}"
+          aws s3 cp ${{ env.FILEBEAT_TAR_NAME }} s3://packages-dev.internal.wazuh.com/development/cyb3rhq/4.x/secondary/filebeat/modules/
+          s3uri="s3://packages-dev.internal.wazuh.com/development/cyb3rhq/4.x/secondary/filebeat/modules/${{ env.FILEBEAT_TAR_NAME }}"
           echo "S3 URI: ${s3uri}"
 
       - name: Upload Filebeat module SHA512 to S3
         if: ${{ env.MODULE_CHECKED == 'yes' && inputs.checksum }}
-        working-directory: extensions/filebeat/7.x/wazuh-module
+        working-directory: extensions/filebeat/7.x/cyb3rhq-module
         run: |
-          aws s3 cp ${{ env.FILEBEAT_TAR_NAME }}.sha512 s3://packages-dev.internal.wazuh.com/development/wazuh/4.x/secondary/filebeat/modules/
-          s3uri="s3://packages-dev.internal.wazuh.com/development/wazuh/4.x/secondary/filebeat/modules/${{ env.FILEBEAT_TAR_NAME }}.sha512"
+          aws s3 cp ${{ env.FILEBEAT_TAR_NAME }}.sha512 s3://packages-dev.internal.wazuh.com/development/cyb3rhq/4.x/secondary/filebeat/modules/
+          s3uri="s3://packages-dev.internal.wazuh.com/development/cyb3rhq/4.x/secondary/filebeat/modules/${{ env.FILEBEAT_TAR_NAME }}.sha512"
           echo "S3 sha512 URI: ${s3uri}"

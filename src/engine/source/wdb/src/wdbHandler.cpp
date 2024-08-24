@@ -5,7 +5,7 @@
 
 #include <base/logging.hpp>
 
-namespace wazuhdb
+namespace cyb3rhqdb
 {
 
 using RecoverableError = sockiface::ISockHandler::RecoverableError;
@@ -154,4 +154,4 @@ WDBHandler::tryQueryAndParseResult(const std::string& q, const uint attempts) no
     return parseResult(result);
 }
 
-} // namespace wazuhdb
+} // namespace cyb3rhqdb

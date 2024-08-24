@@ -1,13 +1,13 @@
 [
     {
-        "wazuh": {
+        "cyb3rhq": {
             "queue": 49,
-            "location": "[003] (vm-ubuntu22) any->Wazuh-Docker",
+            "location": "[003] (vm-ubuntu22) any->Cyb3rhq-Docker",
             "message": "{\"integration\": \"docker\", \"docker\": {\"status\": \"pull\", \"id\": \"redis:3.0.6@sha256:6a692a76c2081888b589e26e6ec835743119fe453d67ecf03df7de5b73d69842\", \"Type\": \"image\", \"Action\": \"pull\", \"Actor\": {\"ID\": \"redis:3.0.6@sha256:6a692a76c2081888b589e26e6ec835743119fe453d67ecf03df7de5b73d69842\", \"Attributes\": {\"name\": \"redis\"}}, \"scope\": \"local\", \"time\": 1686330746, \"timeNano\": 1686330746439543900}}",
-            "origin": "Wazuh-Docker",
+            "origin": "Cyb3rhq-Docker",
             "registered_ip": "any",
             "decoders": [
-                "core-wazuh-message",
+                "core-cyb3rhq-message",
                 "core-localfile",
                 "integrations",
                 "docker-listener"
@@ -17,7 +17,7 @@
         "agent": {
             "id": "003",
             "name": "vm-ubuntu22",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event": {
             "original": "{\"integration\": \"docker\", \"docker\": {\"status\": \"pull\", \"id\": \"redis:3.0.6@sha256:6a692a76c2081888b589e26e6ec835743119fe453d67ecf03df7de5b73d69842\", \"Type\": \"image\", \"Action\": \"pull\", \"Actor\": {\"ID\": \"redis:3.0.6@sha256:6a692a76c2081888b589e26e6ec835743119fe453d67ecf03df7de5b73d69842\", \"Attributes\": {\"name\": \"redis\"}}, \"scope\": \"local\", \"time\": 1686330746, \"timeNano\": 1686330746439543900}}",
@@ -43,14 +43,14 @@
         }
     },
     {
-        "wazuh": {
+        "cyb3rhq": {
             "queue": 49,
-            "location": "[003] (vm-ubuntu22) any->Wazuh-Docker",
+            "location": "[003] (vm-ubuntu22) any->Cyb3rhq-Docker",
             "message": "{\"integration\": \"docker\", \"docker\": {\"status\": \"tag\", \"id\": \"sha256:67329fada6c5946161ebff1e053e65ef0770776c37273599d15be0b72fed6adc\", \"Type\": \"image\", \"Action\": \"tag\", \"Actor\": {\"ID\": \"sha256:67329fada6c5946161ebff1e053e65ef0770776c37273599d15be0b72fed6adc\", \"Attributes\": {\"name\": \"tomcat_new:latest\", \"org.opencontainers.image.ref.name\": \"ubuntu\", \"org.opencontainers.image.version\": \"22.04\"}}, \"scope\": \"local\", \"time\": 1686324716, \"timeNano\": 1686324716475258449}}",
-            "origin": "Wazuh-Docker",
+            "origin": "Cyb3rhq-Docker",
             "registered_ip": "any",
             "decoders": [
-                "core-wazuh-message",
+                "core-cyb3rhq-message",
                 "core-localfile",
                 "integrations",
                 "docker-listener"
@@ -60,7 +60,7 @@
         "agent": {
             "id": "003",
             "name": "vm-ubuntu22",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event": {
             "original": "{\"integration\": \"docker\", \"docker\": {\"status\": \"tag\", \"id\": \"sha256:67329fada6c5946161ebff1e053e65ef0770776c37273599d15be0b72fed6adc\", \"Type\": \"image\", \"Action\": \"tag\", \"Actor\": {\"ID\": \"sha256:67329fada6c5946161ebff1e053e65ef0770776c37273599d15be0b72fed6adc\", \"Attributes\": {\"name\": \"tomcat_new:latest\", \"org.opencontainers.image.ref.name\": \"ubuntu\", \"org.opencontainers.image.version\": \"22.04\"}}, \"scope\": \"local\", \"time\": 1686324716, \"timeNano\": 1686324716475258449}}",

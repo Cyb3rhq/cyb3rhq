@@ -6,7 +6,7 @@ metadata:
   description: Identifies the deletion of WebServer access logs. This may indicate an attempt to evade detection or destroy forensic
     evidence on a system.
   author:
-    name: Wazuh, Inc.
+    name: Cyb3rhq, Inc.
     date: 2023/09/15
   references:
     - https://attack.mitre.org/tactics/TA0005/
@@ -25,7 +25,7 @@ normalize:
 
       - rule.description: Identifies the deletion of WebServer access logs. This may indicate an attempt to evade detection or destroy forensic
           evidence on a system.
-      - rule.license: Wazuh Inc.
+      - rule.license: Cyb3rhq Inc.
       - rule.name: WebServer Access Logs Deleted
 
       - threat.framework: MITRE ATT&CK

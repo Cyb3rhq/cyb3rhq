@@ -11,9 +11,9 @@ build/
 
 # Objects
 libsqlite3.so*
-wazuh-clusterd-internal
+cyb3rhq-clusterd-internal
 
 # Projects
 .idea
 
-wazuh/wazuh.json
+cyb3rhq/cyb3rhq.json

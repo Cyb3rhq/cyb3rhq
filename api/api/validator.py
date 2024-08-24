@@ -1,5 +1,5 @@
-# Copyright (C) 2015, Wazuh Inc.
-# Created by Wazuh, Inc. <info@wazuh.com>.
+# Copyright (C) 2015, Cyb3rhq Inc.
+# Created by Cyb3rhq, Inc. <info@wazuh.com>.
 # This program is a free software; you can redistribute it and/or modify it under the terms of GPLv2
 
 import os
@@ -10,8 +10,8 @@ from typing import Dict, List
 from defusedxml import ElementTree as ET
 from jsonschema import Draft4Validator
 
-from wazuh.core import common
-from wazuh.core.exception import WazuhError
+from cyb3rhq.core import common
+from cyb3rhq.core.exception import Cyb3rhqError
 
 _alphanumeric_param = re.compile(r'^[\w,\-.+\s:]+$')
 _symbols_alphanumeric_param = re.compile(r'^[\w,*<>!\-.+\s:/()\[\]\'\"|=~#]+$')
@@ -35,8 +35,8 @@ _iso8601_date_time = re.compile(
 _names = re.compile(r'^[\w\-.%]+$', re.ASCII)
 _numbers = re.compile(r'^\d+$')
 _numbers_or_all = re.compile(r'^(\d+|all)$')
-_wazuh_key = re.compile(r'[a-zA-Z0-9]+$')
-_wazuh_version = re.compile(r'^(?:wazuh |)v?\d+\.\d+\.\d+$', re.IGNORECASE)
+_cyb3rhq_key = re.compile(r'[a-zA-Z0-9]+$')
+_cyb3rhq_version = re.compile(r'^(?:cyb3rhq |)v?\d+\.\d+\.\d+$', re.IGNORECASE)
 _paths = re.compile(r'^[\w\-.\\/:]+$')
 _cdb_filename_path = re.compile(r'^[\-\w]+$')
 _xml_filename_path = re.compile(r'^[\w\-]+\.xml$')
@@ -240,7 +240,7 @@ api_config_schema = {
     }
 }
 
-WAZUH_COMPONENT_CONFIGURATION_MAPPING = MappingProxyType(
+CYB3RHQ_COMPONENT_CONFIGURATION_MAPPING = MappingProxyType(
     {
         'agent': {"client", "buffer", "labels", "internal"},
         'agentless': {"agentless"},
@@ -254,7 +254,7 @@ WAZUH_COMPONENT_CONFIGURATION_MAPPING = MappingProxyType(
         'monitor': {"global", "internal", "reports"},
         'request': {"global", "remote", "internal"},
         'syscheck': {"syscheck", "rootcheck", "internal"},
-        'wazuh-db': {"wdb", "internal"},
+        'cyb3rhq-db': {"wdb", "internal"},
         'wmodules': {"wmodules"}
     }
 )
@@ -319,7 +319,7 @@ def allowed_fields(filters: Dict) -> List:
     return [field for field in filters]
 
 
-def is_safe_path(path: str, basedir: str = common.WAZUH_PATH, relative: bool = True) -> bool:
+def is_safe_path(path: str, basedir: str = common.CYB3RHQ_PATH, relative: bool = True) -> bool:
     """Check if a path is correct.
 
     Parameters
@@ -327,7 +327,7 @@ def is_safe_path(path: str, basedir: str = common.WAZUH_PATH, relative: bool = T
     path : str
         Path to be checked.
     basedir : str
-        Wazuh installation directory.
+        Cyb3rhq installation directory.
     relative : bool
         True if path is relative. False otherwise (absolute).
 
@@ -348,25 +348,25 @@ def is_safe_path(path: str, basedir: str = common.WAZUH_PATH, relative: bool = T
     return os.path.commonpath([full_path, full_basedir]) == full_basedir
 
 
-def check_component_configuration_pair(component: str, configuration: str) -> WazuhError:
+def check_component_configuration_pair(component: str, configuration: str) -> Cyb3rhqError:
     """
 
     Parameters
     ----------
     component : str
-        Wazuh component name.
+        Cyb3rhq component name.
     configuration : str
         Component configuration.
 
     Returns
     -------
-    WazuhError
-        It can either return a `WazuhError` or `None`, depending on the given component and configuration. The exception
+    Cyb3rhqError
+        It can either return a `Cyb3rhqError` or `None`, depending on the given component and configuration. The exception
         is returned and not raised because we use the object to create a problem on API level.
     """
-    if configuration not in WAZUH_COMPONENT_CONFIGURATION_MAPPING[component]:
-        return WazuhError(1128, extra_message=f"Valid configuration values for '{component}': "
-                                              f"{WAZUH_COMPONENT_CONFIGURATION_MAPPING[component]}")
+    if configuration not in CYB3RHQ_COMPONENT_CONFIGURATION_MAPPING[component]:
+        return Cyb3rhqError(1128, extra_message=f"Valid configuration values for '{component}': "
+                                              f"{CYB3RHQ_COMPONENT_CONFIGURATION_MAPPING[component]}")
 
 
 @Draft4Validator.FORMAT_CHECKER.checks("alphanumeric")
@@ -473,14 +473,14 @@ def format_timeframe(value):
     return check_exp(value, _timeframe_type)
 
 
-@Draft4Validator.FORMAT_CHECKER.checks("wazuh_key")
-def format_wazuh_key(value):
-    return check_exp(value, _wazuh_key)
+@Draft4Validator.FORMAT_CHECKER.checks("cyb3rhq_key")
+def format_cyb3rhq_key(value):
+    return check_exp(value, _cyb3rhq_key)
 
 
-@Draft4Validator.FORMAT_CHECKER.checks("wazuh_version")
-def format_wazuh_version(value):
-    return check_exp(value, _wazuh_version)
+@Draft4Validator.FORMAT_CHECKER.checks("cyb3rhq_version")
+def format_cyb3rhq_version(value):
+    return check_exp(value, _cyb3rhq_version)
 
 
 @Draft4Validator.FORMAT_CHECKER.checks("date")

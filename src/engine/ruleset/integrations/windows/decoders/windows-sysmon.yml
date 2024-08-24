@@ -8,7 +8,7 @@ metadata:
   compatibility: >
     This integration was tested on Windows 10, with sysmon version v15.x but it should support version v10.x onwards
   author:
-    name: Wazuh, Inc.
+    name: Cyb3rhq, Inc.
     date: 2023/10/10
   references:
     - https://learn.microsoft.com/es-es/sysinternals/downloads/sysmon
@@ -205,7 +205,7 @@ check:
 
 normalize:
  - map:
-    - wazuh.decoders: array_append(windows-sysmon)
+    - cyb3rhq.decoders: array_append(windows-sysmon)
     - event.dataset: sysmon
     - event.kind: event
     - _event: get_key_in($idEvent_map, $event.code)

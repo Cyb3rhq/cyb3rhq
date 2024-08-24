@@ -6,7 +6,7 @@ from fastapi import status
 from comms_api.core.files import DIR
 from comms_api.routers.files import get_files
 from comms_api.routers.exceptions import HTTPError
-from wazuh.core.exception import WazuhCommsAPIError
+from cyb3rhq.core.exception import Cyb3rhqCommsAPIError
 
 
 class StatMock:
@@ -38,8 +38,8 @@ async def test_get_files(stat_mock, file_name, media_type):
 
 @pytest.mark.asyncio
 @pytest.mark.parametrize('exception,message,code', [
-    (WazuhCommsAPIError(2704), 'Invalid file name, it must not be a directory', 2704),
-    (WazuhCommsAPIError(2705), 'Invalid file name, it must not contain directories', 2705),
+    (Cyb3rhqCommsAPIError(2704), 'Invalid file name, it must not be a directory', 2704),
+    (Cyb3rhqCommsAPIError(2705), 'Invalid file name, it must not contain directories', 2705),
     (FileNotFoundError(), 'File does not exist', status.HTTP_404_NOT_FOUND),
     (OSError('error'), 'error', status.HTTP_500_INTERNAL_SERVER_ERROR),
 ])

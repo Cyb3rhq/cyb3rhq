@@ -94,7 +94,7 @@ CommRetval
 testSendMsg(const int socketFD, const std::string& msg, const bool doSendLength = true);
 
 /**
- * @brief Receive a Wazuh protocol message from a socket.
+ * @brief Receive a Cyb3rhq protocol message from a socket.
  *
  * @param socketFD socket file descriptor.
  * @return vector<char> message on success.
@@ -106,7 +106,7 @@ testSendMsg(const int socketFD, const std::string& msg, const bool doSendLength 
 std::vector<char> testRecvMsg(const int socketFD, const int sockType);
 
 /**
- * @brief Receive a string from a socket, after parsing the Wazuh protocol.
+ * @brief Receive a string from a socket, after parsing the Cyb3rhq protocol.
  *
  * @param socketFD socket file descriptor.
  *

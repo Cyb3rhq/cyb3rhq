@@ -62,7 +62,7 @@ const std::vector<std::string>
 } // namespace
 
 // Parse Events
-static void parseWazuhEvent_batch(benchmark::State& state)
+static void parseCyb3rhqEvent_batch(benchmark::State& state)
 {
 
     const auto sizeOfEvents = sampleEventsStr.size();
@@ -74,7 +74,7 @@ static void parseWazuhEvent_batch(benchmark::State& state)
         {
             current = (current + 1) % sizeOfEvents;
             base::Event e;
-            benchmark::DoNotOptimize(e = base::parseEvent::parseWazuhEvent(sampleEventsStr[current]));
+            benchmark::DoNotOptimize(e = base::parseEvent::parseCyb3rhqEvent(sampleEventsStr[current]));
             benchmark::ClobberMemory();
         }
         catch (const std::exception& e)
@@ -83,7 +83,7 @@ static void parseWazuhEvent_batch(benchmark::State& state)
         }
     }
 }
-BENCHMARK(parseWazuhEvent_batch)->Threads(1)->Threads(2)->Threads(4)->UseRealTime();
+BENCHMARK(parseCyb3rhqEvent_batch)->Threads(1)->Threads(2)->Threads(4)->UseRealTime();
 
 // Copy events | Copy json
 static void copyEvents_batch(benchmark::State& state)
@@ -96,7 +96,7 @@ static void copyEvents_batch(benchmark::State& state)
     std::transform(sampleEventsStr.begin(),
                    sampleEventsStr.end(),
                    std::back_inserter(events),
-                   [](const auto& e) { return base::parseEvent::parseWazuhEvent(e); });
+                   [](const auto& e) { return base::parseEvent::parseCyb3rhqEvent(e); });
 
     for (auto _ : state)
     {

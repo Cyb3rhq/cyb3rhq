@@ -2,11 +2,11 @@
 name: decoder/aws-cloudtrail/0
 
 metadata:
-  title: Wazuh AWS wodle integration for Cloudtrail bucket type
-  description: Decoder for Wazuh wodle of AWS CloudTrail Logs
+  title: Cyb3rhq AWS wodle integration for Cloudtrail bucket type
+  description: Decoder for Cyb3rhq wodle of AWS CloudTrail Logs
   module: AWS
   compatibility: >
-    This decoder has been tested on Wazuh version 4.4
+    This decoder has been tested on Cyb3rhq version 4.4
   references:
     - https://documentation.wazuh.com/current/amazon/services/supported-services/cloudtrail.html#amazon-cloudtrail
     - https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-record-contents.html
@@ -14,7 +14,7 @@ metadata:
   versions:
     - "4.4"
   author:
-      name: Wazuh, Inc.
+      name: Cyb3rhq, Inc.
       url: https://wazuh.com
       date: 2023/06/20
 
@@ -346,7 +346,7 @@ normalize:
 
   - map:
       - event.dataset: aws-cloudtrail
-      - wazuh.decoders: +array_append/aws-cloudtrail
+      - cyb3rhq.decoders: +array_append/aws-cloudtrail
 
       - event.kind: event
       - event.type: +array_append/info

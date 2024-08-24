@@ -1,6 +1,6 @@
 /*
- * Wazuh - Content Migration tests
- * Copyright (C) 2015, Wazuh Inc.
+ * Cyb3rhq - Content Migration tests
+ * Copyright (C) 2015, Cyb3rhq Inc.
  * March 03, 2023.
  *
  */

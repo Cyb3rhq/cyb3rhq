@@ -1,5 +1,5 @@
 {
-    "name": "schema/wazuh-logpar-types/0",
+    "name": "schema/cyb3rhq-logpar-types/0",
     "fields": {
         "url": "url",
         "user_agent": "useragent"

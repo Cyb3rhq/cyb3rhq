@@ -1,15 +1,15 @@
 [
     {
-        "wazuh":
+        "cyb3rhq":
         {
             "queue": 49,
-            "location": "[003] (vm-ubuntu22) any->Wazuh-Docker",
+            "location": "[003] (vm-ubuntu22) any->Cyb3rhq-Docker",
             "message": "{\"integration\":\"docker\",\"docker\":{\"status\":\"create\",\"id\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"from\":\"tomcat\",\"Type\":\"container\",\"Action\":\"create\",\"Actor\":{\"ID\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"Attributes\":{\"image\":\"tomcat\",\"name\":\"tomcat_hello\",\"org.opencontainers.image.ref.name\":\"ubuntu\",\"org.opencontainers.image.version\":\"22.04\"}},\"scope\":\"local\",\"time\":1685564382,\"timeNano\":1685564382539317919}}",
-            "origin": "Wazuh-Docker",
+            "origin": "Cyb3rhq-Docker",
             "registered_ip": "any",
             "decoders":
             [
-                "core-wazuh-message",
+                "core-cyb3rhq-message",
                 "core-localfile",
                 "integrations",
                 "docker-listener"
@@ -20,7 +20,7 @@
         {
             "id": "003",
             "name": "vm-ubuntu22",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event":
         {
@@ -51,16 +51,16 @@
         }
     },
     {
-        "wazuh":
+        "cyb3rhq":
         {
             "queue": 49,
-            "location": "[003] (vm-ubuntu22) any->Wazuh-Docker",
+            "location": "[003] (vm-ubuntu22) any->Cyb3rhq-Docker",
             "message": "{\"integration\":\"docker\",\"docker\":{\"status\":\"destroy\",\"id\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"from\":\"tomcat\",\"Type\":\"container\",\"Action\":\"destroy\",\"Actor\":{\"ID\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"Attributes\":{\"image\":\"tomcat\",\"name\":\"tomcat_hello\",\"org.opencontainers.image.ref.name\":\"ubuntu\",\"org.opencontainers.image.version\":\"22.04\"}},\"scope\":\"local\",\"time\":1685567285,\"timeNano\":1685567285429724295}}",
-            "origin": "Wazuh-Docker",
+            "origin": "Cyb3rhq-Docker",
             "registered_ip": "any",
             "decoders":
             [
-                "core-wazuh-message",
+                "core-cyb3rhq-message",
                 "core-localfile",
                 "integrations",
                 "docker-listener"
@@ -71,7 +71,7 @@
         {
             "id": "003",
             "name": "vm-ubuntu22",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event":
         {
@@ -102,16 +102,16 @@
         }
     },
     {
-        "wazuh":
+        "cyb3rhq":
         {
             "queue": 49,
-            "location": "[003] (vm-ubuntu22) any->Wazuh-Docker",
+            "location": "[003] (vm-ubuntu22) any->Cyb3rhq-Docker",
             "message": "{\"integration\":\"docker\",\"docker\":{\"status\":\"die\",\"id\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"from\":\"tomcat\",\"Type\":\"container\",\"Action\":\"die\",\"Actor\":{\"ID\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"Attributes\":{\"execDuration\":\"2898\",\"exitCode\":\"143\",\"image\":\"tomcat\",\"name\":\"tomcat_hello\",\"org.opencontainers.image.ref.name\":\"ubuntu\",\"org.opencontainers.image.version\":\"22.04\"}},\"scope\":\"local\",\"time\":1685567281,\"timeNano\":1685567281345221984}}",
-            "origin": "Wazuh-Docker",
+            "origin": "Cyb3rhq-Docker",
             "registered_ip": "any",
             "decoders":
             [
-                "core-wazuh-message",
+                "core-cyb3rhq-message",
                 "core-localfile",
                 "integrations",
                 "docker-listener"
@@ -122,7 +122,7 @@
         {
             "id": "003",
             "name": "vm-ubuntu22",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event":
         {
@@ -158,16 +158,16 @@
         }
     },
     {
-        "wazuh":
+        "cyb3rhq":
         {
             "queue": 49,
-            "location": "[003] (vm-ubuntu22) any->Wazuh-Docker",
+            "location": "[003] (vm-ubuntu22) any->Cyb3rhq-Docker",
             "message": "{\"integration\":\"docker\",\"docker\":{\"status\":\"die\",\"id\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"from\":\"tomcat\",\"Type\":\"container\",\"Action\":\"die\",\"Actor\":{\"ID\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"Attributes\":{\"execDuration\":\"2898\",\"exitCode\":\"143\",\"image\":\"tomcat\",\"name\":\"tomcat_hello\",\"org.opencontainers.image.ref.name\":\"ubuntu\",\"org.opencontainers.image.version\":\"22.04\"}},\"scope\":\"local\",\"time\":1685567281,\"timeNano\":1685567281345221984}}",
-            "origin": "Wazuh-Docker",
+            "origin": "Cyb3rhq-Docker",
             "registered_ip": "any",
             "decoders":
             [
-                "core-wazuh-message",
+                "core-cyb3rhq-message",
                 "core-localfile",
                 "integrations",
                 "docker-listener"
@@ -178,7 +178,7 @@
         {
             "id": "003",
             "name": "vm-ubuntu22",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event":
         {
@@ -213,16 +213,16 @@
         }
     },
     {
-        "wazuh":
+        "cyb3rhq":
         {
             "queue": 49,
-            "location": "[003] (vm-ubuntu22) any->Wazuh-Docker",
+            "location": "[003] (vm-ubuntu22) any->Cyb3rhq-Docker",
             "message": "{\"integration\":\"docker\",\"docker\":{\"status\":\"exec_create: sh -c echo test 31321 353541 s\\\\u00f1daskd\\\\u00f1asl\",\"id\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"from\":\"tomcat\",\"Type\":\"container\",\"Action\":\"exec_create: sh -c echo test 31321 353541 s\\\\u00f1daskd\\\\u00f1asl\",\"Actor\":{\"ID\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"Attributes\":{\"execID\":\"5864f50a99ea3dadcb42490fdb0218790926a85da61630376964fc2c20482c29\",\"image\":\"tomcat\",\"name\":\"tomcat_hello\",\"org.opencontainers.image.ref.name\":\"ubuntu\",\"org.opencontainers.image.version\":\"22.04\"}},\"scope\":\"local\",\"time\":1685565165,\"timeNano\":1685565165728452838}}",
-            "origin": "Wazuh-Docker",
+            "origin": "Cyb3rhq-Docker",
             "registered_ip": "any",
             "decoders":
             [
-                "core-wazuh-message",
+                "core-cyb3rhq-message",
                 "core-localfile",
                 "integrations",
                 "docker-listener"
@@ -233,7 +233,7 @@
         {
             "id": "003",
             "name": "vm-ubuntu22",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event":
         {
@@ -272,16 +272,16 @@
         }
     },
     {
-        "wazuh":
+        "cyb3rhq":
         {
             "queue": 49,
-            "location": "[003] (vm-ubuntu22) any->Wazuh-Docker",
+            "location": "[003] (vm-ubuntu22) any->Cyb3rhq-Docker",
             "message": "{\"integration\":\"docker\",\"docker\":{\"status\":\"exec_die\",\"id\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"from\":\"tomcat\",\"Type\":\"container\",\"Action\":\"exec_die\",\"Actor\":{\"ID\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"Attributes\":{\"execID\":\"5864f50a99ea3dadcb42490fdb0218790926a85da61630376964fc2c20482c29\",\"exitCode\":\"0\",\"image\":\"tomcat\",\"name\":\"tomcat_hello\",\"org.opencontainers.image.ref.name\":\"ubuntu\",\"org.opencontainers.image.version\":\"22.04\"}},\"scope\":\"local\",\"time\":1685565165,\"timeNano\":1685565165790986527}}",
-            "origin": "Wazuh-Docker",
+            "origin": "Cyb3rhq-Docker",
             "registered_ip": "any",
             "decoders":
             [
-                "core-wazuh-message",
+                "core-cyb3rhq-message",
                 "core-localfile",
                 "integrations",
                 "docker-listener"
@@ -292,7 +292,7 @@
         {
             "id": "003",
             "name": "vm-ubuntu22",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event":
         {
@@ -323,16 +323,16 @@
         }
     },
     {
-        "wazuh":
+        "cyb3rhq":
         {
             "queue": 49,
-            "location": "[003] (vm-ubuntu22) any->Wazuh-Docker",
+            "location": "[003] (vm-ubuntu22) any->Cyb3rhq-Docker",
             "message": "{\"integration\":\"docker\",\"docker\":{\"status\":\"exec_start: sh -c top\",\"id\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"from\":\"tomcat\",\"Type\":\"container\",\"Action\":\"exec_start: sh -c top\",\"Actor\":{\"ID\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"Attributes\":{\"execID\":\"ed183769eb9e33dd9a85bb731f18433014cf8a954e51030b6fe301cf70b3b3b7\",\"image\":\"tomcat\",\"name\":\"tomcat_hello\",\"org.opencontainers.image.ref.name\":\"ubuntu\",\"org.opencontainers.image.version\":\"22.04\"}},\"scope\":\"local\",\"time\":1685566466,\"timeNano\":1685566466125871771}}",
-            "origin": "Wazuh-Docker",
+            "origin": "Cyb3rhq-Docker",
             "registered_ip": "any",
             "decoders":
             [
-                "core-wazuh-message",
+                "core-cyb3rhq-message",
                 "core-localfile",
                 "integrations",
                 "docker-listener"
@@ -343,7 +343,7 @@
         {
             "id": "003",
             "name": "vm-ubuntu22",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event":
         {
@@ -382,16 +382,16 @@
         }
     },
     {
-        "wazuh":
+        "cyb3rhq":
         {
             "queue": 49,
-            "location": "[003] (vm-ubuntu22) any->Wazuh-Docker",
+            "location": "[003] (vm-ubuntu22) any->Cyb3rhq-Docker",
             "message": "{\"integration\":\"docker\",\"docker\":{\"status\":\"kill\",\"id\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"from\":\"tomcat\",\"Type\":\"container\",\"Action\":\"kill\",\"Actor\":{\"ID\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"Attributes\":{\"image\":\"tomcat\",\"name\":\"tomcat_hello\",\"org.opencontainers.image.ref.name\":\"ubuntu\",\"org.opencontainers.image.version\":\"22.04\",\"signal\":\"15\"}},\"scope\":\"local\",\"time\":1685567281,\"timeNano\":1685567281124527482}}",
-            "origin": "Wazuh-Docker",
+            "origin": "Cyb3rhq-Docker",
             "registered_ip": "any",
             "decoders":
             [
-                "core-wazuh-message",
+                "core-cyb3rhq-message",
                 "core-localfile",
                 "integrations",
                 "docker-listener"
@@ -402,7 +402,7 @@
         {
             "id": "003",
             "name": "vm-ubuntu22",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event":
         {
@@ -433,16 +433,16 @@
         }
     },
     {
-        "wazuh":
+        "cyb3rhq":
         {
             "queue": 49,
-            "location": "[003] (vm-ubuntu22) any->Wazuh-Docker",
+            "location": "[003] (vm-ubuntu22) any->Cyb3rhq-Docker",
             "message": "{\"integration\":\"docker\",\"docker\":{\"status\":\"start\",\"id\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"from\":\"tomcat\",\"Type\":\"container\",\"Action\":\"start\",\"Actor\":{\"ID\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"Attributes\":{\"image\":\"tomcat\",\"name\":\"tomcat_hello\",\"org.opencontainers.image.ref.name\":\"ubuntu\",\"org.opencontainers.image.version\":\"22.04\"}},\"scope\":\"local\",\"time\":1685564382,\"timeNano\":1685564382797220857}}",
-            "origin": "Wazuh-Docker",
+            "origin": "Cyb3rhq-Docker",
             "registered_ip": "any",
             "decoders":
             [
-                "core-wazuh-message",
+                "core-cyb3rhq-message",
                 "core-localfile",
                 "integrations",
                 "docker-listener"
@@ -453,7 +453,7 @@
         {
             "id": "003",
             "name": "vm-ubuntu22",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event":
         {
@@ -484,16 +484,16 @@
         }
     },
     {
-        "wazuh":
+        "cyb3rhq":
         {
             "queue": 49,
-            "location": "[003] (vm-ubuntu22) any->Wazuh-Docker",
+            "location": "[003] (vm-ubuntu22) any->Cyb3rhq-Docker",
             "message": "{\"integration\":\"docker\",\"docker\":{\"status\":\"stop\",\"id\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"from\":\"tomcat\",\"Type\":\"container\",\"Action\":\"stop\",\"Actor\":{\"ID\":\"14e0ba9dcf5896330de73d52cb483685befea2283c50f5ca50ff4c3cf170a313\",\"Attributes\":{\"image\":\"tomcat\",\"name\":\"tomcat_hello\",\"org.opencontainers.image.ref.name\":\"ubuntu\",\"org.opencontainers.image.version\":\"22.04\"}},\"scope\":\"local\",\"time\":1685567281,\"timeNano\":1685567281342660520}}",
-            "origin": "Wazuh-Docker",
+            "origin": "Cyb3rhq-Docker",
             "registered_ip": "any",
             "decoders":
             [
-                "core-wazuh-message",
+                "core-cyb3rhq-message",
                 "core-localfile",
                 "integrations",
                 "docker-listener"
@@ -504,7 +504,7 @@
         {
             "id": "003",
             "name": "vm-ubuntu22",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event":
         {

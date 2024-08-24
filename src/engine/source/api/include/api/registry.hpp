@@ -6,18 +6,18 @@
 #include <shared_mutex>
 #include <string>
 
-#include <base/utils/wazuhProtocol/wazuhProtocol.hpp>
+#include <base/utils/cyb3rhqProtocol/cyb3rhqProtocol.hpp>
 
 namespace api
 {
 
 /**
- * @brief Alias for WazuhResponse and WazuhRequest
+ * @brief Alias for Cyb3rhqResponse and Cyb3rhqRequest
  */
-using wpResponse = base::utils::wazuhProtocol::WazuhResponse;
-using wpRequest = base::utils::wazuhProtocol::WazuhRequest;
+using wpResponse = base::utils::cyb3rhqProtocol::Cyb3rhqResponse;
+using wpRequest = base::utils::cyb3rhqProtocol::Cyb3rhqRequest;
 /**
- * @brief Represent a handler function, which receives a WazuhRequest and returns a WazuhResponse
+ * @brief Represent a handler function, which receives a Cyb3rhqRequest and returns a Cyb3rhqResponse
  */
 using HandlerAsync = std::function<void(const wpRequest&, std::function<void(const wpResponse&)>)>;
 using HandlerSync = std::function<wpResponse(const wpRequest&)>;
@@ -25,7 +25,7 @@ using HandlerSync = std::function<wpResponse(const wpRequest&)>;
 /**
  * @brief A registry for API handlers
  *
- * This class is used as registry of API wazuh internal handlers.
+ * This class is used as registry of API cyb3rhq internal handlers.
  * It allows to register API command with a handler function.
  *
  */

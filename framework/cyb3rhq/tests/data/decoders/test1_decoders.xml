@@ -1,0 +1,49 @@
+<!--
+  -  Cyb3rhq decoders
+  -  Created by Cyb3rhq, Inc.
+  -  Copyright (C) 2015, Cyb3rhq Inc.
+  -  This program is a free software; you can redistribute it and/or modify it under the terms of GPLv2.
+-->
+
+<decoder name="cyb3rhq">
+  <prematch>^cyb3rhq: </prematch>
+</decoder>
+
+<decoder name="agent-buffer">
+  <parent>cyb3rhq</parent>
+  <prematch offset="after_parent">^Agent buffer:</prematch>
+  <regex offset="after_prematch">^ '(\S+)'.</regex>
+  <order>level</order>
+</decoder>
+
+<decoder name="agent-upgrade">
+  <parent>cyb3rhq</parent>
+  <prematch offset="after_parent">^Upgrade procedure |^Custom installation </prematch>
+  <regex offset="after_prematch">on agent (\d\d\d)\s\((\S+)\):\s(\w+)</regex>
+  <order>agent.id, agent.name, status</order>
+</decoder>
+
+<decoder name="agent-upgrade">
+  <parent>cyb3rhq</parent>
+  <regex>aborted:\s(\.+)$|failed:\s(\.+)$|lost:\s(\.+)$</regex>
+  <order>error</order>
+</decoder>
+
+<decoder name="agent-upgrade">
+  <parent>cyb3rhq</parent>
+  <regex>started.\sCurrent\sversion:\sCyb3rhq\s(\.+)$</regex>
+  <order>agent.cur_version</order>
+</decoder>
+
+<decoder name="agent-upgrade">
+  <parent>cyb3rhq</parent>
+  <regex>succeeded.\sNew\sversion:\sCyb3rhq\s(\.+)$</regex>
+  <order>agent.new_version</order>
+</decoder>
+
+<decoder name="agent-restart" test_tag="test">
+  <parent>cyb3rhq</parent>
+  <prematch offset="after_parent">^Invalid remote configuration:</prematch>
+  <regex offset="after_prematch">^ '(\S+)'.</regex>
+  <order>module</order>
+</decoder>

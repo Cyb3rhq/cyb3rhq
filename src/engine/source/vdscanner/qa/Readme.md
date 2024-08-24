@@ -27,13 +27,13 @@ There are two options related to the content:
 - The feed will be provided without compression: store the content in `src/queue/feed`
 - The feed will be decompressed during the test: store the compressed content at `src/tmp/`
 
-A single test can be run with the environment variable `WAZUH_VD_TEST_FN_GLOB`, `WAZUH_VD_TEST_GLOB`, or `WAZUH_VD_TEST_FP_GLOB`.
+A single test can be run with the environment variable `CYB3RHQ_VD_TEST_FN_GLOB`, `CYB3RHQ_VD_TEST_GLOB`, or `CYB3RHQ_VD_TEST_FP_GLOB`.
 Also, a folder called `qa_logs` to store the logs of each test can be created. Its location is passed with the environment variable `GITHUB_WORKSPACE`.
 
 Examples:
 
 - `python3 -m pytest  -vv engine/source/vdscanner/qa --log-cli-level=DEBUG`
-- `GITHUB_WORKSPACE=/workspaces/wazuh/ python3 -m pytest -vv engine/source/vdscanner/qa --log-cli-level=DEBUG`
-- `WAZUH_VD_TEST_FN_GLOB=001 GITHUB_WORKSPACE=/workspaces/wazuh/ python3 -m pytest  -vv engine/source/vdscanner/qa/test_efficacy_log.py --log-cli-level=DEBUG`
+- `GITHUB_WORKSPACE=/workspaces/cyb3rhq/ python3 -m pytest -vv engine/source/vdscanner/qa --log-cli-level=DEBUG`
+- `CYB3RHQ_VD_TEST_FN_GLOB=001 GITHUB_WORKSPACE=/workspaces/cyb3rhq/ python3 -m pytest  -vv engine/source/vdscanner/qa/test_efficacy_log.py --log-cli-level=DEBUG`
 - `python3 -m pytest -rA --md-report --md-report-verbose=1 --md-report-zeros empty --md-report-output md_report.md -vv engine/source/vdscanner/qa --log-cli-level=DEBUG`
 - `python3 -m pytest -rA --html=report.html --self-contained-html -vv engine/source/vdscanner/qa/ --log-cli-level=DEBUG`

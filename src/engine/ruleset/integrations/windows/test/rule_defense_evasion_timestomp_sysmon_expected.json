@@ -2,8 +2,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "category": [
@@ -50,7 +50,7 @@
     },
     "rule": {
       "description": "Identifies modification of a file creation time. Adversaries may modify file time attributes to blend malicious content with existing files. Timestomping is a technique that modifies the timestamps of a file often to mimic files that are in trusted directories.",
-      "license": "Wazuh Inc.",
+      "license": "Cyb3rhq Inc.",
       "name": "File Creation Time Changed"
     },
     "threat": {
@@ -97,12 +97,12 @@
     "vulnerability": {
       "severity": "medium"
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "windows-event",
         "windows-sysmon"
       ],
-      "location": "[001] (wazuh-agent-1) any->EventChannel",
+      "location": "[001] (cyb3rhq-agent-1) any->EventChannel",
       "origin": "EventChannel",
       "queue": 102,
       "registered_ip": "any",

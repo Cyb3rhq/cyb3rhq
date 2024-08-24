@@ -17,7 +17,7 @@ const store::Doc POLICY_DOC {R"({
     "hash": "4112711263806056918",
     "assets": [
         "decoder/system/0",
-        "decoder/wazuh/0",
+        "decoder/cyb3rhq/0",
         "decoder/user/0"
     ],
     "default_parents": {
@@ -33,7 +33,7 @@ const store::Doc POLICY_DOC_2 {R"({
     "assets": [
         "decoder/system/0",
         "decoder/user/0",
-        "decoder/wazuh/0"
+        "decoder/cyb3rhq/0"
     ],
     "default_parents": {
         "user": ["decoder/system/0"]
@@ -47,7 +47,7 @@ hash: 4112711263806056918
 assets:
   - decoder/system/0
   - decoder/user/0
-  - decoder/wazuh/0
+  - decoder/cyb3rhq/0
 default_parents:
   - user: decoder/system/0
 )"};
@@ -69,7 +69,7 @@ default_parents:
 const std::string POLICY_YML_WZH {R"(policy: policy/name/version
 hash: 4112711263806056918
 assets:
-  - decoder/wazuh/0
+  - decoder/cyb3rhq/0
 )"};
 
 const std::string POLICY_YML_OTHER {R"(policy: policy/name/version
@@ -86,8 +86,8 @@ void expectNsPolicy(std::shared_ptr<MockStore> store)
 {
     EXPECT_CALL(*store, getNamespace({"decoder/system/0"}))
         .WillRepeatedly(testing::Return(storeGetNamespaceResp("system")));
-    EXPECT_CALL(*store, getNamespace({"decoder/wazuh/0"}))
-        .WillRepeatedly(testing::Return(storeGetNamespaceResp("wazuh")));
+    EXPECT_CALL(*store, getNamespace({"decoder/cyb3rhq/0"}))
+        .WillRepeatedly(testing::Return(storeGetNamespaceResp("cyb3rhq")));
     EXPECT_CALL(*store, getNamespace({"decoder/user/0"}))
         .WillRepeatedly(testing::Return(storeGetNamespaceResp("user")));
 }
@@ -382,7 +382,7 @@ INSTANTIATE_TEST_SUITE_P(PolicyTest,
                                           return POLICY_YML_OTHER;
                                       })),
                              GetT(POLICY_NAME,
-                                  {"user", "wazuh", "system"},
+                                  {"user", "cyb3rhq", "system"},
                                   success<std::string>(
                                       [](auto store, auto)
                                       {
@@ -844,7 +844,7 @@ INSTANTIATE_TEST_SUITE_P(
         // Already set
         SetDefaultParentT(POLICY_NAME,
                           "user",
-                          "decoder/wazuh/0",
+                          "decoder/cyb3rhq/0",
                           failure(
                               [](auto store, auto validator)
                               {
@@ -858,7 +858,7 @@ INSTANTIATE_TEST_SUITE_P(
                               })),
         // Validation warning
         SetDefaultParentT(POLICY_NAME,
-                          "wazuh",
+                          "cyb3rhq",
                           "decoder/system/0",
                           success(
                               [](auto store, auto validator)
@@ -871,7 +871,7 @@ INSTANTIATE_TEST_SUITE_P(
                               })),
         // Store upsert error
         SetDefaultParentT(POLICY_NAME,
-                          "wazuh",
+                          "cyb3rhq",
                           "decoder/system/0",
                           failure(
                               [](auto store, auto validator)
@@ -886,7 +886,7 @@ INSTANTIATE_TEST_SUITE_P(
                               })),
         // Success
         SetDefaultParentT(POLICY_NAME,
-                          "wazuh",
+                          "cyb3rhq",
                           "decoder/system/0",
                           success(
                               [](auto store, auto validator)
@@ -1057,7 +1057,7 @@ INSTANTIATE_TEST_SUITE_P(PolicyTest,
                                                      EXPECT_CALL(*store, readInternalDoc(POLICY_NAME))
                                                          .WillOnce(::testing::Return(storeReadDocResp(POLICY_DOC)));
                                                      expectNsPolicy(store);
-                                                     return std::list<store::NamespaceId> {"system", "user", "wazuh"};
+                                                     return std::list<store::NamespaceId> {"system", "user", "cyb3rhq"};
                                                  }))));
 
 /*******************************************************************************
@@ -1243,7 +1243,7 @@ INSTANTIATE_TEST_SUITE_P(
                                   .WillOnce(::testing::Return(storeReadDocResp(POLICY_DOC)));
                               EXPECT_CALL(*store, getNamespace({"decoder/system/0"}))
                                   .WillRepeatedly(testing::Return(storeGetNamespaceResp("system")));
-                              EXPECT_CALL(*store, getNamespace({"decoder/wazuh/0"}))
+                              EXPECT_CALL(*store, getNamespace({"decoder/cyb3rhq/0"}))
                                   .WillRepeatedly(testing::Return(storeGetNamespaceError()));
                               EXPECT_CALL(*store, getNamespace({"decoder/user/0"}))
                                   .WillRepeatedly(testing::Return(storeGetNamespaceResp("user")));
@@ -1260,7 +1260,7 @@ INSTANTIATE_TEST_SUITE_P(
                                   .WillOnce(::testing::Return(storeReadDocResp(POLICY_DOC)));
                               EXPECT_CALL(*store, getNamespace({"decoder/system/0"}))
                                   .WillRepeatedly(testing::Return(storeGetNamespaceResp("system")));
-                              EXPECT_CALL(*store, getNamespace({"decoder/wazuh/0"}))
+                              EXPECT_CALL(*store, getNamespace({"decoder/cyb3rhq/0"}))
                                   .WillRepeatedly(testing::Return(storeGetNamespaceError()));
                               EXPECT_CALL(*store, getNamespace({"decoder/user/0"}))
                                   .WillRepeatedly(testing::Return(storeGetNamespaceResp("user")));
@@ -1277,7 +1277,7 @@ INSTANTIATE_TEST_SUITE_P(
                                   .WillOnce(::testing::Return(storeReadDocResp(POLICY_DOC)));
                               EXPECT_CALL(*store, getNamespace({"decoder/system/0"}))
                                   .WillRepeatedly(testing::Return(storeGetNamespaceResp("system")));
-                              EXPECT_CALL(*store, getNamespace({"decoder/wazuh/0"}))
+                              EXPECT_CALL(*store, getNamespace({"decoder/cyb3rhq/0"}))
                                   .WillRepeatedly(testing::Return(storeGetNamespaceError()));
                               EXPECT_CALL(*store, getNamespace({"decoder/user/0"}))
                                   .WillRepeatedly(testing::Return(storeGetNamespaceResp("user")));

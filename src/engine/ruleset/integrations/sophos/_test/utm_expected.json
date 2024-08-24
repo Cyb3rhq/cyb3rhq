@@ -1,6 +1,6 @@
 [
     {
-        "wazuh": {
+        "cyb3rhq": {
             "queue": 49,
             "location": "[001] (ubuntu-agent) any->/var/log/sophos/utm.log",
             "message": "2016:1:29-06:09:59 localhost.localdomain smtpd[905]: MASTER[nnumqua]: QR globally disabled, status one set to 'disabled'",
@@ -17,7 +17,7 @@
         "agent": {
             "id": "001",
             "name": "ubuntu-agent",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event": {
             "original": "2016:1:29-06:09:59 localhost.localdomain smtpd[905]: MASTER[nnumqua]: QR globally disabled, status one set to 'disabled'",
@@ -69,7 +69,7 @@
         ]
     },
     {
-        "wazuh": {
+        "cyb3rhq": {
             "queue": 49,
             "location": "[001] (ubuntu-agent) any->/var/log/sophos/utm.log",
             "message": "2016:3:26-10:20:16 ctetura3009.www5.corp reverseproxy: [lita] [adeseru:medium] [pid 7692:eaq] amest configured -- corp normal operations",
@@ -86,7 +86,7 @@
         "agent": {
             "id": "001",
             "name": "ubuntu-agent",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event": {
             "original": "2016:3:26-10:20:16 ctetura3009.www5.corp reverseproxy: [lita] [adeseru:medium] [pid 7692:eaq] amest configured -- corp normal operations",
@@ -137,7 +137,7 @@
         ]
     },
     {
-        "wazuh": {
+        "cyb3rhq": {
             "queue": 49,
             "location": "[001] (ubuntu-agent) any->/var/log/sophos/utm.log",
             "message": "2016:3:12-03:17:42 data4478.api.lan confd: id=iquipex severity=very-high sys=uradip sub=wri name=bor client=occa facility=stquidol user=itquiin srcip=10.106.239.55 version=1.3129 storage=atevel object=nsecte class=itame type=eumfug attributes=litcount=asun node=estia account=eaq",
@@ -154,7 +154,7 @@
         "agent": {
             "id": "001",
             "name": "ubuntu-agent",
-            "type": "wazuh"
+            "type": "cyb3rhq"
         },
         "event": {
             "original": "2016:3:12-03:17:42 data4478.api.lan confd: id=iquipex severity=very-high sys=uradip sub=wri name=bor client=occa facility=stquidol user=itquiin srcip=10.106.239.55 version=1.3129 storage=atevel object=nsecte class=itame type=eumfug attributes=litcount=asun node=estia account=eaq",

@@ -7,7 +7,7 @@ from ._modules import get_args as modules_get_args
 DEFAULT_ECS_VERSION = 'v8.8.0'
 DEFAULT_API_SOCK = '/var/ossec/queue/sockets/engine-api'
 DEFAULT_INDEXER_DIR = '/etc/filebeat/'
-DEFAULT_FIELDS_DIR = '/home/vagrant/engine/wazuh/src/engine/ruleset/schemas/'
+DEFAULT_FIELDS_DIR = '/home/vagrant/engine/cyb3rhq/src/engine/ruleset/schemas/'
 
 
 def run(args, resource_handler: rs.ResourceHandler):
@@ -21,13 +21,13 @@ def run(args, resource_handler: rs.ResourceHandler):
         ecs_version, modules, resource_handler)
 
     # Apply changes to Engine instance
-    print(f'Overriding wazuh-template.json in {indexer_path}...')
+    print(f'Overriding cyb3rhq-template.json in {indexer_path}...')
     resource_handler.save_file(
-        indexer_path, 'wazuh-template', jmappings, rs.Format.JSON)
+        indexer_path, 'cyb3rhq-template', jmappings, rs.Format.JSON)
     # Update logpar_types in the catalog
     print(f'Updating logpar configuration...')
     resource_handler.update_catalog_file(
-        api_socket, 'schema', 'schema/wazuh-logpar-types/0', jlogpar, rs.Format.JSON)
+        api_socket, 'schema', 'schema/cyb3rhq-logpar-types/0', jlogpar, rs.Format.JSON)
     # Update schema
     # TODO Update in catalog also when the Engine is updated to handle schemas
     print(f'Overriding fields.json in {fields_path}...')
@@ -41,7 +41,7 @@ def run(args, resource_handler: rs.ResourceHandler):
     print('Success.')
 
     print('Restart the manager to make changes effective, run:')
-    print('     systemctl restart wazuh-manager')
+    print('     systemctl restart cyb3rhq-manager')
 
 
 def configure(subparsers):
@@ -60,7 +60,7 @@ def configure(subparsers):
                                   help=f'[default="{DEFAULT_API_SOCK}"] Engine instance API socket path')
 
     parser_integrate.add_argument('--indexer-dir', type=str, default=DEFAULT_INDEXER_DIR,
-                                  help=f'[default="{DEFAULT_INDEXER_DIR}"] Path to directory where the wazuh-template.json indexer file is located')
+                                  help=f'[default="{DEFAULT_INDEXER_DIR}"] Path to directory where the cyb3rhq-template.json indexer file is located')
 
     parser_integrate.add_argument('--schema-dir', type=str, default=DEFAULT_FIELDS_DIR,
                                   help=f'[default="{DEFAULT_FIELDS_DIR}"] Path to the director where the fields.json schema file is located')

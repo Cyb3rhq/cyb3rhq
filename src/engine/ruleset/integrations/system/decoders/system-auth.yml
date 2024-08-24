@@ -9,7 +9,7 @@ metadata:
   versions:
     - any
   author:
-    name: Wazuh Inc.
+    name: Cyb3rhq Inc.
     email: info@wazuh.com
     date: 2023-05-15
   references:
@@ -38,7 +38,7 @@ normalize:
       - event.kind: event
       - event.module: system
       - event.outcome: success
-      - wazuh.decoders: array_append(system-auth)
+      - cyb3rhq.decoders: array_append(system-auth)
 
   - check:
       - process.name: sshd

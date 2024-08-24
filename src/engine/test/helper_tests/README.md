@@ -103,13 +103,13 @@ helper/
 The `engine_helper_test` python package contains various scripts to help to create and run helper function tests.
 
 
-Requires python 3.8, to install navigate where the Wazuh repository folder is located and run:
+Requires python 3.8, to install navigate where the Cyb3rhq repository folder is located and run:
 
-`pip install wazuh/src/engine/test/helper_tests/engine_helper_test`
+`pip install cyb3rhq/src/engine/test/helper_tests/engine_helper_test`
 
 If we want to install for developing and modifying the scripts, install in editable mode and the additional dev packages:
 
-`pip install -e wazuh/src/engine/test/helper_tests/engine_helper_test[dev]`
+`pip install -e cyb3rhq/src/engine/test/helper_tests/engine_helper_test[dev]`
 
 ## engine-helper-test-initial-state
 

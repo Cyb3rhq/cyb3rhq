@@ -48,7 +48,7 @@ struct TableStruct_catalog_2eproto {
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_catalog_2eproto;
 namespace com {
-namespace wazuh {
+namespace cyb3rhq {
 namespace api {
 namespace engine {
 namespace catalog {
@@ -79,20 +79,20 @@ extern ResourceValidate_RequestDefaultTypeInternal _ResourceValidate_Request_def
 }  // namespace catalog
 }  // namespace engine
 }  // namespace api
-}  // namespace wazuh
+}  // namespace cyb3rhq
 }  // namespace com
 PROTOBUF_NAMESPACE_OPEN
-template<> ::com::wazuh::api::engine::catalog::NamespacesGet_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::catalog::NamespacesGet_Request>(Arena*);
-template<> ::com::wazuh::api::engine::catalog::NamespacesGet_Response* Arena::CreateMaybeMessage<::com::wazuh::api::engine::catalog::NamespacesGet_Response>(Arena*);
-template<> ::com::wazuh::api::engine::catalog::ResourceDelete_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::catalog::ResourceDelete_Request>(Arena*);
-template<> ::com::wazuh::api::engine::catalog::ResourceGet_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::catalog::ResourceGet_Request>(Arena*);
-template<> ::com::wazuh::api::engine::catalog::ResourceGet_Response* Arena::CreateMaybeMessage<::com::wazuh::api::engine::catalog::ResourceGet_Response>(Arena*);
-template<> ::com::wazuh::api::engine::catalog::ResourcePost_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::catalog::ResourcePost_Request>(Arena*);
-template<> ::com::wazuh::api::engine::catalog::ResourcePut_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::catalog::ResourcePut_Request>(Arena*);
-template<> ::com::wazuh::api::engine::catalog::ResourceValidate_Request* Arena::CreateMaybeMessage<::com::wazuh::api::engine::catalog::ResourceValidate_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::catalog::NamespacesGet_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::catalog::NamespacesGet_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::catalog::NamespacesGet_Response* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::catalog::NamespacesGet_Response>(Arena*);
+template<> ::com::cyb3rhq::api::engine::catalog::ResourceDelete_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::catalog::ResourceDelete_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::catalog::ResourceGet_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::catalog::ResourceGet_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::catalog::ResourceGet_Response* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::catalog::ResourceGet_Response>(Arena*);
+template<> ::com::cyb3rhq::api::engine::catalog::ResourcePost_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::catalog::ResourcePost_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::catalog::ResourcePut_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::catalog::ResourcePut_Request>(Arena*);
+template<> ::com::cyb3rhq::api::engine::catalog::ResourceValidate_Request* Arena::CreateMaybeMessage<::com::cyb3rhq::api::engine::catalog::ResourceValidate_Request>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace com {
-namespace wazuh {
+namespace cyb3rhq {
 namespace api {
 namespace engine {
 namespace catalog {
@@ -157,7 +157,7 @@ inline bool ResourceType_Parse(
 // ===================================================================
 
 class ResourcePost_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.catalog.ResourcePost_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.catalog.ResourcePost_Request) */ {
  public:
   inline ResourcePost_Request() : ResourcePost_Request(nullptr) {}
   ~ResourcePost_Request() override;
@@ -260,7 +260,7 @@ class ResourcePost_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.catalog.ResourcePost_Request";
+    return "com.cyb3rhq.api.engine.catalog.ResourcePost_Request";
   }
   protected:
   explicit ResourcePost_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -318,33 +318,33 @@ class ResourcePost_Request final :
   std::string* _internal_mutable_namespaceid();
   public:
 
-  // optional .com.wazuh.api.engine.catalog.ResourceType type = 1;
+  // optional .com.cyb3rhq.api.engine.catalog.ResourceType type = 1;
   bool has_type() const;
   private:
   bool _internal_has_type() const;
   public:
   void clear_type();
-  ::com::wazuh::api::engine::catalog::ResourceType type() const;
-  void set_type(::com::wazuh::api::engine::catalog::ResourceType value);
+  ::com::cyb3rhq::api::engine::catalog::ResourceType type() const;
+  void set_type(::com::cyb3rhq::api::engine::catalog::ResourceType value);
   private:
-  ::com::wazuh::api::engine::catalog::ResourceType _internal_type() const;
-  void _internal_set_type(::com::wazuh::api::engine::catalog::ResourceType value);
+  ::com::cyb3rhq::api::engine::catalog::ResourceType _internal_type() const;
+  void _internal_set_type(::com::cyb3rhq::api::engine::catalog::ResourceType value);
   public:
 
-  // optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+  // optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
   bool has_format() const;
   private:
   bool _internal_has_format() const;
   public:
   void clear_format();
-  ::com::wazuh::api::engine::catalog::ResourceFormat format() const;
-  void set_format(::com::wazuh::api::engine::catalog::ResourceFormat value);
+  ::com::cyb3rhq::api::engine::catalog::ResourceFormat format() const;
+  void set_format(::com::cyb3rhq::api::engine::catalog::ResourceFormat value);
   private:
-  ::com::wazuh::api::engine::catalog::ResourceFormat _internal_format() const;
-  void _internal_set_format(::com::wazuh::api::engine::catalog::ResourceFormat value);
+  ::com::cyb3rhq::api::engine::catalog::ResourceFormat _internal_format() const;
+  void _internal_set_format(::com::cyb3rhq::api::engine::catalog::ResourceFormat value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.catalog.ResourcePost_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.catalog.ResourcePost_Request)
  private:
   class _Internal;
 
@@ -365,7 +365,7 @@ class ResourcePost_Request final :
 // -------------------------------------------------------------------
 
 class ResourceGet_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.catalog.ResourceGet_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.catalog.ResourceGet_Request) */ {
  public:
   inline ResourceGet_Request() : ResourceGet_Request(nullptr) {}
   ~ResourceGet_Request() override;
@@ -468,7 +468,7 @@ class ResourceGet_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.catalog.ResourceGet_Request";
+    return "com.cyb3rhq.api.engine.catalog.ResourceGet_Request";
   }
   protected:
   explicit ResourceGet_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -525,20 +525,20 @@ class ResourceGet_Request final :
   std::string* _internal_mutable_namespaceid();
   public:
 
-  // optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+  // optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
   bool has_format() const;
   private:
   bool _internal_has_format() const;
   public:
   void clear_format();
-  ::com::wazuh::api::engine::catalog::ResourceFormat format() const;
-  void set_format(::com::wazuh::api::engine::catalog::ResourceFormat value);
+  ::com::cyb3rhq::api::engine::catalog::ResourceFormat format() const;
+  void set_format(::com::cyb3rhq::api::engine::catalog::ResourceFormat value);
   private:
-  ::com::wazuh::api::engine::catalog::ResourceFormat _internal_format() const;
-  void _internal_set_format(::com::wazuh::api::engine::catalog::ResourceFormat value);
+  ::com::cyb3rhq::api::engine::catalog::ResourceFormat _internal_format() const;
+  void _internal_set_format(::com::cyb3rhq::api::engine::catalog::ResourceFormat value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.catalog.ResourceGet_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.catalog.ResourceGet_Request)
  private:
   class _Internal;
 
@@ -558,7 +558,7 @@ class ResourceGet_Request final :
 // -------------------------------------------------------------------
 
 class ResourceGet_Response final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.catalog.ResourceGet_Response) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.catalog.ResourceGet_Response) */ {
  public:
   inline ResourceGet_Response() : ResourceGet_Response(nullptr) {}
   ~ResourceGet_Response() override;
@@ -661,7 +661,7 @@ class ResourceGet_Response final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.catalog.ResourceGet_Response";
+    return "com.cyb3rhq.api.engine.catalog.ResourceGet_Response";
   }
   protected:
   explicit ResourceGet_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -718,16 +718,16 @@ class ResourceGet_Response final :
   std::string* _internal_mutable_content();
   public:
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   void clear_status();
-  ::com::wazuh::api::engine::ReturnStatus status() const;
-  void set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus status() const;
+  void set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   private:
-  ::com::wazuh::api::engine::ReturnStatus _internal_status() const;
-  void _internal_set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus _internal_status() const;
+  void _internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.catalog.ResourceGet_Response)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.catalog.ResourceGet_Response)
  private:
   class _Internal;
 
@@ -747,7 +747,7 @@ class ResourceGet_Response final :
 // -------------------------------------------------------------------
 
 class ResourcePut_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.catalog.ResourcePut_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.catalog.ResourcePut_Request) */ {
  public:
   inline ResourcePut_Request() : ResourcePut_Request(nullptr) {}
   ~ResourcePut_Request() override;
@@ -850,7 +850,7 @@ class ResourcePut_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.catalog.ResourcePut_Request";
+    return "com.cyb3rhq.api.engine.catalog.ResourcePut_Request";
   }
   protected:
   explicit ResourcePut_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -926,20 +926,20 @@ class ResourcePut_Request final :
   std::string* _internal_mutable_namespaceid();
   public:
 
-  // optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+  // optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
   bool has_format() const;
   private:
   bool _internal_has_format() const;
   public:
   void clear_format();
-  ::com::wazuh::api::engine::catalog::ResourceFormat format() const;
-  void set_format(::com::wazuh::api::engine::catalog::ResourceFormat value);
+  ::com::cyb3rhq::api::engine::catalog::ResourceFormat format() const;
+  void set_format(::com::cyb3rhq::api::engine::catalog::ResourceFormat value);
   private:
-  ::com::wazuh::api::engine::catalog::ResourceFormat _internal_format() const;
-  void _internal_set_format(::com::wazuh::api::engine::catalog::ResourceFormat value);
+  ::com::cyb3rhq::api::engine::catalog::ResourceFormat _internal_format() const;
+  void _internal_set_format(::com::cyb3rhq::api::engine::catalog::ResourceFormat value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.catalog.ResourcePut_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.catalog.ResourcePut_Request)
  private:
   class _Internal;
 
@@ -960,7 +960,7 @@ class ResourcePut_Request final :
 // -------------------------------------------------------------------
 
 class ResourceDelete_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.catalog.ResourceDelete_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request) */ {
  public:
   inline ResourceDelete_Request() : ResourceDelete_Request(nullptr) {}
   ~ResourceDelete_Request() override;
@@ -1063,7 +1063,7 @@ class ResourceDelete_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.catalog.ResourceDelete_Request";
+    return "com.cyb3rhq.api.engine.catalog.ResourceDelete_Request";
   }
   protected:
   explicit ResourceDelete_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -1119,7 +1119,7 @@ class ResourceDelete_Request final :
   std::string* _internal_mutable_namespaceid();
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.catalog.ResourceDelete_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request)
  private:
   class _Internal;
 
@@ -1138,7 +1138,7 @@ class ResourceDelete_Request final :
 // -------------------------------------------------------------------
 
 class ResourceValidate_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.catalog.ResourceValidate_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request) */ {
  public:
   inline ResourceValidate_Request() : ResourceValidate_Request(nullptr) {}
   ~ResourceValidate_Request() override;
@@ -1241,7 +1241,7 @@ class ResourceValidate_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.catalog.ResourceValidate_Request";
+    return "com.cyb3rhq.api.engine.catalog.ResourceValidate_Request";
   }
   protected:
   explicit ResourceValidate_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -1317,20 +1317,20 @@ class ResourceValidate_Request final :
   std::string* _internal_mutable_namespaceid();
   public:
 
-  // optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+  // optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
   bool has_format() const;
   private:
   bool _internal_has_format() const;
   public:
   void clear_format();
-  ::com::wazuh::api::engine::catalog::ResourceFormat format() const;
-  void set_format(::com::wazuh::api::engine::catalog::ResourceFormat value);
+  ::com::cyb3rhq::api::engine::catalog::ResourceFormat format() const;
+  void set_format(::com::cyb3rhq::api::engine::catalog::ResourceFormat value);
   private:
-  ::com::wazuh::api::engine::catalog::ResourceFormat _internal_format() const;
-  void _internal_set_format(::com::wazuh::api::engine::catalog::ResourceFormat value);
+  ::com::cyb3rhq::api::engine::catalog::ResourceFormat _internal_format() const;
+  void _internal_set_format(::com::cyb3rhq::api::engine::catalog::ResourceFormat value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.catalog.ResourceValidate_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request)
  private:
   class _Internal;
 
@@ -1351,7 +1351,7 @@ class ResourceValidate_Request final :
 // -------------------------------------------------------------------
 
 class NamespacesGet_Request final :
-    public ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.catalog.NamespacesGet_Request) */ {
+    public ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.catalog.NamespacesGet_Request) */ {
  public:
   inline NamespacesGet_Request() : NamespacesGet_Request(nullptr) {}
   explicit PROTOBUF_CONSTEXPR NamespacesGet_Request(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
@@ -1439,7 +1439,7 @@ class NamespacesGet_Request final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.catalog.NamespacesGet_Request";
+    return "com.cyb3rhq.api.engine.catalog.NamespacesGet_Request";
   }
   protected:
   explicit NamespacesGet_Request(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -1455,7 +1455,7 @@ class NamespacesGet_Request final :
 
   // accessors -------------------------------------------------------
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.catalog.NamespacesGet_Request)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.catalog.NamespacesGet_Request)
  private:
   class _Internal;
 
@@ -1469,7 +1469,7 @@ class NamespacesGet_Request final :
 // -------------------------------------------------------------------
 
 class NamespacesGet_Response final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.wazuh.api.engine.catalog.NamespacesGet_Response) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response) */ {
  public:
   inline NamespacesGet_Response() : NamespacesGet_Response(nullptr) {}
   ~NamespacesGet_Response() override;
@@ -1572,7 +1572,7 @@ class NamespacesGet_Response final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "com.wazuh.api.engine.catalog.NamespacesGet_Response";
+    return "com.cyb3rhq.api.engine.catalog.NamespacesGet_Response";
   }
   protected:
   explicit NamespacesGet_Response(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -1635,16 +1635,16 @@ class NamespacesGet_Response final :
   std::string* _internal_mutable_error();
   public:
 
-  // .com.wazuh.api.engine.ReturnStatus status = 1;
+  // .com.cyb3rhq.api.engine.ReturnStatus status = 1;
   void clear_status();
-  ::com::wazuh::api::engine::ReturnStatus status() const;
-  void set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus status() const;
+  void set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   private:
-  ::com::wazuh::api::engine::ReturnStatus _internal_status() const;
-  void _internal_set_status(::com::wazuh::api::engine::ReturnStatus value);
+  ::com::cyb3rhq::api::engine::ReturnStatus _internal_status() const;
+  void _internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value);
   public:
 
-  // @@protoc_insertion_point(class_scope:com.wazuh.api.engine.catalog.NamespacesGet_Response)
+  // @@protoc_insertion_point(class_scope:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response)
  private:
   class _Internal;
 
@@ -1672,7 +1672,7 @@ class NamespacesGet_Response final :
 #endif  // __GNUC__
 // ResourcePost_Request
 
-// optional .com.wazuh.api.engine.catalog.ResourceType type = 1;
+// optional .com.cyb3rhq.api.engine.catalog.ResourceType type = 1;
 inline bool ResourcePost_Request::_internal_has_type() const {
   bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
   return value;
@@ -1684,23 +1684,23 @@ inline void ResourcePost_Request::clear_type() {
   _impl_.type_ = 0;
   _impl_._has_bits_[0] &= ~0x00000004u;
 }
-inline ::com::wazuh::api::engine::catalog::ResourceType ResourcePost_Request::_internal_type() const {
-  return static_cast< ::com::wazuh::api::engine::catalog::ResourceType >(_impl_.type_);
+inline ::com::cyb3rhq::api::engine::catalog::ResourceType ResourcePost_Request::_internal_type() const {
+  return static_cast< ::com::cyb3rhq::api::engine::catalog::ResourceType >(_impl_.type_);
 }
-inline ::com::wazuh::api::engine::catalog::ResourceType ResourcePost_Request::type() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourcePost_Request.type)
+inline ::com::cyb3rhq::api::engine::catalog::ResourceType ResourcePost_Request::type() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourcePost_Request.type)
   return _internal_type();
 }
-inline void ResourcePost_Request::_internal_set_type(::com::wazuh::api::engine::catalog::ResourceType value) {
+inline void ResourcePost_Request::_internal_set_type(::com::cyb3rhq::api::engine::catalog::ResourceType value) {
   _impl_._has_bits_[0] |= 0x00000004u;
   _impl_.type_ = value;
 }
-inline void ResourcePost_Request::set_type(::com::wazuh::api::engine::catalog::ResourceType value) {
+inline void ResourcePost_Request::set_type(::com::cyb3rhq::api::engine::catalog::ResourceType value) {
   _internal_set_type(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourcePost_Request.type)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourcePost_Request.type)
 }
 
-// optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+// optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
 inline bool ResourcePost_Request::_internal_has_format() const {
   bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
   return value;
@@ -1712,20 +1712,20 @@ inline void ResourcePost_Request::clear_format() {
   _impl_.format_ = 0;
   _impl_._has_bits_[0] &= ~0x00000008u;
 }
-inline ::com::wazuh::api::engine::catalog::ResourceFormat ResourcePost_Request::_internal_format() const {
-  return static_cast< ::com::wazuh::api::engine::catalog::ResourceFormat >(_impl_.format_);
+inline ::com::cyb3rhq::api::engine::catalog::ResourceFormat ResourcePost_Request::_internal_format() const {
+  return static_cast< ::com::cyb3rhq::api::engine::catalog::ResourceFormat >(_impl_.format_);
 }
-inline ::com::wazuh::api::engine::catalog::ResourceFormat ResourcePost_Request::format() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourcePost_Request.format)
+inline ::com::cyb3rhq::api::engine::catalog::ResourceFormat ResourcePost_Request::format() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourcePost_Request.format)
   return _internal_format();
 }
-inline void ResourcePost_Request::_internal_set_format(::com::wazuh::api::engine::catalog::ResourceFormat value) {
+inline void ResourcePost_Request::_internal_set_format(::com::cyb3rhq::api::engine::catalog::ResourceFormat value) {
   _impl_._has_bits_[0] |= 0x00000008u;
   _impl_.format_ = value;
 }
-inline void ResourcePost_Request::set_format(::com::wazuh::api::engine::catalog::ResourceFormat value) {
+inline void ResourcePost_Request::set_format(::com::cyb3rhq::api::engine::catalog::ResourceFormat value) {
   _internal_set_format(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourcePost_Request.format)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourcePost_Request.format)
 }
 
 // optional string content = 3;
@@ -1741,7 +1741,7 @@ inline void ResourcePost_Request::clear_content() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& ResourcePost_Request::content() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourcePost_Request.content)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourcePost_Request.content)
   return _internal_content();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1749,11 +1749,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void ResourcePost_Request::set_content(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.content_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourcePost_Request.content)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourcePost_Request.content)
 }
 inline std::string* ResourcePost_Request::mutable_content() {
   std::string* _s = _internal_mutable_content();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.catalog.ResourcePost_Request.content)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.catalog.ResourcePost_Request.content)
   return _s;
 }
 inline const std::string& ResourcePost_Request::_internal_content() const {
@@ -1768,7 +1768,7 @@ inline std::string* ResourcePost_Request::_internal_mutable_content() {
   return _impl_.content_.Mutable(GetArenaForAllocation());
 }
 inline std::string* ResourcePost_Request::release_content() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.catalog.ResourcePost_Request.content)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.catalog.ResourcePost_Request.content)
   if (!_internal_has_content()) {
     return nullptr;
   }
@@ -1793,7 +1793,7 @@ inline void ResourcePost_Request::set_allocated_content(std::string* content) {
     _impl_.content_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.catalog.ResourcePost_Request.content)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.catalog.ResourcePost_Request.content)
 }
 
 // optional string namespaceid = 4;
@@ -1809,7 +1809,7 @@ inline void ResourcePost_Request::clear_namespaceid() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& ResourcePost_Request::namespaceid() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourcePost_Request.namespaceid)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourcePost_Request.namespaceid)
   return _internal_namespaceid();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1817,11 +1817,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void ResourcePost_Request::set_namespaceid(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.namespaceid_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourcePost_Request.namespaceid)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourcePost_Request.namespaceid)
 }
 inline std::string* ResourcePost_Request::mutable_namespaceid() {
   std::string* _s = _internal_mutable_namespaceid();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.catalog.ResourcePost_Request.namespaceid)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.catalog.ResourcePost_Request.namespaceid)
   return _s;
 }
 inline const std::string& ResourcePost_Request::_internal_namespaceid() const {
@@ -1836,7 +1836,7 @@ inline std::string* ResourcePost_Request::_internal_mutable_namespaceid() {
   return _impl_.namespaceid_.Mutable(GetArenaForAllocation());
 }
 inline std::string* ResourcePost_Request::release_namespaceid() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.catalog.ResourcePost_Request.namespaceid)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.catalog.ResourcePost_Request.namespaceid)
   if (!_internal_has_namespaceid()) {
     return nullptr;
   }
@@ -1861,7 +1861,7 @@ inline void ResourcePost_Request::set_allocated_namespaceid(std::string* namespa
     _impl_.namespaceid_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.catalog.ResourcePost_Request.namespaceid)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.catalog.ResourcePost_Request.namespaceid)
 }
 
 // -------------------------------------------------------------------
@@ -1881,7 +1881,7 @@ inline void ResourceGet_Request::clear_name() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& ResourceGet_Request::name() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourceGet_Request.name)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourceGet_Request.name)
   return _internal_name();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1889,11 +1889,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void ResourceGet_Request::set_name(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.name_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourceGet_Request.name)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourceGet_Request.name)
 }
 inline std::string* ResourceGet_Request::mutable_name() {
   std::string* _s = _internal_mutable_name();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.catalog.ResourceGet_Request.name)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.catalog.ResourceGet_Request.name)
   return _s;
 }
 inline const std::string& ResourceGet_Request::_internal_name() const {
@@ -1908,7 +1908,7 @@ inline std::string* ResourceGet_Request::_internal_mutable_name() {
   return _impl_.name_.Mutable(GetArenaForAllocation());
 }
 inline std::string* ResourceGet_Request::release_name() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.catalog.ResourceGet_Request.name)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.catalog.ResourceGet_Request.name)
   if (!_internal_has_name()) {
     return nullptr;
   }
@@ -1933,10 +1933,10 @@ inline void ResourceGet_Request::set_allocated_name(std::string* name) {
     _impl_.name_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.catalog.ResourceGet_Request.name)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.catalog.ResourceGet_Request.name)
 }
 
-// optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+// optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
 inline bool ResourceGet_Request::_internal_has_format() const {
   bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
   return value;
@@ -1948,20 +1948,20 @@ inline void ResourceGet_Request::clear_format() {
   _impl_.format_ = 0;
   _impl_._has_bits_[0] &= ~0x00000004u;
 }
-inline ::com::wazuh::api::engine::catalog::ResourceFormat ResourceGet_Request::_internal_format() const {
-  return static_cast< ::com::wazuh::api::engine::catalog::ResourceFormat >(_impl_.format_);
+inline ::com::cyb3rhq::api::engine::catalog::ResourceFormat ResourceGet_Request::_internal_format() const {
+  return static_cast< ::com::cyb3rhq::api::engine::catalog::ResourceFormat >(_impl_.format_);
 }
-inline ::com::wazuh::api::engine::catalog::ResourceFormat ResourceGet_Request::format() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourceGet_Request.format)
+inline ::com::cyb3rhq::api::engine::catalog::ResourceFormat ResourceGet_Request::format() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourceGet_Request.format)
   return _internal_format();
 }
-inline void ResourceGet_Request::_internal_set_format(::com::wazuh::api::engine::catalog::ResourceFormat value) {
+inline void ResourceGet_Request::_internal_set_format(::com::cyb3rhq::api::engine::catalog::ResourceFormat value) {
   _impl_._has_bits_[0] |= 0x00000004u;
   _impl_.format_ = value;
 }
-inline void ResourceGet_Request::set_format(::com::wazuh::api::engine::catalog::ResourceFormat value) {
+inline void ResourceGet_Request::set_format(::com::cyb3rhq::api::engine::catalog::ResourceFormat value) {
   _internal_set_format(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourceGet_Request.format)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourceGet_Request.format)
 }
 
 // optional string namespaceid = 3;
@@ -1977,7 +1977,7 @@ inline void ResourceGet_Request::clear_namespaceid() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& ResourceGet_Request::namespaceid() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourceGet_Request.namespaceid)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourceGet_Request.namespaceid)
   return _internal_namespaceid();
 }
 template <typename ArgT0, typename... ArgT>
@@ -1985,11 +1985,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void ResourceGet_Request::set_namespaceid(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.namespaceid_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourceGet_Request.namespaceid)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourceGet_Request.namespaceid)
 }
 inline std::string* ResourceGet_Request::mutable_namespaceid() {
   std::string* _s = _internal_mutable_namespaceid();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.catalog.ResourceGet_Request.namespaceid)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.catalog.ResourceGet_Request.namespaceid)
   return _s;
 }
 inline const std::string& ResourceGet_Request::_internal_namespaceid() const {
@@ -2004,7 +2004,7 @@ inline std::string* ResourceGet_Request::_internal_mutable_namespaceid() {
   return _impl_.namespaceid_.Mutable(GetArenaForAllocation());
 }
 inline std::string* ResourceGet_Request::release_namespaceid() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.catalog.ResourceGet_Request.namespaceid)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.catalog.ResourceGet_Request.namespaceid)
   if (!_internal_has_namespaceid()) {
     return nullptr;
   }
@@ -2029,31 +2029,31 @@ inline void ResourceGet_Request::set_allocated_namespaceid(std::string* namespac
     _impl_.namespaceid_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.catalog.ResourceGet_Request.namespaceid)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.catalog.ResourceGet_Request.namespaceid)
 }
 
 // -------------------------------------------------------------------
 
 // ResourceGet_Response
 
-// .com.wazuh.api.engine.ReturnStatus status = 1;
+// .com.cyb3rhq.api.engine.ReturnStatus status = 1;
 inline void ResourceGet_Response::clear_status() {
   _impl_.status_ = 0;
 }
-inline ::com::wazuh::api::engine::ReturnStatus ResourceGet_Response::_internal_status() const {
-  return static_cast< ::com::wazuh::api::engine::ReturnStatus >(_impl_.status_);
+inline ::com::cyb3rhq::api::engine::ReturnStatus ResourceGet_Response::_internal_status() const {
+  return static_cast< ::com::cyb3rhq::api::engine::ReturnStatus >(_impl_.status_);
 }
-inline ::com::wazuh::api::engine::ReturnStatus ResourceGet_Response::status() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourceGet_Response.status)
+inline ::com::cyb3rhq::api::engine::ReturnStatus ResourceGet_Response::status() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourceGet_Response.status)
   return _internal_status();
 }
-inline void ResourceGet_Response::_internal_set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void ResourceGet_Response::_internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   
   _impl_.status_ = value;
 }
-inline void ResourceGet_Response::set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void ResourceGet_Response::set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourceGet_Response.status)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourceGet_Response.status)
 }
 
 // optional string error = 2;
@@ -2069,7 +2069,7 @@ inline void ResourceGet_Response::clear_error() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& ResourceGet_Response::error() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourceGet_Response.error)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourceGet_Response.error)
   return _internal_error();
 }
 template <typename ArgT0, typename... ArgT>
@@ -2077,11 +2077,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void ResourceGet_Response::set_error(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.error_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourceGet_Response.error)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourceGet_Response.error)
 }
 inline std::string* ResourceGet_Response::mutable_error() {
   std::string* _s = _internal_mutable_error();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.catalog.ResourceGet_Response.error)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.catalog.ResourceGet_Response.error)
   return _s;
 }
 inline const std::string& ResourceGet_Response::_internal_error() const {
@@ -2096,7 +2096,7 @@ inline std::string* ResourceGet_Response::_internal_mutable_error() {
   return _impl_.error_.Mutable(GetArenaForAllocation());
 }
 inline std::string* ResourceGet_Response::release_error() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.catalog.ResourceGet_Response.error)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.catalog.ResourceGet_Response.error)
   if (!_internal_has_error()) {
     return nullptr;
   }
@@ -2121,7 +2121,7 @@ inline void ResourceGet_Response::set_allocated_error(std::string* error) {
     _impl_.error_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.catalog.ResourceGet_Response.error)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.catalog.ResourceGet_Response.error)
 }
 
 // optional string content = 3;
@@ -2137,7 +2137,7 @@ inline void ResourceGet_Response::clear_content() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& ResourceGet_Response::content() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourceGet_Response.content)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourceGet_Response.content)
   return _internal_content();
 }
 template <typename ArgT0, typename... ArgT>
@@ -2145,11 +2145,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void ResourceGet_Response::set_content(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.content_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourceGet_Response.content)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourceGet_Response.content)
 }
 inline std::string* ResourceGet_Response::mutable_content() {
   std::string* _s = _internal_mutable_content();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.catalog.ResourceGet_Response.content)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.catalog.ResourceGet_Response.content)
   return _s;
 }
 inline const std::string& ResourceGet_Response::_internal_content() const {
@@ -2164,7 +2164,7 @@ inline std::string* ResourceGet_Response::_internal_mutable_content() {
   return _impl_.content_.Mutable(GetArenaForAllocation());
 }
 inline std::string* ResourceGet_Response::release_content() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.catalog.ResourceGet_Response.content)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.catalog.ResourceGet_Response.content)
   if (!_internal_has_content()) {
     return nullptr;
   }
@@ -2189,7 +2189,7 @@ inline void ResourceGet_Response::set_allocated_content(std::string* content) {
     _impl_.content_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.catalog.ResourceGet_Response.content)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.catalog.ResourceGet_Response.content)
 }
 
 // -------------------------------------------------------------------
@@ -2209,7 +2209,7 @@ inline void ResourcePut_Request::clear_name() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& ResourcePut_Request::name() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourcePut_Request.name)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.name)
   return _internal_name();
 }
 template <typename ArgT0, typename... ArgT>
@@ -2217,11 +2217,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void ResourcePut_Request::set_name(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.name_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourcePut_Request.name)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.name)
 }
 inline std::string* ResourcePut_Request::mutable_name() {
   std::string* _s = _internal_mutable_name();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.catalog.ResourcePut_Request.name)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.name)
   return _s;
 }
 inline const std::string& ResourcePut_Request::_internal_name() const {
@@ -2236,7 +2236,7 @@ inline std::string* ResourcePut_Request::_internal_mutable_name() {
   return _impl_.name_.Mutable(GetArenaForAllocation());
 }
 inline std::string* ResourcePut_Request::release_name() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.catalog.ResourcePut_Request.name)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.name)
   if (!_internal_has_name()) {
     return nullptr;
   }
@@ -2261,10 +2261,10 @@ inline void ResourcePut_Request::set_allocated_name(std::string* name) {
     _impl_.name_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.catalog.ResourcePut_Request.name)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.name)
 }
 
-// optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+// optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
 inline bool ResourcePut_Request::_internal_has_format() const {
   bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
   return value;
@@ -2276,20 +2276,20 @@ inline void ResourcePut_Request::clear_format() {
   _impl_.format_ = 0;
   _impl_._has_bits_[0] &= ~0x00000008u;
 }
-inline ::com::wazuh::api::engine::catalog::ResourceFormat ResourcePut_Request::_internal_format() const {
-  return static_cast< ::com::wazuh::api::engine::catalog::ResourceFormat >(_impl_.format_);
+inline ::com::cyb3rhq::api::engine::catalog::ResourceFormat ResourcePut_Request::_internal_format() const {
+  return static_cast< ::com::cyb3rhq::api::engine::catalog::ResourceFormat >(_impl_.format_);
 }
-inline ::com::wazuh::api::engine::catalog::ResourceFormat ResourcePut_Request::format() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourcePut_Request.format)
+inline ::com::cyb3rhq::api::engine::catalog::ResourceFormat ResourcePut_Request::format() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.format)
   return _internal_format();
 }
-inline void ResourcePut_Request::_internal_set_format(::com::wazuh::api::engine::catalog::ResourceFormat value) {
+inline void ResourcePut_Request::_internal_set_format(::com::cyb3rhq::api::engine::catalog::ResourceFormat value) {
   _impl_._has_bits_[0] |= 0x00000008u;
   _impl_.format_ = value;
 }
-inline void ResourcePut_Request::set_format(::com::wazuh::api::engine::catalog::ResourceFormat value) {
+inline void ResourcePut_Request::set_format(::com::cyb3rhq::api::engine::catalog::ResourceFormat value) {
   _internal_set_format(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourcePut_Request.format)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.format)
 }
 
 // optional string content = 3;
@@ -2305,7 +2305,7 @@ inline void ResourcePut_Request::clear_content() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& ResourcePut_Request::content() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourcePut_Request.content)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.content)
   return _internal_content();
 }
 template <typename ArgT0, typename... ArgT>
@@ -2313,11 +2313,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void ResourcePut_Request::set_content(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.content_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourcePut_Request.content)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.content)
 }
 inline std::string* ResourcePut_Request::mutable_content() {
   std::string* _s = _internal_mutable_content();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.catalog.ResourcePut_Request.content)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.content)
   return _s;
 }
 inline const std::string& ResourcePut_Request::_internal_content() const {
@@ -2332,7 +2332,7 @@ inline std::string* ResourcePut_Request::_internal_mutable_content() {
   return _impl_.content_.Mutable(GetArenaForAllocation());
 }
 inline std::string* ResourcePut_Request::release_content() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.catalog.ResourcePut_Request.content)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.content)
   if (!_internal_has_content()) {
     return nullptr;
   }
@@ -2357,7 +2357,7 @@ inline void ResourcePut_Request::set_allocated_content(std::string* content) {
     _impl_.content_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.catalog.ResourcePut_Request.content)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.content)
 }
 
 // optional string namespaceid = 4;
@@ -2373,7 +2373,7 @@ inline void ResourcePut_Request::clear_namespaceid() {
   _impl_._has_bits_[0] &= ~0x00000004u;
 }
 inline const std::string& ResourcePut_Request::namespaceid() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourcePut_Request.namespaceid)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.namespaceid)
   return _internal_namespaceid();
 }
 template <typename ArgT0, typename... ArgT>
@@ -2381,11 +2381,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void ResourcePut_Request::set_namespaceid(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000004u;
  _impl_.namespaceid_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourcePut_Request.namespaceid)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.namespaceid)
 }
 inline std::string* ResourcePut_Request::mutable_namespaceid() {
   std::string* _s = _internal_mutable_namespaceid();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.catalog.ResourcePut_Request.namespaceid)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.namespaceid)
   return _s;
 }
 inline const std::string& ResourcePut_Request::_internal_namespaceid() const {
@@ -2400,7 +2400,7 @@ inline std::string* ResourcePut_Request::_internal_mutable_namespaceid() {
   return _impl_.namespaceid_.Mutable(GetArenaForAllocation());
 }
 inline std::string* ResourcePut_Request::release_namespaceid() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.catalog.ResourcePut_Request.namespaceid)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.namespaceid)
   if (!_internal_has_namespaceid()) {
     return nullptr;
   }
@@ -2425,7 +2425,7 @@ inline void ResourcePut_Request::set_allocated_namespaceid(std::string* namespac
     _impl_.namespaceid_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.catalog.ResourcePut_Request.namespaceid)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.catalog.ResourcePut_Request.namespaceid)
 }
 
 // -------------------------------------------------------------------
@@ -2445,7 +2445,7 @@ inline void ResourceDelete_Request::clear_name() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& ResourceDelete_Request::name() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourceDelete_Request.name)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request.name)
   return _internal_name();
 }
 template <typename ArgT0, typename... ArgT>
@@ -2453,11 +2453,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void ResourceDelete_Request::set_name(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.name_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourceDelete_Request.name)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request.name)
 }
 inline std::string* ResourceDelete_Request::mutable_name() {
   std::string* _s = _internal_mutable_name();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.catalog.ResourceDelete_Request.name)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request.name)
   return _s;
 }
 inline const std::string& ResourceDelete_Request::_internal_name() const {
@@ -2472,7 +2472,7 @@ inline std::string* ResourceDelete_Request::_internal_mutable_name() {
   return _impl_.name_.Mutable(GetArenaForAllocation());
 }
 inline std::string* ResourceDelete_Request::release_name() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.catalog.ResourceDelete_Request.name)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request.name)
   if (!_internal_has_name()) {
     return nullptr;
   }
@@ -2497,7 +2497,7 @@ inline void ResourceDelete_Request::set_allocated_name(std::string* name) {
     _impl_.name_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.catalog.ResourceDelete_Request.name)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request.name)
 }
 
 // optional string namespaceid = 2;
@@ -2513,7 +2513,7 @@ inline void ResourceDelete_Request::clear_namespaceid() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& ResourceDelete_Request::namespaceid() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourceDelete_Request.namespaceid)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request.namespaceid)
   return _internal_namespaceid();
 }
 template <typename ArgT0, typename... ArgT>
@@ -2521,11 +2521,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void ResourceDelete_Request::set_namespaceid(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.namespaceid_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourceDelete_Request.namespaceid)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request.namespaceid)
 }
 inline std::string* ResourceDelete_Request::mutable_namespaceid() {
   std::string* _s = _internal_mutable_namespaceid();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.catalog.ResourceDelete_Request.namespaceid)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request.namespaceid)
   return _s;
 }
 inline const std::string& ResourceDelete_Request::_internal_namespaceid() const {
@@ -2540,7 +2540,7 @@ inline std::string* ResourceDelete_Request::_internal_mutable_namespaceid() {
   return _impl_.namespaceid_.Mutable(GetArenaForAllocation());
 }
 inline std::string* ResourceDelete_Request::release_namespaceid() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.catalog.ResourceDelete_Request.namespaceid)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request.namespaceid)
   if (!_internal_has_namespaceid()) {
     return nullptr;
   }
@@ -2565,7 +2565,7 @@ inline void ResourceDelete_Request::set_allocated_namespaceid(std::string* names
     _impl_.namespaceid_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.catalog.ResourceDelete_Request.namespaceid)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.catalog.ResourceDelete_Request.namespaceid)
 }
 
 // -------------------------------------------------------------------
@@ -2585,7 +2585,7 @@ inline void ResourceValidate_Request::clear_name() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& ResourceValidate_Request::name() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourceValidate_Request.name)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.name)
   return _internal_name();
 }
 template <typename ArgT0, typename... ArgT>
@@ -2593,11 +2593,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void ResourceValidate_Request::set_name(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.name_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourceValidate_Request.name)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.name)
 }
 inline std::string* ResourceValidate_Request::mutable_name() {
   std::string* _s = _internal_mutable_name();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.catalog.ResourceValidate_Request.name)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.name)
   return _s;
 }
 inline const std::string& ResourceValidate_Request::_internal_name() const {
@@ -2612,7 +2612,7 @@ inline std::string* ResourceValidate_Request::_internal_mutable_name() {
   return _impl_.name_.Mutable(GetArenaForAllocation());
 }
 inline std::string* ResourceValidate_Request::release_name() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.catalog.ResourceValidate_Request.name)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.name)
   if (!_internal_has_name()) {
     return nullptr;
   }
@@ -2637,10 +2637,10 @@ inline void ResourceValidate_Request::set_allocated_name(std::string* name) {
     _impl_.name_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.catalog.ResourceValidate_Request.name)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.name)
 }
 
-// optional .com.wazuh.api.engine.catalog.ResourceFormat format = 2;
+// optional .com.cyb3rhq.api.engine.catalog.ResourceFormat format = 2;
 inline bool ResourceValidate_Request::_internal_has_format() const {
   bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
   return value;
@@ -2652,20 +2652,20 @@ inline void ResourceValidate_Request::clear_format() {
   _impl_.format_ = 0;
   _impl_._has_bits_[0] &= ~0x00000008u;
 }
-inline ::com::wazuh::api::engine::catalog::ResourceFormat ResourceValidate_Request::_internal_format() const {
-  return static_cast< ::com::wazuh::api::engine::catalog::ResourceFormat >(_impl_.format_);
+inline ::com::cyb3rhq::api::engine::catalog::ResourceFormat ResourceValidate_Request::_internal_format() const {
+  return static_cast< ::com::cyb3rhq::api::engine::catalog::ResourceFormat >(_impl_.format_);
 }
-inline ::com::wazuh::api::engine::catalog::ResourceFormat ResourceValidate_Request::format() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourceValidate_Request.format)
+inline ::com::cyb3rhq::api::engine::catalog::ResourceFormat ResourceValidate_Request::format() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.format)
   return _internal_format();
 }
-inline void ResourceValidate_Request::_internal_set_format(::com::wazuh::api::engine::catalog::ResourceFormat value) {
+inline void ResourceValidate_Request::_internal_set_format(::com::cyb3rhq::api::engine::catalog::ResourceFormat value) {
   _impl_._has_bits_[0] |= 0x00000008u;
   _impl_.format_ = value;
 }
-inline void ResourceValidate_Request::set_format(::com::wazuh::api::engine::catalog::ResourceFormat value) {
+inline void ResourceValidate_Request::set_format(::com::cyb3rhq::api::engine::catalog::ResourceFormat value) {
   _internal_set_format(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourceValidate_Request.format)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.format)
 }
 
 // optional string content = 3;
@@ -2681,7 +2681,7 @@ inline void ResourceValidate_Request::clear_content() {
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
 inline const std::string& ResourceValidate_Request::content() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourceValidate_Request.content)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.content)
   return _internal_content();
 }
 template <typename ArgT0, typename... ArgT>
@@ -2689,11 +2689,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void ResourceValidate_Request::set_content(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000002u;
  _impl_.content_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourceValidate_Request.content)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.content)
 }
 inline std::string* ResourceValidate_Request::mutable_content() {
   std::string* _s = _internal_mutable_content();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.catalog.ResourceValidate_Request.content)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.content)
   return _s;
 }
 inline const std::string& ResourceValidate_Request::_internal_content() const {
@@ -2708,7 +2708,7 @@ inline std::string* ResourceValidate_Request::_internal_mutable_content() {
   return _impl_.content_.Mutable(GetArenaForAllocation());
 }
 inline std::string* ResourceValidate_Request::release_content() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.catalog.ResourceValidate_Request.content)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.content)
   if (!_internal_has_content()) {
     return nullptr;
   }
@@ -2733,7 +2733,7 @@ inline void ResourceValidate_Request::set_allocated_content(std::string* content
     _impl_.content_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.catalog.ResourceValidate_Request.content)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.content)
 }
 
 // optional string namespaceid = 4;
@@ -2749,7 +2749,7 @@ inline void ResourceValidate_Request::clear_namespaceid() {
   _impl_._has_bits_[0] &= ~0x00000004u;
 }
 inline const std::string& ResourceValidate_Request::namespaceid() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.ResourceValidate_Request.namespaceid)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.namespaceid)
   return _internal_namespaceid();
 }
 template <typename ArgT0, typename... ArgT>
@@ -2757,11 +2757,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void ResourceValidate_Request::set_namespaceid(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000004u;
  _impl_.namespaceid_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.ResourceValidate_Request.namespaceid)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.namespaceid)
 }
 inline std::string* ResourceValidate_Request::mutable_namespaceid() {
   std::string* _s = _internal_mutable_namespaceid();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.catalog.ResourceValidate_Request.namespaceid)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.namespaceid)
   return _s;
 }
 inline const std::string& ResourceValidate_Request::_internal_namespaceid() const {
@@ -2776,7 +2776,7 @@ inline std::string* ResourceValidate_Request::_internal_mutable_namespaceid() {
   return _impl_.namespaceid_.Mutable(GetArenaForAllocation());
 }
 inline std::string* ResourceValidate_Request::release_namespaceid() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.catalog.ResourceValidate_Request.namespaceid)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.namespaceid)
   if (!_internal_has_namespaceid()) {
     return nullptr;
   }
@@ -2801,7 +2801,7 @@ inline void ResourceValidate_Request::set_allocated_namespaceid(std::string* nam
     _impl_.namespaceid_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.catalog.ResourceValidate_Request.namespaceid)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.catalog.ResourceValidate_Request.namespaceid)
 }
 
 // -------------------------------------------------------------------
@@ -2812,24 +2812,24 @@ inline void ResourceValidate_Request::set_allocated_namespaceid(std::string* nam
 
 // NamespacesGet_Response
 
-// .com.wazuh.api.engine.ReturnStatus status = 1;
+// .com.cyb3rhq.api.engine.ReturnStatus status = 1;
 inline void NamespacesGet_Response::clear_status() {
   _impl_.status_ = 0;
 }
-inline ::com::wazuh::api::engine::ReturnStatus NamespacesGet_Response::_internal_status() const {
-  return static_cast< ::com::wazuh::api::engine::ReturnStatus >(_impl_.status_);
+inline ::com::cyb3rhq::api::engine::ReturnStatus NamespacesGet_Response::_internal_status() const {
+  return static_cast< ::com::cyb3rhq::api::engine::ReturnStatus >(_impl_.status_);
 }
-inline ::com::wazuh::api::engine::ReturnStatus NamespacesGet_Response::status() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.NamespacesGet_Response.status)
+inline ::com::cyb3rhq::api::engine::ReturnStatus NamespacesGet_Response::status() const {
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.status)
   return _internal_status();
 }
-inline void NamespacesGet_Response::_internal_set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void NamespacesGet_Response::_internal_set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   
   _impl_.status_ = value;
 }
-inline void NamespacesGet_Response::set_status(::com::wazuh::api::engine::ReturnStatus value) {
+inline void NamespacesGet_Response::set_status(::com::cyb3rhq::api::engine::ReturnStatus value) {
   _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.NamespacesGet_Response.status)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.status)
 }
 
 // optional string error = 2;
@@ -2845,7 +2845,7 @@ inline void NamespacesGet_Response::clear_error() {
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& NamespacesGet_Response::error() const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.NamespacesGet_Response.error)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.error)
   return _internal_error();
 }
 template <typename ArgT0, typename... ArgT>
@@ -2853,11 +2853,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void NamespacesGet_Response::set_error(ArgT0&& arg0, ArgT... args) {
  _impl_._has_bits_[0] |= 0x00000001u;
  _impl_.error_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.NamespacesGet_Response.error)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.error)
 }
 inline std::string* NamespacesGet_Response::mutable_error() {
   std::string* _s = _internal_mutable_error();
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.catalog.NamespacesGet_Response.error)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.error)
   return _s;
 }
 inline const std::string& NamespacesGet_Response::_internal_error() const {
@@ -2872,7 +2872,7 @@ inline std::string* NamespacesGet_Response::_internal_mutable_error() {
   return _impl_.error_.Mutable(GetArenaForAllocation());
 }
 inline std::string* NamespacesGet_Response::release_error() {
-  // @@protoc_insertion_point(field_release:com.wazuh.api.engine.catalog.NamespacesGet_Response.error)
+  // @@protoc_insertion_point(field_release:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.error)
   if (!_internal_has_error()) {
     return nullptr;
   }
@@ -2897,7 +2897,7 @@ inline void NamespacesGet_Response::set_allocated_error(std::string* error) {
     _impl_.error_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:com.wazuh.api.engine.catalog.NamespacesGet_Response.error)
+  // @@protoc_insertion_point(field_set_allocated:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.error)
 }
 
 // repeated string namespaces = 3;
@@ -2912,66 +2912,66 @@ inline void NamespacesGet_Response::clear_namespaces() {
 }
 inline std::string* NamespacesGet_Response::add_namespaces() {
   std::string* _s = _internal_add_namespaces();
-  // @@protoc_insertion_point(field_add_mutable:com.wazuh.api.engine.catalog.NamespacesGet_Response.namespaces)
+  // @@protoc_insertion_point(field_add_mutable:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.namespaces)
   return _s;
 }
 inline const std::string& NamespacesGet_Response::_internal_namespaces(int index) const {
   return _impl_.namespaces_.Get(index);
 }
 inline const std::string& NamespacesGet_Response::namespaces(int index) const {
-  // @@protoc_insertion_point(field_get:com.wazuh.api.engine.catalog.NamespacesGet_Response.namespaces)
+  // @@protoc_insertion_point(field_get:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.namespaces)
   return _internal_namespaces(index);
 }
 inline std::string* NamespacesGet_Response::mutable_namespaces(int index) {
-  // @@protoc_insertion_point(field_mutable:com.wazuh.api.engine.catalog.NamespacesGet_Response.namespaces)
+  // @@protoc_insertion_point(field_mutable:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.namespaces)
   return _impl_.namespaces_.Mutable(index);
 }
 inline void NamespacesGet_Response::set_namespaces(int index, const std::string& value) {
   _impl_.namespaces_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.NamespacesGet_Response.namespaces)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.namespaces)
 }
 inline void NamespacesGet_Response::set_namespaces(int index, std::string&& value) {
   _impl_.namespaces_.Mutable(index)->assign(std::move(value));
-  // @@protoc_insertion_point(field_set:com.wazuh.api.engine.catalog.NamespacesGet_Response.namespaces)
+  // @@protoc_insertion_point(field_set:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.namespaces)
 }
 inline void NamespacesGet_Response::set_namespaces(int index, const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   _impl_.namespaces_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set_char:com.wazuh.api.engine.catalog.NamespacesGet_Response.namespaces)
+  // @@protoc_insertion_point(field_set_char:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.namespaces)
 }
 inline void NamespacesGet_Response::set_namespaces(int index, const char* value, size_t size) {
   _impl_.namespaces_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:com.wazuh.api.engine.catalog.NamespacesGet_Response.namespaces)
+  // @@protoc_insertion_point(field_set_pointer:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.namespaces)
 }
 inline std::string* NamespacesGet_Response::_internal_add_namespaces() {
   return _impl_.namespaces_.Add();
 }
 inline void NamespacesGet_Response::add_namespaces(const std::string& value) {
   _impl_.namespaces_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add:com.wazuh.api.engine.catalog.NamespacesGet_Response.namespaces)
+  // @@protoc_insertion_point(field_add:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.namespaces)
 }
 inline void NamespacesGet_Response::add_namespaces(std::string&& value) {
   _impl_.namespaces_.Add(std::move(value));
-  // @@protoc_insertion_point(field_add:com.wazuh.api.engine.catalog.NamespacesGet_Response.namespaces)
+  // @@protoc_insertion_point(field_add:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.namespaces)
 }
 inline void NamespacesGet_Response::add_namespaces(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   _impl_.namespaces_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add_char:com.wazuh.api.engine.catalog.NamespacesGet_Response.namespaces)
+  // @@protoc_insertion_point(field_add_char:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.namespaces)
 }
 inline void NamespacesGet_Response::add_namespaces(const char* value, size_t size) {
   _impl_.namespaces_.Add()->assign(reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_add_pointer:com.wazuh.api.engine.catalog.NamespacesGet_Response.namespaces)
+  // @@protoc_insertion_point(field_add_pointer:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.namespaces)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>&
 NamespacesGet_Response::namespaces() const {
-  // @@protoc_insertion_point(field_list:com.wazuh.api.engine.catalog.NamespacesGet_Response.namespaces)
+  // @@protoc_insertion_point(field_list:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.namespaces)
   return _impl_.namespaces_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>*
 NamespacesGet_Response::mutable_namespaces() {
-  // @@protoc_insertion_point(field_mutable_list:com.wazuh.api.engine.catalog.NamespacesGet_Response.namespaces)
+  // @@protoc_insertion_point(field_mutable_list:com.cyb3rhq.api.engine.catalog.NamespacesGet_Response.namespaces)
   return &_impl_.namespaces_;
 }
 
@@ -2998,20 +2998,20 @@ NamespacesGet_Response::mutable_namespaces() {
 }  // namespace catalog
 }  // namespace engine
 }  // namespace api
-}  // namespace wazuh
+}  // namespace cyb3rhq
 }  // namespace com
 
 PROTOBUF_NAMESPACE_OPEN
 
-template <> struct is_proto_enum< ::com::wazuh::api::engine::catalog::ResourceFormat> : ::std::true_type {};
+template <> struct is_proto_enum< ::com::cyb3rhq::api::engine::catalog::ResourceFormat> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::com::wazuh::api::engine::catalog::ResourceFormat>() {
-  return ::com::wazuh::api::engine::catalog::ResourceFormat_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::com::cyb3rhq::api::engine::catalog::ResourceFormat>() {
+  return ::com::cyb3rhq::api::engine::catalog::ResourceFormat_descriptor();
 }
-template <> struct is_proto_enum< ::com::wazuh::api::engine::catalog::ResourceType> : ::std::true_type {};
+template <> struct is_proto_enum< ::com::cyb3rhq::api::engine::catalog::ResourceType> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::com::wazuh::api::engine::catalog::ResourceType>() {
-  return ::com::wazuh::api::engine::catalog::ResourceType_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::com::cyb3rhq::api::engine::catalog::ResourceType>() {
+  return ::com::cyb3rhq::api::engine::catalog::ResourceType_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE

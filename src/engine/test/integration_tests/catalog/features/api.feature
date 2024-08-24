@@ -4,7 +4,7 @@ Feature: Catalog API Management
 
   Scenario: Try to create a resource that is not a collection type
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "non-exist" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "non-exist" that contains
       """
       nothing
       """
@@ -13,7 +13,7 @@ Feature: Catalog API Management
 
   Scenario: Try to create a resource with a invalid name
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       name: decoder/testing
       """
@@ -22,7 +22,7 @@ Feature: Catalog API Management
 
   Scenario: Try to create a resource with a invalid content
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       decoder/testing/0
       """
@@ -31,15 +31,15 @@ Feature: Catalog API Management
 
   Scenario: Try to create a resource in invalid namespace
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh/other" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq/other" a new resource of type "decoder" that contains
       """
       name: decoder/testing/0
       """
-    Then I should receive a failed response indicating "Invalid namespace 'wazuh/other': NamespaceId must have only one part and cannot be empty"
+    Then I should receive a failed response indicating "Invalid namespace 'cyb3rhq/other': NamespaceId must have only one part and cannot be empty"
 
   Scenario: Try to create a resource in invalid namespace
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh/" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq/" a new resource of type "decoder" that contains
       """
       name: decoder/testing/0
       """
@@ -48,7 +48,7 @@ Feature: Catalog API Management
 
   Scenario: Try to create a resource whose type does not match its name
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "filter" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "filter" that contains
       """
       name: decoder/testing/0
       """
@@ -57,11 +57,11 @@ Feature: Catalog API Management
 
   Scenario: Try to create the same resource in the same namespace
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       name: decoder/testing/0
       """
-    And I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    And I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       name: decoder/testing/0
       """
@@ -70,7 +70,7 @@ Feature: Catalog API Management
 
   Scenario: Try to create the same resource in different namespace
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       name: decoder/testing/0
       """
@@ -83,7 +83,7 @@ Feature: Catalog API Management
 
   Scenario: Try to create a resource whose content does not correspond to the type
     Given I have a clear catalog
-    When I send a request to publish in the "json" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "json" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       name: decoder/testing/0
       """
@@ -92,7 +92,7 @@ Feature: Catalog API Management
 
   Scenario: Try to create a resource whose content has duplicate keys
     Given I have a clear catalog
-    When I send a request to publish in the "json" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "json" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing/0",
@@ -104,7 +104,7 @@ Feature: Catalog API Management
 
   Scenario: Try to create a resource whose content has duplicate keys (defective case)
     Given I have a clear catalog
-    When I send a request to publish in the "json" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "json" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing/0",
@@ -116,13 +116,13 @@ Feature: Catalog API Management
 
   Scenario: Try to get a resource with different format
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing/0"
       }
       """
-    And I send a request to get the resource "decoder/testing/0" with format "yaml" in the namespace "wazuh"
+    And I send a request to get the resource "decoder/testing/0" with format "yaml" in the namespace "cyb3rhq"
     Then I should receive a success response
     And I should receive the next content
       """
@@ -132,12 +132,12 @@ Feature: Catalog API Management
 
   Scenario: Try to get non-exist resource
     Given I have a clear catalog
-    When I send a request to get the resource "decoder" with format "yaml" in the namespace "wazuh"
-    Then I should receive a failed response indicating "Collection 'decoder' does not exist on namespace 'wazuh'"
+    When I send a request to get the resource "decoder" with format "yaml" in the namespace "cyb3rhq"
+    Then I should receive a failed response indicating "Collection 'decoder' does not exist on namespace 'cyb3rhq'"
 
   Scenario: Try to get non-exist resource in namespace selected
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing/0"
@@ -148,7 +148,7 @@ Feature: Catalog API Management
 
   Scenario: Try to get non-exist resource in namespace selected
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing/0"
@@ -160,7 +160,7 @@ Feature: Catalog API Management
 
   Scenario: Try to get non-exist resource in namespace selected
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing/0"
@@ -172,25 +172,25 @@ Feature: Catalog API Management
 
   Scenario: Try to get a collection in namespace selected
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing/0"
       }
       """
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing-1/0"
       }
       """
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing-2/0"
       }
       """
-    When I send a request to get the resource "decoder" with format "yaml" in the namespace "wazuh"
+    When I send a request to get the resource "decoder" with format "yaml" in the namespace "cyb3rhq"
     Then I should receive a success response
     And I should receive the next content
       """
@@ -201,7 +201,7 @@ Feature: Catalog API Management
 
   Scenario: Try to delete non-exist resource in namespace selected
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing/0"
@@ -213,53 +213,53 @@ Feature: Catalog API Management
 
   Scenario: Try to delete resource in namespace selected
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing/0"
       }
       """
-    And I send a request to delete the resource "decoder/testing/0" in the namespace "wazuh"
+    And I send a request to delete the resource "decoder/testing/0" in the namespace "cyb3rhq"
     Then I should receive a success response
-    When I send a request to get the resource "decoder/testing/0" with format "yaml" in the namespace "wazuh"
+    When I send a request to get the resource "decoder/testing/0" with format "yaml" in the namespace "cyb3rhq"
     Then I should receive a failed response indicating "Could not get resource 'decoder/testing/0': Resource 'decoder/testing/0' does not have an associated namespace"
 
 
   Scenario: Try to delete collection in namespace selected
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing/0"
       }
       """
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing-1/0"
       }
       """
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing-2/0"
       }
       """
-    And I send a request to delete the resource "decoder" in the namespace "wazuh"
+    And I send a request to delete the resource "decoder" in the namespace "cyb3rhq"
     Then I should receive a success response
-    When I send a request to get the resource "decoder" with format "yaml" in the namespace "wazuh"
-    Then I should receive a failed response indicating "Collection 'decoder' does not exist on namespace 'wazuh'"
+    When I send a request to get the resource "decoder" with format "yaml" in the namespace "cyb3rhq"
+    Then I should receive a failed response indicating "Collection 'decoder' does not exist on namespace 'cyb3rhq'"
 
 
   Scenario: Try to update the name of a resource
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing/0"
       }
       """
-    And I send a request to update in the "yml" format in the namespace "wazuh" the resource "decoder/testing/0" that contains
+    And I send a request to update in the "yml" format in the namespace "cyb3rhq" the resource "decoder/testing/0" that contains
       """
       {
         "name":"decoder/testing-updated/0"
@@ -269,7 +269,7 @@ Feature: Catalog API Management
 
   Scenario: Try to update non-exist resource in namespace selected
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing/0"
@@ -289,13 +289,13 @@ Feature: Catalog API Management
 
   Scenario: Try to update exists resource in namespace selected
     Given I have a clear catalog
-    When I send a request to publish in the "yml" format in the namespace "wazuh" a new resource of type "decoder" that contains
+    When I send a request to publish in the "yml" format in the namespace "cyb3rhq" a new resource of type "decoder" that contains
       """
       {
         "name":"decoder/testing/0"
       }
       """
-    And I send a request to update in the "yml" format in the namespace "wazuh" the resource "decoder/testing/0" that contains
+    And I send a request to update in the "yml" format in the namespace "cyb3rhq" the resource "decoder/testing/0" that contains
       """
       {
         "name":"decoder/testing/0",
@@ -305,7 +305,7 @@ Feature: Catalog API Management
       }
       """
     Then I should receive a success response
-    When I send a request to get the resource "decoder/testing/0" with format "yaml" in the namespace "wazuh"
+    When I send a request to get the resource "decoder/testing/0" with format "yaml" in the namespace "cyb3rhq"
     Then I should receive a success response
     And I should receive the next content
       """
@@ -399,7 +399,7 @@ Feature: Catalog API Management
     When I send a request to validate in the "yml" format in the resource "decoder/testing/0" that contains
       """
         name: decoder/testing/0
-        check: $wazuh.origin == /var/log/apache2/access.log
+        check: $cyb3rhq.origin == /var/log/apache2/access.log
         parse|message:
           - <event.code> <event.kind> <event.action>
         normalize:

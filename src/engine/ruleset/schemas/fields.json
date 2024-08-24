@@ -12281,40 +12281,40 @@
         "string"
       ]
     },
-    "wazuh.queue": {
-      "description": "Module: wazuh-core\nIndexerType: long\nArray: False\n\nQueue part of the OSSEC message format",
+    "cyb3rhq.queue": {
+      "description": "Module: cyb3rhq-core\nIndexerType: long\nArray: False\n\nQueue part of the OSSEC message format",
       "type": [
         "number",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.location": {
-      "description": "Module: wazuh-core\nIndexerType: text\nArray: False\n\nLocation part of the OSSEC message format",
+    "cyb3rhq.location": {
+      "description": "Module: cyb3rhq-core\nIndexerType: text\nArray: False\n\nLocation part of the OSSEC message format",
       "type": [
         "string"
       ]
     },
-    "wazuh.message": {
-      "description": "Module: wazuh-core\nIndexerType: text\nArray: False\n\nMessage part of the OSSEC message format",
+    "cyb3rhq.message": {
+      "description": "Module: cyb3rhq-core\nIndexerType: text\nArray: False\n\nMessage part of the OSSEC message format",
       "type": [
         "string"
       ]
     },
-    "wazuh.origin": {
-      "description": "Module: wazuh-core\nIndexerType: keyword\nArray: False\n\nOrigin part of the OSSEC message format",
+    "cyb3rhq.origin": {
+      "description": "Module: cyb3rhq-core\nIndexerType: keyword\nArray: False\n\nOrigin part of the OSSEC message format",
       "type": [
         "string"
       ]
     },
-    "wazuh.registered_ip": {
-      "description": "Module: wazuh-core\nIndexerType: keyword\nArray: False\n\nRegistered IP part of the OSSEC message format",
+    "cyb3rhq.registered_ip": {
+      "description": "Module: cyb3rhq-core\nIndexerType: keyword\nArray: False\n\nRegistered IP part of the OSSEC message format",
       "type": [
         "string"
       ]
     },
-    "wazuh.decoders": {
-      "description": "Module: wazuh-core\nIndexerType: keyword\nArray: True\n\nTrace of the decoders used to decode the event in order",
+    "cyb3rhq.decoders": {
+      "description": "Module: cyb3rhq-core\nIndexerType: keyword\nArray: True\n\nTrace of the decoders used to decode the event in order",
       "type": [
         "string",
         "array"
@@ -12326,200 +12326,200 @@
         ]
       }
     },
-    "wazuh.source": {
-      "description": "Module: wazuh-core\nIndexerType: keyword\nArray: False\n\nSource that ingested the event",
+    "cyb3rhq.source": {
+      "description": "Module: cyb3rhq-core\nIndexerType: keyword\nArray: False\n\nSource that ingested the event",
       "type": [
         "string"
       ]
     },
-    "wazuh.syscollector.hardware": {
-      "description": "Module: wazuh-core\nIndexerType: object\nArray: False\n\nObject that contains the hardware fields from a syscollector event",
+    "cyb3rhq.syscollector.hardware": {
+      "description": "Module: cyb3rhq-core\nIndexerType: object\nArray: False\n\nObject that contains the hardware fields from a syscollector event",
       "type": [
         "object",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.syscollector.hotfix": {
-      "description": "Module: wazuh-core\nIndexerType: object\nArray: False\n\nObject that contains the hotfix fields from a syscollector event",
+    "cyb3rhq.syscollector.hotfix": {
+      "description": "Module: cyb3rhq-core\nIndexerType: object\nArray: False\n\nObject that contains the hotfix fields from a syscollector event",
       "type": [
         "object",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.syscollector.netinfo.addr": {
-      "description": "Module: wazuh-core\nIndexerType: object\nArray: False\n\nObject that contains the address fields from a syscollector event",
+    "cyb3rhq.syscollector.netinfo.addr": {
+      "description": "Module: cyb3rhq-core\nIndexerType: object\nArray: False\n\nObject that contains the address fields from a syscollector event",
       "type": [
         "object",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.syscollector.netinfo.iface": {
-      "description": "Module: wazuh-core\nIndexerType: object\nArray: False\n\nObject that contains the network interface fields from a syscollector event",
+    "cyb3rhq.syscollector.netinfo.iface": {
+      "description": "Module: cyb3rhq-core\nIndexerType: object\nArray: False\n\nObject that contains the network interface fields from a syscollector event",
       "type": [
         "object",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.syscollector.netinfo.proto": {
-      "description": "Module: wazuh-core\nIndexerType: object\nArray: False\n\nObject that contains the network protocol fields from a syscollector event",
+    "cyb3rhq.syscollector.netinfo.proto": {
+      "description": "Module: cyb3rhq-core\nIndexerType: object\nArray: False\n\nObject that contains the network protocol fields from a syscollector event",
       "type": [
         "object",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.syscollector.os": {
-      "description": "Module: wazuh-core\nIndexerType: object\nArray: False\n\nObject that contains the os fields from a syscollector event",
+    "cyb3rhq.syscollector.os": {
+      "description": "Module: cyb3rhq-core\nIndexerType: object\nArray: False\n\nObject that contains the os fields from a syscollector event",
       "type": [
         "object",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.syscollector.port": {
-      "description": "Module: wazuh-core\nIndexerType: object\nArray: False\n\nObject that contains the port fields from a syscollector event",
+    "cyb3rhq.syscollector.port": {
+      "description": "Module: cyb3rhq-core\nIndexerType: object\nArray: False\n\nObject that contains the port fields from a syscollector event",
       "type": [
         "object",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.syscollector.process": {
-      "description": "Module: wazuh-core\nIndexerType: object\nArray: False\n\nObject that contains the process fields from a syscollector event",
+    "cyb3rhq.syscollector.process": {
+      "description": "Module: cyb3rhq-core\nIndexerType: object\nArray: False\n\nObject that contains the process fields from a syscollector event",
       "type": [
         "object",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.syscollector.program": {
-      "description": "Module: wazuh-core\nIndexerType: object\nArray: False\n\nObject that contains the program fields from a syscollector event",
+    "cyb3rhq.syscollector.program": {
+      "description": "Module: cyb3rhq-core\nIndexerType: object\nArray: False\n\nObject that contains the program fields from a syscollector event",
       "type": [
         "object",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.rootcheck.file": {
-      "description": "Module: wazuh-core\nIndexerType: keyword\nArray: False\n\nFile path",
+    "cyb3rhq.rootcheck.file": {
+      "description": "Module: cyb3rhq-core\nIndexerType: keyword\nArray: False\n\nFile path",
       "type": [
         "string"
       ]
     },
-    "wazuh.rootcheck.update": {
-      "description": "Module: wazuh-core\nIndexerType: boolean\nArray: False\n\nUpdate status",
+    "cyb3rhq.rootcheck.update": {
+      "description": "Module: cyb3rhq-core\nIndexerType: boolean\nArray: False\n\nUpdate status",
       "type": [
         "boolean",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.rootcheck.fts": {
-      "description": "Module: wazuh-core\nIndexerType: boolean\nArray: False\n\nFts status",
+    "cyb3rhq.rootcheck.fts": {
+      "description": "Module: cyb3rhq-core\nIndexerType: boolean\nArray: False\n\nFts status",
       "type": [
         "boolean",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.rootcheck.title": {
-      "description": "Module: wazuh-core\nIndexerType: keyword\nArray: False\n\nTitle of the rootcheck event",
+    "cyb3rhq.rootcheck.title": {
+      "description": "Module: cyb3rhq-core\nIndexerType: keyword\nArray: False\n\nTitle of the rootcheck event",
       "type": [
         "string"
       ]
     },
-    "wazuh.ciscat.type": {
-      "description": "Module: wazuh-core\nIndexerType: keyword\nArray: False\n\nType of the Ciscat event",
+    "cyb3rhq.ciscat.type": {
+      "description": "Module: cyb3rhq-core\nIndexerType: keyword\nArray: False\n\nType of the Ciscat event",
       "type": [
         "string"
       ]
     },
-    "wazuh.ciscat.scan_id": {
-      "description": "Module: wazuh-core\nIndexerType: long\nArray: False\n\nScan ID of the Ciscat event",
+    "cyb3rhq.ciscat.scan_id": {
+      "description": "Module: cyb3rhq-core\nIndexerType: long\nArray: False\n\nScan ID of the Ciscat event",
       "type": [
         "number",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.ciscat.cis.timestamp": {
-      "description": "Module: wazuh-core\nIndexerType: date\nArray: False\n\nTimestamp of the CIS fields from a Ciscat event",
+    "cyb3rhq.ciscat.cis.timestamp": {
+      "description": "Module: cyb3rhq-core\nIndexerType: date\nArray: False\n\nTimestamp of the CIS fields from a Ciscat event",
       "type": [
         "string"
       ]
     },
-    "wazuh.ciscat.cis.benchmark": {
-      "description": "Module: wazuh-core\nIndexerType: keyword\nArray: False\n\nBenchmark of the CIS fields from a Ciscat event",
+    "cyb3rhq.ciscat.cis.benchmark": {
+      "description": "Module: cyb3rhq-core\nIndexerType: keyword\nArray: False\n\nBenchmark of the CIS fields from a Ciscat event",
       "type": [
         "string"
       ]
     },
-    "wazuh.ciscat.cis.profile": {
-      "description": "Module: wazuh-core\nIndexerType: keyword\nArray: False\n\nProfile of the CIS fields from a Ciscat event",
+    "cyb3rhq.ciscat.cis.profile": {
+      "description": "Module: cyb3rhq-core\nIndexerType: keyword\nArray: False\n\nProfile of the CIS fields from a Ciscat event",
       "type": [
         "string"
       ]
     },
-    "wazuh.ciscat.cis.pass": {
-      "description": "Module: wazuh-core\nIndexerType: long\nArray: False\n\nPass of the CIS fields from a Ciscat event",
+    "cyb3rhq.ciscat.cis.pass": {
+      "description": "Module: cyb3rhq-core\nIndexerType: long\nArray: False\n\nPass of the CIS fields from a Ciscat event",
       "type": [
         "number",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.ciscat.cis.fail": {
-      "description": "Module: wazuh-core\nIndexerType: long\nArray: False\n\nFail of the CIS fields from a Ciscat event",
+    "cyb3rhq.ciscat.cis.fail": {
+      "description": "Module: cyb3rhq-core\nIndexerType: long\nArray: False\n\nFail of the CIS fields from a Ciscat event",
       "type": [
         "number",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.ciscat.cis.error": {
-      "description": "Module: wazuh-core\nIndexerType: long\nArray: False\n\nError of the CIS fields from a Ciscat event",
+    "cyb3rhq.ciscat.cis.error": {
+      "description": "Module: cyb3rhq-core\nIndexerType: long\nArray: False\n\nError of the CIS fields from a Ciscat event",
       "type": [
         "number",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.ciscat.cis.notchecked": {
-      "description": "Module: wazuh-core\nIndexerType: long\nArray: False\n\nNot checked of the CIS fields from a Ciscat event",
+    "cyb3rhq.ciscat.cis.notchecked": {
+      "description": "Module: cyb3rhq-core\nIndexerType: long\nArray: False\n\nNot checked of the CIS fields from a Ciscat event",
       "type": [
         "number",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.ciscat.cis.unknown": {
-      "description": "Module: wazuh-core\nIndexerType: long\nArray: False\n\nUnknown of the CIS fields from a Ciscat event",
+    "cyb3rhq.ciscat.cis.unknown": {
+      "description": "Module: cyb3rhq-core\nIndexerType: long\nArray: False\n\nUnknown of the CIS fields from a Ciscat event",
       "type": [
         "number",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.ciscat.cis.score": {
-      "description": "Module: wazuh-core\nIndexerType: long\nArray: False\n\nScore of the CIS fields from a Ciscat event",
+    "cyb3rhq.ciscat.cis.score": {
+      "description": "Module: cyb3rhq-core\nIndexerType: long\nArray: False\n\nScore of the CIS fields from a Ciscat event",
       "type": [
         "number",
         "string"
       ],
       "pattern": "^\\$[\\w\\.]+$|^[\\w]+\\(.*\\)$"
     },
-    "wazuh.ciscat.cis.hostname": {
-      "description": "Module: wazuh-core\nIndexerType: keyword\nArray: False\n\nHostname of the CIS fields from a Ciscat event",
+    "cyb3rhq.ciscat.cis.hostname": {
+      "description": "Module: cyb3rhq-core\nIndexerType: keyword\nArray: False\n\nHostname of the CIS fields from a Ciscat event",
       "type": [
         "string"
       ]
     },
-    "wazuh.noIndexing": {
-      "description": "Module: wazuh-core\nIndexerType: boolean\nArray: False\n\nBoolean that indicates if the event is related with internal Wazuh functionality and should not be indexed",
+    "cyb3rhq.noIndexing": {
+      "description": "Module: cyb3rhq-core\nIndexerType: boolean\nArray: False\n\nBoolean that indicates if the event is related with internal Cyb3rhq functionality and should not be indexed",
       "type": [
         "boolean",
         "string"

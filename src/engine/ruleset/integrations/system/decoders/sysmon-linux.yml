@@ -9,7 +9,7 @@ metadata:
   versions:
     - 1.2.x
   author:
-    name: Wazuh Inc.
+    name: Cyb3rhq Inc.
     email: info@wazuh.com
     date: 2023-06-09
   references:
@@ -115,7 +115,7 @@ normalize:
   - map:
       - event.dataset: sysmon
       - event.module: sysmon-linux
-      - wazuh.decoders: array_append(sysmon-linux)
+      - cyb3rhq.decoders: array_append(sysmon-linux)
 
       - log.level: get_key_in($lvl_map, $_sysmon.System.Level.#text)
       - event.start: $_sysmon.System.TimeCreated.@SystemTime

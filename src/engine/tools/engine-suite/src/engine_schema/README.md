@@ -4,7 +4,7 @@ The engine uses a schema to define and standardize the structure of the data it 
 ## Installation
 The script is packaged along the engine-suite python packaged, to install simply run:
 ```bash
-pip install wazuh/src/engine/tools/engine-suite
+pip install cyb3rhq/src/engine/tools/engine-suite
 ```
 To verify it's working:
 ```bash
@@ -29,7 +29,7 @@ subcommands:
 
 The tool has two subcommands:
 - generate: Generates the associated files to be updated manually (intended for contributing).
-- integrate: Automatically replaces the schema configuration files on the current Wazuh manager installation.
+- integrate: Automatically replaces the schema configuration files on the current Cyb3rhq manager installation.
 
 ### Generate
 
@@ -49,10 +49,10 @@ subcommands:
     integration         Add schema integration fields
 ```
 
-When updating the schema, specify the integration subcommand with the path to the Wazuh core integration so that Wazuh-specific fields are generated.
+When updating the schema, specify the integration subcommand with the path to the Cyb3rhq core integration so that Cyb3rhq-specific fields are generated.
 
 ```bash
-$ engine-schema generate --output-dir /tmp/schema_update integration engine/ruleset/wazuh-core/
+$ engine-schema generate --output-dir /tmp/schema_update integration engine/ruleset/cyb3rhq-core/
 Using target ECS version: v8.8.0
 Loading resources...
 Downloading https://raw.githubusercontent.com/elastic/ecs/v8.8.0/generated/ecs/ecs_flat.yml...
@@ -62,7 +62,7 @@ Loading logpar overrides template...
 Building field tree from ecs definition...
 Success.
 Generating engine schema...
-Adding module engine/ruleset/wazuh-core/...
+Adding module engine/ruleset/cyb3rhq-core/...
 Loading resources...
 Generating field tree...
 Adding logpar overrides...
@@ -81,14 +81,14 @@ Success.
 It will output the following files under the specified directory (working directory by default):
 - `engine-schema.json`: Schema configuration for the engine module.
 - `fields.json`: Contains the Visual Code schema for the assets.
-- `wazuh-logpar-types.json`: Configuration for the engine parser module.
-- `wazuh-template.json`: Configuration for the Wazuh indexer.
+- `cyb3rhq-logpar-types.json`: Configuration for the engine parser module.
+- `cyb3rhq-template.json`: Configuration for the Cyb3rhq indexer.
 
 We must format the documents and replace them in their respective folders:
-- engine-schema.json -> wazuh/src/engine/ruleset/schemas/engine-schema.json
-- fields.json -> wazuh/src/engine/ruleset/schemas/fields.json
-- wazuh-logpar-types.json -> wazuh/src/engine/ruleset/schemas/wazuh-logpar-types.json
-- wazuh-template.json -> wazuh/src/engine/extension/elasticsearch/7.x/wazuh-template.json
+- engine-schema.json -> cyb3rhq/src/engine/ruleset/schemas/engine-schema.json
+- fields.json -> cyb3rhq/src/engine/ruleset/schemas/fields.json
+- cyb3rhq-logpar-types.json -> cyb3rhq/src/engine/ruleset/schemas/cyb3rhq-logpar-types.json
+- cyb3rhq-template.json -> cyb3rhq/src/engine/extension/elasticsearch/7.x/cyb3rhq-template.json
 
 ### Integrate
 
@@ -104,10 +104,10 @@ options:
                         [default="v8.8.0"] ECS version to use for the schema generation
   --api-sock API_SOCK   [default="/var/ossec/queue/sockets/engine-api"] Engine instance API socket path
   --indexer-dir INDEXER_DIR
-                        [default="/etc/filebeat/"] Path to directory where the wazuh-template.json indexer
+                        [default="/etc/filebeat/"] Path to directory where the cyb3rhq-template.json indexer
                         file is located
   --schema-dir SCHEMA_DIR
-                        [default="/home/vagrant/engine/wazuh/src/engine/ruleset/schemas/"] Path to the
+                        [default="/home/vagrant/engine/cyb3rhq/src/engine/ruleset/schemas/"] Path to the
                         director where the fields.json schema file is located
 
 subcommands:

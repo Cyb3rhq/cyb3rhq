@@ -1,0 +1,57 @@
+name: decoder/core-localfile/0
+# module: cyb3rhq
+
+metadata:
+  title: Localfile queue decoder
+  description: >
+    Process events that has the localfile queue in the standard OSSEC message format.
+    Handles implementation details of Cyb3rhq, not intended for end users.
+  compatibility: Any service being tagged with the queue 49. Wodles and logcollector.
+  versions:
+    - Cyb3rhq 4.*
+  author:
+    name: Cyb3rhq, Inc.
+    date: 03/03/2023
+  references:
+    - https://documentation.wazuh.com/current/development/message-format.html
+
+parents:
+  - decoder/core-cyb3rhq-message/0
+
+check:
+  # Value 49 is equal to character '1' in ASCII
+  - cyb3rhq.queue: 49
+
+normalize:
+
+  ### Wodles ###
+  # Command
+  - check:
+      - cyb3rhq.origin: starts_with(command_)
+    map:
+      - cyb3rhq.source: wodle
+      - event.module: $cyb3rhq.origin
+  # Aws
+  - check:
+      - cyb3rhq.origin: starts_with(aws)
+    map:
+      - cyb3rhq.source: wodle
+      - event.module: $cyb3rhq.origin
+  # TODO Rest of wodles
+
+  ### Logcollector ###
+  - check:
+      - cyb3rhq.source: not_exists()
+    map:
+      - cyb3rhq.source: logcollector
+
+  # Disable json labeling for now, we dont replace the event.original with the json_event at this moment
+  #- check:
+  #    - cyb3rhq.source: logcollector
+  #    - event.original: starts_with({)
+  #  parse|event.original:
+  #    - <_json_event/json>
+  #  map:
+  #    - event.original: rename($_json_event.event.original)
+  #    - event.module: rename($_json_event.event.module)
+  #    - event.dataset: rename($_json_event.event.dataset)

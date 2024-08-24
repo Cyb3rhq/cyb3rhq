@@ -26,7 +26,7 @@ public:
         INVALID_RESPONSE_FROM_SERVER, ///< Invalid response from server
         PROTOBUFF_SERIALIZE_ERROR,    ///< Protobuff serialize error
         PROTOBUFF_DESERIALIZE_ERROR,  ///< Protobuff deserialize error
-        WRESPONSE_ERROR,              ///< Wazuh protocol response error
+        WRESPONSE_ERROR,              ///< Cyb3rhq protocol response error
         EMESSAGE_ERROR,               ///< Engine requeset failed
         PATH_ERROR,                   ///< Path error (invalid path)
         INVALID_ARGUMENT,             ///< Invalid argument
@@ -84,7 +84,7 @@ public:
         case Type::PROTOBUFF_DESERIALIZE_ERROR:
             return "Protobuff deserialize error";
         case Type::WRESPONSE_ERROR:
-            return "Wazuh protocol response error";
+            return "Cyb3rhq protocol response error";
         case Type::EMESSAGE_ERROR:
             return "Engine requeset failed";
         default:

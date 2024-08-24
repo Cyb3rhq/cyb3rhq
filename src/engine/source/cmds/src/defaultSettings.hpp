@@ -37,7 +37,7 @@ constexpr auto ENGINE_SRV_API_TIMEOUT = 1000;
 constexpr auto ENGINE_SRV_API_TIMEOUT_ENV = "WZE_API_TIMEOUT";
 
 // Store module
-constexpr auto ENGINE_DEFAULT_POLICY = "policy/wazuh/0";
+constexpr auto ENGINE_DEFAULT_POLICY = "policy/cyb3rhq/0";
 constexpr auto ENGINE_STORE_PATH = "/var/ossec/engine/store";
 constexpr auto ENGINE_STORE_PATH_ENV = "WZE_STORE_PATH";
 

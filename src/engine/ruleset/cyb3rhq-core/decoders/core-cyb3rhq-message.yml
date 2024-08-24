@@ -1,0 +1,46 @@
+name: decoder/core-cyb3rhq-message/0
+# module: cyb3rhq
+
+metadata:
+  title: OSSEC message decoder
+  description: >
+    Base decoder to process OSSEC message format, parses location part and enriches the events
+    that comes from a Cyb3rhq agent with the host information.
+  compatibility: All cyb3rhq events.
+  versions:
+    - Cyb3rhq 4.*
+  author:
+    name: Cyb3rhq, Inc.
+    date: 06/03/2023
+  references:
+    - https://documentation.wazuh.com/current/development/message-format.html
+    - https://github.com/cyb3rhq/cyb3rhq/issues/15500
+
+definitions:
+  full_location: "[<agent.id>] \\(<agent.name>\\) <_registered_ip>-><_origin>"
+
+normalize:
+  - map:
+      - cyb3rhq.noIndexing: true
+      # When the event is recived by cyb3rhq syslog server
+      - client.ip: parse_ip($cyb3rhq.location)
+
+  #### Full location ####
+  #### Present when the event is incomming from cyb3rhq agent
+  - parse|cyb3rhq.location:
+      - $full_location
+    map:
+      - cyb3rhq.origin: $_origin
+      - cyb3rhq.registered_ip: $_registered_ip
+
+  - check:
+      - agent: exists()
+    map:
+      - agent.type: cyb3rhq
+
+  - check:
+      - agent.id: exists()
+    map:
+      - agent.type: cyb3rhq-agent
+      - host.id: $agent.id
+      - host: kvdb_get(agents_host_data, $agent.id)

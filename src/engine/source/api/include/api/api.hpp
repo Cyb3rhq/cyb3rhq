@@ -84,7 +84,7 @@ public:
         }
         catch (const std::exception& e)
         {
-            auto wresponse = base::utils::wazuhProtocol::WazuhResponse::invalidJsonRequest();
+            auto wresponse = base::utils::cyb3rhqProtocol::Cyb3rhqResponse::invalidJsonRequest();
             callbackFn(wresponse.toString());
             return;
         }
@@ -92,12 +92,12 @@ public:
         wpRequest wrequest {jrequest};
         if (!wrequest.isValid())
         {
-            auto wresponse = base::utils::wazuhProtocol::WazuhResponse::invalidRequest(wrequest.error().value());
+            auto wresponse = base::utils::cyb3rhqProtocol::Cyb3rhqResponse::invalidRequest(wrequest.error().value());
             callbackFn(wresponse.toString());
             return;
         }
 
-        processWazuhRequest(wrequest, [=](const wpResponse& wresponse) { callbackFn(wresponse.toString()); });
+        processCyb3rhqRequest(wrequest, [=](const wpResponse& wresponse) { callbackFn(wresponse.toString()); });
     }
 
     /**
@@ -106,11 +106,11 @@ public:
      * This method takes a JSON-formatted request message, processes it, and generates
      * a response. The response is then passed to the provided callback function.
      *
-     * @param wrequest A Wazuh request
+     * @param wrequest A Cyb3rhq request
      * @param callbackFn A callback function that will be invoked with the generated response to respond to the request
      *
      */
-    void processWazuhRequest(const wpRequest& wrequest, std::function<void(const wpResponse&)> callbackFn)
+    void processCyb3rhqRequest(const wpRequest& wrequest, std::function<void(const wpResponse&)> callbackFn)
     {
         wpResponse wresponse {};
 
@@ -121,7 +121,7 @@ public:
         catch (const std::exception& e)
         {
             LOG_DEBUG("Exception in Api::processRequest: %s", e.what());
-            wresponse = base::utils::wazuhProtocol::WazuhResponse::unknownError();
+            wresponse = base::utils::cyb3rhqProtocol::Cyb3rhqResponse::unknownError();
             callbackFn(wresponse);
         }
     }

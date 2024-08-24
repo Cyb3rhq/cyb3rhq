@@ -1,0 +1,31 @@
+name: decoder/core-windows/0
+# module: cyb3rhq
+
+metadata:
+  title: Windows queue decoder
+  description: >
+    Process events that has the Windows queue in the standard OSSEC message format.
+    Handles implementation details of Cyb3rhq, not intended for end users.
+  compatibility: Logcollector event channel log format.
+  versions:
+    - Cyb3rhq 4.*
+  author:
+    name: Cyb3rhq, Inc.
+    date: 03/03/2023
+  references:
+    - https://documentation.wazuh.com/current/user-manual/capabilities/log-data-collection/how-to-collect-wlogs.html
+
+parents:
+  - decoder/core-cyb3rhq-message/0
+
+check:
+  # Value 102 is equal to character 'f' in ASCII
+  - cyb3rhq.queue: 102
+
+normalize:
+  - map:
+      - cyb3rhq.source: logcollector
+      - event.module: windows
+      # Mapping for old agents
+      - _eventJson: parse_json($event.original)
+      - event.original: $_eventJson.Event

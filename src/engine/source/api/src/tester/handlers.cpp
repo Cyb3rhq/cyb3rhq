@@ -8,8 +8,8 @@
 
 namespace api::tester::handlers
 {
-namespace eTester = ::com::wazuh::api::engine::tester;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eTester = ::com::cyb3rhq::api::engine::tester;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 using api::adapter::genericError;
 using api::adapter::genericSuccess;
@@ -34,7 +34,7 @@ template<typename RequestType, typename ResponseType>
 std::variant<api::wpResponse, TesterAndRequest<RequestType>>
 getRequest(const api::wpRequest& wRequest, const std::weak_ptr<::router::ITesterAPI>& wTester)
 {
-    auto res = ::api::adapter::fromWazuhRequest<RequestType, ResponseType>(wRequest);
+    auto res = ::api::adapter::fromCyb3rhqRequest<RequestType, ResponseType>(wRequest);
     // validate the request
     if (std::holds_alternative<api::wpResponse>(res))
     {
@@ -293,7 +293,7 @@ api::HandlerSync sessionGet(const std::weak_ptr<::router::ITesterAPI>& tester, c
         ResponseType eResponse;
         eResponse.mutable_session()->CopyFrom(toSession(base::getResponse(entry), wPolicyManager));
         eResponse.set_status(eEngine::ReturnStatus::OK);
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -347,7 +347,7 @@ api::HandlerSync tableGet(const std::weak_ptr<::router::ITesterAPI>& tester, con
             eResponse.add_sessions()->CopyFrom(toSession(entry, wPolicyManager));
         }
         eResponse.set_status(eEngine::ReturnStatus::OK);
-        return ::api::adapter::toWazuhResponse<ResponseType>(eResponse);
+        return ::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse);
     };
 }
 
@@ -410,7 +410,7 @@ api::HandlerAsync runPost(const std::weak_ptr<::router::ITesterAPI>& tester, con
         std::string eventStr {};
         {
             std::stringstream streamLocation;
-            // Escape the ':' character in the location (Wazuh protocol)
+            // Escape the ':' character in the location (Cyb3rhq protocol)
             for (const auto& c : eRequest.location())
             {
                 if (c == ':')
@@ -436,12 +436,12 @@ api::HandlerAsync runPost(const std::weak_ptr<::router::ITesterAPI>& tester, con
             {
                 eResponse.set_status(eEngine::ReturnStatus::ERROR);
                 eResponse.set_error("Error running test: " + base::getError(output).message);
-                callbackFn(::api::adapter::toWazuhResponse<ResponseType>(eResponse));
+                callbackFn(::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse));
                 return;
             }
             eResponse.mutable_result()->CopyFrom(fromOutput(base::getResponse(output)));
             eResponse.set_status(eEngine::ReturnStatus::OK);
-            callbackFn(::api::adapter::toWazuhResponse<ResponseType>(eResponse));
+            callbackFn(::api::adapter::toCyb3rhqResponse<ResponseType>(eResponse));
         };
 
         auto error = tester->ingestTest(eventStr, opt, responseCallback);

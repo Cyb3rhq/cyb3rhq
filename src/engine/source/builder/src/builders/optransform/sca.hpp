@@ -97,7 +97,7 @@ struct DecodeCxt
 {
     base::Event& event;                        ///< Event to be processed.
     const std::string& agentID;                ///< Agent ID of the agent that generated the event.
-    std::shared_ptr<wazuhdb::IWDBHandler> wdb; ///< WazuhDB instance.
+    std::shared_ptr<cyb3rhqdb::IWDBHandler> wdb; ///< Cyb3rhqDB instance.
     /** @brief Socket to forward dump request. */
     std::shared_ptr<sockiface::ISockHandler> forwarderSocket;
     /** @brief Mapping the field Name to path of the field in the Original Event. */
@@ -357,7 +357,7 @@ std::optional<std::string> handleDumpEvent(const DecodeCxt& ctx);
  * @param rawParameters vector of parameters as present in the raw definition
  * @return base::Expression true when executes without any problem, false otherwise.
  */
-TransformBuilder getBuilderSCAdecoder(const std::shared_ptr<wazuhdb::IWDBManager>& wdbManager,
+TransformBuilder getBuilderSCAdecoder(const std::shared_ptr<cyb3rhqdb::IWDBManager>& wdbManager,
                                       const std::shared_ptr<sockiface::ISockFactory>& sockFactory);
 
 } // namespace builder::builders::optransform

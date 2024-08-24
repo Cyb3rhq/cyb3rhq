@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Bump source version
-# Copyright (C) 2015, Wazuh Inc.
+# Copyright (C) 2015, Cyb3rhq Inc.
 # May 2, 2017
 
 # Syntax:
@@ -23,20 +23,20 @@ cd $(dirname $0)
 VERSION_FILE="../src/VERSION"
 REVISION_FILE="../src/REVISION"
 DEFS_FILE="../src/headers/defs.h"
-WAZUH_SERVER="../src/init/wazuh-server.sh"
-WAZUH_AGENT="../src/init/wazuh-client.sh"
-WAZUH_LOCAL="../src/init/wazuh-local.sh"
-NSIS_FILE="../src/win32/wazuh-installer.nsi"
-MSI_FILE="../src/win32/wazuh-installer.wxs"
-FW_INIT="../framework/wazuh/__init__.py"
-CLUSTER_INIT="../framework/wazuh/core/cluster/__init__.py"
+CYB3RHQ_SERVER="../src/init/cyb3rhq-server.sh"
+CYB3RHQ_AGENT="../src/init/cyb3rhq-client.sh"
+CYB3RHQ_LOCAL="../src/init/cyb3rhq-local.sh"
+NSIS_FILE="../src/win32/cyb3rhq-installer.nsi"
+MSI_FILE="../src/win32/cyb3rhq-installer.wxs"
+FW_INIT="../framework/cyb3rhq/__init__.py"
+CLUSTER_INIT="../framework/cyb3rhq/core/cluster/__init__.py"
 API_SETUP="../api/setup.py"
 API_SPEC="../api/api/spec/spec.yaml"
 COMMS_API_SETUP="../apis/comms_api/setup.py"
 VERSION_DOCU="../src/Doxyfile"
 WIN_RESOURCE="../src/win32/version.rc"
 
-# Wazuh Packages
+# Cyb3rhq Packages
 ## Find files to bump .spec, changelog, copyright, .pkgproj
 SPEC_FILES=$(find ../packages -name *.spec -type f)
 CHANGELOG_FILES=$(find ../packages -name changelog -type f)
@@ -136,13 +136,13 @@ then
 
     sed -E -i'' -e "s/^(#define __ossec_version +)\"v.*\"/\1\"$version\"/" $DEFS_FILE
 
-    # wazuh-control
+    # cyb3rhq-control
 
-    sed -E -i'' -e "s/^(VERSION=+)\"v.*\"/\1\"$version\"/" $WAZUH_SERVER
-    sed -E -i'' -e "s/^(VERSION=+)\"v.*\"/\1\"$version\"/" $WAZUH_AGENT
-    sed -E -i'' -e "s/^(VERSION=+)\"v.*\"/\1\"$version\"/" $WAZUH_LOCAL
+    sed -E -i'' -e "s/^(VERSION=+)\"v.*\"/\1\"$version\"/" $CYB3RHQ_SERVER
+    sed -E -i'' -e "s/^(VERSION=+)\"v.*\"/\1\"$version\"/" $CYB3RHQ_AGENT
+    sed -E -i'' -e "s/^(VERSION=+)\"v.*\"/\1\"$version\"/" $CYB3RHQ_LOCAL
 
-    # File wazuh-installer.nsi
+    # File cyb3rhq-installer.nsi
 
     egrep "^\!define VERSION \".+\"" $NSIS_FILE > /dev/null
 
@@ -154,9 +154,9 @@ then
 
     sed -E -i'' -e "s/^(\!define VERSION \").+\"/\1${version:1}\"/g" $NSIS_FILE
 
-    # File wazuh-installer.wxs
+    # File cyb3rhq-installer.wxs
 
-    egrep '<Product Id="\*" Name="Wazuh Agent" Language="1033" Version=".+" Manufacturer=' $MSI_FILE > /dev/null
+    egrep '<Product Id="\*" Name="Cyb3rhq Agent" Language="1033" Version=".+" Manufacturer=' $MSI_FILE > /dev/null
 
     if [ $? != 0 ]
     then
@@ -164,7 +164,7 @@ then
         exit 1
     fi
 
-    sed -E -i'' -e "s/(<Product Id=\"\*\" Name=\"Wazuh Agent\" Language=\"1033\" Version=\").+(\" Manufacturer=)/\1${version:1}\2/g" $MSI_FILE
+    sed -E -i'' -e "s/(<Product Id=\"\*\" Name=\"Cyb3rhq Agent\" Language=\"1033\" Version=\").+(\" Manufacturer=)/\1${version:1}\2/g" $MSI_FILE
 
     # Framework
 
@@ -221,13 +221,13 @@ then
 
     echo $revision > $REVISION_FILE
 
-    # wazuh-control
+    # cyb3rhq-control
 
-    sed -E -i'' -e "s/^(REVISION=+)\".*\"/\1\"$revision\"/" $WAZUH_SERVER
-    sed -E -i'' -e "s/^(REVISION=+)\".*\"/\1\"$revision\"/" $WAZUH_AGENT
-    sed -E -i'' -e "s/^(REVISION=+)\".*\"/\1\"$revision\"/" $WAZUH_LOCAL
+    sed -E -i'' -e "s/^(REVISION=+)\".*\"/\1\"$revision\"/" $CYB3RHQ_SERVER
+    sed -E -i'' -e "s/^(REVISION=+)\".*\"/\1\"$revision\"/" $CYB3RHQ_AGENT
+    sed -E -i'' -e "s/^(REVISION=+)\".*\"/\1\"$revision\"/" $CYB3RHQ_LOCAL
 
-    # File wazuh-installer.nsi
+    # File cyb3rhq-installer.nsi
 
     egrep "^\!define REVISION \".+\"" $NSIS_FILE > /dev/null
 
@@ -255,7 +255,7 @@ fi
 if [ -n "$product" ]
 then
 
-    # File wazuh-installer.nsi
+    # File cyb3rhq-installer.nsi
 
     egrep "^VIProductVersion \".+\"" $NSIS_FILE > /dev/null
 
@@ -268,7 +268,7 @@ then
     sed -E -i'' -e "s/^(VIProductVersion \").+\"/\1$product\"/g" $NSIS_FILE
 fi
 
-# Wazuh Packages
+# Cyb3rhq Packages
 if [ -z "$version" ]
 then
     UPDATE_RELEASE_DATE="yes"
@@ -303,10 +303,10 @@ done
 # Deb changelog files
 for changelog_file in $CHANGELOG_FILES; do
     echo "Updating the release date of $version in $changelog_file"
-    install_type=$(sed -E 's/.*wazuh-(manager|agent).*/wazuh-\1/' <<< $changelog_file)
+    install_type=$(sed -E 's/.*cyb3rhq-(manager|agent).*/cyb3rhq-\1/' <<< $changelog_file)
     if [ -z "$UPDATE_RELEASE_DATE" ] ; then
         changelog_string="$install_type (${VERSION}-RELEASE) stable; urgency=low\n\n  * More info: https://documentation.wazuh.com/current/release-notes/release-$mayor-$minor-$patch.html\
-\n\n -- Wazuh, Inc <info@wazuh.com>  $bump_date\n"
+\n\n -- Cyb3rhq, Inc <info@wazuh.com>  $bump_date\n"
         # Add new version to changelog
         sed -i'' "1i $changelog_string" $changelog_file
     else
@@ -316,11 +316,11 @@ done
 
 ## Deb copyright files
 for copyright_file in $COPYRIGHT_FILES; do
-    sed -E -i'' "s/(\sWazuh, Inc <info@wazuh.com> on).*/\1 $bump_date/" $copyright_file
+    sed -E -i'' "s/(\sCyb3rhq, Inc <info@wazuh.com> on).*/\1 $bump_date/" $copyright_file
 done
 
 # MacOS pkgproj files
 for pkgproj_file in $PKGPROJ_FILES; do
     sed -E -i'' "s/(<string>)([0-9]+\.){2}[0-9]+-[0-9]+(<\/string>)/\1$VERSION-1\3/" $pkgproj_file
-    sed -E -i'' "s/(<string>wazuh-agent-)([0-9]+\.){2}[0-9]+-[0-9]+/\1$VERSION-1/" $pkgproj_file
+    sed -E -i'' "s/(<string>cyb3rhq-agent-)([0-9]+\.){2}[0-9]+-[0-9]+/\1$VERSION-1/" $pkgproj_file
 done

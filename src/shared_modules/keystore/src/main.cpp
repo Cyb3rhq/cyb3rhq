@@ -1,6 +1,6 @@
 /*
- * Wazuh keystore
- * Copyright (C) 2015, Wazuh Inc.
+ * Cyb3rhq keystore
+ * Copyright (C) 2015, Cyb3rhq Inc.
  * January 25, 2024.
  *
  * This program is free software; you can redistribute it

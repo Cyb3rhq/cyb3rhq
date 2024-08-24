@@ -19,7 +19,7 @@ using namespace base::test;
 using namespace api::geo::handlers;
 using gType = ::geo::Type;
 
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 namespace api::geoHandlersTest
 {
@@ -101,7 +101,7 @@ TEST_P(HandlersTest, processRequest)
     auto request = api::wpRequest::create(m_params.command, "test", m_params.jrequest());
     ASSERT_NO_THROW(response = m_handler(request));
     ASSERT_TRUE(response.isValid());
-    ASSERT_EQ(response.error(), static_cast<int>(base::utils::wazuhProtocol::RESPONSE_ERROR_CODES::OK));
+    ASSERT_EQ(response.error(), static_cast<int>(base::utils::cyb3rhqProtocol::RESPONSE_ERROR_CODES::OK));
     ASSERT_FALSE(response.message().has_value());
 
     const auto& data = response.data();

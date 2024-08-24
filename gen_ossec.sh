@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# Wazuh Configuration & Init Files Generator
-# Copyright (C) 2015, Wazuh Inc.
+# Cyb3rhq Configuration & Init Files Generator
+# Copyright (C) 2015, Cyb3rhq Inc.
 # November 24, 2016.
 #
 # This program is free software; you can redistribute it
@@ -77,7 +77,7 @@ if [ "$1" = "conf" ] && [ "$#" -ge "4" ]; then
   exit 0
 else
   echo ""
-  echo "Wazuh Configuration Generator"
+  echo "Cyb3rhq Configuration Generator"
   echo ""
   Use
   echo ""

@@ -4,10 +4,10 @@ from comms_api.authentication.authentication import generate_token
 from comms_api.models.authentication import Credentials, TokenResponse
 from comms_api.routers.exceptions import HTTPError
 from comms_api.routers.utils import timeout
-from wazuh.core.exception import WazuhInternalError, WazuhIndexerError, WazuhResourceNotFound
-from wazuh.core.indexer import get_indexer_client
-from wazuh.core.indexer.models.agent import Agent
-from wazuh.core.utils import get_utc_now
+from cyb3rhq.core.exception import Cyb3rhqInternalError, Cyb3rhqIndexerError, Cyb3rhqResourceNotFound
+from cyb3rhq.core.indexer import get_indexer_client
+from cyb3rhq.core.indexer.models.agent import Agent
+from cyb3rhq.core.utils import get_utc_now
 
 
 @timeout(20)
@@ -40,11 +40,11 @@ async def authentication(credentials: Credentials) -> TokenResponse:
 
             body = Agent(last_login=get_utc_now())
             await indexer_client.agents.update(credentials.uuid, body)
-    except WazuhIndexerError as exc:
+    except Cyb3rhqIndexerError as exc:
         raise HTTPError(message=f'Couldn\'t connect to the indexer: {str(exc)}', status_code=status.HTTP_403_FORBIDDEN)
-    except WazuhResourceNotFound:
+    except Cyb3rhqResourceNotFound:
         raise HTTPError(message='Agent does not exist', status_code=status.HTTP_403_FORBIDDEN)
-    except WazuhInternalError as exc:
+    except Cyb3rhqInternalError as exc:
         raise HTTPError(message=f'Couldn\'t get key pair: {str(exc)}', status_code=status.HTTP_403_FORBIDDEN)
 
     return TokenResponse(token=token)

@@ -1,5 +1,5 @@
-from wazuh.core.indexer import get_indexer_client
-from wazuh.core.indexer.models.events import Events
+from cyb3rhq.core.indexer import get_indexer_client
+from cyb3rhq.core.indexer.models.events import Events
 
 
 async def create_stateful_events(events: Events) -> dict:

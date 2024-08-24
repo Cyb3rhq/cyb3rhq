@@ -2,8 +2,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "kind": "event",
@@ -24,11 +24,11 @@
         "a-mac-with-esc-key"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog"
       ],
-      "location": "[001] (wazuh-agent-1) any->/tmp/syslog.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/tmp/syslog.log",
       "origin": "/tmp/syslog.log",
       "queue": 49,
       "registered_ip": "any",
@@ -38,8 +38,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "kind": "event",
@@ -56,11 +56,11 @@
         "---"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog"
       ],
-      "location": "[001] (wazuh-agent-1) any->/tmp/syslog.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/tmp/syslog.log",
       "origin": "/tmp/syslog.log",
       "queue": 49,
       "registered_ip": "any",
@@ -70,8 +70,8 @@
   {
     "agent": {
       "id": "001",
-      "name": "wazuh-agent-1",
-      "type": "wazuh-agent"
+      "name": "cyb3rhq-agent-1",
+      "type": "cyb3rhq-agent"
     },
     "event": {
       "kind": "event",
@@ -92,11 +92,11 @@
         "linux-sqrz"
       ]
     },
-    "wazuh": {
+    "cyb3rhq": {
       "decoders": [
         "syslog"
       ],
-      "location": "[001] (wazuh-agent-1) any->/tmp/syslog.log",
+      "location": "[001] (cyb3rhq-agent-1) any->/tmp/syslog.log",
       "origin": "/tmp/syslog.log",
       "queue": 49,
       "registered_ip": "any",

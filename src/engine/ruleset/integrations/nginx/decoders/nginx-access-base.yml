@@ -9,7 +9,7 @@ metadata:
   product.versions:
     - nginx-1.23.2
   author:
-      name: Wazuh, Inc.
+      name: Cyb3rhq, Inc.
       url: https://wazuh.com
       date: 2023/01/23
 
@@ -45,7 +45,7 @@ normalize:
       - http.version: $~request_fields.2
       - related.user: +array_append/$user.name
       - ~http_slash: delete()
-      - wazuh.decoders: +array_append/nginx-access-base
+      - cyb3rhq.decoders: +array_append/nginx-access-base
 
   - check:
       - http.response.status_code: +int_less/400

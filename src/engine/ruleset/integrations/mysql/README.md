@@ -63,4 +63,4 @@ Adding to the ossec.conf file in the monitored agent the following blocks:
 
 | Version | Description | Details |
 |---|---|---|
-| 0.0.1-dev | Created integration for MySQL | [#17404](https://github.com/wazuh/wazuh/pull/17404) |
+| 0.0.1-dev | Created integration for MySQL | [#17404](https://github.com/cyb3rhq/cyb3rhq/pull/17404) |

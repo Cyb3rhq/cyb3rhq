@@ -30,8 +30,8 @@ struct Options
 namespace cmd::kvdb
 {
 
-namespace eKVDB = ::com::wazuh::api::engine::kvdb;
-namespace eEngine = ::com::wazuh::api::engine;
+namespace eKVDB = ::com::cyb3rhq::api::engine::kvdb;
+namespace eEngine = ::com::cyb3rhq::api::engine;
 
 void runList(std::shared_ptr<apiclnt::Client> client, const std::string& kvdbName, bool loaded)
 {
@@ -48,9 +48,9 @@ void runList(std::shared_ptr<apiclnt::Client> client, const std::string& kvdbNam
     }
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print dbs one name by line
     for (const auto& dbName : eResponse.dbs())
@@ -84,9 +84,9 @@ void runCreate(std::shared_ptr<apiclnt::Client> client,
     }
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runDump(std::shared_ptr<apiclnt::Client> client,
@@ -106,9 +106,9 @@ void runDump(std::shared_ptr<apiclnt::Client> client,
     eRequest.set_records(records);
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print the dump
     const auto& dump = eResponse.entries();
@@ -127,9 +127,9 @@ void runDelete(std::shared_ptr<apiclnt::Client> client, const std::string& kvdbN
     eRequest.set_name(kvdbName);
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runGetKV(std::shared_ptr<apiclnt::Client> client, const std::string& kvdbName, const std::string& kvdbKey)
@@ -144,9 +144,9 @@ void runGetKV(std::shared_ptr<apiclnt::Client> client, const std::string& kvdbNa
     eRequest.set_key(kvdbKey);
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print value as json
     const auto& value = eResponse.value();
@@ -191,9 +191,9 @@ void runInsertKV(std::shared_ptr<apiclnt::Client> client,
     *eRequest.mutable_entry()->mutable_value() = value;
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runRemoveKV(std::shared_ptr<apiclnt::Client> client, const std::string& kvdbName, const std::string& kvdbKey)
@@ -208,9 +208,9 @@ void runRemoveKV(std::shared_ptr<apiclnt::Client> client, const std::string& kvd
     eRequest.set_key(kvdbKey);
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 }
 
 void runSearch(std::shared_ptr<apiclnt::Client> client,
@@ -231,9 +231,9 @@ void runSearch(std::shared_ptr<apiclnt::Client> client,
     eRequest.set_records(records);
 
     // Call the API
-    const auto request = utils::apiAdapter::toWazuhRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
+    const auto request = utils::apiAdapter::toCyb3rhqRequest<RequestType>(command, details::ORIGIN_NAME, eRequest);
     const auto response = client->send(request);
-    const auto eResponse = utils::apiAdapter::fromWazuhResponse<ResponseType>(response);
+    const auto eResponse = utils::apiAdapter::fromCyb3rhqResponse<ResponseType>(response);
 
     // Print the dump
     const auto& dump = eResponse.entries();
