@@ -2,6 +2,7 @@ run-name: Package - Upload Docker package building images
 name: Package - Upload Docker package building images
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - '[0-9]+.[0-9]+.[0-9]+'
