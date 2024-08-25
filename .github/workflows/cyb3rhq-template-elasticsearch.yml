@@ -4,6 +4,7 @@ name: cyb3rhq-template for Elasticsearch test
 # a pull request
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - "extensions/elasticsearch/7.x/**"
