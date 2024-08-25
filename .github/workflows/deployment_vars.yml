@@ -1,5 +1,6 @@
 name: Deployment variable tests
 on:
+    workflow_dispatch:
     pull_request:
         paths:
             - 'src/init/register_configure_agent.sh'
